@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url('../fonts/gilroy/gilroy-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy/gilroy-bold-webfont.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy-heavy';
+    src: url('../fonts/gilroy/gilroy-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy/gilroy-heavy-webfont.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy-light';
+    src: url('../fonts/gilroy/gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy/gilroy-light-webfont.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url('../fonts/gilroy/gilroy-medium-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy/gilroy-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'gilroy-regular';
+    src: url('../fonts/gilroy/gilroy-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy/gilroy-regular-webfont.woff') format('woff');
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
