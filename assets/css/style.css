@@ -14,7 +14,7 @@
 
     01. Theme default CSS	
     02. Header CSS	
-    03. Slider CSS	
+    03. Banner CSS	
     04. Features CSS	
     05. About CSS	
     06. Services CSS	
@@ -83,14 +83,6 @@ body {
   font-family: "gilroy-regular", sans-serif;
 }
 
-.w-img img {
-  width: 100%;
-}
-
-.m-img img {
-  max-width: 100%;
-}
-
 a,
 .btn,
 button,
@@ -156,36 +148,33 @@ h3,
 h4,
 h5,
 h6 {
-  color: #00235a;
-  margin-top: 0px;
+  margin: 0px;
   font-weight: 700;
   line-height: 1;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 80px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 48px;
 }
 
 h3 {
-  font-size: 27px;
+  font-size: 32px;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 ul {
@@ -200,9 +189,9 @@ li {
 
 p {
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   color: #00235a;
-  margin-bottom: 15px;
+  margin: 0px;
   line-height: 27px;
 }
 
@@ -263,14 +252,6 @@ p {
   clear: both;
 }
 
-.f-left {
-  float: left;
-}
-
-.f-right {
-  float: right;
-}
-
 .p-relative {
   position: relative;
 }
@@ -280,102 +261,8 @@ p {
 }
 
 /*--
-    - Background color
+	- Button Style 
 -----------------------------------------*/
-.grey-bg {
-  background: #fafaf8;
-}
-
-/*--
-    - color
------------------------------------------*/
-.text-white h1,
-.text-white h2,
-.text-white h3,
-.text-white h4,
-.text-white h5,
-.text-white h6,
-.text-white p,
-.text-white span,
-.text-white li,
-.text-white a {
-  color: #ffffff !important;
-}
-
-.white-color {
-  color: #ffffff;
-}
-
-.black-color {
-  color: #00235a;
-}
-
-.box-105 {
-  padding-left: 105px;
-  padding-right: 105px;
-}
-
-.box-margin-120 {
-  margin-right: 120px;
-  margin-left: 120px;
-}
-
-.mb-345 {
-  margin-bottom: 345px;
-}
-
-.mb-210 {
-  margin-bottom: 210px;
-}
-
-.mt--230 {
-  margin-top: -230px;
-}
-
-.mt-105 {
-  margin-top: -105px;
-}
-
-.mb--322 {
-  margin-bottom: -322px;
-}
-
-.mb--328 {
-  margin-bottom: -328px;
-}
-
-.mb--120 {
-  margin-bottom: 120px;
-}
-
-.mt--120 {
-  margin-top: -120px;
-}
-
-.mb-252 {
-  margin-bottom: 252px;
-}
-
-.mb-230 {
-  margin-bottom: 230px;
-}
-
-.box-pl-105 {
-  padding-left: 105px;
-}
-
-.pt-210 {
-  padding-top: 210px;
-}
-
-.pb-355 {
-  padding-bottom: 355px;
-}
-
-.pb-265 {
-  padding-bottom: 265px;
-}
-
 .t-btn {
   display: inline-block;
   font-weight: 400;
@@ -413,10 +300,6 @@ p {
 
 .t-radius {
   border-radius: 50%;
-}
-
-p {
-  font-family: "gilroy-regular", sans-serif;
 }
 
 /*----------------------------------------*/
