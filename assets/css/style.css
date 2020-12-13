@@ -71,13 +71,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-size: 16px;
   font-weight: normal;
-  color: #00235a;
   line-height: 27px;
   font-family: "gilroy-regular", sans-serif;
 }
@@ -101,6 +101,7 @@ h3,
 h4,
 h5,
 h6 {
+  -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 
@@ -149,7 +150,6 @@ h6 {
   margin: 0px;
   font-weight: 700;
   line-height: 1;
-  transition: all 0.3s ease-out 0s;
 }
 
 h1 {
@@ -183,20 +183,31 @@ ul {
 
 li {
   list-style: none;
-  display: inline-block;
 }
 
 p {
   font-size: 16px;
   font-weight: 500;
-  color: #00235a;
+  color: #65729E;
   margin: 0px;
   line-height: 27px;
 }
 
+*::-moz-selection {
+  background: #f18694;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #f18694;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
 ::selection {
   background: #f18694;
-  color: #ffffff;
+  color: #FFFFFF;
   text-shadow: none;
 }
 
@@ -204,8 +215,26 @@ p {
     - Input Placeholder
 -----------------------------------------*/
 
+*::-webkit-input-placeholder {
+  color: #9DADB7;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #9DADB7;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*::-ms-input-placeholder {
+  color: #9DADB7;
+  font-size: 14px;
+  opacity: 1;
+}
+
 *::placeholder {
-  color: #00235a;
+  color: #9DADB7;
   font-size: 14px;
   opacity: 1;
 }
@@ -269,6 +298,10 @@ p {
 
 .t-radius {
   border-radius: 50%;
+}
+
+.header-area {
+  padding: 0 30px;
 }
 
 /*----------------------------------------*/

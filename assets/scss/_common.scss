@@ -8,7 +8,6 @@
 body {
 	font-size: 16px;
 	font-weight: normal;
-	color: $body-text-color;
 	line-height: 27px;
 	font-family: $gilroy;
 }
@@ -113,13 +112,12 @@ ul {
 
 li {
 	list-style: none;
-	display: inline-block;
 }
 
 p {
 	font-size: 16px;
 	font-weight: 500;
-	color: $body-text-color;
+	color: $secondary;
 	margin: 0px;
 	line-height: 27px;
 }
