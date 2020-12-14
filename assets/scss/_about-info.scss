@@ -15,16 +15,7 @@
     }
     &-project{
         padding-top: 27px;
-        position: relative;
-        &::before{
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            height:1px;
-            width:570px;
-            background-color: #B4C1E9;
-        }
+        border-top: 1px solid #B4C1E9;
         .project-rating{
             h3{
                 font-size: 34px;

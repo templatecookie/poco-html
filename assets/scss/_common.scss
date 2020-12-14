@@ -226,3 +226,12 @@ p {
 .t-radius {
 	border-radius: 50%;
 }
+
+// Section Title
+.section-title{
+	margin-bottom: 60px;
+	h2{
+		line-height: 64px;
+		margin-bottom: 0 !important;
+	}
+}

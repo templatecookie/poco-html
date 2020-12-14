@@ -281,6 +281,15 @@ p {
   border-radius: 50%;
 }
 
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  line-height: 64px;
+  margin-bottom: 0 !important;
+}
+
 .header-area {
   padding: 20px 30px;
 }
@@ -519,17 +528,7 @@ p {
 
 .about-info-project {
   padding-top: 27px;
-  position: relative;
-}
-
-.about-info-project::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  height: 1px;
-  width: 570px;
-  background-color: #B4C1E9;
+  border-top: 1px solid #B4C1E9;
 }
 
 .about-info-project .project-rating h3 {
