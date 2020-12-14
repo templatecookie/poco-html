@@ -666,6 +666,7 @@ p {
   color: #ffffff;
   font-family: "Gilroy-Bold";
   font-size: 16px;
+  box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
 }
 
 .callto-action-image {
