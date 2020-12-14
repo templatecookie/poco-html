@@ -74,7 +74,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -102,10 +103,12 @@ h3,
 h4,
 h5,
 h6 {
+  -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 
 *:focus {
+  color: inherit;
   outline: inherit;
 }
 
@@ -153,7 +156,6 @@ h5,
 h6 {
   color: #000560;
   margin: 0px;
-  line-height: 1;
   font-family: "Gilroy-Bold";
 }
 
@@ -169,18 +171,22 @@ h2 {
 
 h3 {
   font-size: 32px;
+  line-height: 42px;
 }
 
 h4 {
   font-size: 26px;
+  line-height: 49px;
 }
 
 h5 {
   font-size: 24px;
+  line-height: 30px;
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 28px;
 }
 
 ul {
@@ -200,6 +206,18 @@ p {
   line-height: 27px;
 }
 
+*::-moz-selection {
+  background: #f18694;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #f18694;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
 ::selection {
   background: #f18694;
   color: #FFFFFF;
@@ -209,6 +227,24 @@ p {
 /*--
     - Input Placeholder
 -----------------------------------------*/
+
+*::-webkit-input-placeholder {
+  color: #9DADB7;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #9DADB7;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*::-ms-input-placeholder {
+  color: #9DADB7;
+  font-size: 14px;
+  opacity: 1;
+}
 
 *::placeholder {
   color: #9DADB7;
@@ -240,15 +276,14 @@ p {
 -----------------------------------------*/
 .t-btn {
   display: inline-block;
-  font-weight: 400;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   border: 1px solid transparent;
-  padding: 6px 15px;
+  padding: 6px 38px;
   font-size: 16px;
   border-radius: 30px;
-  font-weight: "Gilroy-Bold";
+  font-family: "Gilroy-Bold";
 }
 
 .t-bg-primary {
@@ -261,6 +296,8 @@ p {
   color: #fff;
   background-color: #FF465E;
   border-color: #FF465E;
+  -webkit-box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
+          box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
 }
 
 .t-bg-black {
@@ -338,8 +375,12 @@ p {
 }
 
 .header-area .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-area .right-content .search-bar {
@@ -415,6 +456,36 @@ p {
   position: relative;
 }
 
+.banner-area .banner-wrapper p {
+  font-size: 22px;
+  line-height: 36px;
+  font-family: "Gilroy-Medium";
+  width: 90%;
+  margin-top: 30px;
+}
+
+.banner-area .banner-button {
+  margin-top: 40px;
+}
+
+.banner-area .banner-button .t-btn {
+  font-size: 20px;
+  line-height: 42px;
+}
+
+.banner-area .banner-button .play-icon {
+  background: white;
+  cursor: pointer;
+  border: 1px solid #dddddd;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 30px;
+  display: inline-block;
+}
+
 .banner-area .banner-image {
   padding-top: 90px;
 }
@@ -426,29 +497,159 @@ p {
 .banner-area .mask-group .mask1 {
   bottom: 0;
   left: 0;
+  z-index: -99;
 }
 
 .banner-area .mask-group .mask2 {
   top: 0;
   right: 0;
+  z-index: -99;
 }
 
 .banner-area .mask-group .mask3 {
   bottom: -40px;
   left: 37%;
+  z-index: -99;
 }
 
-.banner-title h1 {
-  font-family: 'Gilroy-Bold';
+.banner-area .mask-group .mask4 {
+  top: 14.5%;
+  left: 1.5%;
+  z-index: -99;
 }
 
 .brand-area .brand-slider-active .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .brand-area .brand-slider-active .single-brand img {
   margin: auto;
+}
+
+.about-info-image {
+  margin-left: -110px;
+}
+
+.about-info-text h2 {
+  font-family: "Gilroy-Bold";
+  max-width: 530px;
+}
+
+.about-info-text p {
+  font-family: "Gilroy-Medium";
+  margin-bottom: 20px;
+}
+
+.about-info-project {
+  padding-top: 27px;
+  border-top: 1px solid #B4C1E9;
+}
+
+.about-info-project .project-rating h3 {
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+}
+
+.about-info-project .project-rating-star {
+  margin-top: 2px;
+}
+
+.about-info-project .project-rating-star i {
+  color: #FF8B17;
+}
+
+.about-info-project .project-rating p {
+  margin-bottom: 0;
+  font-family: "Gilroy-Medium";
+}
+
+.about-info-project .project-information h3 {
+  margin-top: 2px;
+  font-size: 34px;
+}
+
+.about-info-project .project-information p {
+  margin-bottom: 0;
+  font-family: "Gilroy-Medium";
+}
+
+.special-services-image {
+  margin-bottom: 23px;
+}
+
+.special-services-text h5 {
+  font-family: "Gilroy-Bold";
+  margin-bottom: 12px;
+}
+
+.special-services-text p {
+  max-width: 278px;
+  font-family: "Gilroy-Medium";
+}
+
+.price-area .price-box {
+  border: 2px solid #DDDDDD;
+  padding: 50px 0;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-area .price-box .price-body ul li {
+  font-family: "Gilroy-Medium";
+  line-height: 30px;
+  color: #000560;
+  margin-bottom: 20px;
+}
+
+.price-area .price-box .price-link {
+  margin-top: auto;
+}
+
+.price-area .price-box .price-link h3 {
+  margin-bottom: 15px;
+}
+
+.price-area .price-box .price-link h4 {
+  font-size: 25px;
+  line-height: 49px;
+  font-family: "Gilroy-Medium";
+  margin-bottom: 8px;
+}
+
+.price-area .price-box .price-link h4 span {
+  font-size: 32px;
+  line-height: 49px;
+  font-family: "Gilroy-Bold";
+}
+
+.price-area .price-box .price-link .t-btn {
+  color: #FF465E;
+  padding: 16px 37px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Gilroy-Bold";
+  background: transparent;
+  border: 2px solid;
+}
+
+.price-area .price-box .price-link .t-bg-primary:hover {
+  color: white;
+  background: #FF465E;
+  border-color: #FF465E;
 }
 
 /*----------------------------------------*/
@@ -564,67 +765,6 @@ p {
   /* award slider area start */
 }
 
-.about-info-image {
-  margin-left: -110px;
-}
-
-.about-info-text h2 {
-  font-family: "Gilroy-Bold";
-  max-width: 530px;
-}
-
-.about-info-text p {
-  font-family: "Gilroy-Medium";
-  margin-bottom: 20px;
-}
-
-.about-info-project {
-  padding-top: 27px;
-  border-top: 1px solid #B4C1E9;
-}
-
-.about-info-project .project-rating h3 {
-  font-family: "Gilroy-Bold";
-  font-size: 34px;
-}
-
-.about-info-project .project-rating-star {
-  margin-top: 2px;
-}
-
-.about-info-project .project-rating-star i {
-  color: #FF8B17;
-}
-
-.about-info-project .project-rating p {
-  margin-bottom: 0;
-  font-family: "Gilroy-Medium";
-}
-
-.about-info-project .project-information h3 {
-  margin-top: 2px;
-  font-size: 34px;
-}
-
-.about-info-project .project-information p {
-  margin-bottom: 0;
-  font-family: "Gilroy-Medium";
-}
-
-.special-services-image {
-  margin-bottom: 23px;
-}
-
-.special-services-text h5 {
-  font-family: "Gilroy-Bold";
-  margin-bottom: 12px;
-}
-
-.special-services-text p {
-  max-width: 278px;
-  font-family: "Gilroy-Medium";
-}
-
 .callto-action {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
@@ -646,7 +786,8 @@ p {
   bottom: -65px;
   right: 50%;
   left: 50%;
-  transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
 }
 
 .callto-action-text h2 {
@@ -667,7 +808,8 @@ p {
   color: #ffffff;
   font-family: "Gilroy-Bold";
   font-size: 16px;
-  box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
+  -webkit-box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
+          box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
 }
 
 .callto-action-image {
@@ -698,12 +840,14 @@ p {
 }
 
 .newsletter-area-form form .input-group input:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .newsletter-area-form form .t-btn {
   padding: 17px 34px;
-  box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
+  -webkit-box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
+          box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
   border-radius: 35px;
   background-color: #FF465E;
   font-family: "Gilroy-Bold";

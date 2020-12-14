@@ -32,7 +32,9 @@ h5,
 h6 {
 	@include transition(.3s);
 }
+
 *:focus{
+	color: inherit;
 	outline:inherit;
 }
 a:focus,
@@ -79,7 +81,6 @@ h5,
 h6 {
 	color: $primary;
 	margin: 0px;
-	line-height: 1;
 	font-family: $gilroy-bold;
 }
 
@@ -95,18 +96,22 @@ h2 {
 
 h3 {
 	font-size: 32px;
+	line-height: 42px;
 }
 
 h4 {
 	font-size: 26px;
+	line-height: 49px;
 }
 
 h5 {
 	font-size: 24px;
+	line-height: 30px;
 }
 
 h6 {
-	font-size: 18px;
+	font-size: 22px;
+	line-height: 28px;
 }
 
 ul {
@@ -185,15 +190,14 @@ p {
 -----------------------------------------*/
 .t-btn {
 	display: inline-block;
-	font-weight: 400;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
 	border: 1px solid transparent;
-	padding: 6px 15px;
+	padding: 6px 38px;
 	font-size: 16px;
 	border-radius: 30px;
-	font-weight: $gilroy-bold;
+	font-family: $gilroy-bold;
 }
 
 .t-bg-primary {
@@ -205,6 +209,7 @@ p {
 		color: #fff;
 		background-color: $tertiary;
 		border-color: $tertiary;
+		box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
 	}
 }
 .t-bg-black{
