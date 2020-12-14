@@ -4,6 +4,38 @@
     padding: 0 40px;
     border-radius: 24px;
     position: relative;
+    .banner-wrapper{
+        p{
+            font-size: 22px;
+            line-height: 36px;
+            font-family: $gilroy-medium;
+            width: 90%;
+            margin-top: 30px;
+        }
+    }
+    .banner-button{
+        margin-top: 40px;
+        .t-btn{
+            font-size: 20px;
+            line-height: 42px;
+        }
+        .play-icon{
+            background: white;
+            cursor: pointer;
+            border: 1px solid #dddddd;
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 30px;
+            display: inline-block;
+        }
+    }
+
+
+
+
     .banner-image{
         padding-top: 90px;
     }
@@ -14,21 +46,22 @@
         .mask1{
             bottom: 0;
             left: 0;
+            z-index: -99;
         }
         .mask2{
             top: 0;
             right: 0;
+            z-index: -99;
         }
         .mask3{
             bottom: -40px;
             left: 37%;
+            z-index: -99;
         }
-    }
-}
-
-.banner-title {
-    h1 {
-        font-family: 'Gilroy-Bold';
-
+        .mask4{
+            top: 14.5%;
+            left: 1.5%;
+            z-index: -99;
+        }
     }
 }

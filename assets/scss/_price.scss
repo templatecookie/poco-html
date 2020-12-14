@@ -1,0 +1,58 @@
+.price-area {
+
+    .price-box {
+        border: 2px solid #DDDDDD;
+        padding: 50px 0;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .price-body {
+            ul {
+                li {
+                    font-family: $gilroy-medium;
+                    line-height: 30px;
+                    color: $primary;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .price-link {
+            margin-top: auto;
+            h3{
+                margin-bottom: 15px;
+            }
+            h4 {
+                font-size: 25px;
+                line-height: 49px;
+                font-family: $gilroy-medium;
+                margin-bottom: 8px;
+                span {
+                    font-size: 32px;
+                    line-height: 49px;
+                    font-family: $gilroy-bold;
+                }
+            }
+
+            .t-btn {
+                color: $tertiary;
+                padding: 16px 37px;
+                font-size: 16px;
+                line-height: 20px;
+                font-family: $gilroy-bold;
+                background: transparent;
+                border: 2px solid;
+            }
+
+            .t-bg-primary {
+                &:hover {
+                    color: white;
+                    background: $tertiary;
+                    border-color: $tertiary;
+                }
+            }
+        }
+    }
+}
