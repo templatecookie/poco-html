@@ -1,4 +1,31 @@
 .header-area{
     padding: 0 30px;
 
+    .main-menu{
+        padding-left: 155px;
+        li{
+            padding-right: 45px;
+            a{
+                color:$secondary;
+                font-size: 18px;
+                padding: 10px 0;
+                line-height: 42px;
+            }
+        }
+    }
+    .right-content{
+        display:flex;
+        align-items: center;
+        .search-bar{
+            cursor: pointer;
+            border: 1px solid #FFDEE4;
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            border-radius:50%;
+            text-align: center;
+            margin-right: 30px;
+            
+        }
+    }
 }

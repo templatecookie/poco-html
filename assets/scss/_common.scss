@@ -76,6 +76,7 @@ h3,
 h4,
 h5,
 h6 {
+	color: $primary;
 	margin: 0px;
 	font-weight: 700;
 	line-height: 1;
@@ -83,10 +84,12 @@ h6 {
 
 h1 {
 	font-size: 80px;
+	line-height: 99px;
 }
 
 h2 {
 	font-size: 48px;
+	line-height: 59px;
 }
 
 h3 {
