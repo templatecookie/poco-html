@@ -33,7 +33,9 @@ h5,
 h6 {
 	@include transition(.3s);
 }
-
+*:focus{
+	outline:inherit;
+}
 a:focus,
 .button:focus {
 	text-decoration: none;
@@ -191,18 +193,18 @@ p {
 	border: 1px solid transparent;
 	padding: 6px 15px;
 	font-size: 16px;
-	border-radius: 5px;
+	border-radius: 30px;
 }
 
 .t-bg-primary {
 	color: #fff;
-	background-color: rgb(248, 97, 97);
-	border-color: rgb(248, 97, 97);
+	background-color: $tertiary;
+	border-color: $tertiary;
 
 	&:hover {
 		color: #fff;
-		background-color: rgb(241, 119, 119);
-		border-color: rgb(241, 119, 119);
+		background-color: $tertiary;
+		border-color: $tertiary;
 	}
 }
 .t-bg-black{

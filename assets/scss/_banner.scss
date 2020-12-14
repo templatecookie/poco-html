@@ -1,0 +1,27 @@
+.banner-area{
+    background-color:rgba(255, 70, 94, 0.05);
+    margin: 0 45px;
+    padding: 0 40px;
+    border-radius: 24px;
+    position: relative;
+    .banner-image{
+        padding-top: 90px;
+    }
+    .mask-group{
+        img{
+            position: absolute;
+        }
+        .mask1{
+            bottom: 0;
+            left: 0;
+        }
+        .mask2{
+            top: 0;
+            right: 0;
+        }
+        .mask3{
+            bottom: -40px;
+            left: 37%;
+        }
+    }
+}
