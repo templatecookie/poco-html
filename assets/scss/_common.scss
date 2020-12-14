@@ -7,9 +7,8 @@
 
 body {
 	font-size: 16px;
-	font-weight: normal;
 	line-height: 27px;
-	font-family: $gilroy;
+	font-family: $gilroy-regular;
 }
 
 a,
@@ -80,8 +79,8 @@ h5,
 h6 {
 	color: $primary;
 	margin: 0px;
-	font-weight: 700;
 	line-height: 1;
+	font-family: $gilroy-bold;
 }
 
 h1 {
@@ -194,6 +193,7 @@ p {
 	padding: 6px 15px;
 	font-size: 16px;
 	border-radius: 30px;
+	font-weight: $gilroy-bold;
 }
 
 .t-bg-primary {
