@@ -288,6 +288,7 @@ p {
 .section-title h2 {
   line-height: 64px;
   margin-bottom: 0 !important;
+  font-weight: bold;
 }
 
 .header-area {
@@ -519,6 +520,7 @@ p {
 .about-info-text h2 {
   max-width: 530px;
   line-height: 64px;
+  font-weight: bold;
 }
 
 .about-info-text p {
@@ -554,5 +556,20 @@ p {
 
 .about-info-project .project-information p {
   margin-bottom: 0;
+}
+
+.special-services-image {
+  margin-bottom: 23px;
+}
+
+.special-services-text h5 {
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.special-services-text p {
+  max-width: 278px;
+  font-weight: 500;
+  line-height: 27px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+.special-services{
+    &-image{
+        margin-bottom: 23px;
+    }
+    &-text{
+        h5{
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        p{
+            max-width: 278px;
+            font-weight: 500;
+            line-height: 27px;
+        }
+    }
+}
