@@ -9,7 +9,8 @@
         "../scss/_common.scss",
         "../scss/_header.scss",
         "../scss/_banner.scss",
-        "../scss/_responsive.scss"
+        "../scss/_responsive.scss",
+        "../scss/pages/_home.scss"
     ],
     "names": [],
     "file": "style.css"
