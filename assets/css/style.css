@@ -147,6 +147,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: #000560;
   margin: 0px;
   font-weight: 700;
   line-height: 1;
@@ -154,10 +155,12 @@ h6 {
 
 h1 {
   font-size: 80px;
+  line-height: 99px;
 }
 
 h2 {
   font-size: 48px;
+  line-height: 59px;
 }
 
 h3 {
@@ -302,6 +305,41 @@ p {
 
 .header-area {
   padding: 0 30px;
+}
+
+.header-area .main-menu {
+  padding-left: 155px;
+}
+
+.header-area .main-menu li {
+  padding-right: 45px;
+}
+
+.header-area .main-menu li a {
+  color: #65729E;
+  font-size: 18px;
+  padding: 10px 0;
+  line-height: 42px;
+}
+
+.header-area .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-area .right-content .search-bar {
+  cursor: pointer;
+  border: 1px solid #FFDEE4;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 30px;
 }
 
 /*----------------------------------------*/
