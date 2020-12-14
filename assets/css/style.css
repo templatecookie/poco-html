@@ -418,4 +418,58 @@ p {
   /* event area start */
   /* award slider area start */
 }
+
+.about-info-image {
+  margin-left: -90px;
+}
+
+.about-info-text h2 {
+  max-width: 530px;
+  line-height: 64px;
+}
+
+.about-info-text p {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.about-info-project {
+  padding-top: 27px;
+  position: relative;
+}
+
+.about-info-project::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 570px;
+  background-color: #B4C1E9;
+}
+
+.about-info-project .project-rating h3 {
+  font-size: 34px;
+}
+
+.about-info-project .project-rating-star {
+  margin-top: 2px;
+}
+
+.about-info-project .project-rating-star i {
+  color: #FF8B17;
+}
+
+.about-info-project .project-rating p {
+  margin-bottom: 0;
+}
+
+.about-info-project .project-information h3 {
+  margin-top: 2px;
+  font-size: 34px;
+}
+
+.about-info-project .project-information p {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */
