@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
     Template Name: Sample - Corporate Business Bootstrap4 HTML5 Template
@@ -37,38 +36,38 @@
 
 -----------------------------------------------------------------------------------*/
 @font-face {
-  font-family: 'Gilroy-Bold ☞';
-  font-style: normal;
-  font-weight: normal;
-  src: local("../fonts/gilroy/Gilroy-Bold ☞"), url("Gilroy-Bold.woff") format("woff");
+  font-family: 'Gilroy-Bold';
+  src: url("../fonts/gilroy/Gilroy-Bold.woff");
+  /* IE9 Compat Modes */
+  src: url("../fonts/gilroy/Gilroy-Bold.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Gilroy-Heavy ☞';
-  font-style: normal;
-  font-weight: normal;
-  src: local("../fonts/gilroy/Gilroy-Heavy ☞"), url("Gilroy-Heavy.woff") format("woff");
+  font-family: 'Gilroy-Heavy';
+  src: url("../fonts/gilroy/Gilroy-Heavy.woff");
+  /* IE9 Compat Modes */
+  src: url("../fonts/gilroy/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Heavy.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Gilroy-Light ☞';
-  font-style: normal;
-  font-weight: normal;
-  src: local("../fonts/gilroy/Gilroy-Light ☞"), url("Gilroy-Light.woff") format("woff");
+  font-family: 'Gilroy-Light';
+  src: url("../fonts/gilroy/Gilroy-Light.woff");
+  /* IE9 Compat Modes */
+  src: url("../fonts/gilroy/Gilroy-Light.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Light.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Gilroy-Medium ☞';
-  font-style: normal;
-  font-weight: normal;
-  src: local("../fonts/gilroy/Gilroy-Medium ☞"), url("Gilroy-Medium.woff") format("woff");
+  font-family: 'Gilroy-Medium';
+  src: url("../fonts/gilroy/Gilroy-Medium.woff");
+  /* IE9 Compat Modes */
+  src: url("../fonts/gilroy/Gilroy-Medium.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Gilroy-Regular ☞';
-  font-style: normal;
-  font-weight: normal;
-  src: local("../fonts/gilroy/Gilroy-Regular ☞"), url("Gilroy-Regular.woff") format("woff");
+  font-family: 'Gilroy-Regular';
+  src: url("../fonts/gilroy/Gilroy-Regular.woff");
+  /* IE9 Compat Modes */
+  src: url("../fonts/gilroy/Gilroy-Regular.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Regular.woff") format("woff");
 }
 
 /* 1. Theme default css */
@@ -81,9 +80,8 @@
 
 body {
   font-size: 16px;
-  font-weight: normal;
   line-height: 27px;
-  font-family: "Gilroy-Regular ☞";
+  font-family: "Gilroy-Regular";
 }
 
 a,
@@ -157,8 +155,8 @@ h5,
 h6 {
   color: #000560;
   margin: 0px;
-  font-weight: 700;
   line-height: 1;
+  font-family: "Gilroy-Bold";
 }
 
 h1 {
@@ -282,6 +280,7 @@ p {
   padding: 6px 15px;
   font-size: 16px;
   border-radius: 30px;
+  font-weight: "Gilroy-Bold";
 }
 
 .t-bg-primary {
@@ -353,6 +352,7 @@ p {
   padding: 15px 0;
   line-height: 42px;
   position: relative;
+  font-family: "Gilroy-Medium";
 }
 
 .header-area .main-menu li a.active {
@@ -371,8 +371,12 @@ p {
 }
 
 .header-area .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-area .right-content .search-bar {
@@ -469,6 +473,10 @@ p {
 .banner-area .mask-group .mask3 {
   bottom: -40px;
   left: 37%;
+}
+
+.banner-title h1 {
+  font-family: 'Gilroy-Bold';
 }
 
 .brand-area .brand-slider-active .slick-track {
