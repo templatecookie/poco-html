@@ -1,31 +1,110 @@
-.header-area{
-    padding: 0 30px;
+.header-area {
+    padding: 20px 30px;
 
-    .main-menu{
+    .main-menu {
         padding-left: 155px;
-        li{
+
+        li {
             padding-right: 45px;
-            a{
-                color:$secondary;
+            &:last-child{padding-right: 0;}
+
+            a {
+                color: $secondary;
                 font-size: 18px;
-                padding: 10px 0;
+                padding: 15px 0;
                 line-height: 42px;
+                position: relative;
+
+                &.active {
+                    color: $tertiary;
+                }
+
+                &.active::before {
+                    content: '';
+                    position: absolute;
+                    width: 26px;
+                    height: 5px;
+                    color: $tertiary;
+                    background-color: $tertiary;
+                    top: -26px;
+                    left: 0;
+                }
             }
         }
     }
-    .right-content{
-        display:flex;
+
+    .right-content {
+        display: flex;
         align-items: center;
-        .search-bar{
+
+        .search-bar {
             cursor: pointer;
             border: 1px solid #FFDEE4;
             width: 64px;
             height: 64px;
             line-height: 64px;
-            border-radius:50%;
+            border-radius: 50%;
             text-align: center;
             margin-right: 30px;
-            
+
+        }
+
+        .contact-number {
+            .t-btn {
+                padding: 10px 38px;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 42px;
+                border-radius: 50px;
+            }
         }
     }
+}
+
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+    /* common area start */
+    .header-area{
+        padding: 20px 20px;
+    }
+    .header-area .main-menu {
+        padding-left: 50px;
+    }
+    .header-area .main-menu li {
+        padding-right: 40px;
+    }
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    /* common area start */
+    .header-area{
+        padding: 20px 0px;
+    }
+    .header-area .main-menu {
+        padding-left: 30px;
+    }
+    .header-area .main-menu li {
+        padding-right: 25px;
+    }
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 576 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 0 - 575 */
+@media #{$xs} {
+    /* common area start */
 }

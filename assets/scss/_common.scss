@@ -205,6 +205,12 @@ p {
 		border-color: rgb(241, 119, 119);
 	}
 }
+.t-bg-black{
+	color: #fff;
+	background-color: $primary;
+	border-color: $primary;
+	&:hover{color: white}
+}
 
 .t-btn-outline {
 	border: 1px solid transparent;

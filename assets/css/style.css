@@ -288,6 +288,16 @@ p {
   border-color: #f17777;
 }
 
+.t-bg-black {
+  color: #fff;
+  background-color: #000560;
+  border-color: #000560;
+}
+
+.t-bg-black:hover {
+  color: white;
+}
+
 .t-btn-outline {
   border: 1px solid transparent;
   border-color: rebeccapurple;
@@ -304,7 +314,7 @@ p {
 }
 
 .header-area {
-  padding: 0 30px;
+  padding: 20px 30px;
 }
 
 .header-area .main-menu {
@@ -315,11 +325,31 @@ p {
   padding-right: 45px;
 }
 
+.header-area .main-menu li:last-child {
+  padding-right: 0;
+}
+
 .header-area .main-menu li a {
   color: #65729E;
   font-size: 18px;
-  padding: 10px 0;
+  padding: 15px 0;
   line-height: 42px;
+  position: relative;
+}
+
+.header-area .main-menu li a.active {
+  color: #FF465E;
+}
+
+.header-area .main-menu li a.active::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 5px;
+  color: #FF465E;
+  background-color: #FF465E;
+  top: -26px;
+  left: 0;
 }
 
 .header-area .right-content {
@@ -340,6 +370,60 @@ p {
   border-radius: 50%;
   text-align: center;
   margin-right: 30px;
+}
+
+.header-area .right-content .contact-number .t-btn {
+  padding: 10px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 42px;
+  border-radius: 50px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+  .header-area {
+    padding: 20px 20px;
+  }
+  .header-area .main-menu {
+    padding-left: 50px;
+  }
+  .header-area .main-menu li {
+    padding-right: 40px;
+  }
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+  .header-area {
+    padding: 20px 0px;
+  }
+  .header-area .main-menu {
+    padding-left: 30px;
+  }
+  .header-area .main-menu li {
+    padding-right: 25px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 0 - 575 */
+@media (max-width: 575px) {
+  /* common area start */
 }
 
 /*----------------------------------------*/
