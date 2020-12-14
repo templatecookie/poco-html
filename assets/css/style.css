@@ -662,6 +662,7 @@ p {
 }
 
 .callto-action-text .t-btn {
+  padding: 17px 42px;
   background-color: #FF465E;
   color: #ffffff;
   font-family: "Gilroy-Bold";
@@ -671,5 +672,46 @@ p {
 
 .callto-action-image {
   margin-right: -170px;
+}
+
+.newsletter-area-text h2 {
+  margin-bottom: 12px;
+  font-family: "Gilroy-Bold";
+}
+
+.newsletter-area-text p {
+  font-family: "Gilroy-Medium";
+  font-size: 26px;
+}
+
+.newsletter-area-form form .input-group {
+  margin-bottom: 20px;
+}
+
+.newsletter-area-form form .input-group input {
+  height: 65px;
+  line-height: 30px;
+  padding: 20px 0px 20px 30px;
+  border-radius: 35px;
+  background-color: rgba(255, 70, 94, 0.05);
+  border: 1px solid #DDDDDD;
+}
+
+.newsletter-area-form form .input-group input:focus {
+  box-shadow: none;
+}
+
+.newsletter-area-form form .t-btn {
+  padding: 17px 34px;
+  box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
+  border-radius: 35px;
+  background-color: #FF465E;
+  font-family: "Gilroy-Bold";
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.newsletter-area-form form .t-btn i {
+  margin-left: 8px;
 }
 /*# sourceMappingURL=style.css.map */
