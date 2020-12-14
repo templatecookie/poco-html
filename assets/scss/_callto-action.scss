@@ -1,13 +1,50 @@
-.callto-action{
-    &-text{
-        h2{
+.callto-action {
+    background-color: rgba(255, 70, 94, 0.05);
+    margin: 0 45px;
+    padding: 30px 140px 0px 0px;
+    border-radius: 24px;
+    position: relative;
+
+    &-mask {
+        img {
+            position: absolute;
+        }
+
+        .first-mask {
+            top: -50px;
+            left: 56px;
 
         }
-        p{
-
+        .second-mask {
+            bottom: -65px;
+            right: 50%;
+            left: 50%;
+            transform: translateX(-100px);
         }
     }
-    &-image{
 
+    &-text {
+        h2 {
+            font-family: $gilroy-bold;
+            max-width: 620px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            max-width: 625px;
+            font-family: $gilroy-medium;
+            margin-bottom: 20px;
+        }
+
+        .t-btn {
+            background-color: $tertiary;
+            color: #ffffff;
+            font-family: $gilroy-bold;
+            font-size: 16px;
+        }
+    }
+
+    &-image {
+        margin-right: -170px;
     }
 }

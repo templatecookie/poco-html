@@ -293,9 +293,8 @@ p {
 }
 
 .section-title h2 {
-  line-height: 64px;
   margin-bottom: 0 !important;
-  font-weight: bold;
+  font-family: "Gilroy-Bold";
 }
 
 .header-area {
@@ -339,12 +338,8 @@ p {
 }
 
 .header-area .right-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header-area .right-content .search-bar {
@@ -570,18 +565,17 @@ p {
 }
 
 .about-info-image {
-  margin-left: -90px;
+  margin-left: -110px;
 }
 
 .about-info-text h2 {
+  font-family: "Gilroy-Bold";
   max-width: 530px;
-  line-height: 64px;
-  font-weight: bold;
 }
 
 .about-info-text p {
+  font-family: "Gilroy-Medium";
   margin-bottom: 20px;
-  line-height: 30px;
 }
 
 .about-info-project {
@@ -590,6 +584,7 @@ p {
 }
 
 .about-info-project .project-rating h3 {
+  font-family: "Gilroy-Bold";
   font-size: 34px;
 }
 
@@ -603,6 +598,7 @@ p {
 
 .about-info-project .project-rating p {
   margin-bottom: 0;
+  font-family: "Gilroy-Medium";
 }
 
 .about-info-project .project-information h3 {
@@ -612,6 +608,7 @@ p {
 
 .about-info-project .project-information p {
   margin-bottom: 0;
+  font-family: "Gilroy-Medium";
 }
 
 .special-services-image {
@@ -619,13 +616,59 @@ p {
 }
 
 .special-services-text h5 {
+  font-family: "Gilroy-Bold";
   margin-bottom: 12px;
-  font-weight: 700;
 }
 
 .special-services-text p {
   max-width: 278px;
-  font-weight: 500;
-  line-height: 27px;
+  font-family: "Gilroy-Medium";
+}
+
+.callto-action {
+  background-color: rgba(255, 70, 94, 0.05);
+  margin: 0 45px;
+  padding: 30px 140px 0px 0px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.callto-action-mask img {
+  position: absolute;
+}
+
+.callto-action-mask .first-mask {
+  top: -50px;
+  left: 56px;
+}
+
+.callto-action-mask .second-mask {
+  bottom: -65px;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-100px);
+}
+
+.callto-action-text h2 {
+  font-family: "Gilroy-Bold";
+  max-width: 620px;
+  margin-bottom: 5px;
+}
+
+.callto-action-text p {
+  max-width: 625px;
+  font-family: "Gilroy-Medium";
+  margin-bottom: 20px;
+}
+
+.callto-action-text .t-btn {
+  background-color: #FF465E;
+  color: #ffffff;
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+}
+
+.callto-action-image {
+  margin-right: -170px;
 }
 /*# sourceMappingURL=style.css.map */
