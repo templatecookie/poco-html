@@ -4,13 +4,12 @@
     }
     &-text{
         h5{
+            font-family: $gilroy-bold;
             margin-bottom: 12px;
-            font-weight: 700;
         }
         p{
             max-width: 278px;
-            font-weight: 500;
-            line-height: 27px;
+            font-family: $gilroy-medium;
         }
     }
 }

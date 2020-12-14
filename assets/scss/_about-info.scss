@@ -1,17 +1,16 @@
 // About-Info Starts Here
 .about-info{
     &-image{
-        margin-left: -90px;
+        margin-left: -110px;
     }
     &-text{
         h2{
+            font-family: $gilroy-bold;
             max-width: 530px;
-            line-height: 64px;
-            font-weight: bold;
         }
         p{
+            font-family: $gilroy-medium;
             margin-bottom: 20px;
-            line-height: 30px;
         }
     }
     &-project{
@@ -19,6 +18,7 @@
         border-top: 1px solid #B4C1E9;
         .project-rating{
             h3{
+                font-family: $gilroy-bold;
                 font-size: 34px;
             }
             &-star{
@@ -29,6 +29,7 @@
             }
             p{
                 margin-bottom: 0;
+                font-family: $gilroy-medium;
             }
         }
         .project-information{
@@ -38,6 +39,7 @@
             }
             p{
                 margin-bottom: 0;
+                font-family: $gilroy-medium;
             }
         }
     }
