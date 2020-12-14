@@ -1,0 +1,53 @@
+// About-Info Starts Here
+.about-info{
+    &-image{
+        margin-left: -90px;
+    }
+    &-text{
+        h2{
+            max-width: 530px;
+            line-height: 64px;
+        }
+        p{
+            margin-bottom: 20px;
+            line-height: 30px;
+        }
+    }
+    &-project{
+        padding-top: 27px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height:1px;
+            width:570px;
+            background-color: #B4C1E9;
+        }
+        .project-rating{
+            h3{
+                font-size: 34px;
+            }
+            &-star{
+                margin-top: 2px;
+                i{
+                    color: #FF8B17;
+                }
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .project-information{
+            h3{
+                margin-top: 2px;
+                font-size: 34px;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+// About-Info Ends Here
