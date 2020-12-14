@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
     Template Name: Sample - Corporate Business Bootstrap4 HTML5 Template
@@ -35,50 +36,54 @@
     21. Footer CSS
 
 -----------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
 @font-face {
-  font-family: 'gilroy-bold';
-  src: url("../fonts/gilroy/gilroy-bold-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-bold-webfont.woff") format("woff");
+  font-family: 'Gilroy-Bold ☞';
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'gilroy-heavy';
-  src: url("../fonts/gilroy/gilroy-heavy-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-heavy-webfont.woff") format("woff");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gilroy-light';
-  src: url("../fonts/gilroy/gilroy-light-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-light-webfont.woff") format("woff");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gilroy-medium';
-  src: url("../fonts/gilroy/gilroy-medium-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-medium-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
+  src: local("../fonts/gilroy/Gilroy-Bold ☞"), url("Gilroy-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'gilroy-regular';
-  src: url("../fonts/gilroy/gilroy-regular-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-regular-webfont.woff") format("woff");
+  font-family: 'Gilroy-Heavy ☞';
   font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/gilroy/Gilroy-Heavy ☞"), url("Gilroy-Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Gilroy-Light ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/gilroy/Gilroy-Light ☞"), url("Gilroy-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/gilroy/Gilroy-Medium ☞"), url("Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/gilroy/Gilroy-Regular ☞"), url("Gilroy-Regular.woff") format("woff");
 }
 
 /* 1. Theme default css */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-size: 16px;
   font-weight: normal;
   line-height: 27px;
-  font-family: "gilroy-regular", sans-serif;
+  font-family: "Gilroy-Regular ☞";
 }
 
 a,
@@ -100,7 +105,12 @@ h3,
 h4,
 h5,
 h6 {
+  -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+}
+
+*:focus {
+  outline: inherit;
 }
 
 a:focus,
@@ -194,6 +204,18 @@ p {
   line-height: 27px;
 }
 
+*::-moz-selection {
+  background: #f18694;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #f18694;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
 ::selection {
   background: #f18694;
   color: #FFFFFF;
@@ -203,6 +225,24 @@ p {
 /*--
     - Input Placeholder
 -----------------------------------------*/
+
+*::-webkit-input-placeholder {
+  color: #9DADB7;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #9DADB7;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*::-ms-input-placeholder {
+  color: #9DADB7;
+  font-size: 14px;
+  opacity: 1;
+}
 
 *::placeholder {
   color: #9DADB7;
@@ -241,19 +281,19 @@ p {
   border: 1px solid transparent;
   padding: 6px 15px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 
 .t-bg-primary {
   color: #fff;
-  background-color: #f86161;
-  border-color: #f86161;
+  background-color: #FF465E;
+  border-color: #FF465E;
 }
 
 .t-bg-primary:hover {
   color: #fff;
-  background-color: #f17777;
-  border-color: #f17777;
+  background-color: #FF465E;
+  border-color: #FF465E;
 }
 
 .t-bg-black {
@@ -392,6 +432,50 @@ p {
 /* Small devices 0 - 575 */
 @media (max-width: 575px) {
   /* common area start */
+}
+
+.banner-area {
+  background-color: rgba(255, 70, 94, 0.05);
+  margin: 0 45px;
+  padding: 0 40px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.banner-area .banner-image {
+  padding-top: 90px;
+}
+
+.banner-area .mask-group img {
+  position: absolute;
+}
+
+.banner-area .mask-group .mask1 {
+  bottom: 0;
+  left: 0;
+}
+
+.banner-area .mask-group .mask2 {
+  top: 0;
+  right: 0;
+}
+
+.banner-area .mask-group .mask3 {
+  bottom: -40px;
+  left: 37%;
+}
+
+.brand-area .brand-slider-active .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand-area .brand-slider-active .single-brand img {
+  margin: auto;
 }
 
 /*----------------------------------------*/

@@ -1,36 +1,38 @@
 @font-face {
-    font-family: 'gilroy-bold';
-    src: url('../fonts/gilroy/gilroy-bold-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-bold-webfont.woff') format('woff');
+    font-family: 'Gilroy-Bold ☞';
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'gilroy-heavy';
-    src: url('../fonts/gilroy/gilroy-heavy-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-heavy-webfont.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gilroy-light';
-    src: url('../fonts/gilroy/gilroy-light-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-light-webfont.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'gilroy-medium';
-    src: url('../fonts/gilroy/gilroy-medium-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-medium-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    src: local('../fonts/gilroy/Gilroy-Bold ☞'), url('Gilroy-Bold.woff') format('woff');
 }
-  
+
+
 @font-face {
-    font-family: 'gilroy-regular';
-    src: url('../fonts/gilroy/gilroy-regular-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-regular-webfont.woff') format('woff');
+    font-family: 'Gilroy-Heavy ☞';
     font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/gilroy/Gilroy-Heavy ☞'), url('Gilroy-Heavy.woff') format('woff');
 }
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+
+@font-face {
+    font-family: 'Gilroy-Light ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/gilroy/Gilroy-Light ☞'), url('Gilroy-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Medium ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/gilroy/Gilroy-Medium ☞'), url('Gilroy-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Regular ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/gilroy/Gilroy-Regular ☞'), url('Gilroy-Regular.woff') format('woff');
+}
