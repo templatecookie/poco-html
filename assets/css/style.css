@@ -853,7 +853,6 @@ p {
 
 .callto-action-text .t-btn {
   padding: 17px 42px;
-  background-color: #FF465E;
   color: #ffffff;
   font-family: "Gilroy-Bold";
   font-size: 16px;
@@ -967,6 +966,10 @@ p {
   right: 3%;
 }
 
+.newsletter-area {
+  padding-bottom: 150px;
+}
+
 .newsletter-area-text h2 {
   margin-bottom: 12px;
   font-family: "Gilroy-Bold";
@@ -997,16 +1000,107 @@ p {
 
 .newsletter-area-form form .t-btn {
   padding: 17px 34px;
-  -webkit-box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
-          box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
-  border-radius: 35px;
-  background-color: #FF465E;
-  font-family: "Gilroy-Bold";
-  color: #ffffff;
   font-size: 16px;
 }
 
 .newsletter-area-form form .t-btn i {
   margin-left: 8px;
+}
+
+.footer-area {
+  background-color: rgba(255, 70, 94, 0.05);
+  margin: 0 45px;
+  padding: 130px 0px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.footer-area-shape img {
+  position: absolute;
+}
+
+.footer-area-shape .ft-shape-01 {
+  top: -50px;
+  left: 30px;
+}
+
+.footer-area-shape .ft-shape-02 {
+  top: -30px;
+  right: 30px;
+}
+
+.footer-area-shape .ft-shape-03 {
+  bottom: -30px;
+  right: 30px;
+}
+
+.footer-area-about p {
+  max-width: 305px;
+  margin-bottom: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.footer-area-links a {
+  border: 1px solid #FF465E;
+  color: #FF465E;
+  border-radius: 50%;
+  height: 47px;
+  width: 47px;
+  line-height: 47px;
+  text-align: center;
+  margin-right: 14px;
+  display: inline-block;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.footer-area-links a:hover {
+  color: #ffffff;
+  background-color: #FF465E;
+}
+
+.footer-area-lists h4 {
+  margin-bottom: 5px;
+}
+
+.footer-area-lists ul li a {
+  font-family: "Gilroy-Medium";
+  font-size: 16px;
+  color: #65729E;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.copyright {
+  padding: 33px;
+}
+
+.copyright-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright-area-text p {
+  color: #000560;
+  font-family: "Gilroy-Bold";
+}
+
+.copyright-area-top a {
+  color: #000560;
+  font-size: 16px;
+  font-family: "Gilroy-Bold";
+}
+
+.copyright-area-top a i {
+  margin-left: 3px;
 }
 /*# sourceMappingURL=style.css.map */

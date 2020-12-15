@@ -1,0 +1,92 @@
+.footer-area{
+    background-color: rgba(255, 70, 94, 0.05);
+    margin: 0 45px;
+    padding: 130px 0px;
+    border-radius: 24px;
+    position: relative;
+    &-shape{
+        img{
+            position: absolute;
+        }
+        .ft-shape-01{
+           top: -50px;
+           left: 30px;
+        }
+        .ft-shape-02{
+            top: -30px;
+            right: 30px; 
+        }
+        .ft-shape-03{
+            bottom: -30px;
+            right: 30px; 
+        }
+    }
+    &-about{
+        p{
+            max-width: 305px;
+            margin-bottom: 18px;
+            font-family: $gilroy-medium;
+        }
+    }
+    &-links{
+        a{
+            border: 1px solid #FF465E;
+            color: #FF465E;
+            border-radius: 50%;
+            height: 47px;
+            width: 47px;
+            line-height: 47px;
+            text-align: center;
+            margin-right: 14px;
+            display: inline-block;
+            transition: 0.3s all linear;
+            &:hover{
+                color: #ffffff;
+                background-color: #FF465E;
+            }
+        }
+    }
+    &-lists{
+        h4{
+            margin-bottom: 5px;
+        }
+        ul{
+            li{
+                a{
+                    font-family: $gilroy-medium;
+                    font-size: 16px;
+                    color: $secondary;
+                    margin-bottom: 12px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+// Copyright Area
+.copyright{
+    padding: 33px;
+    &-area{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        &-text{
+            p{
+                color: $primary;
+                font-family: $gilroy-bold;
+            }
+        }
+        &-top{
+            a{
+                color: $primary;
+                font-size: 16px;
+                font-family: $gilroy-bold;
+                i{
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+}
