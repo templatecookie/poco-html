@@ -1,5 +1,5 @@
 .price-area {
-
+    position: relative;
     .price-box {
         border: 2px solid #DDDDDD;
         padding: 50px 0;
@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        @include transition(.3s);
         .price-body {
             ul {
                 li {
@@ -53,6 +53,35 @@
                     border-color: $tertiary;
                 }
             }
+        }
+        &:hover{
+            .t-bg-primary{
+                color: white;
+                background: $tertiary;
+                border-color: $tertiary;
+            }
+            border-color: $tertiary;
+        }
+    }
+    .mask-group3 {
+        img {
+            position: absolute;
+            z-index: -99;
+        }
+
+        .mask9 {
+            top: 0;
+            left: 7%;
+        }
+
+        .mask6 {
+            top: 14%;
+            right: 4%;
+        }
+
+        .mask8 {
+            bottom: 12%;
+            left: 2%;
         }
     }
 }

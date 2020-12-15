@@ -14,10 +14,13 @@
         }
     }
     .banner-button{
+        display: flex;
+        align-items: center;
         margin-top: 40px;
         .t-btn{
             font-size: 20px;
             line-height: 42px;
+            padding: 8px 38px;
         }
         .play-icon{
             background: white;
@@ -25,11 +28,13 @@
             border: 1px solid #dddddd;
             width: 64px;
             height: 64px;
-            line-height: 64px;
             border-radius: 50%;
             text-align: center;
             margin-left: 30px;
             display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 

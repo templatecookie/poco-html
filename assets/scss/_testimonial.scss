@@ -1,0 +1,101 @@
+.testimonial-area {
+    padding-bottom: 220px;
+    background-color: rgba(255, 70, 94, 0.05);
+    border-radius: 24px;
+    position: relative;
+
+    .w-65 {
+        max-width: 65%;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    .testimonial-active {
+        .slick-current {
+            .testimonial-wrapper {
+                border-color: $tertiary;
+            }
+        }
+        .testimonial-wrapper {
+            padding: 20px;
+            border: 2px solid #dddddd;
+            border-radius: 5px;
+            @include transition(.3s);
+
+            .client-name {
+                span {
+                    color: $secondary;
+                    font-size: 16px;
+                    line-height: 30px;
+                    font-family: $gilroy-medium;
+                }
+            }
+
+            .reatting {
+                color: #FF8B17;
+                font-family: $gilroy-medium;
+            }
+
+            p {
+                font-family: $gilroy-medium;
+            }
+        }
+
+        .slick-arrow {
+            position: absolute;
+            right: 0px;
+            bottom: -100px;
+            background-color: $tertiary;
+            border: 1px solid transparent;
+            width: 56px;
+            height: 56px;
+            cursor: pointer;
+            border-radius: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: color(primary);
+                color: #fff;
+            }
+
+            &.prev-arrow {
+                right: 75px;
+            }
+        }
+    }
+
+    .mask-group2 {
+        img {
+            position: absolute;
+            z-index: -99;
+        }
+
+        .mask1 {
+            bottom: 0;
+            left: 0;
+        }
+
+        .mask2 {
+            top: 0;
+            right: 0;
+        }
+
+        .mask5 {
+            bottom: -10%;
+            left: 38%;
+        }
+
+        .mask6 {
+            top: 9.5%;
+            left: 4.5%;
+        }
+
+        .mask7 {
+            bottom: -7%;
+            right: 3%;
+        }
+    }
+}

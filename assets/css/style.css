@@ -120,7 +120,6 @@ a:focus,
 
 a:focus,
 a:hover {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -330,7 +329,6 @@ p {
 }
 
 .section-title h2 {
-  margin-bottom: 0 !important;
   font-family: "Gilroy-Bold";
 }
 
@@ -465,12 +463,19 @@ p {
 }
 
 .banner-area .banner-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 40px;
 }
 
 .banner-area .banner-button .t-btn {
   font-size: 20px;
   line-height: 42px;
+  padding: 8px 38px;
 }
 
 .banner-area .banner-button .play-icon {
@@ -479,11 +484,19 @@ p {
   border: 1px solid #dddddd;
   width: 64px;
   height: 64px;
-  line-height: 64px;
   border-radius: 50%;
   text-align: center;
   margin-left: 30px;
   display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner-area .banner-image {
@@ -592,6 +605,10 @@ p {
   font-family: "Gilroy-Medium";
 }
 
+.price-area {
+  position: relative;
+}
+
 .price-area .price-box {
   border: 2px solid #DDDDDD;
   padding: 50px 0;
@@ -606,6 +623,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 .price-area .price-box .price-body ul li {
@@ -650,6 +669,36 @@ p {
   color: white;
   background: #FF465E;
   border-color: #FF465E;
+}
+
+.price-area .price-box:hover {
+  border-color: #FF465E;
+}
+
+.price-area .price-box:hover .t-bg-primary {
+  color: white;
+  background: #FF465E;
+  border-color: #FF465E;
+}
+
+.price-area .mask-group3 img {
+  position: absolute;
+  z-index: -99;
+}
+
+.price-area .mask-group3 .mask9 {
+  top: 0;
+  left: 7%;
+}
+
+.price-area .mask-group3 .mask6 {
+  top: 14%;
+  right: 4%;
+}
+
+.price-area .mask-group3 .mask8 {
+  bottom: 12%;
+  left: 2%;
 }
 
 /*----------------------------------------*/
@@ -814,6 +863,108 @@ p {
 
 .callto-action-image {
   margin-right: -170px;
+}
+
+.testimonial-area {
+  padding-bottom: 220px;
+  background-color: rgba(255, 70, 94, 0.05);
+  border-radius: 24px;
+  position: relative;
+}
+
+.testimonial-area .w-65 {
+  max-width: 65%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.testimonial-area .testimonial-active .slick-current .testimonial-wrapper {
+  border-color: #FF465E;
+}
+
+.testimonial-area .testimonial-active .testimonial-wrapper {
+  padding: 20px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.testimonial-area .testimonial-active .testimonial-wrapper .client-name span {
+  color: #65729E;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Gilroy-Medium";
+}
+
+.testimonial-area .testimonial-active .testimonial-wrapper .reatting {
+  color: #FF8B17;
+  font-family: "Gilroy-Medium";
+}
+
+.testimonial-area .testimonial-active .testimonial-wrapper p {
+  font-family: "Gilroy-Medium";
+}
+
+.testimonial-area .testimonial-active .slick-arrow {
+  position: absolute;
+  right: 0px;
+  bottom: -100px;
+  background-color: #FF465E;
+  border: 1px solid transparent;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial-area .testimonial-active .slick-arrow:hover {
+  background-color: color(primary);
+  color: #fff;
+}
+
+.testimonial-area .testimonial-active .slick-arrow.prev-arrow {
+  right: 75px;
+}
+
+.testimonial-area .mask-group2 img {
+  position: absolute;
+  z-index: -99;
+}
+
+.testimonial-area .mask-group2 .mask1 {
+  bottom: 0;
+  left: 0;
+}
+
+.testimonial-area .mask-group2 .mask2 {
+  top: 0;
+  right: 0;
+}
+
+.testimonial-area .mask-group2 .mask5 {
+  bottom: -10%;
+  left: 38%;
+}
+
+.testimonial-area .mask-group2 .mask6 {
+  top: 9.5%;
+  left: 4.5%;
+}
+
+.testimonial-area .mask-group2 .mask7 {
+  bottom: -7%;
+  right: 3%;
 }
 
 .newsletter-area-text h2 {
