@@ -442,7 +442,7 @@ p {
 }
 
 /* Small devices 0 - 575 */
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   /* common area start */
 }
 
@@ -536,7 +536,6 @@ p {
 /*----------------------------------------*/
 /* laptop devices 1200 - 1600 */
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
-  /* common area start */
   h1 {
     font-size: 62px;
     line-height: 72px;
@@ -545,12 +544,10 @@ p {
 
 /* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* common area start */
   h1 {
     font-size: 42px;
     line-height: 52px;
   }
-  /* banner area start */
   .banner-area {
     margin: 0 25px;
     padding: 0 20px;
@@ -568,12 +565,10 @@ p {
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
   h1 {
     font-size: 48px;
     line-height: 62px;
   }
-  /* banner area start */
   .banner-area {
     margin: 0 18px;
     padding: 0 18px;
@@ -593,9 +588,8 @@ p {
   }
 }
 
-/* Small devices 0 - 576 */
-@media (max-width: 575px) {
-  /* common area start */
+/* Small devices 0 - 767 */
+@media (max-width: 767px) {
   h1 {
     font-size: 34px;
     line-height: 42px;
@@ -605,7 +599,6 @@ p {
     line-height: 38px !important;
     padding: 8px 38px !important;
   }
-  /* banner area start */
   .mask-group {
     display: none;
   }
@@ -896,7 +889,7 @@ p {
 }
 
 /* Small devices 0 - 575 */
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   /* common area start */
   /* sidebar extra info  area start*/
   /* header area start */
@@ -1072,6 +1065,35 @@ p {
   right: 3%;
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-area {
+    margin: 0 25px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-area {
+    margin: 0 18px;
+  }
+}
+
+/* Small devices 0 - 767 */
+@media (max-width: 767px) {
+  .testimonial-area {
+    margin: 0;
+  }
+  .mask-group2 {
+    display: none;
+  }
+}
+
+/* Small devices 576 - 767  */
 .newsletter-area {
   padding-bottom: 150px;
 }

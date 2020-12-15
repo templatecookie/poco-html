@@ -74,7 +74,6 @@
 
 /* laptop devices 1200 - 1600 */
 @media #{$laptop} {
-    /* common area start */
     h1 {
         font-size: 62px;
         line-height: 72px;
@@ -84,12 +83,10 @@
 
 /* large devices 992 - 1199*/
 @media #{$lg} {
-    /* common area start */
     h1 {
         font-size: 42px;
         line-height: 52px;
     }
-    /* banner area start */
     .banner-area{
         margin: 0 25px;
         padding: 0 20px;
@@ -108,12 +105,10 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
     h1 {
         font-size: 48px;
         line-height: 62px;
     }
-    /* banner area start */
     .banner-area {
         margin: 0 18px;
         padding: 0 18px;
@@ -133,9 +128,9 @@
     }
 }
 
-/* Small devices 0 - 576 */
+/* Small devices 0 - 767 */
 @media #{$xs} {
-    /* common area start */
+
     h1 {
         font-size: 34px;
         line-height: 42px;
@@ -145,7 +140,6 @@
         line-height: 38px !important;
         padding: 8px 38px !important;
     }
-    /* banner area start */
     .mask-group {
         display: none;
     }
