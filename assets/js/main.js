@@ -21,7 +21,7 @@
 				settings: {
 					centerMode: true,
 					centerPadding: '10px',
-					slidesToShow: 2,
+					slidesToShow: 1,
 				},
 			},
 		],
@@ -54,16 +54,9 @@
 		],
 	});
 	
-	//Popup Video
-	$(function() {
-		$('.popup-youtube').magnificPopup({
-			disableOn: 700,
-			type: 'iframe',
-			mainClass: 'mfp-fade',
-			removalDelay: 160,
-			preloader: false,
-			fixedContentPos: false
-		});
-	});
+/* magnificPopup video view */
+$('.popup-video').magnificPopup({
+	type: 'iframe'
+});
 
 })(jQuery);
