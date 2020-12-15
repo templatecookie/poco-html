@@ -11,14 +11,17 @@
         .ft-shape-01{
            top: -50px;
            left: 30px;
+           z-index: -1;
         }
         .ft-shape-02{
             top: -30px;
-            right: 30px; 
+            right: 30px;
+            z-index: -1; 
         }
         .ft-shape-03{
             bottom: -30px;
-            right: 30px; 
+            right: 30px;
+            z-index: -1; 
         }
     }
     &-about{
@@ -68,10 +71,6 @@
 .copyright{
     padding: 33px;
     &-area{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
         &-text{
             p{
                 color: $primary;

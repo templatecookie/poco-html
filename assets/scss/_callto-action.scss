@@ -13,13 +13,14 @@
         .first-mask {
             top: -50px;
             left: 56px;
-
+            z-index: -1;
         }
         .second-mask {
             bottom: -65px;
             right: 50%;
             left: 50%;
             transform: translateX(-100px);
+            z-index: -1;
         }
     }
 
