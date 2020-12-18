@@ -1,6 +1,30 @@
 .special-services{
     &-image{
         margin-bottom: 23px;
+        border-radius: 25px;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    &-image-bg-one{
+        background: rgba(117,91,255,0.15);
+    }
+    &-image-bg-two{
+        background: rgba(255,70,94,0.16);
+    }
+    &-image-bg-three{
+        background: rgba(255,70,94,0.16);
+    }
+    &-image-bg-four{
+        background: rgba(68,213,145,0.16);
+    }
+    &-image-bg-five{
+        background: rgba(247,134,255,0.16);
+    }
+    &-image-bg-six{
+        background: rgba(46,137,255,0.16);
     }
     &-text{
         h5{
