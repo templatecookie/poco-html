@@ -66,4 +66,37 @@
 		});
 	});
 
+	function toggleSidebar(){
+		$('header aside').toggleClass('active');
+		$('.hamburger-menu').toggleClass('open');
+
+		var sidebarOpen = $('header aside').hasClass('active');
+		if(sidebarOpen){
+			disableScrolling();
+		}else{
+			enableScrolling();
+		}
+	}
+
+	$('.hamburger-menu').on('click', function(){
+		toggleSidebar();
+	});
+	$('.close-sidebar').on('click', function(){
+		toggleSidebar();
+	});
+
+	$('aside .overlay').on('click', function(){
+		toggleSidebar();
+	});
 })(jQuery);
+
+// disalbe scrolling
+function disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+// enable scrolling
+function enableScrolling(){
+    window.onscroll=function(){};
+}
