@@ -528,7 +528,7 @@ aside, .hamburger-menu {
 }
 
 /* Small devices 0 - 575 */
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   /* common area start */
 }
 
@@ -616,6 +616,102 @@ aside, .hamburger-menu {
   z-index: -99;
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  h1 {
+    font-size: 62px;
+    line-height: 72px;
+  }
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .banner-area {
+    margin: 0 25px;
+    padding: 0 20px;
+  }
+  .banner-area .banner-wrapper p {
+    font-size: 18px;
+    line-height: 27px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .banner-area .banner-button {
+    margin-top: 20px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .banner-area {
+    margin: 0 18px;
+    padding: 0 18px;
+  }
+  .banner-area .banner-image {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .banner-area .banner-wrapper p {
+    line-height: 34px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .banner-area .banner-button {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Small devices 0 - 767 */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .t-btn {
+    font-size: 16px !important;
+    line-height: 38px !important;
+    padding: 8px 38px !important;
+  }
+  .mask-group {
+    display: none;
+  }
+  .banner-area {
+    margin: 0;
+    padding: 0;
+  }
+  .banner-area .banner-image {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .banner-area .banner-wrapper p {
+    font-size: 16px;
+    line-height: 27px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .banner-area .banner-button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+}
+
 .brand-area .brand-slider-active .slick-track {
   display: flex;
   align-items: center;
@@ -674,6 +770,36 @@ aside, .hamburger-menu {
 
 .special-services-image {
   margin-bottom: 23px;
+  border-radius: 25px;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.special-services-image-bg-one {
+  background: rgba(117, 91, 255, 0.15);
+}
+
+.special-services-image-bg-two {
+  background: rgba(255, 70, 94, 0.16);
+}
+
+.special-services-image-bg-three {
+  background: rgba(255, 70, 94, 0.16);
+}
+
+.special-services-image-bg-four {
+  background: rgba(68, 213, 145, 0.16);
+}
+
+.special-services-image-bg-five {
+  background: rgba(247, 134, 255, 0.16);
+}
+
+.special-services-image-bg-six {
+  background: rgba(46, 137, 255, 0.16);
 }
 
 .special-services-text h5 {
@@ -693,7 +819,7 @@ aside, .hamburger-menu {
 .price-area .price-box {
   border: 2px solid #DDDDDD;
   padding: 50px 0;
-  border-radius: 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -866,7 +992,7 @@ aside, .hamburger-menu {
 }
 
 /* Small devices 0 - 575 */
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   /* common area start */
   /* sidebar extra info  area start*/
   /* header area start */
@@ -890,7 +1016,7 @@ aside, .hamburger-menu {
 .callto-action {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
-  padding: 30px 140px 0px 0px;
+  margin-top: 90px;
   border-radius: 24px;
   position: relative;
 }
@@ -940,6 +1066,7 @@ aside, .hamburger-menu {
 .testimonial-area {
   padding-bottom: 220px;
   background-color: rgba(255, 70, 94, 0.05);
+  margin: 0 45px;
   border-radius: 24px;
   position: relative;
 }
@@ -1032,6 +1159,35 @@ aside, .hamburger-menu {
   right: 3%;
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-area {
+    margin: 0 25px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-area {
+    margin: 0 18px;
+  }
+}
+
+/* Small devices 0 - 767 */
+@media (max-width: 767px) {
+  .testimonial-area {
+    margin: 0;
+  }
+  .mask-group2 {
+    display: none;
+  }
+}
+
+/* Small devices 576 - 767  */
 .newsletter-area {
   padding-bottom: 150px;
 }

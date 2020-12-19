@@ -21,7 +21,7 @@
 				settings: {
 					centerMode: true,
 					centerPadding: '10px',
-					slidesToShow: 2,
+					slidesToShow: 1,
 				},
 			},
 		],
@@ -42,7 +42,7 @@
 			{
 				breakpoint: 1024,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 2,
 				},
 			},
 			{
@@ -54,17 +54,10 @@
 		],
 	});
 	
-	//Popup Video
-	$(function() {
-		$('.popup-youtube').magnificPopup({
-			disableOn: 700,
-			type: 'iframe',
-			mainClass: 'mfp-fade',
-			removalDelay: 160,
-			preloader: false,
-			fixedContentPos: false
-		});
-	});
+/* magnificPopup video view */
+$('.popup-video').magnificPopup({
+	type: 'iframe'
+});
 
 	function toggleSidebar(){
 		$('header aside').toggleClass('active');

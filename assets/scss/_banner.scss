@@ -37,10 +37,6 @@
             align-items: center;
         }
     }
-
-
-
-
     .banner-image{
         padding-top: 90px;
     }
@@ -69,4 +65,106 @@
             z-index: -99;
         }
     }
+}
+
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+    h1 {
+        font-size: 62px;
+        line-height: 72px;
+    }
+
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .banner-area{
+        margin: 0 25px;
+        padding: 0 20px;
+    }
+    .banner-area .banner-wrapper p {
+        font-size: 18px;
+        line-height: 27px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .banner-area .banner-button {
+        margin-top: 20px;
+    }
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    h1 {
+        font-size: 48px;
+        line-height: 62px;
+    }
+    .banner-area {
+        margin: 0 18px;
+        padding: 0 18px;
+    }
+    .banner-area .banner-image {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .banner-area .banner-wrapper p {
+        line-height: 34px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .banner-area .banner-button {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Small devices 0 - 767 */
+@media #{$xs} {
+
+    h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .t-btn {
+        font-size: 16px !important;
+        line-height: 38px !important;
+        padding: 8px 38px !important;
+    }
+    .mask-group {
+        display: none;
+    }
+    .banner-area {
+        margin: 0;
+        padding: 0;
+    }
+    .banner-area .banner-image {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .banner-area .banner-wrapper p {
+        font-size: 16px;
+        line-height: 27px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .banner-area .banner-button {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
 }
