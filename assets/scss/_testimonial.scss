@@ -120,11 +120,15 @@
     .testimonial-area{
         margin: 0 25px;
     }
+    .testimonial-area .w-65 {
+        max-width: 70%;}
 
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
+    .testimonial-area .w-65 {
+    max-width: 100%;}
     .testimonial-area{
         margin: 0 18px;
     }

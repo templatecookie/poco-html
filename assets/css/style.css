@@ -85,29 +85,6 @@ body {
   overflow-x: hidden;
 }
 
-a,
-.btn,
-button,
-span,
-p,
-input,
-select,
-textarea,
-li,
-img,
-*::after,
-*::before,
-.transition-3,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-
 *:focus {
   color: inherit;
   outline: inherit;
@@ -565,13 +542,18 @@ aside, .hamburger-menu {
   /* common area start */
 }
 
-/* Small devices 576 - 767 */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* common area start */
+/* Small devices 0 - 767 */
+@media (max-width: 767px) {
+  .t-btn {
+    padding: 15px 30px;
+  }
+  .header-area {
+    padding: 20px 0px;
+  }
 }
 
-/* Small devices 0 - 575 */
-@media (max-width: 767px) {
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   /* common area start */
 }
 
@@ -736,6 +718,7 @@ aside, .hamburger-menu {
   .banner-area {
     margin: 0;
     padding: 0;
+    border-radius: 0;
   }
   .banner-area .banner-image {
     padding-top: 50px;
@@ -816,6 +799,50 @@ aside, .hamburger-menu {
 .about-info-project .project-information p {
   margin-bottom: 0;
   font-family: "Gilroy-Medium";
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+  }
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+  }
 }
 
 .special-services-image {
@@ -977,13 +1004,13 @@ aside, .hamburger-menu {
   /* common area start */
 }
 
-/* Small devices 576 - 767 */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
   /* common area start */
 }
 
-/* Small devices 0 - 575 */
-@media (max-width: 767px) {
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   /* common area start */
 }
 
@@ -1028,6 +1055,69 @@ aside, .hamburger-menu {
 
 .callto-action-image {
   margin-right: -170px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+  .callto-action-image {
+    margin-right: 0px;
+  }
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+  .callto-action {
+    margin: 0 25px;
+    margin-top: 0;
+  }
+  .callto-action-image {
+    margin-right: 0px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+  .callto-action {
+    margin: 0 25px;
+    margin-top: 0;
+  }
+  .callto-action-image {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+  .callto-action-text {
+    padding-bottom: 50px;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  /* common area start */
+  .callto-action-image {
+    margin-right: 0px;
+  }
+  .callto-action {
+    margin: 0 25px;
+    margin-top: 0;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+  .callto-action-image {
+    margin-right: 0px;
+  }
+  .callto-action {
+    margin: 0 25px;
+    margin-top: 0;
+  }
 }
 
 .testimonial-area {
@@ -1146,10 +1236,16 @@ aside, .hamburger-menu {
   .testimonial-area {
     margin: 0 25px;
   }
+  .testimonial-area .w-65 {
+    max-width: 70%;
+  }
 }
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-area .w-65 {
+    max-width: 100%;
+  }
   .testimonial-area {
     margin: 0 18px;
   }
@@ -1200,6 +1296,38 @@ aside, .hamburger-menu {
 
 .newsletter-area-form form .t-btn i {
   margin-left: 8px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .newsletter-area-form {
+    margin-top: 50px;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  .newsletter-area-form {
+    margin-top: 50px;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
 }
 
 .footer-area {
@@ -1286,5 +1414,52 @@ aside, .hamburger-menu {
 
 .copyright-area-top a i {
   margin-left: 3px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  /* common area start */
+  .footer-area {
+    margin: 0px;
+    padding: 100px 0px;
+    border-radius: 0;
+  }
+  .footer-area-shape {
+    display: none;
+  }
+  .copyright-area-text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .copyright-area-logo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .copyright-area-top {
+    text-align: center;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
 }
 /*# sourceMappingURL=style.css.map */

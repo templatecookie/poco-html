@@ -19,12 +19,13 @@
     /* common area start */
 }
 
+/* Small devices 0 - 768 */
+@media #{$xs} {
+    /* common area start */
+}
+
 /* Small devices 576 - 767 */
 @media #{$sm} {
     /* common area start */
 }
 
-/* Small devices 0 - 575 */
-@media #{$xs} {
-    /* common area start */
-}

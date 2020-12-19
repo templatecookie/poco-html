@@ -208,15 +208,21 @@ aside, .hamburger-menu {
   /* common area start */
 }
 
+/* Small devices 0 - 767 */
+@media #{$xs} {
+  .t-btn{
+    padding: 15px 30px;
+  }
+  .header-area {
+    padding: 20px 0px;
+}
+}
+
 /* Small devices 576 - 767 */
 @media #{$sm} {
   /* common area start */
 }
 
-/* Small devices 0 - 575 */
-@media #{$xs} {
-  /* common area start */
-}
 
 
 @media(max-width: 1200px){

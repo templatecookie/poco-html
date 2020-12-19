@@ -45,3 +45,54 @@
     }
 }
 // About-Info Ends Here
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+    /* common area start */
+    .about-info-image {
+        margin-left: 0px;
+    }
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    /* common area start */
+
+    .about-info-image {
+        margin-left: 0px;
+    }
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+    .about-info-image {
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+/* Small devices 0 - 768 */
+@media #{$xs} {
+    /* common area start */
+    .about-info-image {
+        margin-left: 0px;
+    }
+    
+}
+
+/* Small devices 576 - 767 */
+@media #{$sm} {
+    /* common area start */
+    .about-info-image {
+        margin-left: 0px;
+    }
+    
+}
+

@@ -12,28 +12,6 @@ body {
 	overflow-x: hidden;
 }
 
-a,
-.btn,
-button,
-span,
-p,
-input,
-select,
-textarea,
-li,
-img,
-*::after,
-*::before,
-.transition-3,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	@include transition(.3s);
-}
-
 *:focus{
 	color: inherit;
 	outline:inherit;
