@@ -1440,6 +1440,27 @@ aside, .hamburger-menu {
   /* common area start */
 }
 
+.brands-area {
+  padding: 60px 0px;
+  border-radius: 10px;
+}
+
+.brands-area ul li {
+  text-align: center;
+}
+
+.brands-area ul li img {
+  width: 120px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.brands-area ul li img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
 .footer-area {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;

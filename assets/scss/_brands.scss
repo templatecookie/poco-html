@@ -1,0 +1,39 @@
+.brands{
+    &-area{
+        padding: 60px 0px;
+        border-radius: 10px;
+        ul{
+            li{
+                text-align: center;
+                img{
+                    width: 120px;
+                    filter: grayscale(100%);
+                    cursor: pointer;
+                    &:hover{
+                        filter: grayscale(0);
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
+// Responsive---------------------------
+// @media screen and (max-width: 768px) {
+//     .brands{
+//         &-area{
+//             ul{
+//                 flex-direction: column;
+//                 li{
+//                     img{
+//                         width: 110px;
+//                         margin-bottom: 30px;
+//                     }
+//                 }
+    
+//             }
+            
+//         }
+//     }
+//   }
