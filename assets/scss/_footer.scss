@@ -89,7 +89,71 @@
         }
     }
 }
-/*----------------------------------------*/
+
+// HomePage-02
+.dark-footer{
+    padding-top: 110px;
+    background-color: #29303E;
+    border-top-right-radius: 166px;
+    .footer-area{
+    background-color: transparent;
+    margin: 0px; 
+    padding: 0px;
+    border-radius: 0px;
+    &-about{
+        p{
+            margin-top: 25px;
+            color: #C6C6C6;
+        }
+    }
+    &-lists{
+        h4{
+            color: #FFFFFF;
+        }
+        ul li a{
+            color: #C6C6C6;
+        }
+    }
+    }
+    .copyright{
+        &-area-text{
+            p{
+                color: #FFFFFF;
+            } 
+        }
+        &-area-top{
+            a{
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 

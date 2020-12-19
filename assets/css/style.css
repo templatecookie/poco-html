@@ -1352,6 +1352,40 @@ aside, .hamburger-menu {
   margin-left: 3px;
 }
 
+.dark-footer {
+  padding-top: 110px;
+  background-color: #29303E;
+  border-top-right-radius: 166px;
+}
+
+.dark-footer .footer-area {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.dark-footer .footer-area-about p {
+  margin-top: 25px;
+  color: #C6C6C6;
+}
+
+.dark-footer .footer-area-lists h4 {
+  color: #FFFFFF;
+}
+
+.dark-footer .footer-area-lists ul li a {
+  color: #C6C6C6;
+}
+
+.dark-footer .copyright-area-text p {
+  color: #FFFFFF;
+}
+
+.dark-footer .copyright-area-top a {
+  color: #FFFFFF;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
