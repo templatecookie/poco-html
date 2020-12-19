@@ -58,13 +58,16 @@
             align-items: center;
 
             &:hover {
-                background-color: color(primary);
-                color: #fff;
+                background-color: transparent;
+                border-color: #dddddd;
             }
 
             &.prev-arrow {
                 right: 75px;
             }
+            .logo-img path {
+                fill: #000;
+              }
         }
     }
 

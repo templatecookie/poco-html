@@ -36,8 +36,8 @@
 		autoplay: true,
 		arrows: true,
 		autoplaySpeed: 2000,
-		prevArrow: '<div class="prev-arrow"><img class="img-fluid" src="assets/img/icon/f.svg" alt="icon"></div>',
-		nextArrow: '<div class="next-arrow"><img class="img-fluid" src="assets/img/icon/right.svg" alt="icon"></div>',
+		prevArrow: '<div class="prev-arrow"><img class="img-fluid logo-img" src="assets/img/icon/f.svg" alt="icon"></div>',
+		nextArrow: '<div class="next-arrow"><img class="img-fluid logo-img" src="assets/img/icon/right.svg" alt="icon"></div>',
 		responsive: [
 			{
 				breakpoint: 1024,
