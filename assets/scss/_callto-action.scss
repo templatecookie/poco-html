@@ -94,10 +94,18 @@
     /* common area start */
     .callto-action-image {
         margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .callto-action-text{
+        margin-bottom: 50px;
     }
     .callto-action{
-        margin: 0 25px;
+        margin: 0px;
         margin-top: 0;
+        border-radius: 0;
+    }
+    .callto-action-mask{
+        display: none;
     }
 }
 

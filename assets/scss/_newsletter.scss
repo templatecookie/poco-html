@@ -65,6 +65,9 @@
 
 /* Small devices 0 - 768 */
 @media #{$xs} {
+    .newsletter-area {
+        padding: 100px 0;
+    }
     .newsletter-area-form{
         margin-top: 50px;
     }
