@@ -58,15 +58,15 @@
             align-items: center;
 
             &:hover {
-                background-color: transparent;
-                border-color: #dddddd;
+                // background-color: transparent;
+                // border-color: #dddddd;
             }
 
             &.prev-arrow {
                 right: 75px;
             }
             .logo-img path {
-                fill: #000;
+                // fill: #000;
               }
         }
     }
@@ -136,8 +136,21 @@
 
 /* Small devices 0 - 767 */
 @media #{$xs} {
+    .testimonial-area {
+        padding-top: 100px;
+        padding-bottom: 160px;}
+    .testimonial-area .w-65 {
+        max-width: 100%;}
     .testimonial-area{
         margin: 0;
+    }
+    .slick-arrow {
+        bottom: -70px !important;
+        width: 42px !important;
+        height: 42px !important;
+        &.prev-arrow {
+            right: 55px !important;
+        }
     }
     .mask-group2 {
         display: none;

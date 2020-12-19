@@ -81,8 +81,32 @@
 /* Small devices 0 - 768 */
 @media #{$xs} {
     /* common area start */
+    h2{
+        font-size: 28px;
+    line-height: 40px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 48px;
+    }
+    .about-info {
+        padding: 100px 0;
+    }
+    .about-info-project .project-rating h3{
+        font-size: 28px;
+        line-height: 48px;
+
+    }
+    .about-info-project .project-information h3 {
+        font-size: 28px;
+        line-height: 48px;
+    }
     .about-info-image {
         margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .about-info-text h2{
+        margin-bottom: 30px;
     }
     
 }
@@ -92,6 +116,7 @@
     /* common area start */
     .about-info-image {
         margin-left: 0px;
+        margin-bottom: 50px;
     }
     
 }
