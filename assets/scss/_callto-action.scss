@@ -15,6 +15,7 @@
             left: 56px;
             z-index: -1;
         }
+
         .second-mask {
             bottom: -65px;
             right: 50%;
@@ -36,17 +37,79 @@
             font-family: $gilroy-medium;
             margin-bottom: 20px;
         }
-
-        .t-btn {
-            padding: 17px 42px;
-            color: #ffffff;
-            font-family: $gilroy-bold;
-            font-size: 16px;
-            box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
-        }
     }
 
     &-image {
         margin-right: -170px;
+    }
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+
+    /* common area start */
+    .callto-action-image {
+        margin-right: 0px;
+    }
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+
+    /* common area start */
+    .callto-action{
+        margin: 0 25px;
+        margin-top: 0;
+    }
+    .callto-action-image {
+        margin-right: 0px;
+    }
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+
+    /* common area start */
+    .callto-action{
+        margin: 0 25px;
+        margin-top: 0;
+    }
+    .callto-action-image {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .callto-action-text{
+        padding-bottom: 50px;
+    }
+}
+
+/* Small devices 0 - 768 */
+@media #{$xs} {
+
+    /* common area start */
+    .callto-action-image {
+        margin-right: 0px;
+    }
+    .callto-action{
+        margin: 0 25px;
+        margin-top: 0;
+    }
+}
+
+/* Small devices 576 - 767 */
+@media #{$sm} {
+
+    /* common area start */
+    .callto-action-image {
+        margin-right: 0px;
+    }
+    .callto-action{
+        margin: 0 25px;
+        margin-top: 0;
     }
 }

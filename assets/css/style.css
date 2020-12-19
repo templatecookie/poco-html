@@ -81,28 +81,7 @@ body {
   font-size: 16px;
   line-height: 27px;
   font-family: "Gilroy-Regular";
-}
-
-a,
-.btn,
-button,
-span,
-p,
-input,
-select,
-textarea,
-li,
-img,
-*::after,
-*::before,
-.transition-3,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  transition: all 0.3s ease-out 0s;
+  overflow-x: hidden;
 }
 
 *:focus {
@@ -247,9 +226,9 @@ p {
   white-space: nowrap;
   vertical-align: middle;
   border: 1px solid transparent;
-  padding: 6px 38px;
-  font-size: 16px;
-  border-radius: 30px;
+  padding: 20px 40px;
+  line-height: 1;
+  border-radius: 50px;
   font-family: "Gilroy-Bold";
 }
 
@@ -346,7 +325,7 @@ p {
 
 .header-area .right-content .search-bar {
   cursor: pointer;
-  border: 1px solid #FFDEE4;
+  border: 1px solid #ffdee4;
   width: 64px;
   height: 64px;
   line-height: 64px;
@@ -356,11 +335,129 @@ p {
 }
 
 .header-area .right-content .contact-number .t-btn {
-  padding: 10px 38px;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 42px;
-  border-radius: 50px;
+}
+
+.header-area .menu-icon {
+  font-size: 25px;
+}
+
+aside {
+  width: 100%;
+  visibility: hidden;
+}
+
+aside.active {
+  visibility: visible;
+}
+
+aside.active .sidebar-menu {
+  transition: all .3s ease-in-out;
+  transform: translateX(0%);
+}
+
+aside .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.439);
+  width: 100%;
+  height: 100vh;
+}
+
+aside .sidebar-menu {
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  transition: all .3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.sidebar-menu {
+  background-color: #f1f9ff;
+  padding: 20px 30px 50px;
+  box-sizing: border-box;
+}
+
+.sidebar-menu .logo {
+  margin-bottom: 20px;
+}
+
+.sidebar-menu ul.main-menu {
+  padding: 0;
+  margin-top: 50px;
+}
+
+.sidebar-menu ul.main-menu li {
+  padding-right: 0;
+}
+
+.sidebar-menu ul.main-menu li a {
+  width: 100%;
+}
+
+.sidebar-menu ul.main-menu li a.active::before {
+  top: 0;
+}
+
+.sidebar-menu .contact-btn {
+  margin-top: 20px;
+}
+
+aside, .hamburger-menu {
+  display: none;
+}
+
+.hamburger-menu, .close-sidebar {
+  position: relative;
+  width: 25px;
+  height: 20px;
+  margin: 15px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.hamburger-menu span, .close-sidebar span {
+  opacity: 1;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  color: black;
+  background-color: #000560;
+  position: absolute;
+  transform: rotate(0deg);
+  transition: .4s ease-in-out;
+}
+
+.hamburger-menu span:nth-child(1), .close-sidebar span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-menu span:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger-menu span:nth-child(3), .close-sidebar span:nth-child(2) {
+  top: 18px;
+}
+
+.hamburger-menu.open span:nth-child(1), .close-sidebar span:nth-child(1) {
+  transform: translateY(9px) rotate(135deg);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(160px);
+}
+
+.hamburger-menu.open span:nth-child(3), .close-sidebar span:nth-child(2) {
+  transform: translateY(-9px) rotate(-135deg);
 }
 
 /*----------------------------------------*/
@@ -399,14 +496,28 @@ p {
   /* common area start */
 }
 
+/* Small devices 0 - 767 */
+@media (max-width: 767px) {
+  .t-btn {
+    padding: 15px 30px;
+  }
+  .header-area {
+    padding: 20px 0px;
+  }
+}
+
 /* Small devices 576 - 767 */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* common area start */
 }
 
-/* Small devices 0 - 575 */
-@media (max-width: 767px) {
-  /* common area start */
+@media (max-width: 1200px) {
+  aside, .hamburger-menu {
+    display: block;
+  }
+  .menu-area .main-menu, .menu-area .right-content {
+    display: none !important;
+  }
 }
 
 .banner-area {
@@ -433,8 +544,6 @@ p {
 
 .banner-area .banner-button .t-btn {
   font-size: 20px;
-  line-height: 42px;
-  padding: 8px 38px;
 }
 
 .banner-area .banner-button .play-icon {
@@ -547,17 +656,13 @@ p {
     font-size: 34px;
     line-height: 42px;
   }
-  .t-btn {
-    font-size: 16px !important;
-    line-height: 38px !important;
-    padding: 8px 38px !important;
-  }
   .mask-group {
     display: none;
   }
   .banner-area {
     margin: 0;
     padding: 0;
+    border-radius: 0;
   }
   .banner-area .banner-image {
     padding-top: 50px;
@@ -634,6 +739,50 @@ p {
 .about-info-project .project-information p {
   margin-bottom: 0;
   font-family: "Gilroy-Medium";
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+  }
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+  .about-info-image {
+    margin-left: 0px;
+  }
 }
 
 .special-services-image {
@@ -724,10 +873,6 @@ p {
 
 .price-area .price-box .price-link .t-btn {
   color: #FF465E;
-  padding: 16px 37px;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Gilroy-Bold";
   background: transparent;
   border: 2px solid;
 }
@@ -774,111 +919,26 @@ p {
 /* laptop devices 1200 - 1600 */
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   /* common area start */
-  /* sidebar extra info  area start*/
-  /* header area start */
-  /* slider area start */
-  /* about area start */
-  /* features area start */
-  /* services area start */
-  /* counter area start */
-  /* sychologist area start */
-  /* appointment area start */
-  /* case area start */
-  /* why area start */
-  /* faq area start */
-  /* testimonial area start */
-  /* team area start */
-  /* blog area start */
-  /* event area start */
-  /* award slider area start */
 }
 
 /* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* common area start */
-  /* sidebar extra info  area start*/
-  /* header area start */
-  /* slider area start */
-  /* about area start */
-  /* features area start */
-  /* services area start */
-  /* counter area start */
-  /* sychologist area start */
-  /* appointment area start */
-  /* case area start */
-  /* why area start */
-  /* faq area start */
-  /* testimonial area start */
-  /* team area start */
-  /* blog area start */
-  /* event area start */
-  /* award slider area start */
 }
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* common area start */
-  /* sidebar extra info  area start*/
-  /* header area start */
-  /* slider area start */
-  /* about area start */
-  /* features area start */
-  /* services area start */
-  /* counter area start */
-  /* sychologist area start */
-  /* appointment area start */
-  /* case area start */
-  /* why area start */
-  /* faq area start */
-  /* testimonial area start */
-  /* team area start */
-  /* blog area start */
-  /* event area start */
-  /* award slider area start */
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  /* common area start */
 }
 
 /* Small devices 576 - 767 */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* common area start */
-  /* sidebar extra info  area start*/
-  /* header area start */
-  /* slider area start */
-  /* about area start */
-  /* features area start */
-  /* services area start */
-  /* counter area start */
-  /* sychologist area start */
-  /* appointment area start */
-  /* case area start */
-  /* why area start */
-  /* faq area start */
-  /* testimonial area start */
-  /* team area start */
-  /* blog area start */
-  /* event area start */
-  /* award slider area start */
-}
-
-/* Small devices 0 - 575 */
-@media (max-width: 767px) {
-  /* common area start */
-  /* sidebar extra info  area start*/
-  /* header area start */
-  /* slider area start */
-  /* about area start */
-  /* features area start */
-  /* services area start */
-  /* counter area start */
-  /* sychologist area start */
-  /* appointment area start */
-  /* case area start */
-  /* why area start */
-  /* faq area start */
-  /* testimonial area start */
-  /* team area start */
-  /* blog area start */
-  /* event area start */
-  /* award slider area start */
 }
 
 .callto-action {
@@ -919,16 +979,71 @@ p {
   margin-bottom: 20px;
 }
 
-.callto-action-text .t-btn {
-  padding: 17px 42px;
-  color: #ffffff;
-  font-family: "Gilroy-Bold";
-  font-size: 16px;
-  box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
-}
-
 .callto-action-image {
   margin-right: -170px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+  .callto-action-image {
+    margin-right: 0px;
+  }
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+  .callto-action {
+    margin: 0 25px;
+    margin-top: 0;
+  }
+  .callto-action-image {
+    margin-right: 0px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+  .callto-action {
+    margin: 0 25px;
+    margin-top: 0;
+  }
+  .callto-action-image {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+  .callto-action-text {
+    padding-bottom: 50px;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  /* common area start */
+  .callto-action-image {
+    margin-right: 0px;
+  }
+  .callto-action {
+    margin: 0 25px;
+    margin-top: 0;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+  .callto-action-image {
+    margin-right: 0px;
+  }
+  .callto-action {
+    margin: 0 25px;
+    margin-top: 0;
+  }
 }
 
 .testimonial-area {
@@ -989,12 +1104,16 @@ p {
 }
 
 .testimonial-area .testimonial-active .slick-arrow:hover {
-  background-color: color(primary);
-  color: #fff;
+  background-color: transparent;
+  border-color: #dddddd;
 }
 
 .testimonial-area .testimonial-active .slick-arrow.prev-arrow {
   right: 75px;
+}
+
+.testimonial-area .testimonial-active .slick-arrow .logo-img path {
+  fill: #000;
 }
 
 .testimonial-area .mask-group2 img {
@@ -1036,10 +1155,16 @@ p {
   .testimonial-area {
     margin: 0 25px;
   }
+  .testimonial-area .w-65 {
+    max-width: 70%;
+  }
 }
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-area .w-65 {
+    max-width: 100%;
+  }
   .testimonial-area {
     margin: 0 18px;
   }
@@ -1087,13 +1212,40 @@ p {
   box-shadow: none;
 }
 
-.newsletter-area-form form .t-btn {
-  padding: 17px 34px;
-  font-size: 16px;
-}
-
 .newsletter-area-form form .t-btn i {
   margin-left: 8px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .newsletter-area-form {
+    margin-top: 50px;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  .newsletter-area-form {
+    margin-top: 50px;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
 }
 
 .footer-area {
@@ -1179,6 +1331,53 @@ p {
 
 .copyright-area-top a i {
   margin-left: 3px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  /* common area start */
+  .footer-area {
+    margin: 0px;
+    padding: 100px 0px;
+    border-radius: 0;
+  }
+  .footer-area-shape {
+    display: none;
+  }
+  .copyright-area-text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .copyright-area-logo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .copyright-area-top {
+    text-align: center;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
 }
 
 .brands-area {

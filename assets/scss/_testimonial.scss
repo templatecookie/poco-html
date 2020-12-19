@@ -58,13 +58,16 @@
             align-items: center;
 
             &:hover {
-                background-color: color(primary);
-                color: #fff;
+                background-color: transparent;
+                border-color: #dddddd;
             }
 
             &.prev-arrow {
                 right: 75px;
             }
+            .logo-img path {
+                fill: #000;
+              }
         }
     }
 
@@ -117,11 +120,15 @@
     .testimonial-area{
         margin: 0 25px;
     }
+    .testimonial-area .w-65 {
+        max-width: 70%;}
 
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
+    .testimonial-area .w-65 {
+    max-width: 100%;}
     .testimonial-area{
         margin: 0 18px;
     }

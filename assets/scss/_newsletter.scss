@@ -32,12 +32,45 @@
             }
 
             .t-btn {
-                padding: 17px 34px;
-                font-size: 16px;
                 i {
                     margin-left: 8px;
                 }
             }
         }
     }
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+    /* common area start */
+
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    /* common area start */
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    .newsletter-area-form{
+        margin-top: 50px;
+    }
+}
+
+/* Small devices 0 - 768 */
+@media #{$xs} {
+    .newsletter-area-form{
+        margin-top: 50px;
+    }
+}
+
+/* Small devices 576 - 767 */
+@media #{$sm} {
+    /* common area start */
 }

@@ -19,8 +19,6 @@
         margin-top: 40px;
         .t-btn{
             font-size: 20px;
-            line-height: 42px;
-            padding: 8px 38px;
         }
         .play-icon{
             background: white;
@@ -90,6 +88,7 @@
     .banner-area{
         margin: 0 25px;
         padding: 0 20px;
+
     }
     .banner-area .banner-wrapper p {
         font-size: 18px;
@@ -135,17 +134,14 @@
         font-size: 34px;
         line-height: 42px;
     }
-    .t-btn {
-        font-size: 16px !important;
-        line-height: 38px !important;
-        padding: 8px 38px !important;
-    }
+
     .mask-group {
         display: none;
     }
     .banner-area {
         margin: 0;
         padding: 0;
+        border-radius: 0;
     }
     .banner-area .banner-image {
         padding-top: 50px;

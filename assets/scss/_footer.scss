@@ -89,3 +89,53 @@
         }
     }
 }
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+    /* common area start */
+
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    /* common area start */
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 0 - 768 */
+@media #{$xs} {
+    /* common area start */
+    .footer-area{
+    margin: 0px;
+    padding: 100px 0px;
+    border-radius: 0;
+    }
+    .footer-area-shape {
+        display: none;
+    }
+    .copyright-area-text{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .copyright-area-logo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .copyright-area-top{
+        text-align: center;
+    }
+}
+
+/* Small devices 576 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
