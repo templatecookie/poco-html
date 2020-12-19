@@ -1398,4 +1398,45 @@ aside, .hamburger-menu {
 .brands-area ul li img:hover {
   filter: grayscale(0);
 }
+
+.services-introduction-item-image {
+  background: rgba(255, 70, 94, 0.16);
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.services-introduction-item p {
+  max-width: 142px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  line-height: 22px;
+}
+
+.services-introduction-text .section-heading h2 {
+  margin-bottom: 45px;
+  max-width: 592px;
+  line-height: 64px;
+}
+
+.services-introduction-text .section-heading p {
+  max-width: 578px;
+  list-style: 30px;
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+}
+
+.services-introduction-text button {
+  margin-top: 50px;
+  transition: 0.3s;
+}
+
+.services-introduction-text .t-non-rounded-sm {
+  border-top-left-radius: 0px;
+  padding: 18px 42px;
+}
 /*# sourceMappingURL=style.css.map */

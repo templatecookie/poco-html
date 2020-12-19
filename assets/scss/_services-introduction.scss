@@ -1,0 +1,44 @@
+.services-introduction{
+    &-item{
+        &-image{
+            background: rgba(255,70,94,0.16);
+            height: 85px;
+            width: 85px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        p{
+            max-width: 142px;
+            color: $primary;
+            font-family: $gilroy-bold;
+            line-height: 22px;
+        }
+    }
+    
+    &-text{
+        .section-heading{
+            h2{
+                margin-bottom: 45px;
+                max-width: 592px;
+                line-height: 64px;
+            }
+            p{
+                max-width: 578px;
+                list-style: 30px;
+                font-family: $gilroy-medium;
+                font-size: 18px;
+            }
+        }
+        button{
+            margin-top: 50px;
+            transition: 0.3s;
+        }
+        .t-non-rounded-sm{
+            border-top-left-radius: 0px;
+            padding: 18px 42px;
+        }
+    }
+}
