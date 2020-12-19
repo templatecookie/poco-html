@@ -1180,4 +1180,31 @@ p {
 .copyright-area-top a i {
   margin-left: 3px;
 }
+
+.brands-area {
+  padding: 60px 0px;
+  border-radius: 10px;
+}
+
+.brands-area img {
+  width: 120px;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.brands-area img:hover {
+  filter: grayscale(0);
+}
+
+/* Small devices 0 - 767 */
+@media (max-width: 767px) {
+  .brands-area {
+    padding: 30px 0px;
+    border-radius: 10px;
+  }
+  .brands-area img {
+    width: 100px;
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
