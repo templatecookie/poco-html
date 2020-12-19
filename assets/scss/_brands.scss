@@ -2,26 +2,20 @@
     &-area{
         padding: 60px 0px;
         border-radius: 10px;
-        img{
-            width: 120px;
-            filter: grayscale(100%);
-            cursor: pointer;
-            &:hover{
-                filter: grayscale(0);
+        ul{
+            li{
+                text-align: center;
+                img{
+                    width: 120px;
+                    filter: grayscale(100%);
+                    cursor: pointer;
+                    &:hover{
+                        filter: grayscale(0);
+                    }
+                }
             }
+
         }
-    }
-}
-/* Small devices 0 - 767 */
-@media #{$xs} {
-    .brands{
-        &-area{
-            padding: 30px 0px;
-            border-radius: 10px;
-            img{
-                width: 100px;
-                margin-bottom: 30px;
-            }
-        }
+        
     }
 }
