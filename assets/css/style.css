@@ -694,6 +694,25 @@ aside, .hamburger-menu {
   margin: auto;
 }
 
+.brands-area {
+  padding: 60px 0px;
+  border-radius: 10px;
+}
+
+.brands-area ul li {
+  text-align: center;
+}
+
+.brands-area ul li img {
+  width: 120px;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.brands-area ul li img:hover {
+  filter: grayscale(0);
+}
+
 .about-info-image {
   margin-left: -110px;
 }
@@ -1378,25 +1397,6 @@ aside, .hamburger-menu {
 /* Small devices 576 - 767 */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* common area start */
-}
-
-.brands-area {
-  padding: 60px 0px;
-  border-radius: 10px;
-}
-
-.brands-area ul li {
-  text-align: center;
-}
-
-.brands-area ul li img {
-  width: 120px;
-  filter: grayscale(100%);
-  cursor: pointer;
-}
-
-.brands-area ul li img:hover {
-  filter: grayscale(0);
 }
 
 .services-introduction-item-image {
