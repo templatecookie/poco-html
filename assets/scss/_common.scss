@@ -196,6 +196,12 @@ p {
 	border-color: $primary;
 	&:hover{color: white}
 }
+.t-bg-white{
+	color: $tertiary;
+	background-color: white;
+	border-color: white;
+	&:hover{color: $tertiary}
+}
 
 .t-btn-outline {
 	border: 1px solid transparent;
@@ -218,4 +224,13 @@ p {
 	h2{
 		font-family: $gilroy-bold;
 	}
+}
+.top-left-border{
+	border-top-left-radius: 0;
+}
+.border-color{
+	border: 1px solid #29303E;
+}
+.text-white{
+	color: #fff;
 }

@@ -1,38 +1,44 @@
-.footer-area{
+.footer-area {
     background-color: rgba(255, 70, 94, 0.05);
     margin: 0 45px;
     padding: 130px 0px;
     border-radius: 24px;
     position: relative;
-    &-shape{
-        img{
+
+    &-shape {
+        img {
             position: absolute;
         }
-        .ft-shape-01{
-           top: -50px;
-           left: 30px;
-           z-index: -1;
+
+        .ft-shape-01 {
+            top: -50px;
+            left: 30px;
+            z-index: -1;
         }
-        .ft-shape-02{
+
+        .ft-shape-02 {
             top: -30px;
             right: 30px;
-            z-index: -1; 
+            z-index: -1;
         }
-        .ft-shape-03{
+
+        .ft-shape-03 {
             bottom: -30px;
             right: 30px;
-            z-index: -1; 
+            z-index: -1;
         }
     }
-    &-about{
-        p{
+
+    &-about {
+        p {
             max-width: 305px;
             margin-bottom: 18px;
             font-family: $gilroy-medium;
         }
     }
-    &-links{
-        a{
+
+    &-links {
+        a {
             border: 1px solid #FF465E;
             color: #FF465E;
             border-radius: 50%;
@@ -43,19 +49,22 @@
             margin-right: 14px;
             display: inline-block;
             transition: 0.3s all linear;
-            &:hover{
+
+            &:hover {
                 color: #ffffff;
                 background-color: #FF465E;
             }
         }
     }
-    &-lists{
-        h4{
+
+    &-lists {
+        h4 {
             margin-bottom: 5px;
         }
-        ul{
-            li{
-                a{
+
+        ul {
+            li {
+                a {
                     font-family: $gilroy-medium;
                     font-size: 16px;
                     color: $secondary;
@@ -68,27 +77,31 @@
 }
 
 // Copyright Area
-.copyright{
+.copyright {
     padding: 33px;
-    &-area{
-        &-text{
-            p{
+
+    &-area {
+        &-text {
+            p {
                 color: $primary;
                 font-family: $gilroy-bold;
             }
         }
-        &-top{
-            a{
+
+        &-top {
+            a {
                 color: $primary;
                 font-size: 16px;
                 font-family: $gilroy-bold;
-                i{
+
+                i {
                     margin-left: 3px;
                 }
             }
         }
     }
 }
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
@@ -112,32 +125,38 @@
 
 /* Small devices 0 - 768 */
 @media #{$xs} {
+
     /* common area start */
-    .footer-area{
-    margin: 0px;
-    padding: 100px 0px;
-    border-radius: 0;
+    .footer-area {
+        margin: 0px;
+        padding: 100px 0px;
+        border-radius: 0;
     }
+
     .footer-area-shape {
         display: none;
     }
-    .copyright-area-text{
+
+    .copyright-area-text {
         margin-bottom: 20px;
         text-align: center;
     }
-    .copyright-area-logo{
+
+    .copyright-area-logo {
         margin-bottom: 20px;
         text-align: center;
     }
-    .copyright-area-top{
+
+    .copyright-area-top {
         text-align: center;
     }
+
     .footer-area-lists ul li a {
-        margin-bottom: 5px;}
+        margin-bottom: 5px;
+    }
 }
 
 /* Small devices 576 - 767 */
 @media #{$sm} {
     /* common area start */
 }
-
