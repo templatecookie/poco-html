@@ -116,6 +116,33 @@
 
         }
     }
+    .small-feature{
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 30px;
+        &-percentage{
+            margin-bottom: 20px;
+            .image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 33px;
+                width: 33px;
+                background-color: #00ADA6;
+                border-radius: 50%;
+            }
+            h3{
+                margin-left: 10px;
+            }
+        }
+        &-text{
+            p{
+                font-size: 18px;
+                max-width: 150px;
+                text-align: center;
+            }
+        }
+    }
 }
 
 /*----------------------------------------*/
