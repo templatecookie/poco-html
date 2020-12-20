@@ -1254,6 +1254,14 @@ aside,
   margin-right: -170px;
 }
 
+.call-action-two {
+  background-color: #fff6f7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 166px;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
@@ -1567,14 +1575,9 @@ aside,
   font-size: 18px;
 }
 
-.services-introduction-text button {
+.services-introduction-text a {
   margin-top: 50px;
   transition: 0.3s;
-}
-
-.services-introduction-text .t-non-rounded-sm {
-  border-top-left-radius: 0px;
-  padding: 18px 42px;
 }
 
 .footer-area {
