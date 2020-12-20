@@ -17,6 +17,7 @@
                 border-color: $tertiary;
             }
         }
+
         .testimonial-wrapper {
             padding: 20px;
             border: 2px solid #dddddd;
@@ -65,9 +66,10 @@
             &.prev-arrow {
                 right: 75px;
             }
+
             .logo-img path {
                 // fill: #000;
-              }
+            }
         }
     }
 
@@ -104,32 +106,73 @@
     }
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+.testimonial02 {
+    .testimonial-wrapper {
+        padding: 40px !important;
+        border-radius: 42px !important;
+        border-bottom-right-radius: 0 !important;
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $gilroy-medium;
+        }
+
+    }
+
+    .testimonial-active {
+        &-wrapper {
+            .slick-arrow {
+                position: absolute;
+                right: 0px;
+                top: -100px;
+                background-color: $tertiary;
+                border: 1px solid transparent;
+                width: 56px;
+                height: 56px;
+                cursor: pointer;
+                border-radius: 30px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+    }
+
+}
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
 /* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-    
-
-}
+@media #{$laptop} {}
 
 /* large devices 992 - 1199*/
 @media #{$lg} {
-    .testimonial-area{
+    .testimonial-area {
         margin: 0 25px;
     }
+
     .testimonial-area .w-65 {
-        max-width: 70%;}
+        max-width: 70%;
+    }
 
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
     .testimonial-area .w-65 {
-    max-width: 100%;}
-    .testimonial-area{
+        max-width: 100%;
+    }
+
+    .testimonial-area {
         margin: 0 18px;
     }
 }
@@ -138,26 +181,31 @@
 @media #{$xs} {
     .testimonial-area {
         padding-top: 100px;
-        padding-bottom: 160px;}
+        padding-bottom: 160px;
+    }
+
     .testimonial-area .w-65 {
-        max-width: 100%;}
-    .testimonial-area{
+        max-width: 100%;
+    }
+
+    .testimonial-area {
         margin: 0;
     }
+
     .slick-arrow {
         bottom: -70px !important;
         width: 42px !important;
         height: 42px !important;
+
         &.prev-arrow {
             right: 55px !important;
         }
     }
+
     .mask-group2 {
         display: none;
     }
 }
 
 /* Small devices 576 - 767  */
-@media #{$sm} {
-    
-}
+@media #{$sm} {}

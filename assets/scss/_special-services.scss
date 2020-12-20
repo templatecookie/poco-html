@@ -38,6 +38,77 @@
     }
 }
 
+// HomePage-02
+.valuable-services{
+    background-color: rgba(255,246,247,1);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 166px;
+    &-item{
+        &-icon{
+            height: 50px;
+            width: 50px;
+            border-radius: 19px;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+        }
+        &-bg-one{
+            background-color: #7752BE;
+            -webkit-box-shadow: 0px 2px 5px 0px #7752BE;
+            box-shadow: 0px 2px 5px 0px #7752BE;
+        }
+        &-bg-two{
+            background-color: #FAB005 ;
+            -webkit-box-shadow: 0px 2px 5px 0px #FAB005; 
+            box-shadow: 0px 2px 5px 0px #FAB005;
+        }
+        &-bg-three{
+            background-color: #F03E3D;
+            -webkit-box-shadow: 0px 2px 5px 0px #F03E3D; 
+            box-shadow: 0px 2px 5px 0px #F03E3D;
+        }
+        &-bg-four{
+            background-color: #4DADF7;
+            -webkit-box-shadow: 0px 2px 5px 0px #4DADF7; 
+            box-shadow: 0px 2px 5px 0px #4DADF7;
+        }
+        &-bg-five{
+            background-color: #63BE52;
+            -webkit-box-shadow: 0px 2px 5px 0px #63BE52; 
+            box-shadow: 0px 2px 5px 0px #63BE52;
+        }
+        &-bg-six{
+            background-color: #2953FF;
+            -webkit-box-shadow: 0px 2px 5px 0px #2953FF; 
+            box-shadow: 0px 2px 5px 0px #2953FF;
+        }
+        &-bg-seven{
+            background-color: #DE3DF0;
+            -webkit-box-shadow: 0px 2px 5px 0px #DE3DF0; 
+            box-shadow: 0px 2px 5px 0px #DE3DF0;
+        }
+        &-bg-eight{
+            background-color: #4DF7EB;
+            -webkit-box-shadow: 0px 2px 5px 0px #4DF7EB; 
+            box-shadow: 0px 2px 5px 0px #4DF7EB;
+        }
+        &-text{
+            h6{
+                margin-bottom: 20px;
+            }
+            p{
+                font-family: $gilroy-medium;
+                max-width: 220px;
+            }
+        }
+    }
+}
+
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
