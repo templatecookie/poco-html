@@ -44,6 +44,33 @@
     }
 }
 
+// HomePage-02
+.call-action-two{
+    background-color: rgba(255,246,247,1);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 166px;
+}
+.customer-care{
+    position: relative;
+    &-text{
+        position: absolute;
+        top: -45px;
+        left: 55px;
+        background-color: #ffffff;
+        padding: 15px 25px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 26px;
+        border-bottom-left-radius: 0px;
+        p{
+            font-family: $gilroy-medium;
+            color: $primary;
+        }
+    }
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
