@@ -1262,6 +1262,27 @@ aside,
   border-top-left-radius: 166px;
 }
 
+.customer-care {
+  position: relative;
+}
+
+.customer-care-text {
+  position: absolute;
+  top: -45px;
+  left: 55px;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 26px;
+  border-bottom-left-radius: 0px;
+}
+
+.customer-care-text p {
+  font-family: "Gilroy-Medium";
+  color: #000560;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
