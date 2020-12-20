@@ -963,6 +963,74 @@ aside,
   font-family: "Gilroy-Medium";
 }
 
+.valuable-services {
+  background-color: #fff6f7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-right-radius: 166px;
+}
+
+.valuable-services-item-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 19px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.valuable-services-item-bg-one {
+  background-color: #7752BE;
+  box-shadow: 0px 2px 5px 0px #7752BE;
+}
+
+.valuable-services-item-bg-two {
+  background-color: #FAB005;
+  box-shadow: 0px 2px 5px 0px #FAB005;
+}
+
+.valuable-services-item-bg-three {
+  background-color: #F03E3D;
+  box-shadow: 0px 2px 5px 0px #F03E3D;
+}
+
+.valuable-services-item-bg-four {
+  background-color: #4DADF7;
+  box-shadow: 0px 2px 5px 0px #4DADF7;
+}
+
+.valuable-services-item-bg-five {
+  background-color: #63BE52;
+  box-shadow: 0px 2px 5px 0px #63BE52;
+}
+
+.valuable-services-item-bg-six {
+  background-color: #2953FF;
+  box-shadow: 0px 2px 5px 0px #2953FF;
+}
+
+.valuable-services-item-bg-seven {
+  background-color: #DE3DF0;
+  box-shadow: 0px 2px 5px 0px #DE3DF0;
+}
+
+.valuable-services-item-bg-eight {
+  background-color: #4DF7EB;
+  box-shadow: 0px 2px 5px 0px #4DF7EB;
+}
+
+.valuable-services-item-text h6 {
+  margin-bottom: 20px;
+}
+
+.valuable-services-item-text p {
+  font-family: "Gilroy-Medium";
+  max-width: 220px;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
