@@ -207,7 +207,37 @@ aside,
 
 }
 
+/*----------------------------------------*/
+/*  HOMPAGE 3 CSS
+/*----------------------------------------*/
+.header-area03 {
+  margin: 0;
+  padding: 20px 135px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  .main-menu {
+    li {
+      a {
+        color: white;
+        &.active {
+          color: white;
+        }
+        &.active::before {
 
+          color: white;
+          background-color: white;
+        }
+      }
+    }
+  }
+  .right-content {
+    .search-bar {
+      border: 0;
+      background-color: rgba(255, 255, 255, 0.34);
+    }
+  }
+}
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 

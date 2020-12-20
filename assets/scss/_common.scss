@@ -12,10 +12,11 @@ body {
 	overflow-x: hidden;
 }
 
-*:focus{
+*:focus {
 	color: inherit;
-	outline:inherit;
+	outline: inherit;
 }
+
 a:focus,
 .button:focus {
 	text-decoration: none;
@@ -162,7 +163,14 @@ p {
 .p-absolute {
 	position: absolute;
 }
-
+.t-orenge{
+	color: white;
+	background-color: #ED880A;
+	&:hover{
+		color: white;
+		box-shadow: rgba(255, 70, 94, 0.36);
+	}
+}
 /*--
 	- Button Style 
 -----------------------------------------*/
@@ -190,17 +198,25 @@ p {
 		box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
 	}
 }
-.t-bg-black{
-	color: #fff;
-	background-color: $primary;
-	border-color: $primary;
-	&:hover{color: white}
+
+.t-bg-black {
+	color: #000560;
+	background-color: white;
+	border-color: white;
+
+	&:hover {
+		color: #000560;
+	}
 }
-.t-bg-white{
+
+.t-bg-white {
 	color: $tertiary;
 	background-color: white;
 	border-color: white;
-	&:hover{color: $tertiary}
+
+	&:hover {
+		color: $tertiary
+	}
 }
 
 .t-btn-outline {
@@ -219,18 +235,22 @@ p {
 }
 
 // Section Title
-.section-title{
+.section-title {
 	margin-bottom: 60px;
-	h2{
+
+	h2 {
 		font-family: $gilroy-bold;
 	}
 }
-.top-left-border{
+
+.top-left-border {
 	border-top-left-radius: 0;
 }
-.border-color{
+
+.border-color {
 	border: 1px solid #29303E;
 }
-.text-white{
+
+.text-white {
 	color: #fff;
 }

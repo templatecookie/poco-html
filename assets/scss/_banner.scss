@@ -76,7 +76,7 @@
 }
 
 /*----------------------------------------*/
-/*  HOME PAGE BANNER CSS
+/*  HOME PAGE 02 BANNER CSS
 /*----------------------------------------*/
 .banner-area02 {
     background-color: #29303E;
@@ -119,7 +119,47 @@
         }
     }
 }
+/*----------------------------------------*/
+/*  HOME PAGE 03 BANNER CSS
+/*----------------------------------------*/
+.banner-area03{
+    background-color: #1F99F4;
+    margin: 0;
+    padding: 0 135px;
+    border-radius: 0;
+    
+    .banner-image {
+        padding-top: 190px;
+    }
+    .banner-button{
+        .play-icon{
+            background-color: #2CA5FF;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+.banner-brand-title{
+    margin-bottom: 35px;
+    margin-top: 20px;
+    h3{
+        font-size: 30px;
+        line-height: 42px;
+        position: relative;
+        color: white;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 176px;
+            width: 148px;
+            height: 1px;
+            background-color: #FFFFFF;
+            transform: translateY(-50%);
 
+        }
+    }
+}
+
+}
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
