@@ -13,9 +13,13 @@
 }
 // HomePage-02
 .brands{
+    margin-top: -50px;
+    z-index: 999;
+    position: relative;
     &-area{
         padding: 60px 0px;
         border-radius: 10px;
+        background-color: #fff;
         ul{
             li{
                 text-align: center;

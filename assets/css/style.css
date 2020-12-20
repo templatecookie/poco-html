@@ -845,9 +845,16 @@ aside,
   margin: auto;
 }
 
+.brands {
+  margin-top: -50px;
+  z-index: 999;
+  position: relative;
+}
+
 .brands-area {
   padding: 60px 0px;
   border-radius: 10px;
+  background-color: #fff;
 }
 
 .brands-area ul li {
@@ -1628,6 +1635,12 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
+.testimonial02 {
+  background-color: inherit;
+  margin: 0;
+  border-radius: 0;
+}
+
 .testimonial02 .testimonial-wrapper {
   padding: 40px !important;
   border-radius: 42px !important;
@@ -1640,26 +1653,40 @@ aside,
   font-family: "Gilroy-Medium";
 }
 
-.testimonial02 .testimonial-active-wrapper .slick-arrow {
-  position: absolute;
-  right: 0px;
-  top: -100px;
-  background-color: #FF465E;
-  border: 1px solid transparent;
-  width: 56px;
-  height: 56px;
-  cursor: pointer;
-  border-radius: 30px;
-  text-align: center;
+.testimonial02 .testimonial-active .slick-arrow {
+  top: -132px;
+}
+
+.testimonial02 .project-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.testimonial02 .project-info h4 {
+  padding-left: 50px;
+  position: relative;
+  margin-right: 100px;
+}
+
+.testimonial02 .project-info h4 span {
+  font-family: "Gilroy-Medium";
+  margin-left: 10px;
+}
+
+.testimonial02 .project-info h4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 47px;
+  height: 6px;
+  background-color: #FF465E;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /*----------------------------------------*/
