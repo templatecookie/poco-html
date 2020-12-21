@@ -146,30 +146,34 @@
         }
     }
 }
+
 /*----------------------------------------*/
 /*  HOMEPAGE 03
 /*----------------------------------------*/
-.footer03{
+.footer03 {
     background-color: #1F99F4;
-    .footer-area{
-        background-color: inherit ;
+
+    .footer-area {
+        background-color: inherit;
+
         &-links {
             a {
                 background-color: rgba(255, 255, 255, 0.24);
                 border: 0;
                 color: #fff;
-    
+
                 &:hover {
                     color: #fff;
                     background-color: #ED880A;
                 }
             }
         }
+
         &-lists {
             h4 {
                 margin-bottom: 5px;
             }
-    
+
             ul {
                 li {
                     a {
@@ -182,6 +186,89 @@
     }
 }
 
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.footer04 {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+
+    .footer-area {
+        padding: 0;
+        background-color: inherit;
+
+
+        &-about {
+            .logo {
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 16px;
+                color: #9DADB7;
+                font-weight: 500;
+                font-family: $hind;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-lists {
+            h4 {
+                color: white;
+                font-size: 26px;
+                line-height: 39px;
+                font-family: $teko;
+                font-weight: 700;
+            }
+
+            li {
+                margin: 0;
+
+                a {
+                    color: #9DADB7;
+                    font-family: $hind;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding: 20px;
+
+        &-area-text {
+            p {
+                color: #9DADB7;
+                font-family: $hind;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 27px;
+            }
+        }
+
+        &-area-list {
+            ul {
+                li {
+                    color: #9DADB7;
+                    font-family: $hind;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 27px;
+                    margin-right: 35px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 

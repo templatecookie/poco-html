@@ -2336,6 +2336,79 @@ aside,
 }
 
 /*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.footer04 {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+}
+
+.footer04 .footer-area {
+  padding: 0;
+  background-color: inherit;
+}
+
+.footer04 .footer-area-about .logo {
+  margin-bottom: 25px;
+}
+
+.footer04 .footer-area-about p {
+  font-size: 16px;
+  color: #9DADB7;
+  font-weight: 500;
+  font-family: "Hind", sans-serif;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.footer04 .footer-area-lists h4 {
+  color: white;
+  font-size: 26px;
+  line-height: 39px;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+}
+
+.footer04 .footer-area-lists li {
+  margin: 0;
+}
+
+.footer04 .footer-area-lists li a {
+  color: #9DADB7;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.footer04 .copyright {
+  padding: 20px;
+}
+
+.footer04 .copyright-area-text p {
+  color: #9DADB7;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.footer04 .copyright-area-list ul li {
+  color: #9DADB7;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  margin-right: 35px;
+}
+
+.footer04 .copyright-area-list ul li:last-child {
+  margin-right: 0;
+}
+
+/*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* laptop devices 1200 - 1600 */
