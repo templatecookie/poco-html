@@ -1403,6 +1403,63 @@ aside,
   }
 }
 
+#circleBar {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+#circleBar .section-title h2 {
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 118px;
+}
+
+#circleBar .section-title span {
+  color: #FF465E;
+}
+
+#circleBar .round {
+  min-height: 255px;
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#circleBar .round canvas {
+  width: 182px;
+  height: 182px;
+}
+
+#circleBar .round .round-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  line-height: 45px;
+  color: #fff;
+  font-weight: 600 !important;
+  font-family: "Teko", sans-serif;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -30px;
+}
+
+#circleBar .round .round-text P {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Hind", sans-serif;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.circleProgress {
+  background-color: transparent;
+}
+
 .special-services-image {
   margin-bottom: 23px;
   border-radius: 25px;
