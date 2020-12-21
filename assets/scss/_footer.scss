@@ -152,6 +152,8 @@
 .footer03{
     background-color: #1F99F4;
     .footer-area{
+        padding-top: 130px;
+        padding-bottom: 0px;
         background-color: inherit ;
         &-links {
             a {
@@ -168,13 +170,17 @@
         &-lists {
             h4 {
                 margin-bottom: 5px;
+                color: #FFFFFF;
             }
     
             ul {
                 li {
                     a {
                         color: white;
-
+                        transition: 0.3s all linear;
+                        &:hover{
+                            color: #ED880A;
+                        }
                     }
                 }
             }

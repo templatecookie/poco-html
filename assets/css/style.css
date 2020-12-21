@@ -2246,6 +2246,8 @@ aside,
 }
 
 .footer03 .footer-area {
+  padding-top: 130px;
+  padding-bottom: 0px;
   background-color: inherit;
 }
 
@@ -2262,10 +2264,16 @@ aside,
 
 .footer03 .footer-area-lists h4 {
   margin-bottom: 5px;
+  color: #FFFFFF;
 }
 
 .footer03 .footer-area-lists ul li a {
   color: white;
+  transition: 0.3s all linear;
+}
+
+.footer03 .footer-area-lists ul li a:hover {
+  color: #ED880A;
 }
 
 /*----------------------------------------*/
