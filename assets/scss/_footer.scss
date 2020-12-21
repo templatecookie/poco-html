@@ -146,6 +146,42 @@
         }
     }
 }
+/*----------------------------------------*/
+/*  HOMEPAGE 03
+/*----------------------------------------*/
+.footer03{
+    background-color: #1F99F4;
+    .footer-area{
+        background-color: inherit ;
+        &-links {
+            a {
+                background-color: rgba(255, 255, 255, 0.24);
+                border: 0;
+                color: #fff;
+    
+                &:hover {
+                    color: #fff;
+                    background-color: #ED880A;
+                }
+            }
+        }
+        &-lists {
+            h4 {
+                margin-bottom: 5px;
+            }
+    
+            ul {
+                li {
+                    a {
+                        color: white;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 

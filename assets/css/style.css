@@ -248,12 +248,12 @@ p {
   position: absolute;
 }
 
-.t-orenge {
+.t-bg-orange {
   color: white;
   background-color: #ED880A;
 }
 
-.t-orenge:hover {
+.t-bg-orange:hover {
   color: white;
   -webkit-box-shadow: rgba(255, 70, 94, 0.36);
           box-shadow: rgba(255, 70, 94, 0.36);
@@ -2090,6 +2090,36 @@ aside,
 
 .dark-footer .copyright-area-top a {
   color: #FFFFFF;
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 03
+/*----------------------------------------*/
+.footer03 {
+  background-color: #1F99F4;
+}
+
+.footer03 .footer-area {
+  background-color: inherit;
+}
+
+.footer03 .footer-area-links a {
+  background-color: rgba(255, 255, 255, 0.24);
+  border: 0;
+  color: #fff;
+}
+
+.footer03 .footer-area-links a:hover {
+  color: #fff;
+  background-color: #ED880A;
+}
+
+.footer03 .footer-area-lists h4 {
+  margin-bottom: 5px;
+}
+
+.footer03 .footer-area-lists ul li a {
+  color: white;
 }
 
 /*----------------------------------------*/
