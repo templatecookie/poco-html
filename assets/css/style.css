@@ -35,6 +35,7 @@
     21. Footer CSS
 
 -----------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Teko:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: 'Gilroy-Bold';
   src: url("../fonts/gilroy/Gilroy-Bold.woff");
@@ -286,6 +287,15 @@ p {
   border-color: #FF465E;
   -webkit-box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
           box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
+}
+
+.t-bg-outline {
+  color: #FF465E;
+  background: transparent;
+}
+
+.t-bg-outline:hover {
+  color: #FF465E;
 }
 
 .t-bg-black {
@@ -591,6 +601,67 @@ aside,
 }
 
 /*----------------------------------------*/
+/*  HOMPAGE 4 CSS
+/*----------------------------------------*/
+.header-area04 {
+  padding: 20px 175px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+}
+
+.header-area04 .main-menu {
+  padding-left: 105px;
+}
+
+.header-area04 .main-menu li a {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.header-area04 .main-menu li a.active::before {
+  top: -21px;
+}
+
+.header-area04 .contact-number .t-btn {
+  border: 2px solid #3C5B6B;
+}
+
+.header-area04 .right-content .social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-area04 .right-content .social-icon a {
+  border: 2px solid #3C5B6B;
+  color: #fff;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 22px;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.header-area04 .right-content .social-icon a:hover {
+  color: #fff;
+  background: #FF465E;
+  border-color: #FF465E;
+}
+
+/*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* laptop devices 1200 - 1600 */
@@ -821,6 +892,67 @@ aside,
   background-color: #FFFFFF;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+/*----------------------------------------*/
+/*  HOME PAGE 04 BANNER CSS
+/*----------------------------------------*/
+.banner-area04 {
+  background-color: #191C26;
+  padding: 0 175px;
+  margin: 0;
+  border-radius: 0;
+  z-index: 9;
+}
+
+.banner-area04 .banner-wrapper .banner-title span {
+  font-family: "Teko", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #FF465E;
+}
+
+.banner-area04 .banner-wrapper .banner-title h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 135px;
+  line-height: 135px;
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+}
+
+.banner-area04 .banner-wrapper p {
+  font-size: 26px;
+  font-family: "Teko", sans-serif;
+  line-height: 42px;
+  font-weight: 500;
+  max-width: 70%;
+  color: #9DADB7;
+  margin: 0;
+}
+
+.banner-area04 .banner-wrapper .banner-button {
+  margin-top: 20px;
+}
+
+.banner-area04 .banner-wrapper .banner-button .t-btn {
+  border-radius: 0;
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.banner-area04 .banner-image {
+  padding-top: 185px;
+  padding-bottom: 130px;
+}
+
+.banner-area04 .mask-page-04 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
 }
 
 /*----------------------------------------*/

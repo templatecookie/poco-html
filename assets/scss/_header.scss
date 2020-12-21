@@ -238,7 +238,57 @@ aside,
     }
   }
 }
-
+/*----------------------------------------*/
+/*  HOMPAGE 4 CSS
+/*----------------------------------------*/
+.header-area04{
+  padding: 20px 175px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+  .main-menu{
+    padding-left: 105px;
+    li{
+      a{
+        font-family: $teko;
+        font-weight: 500;
+        font-size: 20px;
+        &.active::before {
+          top: -21px;
+        }
+      }
+    }
+  }
+  .contact-number{
+    .t-btn{
+      border: 2px solid #3C5B6B;
+    }
+  }
+  .right-content{
+    .social-icon{
+      display: flex;
+      a{
+        border: 2px solid #3C5B6B;
+        color: #fff;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 22px;
+        -webkit-transition: 0.3s all linear;
+        transition: 0.3s all linear;
+        &:hover{
+          color: #fff;
+          background: $tertiary;
+          border-color: $tertiary;
+        }
+      }
+    }
+  }
+}
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
