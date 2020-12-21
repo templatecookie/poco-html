@@ -86,6 +86,10 @@ body {
   overflow-x: hidden;
 }
 
+.homepage04 {
+  background-color: #191C26;
+}
+
 *:focus {
   color: inherit;
   outline: inherit;
@@ -625,8 +629,15 @@ aside,
   top: -21px;
 }
 
+.header-area04 .contact-number {
+  margin-left: 20px;
+}
+
 .header-area04 .contact-number .t-btn {
   border: 2px solid #3C5B6B;
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .header-area04 .right-content .social-icon {
@@ -906,6 +917,7 @@ aside,
 }
 
 .banner-area04 .banner-wrapper .banner-title span {
+  text-transform: uppercase;
   font-family: "Teko", sans-serif;
   font-size: 32px;
   line-height: 48px;
@@ -914,6 +926,7 @@ aside,
 }
 
 .banner-area04 .banner-wrapper .banner-title h1 {
+  text-transform: uppercase;
   font-family: "Teko", sans-serif;
   font-size: 135px;
   line-height: 135px;
@@ -1252,6 +1265,74 @@ aside,
   font-size: 18px;
   max-width: 150px;
   text-align: center;
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.about-info04 {
+  padding-top: 120px;
+  padding-bottom: 27px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-info04 .about-info-image {
+  margin-left: -257px;
+}
+
+.about-info04 .about-info-text h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Teko", sans-serif;
+  line-height: 118px;
+  font-weight: 600;
+}
+
+.about-info04 .about-info-text h2 span {
+  color: #FF465E;
+}
+
+.about-info04 .about-info-text p {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.about-info04 .about-info-text .about-info-project {
+  padding-top: 0px;
+  border-top: 0;
+}
+
+.about-info04 .about-info-text .about-info-project .project-information {
+  margin-top: 20px;
+}
+
+.about-info04 .about-info-text .about-info-project .project-information h3 {
+  font-size: 60px;
+  line-height: 34px;
+  font-weight: 600;
+  font-family: "Teko", sans-serif;
+  color: #FF465E;
+  margin: 0;
+}
+
+.about-info04 .about-info-text .about-info-project .project-information p {
+  font-family: "Hind", sans-serif;
+  font-family: 500;
+  font-size: 20px;
+  line-height: 34px;
+  color: #9DADB7;
+}
+
+.about-info04 .right-vcetor img {
+  position: absolute;
+  top: 31%;
+  right: 5%;
 }
 
 /*----------------------------------------*/

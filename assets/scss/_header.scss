@@ -261,8 +261,12 @@ aside,
     }
   }
   .contact-number{
+    margin-left: 20px;
     .t-btn{
       border: 2px solid #3C5B6B;
+      font-family: $teko;
+      font-size: 20px;
+      font-weight: 500;
     }
   }
   .right-content{
