@@ -91,12 +91,14 @@
         .banner-title {
             margin-bottom: 35px;
         }
-        p{
+
+        p {
             font-size: 24px;
             font-family: $gilroy-medium;
             line-height: 40px;
             max-width: 80%;
         }
+
         .banner-button {
             margin-top: 40px;
         }
@@ -119,47 +121,115 @@
         }
     }
 }
+
 /*----------------------------------------*/
 /*  HOME PAGE 03 BANNER CSS
 /*----------------------------------------*/
-.banner-area03{
+.banner-area03 {
     background-color: #1F99F4;
     margin: 0;
     padding: 0 135px;
     border-radius: 0;
-    
+
     .banner-image {
         padding-top: 190px;
     }
-    .banner-button{
-        .play-icon{
+
+    .banner-button {
+        .play-icon {
             background-color: #2CA5FF;
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
     }
-.banner-brand-title{
-    margin-bottom: 35px;
-    margin-top: 20px;
-    h3{
-        font-size: 30px;
-        line-height: 42px;
-        position: relative;
-        color: white;
-        &::before{
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 176px;
-            width: 148px;
-            height: 1px;
-            background-color: #FFFFFF;
-            transform: translateY(-50%);
 
+    .banner-brand-title {
+        margin-bottom: 35px;
+        margin-top: 20px;
+
+        h3 {
+            font-size: 30px;
+            line-height: 42px;
+            position: relative;
+            color: white;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 176px;
+                width: 148px;
+                height: 1px;
+                background-color: #FFFFFF;
+                transform: translateY(-50%);
+
+            }
         }
     }
 }
 
+/*----------------------------------------*/
+/*  HOME PAGE 04 BANNER CSS
+/*----------------------------------------*/
+.banner-area04 {
+    background-color: #191C26;
+    padding: 0 175px;
+    margin: 0;
+    border-radius: 0;
+    z-index: 9;
+    .banner-wrapper{
+        .banner-title{
+            span{
+                font-family: $teko;
+                font-size: 32px;
+                line-height: 48px;
+                font-weight: 600;
+                color: $tertiary;
+            }
+            h1{
+                font-family: $teko;
+                font-size: 135px;
+                line-height: 135px;
+                font-weight: 600;
+                color: white;
+                margin-top: 20px;
+            }
+        }
+        p{
+            font-size: 26px;
+            font-family: $teko;
+            line-height: 42px;
+            font-weight: 500;
+            max-width: 70%;
+            color: #9DADB7;
+            margin: 0;
+
+        }
+        .banner-button{
+            margin-top: 20px;
+            .t-btn{
+                border-radius: 0;
+                font-family: $teko;
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .banner-image{
+        padding-top: 185px;
+        padding-bottom: 130px;
+    }
+    .mask-page-04 {
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -3;
+        }
+
+    }
 }
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
