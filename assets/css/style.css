@@ -1273,7 +1273,7 @@ aside,
 .about-info04 {
   padding-top: 120px;
   padding-bottom: 27px;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1405,7 +1405,6 @@ aside,
 
 #circleBar {
   margin-top: 60px;
-  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -1423,9 +1422,7 @@ aside,
 
 #circleBar .round {
   min-height: 255px;
-  margin-top: 30px;
   position: relative;
-  margin-bottom: 20px;
 }
 
 #circleBar .round canvas {
@@ -1924,7 +1921,7 @@ aside,
 }
 
 .testimonial-area {
-  padding-bottom: 220px;
+  padding-top: 120px;
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
   border-radius: 24px;
@@ -2022,7 +2019,7 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  RESPONSIVE CSS START 
+/*  HOMEPAGE 2 CSS START 
 /*----------------------------------------*/
 .testimonial02 {
   background-color: inherit;
@@ -2063,7 +2060,7 @@ aside,
 
 .testimonial02 .project-info h4 span {
   font-family: "Gilroy-Medium";
-  margin-left: 10px;
+  margin-left: 10px solid #141824;
 }
 
 .testimonial02 .project-info h4::before {
@@ -2076,6 +2073,110 @@ aside,
   background-color: #FF465E;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 4 CSS START 
+/*----------------------------------------*/
+.testimonial04 {
+  padding-bottom: 100px 0;
+  background-color: inherit;
+  margin: 0px;
+  border-radius: 0px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonial04 .section-title h2 {
+  font-size: 60px;
+  line-height: 70px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.testimonial04 .section-title h2 span {
+  color: #FF465E;
+}
+
+.testimonial04 .testimoial-icon {
+  width: 185px;
+  height: 185px;
+  background-color: #2C2F3B;
+  border: 10px solid #141824;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial04 .testimonial-wrappers {
+  background-color: #2C2F3B;
+  border: 0;
+  text-align: center;
+  padding: 120px 23px 45px 23px;
+  margin-top: -100px;
+}
+
+.testimonial04 .testimonial-wrappers .tesmonial-text h2 {
+  font-size: 35px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  line-height: 48px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.testimonial04 .testimonial-wrappers .tesmonial-text p {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.testimonial04 .testimonial-wrappers .testimonial-icon {
+  width: 63px;
+  height: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid #3B4A51;
+  margin: 0 auto;
+  border-radius: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  margin-top: 20px;
+}
+
+.testimonial04 .testimonial-wrappers:hover .testimonial-icon {
+  background-color: #FF465E;
+  border-color: #FF465E;
+}
+
+.testimonial04 .testimonial-active .slick-arrow {
+  background-color: #111523;
+  top: -132px;
+  width: 57px;
+  height: 57px;
+  border-radius: 0;
+  border: 3px solid #3B4A51;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.testimonial04 .testimonial-active .slick-arrow:hover {
+  background-color: #FF465E;
+  border-color: #FF465E;
 }
 
 /*----------------------------------------*/
@@ -2426,6 +2527,7 @@ aside,
   line-height: 39px;
   font-family: "Teko", sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .footer04 .footer-area-lists li {
