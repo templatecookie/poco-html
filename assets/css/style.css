@@ -2025,6 +2025,30 @@ aside,
   opacity: 0.5;
 }
 
+.our-team {
+  background-color: #FFFAF5;
+}
+
+.our-team-member-info .top-information p {
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.our-team-member-info .bottom-information {
+  max-width: 222px;
+}
+
+.our-team-member-info .bottom-information a {
+  transition: 0.3s all linear;
+  color: #65729E;
+  font-size: 20px;
+}
+
+.our-team-member-info .bottom-information a:hover {
+  color: #ED880A;
+}
+
 .footer-area {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
