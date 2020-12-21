@@ -1605,6 +1605,76 @@ aside,
   color: #000560;
 }
 
+.homepage-03 .call-action-text .sub-section-heading h6 {
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: #899DA7;
+  font-size: 14px;
+  font-family: "Gilroy-Regular";
+}
+
+.homepage-03 .call-action-text .sub-section-heading p {
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.homepage-03 .call-action-text .t-bg-orange {
+  padding: 20px 55px;
+}
+
+.homepage-03 .call-action-video {
+  z-index: 1;
+  position: relative;
+}
+
+.homepage-03 .call-action-video .image-overlay {
+  position: absolute;
+  background: rgba(0, 5, 96, 0.6);
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-03 .call-action-video .play-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.homepage-03 .call-action-video .play-video a {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ED880A;
+  border-radius: 50%;
+}
+
+.homepage-03 .call-action-video .play-video a i {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.homepage-03 .call-action-video .pattern img {
+  position: absolute;
+}
+
+.homepage-03 .call-action-video .pattern .pattern-one {
+  top: -10%;
+  left: -8%;
+  z-index: -1;
+}
+
+.homepage-03 .call-action-video .pattern .pattern-two {
+  bottom: -10%;
+  right: -8%;
+  z-index: -1;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/

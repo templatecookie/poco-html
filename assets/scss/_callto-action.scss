@@ -70,6 +70,75 @@
         }
     }
 }
+// HomePage-03
+.homepage-03{
+    .call-action-text{
+        .sub-section-heading{
+            h6{
+                letter-spacing: 2px;
+                word-spacing: 5px;
+                color: #899DA7;
+                font-size: 14px;
+                font-family: $gilroy-regular;
+            }
+            p{
+                font-size: 18px;
+                font-family: $gilroy-medium;
+            }
+        }
+        .t-bg-orange{
+            padding: 20px 55px;
+        }
+    }
+    .call-action-video{
+        z-index: 1;
+        position: relative;
+        .image-overlay{
+            position: absolute;
+            background: rgba(0,5,96,0.60);
+            border-radius: 4px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .play-video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            a{
+                width: 120px;
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #ED880A;
+                border-radius: 50%;
+                i{
+                    color: #ffffff;
+                    font-size: 22px;
+                }
+            }
+        }
+        .pattern{
+            img{
+                position: absolute;
+            }
+            .pattern-one{
+                top: -10%;
+                left: -8%;
+                z-index: -1;
+            }
+            .pattern-two{
+                bottom: -10%;
+                right: -8%;
+                z-index: -1;
+            }
+        }
+   
+    }
+}
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
