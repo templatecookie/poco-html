@@ -170,6 +170,60 @@
     }
 }
 
+// HomePage-03
+.homepage-03{
+    .sub-section-heading{
+        p{
+            font-size: 18px;
+            font-family: $gilroy-medium;
+        }
+    }
+    .work-process{
+        max-width: 485px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-item{
+            i{
+                color: #ED880A;
+            }
+        }
+    }
+    .about-intro-left{
+        position: relative;
+        .image{
+            width: 640px;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .award{
+            position: absolute;
+            bottom: 6%;
+            left: 50%;
+            width: 185px;
+            height: 185px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #ffffff;
+            &-icon{
+                i{
+                    font-size: 55px;
+                    color: #ED880A;
+                }
+            }
+            h6{
+                font-size: 18px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
 /*----------------------------------------*/
 /*  HOMEPAGE 04
 /*----------------------------------------*/

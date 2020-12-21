@@ -108,6 +108,76 @@
     }
 }
 
+// HomePage-03
+.homepage-03{
+    .provide-services-item{
+        background-color: #FFFFFF;
+        position: relative;
+        &-image{
+            border: 1px solid rgba(237,136,10,0.40);
+            position: absolute;
+            top:  -65px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0px auto 40px auto;
+            width: 152px;
+            height: 152px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFFFFF;
+            transition: 0.3s all linear;
+        }
+        &-text{
+            padding-top: 115px;
+            h5{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            p{
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .icon{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a{
+                    background-color: #FFFFFF;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    border: 1px solid #ED880A;
+                    i{
+                        color: #ED880A;
+                    }
+                } 
+            }
+        }
+        &:hover {
+            .provide-services-item-image{
+                background-color: #ED880A;
+                svg{
+                    path{
+                        fill: #FFFFFF;
+                    }
+                }
+            }
+            .provide-services-item-text .icon{
+                a{
+                    background-color: #ED880A; 
+                    i{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 

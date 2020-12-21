@@ -79,6 +79,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   line-height: 27px;
@@ -1267,6 +1271,73 @@ aside,
   text-align: center;
 }
 
+.homepage-03 .sub-section-heading p {
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.homepage-03 .work-process {
+  max-width: 485px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage-03 .work-process-item i {
+  color: #ED880A;
+}
+
+.homepage-03 .about-intro-left {
+  position: relative;
+}
+
+.homepage-03 .about-intro-left .image {
+  width: 640px;
+}
+
+.homepage-03 .about-intro-left .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.homepage-03 .about-intro-left .award {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+}
+
+.homepage-03 .about-intro-left .award-icon i {
+  font-size: 55px;
+  color: #ED880A;
+}
+
+.homepage-03 .about-intro-left .award h6 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
 /*----------------------------------------*/
 /*  HOMEPAGE 04
 /*----------------------------------------*/
@@ -1589,6 +1660,100 @@ aside,
   max-width: 220px;
 }
 
+.homepage-03 .provide-services-item {
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.homepage-03 .provide-services-item-image {
+  border: 1px solid rgba(237, 136, 10, 0.4);
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0px auto 40px auto;
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FFFFFF;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.homepage-03 .provide-services-item-text {
+  padding-top: 115px;
+}
+
+.homepage-03 .provide-services-item-text h5 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.homepage-03 .provide-services-item-text p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.homepage-03 .provide-services-item-text .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage-03 .provide-services-item-text .icon a {
+  background-color: #FFFFFF;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ED880A;
+}
+
+.homepage-03 .provide-services-item-text .icon a i {
+  color: #ED880A;
+}
+
+.homepage-03 .provide-services-item:hover .provide-services-item-image {
+  background-color: #ED880A;
+}
+
+.homepage-03 .provide-services-item:hover .provide-services-item-image svg path {
+  fill: #FFFFFF;
+}
+
+.homepage-03 .provide-services-item:hover .provide-services-item-text .icon a {
+  background-color: #ED880A;
+}
+
+.homepage-03 .provide-services-item:hover .provide-services-item-text .icon a i {
+  color: #FFFFFF;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
@@ -1848,6 +2013,83 @@ aside,
 .customer-care-text p {
   font-family: "Gilroy-Medium";
   color: #000560;
+}
+
+.homepage-03 .call-action-text .sub-section-heading h6 {
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: #899DA7;
+  font-size: 14px;
+  font-family: "Gilroy-Regular";
+}
+
+.homepage-03 .call-action-text .sub-section-heading p {
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.homepage-03 .call-action-text .t-bg-orange {
+  padding: 20px 55px;
+}
+
+.homepage-03 .call-action-video {
+  z-index: 1;
+  position: relative;
+}
+
+.homepage-03 .call-action-video .image-overlay {
+  position: absolute;
+  background: rgba(0, 5, 96, 0.6);
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-03 .call-action-video .play-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.homepage-03 .call-action-video .play-video a {
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ED880A;
+  border-radius: 50%;
+}
+
+.homepage-03 .call-action-video .play-video a i {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.homepage-03 .call-action-video .pattern img {
+  position: absolute;
+}
+
+.homepage-03 .call-action-video .pattern .pattern-one {
+  top: -10%;
+  left: -8%;
+  z-index: -1;
+}
+
+.homepage-03 .call-action-video .pattern .pattern-two {
+  bottom: -10%;
+  right: -8%;
+  z-index: -1;
 }
 
 /*----------------------------------------*/
@@ -2473,6 +2715,81 @@ aside,
   transition: 0.3s;
 }
 
+.homepage-03 .section-heading p {
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.homepage-03 .services-introduction-item-text h5 {
+  margin-bottom: 25px;
+}
+
+.homepage-03 .services-introduction-item-text p {
+  line-height: 30px;
+  max-width: 100%;
+  font-family: "Gilroy-Medium";
+  color: #65729E;
+}
+
+.beloved-client {
+  background-color: #1F99F4;
+}
+
+.beloved-client .sub-section-heading p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Gilroy-Medium";
+}
+
+.beloved-client .client-info {
+  margin-bottom: 50px;
+}
+
+.beloved-client .client-info-item h2 {
+  font-size: 65px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.beloved-client .client-info-item p {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Gilroy-Medium";
+}
+
+.beloved-client .client-image {
+  max-width: 535px;
+}
+
+.beloved-client .client-image-logo img {
+  opacity: 0.5;
+}
+
+.our-team {
+  background-color: #FFFAF5;
+}
+
+.our-team-member-info .top-information p {
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.our-team-member-info .bottom-information {
+  max-width: 222px;
+}
+
+.our-team-member-info .bottom-information a {
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+  color: #65729E;
+  font-size: 20px;
+}
+
+.our-team-member-info .bottom-information a:hover {
+  color: #ED880A;
+}
+
 .footer-area {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
@@ -2617,10 +2934,17 @@ aside,
 
 .footer03 .footer-area-lists h4 {
   margin-bottom: 5px;
+  color: #FFFFFF;
 }
 
 .footer03 .footer-area-lists ul li a {
   color: white;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.footer03 .footer-area-lists ul li a:hover {
+  color: #ED880A;
 }
 
 /*----------------------------------------*/

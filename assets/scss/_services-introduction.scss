@@ -38,3 +38,25 @@
         }
     }
 }
+// Homepage-03
+.homepage-03{
+    .section-heading{
+        p{
+            font-size: 18px;
+            font-family: $gilroy-medium;
+        }
+    }
+    .services-introduction-item{
+        &-text{
+            h5{
+                margin-bottom: 25px;
+            }
+            p{
+                line-height: 30px;
+                max-width: 100%;
+                font-family: $gilroy-medium;
+                color: $secondary;
+            }
+        }
+    }
+}

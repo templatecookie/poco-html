@@ -172,13 +172,17 @@
         &-lists {
             h4 {
                 margin-bottom: 5px;
+                color: #FFFFFF;
             }
 
             ul {
                 li {
                     a {
                         color: white;
-
+                        transition: 0.3s all linear;
+                        &:hover{
+                            color: #ED880A;
+                        }
                     }
                 }
             }
