@@ -51,6 +51,15 @@
 			},
 		],
 	});
+	//Client review_slider
+	$('.review-active').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		arrows: true,
+		autoplaySpeed: 2000,
+	});
 
 	// magnificPopup video view
 	$('.popup-video').magnificPopup({

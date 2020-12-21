@@ -1409,6 +1409,7 @@ aside,
 }
 
 #circleBar .section-title h2 {
+  text-transform: uppercase;
   color: white;
   font-family: "Teko", sans-serif;
   font-weight: 600;
@@ -2229,6 +2230,135 @@ aside,
 }
 
 /* Small devices 576 - 767  */
+.client-review {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.client-review .banner-image {
+  margin-top: -24px;
+}
+
+.client-review .section-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.client-review .section-title h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.client-review .section-title h2 span {
+  color: #FF465E;
+}
+
+.client-review .review-active .single-testimonial p {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #9DADB7;
+  line-height: 34px;
+}
+
+.client-review .review-active .single-testimonial .client-name {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+.client-review .review-active .single-testimonial .client-name h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 26px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.client-review .review-active .single-testimonial .client-name p {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #9DADB7;
+  line-height: 27px;
+}
+
+.client-review .review-active .single-testimonial .client-name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 60px;
+  background-color: #FF465E;
+}
+
+.client-review .review-active .slick-arrow {
+  position: absolute;
+  left: -217px;
+  bottom: -130px;
+  background-color: #FF465E;
+  color: white;
+  border: 1px solid transparent;
+  width: 157px;
+  height: 79px;
+  cursor: pointer;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Teko", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.client-review .review-active .slick-arrow:hover {
+  background-color: white;
+  color: #FF465E;
+}
+
+.client-review .review-active .slick-arrow.slick-next {
+  left: -60px;
+}
+
+.client-review .review-active .slick-arrow.slick-next::before {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 38px;
+  font-size: 20px;
+  top: 48%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.client-review .review-active .slick-arrow.slick-prev::before {
+  content: "\f060";
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  left: 18px;
+  top: 47%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .newsletter-area {
   padding-bottom: 150px;
 }
