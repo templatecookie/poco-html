@@ -3084,4 +3084,134 @@ aside,
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* common area start */
 }
+
+.about-us-image {
+  position: relative;
+}
+
+.about-us-image .image {
+  margin-left: -120px;
+}
+
+.about-us-image .small-feature {
+  position: absolute;
+  height: 120px;
+  width: 135px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-us-image .small-feature-item h3 {
+  color: #FFFFFF;
+  font-size: 34px;
+}
+
+.about-us-image .small-feature-item .ratings {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.about-us-image .small-feature-item p {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "Gilroy-Medium";
+}
+
+.about-us-image .sm-feauter-top {
+  top: -18%;
+  left: 35%;
+  -webkit-transform: translateX(-35%);
+          transform: translateX(-35%);
+}
+
+.about-us-image .sm-feauter-left {
+  top: 50%;
+  left: -30%;
+}
+
+.about-us-image .sm-feauter-bottom {
+  bottom: -13%;
+  right: 26%;
+}
+
+.about-us-text .sub-heading {
+  margin-bottom: 30px;
+}
+
+.about-us-text .sub-heading h2 {
+  margin-bottom: 30px;
+}
+
+.about-us-text .sub-heading p {
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.about-us-text .feature .icon {
+  margin-top: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 9px;
+}
+
+.about-us-text .feature .icon i {
+  color: #ffffff;
+}
+
+.about-us-text .feature .text h6 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.about-us-text .feature .text p {
+  font-family: "Gilroy-Medium";
+}
+
+.about-us-text .alart {
+  position: relative;
+  background-color: #FFF5F7;
+  max-width: 490px;
+  padding: 15px 50px 15px 25px;
+  border-radius: 6px;
+}
+
+.about-us-text .alart::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background-color: #FF465E;
+  width: 7px;
+  height: 100%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.about-us-text .alart-icon i {
+  color: #65729E;
+  font-size: 50px;
+}
+
+.about-us-text .alart-text p {
+  color: #000560;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.about-us-text .alart-boldtext h2 {
+  color: #FF465E;
+  font-size: 55px;
+}
 /*# sourceMappingURL=style.css.map */
