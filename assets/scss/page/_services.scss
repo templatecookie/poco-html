@@ -1,0 +1,106 @@
+// START ABOUT US
+.our-services{
+    .about-us-text{
+        .sub-heading{
+            margin-bottom: 15px;
+            h2{
+                max-width: 375px; 
+                margin-bottom: 10px;
+            }
+        }
+        .feature{
+            .text{
+                h6{
+                    margin-bottom: 3px;
+                }
+            }
+        }
+        .t-btn{
+            padding: 17px 35px;
+        }
+    }
+    .shape{
+        img{
+            z-index: -3;
+            position: absolute;
+        }
+        .top{
+            top: -6%;
+            left: 5%;
+        }
+        .right{
+            top: -7%;
+            right: 5%;
+        }
+        .bottom{
+            bottom: -7%;
+            left: 32%;
+        }
+    }
+    .special-services-image-bg-three{
+        background-color: rgba(241, 146, 10, 0.16);
+    }
+    .top-right{
+        top: -6%;
+        right: 5%;
+    }
+   .first-mask{
+        bottom: 5%;
+        left: -2%;
+    }
+    .mask-bottom{
+        bottom: -3%;
+        left: 8%;
+    }
+    .mask-top{
+        top: -4%;
+        left: 5%;
+    }
+    .mask-right{
+        top: 10%;
+        right: 5%;
+    }
+}
+// END ABOUT US
+
+// START OUR WORK PROCESS 
+.our-work-process{
+    position: relative;
+    .process-item{
+        .around-dotted{
+            width: 100px;
+            height: 100px;
+            margin: 0px auto 22px auto;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .image{
+                border-radius: 25px;
+                padding: 15px;
+            }
+        }
+      
+    }
+    .process-text{
+        max-width: 290px;
+        margin: 0 auto;
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: $gilroy-medium;
+        }
+    }
+    .shape{
+        img{
+            position: absolute;
+        }
+        .round-shape{
+            top: 15%;
+            left: 15%;
+        }
+    }
+}
+// END OUR WORK PROCESS 
