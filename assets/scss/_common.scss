@@ -139,14 +139,16 @@ p {
     - Input Placeholder
 -----------------------------------------*/
 *::-moz-placeholder {
-	color: $black;
-	font-size: 14px;
+	color: $secondary;
+	font-size: 18px;
+	font-family: $gilroy-medium;
 	opacity: 1;
 }
 
 *::placeholder {
-	color: $black;
-	font-size: 14px;
+	color: $secondary;
+	font-size: 18px;
+	font-family: $gilroy-medium;
 	opacity: 1;
 }
 

@@ -215,26 +215,30 @@ p {
 -----------------------------------------*/
 
 *::-webkit-input-placeholder {
-  color: #9DADB7;
-  font-size: 14px;
+  color: #65729E;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
   opacity: 1;
 }
 
 *:-ms-input-placeholder {
-  color: #9DADB7;
-  font-size: 14px;
+  color: #65729E;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
   opacity: 1;
 }
 
 *::-ms-input-placeholder {
-  color: #9DADB7;
-  font-size: 14px;
+  color: #65729E;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
   opacity: 1;
 }
 
 *::placeholder {
-  color: #9DADB7;
-  font-size: 14px;
+  color: #65729E;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
   opacity: 1;
 }
 
@@ -3523,5 +3527,67 @@ aside,
 
 .profession-area .profession-wrapper .profession-tittle p {
   font-size: 18px;
+}
+
+.conatact-area {
+  background: #FCF8F8;
+  padding-top: 160px;
+  padding-bottom: 50px;
+}
+
+.conatact-area .contact-form {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.conatact-area .contact-form .form-row .form-control {
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+  line-height: 30px;
+  color: #65729E;
+  height: 80px;
+  border: 1px solid #DDDDDD;
+  background: white;
+  padding: 0 50px;
+  position: relative;
+}
+
+.conatact-area .contact-form .form-row .form-control:focus {
+  color: inherit;
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+}
+
+.conatact-area .contact-form .form-row .icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 18px;
+  color: #65729E;
+}
+
+.conatact-area .contact-form .form-message textarea {
+  color: #65729E !important;
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  background: white;
+  padding: 30px 50px;
+  position: relative;
+}
+
+.conatact-area .contact-form .form-message textarea::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+}
+
+.conatact-area .contact-form .t-btn {
+  padding: 20px 52px;
+  margin-top: 20px !important;
 }
 /*# sourceMappingURL=style.css.map */
