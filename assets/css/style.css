@@ -3455,4 +3455,118 @@ aside,
 .our-teams-member .member-info .social-links a:hover {
   color: #333333;
 }
+
+.our-services .about-us-text .sub-heading {
+  margin-bottom: 15px;
+}
+
+.our-services .about-us-text .sub-heading h2 {
+  max-width: 375px;
+  margin-bottom: 10px;
+}
+
+.our-services .about-us-text .feature .text h6 {
+  margin-bottom: 3px;
+}
+
+.our-services .about-us-text .t-btn {
+  padding: 17px 35px;
+}
+
+.our-services .shape img {
+  z-index: -3;
+  position: absolute;
+}
+
+.our-services .shape .top {
+  top: -6%;
+  left: 5%;
+}
+
+.our-services .shape .right {
+  top: -7%;
+  right: 5%;
+}
+
+.our-services .shape .bottom {
+  bottom: -7%;
+  left: 32%;
+}
+
+.our-services .special-services-image-bg-three {
+  background-color: rgba(241, 146, 10, 0.16);
+}
+
+.our-services .top-right {
+  top: -6%;
+  right: 5%;
+}
+
+.our-services .first-mask {
+  bottom: 5%;
+  left: -2%;
+}
+
+.our-services .mask-bottom {
+  bottom: -3%;
+  left: 8%;
+}
+
+.our-services .mask-top {
+  top: -4%;
+  left: 5%;
+}
+
+.our-services .mask-right {
+  top: 10%;
+  right: 5%;
+}
+
+.our-work-process {
+  position: relative;
+}
+
+.our-work-process .process-item .around-dotted {
+  width: 100px;
+  height: 100px;
+  margin: 0px auto 22px auto;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-work-process .process-item .around-dotted .image {
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.our-work-process .process-text {
+  max-width: 290px;
+  margin: 0 auto;
+}
+
+.our-work-process .process-text h3 {
+  text-align: center;
+}
+
+.our-work-process .process-text p {
+  text-align: center;
+  font-size: "Gilroy-Medium";
+}
+
+.our-work-process .shape img {
+  position: absolute;
+}
+
+.our-work-process .shape .round-shape {
+  top: 15%;
+  left: 15%;
+}
 /*# sourceMappingURL=style.css.map */
