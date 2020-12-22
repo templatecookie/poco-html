@@ -2176,7 +2176,7 @@ aside,
 
 .testimonial-area {
   padding-top: 120px;
-  padding-bottom: 226px;
+  padding-bottom: 130px;
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
   border-radius: 24px;
@@ -2222,7 +2222,7 @@ aside,
 .testimonial-area .testimonial-active .slick-arrow {
   position: absolute;
   right: 0px;
-  bottom: -100px;
+  bottom: -45px;
   background-color: #FF465E;
   border: 1px solid transparent;
   width: 56px;
@@ -3160,7 +3160,7 @@ aside,
   z-index: -1;
 }
 
-.work-solution {
+.about-solution {
   background-color: #FFF5F7;
   padding: 130px 0;
   margin: 0 45px;
@@ -3168,45 +3168,105 @@ aside,
   position: relative;
 }
 
-.work-solution .solution-wrapper .solution-title h4 {
+.about-solution .solution-wrapper .solution-title h4 {
   margin-bottom: 10px;
 }
 
-.work-solution .solution-wrapper .solution-title h4 span {
+.about-solution .solution-wrapper .solution-title h4 span {
   color: #FF465E;
 }
 
-.work-solution .solution-wrapper .solution-title.center {
+.about-solution .solution-wrapper .solution-title.center {
   text-align: center;
   margin: auto;
   max-width: 30%;
 }
 
-.work-solution .solution-wrapper .solution-title.left {
+.about-solution .solution-wrapper .solution-title.left {
   text-align: right;
   max-width: 92%;
 }
 
-.work-solution .solution-wrapper .solution-title.right p {
+.about-solution .solution-wrapper .solution-title.right p {
   max-width: 92%;
 }
 
-.work-solution .mask-group img {
+.about-solution .mask-group img {
   position: absolute;
 }
 
-.work-solution .mask-group .mask1 {
+.about-solution .mask-group .mask1 {
   top: -5%;
   left: 5%;
 }
 
-.work-solution .mask-group .mask2 {
+.about-solution .mask-group .mask2 {
   top: -4%;
   right: 10%;
 }
 
-.work-solution .mask-group .mask3 {
+.about-solution .mask-group .mask3 {
   bottom: -40px;
   left: 10%;
+}
+
+.about-skill-wrapper {
+  max-width: 90%;
+}
+
+.about-skill-wrapper .about-skill-title {
+  margin-bottom: 50px;
+}
+
+.about-skill-wrapper .about-skill-title h2 {
+  margin-bottom: 30px;
+}
+
+.about-skill-wrapper .about-skill-title p {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 20px;
+  line-height: 30px;
+}
+
+.about-skill-wrapper .about-skill-pogressbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper {
+  margin-right: 120px;
+  text-align: center;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .round {
+  position: relative;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong {
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .skill-text {
+  margin-top: 20px;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .skill-text p {
+  padding-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
