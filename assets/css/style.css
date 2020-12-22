@@ -307,12 +307,23 @@ p {
 }
 
 .t-bg-black {
+  color: white;
+  background-color: #000560;
+  border-color: #000560;
+}
+
+.t-bg-black:hover {
+  color: white;
+  border-color: #000560;
+}
+
+.t-black {
   color: #000560;
   background-color: white;
   border-color: white;
 }
 
-.t-bg-black:hover {
+.t-black:hover {
   color: #000560;
 }
 
@@ -2165,10 +2176,12 @@ aside,
 
 .testimonial-area {
   padding-top: 120px;
+  padding-bottom: 226px;
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
   border-radius: 24px;
   position: relative;
+  margin-bottom: 110px;
 }
 
 .testimonial-area .w-65 {
@@ -2185,6 +2198,7 @@ aside,
   padding: 20px;
   border: 2px solid #dddddd;
   border-radius: 5px;
+  margin-bottom: 50px;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }

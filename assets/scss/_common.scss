@@ -213,6 +213,16 @@ p {
 	}
 }
 .t-bg-black {
+	color: white;
+	background-color: #000560;
+	border-color: #000560;
+
+	&:hover {
+		color: white;
+		border-color: #000560;
+	}
+}
+.t-black {
 	color: #000560;
 	background-color: white;
 	border-color: white;
