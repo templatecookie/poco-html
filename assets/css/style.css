@@ -3214,4 +3214,60 @@ aside,
   color: #FF465E;
   font-size: 55px;
 }
+
+.our-teams-member:hover .member-info {
+  background-color: #FF465E;
+}
+
+.our-teams-member:hover .member-info .name h5 {
+  color: #FFFFFF;
+}
+
+.our-teams-member:hover .member-info .name p {
+  color: #FFFFFF;
+}
+
+.our-teams-member:hover .member-info .social-links a {
+  color: #FFFFFF;
+}
+
+.our-teams-member .image {
+  position: relative;
+}
+
+.our-teams-member .image img {
+  border-radius: 8px;
+}
+
+.our-teams-member .member-info {
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+  border-radius: 6px;
+  margin: 0px 30px 0px 30px;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.our-teams-member .member-info .name h5 {
+  margin-bottom: 3px;
+}
+
+.our-teams-member .member-info .name p {
+  font-family: "Gilroy-Medium";
+}
+
+.our-teams-member .member-info .social-links a {
+  color: #65729E;
+  font-size: 16px;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.our-teams-member .member-info .social-links a:hover {
+  color: #333333;
+}
 /*# sourceMappingURL=style.css.map */
