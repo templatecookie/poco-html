@@ -1,0 +1,25 @@
+//PROFESSION AREA
+.profession-area{
+    padding-top: 100px;
+    padding-bottom: 130px;
+    .profession-img{
+        position: relative;
+        margin-left: -48px;
+        .small-feature{
+            position: absolute;
+            bottom: -10%;
+            left: -11%;
+        }
+    }
+    .profession-wrapper{
+        .profession-tittle{
+            h2{
+                margin-bottom: 30PX;
+            }
+            p{
+                font-size: 18px;
+            }
+            margin-bottom: 30px;
+        }
+    }
+}

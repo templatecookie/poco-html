@@ -140,6 +140,22 @@
     }
 }
 
+//team-member page
+.callto-action-modifi{
+    background-color: inherit;
+    border-radius: 0;
+    margin: 0;
+    padding: 130px 0;
+    .mask-group{
+        .mask01{
+            position: absolute;
+            bottom: 20%;
+            left: 3%;
+            z-index: -1;
+        }
+    }
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/

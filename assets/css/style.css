@@ -215,26 +215,30 @@ p {
 -----------------------------------------*/
 
 *::-webkit-input-placeholder {
-  color: #9DADB7;
-  font-size: 14px;
+  color: #65729E;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
   opacity: 1;
 }
 
 *:-ms-input-placeholder {
-  color: #9DADB7;
-  font-size: 14px;
+  color: #65729E;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
   opacity: 1;
 }
 
 *::-ms-input-placeholder {
-  color: #9DADB7;
-  font-size: 14px;
+  color: #65729E;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
   opacity: 1;
 }
 
 *::placeholder {
-  color: #9DADB7;
-  font-size: 14px;
+  color: #65729E;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
   opacity: 1;
 }
 
@@ -281,6 +285,8 @@ p {
   line-height: 1;
   border-radius: 50px;
   font-family: "Gilroy-Bold";
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .t-bg-primary {
@@ -370,6 +376,42 @@ p {
 
 .text-white {
   color: #fff;
+}
+
+.small-feature {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.small-feature-percentage {
+  margin-bottom: 20px;
+}
+
+.small-feature-percentage .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33px;
+  width: 33px;
+  background-color: #00ADA6;
+  border-radius: 50%;
+}
+
+.small-feature-percentage h3 {
+  margin-left: 10px;
+}
+
+.small-feature-text p {
+  font-size: 18px;
+  max-width: 150px;
+  text-align: center;
 }
 
 .header-area {
@@ -1246,42 +1288,6 @@ aside,
   z-index: -99;
 }
 
-.aboutus02 .small-feature {
-  background-color: transparent;
-  border-radius: 10px;
-  padding: 30px;
-}
-
-.aboutus02 .small-feature-percentage {
-  margin-bottom: 20px;
-}
-
-.aboutus02 .small-feature-percentage .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 33px;
-  width: 33px;
-  background-color: #00ADA6;
-  border-radius: 50%;
-}
-
-.aboutus02 .small-feature-percentage h3 {
-  margin-left: 10px;
-}
-
-.aboutus02 .small-feature-text p {
-  font-size: 18px;
-  max-width: 150px;
-  text-align: center;
-}
-
 .homepage-03 .sub-section-heading p {
   font-size: 18px;
   font-family: "Gilroy-Medium";
@@ -2103,6 +2109,20 @@ aside,
   z-index: -1;
 }
 
+.callto-action-modifi {
+  background-color: inherit;
+  border-radius: 0;
+  margin: 0;
+  padding: 130px 0;
+}
+
+.callto-action-modifi .mask-group .mask01 {
+  position: absolute;
+  bottom: 20%;
+  left: 3%;
+  z-index: -1;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
@@ -2804,6 +2824,87 @@ aside,
   color: #ED880A;
 }
 
+.our-teams-member:hover .member-info {
+  background-color: #FF465E;
+}
+
+.our-teams-member:hover .member-info .name h5 {
+  color: #FFFFFF;
+}
+
+.our-teams-member:hover .member-info .name p {
+  color: #FFFFFF;
+}
+
+.our-teams-member:hover .member-info .social-links a {
+  color: #FFFFFF;
+}
+
+.our-teams-member .image {
+  position: relative;
+}
+
+.our-teams-member .image img {
+  border-radius: 8px;
+}
+
+.our-teams-member .member-info {
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+  border-radius: 6px;
+  margin: 0px 30px 0px 30px;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.our-teams-member .member-info .name h5 {
+  margin-bottom: 3px;
+}
+
+.our-teams-member .member-info .name p {
+  font-family: "Gilroy-Medium";
+}
+
+.our-teams-member .member-info .social-links a {
+  color: #65729E;
+  font-size: 16px;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.our-teams-member .member-info .social-links a:hover {
+  color: #333333;
+}
+
+.teams-modifi {
+  background-color: #FFF5F7;
+  margin: 0 45px;
+  padding-top: 130px;
+  padding-bottom: 160px;
+  border-radius: 24px;
+  position: relative;
+  z-index: -5;
+}
+
+.teams-modifi .mask-group img {
+  position: absolute;
+  z-index: -3;
+}
+
+.teams-modifi .mask-group .mask01 {
+  top: -3%;
+  right: 5%;
+}
+
+.teams-modifi .mask-group .mask02 {
+  top: -4%;
+  left: 4%;
+}
+
 .footer-area {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
@@ -3400,60 +3501,94 @@ aside,
   font-size: 55px;
 }
 
-.our-teams-member:hover .member-info {
-  background-color: #FF465E;
+.profession-area {
+  padding-top: 100px;
+  padding-bottom: 130px;
 }
 
-.our-teams-member:hover .member-info .name h5 {
-  color: #FFFFFF;
+.profession-area .profession-img {
+  position: relative;
+  margin-left: -48px;
 }
 
-.our-teams-member:hover .member-info .name p {
-  color: #FFFFFF;
+.profession-area .profession-img .small-feature {
+  position: absolute;
+  bottom: -10%;
+  left: -11%;
 }
 
-.our-teams-member:hover .member-info .social-links a {
-  color: #FFFFFF;
+.profession-area .profession-wrapper .profession-tittle {
+  margin-bottom: 30px;
 }
 
-.our-teams-member .image {
+.profession-area .profession-wrapper .profession-tittle h2 {
+  margin-bottom: 30PX;
+}
+
+.profession-area .profession-wrapper .profession-tittle p {
+  font-size: 18px;
+}
+
+.conatact-area {
+  background: #FCF8F8;
+  padding-top: 160px;
+  padding-bottom: 50px;
+}
+
+.conatact-area .contact-form {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.conatact-area .contact-form .form-row .form-control {
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+  line-height: 30px;
+  color: #65729E;
+  height: 80px;
+  border: 1px solid #DDDDDD;
+  background: white;
+  padding: 0 50px;
   position: relative;
 }
 
-.our-teams-member .image img {
-  border-radius: 8px;
+.conatact-area .contact-form .form-row .form-control:focus {
+  color: inherit;
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
 }
 
-.our-teams-member .member-info {
+.conatact-area .contact-form .form-row .icon {
   position: absolute;
-  bottom: -5%;
-  left: 0;
-  right: 0;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
-  border-radius: 6px;
-  margin: 0px 30px 0px 30px;
-  padding: 20px;
-  background-color: #FFFFFF;
-}
-
-.our-teams-member .member-info .name h5 {
-  margin-bottom: 3px;
-}
-
-.our-teams-member .member-info .name p {
-  font-family: "Gilroy-Medium";
-}
-
-.our-teams-member .member-info .social-links a {
+  top: 50%;
+  left: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 18px;
   color: #65729E;
-  font-size: 16px;
-  -webkit-transition: 0.3s all linear;
-  transition: 0.3s all linear;
 }
 
-.our-teams-member .member-info .social-links a:hover {
-  color: #333333;
+.conatact-area .contact-form .form-message textarea {
+  color: #65729E !important;
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  background: white;
+  padding: 30px 50px;
+  position: relative;
+}
+
+.conatact-area .contact-form .form-message textarea::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+}
+
+.conatact-area .contact-form .t-btn {
+  padding: 20px 52px;
+  margin-top: 20px !important;
 }
 
 .our-services .about-us-text .sub-heading {

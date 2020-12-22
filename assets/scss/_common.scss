@@ -139,14 +139,16 @@ p {
     - Input Placeholder
 -----------------------------------------*/
 *::-moz-placeholder {
-	color: $black;
-	font-size: 14px;
+	color: $secondary;
+	font-size: 18px;
+	font-family: $gilroy-medium;
 	opacity: 1;
 }
 
 *::placeholder {
-	color: $black;
-	font-size: 14px;
+	color: $secondary;
+	font-size: 18px;
+	font-family: $gilroy-medium;
 	opacity: 1;
 }
 
@@ -190,6 +192,7 @@ p {
 	line-height: 1;
 	border-radius: 50px;
 	font-family: $gilroy-bold;
+	transition: .3s;
 }
 
 .t-bg-primary {
@@ -276,4 +279,37 @@ p {
 
 .text-white {
 	color: #fff;
+}
+
+//SMALL FEATURE
+.small-feature {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+
+    &-percentage {
+        margin-bottom: 20px;
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 33px;
+            width: 33px;
+            background-color: #00ADA6;
+            border-radius: 50%;
+        }
+
+        h3 {
+            margin-left: 10px;
+        }
+    }
+
+    &-text {
+        p {
+            font-size: 18px;
+            max-width: 150px;
+            text-align: center;
+        }
+    }
 }
