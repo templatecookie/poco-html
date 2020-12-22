@@ -22,7 +22,8 @@
         "../scss/_services-introduction.scss",
         "../scss/_client.scss",
         "../scss/_team.scss",
-        "../scss/_footer.scss"
+        "../scss/_footer.scss",
+        "../scss/page/_aboutus.scss"
     ],
     "names": [],
     "file": "style.css"
