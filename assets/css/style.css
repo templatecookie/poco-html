@@ -186,7 +186,7 @@ li {
 
 p {
   font-size: 16px;
-  font-weight: 500;
+  font-family: "Gilroy-Medium";
   color: #65729E;
   margin: 0px;
   line-height: 27px;
@@ -2176,7 +2176,7 @@ aside,
 
 .testimonial-area {
   padding-top: 120px;
-  padding-bottom: 226px;
+  padding-bottom: 130px;
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
   border-radius: 24px;
@@ -2222,7 +2222,7 @@ aside,
 .testimonial-area .testimonial-active .slick-arrow {
   position: absolute;
   right: 0px;
-  bottom: -100px;
+  bottom: -45px;
   background-color: #FF465E;
   border: 1px solid transparent;
   width: 56px;
@@ -3083,6 +3083,191 @@ aside,
 /* Small devices 576 - 767 */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* common area start */
+}
+
+.breadcrumb-area {
+  position: relative;
+  margin-bottom: 130px;
+}
+
+.breadcrumb-area .banner-image {
+  padding-top: 35px;
+  padding-right: 155px;
+}
+
+.breadcrumb-area .banner-wrapper {
+  padding-left: 30px;
+}
+
+.breadcrumb-area .banner-wrapper p {
+  max-width: 70%;
+}
+
+.breadcrumb-area .breadcrumb-wrapper {
+  position: absolute;
+  bottom: -28px;
+  left: 90px;
+}
+
+.breadcrumb-area .breadcrumb-wrapper .breadcrumb {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 22px;
+  border-radius: 13px 13px 0 0;
+  background-color: white;
+  margin: 0;
+}
+
+.breadcrumb-area .breadcrumb-wrapper .breadcrumb .breadcrumb-item {
+  font-size: 20px;
+  line-height: 36px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+}
+
+.breadcrumb-area .breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.breadcrumb-area .breadcrumb-wrapper .breadcrumb .breadcrumb-item a:hover {
+  color: #FF465E;
+}
+
+.breadcrumb-area .breadcrumb-wrapper .breadcrumb .breadcrumb-item::before {
+  font-size: 20px;
+  line-height: 36px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+}
+
+.breadcrumb-area .breadcrumb-wrapper .breadcrumb .breadcrumb-item + .active {
+  color: #FF465E !important;
+}
+
+.breadcrumb-area .breadcrumbmask .mask1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.breadcrumb-area .breadcrumbmask .mask2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about-solution {
+  background-color: #FFF5F7;
+  padding: 130px 0;
+  margin: 0 45px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.about-solution .solution-wrapper .solution-title h4 {
+  margin-bottom: 10px;
+}
+
+.about-solution .solution-wrapper .solution-title h4 span {
+  color: #FF465E;
+}
+
+.about-solution .solution-wrapper .solution-title.center {
+  text-align: center;
+  margin: auto;
+  max-width: 30%;
+}
+
+.about-solution .solution-wrapper .solution-title.left {
+  text-align: right;
+  max-width: 92%;
+}
+
+.about-solution .solution-wrapper .solution-title.right p {
+  max-width: 92%;
+}
+
+.about-solution .mask-group img {
+  position: absolute;
+}
+
+.about-solution .mask-group .mask1 {
+  top: -5%;
+  left: 5%;
+}
+
+.about-solution .mask-group .mask2 {
+  top: -4%;
+  right: 10%;
+}
+
+.about-solution .mask-group .mask3 {
+  bottom: -40px;
+  left: 10%;
+}
+
+.about-skill-wrapper {
+  max-width: 90%;
+}
+
+.about-skill-wrapper .about-skill-title {
+  margin-bottom: 50px;
+}
+
+.about-skill-wrapper .about-skill-title h2 {
+  margin-bottom: 30px;
+}
+
+.about-skill-wrapper .about-skill-title p {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 20px;
+  line-height: 30px;
+}
+
+.about-skill-wrapper .about-skill-pogressbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper {
+  margin-right: 120px;
+  text-align: center;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .round {
+  position: relative;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong {
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .skill-text {
+  margin-top: 20px;
+}
+
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .skill-text p {
+  padding-top: 10px;
 }
 
 .about-us-image {
