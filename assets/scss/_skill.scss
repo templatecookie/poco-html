@@ -1,0 +1,56 @@
+#circleBar {
+    margin-top: 60px;
+    text-align: center;
+    .section-title{
+        h2{
+            text-transform: uppercase;
+            color: white;
+            font-family: $teko;
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 118px;
+        }
+        span{
+            color: $tertiary;
+        }
+    }
+
+}
+
+#circleBar .round {
+    min-height: 255px;
+    position: relative;
+}
+
+#circleBar {
+    .round {
+        canvas{
+            width: 182px;
+            height: 182px;
+            
+        }
+        .round-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 40px;
+            line-height: 45px;
+            color: #fff;
+            font-weight: 600 !important;
+            font-family: "Teko", sans-serif;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-top: -30px;
+            P{
+                color: #fff;
+                font-size: 16px;
+                font-family: $hind;
+                line-height: 27px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.circleProgress{
+    background-color: transparent;
+}

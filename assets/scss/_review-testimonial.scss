@@ -1,0 +1,110 @@
+.client-review{
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .banner-image{
+        margin-top: -24px;
+    }
+    .section-title{
+        margin: 0;
+        margin-bottom: 30px;
+        h2{
+            text-transform: uppercase;
+            color: white;
+            font-size: 60px;
+            font-family: $teko;
+            font-weight: 600;
+            line-height: 1;
+            span{
+                color: $tertiary;
+            }
+        }
+    }
+    .review-active{
+        .single-testimonial{
+            p{
+                font-family: $hind;
+                font-weight: 500;
+                font-size: 22px;
+                color: #9DADB7;
+                line-height: 34px;
+            }
+            .client-name{
+                position: relative;
+                padding-left: 15px;
+                margin-top: 30px;
+                h3{
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 26px;
+                    font-family: $teko;
+                    font-weight: 600;
+                    line-height: 1;
+                }
+                p{
+                    font-family: $hind;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #9DADB7;
+                    line-height: 27px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 5px;
+                    height: 60px;
+                    background-color: $tertiary;
+                }
+            }
+        }
+        .slick-arrow {
+            position: absolute;
+            left: -217px;
+            bottom: -130px;
+            background-color: $tertiary;
+            color: white;
+            border: 1px solid transparent;
+            width: 157px;
+            height: 79px;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $teko;
+            font-size: 26px;
+            font-weight: 500;
+            @include transition (.3s);
+            &:hover{
+                background-color: white;
+                color: $tertiary ;
+            }
+            &.slick-next {
+                left: -60px;
+                &::before{
+                    content: "\f061";
+                    font-family: "Font Awesome 5 Free"; font-weight: 900;
+                    position: absolute;
+                    right: 38px;
+                    font-size: 20px; 
+                    top: 48%;
+                    transform: translateY(-50%);
+                }
+            }
+            &.slick-prev{
+                &::before{
+                    content: "\f060";
+                    font-family: "Font Awesome 5 Free";
+                    font-size: 20px; 
+                    font-weight: 900;
+                    position: absolute;
+                    left: 18px;
+                    top: 47%;
+                    transform: translateY(-50%);
+                } 
+            }
+        }
+    }
+}

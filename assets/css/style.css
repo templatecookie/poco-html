@@ -79,11 +79,19 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   line-height: 27px;
   font-family: "Gilroy-Regular";
   overflow-x: hidden;
+}
+
+.homepage04 {
+  background-color: #191C26;
 }
 
 *:focus {
@@ -625,8 +633,15 @@ aside,
   top: -21px;
 }
 
+.header-area04 .contact-number {
+  margin-left: 20px;
+}
+
 .header-area04 .contact-number .t-btn {
   border: 2px solid #3C5B6B;
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .header-area04 .right-content .social-icon {
@@ -906,6 +921,7 @@ aside,
 }
 
 .banner-area04 .banner-wrapper .banner-title span {
+  text-transform: uppercase;
   font-family: "Teko", sans-serif;
   font-size: 32px;
   line-height: 48px;
@@ -914,6 +930,7 @@ aside,
 }
 
 .banner-area04 .banner-wrapper .banner-title h1 {
+  text-transform: uppercase;
   font-family: "Teko", sans-serif;
   font-size: 135px;
   line-height: 135px;
@@ -1322,6 +1339,74 @@ aside,
 }
 
 /*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.about-info04 {
+  padding-top: 120px;
+  padding-bottom: 27px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-info04 .about-info-image {
+  margin-left: -257px;
+}
+
+.about-info04 .about-info-text h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Teko", sans-serif;
+  line-height: 118px;
+  font-weight: 600;
+}
+
+.about-info04 .about-info-text h2 span {
+  color: #FF465E;
+}
+
+.about-info04 .about-info-text p {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.about-info04 .about-info-text .about-info-project {
+  padding-top: 0px;
+  border-top: 0;
+}
+
+.about-info04 .about-info-text .about-info-project .project-information {
+  margin-top: 20px;
+}
+
+.about-info04 .about-info-text .about-info-project .project-information h3 {
+  font-size: 60px;
+  line-height: 34px;
+  font-weight: 600;
+  font-family: "Teko", sans-serif;
+  color: #FF465E;
+  margin: 0;
+}
+
+.about-info04 .about-info-text .about-info-project .project-information p {
+  font-family: "Hind", sans-serif;
+  font-family: 500;
+  font-size: 20px;
+  line-height: 34px;
+  color: #9DADB7;
+}
+
+.about-info04 .right-vcetor img {
+  position: absolute;
+  top: 31%;
+  right: 5%;
+}
+
+/*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* laptop devices 1200 - 1600 */
@@ -1387,6 +1472,61 @@ aside,
     margin-left: 0px;
     margin-bottom: 50px;
   }
+}
+
+#circleBar {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#circleBar .section-title h2 {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 118px;
+}
+
+#circleBar .section-title span {
+  color: #FF465E;
+}
+
+#circleBar .round {
+  min-height: 255px;
+  position: relative;
+}
+
+#circleBar .round canvas {
+  width: 182px;
+  height: 182px;
+}
+
+#circleBar .round .round-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  line-height: 45px;
+  color: #fff;
+  font-weight: 600 !important;
+  font-family: "Teko", sans-serif;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -30px;
+}
+
+#circleBar .round .round-text P {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Hind", sans-serif;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.circleProgress {
+  background-color: transparent;
 }
 
 .special-services-image {
@@ -2024,7 +2164,7 @@ aside,
 }
 
 .testimonial-area {
-  padding-bottom: 220px;
+  padding-top: 120px;
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
   border-radius: 24px;
@@ -2122,7 +2262,7 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  RESPONSIVE CSS START 
+/*  HOMEPAGE 2 CSS START 
 /*----------------------------------------*/
 .testimonial02 {
   background-color: inherit;
@@ -2163,7 +2303,7 @@ aside,
 
 .testimonial02 .project-info h4 span {
   font-family: "Gilroy-Medium";
-  margin-left: 10px;
+  margin-left: 10px solid #141824;
 }
 
 .testimonial02 .project-info h4::before {
@@ -2176,6 +2316,110 @@ aside,
   background-color: #FF465E;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 4 CSS START 
+/*----------------------------------------*/
+.testimonial04 {
+  padding-bottom: 100px 0;
+  background-color: inherit;
+  margin: 0px;
+  border-radius: 0px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonial04 .section-title h2 {
+  font-size: 60px;
+  line-height: 70px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.testimonial04 .section-title h2 span {
+  color: #FF465E;
+}
+
+.testimonial04 .testimoial-icon {
+  width: 185px;
+  height: 185px;
+  background-color: #2C2F3B;
+  border: 10px solid #141824;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial04 .testimonial-wrappers {
+  background-color: #2C2F3B;
+  border: 0;
+  text-align: center;
+  padding: 120px 23px 45px 23px;
+  margin-top: -100px;
+}
+
+.testimonial04 .testimonial-wrappers .tesmonial-text h2 {
+  font-size: 35px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  line-height: 48px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.testimonial04 .testimonial-wrappers .tesmonial-text p {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.testimonial04 .testimonial-wrappers .testimonial-icon {
+  width: 63px;
+  height: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid #3B4A51;
+  margin: 0 auto;
+  border-radius: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  margin-top: 20px;
+}
+
+.testimonial04 .testimonial-wrappers:hover .testimonial-icon {
+  background-color: #FF465E;
+  border-color: #FF465E;
+}
+
+.testimonial04 .testimonial-active .slick-arrow {
+  background-color: #111523;
+  top: -132px;
+  width: 57px;
+  height: 57px;
+  border-radius: 0;
+  border: 3px solid #3B4A51;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.testimonial04 .testimonial-active .slick-arrow:hover {
+  background-color: #FF465E;
+  border-color: #FF465E;
 }
 
 /*----------------------------------------*/
@@ -2228,6 +2472,135 @@ aside,
 }
 
 /* Small devices 576 - 767  */
+.client-review {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.client-review .banner-image {
+  margin-top: -24px;
+}
+
+.client-review .section-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.client-review .section-title h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.client-review .section-title h2 span {
+  color: #FF465E;
+}
+
+.client-review .review-active .single-testimonial p {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #9DADB7;
+  line-height: 34px;
+}
+
+.client-review .review-active .single-testimonial .client-name {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+.client-review .review-active .single-testimonial .client-name h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 26px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.client-review .review-active .single-testimonial .client-name p {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #9DADB7;
+  line-height: 27px;
+}
+
+.client-review .review-active .single-testimonial .client-name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 60px;
+  background-color: #FF465E;
+}
+
+.client-review .review-active .slick-arrow {
+  position: absolute;
+  left: -217px;
+  bottom: -130px;
+  background-color: #FF465E;
+  color: white;
+  border: 1px solid transparent;
+  width: 157px;
+  height: 79px;
+  cursor: pointer;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Teko", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.client-review .review-active .slick-arrow:hover {
+  background-color: white;
+  color: #FF465E;
+}
+
+.client-review .review-active .slick-arrow.slick-next {
+  left: -60px;
+}
+
+.client-review .review-active .slick-arrow.slick-next::before {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 38px;
+  font-size: 20px;
+  top: 48%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.client-review .review-active .slick-arrow.slick-prev::before {
+  content: "\f060";
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  left: 18px;
+  top: 47%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .newsletter-area {
   padding-bottom: 150px;
 }
@@ -2545,8 +2918,6 @@ aside,
 }
 
 .footer03 .footer-area {
-  padding-top: 130px;
-  padding-bottom: 0px;
   background-color: inherit;
 }
 
@@ -2574,6 +2945,80 @@ aside,
 
 .footer03 .footer-area-lists ul li a:hover {
   color: #ED880A;
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.footer04 {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+}
+
+.footer04 .footer-area {
+  padding: 0;
+  background-color: inherit;
+}
+
+.footer04 .footer-area-about .logo {
+  margin-bottom: 25px;
+}
+
+.footer04 .footer-area-about p {
+  font-size: 16px;
+  color: #9DADB7;
+  font-weight: 500;
+  font-family: "Hind", sans-serif;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.footer04 .footer-area-lists h4 {
+  color: white;
+  font-size: 26px;
+  line-height: 39px;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer04 .footer-area-lists li {
+  margin: 0;
+}
+
+.footer04 .footer-area-lists li a {
+  color: #9DADB7;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.footer04 .copyright {
+  padding: 20px;
+}
+
+.footer04 .copyright-area-text p {
+  color: #9DADB7;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.footer04 .copyright-area-list ul li {
+  color: #9DADB7;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  margin-right: 35px;
+}
+
+.footer04 .copyright-area-list ul li:last-child {
+  margin-right: 0;
 }
 
 /*----------------------------------------*/

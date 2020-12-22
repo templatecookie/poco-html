@@ -43,13 +43,18 @@
 @import 'banner';
 @import 'brand';
 @import 'about-info';
+@import 'skill';
 @import 'special-services';
 @import 'price';
 @import 'responsive';
 @import 'callto-action';
 @import 'testimonial';
+@import 'review-testimonial';
 @import 'newsletter';
 @import 'services-introduction';
 @import 'client';
 @import 'team';
 @import 'footer';
+
+//Page
+@import 'page/aboutus'

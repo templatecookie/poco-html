@@ -1,5 +1,5 @@
 .testimonial-area {
-    padding-bottom: 220px;
+    padding-top: 120px;
     background-color: rgba(255, 70, 94, 0.05);
     margin: 0 45px;
     border-radius: 24px;
@@ -57,18 +57,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-            &:hover {
-                // background-color: transparent;
-                // border-color: #dddddd;
-            }
-
             &.prev-arrow {
                 right: 75px;
-            }
-
-            .logo-img path {
-                // fill: #000;
             }
         }
     }
@@ -107,12 +97,13 @@
 }
 
 /*----------------------------------------*/
-/*  RESPONSIVE CSS START 
+/*  HOMEPAGE 2 CSS START 
 /*----------------------------------------*/
 .testimonial02 {
     background-color: inherit;
     margin: 0;
     border-radius: 0;
+
     .testimonial-wrapper {
         padding: 40px !important;
         border-radius: 42px !important;
@@ -125,23 +116,28 @@
         }
 
     }
+
     .testimonial-active {
         .slick-arrow {
             top: -132px;
         }
     }
-    .project-info{
+
+    .project-info {
         display: flex;
         align-items: center;
-        h4{
+
+        h4 {
             padding-left: 50px;
             position: relative;
             margin-right: 100px;
-            span{
+
+            span {
                 font-family: $gilroy-medium;
-                margin-left: 10px;
+                margin-left: 10px solid #141824;
             }
-            &::before{
+
+            &::before {
                 content: "";
                 position: absolute;
                 top: 50%;
@@ -154,6 +150,102 @@
         }
     }
 
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 4 CSS START 
+/*----------------------------------------*/
+.testimonial04 {
+    padding-bottom: 100px 0;
+    background-color: inherit;
+    margin: 0px;
+    border-radius: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .section-title{
+        h2{
+            font-size: 60px;
+            line-height: 70px;
+            font-family: $teko;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+            span{
+                color: $tertiary;
+            }
+        }
+    }
+    .testimoial-icon {
+        width: 185px;
+        height: 185px;
+        background-color: #2C2F3B;
+        border: 10px solid #141824;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .testimonial-wrappers {
+        background-color: #2C2F3B;
+        border: 0;
+        text-align: center;
+        padding: 120px 23px 45px 23px;
+        margin-top: -100px;
+
+        .tesmonial-text {
+            h2 {
+                font-size: 35px;
+                font-family: $teko;
+                font-weight: 600;
+                line-height: 48px;
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-family: $hind;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 27px;
+            }
+        }
+        .testimonial-icon{
+                width: 63px;
+                height: 63px;
+                display: flex;
+                justify-content: center;
+                border: 3px solid #3B4A51;
+                margin: 0 auto;
+                border-radius: 100%;
+                @include transition (.3s);
+                margin-top: 20px;
+    
+        }
+        &:hover{
+            .testimonial-icon{
+                background-color: $tertiary;
+                border-color: $tertiary;
+            }
+        }
+    }
+    .testimonial-active {
+        .slick-arrow {
+            background-color: #111523;
+            top: -132px;
+            width: 57px;
+            height: 57px;
+            border-radius: 0;
+            border: 3px solid #3B4A51;
+            @include transition (.3s);
+            &:hover{
+                background-color: $tertiary;
+                border-color: $tertiary;
+            }
+        }
+    }
 }
 
 /*----------------------------------------*/

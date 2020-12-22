@@ -179,6 +179,7 @@
     .banner-wrapper{
         .banner-title{
             span{
+                text-transform: uppercase;
                 font-family: $teko;
                 font-size: 32px;
                 line-height: 48px;
@@ -186,6 +187,7 @@
                 color: $tertiary;
             }
             h1{
+                text-transform: uppercase;
                 font-family: $teko;
                 font-size: 135px;
                 line-height: 135px;

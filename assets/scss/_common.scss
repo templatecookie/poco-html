@@ -5,13 +5,19 @@
 	box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	font-size: 16px;
 	line-height: 27px;
 	font-family: $gilroy-regular;
 	overflow-x: hidden;
 }
-
+.homepage04{
+	background-color: #191C26;
+}
 *:focus {
 	color: inherit;
 	outline: inherit;
