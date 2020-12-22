@@ -1,0 +1,129 @@
+//BREADCRUMB AREA
+.breadcrumb-area {
+    position: relative;
+    margin-bottom: 130px;
+
+    .banner-image {
+        padding-top: 35px;
+        padding-right: 155px;
+    }
+
+    .banner-wrapper {
+        padding-left: 30px;
+
+        p {
+            max-width: 70%;
+        }
+    }
+
+    .breadcrumb-wrapper {
+        position: absolute;
+        bottom: -28px;
+        left: 90px;
+
+        .breadcrumb {
+            align-items: center;
+            padding: 15px 22px;
+            border-radius: 13px 13px 0 0;
+            background-color: white;
+            margin: 0;
+
+            .breadcrumb-item {
+                font-size: 20px;
+                line-height: 36px;
+                color: $primary;
+                font-family: $gilroy-bold;
+
+                a {
+                    transition: .3s;
+
+                    &:hover {
+                        color: $tertiary;
+                    }
+                }
+
+                &::before {
+                    font-size: 20px;
+                    line-height: 36px;
+                    color: $primary;
+                    font-family: $gilroy-bold;
+                }
+
+                +.active {
+                    color: $tertiary !important;
+                }
+            }
+        }
+    }
+
+    .breadcrumbmask {
+        .mask1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        .mask2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}
+
+//WORK SOLUTION AREA
+.work-solution {
+    background-color: #FFF5F7;
+    padding: 130px 0;
+    margin: 0 45px;
+    border-radius: 24px;
+    position: relative;
+    .solution-wrapper {
+
+        .solution-title {
+            h4 {
+                span {
+                    color: $tertiary;
+                }
+                margin-bottom: 10px;
+            }
+
+            &.center {
+                text-align: center;
+                margin: auto;
+                max-width: 30%;
+            }
+            &.left{
+                    text-align: right;
+                    max-width: 92%;
+            }
+            &.right {
+                p{
+                    max-width: 92%;
+                }
+            }
+        }
+    }
+    .mask-group {
+        img {
+            position: absolute;
+        }
+
+        .mask1 {
+            top:-5%;
+            left: 5%;
+        }
+
+        .mask2 {
+            top: -4%;
+            right: 10%;
+        }
+
+        .mask3 {
+            bottom: -40px;
+            left: 10%;
+        }
+    }
+}
