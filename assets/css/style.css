@@ -3883,6 +3883,32 @@ aside,
   padding-left: 5px;
 }
 
+.project-work-process {
+  background: #FFF5F7;
+  margin: 0 45px;
+  border-radius: 24px;
+  position: relative;
+  z-index: -5;
+}
+
+.project-work-process .process-item .dashed02 {
+  background-color: #FFF5F7;
+}
+
+.project-work-process .shape img {
+  position: absolute;
+}
+
+.project-work-process .shape .round-shape01 {
+  top: -7%;
+  right: 5%;
+}
+
+.project-work-process .shape .round-shape02 {
+  top: -10%;
+  left: 5%;
+}
+
 .conatact-area {
   background: #FCF8F8;
   padding-top: 160px;
