@@ -87,7 +87,72 @@
                 padding: 15px;
             }
         }
-      
+      .dashed01{
+        border: 1.5px dashed rgba(115,83,255,0.50);
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            border: none;
+            border-top: 1.5px dashed rgba(115, 83, 255, 0.5);
+            height: 0;
+            width: 155%;
+            transform: translateY(-50%);
+        }
+        &::after{
+            position: absolute;
+            color: rgba(41,198,255,0.50);;
+            top: 50%;
+            left: 250%;
+            content: "\f054";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            transform: translateY(-50%);
+        }
+      }
+      .dashed02{
+        border: 1.5px dashed rgba(41,198,255,0.50);
+        position: relative;
+        background-color: white;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            border: none;
+            border-top: 1.5px dashed rgba(41, 198, 255, 0.5);
+            height: 0;
+            width: 410%;
+            transform: translateY(-50%);
+            z-index: -1; 
+        }
+        &::after{
+            color: rgba(99,190,82,0.50);
+            position: absolute;
+            top: 50%;
+            left: 250%;
+            content: "\f054";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            transform: translateY(-50%);
+        }
+      }
+      .dashed03{
+        border: 1.5px dashed rgba(99,190,82,0.50);
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            border: none;
+            border-top: 1.5px dashed  rgba(99,190,82,0.50);
+            height: 0;
+            width: 155%;
+            transform: translateY(-50%);
+        }
+      }
     }
     .process-text{
         max-width: 290px;
