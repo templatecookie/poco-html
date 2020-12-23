@@ -67,6 +67,13 @@
 .our-work-process{
     position: relative;
     .process-item{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left:0;
+        }
         .around-dotted{
             width: 100px;
             height: 100px;
@@ -104,3 +111,23 @@
     }
 }
 // END OUR WORK PROCESS 
+
+// Services Details Page
+.design-services-text{
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 18px;
+        font-family: $gilroy-medium;
+    }
+    .t-outile-btn{
+        border: 2px solid #FF465E;
+        color: #FF465E;
+        transition: 0.3s all linear;
+        &:hover{
+            background-color: #FF465E;
+            color: #ffffff;
+        }
+    }
+}
