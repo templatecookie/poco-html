@@ -3679,6 +3679,99 @@ aside,
   font-size: 18px;
 }
 
+.project-detail .overview-image img {
+  border-radius: 5px;
+}
+
+.project-detail .project-overview-wrapper {
+  background-color: white;
+  position: relative;
+  margin: 0 100px;
+  margin-top: -58px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.project-detail .project-overview-wrapper .overview-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 45px;
+}
+
+.project-detail .project-overview-wrapper .overview-detail p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Gilroy-Medium";
+}
+
+.project-detail .project-overview-wrapper .overview-detail h6 {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Gilroy-Bold";
+}
+
+.project-detail .project-detail-content {
+  margin-top: 50px;
+}
+
+.project-detail .project-detail-content h2 {
+  font-size: 40px;
+  line-height: 49px;
+  margin-bottom: 15px;
+}
+
+.project-detail .project-detail-content p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.project-detail .project-next-prev-button {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-detail .project-next-prev-button .btn-modifi {
+  font-size: 18px;
+  border: 1px solid #FF465E;
+  color: #FF465E;
+  padding: 15px 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-detail .project-next-prev-button .btn-modifi:hover {
+  background: #FF465E;
+  color: white;
+}
+
+.project-detail .project-next-prev-button .icon01 {
+  padding-right: 5px;
+}
+
+.project-detail .project-next-prev-button .icon02 {
+  padding-left: 5px;
+}
+
 .conatact-area {
   background: #FCF8F8;
   padding-top: 160px;
