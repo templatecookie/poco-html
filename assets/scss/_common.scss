@@ -215,6 +215,16 @@ p {
 		color: $tertiary;
 	}
 }
+.t-btn-outline{
+	color: $tertiary;
+	background: transparent;
+	border: 1.5px solid $tertiary;
+	
+	&:hover{
+		color: white;
+		background-color: $tertiary;
+	}
+}
 .t-bg-black {
 	color: white;
 	background-color: #000560;
@@ -245,16 +255,16 @@ p {
 	}
 }
 
-.t-btn-outline {
-	border: 1px solid transparent;
-	border-color: rebeccapurple;
-	color: rebeccapurple;
+// .t-btn-outline {
+// 	border: 1px solid transparent;
+// 	border-color: rebeccapurple;
+// 	color: rebeccapurple;
 
-	&:hover {
-		color: #fff;
-		background-color: rebeccapurple;
-	}
-}
+// 	&:hover {
+// 		color: #fff;
+// 		background-color: rebeccapurple;
+// 	}
+// }
 
 .t-radius {
 	border-radius: 50%;
