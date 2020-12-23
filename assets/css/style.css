@@ -3571,6 +3571,17 @@ aside,
   position: relative;
 }
 
+.our-work-process .process-item {
+  position: relative;
+}
+
+.our-work-process .process-item::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+}
+
 .our-work-process .process-item .around-dotted {
   width: 100px;
   height: 100px;
@@ -3613,6 +3624,27 @@ aside,
 .our-work-process .shape .round-shape {
   top: 15%;
   left: 15%;
+}
+
+.design-services-text h2 {
+  font-size: 40px;
+}
+
+.design-services-text p {
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+}
+
+.design-services-text .t-outile-btn {
+  border: 2px solid #FF465E;
+  color: #FF465E;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.design-services-text .t-outile-btn:hover {
+  background-color: #FF465E;
+  color: #ffffff;
 }
 
 .profession-area {
