@@ -36,3 +36,72 @@
         }
     }
 }
+//OUR PROJECT DEATIL AREA
+.project-detail{
+    .overview-image{
+        img{
+            border-radius: 5px;
+        }
+    }
+    .project-overview-wrapper{
+        background-color: white;
+        position: relative;
+        margin: 0 100px;
+        margin-top: -58px;
+        border-radius: 5px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.07);
+        .overview-detail{
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 30px 45px;
+           p{
+               font-size: 18px;
+               line-height: 30px;
+               font-family: $gilroy-medium;
+           }
+           h6{
+               font-size: 18px;
+               line-height: 30px;
+               font-family: $gilroy-bold;
+           }
+        }
+    }
+    .project-detail-content{
+        margin-top: 50px;
+        h2{
+            font-size: 40px;
+            line-height: 49px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    .project-next-prev-button{
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn-modifi{
+            font-size: 18px;
+            border: 1px solid $tertiary;
+            color: $tertiary;
+            padding: 15px 38px;
+            display: flex;
+            align-items: center;
+            &:hover{
+                background: $tertiary;
+                color: white;
+
+            }
+        }
+        .icon01{
+            padding-right: 5px
+        }
+        .icon02{
+            padding-left: 5px
+        }
+    }
+}
