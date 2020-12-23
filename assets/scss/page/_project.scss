@@ -1,0 +1,38 @@
+//OUR PROJECT AREA
+.project{
+    &-wrapper{
+       &-image{
+           img{
+            max-width: 100%;
+           }
+       }
+       &-title{
+           h3{
+               font-size: 30px;
+               line-height: 38px;
+           }
+           span{
+               font-size: 16px;
+               font-family: $gilroy-medium;
+               line-height: 30px;
+               color: $tertiary;
+               padding: 5px 0;
+               display: block;
+           }
+           p{
+               font-size: 18px;
+               line-height: 30px;
+           }
+       }
+       &-button{
+           margin-top: 20px;
+       }
+    }
+    .load-more-button{
+        text-align: center;
+        margin-top: 10px;
+        .t-btn{
+            font-size: 18px;
+        }
+    }
+}
