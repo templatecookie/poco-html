@@ -24,7 +24,6 @@
             padding: 20px;
             border: 2px solid #dddddd;
             border-radius: 5px;
-            margin-bottom: 50px;
             @include transition(.3s);
 
             .client-name {
@@ -149,6 +148,49 @@
                 height: 6px;
                 background-color: $tertiary;
                 transform: translateY(-50%);
+            }
+        }
+    }
+
+}
+/*----------------------------------------*/
+/*  HOMEPAGE 3 CSS START 
+/*----------------------------------------*/
+.testimonial02 {
+    background-color: inherit;
+    margin: 0;
+    border-radius: 0;
+
+    .testimonial-wrapper {
+        padding: 40px !important;
+        border-radius: 42px !important;
+        border-bottom-right-radius: 0 !important;
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $gilroy-medium;
+        }
+
+    }
+
+    .testimonial-active {
+        .slick-current {
+            .testimonial-wrapper {
+                border-color: #ED880A;
+            }
+        }
+        .slick-arrow {
+            background-color: #ED880A;
+        }
+    }
+
+    .project-info {
+        display: flex;
+        align-items: center;
+        h4 {
+            &::before {
+                background-color: #ED880A;
             }
         }
     }

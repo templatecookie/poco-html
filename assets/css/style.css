@@ -90,6 +90,10 @@ body {
   overflow-x: hidden;
 }
 
+.custom-container {
+  max-width: 1630px;
+}
+
 .homepage04 {
   background-color: #191C26;
 }
@@ -381,7 +385,9 @@ p {
 .small-feature {
   background-color: white;
   border-radius: 10px;
-  padding: 30px;
+  padding: 26px;
+  width: 188px;
+  height: 168px;
 }
 
 .small-feature-percentage {
@@ -621,7 +627,6 @@ aside,
 /*  HOMPAGE 2 CSS
 /*----------------------------------------*/
 .header-area02 {
-  padding: 20px 115px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: absolute;
   width: 100%;
@@ -637,7 +642,6 @@ aside,
 /*----------------------------------------*/
 .header-area03 {
   margin: 0;
-  padding: 20px 135px;
   position: absolute;
   width: 100%;
   z-index: 999;
@@ -665,7 +669,6 @@ aside,
 /*  HOMPAGE 4 CSS
 /*----------------------------------------*/
 .header-area04 {
-  padding: 20px 175px;
   position: absolute;
   width: 100%;
   left: 0;
@@ -885,6 +888,10 @@ aside,
   z-index: 99;
 }
 
+.banner-area02 .banner-image {
+  margin-left: 100px;
+}
+
 .banner-area02 .banner-wrapper {
   padding-top: 115px;
 }
@@ -919,13 +926,28 @@ aside,
   left: 0;
 }
 
+.banner-area02 .small-feature01 {
+  position: absolute;
+  top: 24%;
+  right: 27%;
+}
+
+.banner-area02 .small-feature01 .image {
+  background-color: #FD6F00;
+}
+
+.banner-area02 .small-feature02 {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+}
+
 /*----------------------------------------*/
 /*  HOME PAGE 03 BANNER CSS
 /*----------------------------------------*/
 .banner-area03 {
   background-color: #1F99F4;
   margin: 0;
-  padding: 0 135px;
   border-radius: 0;
 }
 
@@ -1210,6 +1232,7 @@ aside,
 /*----------------------------------------*/
 .aboutus02 {
   padding: 130px 0;
+  position: relative;
 }
 
 .aboutus02-wrapper {
@@ -1269,23 +1292,79 @@ aside,
   position: absolute;
   bottom: 30px;
   border: 5px solid #FFFFFF;
-  right: 30px;
+  right: -15px;
   width: 516px;
   height: 693px;
   border-radius: 101px;
   border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .aboutus02-image::before {
   content: "";
   position: absolute;
-  top: 69px;
+  top: 63px;
   border: 5px solid #FF465E;
-  left: 52px;
+  right: -75px;
   width: 455px;
   height: 654px;
   border-radius: 101px;
   z-index: -99;
+}
+
+.aboutus02 .small-feature {
+  position: absolute;
+  bottom: 21%;
+  right: 40%;
+}
+
+.aboutus-introduction02 {
+  position: relative;
+}
+
+.aboutus-introduction02 .aboutus-introduction02-image {
+  margin-left: -175px;
+  position: relative;
+}
+
+.aboutus-introduction02 .aboutus-introduction02-image img {
+  width: 516px;
+  height: 686px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 101px;
+  border-top-right-radius: 0;
+}
+
+.aboutus-introduction02 .aboutus-introduction02-image::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  border: 5px solid #FFFFFF;
+  right: 0;
+  width: 516px;
+  height: 693px;
+  border-radius: 101px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.aboutus-introduction02 .aboutus-introduction02-image::before {
+  left: -35px;
+  content: "";
+  position: absolute;
+  top: 68px;
+  border: 5px solid #FF465E;
+  width: 455px;
+  height: 654px;
+  border-radius: 101px;
+  z-index: -99;
+}
+
+.aboutus-introduction02 .introduction-feature {
+  position: absolute;
+  bottom: 22%;
+  left: 33%;
 }
 
 .homepage-03 .sub-section-heading p {
@@ -2218,7 +2297,6 @@ aside,
   padding: 20px;
   border: 2px solid #dddddd;
   border-radius: 5px;
-  margin-bottom: 50px;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -2350,6 +2428,48 @@ aside,
   background-color: #FF465E;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 3 CSS START 
+/*----------------------------------------*/
+.testimonial02 {
+  background-color: inherit;
+  margin: 0;
+  border-radius: 0;
+}
+
+.testimonial02 .testimonial-wrapper {
+  padding: 40px !important;
+  border-radius: 42px !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.testimonial02 .testimonial-wrapper p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Gilroy-Medium";
+}
+
+.testimonial02 .testimonial-active .slick-current .testimonial-wrapper {
+  border-color: #ED880A;
+}
+
+.testimonial02 .testimonial-active .slick-arrow {
+  background-color: #ED880A;
+}
+
+.testimonial02 .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial02 .project-info h4::before {
+  background-color: #ED880A;
 }
 
 /*----------------------------------------*/

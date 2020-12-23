@@ -84,7 +84,9 @@
     border-bottom-left-radius: 166px;
     padding-top: 115px;
     z-index: 99;
-
+    .banner-image{
+        margin-left: 100px;
+    }
     .banner-wrapper {
         padding-top: 115px;
 
@@ -120,6 +122,19 @@
             left: 0;
         }
     }
+    .small-feature01{
+        position: absolute;
+        top: 24%;
+        right: 27%;
+        .image {
+            background-color: #FD6F00;
+        }
+    }
+    .small-feature02{
+        position: absolute;
+        top: 40%;
+        right: 40%;
+    }
 }
 
 /*----------------------------------------*/
@@ -128,7 +143,6 @@
 .banner-area03 {
     background-color: #1F99F4;
     margin: 0;
-    padding: 0 135px;
     border-radius: 0;
 
     .banner-image {
