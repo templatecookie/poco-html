@@ -1,4 +1,176 @@
 .blog-area{
+    .article-item{
+        margin-bottom: 55px;
+        h3{
+            margin-bottom: 25px;
+            font-size: 36px;
+        }
+        .article-info{
+            margin-bottom: 25px;
+            display: flex;
+            max-width: 450px;
+            justify-content: space-between;
+            align-items: center;
+            .author{
+                img{
+                    width: 32px;
+                    height: 32px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                a{
+                    font-size: 16px;
+                    margin-left: 8px;
+                    color: #000560;
+                    font-family: $gilroy-bold;
+                    transition: 0.3s all linear;
+                        &:hover{
+                            color: #FF465E;
+                        }
+                }
+            }
+            .date{
+                span{
+                    font-size: 16px;
+                    font-family: $gilroy-medium;
+                    color: #65729E;
+                }
+                .icon{
+                    font-size: 16px;
+                    i{
+                        margin-right: 8px;
+                        color: #FF465E;
+                    }
+                  
+                }
+            }
+            .comments{
+                span{
+                    a{
+                        font-size: 16px;
+                        font-family: $gilroy-medium;
+                        color: #65729E;
+                        transition: 0.3s all linear;
+                        &:hover{
+                            color: #FF465E;
+                        }
+                    }
+                }
+                .icon{
+                    font-size: 16px;
+                    i{
+                        margin-right: 8px;
+                        color: #FF465E;
+                    }
+                  
+                }
+            }
+        }
+        .article-thumb{
+            margin-bottom: 30px;
+            img{
+                border-radius: 8px;
+            }
+        }
+        p.article-text{
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+    }
+    .blog-quotes{
+        background-color: #FFF5F7;
+        position: relative;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: '\f10e';
+            bottom: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,210,219,0.50);
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 150px;
+            z-index: -1;
+        }
+        h3{
+           text-align: center;
+           max-width: 625px;
+           font-size: 36px; 
+           color: #FF465E;
+        }
+    }
+    .overlay-thumb{
+        &-image{
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                background: rgba(0, 5, 96, 0.4);
+                border-radius: 4px;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+            
+        }
+        .overlay-playbutton{
+            position: absolute;
+            bottom: 19%;
+            transform: translateX(-50%);
+            left: 50%;
+            a{
+                width: 98px;
+                height: 98px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #7906d8;
+                border-radius: 50%;
+                i{
+                    color: #FF465E;
+                }
+            }
+        }
+      
+    }
+    .pagination-area{
+        border-top: 2px solid rgba(221,221,221,0.50);
+        nav{
+            .pagination{
+                li{
+                    a{
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 20px;
+                        background-color: #FFF5F7;
+                        font-size: 24px;
+                        color: #000560;
+                        transition: 0.3s all linear;
+                        font-family: $gilroy-bold;
+                        &:hover{
+                            background-color: #FF465E;
+                            color: #ffffff;
+                            i{
+                                color: #ffffff;
+                            }
+                        }
+                        i{
+                            color: #FF465E;
+                            transition: 0.3s all linear;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .aside{
        .search{
         max-width: 300px;
