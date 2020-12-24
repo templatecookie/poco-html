@@ -1,7 +1,10 @@
 //BREADCRUMB AREA
 .breadcrumb-area {
-    position: relative;
     margin-bottom: 130px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 
     .banner-image {
         padding-top: 35px;
@@ -12,14 +15,14 @@
         padding-left: 30px;
 
         p {
-            max-width: 70%;
+            max-width: 85%;
         }
     }
 
     .breadcrumb-wrapper {
         position: absolute;
         bottom: -28px;
-        left: 90px;
+        left: 45px;
 
         .breadcrumb {
             align-items: center;
@@ -61,13 +64,6 @@
             position: absolute;
             top: 0;
             right: 0;
-            z-index: -1;
-        }
-
-        .mask2 {
-            position: absolute;
-            top: 0;
-            left: 0;
             z-index: -1;
         }
     }

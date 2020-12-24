@@ -3033,8 +3033,11 @@ aside,
 }
 
 .breadcrumb-area {
-  position: relative;
   margin-bottom: 130px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .breadcrumb-area .banner-image {
@@ -3047,13 +3050,13 @@ aside,
 }
 
 .breadcrumb-area .banner-wrapper p {
-  max-width: 70%;
+  max-width: 85%;
 }
 
 .breadcrumb-area .breadcrumb-wrapper {
   position: absolute;
   bottom: -28px;
-  left: 90px;
+  left: 45px;
 }
 
 .breadcrumb-area .breadcrumb-wrapper .breadcrumb {
@@ -3097,13 +3100,6 @@ aside,
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
-}
-
-.breadcrumb-area .breadcrumbmask .mask2 {
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1;
 }
 
