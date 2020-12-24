@@ -15,6 +15,12 @@ body {
 	font-family: $gilroy-regular;
 	overflow-x: hidden;
 }
+.custom-container{
+	max-width:1630px
+}
+.custom-container02{
+	max-width:1510px
+}
 .homepage04{
 	background-color: #191C26;
 }
@@ -295,7 +301,9 @@ p {
 .small-feature {
     background-color: white;
     border-radius: 10px;
-    padding: 30px;
+	padding: 26px;
+	width: 188px;
+	height: 168px;
 
     &-percentage {
         margin-bottom: 20px;
