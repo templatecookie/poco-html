@@ -3505,7 +3505,8 @@ aside,
 .about-us-image .small-feature {
   position: absolute;
   height: 120px;
-  width: 135px;
+  width: 120px;
+  padding: 10px;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
