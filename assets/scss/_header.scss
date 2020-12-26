@@ -363,3 +363,24 @@ aside,
     display: none !important;
   }
 }
+
+header {
+  transition: padding .3s ease-in-out;
+  .main-menu li a::before {
+    transition: all .3s  ease-in-out;
+  }
+  &.sticky {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 10px 0px #dadada;
+    background-color: white;
+    z-index: 99;
+    padding: 15px 0px;
+    .main-menu li a.active::before {
+      
+      top: -21px;
+    }
+  }
+}
