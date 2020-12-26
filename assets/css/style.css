@@ -802,6 +802,33 @@ aside,
   }
 }
 
+header {
+  -webkit-transition: padding .3s ease-in-out;
+  transition: padding .3s ease-in-out;
+}
+
+header .main-menu li a::before {
+  -webkit-transition: all .3s  ease-in-out;
+  transition: all .3s  ease-in-out;
+}
+
+header.sticky {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0 1px 10px 0px #dadada;
+          box-shadow: 0 1px 10px 0px #dadada;
+  background-color: white;
+  z-index: 99;
+  padding: 15px 0px;
+}
+
+header.sticky .main-menu li a.active::before {
+  top: -21px;
+}
+
 .banner-area {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;

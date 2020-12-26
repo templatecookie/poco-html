@@ -103,6 +103,22 @@
 	$('aside .overlay').on('click', function () {
 		toggleSidebar();
 	});
+
+
+	// sticky menu 
+    var $window = $(window);
+    var $fh = $('header')
+
+ // Sticky Menu
+    $window.on('scroll', function () {
+        var $offset = $(this).scrollTop();
+        if ($offset > .5) {
+            $fh.addClass('sticky');
+        } else {
+            $fh.removeClass('sticky');
+        }
+    });
+
 })(jQuery);
 
 // disalbe scrolling
@@ -117,3 +133,4 @@ function disableScrolling() {
 function enableScrolling() {
 	window.onscroll = function () {};
 }
+
