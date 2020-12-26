@@ -196,3 +196,123 @@
         }
     }
 }
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+    /* common area start */
+
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    /* common area start */
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 0 - 768 */
+@media #{$xs} {
+    // Globally Starts Here
+    .section-title{
+        margin-bottom: 30px;
+    }
+    // Breadcrumb
+    .breadcrumb-area{
+        .banner-image{
+            padding: 10px 0;
+        }
+        .banner-wrapper{
+            padding: 0;
+            text-align: center;
+            padding-bottom: 10px;
+            p{
+                max-width: 100%;
+                margin-top: 0;
+            }
+        }
+        .breadcrumb-wrapper{
+            display: none;
+        }
+    }
+    // Globally Ends Here
+
+    // Our Work Process
+    .our-work-process{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .shape{
+            display: none;
+        }
+       
+        .process-item{
+            .around-dotted {
+                &::before{
+                    display: none;
+                }
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // Our Services
+    .our-services{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0 !important;
+        .shape{
+            display: none;
+        }
+        .about-us-image{
+            .image{
+                margin-left: 0;
+            }
+        }
+        .about-us-text{
+            margin-top: 30px;
+            .feature{
+                .icon{
+                    height: 35px;
+                    width: 60px;
+                }
+            }
+        }
+    }
+    // Special-Services
+    .special-services{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .shape{
+            display: none;
+        }
+        &-item{
+            .special-services-image{
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            .special-services-text{
+                h5{
+                    text-align: center;
+                }
+                p{
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // Pricing Area
+    .price-area{
+        z-index: 5 !important;
+    }
+}
+
+/* Small devices 576 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
