@@ -438,6 +438,7 @@ p {
 
 .header-area .main-menu li {
   padding-right: 45px;
+  position: relative;
 }
 
 .header-area .main-menu li:last-child {
@@ -451,6 +452,12 @@ p {
   line-height: 42px;
   position: relative;
   font-family: "Gilroy-Medium";
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-area .main-menu li a:hover {
+  color: #FF465E;
 }
 
 .header-area .main-menu li a.active {
@@ -466,6 +473,49 @@ p {
   background-color: #FF465E;
   top: -26px;
   left: 0;
+}
+
+.header-area .main-menu li .sub-menu {
+  position: absolute;
+  left: 0;
+  background: #222222;
+  width: 200px;
+  top: 120%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background: white;
+  border-radius: 5px;
+  border-top: 5px solid #FF465E;
+  z-index: 999;
+}
+
+.header-area .main-menu li .sub-menu li {
+  display: block;
+  margin-top: 5px;
+}
+
+.header-area .main-menu li .sub-menu li a {
+  padding: 10px 20px;
+  color: #65729E;
+  font-size: 18px;
+  line-height: 42px;
+  font-family: "Gilroy-Medium";
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-area .main-menu li .sub-menu li a:hover {
+  color: #FF465E;
+}
+
+.header-area .main-menu li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
 }
 
 .header-area .right-content {
