@@ -4324,11 +4324,6 @@ header.sticky .main-menu li a.active::before {
   border-color: white;
 }
 
-.blog-area .overlay-thumb .overlay-playbutton .video-border {
-  -webkit-animation: pulseBig infinite 4s linear;
-          animation: pulseBig infinite 4s linear;
-}
-
 .blog-area .pagination-area {
   border-top: 2px solid rgba(221, 221, 221, 0.5);
 }
