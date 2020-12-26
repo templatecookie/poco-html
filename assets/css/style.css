@@ -4130,6 +4130,16 @@ header.sticky .main-menu li a.active::before {
   margin-top: 20px !important;
 }
 
+.form-message {
+  position: relative;
+}
+
+.form-message .icon {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+
 .blog-area .article-item {
   margin-bottom: 55px;
 }
