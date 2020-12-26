@@ -45,16 +45,19 @@
 }
 
 // HomePage-02
-.call-action-two{
-    background-color: rgba(255,246,247,1);
-    background-size:cover;
+.call-action-two {
+    background-color: rgba(255, 246, 247, 1);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-top-left-radius: 166px;
-}
-.customer-care{
     position: relative;
-    &-text{
+}
+
+.customer-care {
+    position: relative;
+
+    &-text {
         position: absolute;
         top: -45px;
         left: 55px;
@@ -64,50 +67,81 @@
         text-align: center;
         border-radius: 26px;
         border-bottom-left-radius: 0px;
-        p{
+
+        p {
             font-family: $gilroy-medium;
             color: $primary;
         }
+
+        &::before {
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+            top: 48px;
+            left: 40px;
+            width: 17px;
+            height: 17px;
+            background: white;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+            top: 68px;
+            left: 26px;
+            width: 9px;
+            height: 9px;
+            background: white;
+        }
     }
+
 }
+
 // HomePage-03
-.homepage-03{
-    .call-action-text{
-        .sub-section-heading{
-            h6{
+.homepage-03 {
+    .call-action-text {
+        .sub-section-heading {
+            h6 {
                 letter-spacing: 2px;
                 word-spacing: 5px;
                 color: #899DA7;
                 font-size: 14px;
                 font-family: $gilroy-regular;
             }
-            p{
+
+            p {
                 font-size: 18px;
                 font-family: $gilroy-medium;
             }
         }
-        .t-bg-orange{
+
+        .t-bg-orange {
             padding: 20px 55px;
         }
     }
-    .call-action-video{
+
+    .call-action-video {
         z-index: 1;
         position: relative;
-        .image-overlay{
+
+        .image-overlay {
             position: absolute;
-            background: rgba(0,5,96,0.60);
+            background: rgba(0, 5, 96, 0.60);
             border-radius: 4px;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
         }
-        .play-video{
+
+        .play-video {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            a{
+
+            a {
                 width: 120px;
                 height: 120px;
                 display: flex;
@@ -115,39 +149,44 @@
                 justify-content: center;
                 background-color: #ED880A;
                 border-radius: 50%;
-                i{
+
+                i {
                     color: #ffffff;
                     font-size: 22px;
                 }
             }
         }
-        .pattern{
-            img{
+
+        .pattern {
+            img {
                 position: absolute;
             }
-            .pattern-one{
+
+            .pattern-one {
                 top: -10%;
                 left: -8%;
                 z-index: -1;
             }
-            .pattern-two{
+
+            .pattern-two {
                 bottom: -10%;
                 right: -8%;
                 z-index: -1;
             }
         }
-   
+
     }
 }
 
 //team-member page
-.callto-action-modifi{
+.callto-action-modifi {
     background-color: inherit;
     border-radius: 0;
     margin: 0;
     padding: 130px 0;
-    .mask-group{
-        .mask01{
+
+    .mask-group {
+        .mask01 {
             position: absolute;
             bottom: 20%;
             left: 3%;
@@ -173,10 +212,11 @@
 @media #{$lg} {
 
     /* common area start */
-    .callto-action{
+    .callto-action {
         margin: 0 25px;
         margin-top: 0;
     }
+
     .callto-action-image {
         margin-right: 0px;
     }
@@ -187,15 +227,17 @@
 @media #{$md} {
 
     /* common area start */
-    .callto-action{
+    .callto-action {
         margin: 0 25px;
         margin-top: 0;
     }
+
     .callto-action-image {
         margin-right: 0px;
         margin-bottom: 50px;
     }
-    .callto-action-text{
+
+    .callto-action-text {
         padding-bottom: 50px;
     }
 }
@@ -208,15 +250,18 @@
         margin-right: 0px;
         margin-bottom: 50px;
     }
-    .callto-action-text{
+
+    .callto-action-text {
         margin-bottom: 50px;
     }
-    .callto-action{
+
+    .callto-action {
         margin: 0px;
         margin-top: 0;
         border-radius: 0;
     }
-    .callto-action-mask{
+
+    .callto-action-mask {
         display: none;
     }
 }
@@ -228,7 +273,8 @@
     .callto-action-image {
         margin-right: 0px;
     }
-    .callto-action{
+
+    .callto-action {
         margin: 0 25px;
         margin-top: 0;
     }

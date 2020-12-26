@@ -1140,13 +1140,34 @@ header.sticky .main-menu li a.active::before {
     font-size: 62px;
     line-height: 72px;
   }
+  .banner-area02 .banner-image {
+    margin-left: 0;
+  }
+  .banner-area02 .banner-image img {
+    max-width: 100%;
+  }
+  .banner-area02 .small-feature01 {
+    right: 26%;
+  }
+  .banner-area02 .banner-wrapper {
+    padding-left: 30px;
+  }
+  .aboutus-introduction02 .aboutus-introduction02-image {
+    margin-left: -100px !important;
+  }
 }
 
 /* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  img {
+    max-width: 100%;
+  }
   h1 {
     font-size: 42px;
     line-height: 52px;
+  }
+  h2 {
+    font-size: 38px;
   }
   .banner-area {
     margin: 0 25px;
@@ -1160,6 +1181,27 @@ header.sticky .main-menu li a.active::before {
   }
   .banner-area .banner-button {
     margin-top: 20px;
+  }
+  .banner-area02 .banner-image {
+    margin-left: 0;
+  }
+  .banner-area02 .banner-image img {
+    max-width: 100%;
+  }
+  .banner-area02 .small-feature {
+    display: none;
+  }
+  .banner-area02 .banner-wrapper {
+    padding-left: 30px;
+  }
+  .banner-area02 .banner-wrapper p {
+    max-width: 100%;
+  }
+  .aboutus-introduction02 .aboutus-introduction02-image {
+    margin-left: 0px !important;
+  }
+  .aboutus-introduction02 .aboutus-introduction02-image img {
+    max-width: 100%;
   }
 }
 
@@ -1246,7 +1288,7 @@ header.sticky .main-menu li a.active::before {
 
 .brands {
   margin-top: -50px;
-  z-index: 999;
+  z-index: 99;
   position: relative;
 }
 
@@ -1603,6 +1645,13 @@ header.sticky .main-menu li a.active::before {
   .about-info-image {
     margin-left: 0px;
   }
+  .aboutus02 .aboutus-introduction02-image::before {
+    top: 60px;
+    left: -30px;
+  }
+  .aboutus02 .aboutus-introduction02-image::after {
+    right: -80px;
+  }
 }
 
 /* large devices 992 - 1199*/
@@ -1610,6 +1659,18 @@ header.sticky .main-menu li a.active::before {
   /* common area start */
   .about-info-image {
     margin-left: 0px;
+  }
+  .aboutus02 .aboutus02-image::after {
+    display: none;
+  }
+  .aboutus02 .aboutus02-image::before {
+    display: none;
+  }
+  .aboutus-introduction02-image::before {
+    display: none;
+  }
+  .aboutus-introduction02-image::after {
+    display: none;
   }
 }
 
@@ -2180,6 +2241,7 @@ header.sticky .main-menu li a.active::before {
   background-repeat: no-repeat;
   background-position: center;
   border-top-left-radius: 166px;
+  position: relative;
 }
 
 .customer-care {
@@ -2201,6 +2263,28 @@ header.sticky .main-menu li a.active::before {
 .customer-care-text p {
   font-family: "Gilroy-Medium";
   color: #000560;
+}
+
+.customer-care-text::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  top: 48px;
+  left: 40px;
+  width: 17px;
+  height: 17px;
+  background: white;
+}
+
+.customer-care-text::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  top: 68px;
+  left: 26px;
+  width: 9px;
+  height: 9px;
+  background: white;
 }
 
 .homepage-03 .call-action-text .sub-section-heading h6 {
