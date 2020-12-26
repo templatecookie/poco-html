@@ -747,7 +747,7 @@ aside,
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   /* common area start */
   .header-area {
-    padding: 20px 20px;
+    padding: 20px 0px;
   }
   .header-area .main-menu {
     padding-left: 50px;
@@ -4268,30 +4268,65 @@ header.sticky .main-menu li a.active::before {
 
 .blog-area .overlay-thumb .overlay-playbutton {
   position: absolute;
-  bottom: 19%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.blog-area .overlay-thumb .overlay-playbutton a {
+.blog-area .overlay-thumb .overlay-playbutton .popup-video {
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  color: red;
+  background: white;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 98px;
+  display: inline-block;
   width: 98px;
   height: 98px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #7906d8;
-  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
-.blog-area .overlay-thumb .overlay-playbutton a i {
+.blog-area .overlay-thumb .overlay-playbutton .popup-video::after {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+          animation: pulse-border 1500ms ease-out infinite;
+}
+
+.blog-area .overlay-thumb .overlay-playbutton .popup-video i {
+  font-size: 18px;
   color: #FF465E;
+}
+
+.blog-area .overlay-thumb .overlay-playbutton .popup-video:hover {
+  border-color: white;
+}
+
+.blog-area .overlay-thumb .overlay-playbutton .video-border {
+  -webkit-animation: pulseBig infinite 4s linear;
+          animation: pulseBig infinite 4s linear;
 }
 
 .blog-area .pagination-area {
@@ -4868,5 +4903,31 @@ header.sticky .main-menu li a.active::before {
   color: #FFFFFF;
   font-family: "Gilroy-Medium";
   font-size: 18px;
+}
+
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
