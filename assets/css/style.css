@@ -871,7 +871,7 @@ header.sticky {
   -webkit-box-shadow: 0 1px 10px 0px #dadada;
           box-shadow: 0 1px 10px 0px #dadada;
   background-color: white;
-  z-index: 99;
+  z-index: 9999;
   padding: 15px 0px;
 }
 
