@@ -84,9 +84,11 @@
     border-bottom-left-radius: 166px;
     padding-top: 115px;
     z-index: 99;
-    .banner-image{
+
+    .banner-image {
         margin-left: 100px;
     }
+
     .banner-wrapper {
         padding-top: 115px;
 
@@ -122,15 +124,18 @@
             left: 0;
         }
     }
-    .small-feature01{
+
+    .small-feature01 {
         position: absolute;
         top: 24%;
         right: 27%;
+
         .image {
             background-color: #FD6F00;
         }
     }
-    .small-feature02{
+
+    .small-feature02 {
         position: absolute;
         top: 40%;
         right: 40%;
@@ -189,9 +194,10 @@
     margin: 0;
     border-radius: 0;
     z-index: 9;
-    .banner-wrapper{
-        .banner-title{
-            span{
+
+    .banner-wrapper {
+        .banner-title {
+            span {
                 text-transform: uppercase;
                 font-family: $teko;
                 font-size: 32px;
@@ -199,7 +205,8 @@
                 font-weight: 600;
                 color: $tertiary;
             }
-            h1{
+
+            h1 {
                 text-transform: uppercase;
                 font-family: $teko;
                 font-size: 135px;
@@ -209,7 +216,8 @@
                 margin-top: 20px;
             }
         }
-        p{
+
+        p {
             font-size: 26px;
             font-family: $teko;
             line-height: 42px;
@@ -219,9 +227,11 @@
             margin: 0;
 
         }
-        .banner-button{
+
+        .banner-button {
             margin-top: 20px;
-            .t-btn{
+
+            .t-btn {
                 border-radius: 0;
                 font-family: $teko;
                 font-size: 24px;
@@ -230,10 +240,11 @@
         }
     }
 
-    .banner-image{
+    .banner-image {
         padding-top: 185px;
         padding-bottom: 130px;
     }
+
     .mask-page-04 {
         img {
             position: absolute;
@@ -256,13 +267,45 @@
         line-height: 72px;
     }
 
+    .banner-area02 {
+        .banner-image {
+            margin-left: 0;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .small-feature01 {
+            right: 26%;
+        }
+
+        .banner-wrapper {
+            padding-left: 30px;
+        }
+    }
+
+    .aboutus-introduction02 {
+        .aboutus-introduction02-image {
+
+            margin-left: -100px !important;
+        }
+    }
 }
 
 /* large devices 992 - 1199*/
 @media #{$lg} {
+    img {
+        max-width: 100%;
+    }
+
     h1 {
         font-size: 42px;
         line-height: 52px;
+    }
+
+    h2 {
+        font-size: 38px;
     }
 
     .banner-area {
@@ -282,6 +325,36 @@
         margin-top: 20px;
     }
 
+    .banner-area02 {
+        .banner-image {
+            margin-left: 0;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .small-feature {
+            display: none;
+        }
+
+        .banner-wrapper {
+            padding-left: 30px;
+
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .aboutus-introduction02 {
+        .aboutus-introduction02-image {
+            img{
+                max-width: 100%;
+            }
+            margin-left: 0px !important;
+        }
+    }
 }
 
 /* Medium devices 768 - 991 */

@@ -33,18 +33,45 @@
 
     <!-- START HEADER AREA -->
     <header id="header" class="header-area">
-        <div class="container-fluid">
+        <div class="container custom-container">
             <nav class="menu-area d-flex align-items-center">
                 <div class="logo">
                     <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo" /></a>
                 </div>
                 <ul class="main-menu d-flex align-items-center">
-                    <li><a class="active" href="javascript:void(0)">Home</a></li>
-                    <li><a href="javascript:void(0)">Services</a></li>
-                    <li><a href="javascript:void(0)">About Us</a></li>
-                    <li><a href="javascript:void(0)">Portfolio</a></li>
-                    <li><a href="javascript:void(0)">Blog</a></li>
-                    <li><a href="javascript:void(0)">Contact Us</a></li>
+                    <li><a  href="javascript:void(0)">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home Style 1</a></li>
+                            <li><a href="homepage_02.html">Home Style 2</a></li>
+                            <li><a href="homepage_03.html">Home Style 3</a></li>
+                            <li><a href="hompage_04.html">Home Style 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="services_details.html">Services Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">About Us</a>
+                        <ul class="sub-menu">
+                            <li><a href="aboutus.html">About Info</a></li>
+                            <li><a href="team-member.html">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Portfolio</a>
+                        <ul class="sub-menu">
+                            <li><a href="project.html">Project</a></li>
+                            <li><a href="project-detail.html">Project Detail</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog_details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="active" href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="right-content ml-auto">
                     <div class="search-bar">
@@ -92,8 +119,8 @@
 
     <main>
         <!-- START BREADCRUMB AREA -->
-        <section class="banner-area breadcrumb-area">
-            <div class="container-fluid">
+        <section class="banner-area breadcrumb-area" style="background-image: url(assets/img/mask/breadcrumbmask.png);">
+            <div class="container custom-container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="banner-wrapper">
@@ -105,22 +132,25 @@
                         </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="banner-image text-md-right">
+                        <div class="banner-image">
                             <img src="assets/img/banner/breadcrumb-banner.png" alt="banner-image" class="img-fluid">
                         </div>
                     </div>
                 </div>
-                <div class="breadcrumb-wrapper">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
-                        </ol>
-                    </nav>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="breadcrumb-wrapper">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Project</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
                 <div class="breadcrumbmask">
                     <img class="mask1" src="assets/img/mask/mask2.png" alt="mask">
-                    <img class="mask2 img-fluid" src="assets/img/mask/breadcrumbmask.png" alt="mask">
                 </div>
             </div>
         </section>
@@ -132,7 +162,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="map">
-                            <img src="assets/img/Map.png" alt="">
+                            <div id="map"></div>
                         </div>
                     </div>
                 </div>
@@ -176,6 +206,9 @@
                                 </div>
                                 <div class="form-message">
                                     <textarea cols="30" rows="10" placeholder="Subject"></textarea>
+                                    <div class="icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
                                 </div>
                                 <button type="submit" class="t-btn t-bg-primary my-1">Send Message</button>
                               </form>
@@ -185,10 +218,6 @@
             </div> 
         </section>
         <!-- START CONTACT FORM AREA-->
-
-
-
-
     </main>
 
     <!-- START FOOTER AREA -->
@@ -288,6 +317,24 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/waypoint.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5AEaa68Gwdkn83EdC48CzkZPZldbEsyM&callback=initMap"
+    type="text/javascript"></script>
+
+    <script>
+        let map;
+  
+        function initMap() {
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8,
+          });
+        }
+    </script>
+    <style>
+        #map {
+            height: 500px;
+        }
+    </style>
 </body>
 
 </html>

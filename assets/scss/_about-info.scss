@@ -138,6 +138,7 @@
 
         }
     }
+
     .small-feature {
         position: absolute;
         bottom: 21%;
@@ -148,6 +149,7 @@
 //About introduction 02
 .aboutus-introduction02 {
     position: relative;
+
     .aboutus-introduction02-image {
         margin-left: -175px;
         position: relative;
@@ -172,6 +174,7 @@
             border-top-left-radius: 0;
             border-bottom-right-radius: 0;
 
+
         }
 
         &::before {
@@ -187,7 +190,8 @@
 
         }
     }
-    .introduction-feature{
+
+    .introduction-feature {
         position: absolute;
         bottom: 22%;
         left: 33%;
@@ -344,6 +348,19 @@
     .about-info-image {
         margin-left: 0px;
     }
+
+    .aboutus02 {
+        .aboutus-introduction02-image {
+            &::before{
+                top: 60px;
+                left: -30px;
+            }
+            &::after {
+                right: -80px;
+            }
+        }
+    }
+
 }
 
 /* large devices 992 - 1199*/
@@ -352,6 +369,22 @@
 
     .about-info-image {
         margin-left: 0px;
+    }
+    .aboutus02 {
+        .aboutus02-image::after{
+            display: none;
+        }
+        .aboutus02-image::before{
+            display: none;
+        }
+    }
+    .aboutus-introduction02-image {
+        &::before{
+            display: none;
+        }
+        &::after {
+        display: none;
+        }
     }
 
 }
