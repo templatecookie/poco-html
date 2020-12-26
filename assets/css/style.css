@@ -2290,7 +2290,7 @@ aside,
 
 .testimonial-area {
   padding-top: 120px;
-  padding-bottom: 130px;
+  padding-bottom: 225px;
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
   border-radius: 24px;
@@ -2335,7 +2335,7 @@ aside,
 .testimonial-area .testimonial-active .slick-arrow {
   position: absolute;
   right: 0px;
-  bottom: -45px;
+  bottom: -95px;
   background-color: #FF465E;
   border: 1px solid transparent;
   width: 56px;
