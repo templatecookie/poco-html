@@ -4519,6 +4519,39 @@ aside,
   left: 5%;
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  .breadcrumb-area {
+    margin-bottom: 50px;
+  }
+  .project-wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+}
+
 .conatact-area {
   background: #FCF8F8;
   padding-top: 160px;
