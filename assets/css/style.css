@@ -852,17 +852,17 @@ aside,
   }
 }
 
-header {
+.header-area {
   -webkit-transition: padding .3s ease-in-out;
   transition: padding .3s ease-in-out;
 }
 
-header .main-menu li a::before {
-  -webkit-transition: all .3s  ease-in-out;
-  transition: all .3s  ease-in-out;
+.header-area .main-menu li a::before {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-header.sticky {
+.header-area.sticky {
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -875,8 +875,14 @@ header.sticky {
   padding: 15px 0px;
 }
 
-header.sticky .main-menu li a.active::before {
+.header-area.sticky .main-menu li a.active::before {
   top: -21px;
+}
+
+.header-area02.sticky {
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+  background-color: #29303E;
 }
 
 .banner-area {
