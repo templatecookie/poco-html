@@ -228,6 +228,13 @@
 
     /* common area start */
     .callto-action {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .mask-group {
+            display: none !important;
+        }
+
         margin: 0 25px;
         margin-top: 0;
     }
@@ -244,6 +251,14 @@
 
 /* Small devices 0 - 768 */
 @media #{$xs} {
+    .callto-action {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .mask-group {
+            display: none !important;
+        }
+    }
 
     /* common area start */
     .callto-action-image {

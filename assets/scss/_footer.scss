@@ -298,6 +298,12 @@
 
 /* Small devices 0 - 768 */
 @media #{$xs} {
+    .teams-modifi{
+        margin: 0 !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+        border-radius: 0px !important;
+    }
 
     /* common area start */
     .footer-area {

@@ -2626,8 +2626,13 @@ aside,
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* common area start */
   .callto-action {
+    padding-top: 100px;
+    padding-bottom: 100px;
     margin: 0 25px;
     margin-top: 0;
+  }
+  .callto-action .mask-group {
+    display: none !important;
   }
   .callto-action-image {
     margin-right: 0px;
@@ -2640,6 +2645,13 @@ aside,
 
 /* Small devices 0 - 768 */
 @media (max-width: 767px) {
+  .callto-action {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .callto-action .mask-group {
+    display: none !important;
+  }
   /* common area start */
   .callto-action-image {
     margin-right: 0px;
@@ -3508,6 +3520,40 @@ aside,
   left: 4%;
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .our-teams {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .our-teams .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+}
+
 .breadcrumb-area {
   margin-bottom: 130px;
   background-position: center;
@@ -3830,6 +3876,12 @@ aside,
 
 /* Small devices 0 - 768 */
 @media (max-width: 767px) {
+  .teams-modifi {
+    margin: 0 !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    border-radius: 0px !important;
+  }
   /* common area start */
   .footer-area {
     margin: 0px;
@@ -4345,13 +4397,120 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
+  .our-work-process {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .our-work-process .shape .round-shape {
+    top: 7%;
+  }
+  .our-work-process .process-item .around-dotted::before {
+    display: none;
+  }
+  .our-work-process .process-item .around-dotted::after {
+    display: none;
+  }
+  .our-services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 !important;
+  }
+  .our-services .shape .top {
+    top: -4% !important;
+  }
+  .our-services .shape .right {
+    top: -4% !important;
+  }
+  .our-services .shape .bottom {
+    bottom: -4% !important;
+  }
+  .our-services .about-us-image .image {
+    margin-left: 0;
+  }
+  .our-services .about-us-text {
+    margin-top: 50px;
+  }
+  .our-services .about-us-text .sub-heading {
+    margin-bottom: 30px;
+  }
+  .our-services .about-us-text .sub-heading h2 {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .our-services .about-us-text .feature .icon {
+    height: 35px;
+    width: 35px;
+  }
+  .special-services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .special-services .shape .top-right {
+    top: 4%;
+    right: 5%;
+  }
+  .special-services-item .special-services-image {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .special-services-item .special-services-text h5 {
+    text-align: center;
+  }
+  .special-services-item .special-services-text p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .price-area {
+    z-index: 5 !important;
+  }
+  .price-area .shape .mask-bottom {
+    bottom: -2%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .price-area .shape .mask-top {
+    top: -2%;
+    left: 5%;
+  }
+  .price-area .shape .mask-right {
+    top: -1%;
+    right: 5%;
+  }
+  .callto-action .shape {
+    display: none;
+  }
+  .design-services {
+    padding-top: 0;
+  }
+  .services-details-pricing .shape .mask-top {
+    top: 3%;
+    left: 5%;
+  }
+  .services-details-pricing .shape .mask-right {
+    top: 4%;
+    right: 5%;
+  }
+  .footer-area {
+    margin: 0;
+    padding: 100px 0px;
+    border-radius: 0px !important;
+  }
 }
 
 /* Small devices 0 - 768 */
 @media (max-width: 767px) {
   .section-title {
     margin-bottom: 30px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .t-btn {
+    font-size: 16px;
+  }
+  .breadcrumb-area .mask1 {
+    display: none;
   }
   .breadcrumb-area .banner-image {
     padding: 10px 0;
@@ -4385,6 +4544,7 @@ aside,
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0 !important;
+    border-radius: 0px !important;
   }
   .our-services .shape {
     display: none;
@@ -4420,6 +4580,10 @@ aside,
   .price-area {
     z-index: 5 !important;
   }
+  .design-services {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
 }
 
 /* Small devices 576 - 767 */
@@ -4453,6 +4617,59 @@ aside,
 
 .profession-area .profession-wrapper .profession-tittle p {
   font-size: 18px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profession-area {
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+  }
+  .profession-area .profession-img .small-feature {
+    position: absolute;
+    bottom: 0 !important;
+    left: 75% !important;
+  }
+  .profession-area .profession-wrapper .profession-tittle h2 {
+    margin-bottom: 20PX;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  .profession-area {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 70px;
+  }
+  .profession-area .profession-img {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .profession-area .profession-img .small-feature {
+    display: none;
+  }
+  .profession-area .profession-wrapper .profession-tittle h2 {
+    margin-bottom: 15PX;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
 }
 
 .project-wrapper-image img {

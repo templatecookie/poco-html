@@ -83,3 +83,39 @@
         }
     }
 }
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+    /* common area start */
+
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    /* common area start */
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+   .our-teams{
+       padding-top: 60px;
+       padding-bottom: 60px;
+       .section-title{
+           margin-bottom: 40px;
+       }
+   }
+}
+
+/* Small devices 0 - 768 */
+@media #{$xs} {
+    /* common area start */
+}
+
+/* Small devices 576 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
