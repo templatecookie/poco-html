@@ -19,8 +19,9 @@
         line-height: 42px;
         position: relative;
         font-family: $gilroy-medium;
-        transition:.3s;
-        &:hover{
+        transition: .3s;
+
+        &:hover {
           color: $tertiary;
         }
 
@@ -39,7 +40,8 @@
           left: 0;
         }
       }
-      .sub-menu{
+
+      .sub-menu {
         position: absolute;
         left: 0;
         background: #222222;
@@ -48,29 +50,33 @@
         opacity: 0;
         visibility: hidden;
         transition: .5s;
-       box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-       background: white;
-       border-radius: 5px;
-       border-top: 5px solid $tertiary;
-       z-index: 999;
-        li{
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+        background: white;
+        border-radius: 5px;
+        border-top: 5px solid $tertiary;
+        z-index: 999;
+
+        li {
           display: block;
           margin-top: 5px;
-          a{
+
+          a {
             padding: 10px 20px;
             color: $secondary;
             font-size: 18px;
             line-height: 42px;
             font-family: $gilroy-medium;
-            transition:.3s;
-            &:hover{
+            transition: .3s;
+
+            &:hover {
               color: $tertiary;
             }
 
           }
         }
       }
-      &:hover .sub-menu{
+
+      &:hover .sub-menu {
         opacity: 1;
         visibility: visible;
         top: 100%;
@@ -256,13 +262,16 @@ aside,
   position: absolute;
   width: 100%;
   z-index: 999;
+
   .main-menu {
     li {
       a {
         color: white;
+
         &.active {
           color: white;
         }
+
         &.active::before {
 
           color: white;
@@ -271,6 +280,7 @@ aside,
       }
     }
   }
+
   .right-content {
     .search-bar {
       border: 0;
@@ -278,40 +288,48 @@ aside,
     }
   }
 }
+
 /*----------------------------------------*/
 /*  HOMPAGE 4 CSS
 /*----------------------------------------*/
-.header-area04{
+.header-area04 {
   position: absolute;
   width: 100%;
   left: 0;
   z-index: 9999;
-  .main-menu{
+
+  .main-menu {
     padding-left: 105px;
-    li{
-      a{
+
+    li {
+      a {
         font-family: $teko;
         font-weight: 500;
         font-size: 20px;
+
         &.active::before {
           top: -21px;
         }
       }
     }
   }
-  .contact-number{
+
+  .contact-number {
     margin-left: 20px;
-    .t-btn{
+
+    .t-btn {
       border: 2px solid #3C5B6B;
       font-family: $teko;
       font-size: 20px;
       font-weight: 500;
     }
   }
-  .right-content{
-    .social-icon{
+
+  .right-content {
+    .social-icon {
       display: flex;
-      a{
+
+      a {
         border: 2px solid #3C5B6B;
         color: #fff;
         border-radius: 50%;
@@ -323,7 +341,8 @@ aside,
         margin-right: 22px;
         -webkit-transition: 0.3s all linear;
         transition: 0.3s all linear;
-        &:hover{
+
+        &:hover {
           color: #fff;
           background: $tertiary;
           border-color: $tertiary;
@@ -332,6 +351,7 @@ aside,
     }
   }
 }
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
@@ -406,11 +426,14 @@ aside,
   }
 }
 
-header {
+//Sticky Header
+.header-area {
   transition: padding .3s ease-in-out;
+
   .main-menu li a::before {
-    transition: all .3s  ease-in-out;
+    transition: all .3s ease-in-out;
   }
+
   &.sticky {
     width: 100%;
     position: sticky;
@@ -420,9 +443,17 @@ header {
     background-color: white;
     z-index: 9999;
     padding: 15px 0px;
+
     .main-menu li a.active::before {
-      
+
       top: -21px;
     }
+  }
+}
+
+.header-area02 {
+  &.sticky {
+    box-shadow: inherit;
+    background-color: #29303E;
   }
 }
