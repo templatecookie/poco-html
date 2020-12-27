@@ -4025,6 +4025,100 @@ aside,
   color: #ffffff;
 }
 
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .breadcrumb-area .banner-image {
+    padding: 10px 0;
+  }
+  .breadcrumb-area .banner-wrapper {
+    padding: 0;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .breadcrumb-area .banner-wrapper p {
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .breadcrumb-area .breadcrumb-wrapper {
+    display: none;
+  }
+  .our-work-process {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .our-work-process .shape {
+    display: none;
+  }
+  .our-work-process .process-item .around-dotted::before {
+    display: none;
+  }
+  .our-work-process .process-item .around-dotted::after {
+    display: none;
+  }
+  .our-services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 !important;
+  }
+  .our-services .shape {
+    display: none;
+  }
+  .our-services .about-us-image .image {
+    margin-left: 0;
+  }
+  .our-services .about-us-text {
+    margin-top: 30px;
+  }
+  .our-services .about-us-text .feature .icon {
+    height: 35px;
+    width: 60px;
+  }
+  .special-services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .special-services .shape {
+    display: none;
+  }
+  .special-services-item .special-services-image {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .special-services-item .special-services-text h5 {
+    text-align: center;
+  }
+  .special-services-item .special-services-text p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .price-area {
+    z-index: 5 !important;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+}
+
 .profession-area {
   padding-top: 100px;
   padding-bottom: 130px;
