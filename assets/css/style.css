@@ -4031,13 +4031,105 @@ header.sticky .main-menu li a.active::before {
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
+  .our-work-process {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .our-work-process .shape .round-shape {
+    top: 7%;
+  }
+  .our-work-process .process-item .around-dotted::before {
+    display: none;
+  }
+  .our-work-process .process-item .around-dotted::after {
+    display: none;
+  }
+  .our-services {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0 !important;
+  }
+  .our-services .shape .top {
+    top: -4% !important;
+  }
+  .our-services .shape .right {
+    top: -4% !important;
+  }
+  .our-services .shape .bottom {
+    bottom: -4% !important;
+  }
+  .our-services .about-us-image .image {
+    margin-left: 0;
+  }
+  .our-services .about-us-text {
+    margin-top: 50px;
+  }
+  .our-services .about-us-text .sub-heading {
+    margin-bottom: 30px;
+  }
+  .our-services .about-us-text .sub-heading h2 {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .our-services .about-us-text .feature .icon {
+    height: 35px;
+    width: 35px;
+  }
+  .special-services {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .special-services .shape .top-right {
+    top: 4%;
+    right: 5%;
+  }
+  .special-services-item .special-services-image {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .special-services-item .special-services-text h5 {
+    text-align: center;
+  }
+  .special-services-item .special-services-text p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .price-area {
+    z-index: 5 !important;
+  }
+  .price-area .shape .mask-bottom {
+    bottom: -2%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .price-area .shape .mask-top {
+    top: -2%;
+    left: 5%;
+  }
+  .price-area .shape .mask-right {
+    top: -1%;
+    right: 5%;
+  }
+  .callto-action .shape {
+    display: none;
+  }
+  .footer-area {
+    margin: 0;
+    padding: 70px 0px;
+  }
 }
 
 /* Small devices 0 - 768 */
 @media (max-width: 767px) {
   .section-title {
     margin-bottom: 30px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .breadcrumb-area .mask1 {
+    display: none;
   }
   .breadcrumb-area .banner-image {
     padding: 10px 0;
@@ -4071,6 +4163,7 @@ header.sticky .main-menu li a.active::before {
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0 !important;
+    border-radius: 0px !important;
   }
   .our-services .shape {
     display: none;

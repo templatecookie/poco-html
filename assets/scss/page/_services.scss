@@ -211,7 +211,122 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
+        // Our Work Process
+        .our-work-process{
+            padding-top: 70px;
+            padding-bottom: 70px;
+            .shape{
+                .round-shape{
+                    top: 7%
+                }
+            }
+           
+            .process-item{
+                .around-dotted {
+                    &::before{
+                        display: none;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+     // Our Services
+    .our-services{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin: 0 !important;
+        .shape{
+            .top {
+                top: -4% !important;
+            }
+            .right {
+                top: -4% !important;
+            }
+            .bottom {
+                bottom: -4% !important;
+            }
+        }
+        .about-us-image{
+            .image{
+                margin-left: 0;
+            }
+        }
+        .about-us-text{
+            margin-top: 50px;
+            .sub-heading{
+                margin-bottom: 30px;
+                h2{
+                    max-width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+            .feature{
+                .icon{
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+        }
+    }
+    // Special-Services
+        .special-services{
+            padding-top: 70px;
+            padding-bottom: 70px;
+            .shape{
+                .top-right {
+                    top: 4%;
+                    right: 5%;
+                }
+            }
+            &-item{
+                .special-services-image{
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
+                .special-services-text{
+                    h5{
+                        text-align: center;
+                    }
+                    p{
+                        max-width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        // Pricing Area
+    .price-area{
+        z-index: 5 !important;
+        .shape{
+            .mask-bottom {
+                bottom: -2%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .mask-top {
+                top: -2%;
+                left: 5%;
+            }
+            .mask-right {
+                top: -1%;
+                right: 5%;
+            }
+        }
+    }
+    // Call to Action
+    .callto-action{
+        .shape{
+            display: none;
+        }
+    }
+    // Footer
+    .footer-area{
+        margin: 0;
+        padding: 70px 0px;
+    }
 }
 
 /* Small devices 0 - 768 */
@@ -220,8 +335,14 @@
     .section-title{
         margin-bottom: 30px;
     }
+    p{
+        font-size: 14px;
+    }
     // Breadcrumb
     .breadcrumb-area{
+        .mask1{
+            display: none;
+        }
         .banner-image{
             padding: 10px 0;
         }
@@ -265,6 +386,7 @@
         padding-top: 50px;
         padding-bottom: 50px;
         margin: 0 !important;
+        border-radius: 0px !important;
         .shape{
             display: none;
         }
