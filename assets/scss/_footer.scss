@@ -333,6 +333,13 @@
     .footer-area-lists ul li a {
         margin-bottom: 5px;
     }
+    .dark-footer{
+        padding-top: 100px;
+        border-top-right-radius: 0;
+        .footer-area-lists{
+            margin-bottom: 30px;
+        }
+    }
 }
 
 /* Small devices 576 - 767 */

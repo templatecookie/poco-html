@@ -1,7 +1,9 @@
-.services-introduction{
-    &-item{
-        &-image{
-            background: rgba(255,70,94,0.16);
+.services-introduction {
+    padding: 100px 0;
+
+    &-item {
+        &-image {
+            background: rgba(255, 70, 94, 0.16);
             height: 85px;
             width: 85px;
             border-radius: 50%;
@@ -10,48 +12,54 @@
             justify-content: center;
             margin-bottom: 25px;
         }
-        p{
+
+        p {
             max-width: 142px;
             color: $primary;
             font-family: $gilroy-bold;
             line-height: 22px;
         }
     }
-    
-    &-text{
-        .section-heading{
-            h2{
+
+    &-text {
+        .section-heading {
+            h2 {
                 margin-bottom: 45px;
                 max-width: 592px;
                 line-height: 64px;
             }
-            p{
+
+            p {
                 max-width: 578px;
                 list-style: 30px;
                 font-family: $gilroy-medium;
                 font-size: 18px;
             }
         }
-        a{
+
+        a {
             margin-top: 50px;
             transition: 0.3s;
         }
     }
 }
+
 // Homepage-03
-.homepage-03{
-    .section-heading{
-        p{
+.homepage-03 {
+    .section-heading {
+        p {
             font-size: 18px;
             font-family: $gilroy-medium;
         }
     }
-    .services-introduction-item{
-        &-text{
-            h5{
+
+    .services-introduction-item {
+        &-text {
+            h5 {
                 margin-bottom: 25px;
             }
-            p{
+
+            p {
                 line-height: 30px;
                 max-width: 100%;
                 font-family: $gilroy-medium;
@@ -59,4 +67,69 @@
             }
         }
     }
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+    /* common area start */
+
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    /* common area start */
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+
+    /* common area start */
+    .services-introduction {
+        padding: 100px 0;
+    }
+
+}
+
+/* Small devices 0 - 768 */
+@media #{$xs} {
+
+    /* common area start */
+    .services-introduction {
+        &-item {
+
+            p {
+                max-width: 100%;
+            }
+        }
+
+        &-item-image {
+            margin-bottom: 20px;
+        }
+
+        &-text {
+            .section-heading{
+              h2 {
+                margin-bottom: 20px;
+                max-width: 100%;
+                line-height: 40px;
+            } 
+            p{
+                font-size: 16px;
+            }
+            } 
+        }
+    }
+    .services-introduction-text a {
+        margin-top: 30px;
+    }
+}
+
+/* Small devices 576 - 767 */
+@media #{$sm} {
+    /* common area start */
 }

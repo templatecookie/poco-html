@@ -452,6 +452,11 @@ aside,
 }
 
 .header-area02 {
+  transition: padding .3s ease-in-out;
+
+  .main-menu li a::before {
+    transition: all .3s ease-in-out;
+  }
   &.sticky {
     box-shadow: inherit;
     background-color: #29303E;
