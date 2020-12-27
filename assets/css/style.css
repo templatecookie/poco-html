@@ -4114,6 +4114,17 @@ header.sticky .main-menu li a.active::before {
   .callto-action .shape {
     display: none;
   }
+  .design-services {
+    padding-top: 0;
+  }
+  .services-details-pricing .shape .mask-top {
+    top: 3%;
+    left: 5%;
+  }
+  .services-details-pricing .shape .mask-right {
+    top: 4%;
+    right: 5%;
+  }
   .footer-area {
     margin: 0;
     padding: 100px 0px;
@@ -4128,6 +4139,9 @@ header.sticky .main-menu li a.active::before {
   }
   p {
     font-size: 14px;
+  }
+  .t-btn {
+    font-size: 16px;
   }
   .breadcrumb-area .mask1 {
     display: none;
@@ -4199,6 +4213,10 @@ header.sticky .main-menu li a.active::before {
   }
   .price-area {
     z-index: 5 !important;
+  }
+  .design-services {
+    padding-top: 0;
+    padding-bottom: 50px;
   }
 }
 

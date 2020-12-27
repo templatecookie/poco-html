@@ -322,6 +322,27 @@
             display: none;
         }
     }
+
+    // Design-Services
+    .design-services{
+        padding-top: 0;
+    }
+
+    // Services-Details-Pricing
+    .services-details-pricing{
+        .shape{
+            .mask-top {
+                top: 3%;
+                left: 5%;
+            }
+            .mask-right {
+                top: 4%;
+                right: 5%;
+            }
+        }
+    }
+
+
     // Footer
     .footer-area{
         margin: 0;
@@ -338,6 +359,9 @@
     }
     p{
         font-size: 14px;
+    }
+    .t-btn{
+        font-size: 16px;
     }
     // Breadcrumb
     .breadcrumb-area{
@@ -433,6 +457,12 @@
     .price-area{
         z-index: 5 !important;
     }
+
+        // Design-Services
+        .design-services{
+            padding-top: 0;
+            padding-bottom: 50px;
+        }
 }
 
 /* Small devices 576 - 767 */
