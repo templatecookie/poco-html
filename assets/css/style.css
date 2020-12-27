@@ -4400,6 +4400,11 @@ aside,
   font-size: 18px;
 }
 
+.project-details-content .our-work-process {
+  margin-top: 130px;
+  z-index: 5;
+}
+
 .project-detail .overview-image img {
   border-radius: 5px;
 }
@@ -4534,11 +4539,80 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
+  .breadcrumb-area {
+    margin-bottom: 70px;
+  }
+  .project-detail .shape .round-shape01 {
+    top: -4%;
+  }
+  .project-detail .shape .round-shape02 {
+    top: -4%;
+  }
+  .project-detail .project-next-prev-button {
+    margin-top: 30px;
+  }
+  .project-detail .project-overview-wrapper {
+    margin: 0;
+  }
+  .project-detail .project-overview-wrapper .overview-detail {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .project-detail .project-overview-wrapper .overview-detail .detail-tittle {
+    margin-bottom: 20px;
+  }
+  .project-detail .project-overview-wrapper .overview-detail .detail-tittle:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
 }
 
 /* Small devices 0 - 768 */
 @media (max-width: 767px) {
+  .project-details-content .project-overview-wrapper {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .project-details-content .project-overview-wrapper .overview-detail {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .project-details-content .project-overview-wrapper .overview-detail .detail-tittle {
+    margin-bottom: 20px;
+  }
+  .project-details-content .project-overview-wrapper .overview-detail .detail-tittle:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+  .project-details-content .project-work-process {
+    margin: 0;
+  }
+  .project-details-content .our-work-process {
+    border-radius: 0px;
+    margin-top: 50px !important;
+  }
+  .project-details-content .callto-action {
+    padding-bottom: 0;
+  }
+  .project-details-content .project-next-prev-button {
+    margin-top: 30px;
+  }
   .breadcrumb-area {
     margin-bottom: 50px;
   }
