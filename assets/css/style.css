@@ -4032,8 +4032,8 @@ header.sticky .main-menu li a.active::before {
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .our-work-process {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .our-work-process .shape .round-shape {
     top: 7%;
@@ -4045,8 +4045,8 @@ header.sticky .main-menu li a.active::before {
     display: none;
   }
   .our-services {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     margin: 0 !important;
   }
   .our-services .shape .top {
@@ -4076,8 +4076,8 @@ header.sticky .main-menu li a.active::before {
     width: 35px;
   }
   .special-services {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .special-services .shape .top-right {
     top: 4%;
@@ -4116,7 +4116,8 @@ header.sticky .main-menu li a.active::before {
   }
   .footer-area {
     margin: 0;
-    padding: 70px 0px;
+    padding: 100px 0px;
+    border-radius: 0px !important;
   }
 }
 

@@ -213,8 +213,8 @@
 @media #{$md} {
         // Our Work Process
         .our-work-process{
-            padding-top: 70px;
-            padding-bottom: 70px;
+            padding-top: 100px;
+            padding-bottom: 100px;
             .shape{
                 .round-shape{
                     top: 7%
@@ -235,8 +235,8 @@
 
      // Our Services
     .our-services{
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         margin: 0 !important;
         .shape{
             .top {
@@ -273,8 +273,8 @@
     }
     // Special-Services
         .special-services{
-            padding-top: 70px;
-            padding-bottom: 70px;
+            padding-top: 100px;
+            padding-bottom: 100px;
             .shape{
                 .top-right {
                     top: 4%;
@@ -325,7 +325,8 @@
     // Footer
     .footer-area{
         margin: 0;
-        padding: 70px 0px;
+        padding: 100px 0px;
+        border-radius: 0px !important;
     }
 }
 
