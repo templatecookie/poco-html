@@ -59,6 +59,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
             &.prev-arrow {
                 right: 75px;
             }
@@ -153,6 +154,7 @@
     }
 
 }
+
 /*----------------------------------------*/
 /*  HOMEPAGE 3 CSS START 
 /*----------------------------------------*/
@@ -180,6 +182,7 @@
                 border-color: #ED880A;
             }
         }
+
         .slick-arrow {
             background-color: #ED880A;
         }
@@ -188,6 +191,7 @@
     .project-info {
         display: flex;
         align-items: center;
+
         h4 {
             &::before {
                 background-color: #ED880A;
@@ -208,19 +212,22 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    .section-title{
-        h2{
+
+    .section-title {
+        h2 {
             font-size: 60px;
             line-height: 70px;
             font-family: $teko;
             font-weight: 600;
             color: white;
             text-transform: uppercase;
-            span{
+
+            span {
                 color: $tertiary;
             }
         }
     }
+
     .testimoial-icon {
         width: 185px;
         height: 185px;
@@ -257,25 +264,28 @@
                 line-height: 27px;
             }
         }
-        .testimonial-icon{
-                width: 63px;
-                height: 63px;
-                display: flex;
-                justify-content: center;
-                border: 3px solid #3B4A51;
-                margin: 0 auto;
-                border-radius: 100%;
-                @include transition (.3s);
-                margin-top: 20px;
-    
+
+        .testimonial-icon {
+            width: 63px;
+            height: 63px;
+            display: flex;
+            justify-content: center;
+            border: 3px solid #3B4A51;
+            margin: 0 auto;
+            border-radius: 100%;
+            @include transition (.3s);
+            margin-top: 20px;
+
         }
-        &:hover{
-            .testimonial-icon{
+
+        &:hover {
+            .testimonial-icon {
                 background-color: $tertiary;
                 border-color: $tertiary;
             }
         }
     }
+
     .testimonial-active {
         .slick-arrow {
             background-color: #111523;
@@ -285,7 +295,8 @@
             border-radius: 0;
             border: 3px solid #3B4A51;
             @include transition (.3s);
-            &:hover{
+
+            &:hover {
                 background-color: $tertiary;
                 border-color: $tertiary;
             }
@@ -321,6 +332,20 @@
     .testimonial-area {
         margin: 0 18px;
     }
+
+    .testimonial02 {
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+
+    .testimonial02 {
+        .project-info {
+            h4 {
+                font-size: 18px;
+                margin-right: 60px;
+            }
+        }
+    }
 }
 
 /* Small devices 0 - 767 */
@@ -351,6 +376,28 @@
     .mask-group2 {
         display: none;
     }
+
+    .testimonial02 {
+        padding: 100px 0;
+
+        .testimonial-active {
+            .slick-arrow {
+                display: none !important;
+            }
+        }
+
+        .project-info {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            h4 {
+                font-size: 18px;
+                margin-right: 0;
+            }
+        }
+    }
+
 }
 
 /* Small devices 576 - 767  */
