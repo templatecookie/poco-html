@@ -4160,6 +4160,174 @@ aside,
   font-size: 55px;
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-us-image .image {
+    margin-left: 0;
+  }
+  .about-us-image .sm-feauter-top {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .about-us-text .sub-heading h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .about-solution {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 25px !important;
+  }
+  .about-solution .mask-group .mask1 {
+    top: -2%;
+  }
+  .about-solution .mask-group .mask2 {
+    top: -1%;
+  }
+  .about-solution .solution-title {
+    max-width: 80% !important;
+  }
+  .about-solution .solution-title h4 {
+    text-align: left;
+  }
+  .about-solution .solution-title p {
+    text-align: justify;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .about-us {
+    padding-bottom: 100px;
+  }
+  .testimonial-area {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .testimonial-area .mask-group2 .mask5,
+  .testimonial-area .mask-group2 .mask7 {
+    display: none;
+  }
+  .about-skill {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .about-skill-title {
+    margin-bottom: 30px;
+  }
+  .about-skill h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  .section-title h2 {
+    font-size: 20px;
+  }
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about-us-image .image {
+    margin: 0;
+  }
+  .about-us-image .small-feature {
+    display: none;
+  }
+  .about-us-text .sub-heading h2 {
+    margin-bottom: 20px;
+  }
+  .about-us-text .feature .icon {
+    width: 50px;
+    height: 35px;
+  }
+  .about-us-text .alart {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-us-text .alart .alart-text {
+    margin: 20px 0px;
+  }
+  .about-solution {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 0px;
+    margin: 0;
+  }
+  .about-solution .solution-wrapper .solution-title.center {
+    max-width: 100%;
+  }
+  .about-solution .solution-wrapper .solution-title.center h4 {
+    text-align: left;
+  }
+  .about-solution .solution-wrapper .solution-title.center p {
+    text-align: left;
+  }
+  .our-teams {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .our-teams .our-teams-member .member-info .name h5 {
+    font-size: 20px;
+  }
+  .testimonial-area {
+    border-radius: 0px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+  .testimonial-area .section-title {
+    margin-bottom: 30px;
+  }
+  .testimonial-area .section-title p {
+    text-align: justify;
+  }
+  .about-skill {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .about-skill .about-skill-wrapper .about-skill-pogressbar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-skill .about-skill-wrapper .about-skill-pogressbar .round-wrapper {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .footer-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+}
+
 .our-services .about-us-text .sub-heading {
   margin-bottom: 15px;
 }
