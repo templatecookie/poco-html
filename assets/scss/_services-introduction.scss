@@ -46,6 +46,10 @@
 
 // Homepage-03
 .homepage-03 {
+    &.service-introduction {
+        padding-bottom: 130px;
+    }
+
     .section-heading {
         p {
             font-size: 18px;
@@ -93,6 +97,15 @@
         padding: 100px 0;
     }
 
+    .service-introduction {
+        padding-bottom: 80px !important;
+
+        .services-introduction-item {
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+    }
+
 }
 
 /* Small devices 0 - 768 */
@@ -112,20 +125,45 @@
         }
 
         &-text {
-            .section-heading{
-              h2 {
-                margin-bottom: 20px;
-                max-width: 100%;
-                line-height: 40px;
-            } 
-            p{
-                font-size: 16px;
+            .section-heading {
+                h2 {
+                    margin-bottom: 20px;
+                    max-width: 100%;
+                    line-height: 40px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
             }
-            } 
         }
     }
+
     .services-introduction-text a {
         margin-top: 30px;
+    }
+
+    .service-introduction {
+        padding-bottom: 100px !important;
+        .services-introduction-item {
+            margin: 0;
+            margin-top: 30px;
+            text-align: center;
+
+            &-image {
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+
+            &-text {
+                h5 {
+                    margin-bottom: 5px;
+                    font-size: 20px;
+                }
+
+            }
+
+        }
     }
 }
 

@@ -228,6 +228,9 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
     /* common area start */
+    h5{
+        font-size: 20px;
+    }
 }
 
 /* Small devices 0 - 768 */
@@ -255,6 +258,13 @@
                 }
             }
         }
+    }
+    .services03{
+        padding: 0;
+        padding-top: 100px;
+        .provide-services-item{
+            margin-bottom: 140px;
+        } 
     }
 }
 

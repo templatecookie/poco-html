@@ -31,3 +31,73 @@
         }
     }
 }
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* laptop devices 1200 - 1600 */
+@media #{$laptop} {
+    /* common area start */
+
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    /* common area start */
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+    .beloved-client{
+        .image{
+            text-align: center;
+            margin-top: 60px;
+        }
+    }
+}
+
+/* Small devices 0 - 768 */
+@media #{$xs} {
+    /* common area start */
+    .beloved-client{
+        padding-top: 100px;
+        .sub-section-heading{
+            h2{
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+        .client-info{
+            margin-bottom: 20px;
+            flex-direction: column;
+            .client-info-item{
+                margin-bottom: 30px;
+                text-align: center;
+                h2{
+                    font-size: 52px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+        .client-image{
+            flex-direction: column;
+            .client-image-logo{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+/* Small devices 576 - 767 */
+@media #{$sm} {
+    /* common area start */
+}

@@ -1,5 +1,6 @@
 .header-area {
   padding: 20px 0px;
+  position: relative;
 
   .main-menu {
     padding-left: 155px;
@@ -238,6 +239,80 @@ aside,
 }
 
 /*----------------------------------------*/
+/*  SEarch Box CSS
+/*----------------------------------------*/
+.search-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 99 !important;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease;
+
+  .search-close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 28px;
+    color: $secondary;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $tertiary;
+    }
+  }
+}
+
+.search-box.search-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.search-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+}
+
+.search-form {
+  input {
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    font-size: 14px;
+    color: $secondary;
+    padding: 0 15px;
+    padding-right: 55px;
+    background-color: rgba(255, 70, 94, 0.05);
+    border: 3px solid #DDDDDD;
+    position: relative;
+  }
+
+  &::placeholder {
+    color: $secondary;
+    font-size: 14px;
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    line-height: 56px;
+    border-radius: 50%;
+    background: transparent;
+  }
+}
+
+/*----------------------------------------*/
 /*  HOMPAGE 2 CSS
 /*----------------------------------------*/
 .header-area02 {
@@ -371,6 +446,12 @@ aside,
   .header-area .main-menu li {
     padding-right: 40px;
   }
+
+  .header-area03 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
 }
 
 /* large devices 992 - 1199*/
@@ -388,6 +469,11 @@ aside,
   .header-area .main-menu li {
     padding-right: 25px;
   }
+
+  .header-area03 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
 /* Medium devices 768 - 991 */
@@ -398,11 +484,36 @@ aside,
 /* Small devices 0 - 767 */
 @media #{$xs} {
   .t-btn {
+    font-size: 18px !important;
     padding: 15px 30px;
   }
 
   .header-area {
     padding: 20px 0px;
+  }
+
+  .banner-area03 {
+    .banner-wrapper {
+      padding-top: 130px !important;
+    }
+
+    .banner-brand-title {
+      h3 {
+        &::before {
+          left: 173px !important;
+          width: 100px !important;
+        }
+      }
+    }
+    .banner-brand{
+     ul{
+       flex-direction: column;
+       li{
+         padding-bottom: 30px;
+       }
+     }
+     margin-bottom: 50px;
+    }
   }
 }
 
@@ -451,14 +562,30 @@ aside,
   }
 }
 
+//home page 2 sticky menu
 .header-area02 {
   transition: padding .3s ease-in-out;
 
   .main-menu li a::before {
     transition: all .3s ease-in-out;
   }
+
   &.sticky {
     box-shadow: inherit;
     background-color: #29303E;
+  }
+}
+
+//home page 3 sticky menu
+.header-area03 {
+  transition: padding .3s ease-in-out;
+
+  .main-menu li a::before {
+    transition: all .3s ease-in-out;
+  }
+
+  &.sticky {
+    box-shadow: inherit;
+    background-color: #1F99F4;
   }
 }

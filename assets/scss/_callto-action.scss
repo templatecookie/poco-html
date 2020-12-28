@@ -46,57 +46,17 @@
 
 // HomePage-02
 .call-action-two {
+    padding-top: 250px;
+    padding-bottom: 380px;
     background-color: rgba(255, 246, 247, 1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-top-left-radius: 166px;
     position: relative;
-}
-
-.customer-care {
-    position: relative;
-
-    &-text {
-        position: absolute;
-        top: -45px;
-        left: 55px;
-        background-color: #ffffff;
-        padding: 15px 25px;
-        display: inline-block;
-        text-align: center;
-        border-radius: 26px;
-        border-bottom-left-radius: 0px;
-
-        p {
-            font-family: $gilroy-medium;
-            color: $primary;
-        }
-
-        &::before {
-            position: absolute;
-            content: "";
-            border-radius: 50%;
-            top: 48px;
-            left: 40px;
-            width: 17px;
-            height: 17px;
-            background: white;
-        }
-
-        &::after {
-            position: absolute;
-            content: "";
-            border-radius: 50%;
-            top: 68px;
-            left: 26px;
-            width: 9px;
-            height: 9px;
-            background: white;
-        }
-    }
 
 }
+
 
 // HomePage-03
 .homepage-03 {
@@ -247,6 +207,29 @@
     .callto-action-text {
         padding-bottom: 50px;
     }
+
+    .homepage-03 {
+        &.call-to-action03 {
+            .call-action-video {
+                margin-top: 100px;
+            }
+
+            .pattern {
+                .pattern-one {
+                    top: -10%;
+                    left: -4%;
+                    z-index: -1;
+                }
+                .pattern-two {
+                    bottom: -10%;
+                    right: -4%;
+                    z-index: -1;
+                }
+            }
+
+        }
+    }
+
 }
 
 /* Small devices 0 - 768 */
@@ -279,11 +262,39 @@
     .callto-action-mask {
         display: none;
     }
+
     .call-action-two {
         border-top-left-radius: 0px;
     }
-    .small-feature{
+
+    .small-feature {
         display: none;
+    }
+    
+    .homepage-03 {
+        &.call-to-action03 {
+            padding: 100px 0;
+            .call-action-video {
+                margin-top: 50px;
+                .play-video{
+                    a{
+                        width: 70px;
+                        height: 70px;
+
+                    }
+                }
+            }
+
+            .pattern {
+                .pattern-one {
+                    display: none;
+                }
+                .pattern-two {
+                        display: none;
+                }
+            }
+
+        }
     }
 }
 
