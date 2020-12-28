@@ -5006,6 +5006,54 @@ aside,
   left: 25px;
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .map-area {
+    padding-bottom: 100px;
+  }
+  .padding-top-xs {
+    padding-top: 100px;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  .conatact-area {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .conatact-area .contact-form {
+    padding: 0;
+  }
+  .conatact-area .contact-form .form-message textarea {
+    resize: none;
+  }
+  .map-area {
+    padding-bottom: 60px;
+  }
+  .padding-top-xs {
+    padding-top: 50px;
+  }
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+}
+
 .blog-area .article-item {
   margin-bottom: 55px;
 }
