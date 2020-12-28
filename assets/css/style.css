@@ -5803,4 +5803,39 @@ aside,
     opacity: 0;
   }
 }
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* laptop devices 1200 - 1600 */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  /* common area start */
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-area .aside .blog-meta,
+  .blog-area .aside .blog-gallery,
+  .blog-area .aside .archive-posts,
+  .blog-area .aside .blog-catagories,
+  .blog-area .aside .recent-post,
+  .blog-area .aside .search {
+    max-width: 100%;
+  }
+}
+
+/* Small devices 0 - 768 */
+@media (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 576 - 767 */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* common area start */
+}
 /*# sourceMappingURL=style.css.map */
