@@ -5608,6 +5608,7 @@ aside,
 .blog-details .article-item .author-details-image img {
   width: 100px;
   height: 100px;
+  max-width: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -5647,6 +5648,7 @@ aside,
 .blog-details .article-item .comments-section-area .image img {
   height: 75px;
   width: 75px;
+  max-width: 75px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
