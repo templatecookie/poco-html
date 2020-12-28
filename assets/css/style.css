@@ -5831,7 +5831,49 @@ aside,
 
 /* Small devices 0 - 768 */
 @media (max-width: 767px) {
-  /* common area start */
+  .blog-details .article-item h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 38px;
+  }
+  .blog-details .article-item .comments-section-area,
+  .blog-details .article-item .author-details,
+  .blog-area .article-item .article-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blog-details-quotes::after {
+    bottom: 10%;
+    left: 85%;
+  }
+  .author-details-image {
+    margin-right: 0 !important;
+  }
+  .author-details-info {
+    margin-top: 20px;
+  }
+  .author-details-info h6 {
+    text-align: right;
+  }
+  .author-details-info span {
+    float: right;
+    margin-right: 15px;
+    display: inline-block;
+  }
+  .blog-details .article-item .comments-section-area {
+    padding-left: 0;
+  }
+  .blog-area .aside .blog-meta,
+  .blog-area .aside .blog-gallery,
+  .blog-area .aside .archive-posts,
+  .blog-area .aside .blog-catagories,
+  .blog-area .aside .recent-post,
+  .blog-area .aside .search {
+    max-width: 100%;
+  }
+  .blog-details {
+    padding-bottom: 50px;
+  }
 }
 
 /* Small devices 576 - 767 */
