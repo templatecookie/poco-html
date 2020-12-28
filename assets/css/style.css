@@ -5874,6 +5874,10 @@ aside,
   .blog-details {
     padding-bottom: 50px;
   }
+  .blog-area .aside .blog-gallery-item {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 /* Small devices 576 - 767 */
