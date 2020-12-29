@@ -75,25 +75,28 @@
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
-    .breadcrumb-area{
+    .breadcrumb-area {
         margin: 0px 25px 100px 25px;
-        .banner-wrapper{
-            .banner-title{
-                h1{
+
+        .banner-wrapper {
+            .banner-title {
+                h1 {
                     font-size: 60px;
                     line-height: 68px;
                 }
             }
-            p{
+
+            p {
                 margin-top: 25px;
                 font-size: 20px;
                 line-height: 30px;
             }
         }
-        
-        .breadcrumb{
+
+        .breadcrumb {
             padding: 10px 20px !important;
-            &-item{
+
+            &-item {
                 font-size: 18px !important;
                 line-height: 26px !important;
             }
@@ -103,35 +106,42 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    .breadcrumb-area{
+    .breadcrumb-area {
         margin: 0px 20px 70px 20px;
         padding-bottom: 50px;
-        .banner-wrapper{
-            .banner-title{
+
+        .banner-wrapper {
+            .banner-title {
                 margin-top: 20px;
-                h1{
+
+                h1 {
                     font-size: 40px;
                     line-height: 48px;
                 }
             }
-            p{
+
+            p {
                 max-width: 100%;
                 margin-top: 20px;
                 font-size: 18px;
                 line-height: 26px;
             }
         }
-        .breadcrumb-wrapper{
+
+        .breadcrumb-wrapper {
             bottom: -75px !important;
             left: 40px !important;
-            .breadcrumb{
+
+            .breadcrumb {
                 padding: 10px 20px !important;
-                &-item{
+
+                &-item {
                     font-size: 18px !important;
                     line-height: 26px !important;
                 }
             }
         }
+
         .banner-image {
             padding-top: 30px;
             padding-left: 0;
@@ -142,39 +152,47 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    .breadcrumb-area{
+    .breadcrumb-area {
         margin: 0px 0px 60px 0px;
         padding-bottom: 50px;
         border-radius: 0px;
-        .breadcrumbmask{
+
+        .breadcrumbmask {
             display: none;
         }
-        .banner-wrapper{
-            .banner-title{
+
+        .banner-wrapper {
+            .banner-title {
                 margin-top: 15px;
-                h1{
+
+                h1 {
                     font-size: 32px;
                     line-height: 40px;
                 }
             }
-            p{
+
+            p {
                 max-width: 100%;
                 margin-top: 15px;
                 font-size: 16px;
                 line-height: 24px;
             }
         }
-        .breadcrumb-wrapper{
+
+        .breadcrumb-wrapper {
             bottom: -75px !important;
             left: 40px !important;
-            .breadcrumb{
+
+            .breadcrumb {
                 padding: 10px 15px !important;
-                &-item{
+
+                &-item {
                     font-size: 16px !important;
                     line-height: 24px !important;
                 }
             }
         }
+
         .banner-image {
             padding-top: 20px;
             padding-left: 0;
@@ -185,39 +203,51 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    .breadcrumb-area{
+    .breadcrumb-area {
         margin: 0px 0px 60px 0px;
         padding-bottom: 50px;
         border-radius: 0px;
-        .breadcrumbmask{
+
+        .breadcrumbmask {
             display: none;
         }
-        .banner-wrapper{
-            .banner-title{
+
+        .banner-wrapper {
+            padding-left: 0;
+            text-align: center;
+
+            .banner-title {
                 margin-top: 10px;
-                h1{
+
+                h1 {
                     font-size: 30px;
                     line-height: 38px;
                 }
             }
-            p{
+
+            p {
                 max-width: 100%;
                 margin-top: 5px;
                 font-size: 14px;
                 line-height: 22px;
             }
         }
-        .breadcrumb-wrapper{
+
+        .breadcrumb-wrapper {
             bottom: -75px !important;
-            left: 40px !important;
-            .breadcrumb{
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+
+            .breadcrumb {
                 padding: 10px 15px !important;
-                &-item{
+
+                &-item {
                     font-size: 14px !important;
                     line-height: 22px !important;
                 }
             }
         }
+
         .banner-image {
             padding-top: 20px;
             padding-left: 0;
@@ -225,9 +255,65 @@
         }
     }
 }
+
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
+    .breadcrumb-area {
+        margin: 0px 0px 60px 0px;
+        padding-bottom: 50px;
+        border-radius: 0px;
+
+        .breadcrumbmask {
+            display: none;
+        }
+
+        .banner-wrapper {
+            padding-left: 0;
+            text-align: center;
+
+            .banner-title {
+                margin-top: 10px;
+
+                h1 {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+            }
+
+            p {
+                max-width: 100%;
+                margin-top: 5px;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+
+        .breadcrumb-wrapper {
+            bottom: -75px !important;
+            left: 0 !important;
+            right: 0 !important;
+
+            .breadcrumb {
+                padding: 10px 15px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                &-item {
+                    font-size: 14px !important;
+                    line-height: 22px !important;
+
+                }
+            }
+        }
+
+        .banner-image {
+            padding-top: 20px;
+            padding-left: 0;
+            text-align: center;
+        }
+    }
 }
 
 /*----------------------------------------*/
