@@ -360,6 +360,14 @@
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
+    // Globally Section Title
+    .section-title{
+        margin-bottom: 40px !important;
+        h2{
+            font-size: 40px !important;
+        }
+    }
+
     // Globally Sub Heading
     .sub-heading{
         margin-bottom: 20px !important;
@@ -404,6 +412,7 @@
         }
     }
 
+    // About Us Section ==> About Us Page
     .about-us{
         padding-top: 0;
         padding-bottom: 100px;
@@ -411,6 +420,11 @@
             top: -25% !important;
         }
         
+    }
+    // ABOUT SOLUTION AREA ==> About Us Page
+    .about-solution{
+        padding: 100px 0px !important;
+        margin: 0px 25px !important;
     }
 
 }

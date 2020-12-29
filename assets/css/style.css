@@ -1744,6 +1744,12 @@ aside,
 /*----------------------------------------*/
 /* large devices 992 - 1169*/
 @media only screen and (min-width: 992px) and (max-width: 1169px) {
+  .section-title {
+    margin-bottom: 40px !important;
+  }
+  .section-title h2 {
+    font-size: 40px !important;
+  }
   .sub-heading {
     margin-bottom: 20px !important;
   }
@@ -1779,6 +1785,10 @@ aside,
   }
   .about-us .about-us-image .sm-feauter-top {
     top: -25% !important;
+  }
+  .about-solution {
+    padding: 100px 0px !important;
+    margin: 0px 25px !important;
   }
 }
 
@@ -3037,6 +3047,46 @@ aside,
 
 .our-team-member-info .bottom-information a:hover {
   color: #ED880A;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  .our-teams {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+  .our-teams .all-member {
+    margin-top: 20px !important;
+  }
+  .our-teams .all-member .member-info .name h5 {
+    font-size: 20px !important;
+  }
+  .our-teams .all-member .member-info .name p {
+    font-size: 14px !important;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
 }
 
 .breadcrumb-area {

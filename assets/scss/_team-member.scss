@@ -118,3 +118,48 @@
     }
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    // Globally Our Teams
+   .our-teams{
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+        .all-member{
+            margin-top: 20px !important;
+            .member-info{
+                .name{
+                    h5{
+                        font-size: 20px !important;
+                    }
+                    p{
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+   }
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
+}
