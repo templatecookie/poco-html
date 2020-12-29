@@ -1740,6 +1740,68 @@ aside,
 }
 
 /*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  .sub-heading {
+    margin-bottom: 20px !important;
+  }
+  .sub-heading h2 {
+    font-size: 35px !important;
+    line-height: 43px !important;
+    margin-bottom: 20px !important;
+  }
+  .about-us .feature {
+    margin-bottom: 20px !important;
+  }
+  .about-us .feature .icon {
+    width: 33px !important;
+  }
+  .about-us .feature .text h6 {
+    margin-bottom: 5px !important;
+  }
+  .about-us .feature .text p {
+    line-height: 25px !important;
+  }
+  .about-us .about-us-text .alart .alart-icon i {
+    font-size: 35px !important;
+  }
+  .about-us .about-us-text .alart .alart-text p {
+    line-height: 23px !important;
+  }
+  .about-us .about-us-text .alart .alart-boldtext h2 {
+    font-size: 45px !important;
+  }
+  .about-us {
+    padding-top: 0;
+  }
+  .about-us .about-us-image .sm-feauter-top {
+    top: -25% !important;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
+}
+
+/*----------------------------------------*/
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 #circleBar {

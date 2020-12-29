@@ -354,4 +354,81 @@
     }
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
 
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    // Globally Sub Heading
+    .sub-heading{
+        margin-bottom: 20px !important;
+        h2{
+            font-size: 35px !important;
+            line-height: 43px !important;
+            margin-bottom: 20px !important;
+        }
+    }
+    // Globally Feature & Alarat For About US
+    .about-us{
+        .feature {
+            margin-bottom: 20px !important;
+            .icon{
+                width: 33px !important;
+            }
+            .text{
+                h6{
+                    margin-bottom: 5px !important;
+                }
+                p{
+                    line-height: 25px !important;
+                }
+            }
+        }
+        .about-us-text .alart{
+            .alart-icon{
+                i{
+                    font-size: 35px !important;
+                }
+            }
+            .alart-text{
+                p{
+                    line-height: 23px !important;
+                }
+            }
+            .alart-boldtext{
+                h2{
+                    font-size: 45px !important;
+                }
+            }
+        }
+    }
+
+    .about-us{
+        padding-top: 0;
+        .about-us-image .sm-feauter-top{
+            top: -25% !important;
+        }
+        
+    }
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
+}
