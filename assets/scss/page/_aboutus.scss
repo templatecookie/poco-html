@@ -60,34 +60,42 @@
 
 //ABOUT SKILL AREA
 .about-skill {
-    &-wrapper { 
+    &-wrapper {
         max-width: 90%;
-        .about-skill-title{
-            h2{
+
+        .about-skill-title {
+            h2 {
                 margin-bottom: 30px;
             }
-            p{
+
+            p {
                 font-family: $gilroy-medium;
                 font-size: 18px;
                 line-height: 20px;
                 line-height: 30px;
             }
+
             margin-bottom: 50px;
         }
-        .about-skill-pogressbar{
+
+        .about-skill-pogressbar {
             display: flex;
             align-items: center;
-            .round-wrapper{
+
+            .round-wrapper {
                 margin-right: 120px;
                 text-align: center;
-                .round{
+
+                .round {
                     position: relative;
-                    .round-text{
+
+                    .round-text {
                         position: absolute;
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
-                        strong{
+
+                        strong {
                             color: $primary;
                             font-family: $gilroy-bold;
                             font-size: 45px;
@@ -95,25 +103,29 @@
                         }
                     }
                 }
-                .skill-text{
+
+                .skill-text {
                     margin-top: 20px;
-                    p{
+
+                    p {
                         padding-top: 10px;
                     }
                 }
             }
-        }  
+        }
     }
 }
 
 // START ABOUT US
-.about-us{
-    &-image{
+.about-us {
+    &-image {
         position: relative;
-        .image{
+
+        .image {
             margin-left: -120px;
         }
-        .small-feature{
+
+        .small-feature {
             position: absolute;
             height: 120px;
             width: 120px;
@@ -123,74 +135,89 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-           &-item{
-               h3{
-                color: #FFFFFF;
-                font-size: 34px;
-               }
-               .ratings{
-                color: #FFFFFF;
-                font-size: 12px;
-               }
-               p{
-                font-size: 16px;
-                color: #FFFFFF;
-                font-family: $gilroy-medium;
-               }
-           }
+
+            &-item {
+                h3 {
+                    color: #FFFFFF;
+                    font-size: 34px;
+                }
+
+                .ratings {
+                    color: #FFFFFF;
+                    font-size: 12px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    font-family: $gilroy-medium;
+                }
+            }
         }
-        .sm-feauter-top{
-           top: -18%;
-           left: 35%; 
-           transform: translateX(-35%);
+
+        .sm-feauter-top {
+            top: -18%;
+            left: 35%;
+            transform: translateX(-35%);
         }
-        .sm-feauter-left{
+
+        .sm-feauter-left {
             top: 50%;
-            left: -30%; 
+            left: -30%;
         }
-        .sm-feauter-bottom{
+
+        .sm-feauter-bottom {
             bottom: -13%;
-            right: 26%; 
+            right: 26%;
         }
     }
-    &-text{
-        .sub-heading{
+
+    &-text {
+        .sub-heading {
             margin-bottom: 30px;
-            h2{
+
+            h2 {
                 margin-bottom: 30px;
             }
-            p{
+
+            p {
                 font-size: 18px;
                 font-family: $gilroy-medium;
             }
         }
-        .feature{
-            .icon{
+
+        .feature {
+            .icon {
                 margin-top: 5px;
                 height: 30px;
                 width: 30px;
                 border-radius: 9px;
-                i{
+
+                i {
                     color: #ffffff;
                 }
             }
-            .text{
-                h6{
+
+            .text {
+                h6 {
                     margin-bottom: 15px;
                     font-size: 18px;
                 }
-                p{
-                    font-family:  $gilroy-medium;
+
+                p {
+                    font-family: $gilroy-medium;
                 }
             }
         }
-        .alart{
+
+        .alart {
             position: relative;
             background-color: #FFF5F7;
             max-width: 490px;
             padding: 15px 50px 15px 25px;
             border-radius: 6px;
-            &::before{
+
+            &::before {
                 position: absolute;
                 content: '';
                 top: 0;
@@ -201,21 +228,24 @@
                 border-top-left-radius: 6px;
                 border-bottom-left-radius: 6px;
             }
-            &-icon{
-                i{
+
+            &-icon {
+                i {
                     color: #65729E;
                     font-size: 50px;
                 }
             }
-            &-text{
-                p{
+
+            &-text {
+                p {
                     color: #000560;
                     font-size: 18px;
-                    font-family:  $gilroy-medium;
+                    font-family: $gilroy-medium;
                 }
             }
-            &-boldtext{
-                h2{
+
+            &-boldtext {
+                h2 {
                     color: #FF465E;
                     font-size: 55px;
                 }
@@ -224,4 +254,3 @@
     }
 }
 // END ABOUT US
-

@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/*  HOMEPAGE 01
+/*----------------------------------------*/
 .footer-area {
     background-color: rgba(255, 70, 94, 0.05);
     margin: 0 45px;
@@ -102,7 +105,9 @@
     }
 }
 
-// HomePage-02
+/*----------------------------------------*/
+/*  HOMEPAGE 02
+/*----------------------------------------*/
 .dark-footer {
     padding-top: 110px;
     background-color: #29303E;
@@ -155,6 +160,8 @@
 
     .footer-area {
         background-color: inherit;
+        padding: 0;
+        padding-top: 130px;
 
         &-links {
             a {
@@ -273,76 +280,4 @@
             }
         }
     }
-}
-
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-    /* common area start */
-
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-    /* common area start */
-
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-    /* common area start */
-}
-
-/* Small devices 0 - 768 */
-@media #{$xs} {
-    .teams-modifi{
-        margin: 0 !important;
-        padding-top: 50px !important;
-        padding-bottom: 50px !important;
-        border-radius: 0px !important;
-    }
-
-    /* common area start */
-    .footer-area {
-        margin: 0px;
-        padding: 100px 0px;
-        border-radius: 0;
-    }
-
-    .footer-area-shape {
-        display: none;
-    }
-
-    .copyright-area-text {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .copyright-area-logo {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .copyright-area-top {
-        text-align: center;
-    }
-
-    .footer-area-lists ul li a {
-        margin-bottom: 5px;
-    }
-    .dark-footer{
-        padding-top: 100px;
-        border-top-right-radius: 0;
-        .footer-area-lists{
-            margin-bottom: 30px;
-        }
-    }
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-    /* common area start */
 }

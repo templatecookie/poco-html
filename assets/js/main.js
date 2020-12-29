@@ -1,6 +1,12 @@
 (function ($) {
 	"use strict";
-
+	//search box opern
+	$(".search-bar").on("click", function(){
+		$(".search-box").addClass("search-open");
+	});
+	$(".search-close").on("click", function(){
+		$(".search-box").removeClass("search-open");
+	});
 	//brand_slider
 	$('.brand-slider-active').slick({
 		infinite: true,

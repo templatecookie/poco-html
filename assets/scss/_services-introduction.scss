@@ -44,8 +44,14 @@
     }
 }
 
-// Homepage-03
+/*----------------------------------------*/
+/*  HOMEPAGE 03 
+/*----------------------------------------*/
 .homepage-03 {
+    &.service-introduction {
+        padding-bottom: 130px;
+    }
+
     .section-heading {
         p {
             font-size: 18px;
@@ -67,69 +73,4 @@
             }
         }
     }
-}
-
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-    /* common area start */
-
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-    /* common area start */
-
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-
-    /* common area start */
-    .services-introduction {
-        padding: 100px 0;
-    }
-
-}
-
-/* Small devices 0 - 768 */
-@media #{$xs} {
-
-    /* common area start */
-    .services-introduction {
-        &-item {
-
-            p {
-                max-width: 100%;
-            }
-        }
-
-        &-item-image {
-            margin-bottom: 20px;
-        }
-
-        &-text {
-            .section-heading{
-              h2 {
-                margin-bottom: 20px;
-                max-width: 100%;
-                line-height: 40px;
-            } 
-            p{
-                font-size: 16px;
-            }
-            } 
-        }
-    }
-    .services-introduction-text a {
-        margin-top: 30px;
-    }
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-    /* common area start */
 }

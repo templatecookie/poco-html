@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/* HOMEPAGE 02
+/*----------------------------------------*/
 // About-Info Starts Here
 .about-info {
     &-image {
@@ -54,10 +57,8 @@
     }
 }
 
-// About-Info Ends Here
-
 /*----------------------------------------*/
-/*  ABOUT INFO 02
+/* HOMEPAGE 02
 /*----------------------------------------*/
 .aboutus02 {
     padding: 130px 0;
@@ -199,9 +200,13 @@
 
 }
 
-
-// HomePage-03
+/*----------------------------------------*/
+/*  HOMEPAGE 03
+/*----------------------------------------*/
 .homepage-03 {
+    &.about-introduction{
+        padding-bottom: 260px;
+    }
     .sub-section-heading {
         p {
             font-size: 18px;
@@ -226,18 +231,30 @@
         position: relative;
 
         .image {
-            width: 640px;
-
-            img {
-                max-width: 100%;
-                height: auto;
+            position: relative;
+            .about01{
+                border-top-right-radius: 75px;
+                width: 490px;
+                height: 550px;
+                object-fit: cover;
+            }
+            .about02 {
+                position: absolute;
+                bottom: -25%;
+                left: 65%;
+                background-color: #fff;
+                border: 13px solid #ffff;
+                border-top-left-radius: 85px;
+                width: 395px;
+                height: 495px;
+                object-fit: cover;
             }
         }
 
         .award {
             position: absolute;
-            bottom: 6%;
-            left: 50%;
+            bottom: -15%;
+            left: 58%;
             width: 185px;
             height: 185px;
             border-radius: 50%;
@@ -337,235 +354,4 @@
     }
 }
 
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
 
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-
-    /* common area start */
-    .about-info-image {
-        margin-left: 0px;
-    }
-
-    .aboutus02 {
-        .aboutus02-wrapper {
-            max-width: 100%;
-            margin-left: 100px;
-        }
-
-        .aboutus-introduction02-image {
-            &::before {
-                top: 60px;
-                left: -30px;
-            }
-
-            &::after {
-                right: -80px;
-            }
-        }
-    }
-
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-    /* common area start */
-
-    .about-info-image {
-        margin-left: 0px;
-    }
-
-    .aboutus02 {
-        .aboutus02-wrapper {
-            max-width: 100%;
-            margin-left: 0;
-        }
-
-        .aboutus02-image::after {
-            display: none;
-        }
-
-        .aboutus02-image::before {
-            display: none;
-        }
-    }
-
-    .aboutus-introduction02-image {
-        &::before {
-            display: none;
-        }
-
-        &::after {
-            display: none;
-        }
-    }
-
-    .aboutus-introduction02 {
-        .introduction-feature {
-            position: absolute;
-            bottom: 7%;
-            left: 29%;
-        }
-    }
-
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-
-    /* common area start */
-    .about-info-image {
-        margin-left: 0px;
-        margin-bottom: 50px;
-    }
-
-    .aboutus02 {
-        padding-top: 30px;
-        padding-bottom: 100px;
-
-        .aboutus02-wrapper {
-            max-width: 93%;
-            margin-top: 50px;
-        }
-
-        .aboutus02-image {
-            margin-bottom: 50px;
-            text-align: center;
-
-            &::after {
-                bottom: 3%;
-                left: 9%;
-            }
-
-            &::before {
-                top: 9%;
-                right: 8%;
-            }
-        }
-
-        .small-feature {
-            top: 35%;
-            right: 6%;
-        }
-    }
-
-    .aboutus-introduction02 {
-        .aboutus-introduction02-image {
-            text-align: center;
-            margin-left: 0;
-            margin-bottom: 50px;
-
-            &::before {
-                top: 8%;
-                left: 8%;
-            }
-
-            &::after {
-                bottom: 4%;
-                right: 8%;
-            }
-        }
-
-        .small-feature {
-            top: 35%;
-            left: 2%;
-        }
-    }
-}
-
-/* Small devices 0 - 768 */
-@media #{$xs} {
-
-    /* common area start */
-    h2 {
-        font-size: 28px;
-        line-height: 40px;
-    }
-
-    h3 {
-        font-size: 28px;
-        line-height: 48px;
-    }
-
-    .about-info {
-        padding: 100px 0;
-    }
-
-    .about-info-project .project-rating h3 {
-        font-size: 28px;
-        line-height: 48px;
-
-    }
-
-    .about-info-project .project-information h3 {
-        font-size: 28px;
-        line-height: 48px;
-    }
-
-    .about-info-image {
-        margin-left: 0px;
-        margin-bottom: 50px;
-    }
-
-    .about-info-text h2 {
-        margin-bottom: 30px;
-    }
-
-    .aboutus02 {
-        padding-top: 0px;
-        .aboutus02-image {
-            margin-bottom: 50px;
-            img {
-                max-width: 100%;
-                width: 100%;
-                height: 100%;
-                border-radius: 101px;
-                border-top-left-radius: 0;
-                -o-object-fit: cover;
-                object-fit: cover;
-            }
-            &::after{
-                display: none;
-            }
-            &::before{
-                display: none;
-            }
-        }
-    }
-
-    .aboutus-introduction02 {
-        .aboutus-introduction02-image {
-            margin-left: 0;
-            margin-bottom: 50px;
-            img {
-                max-width: 100%;
-                width: 100%;
-                height: 100%;
-                border-radius: 101px;
-                border-top-left-radius: 0;
-                -o-object-fit: cover;
-                object-fit: cover;
-            }
-            &::after{
-                display: none;
-            }
-            &::before{
-                display: none;
-            }
-        }
-    }
-
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-
-    /* common area start */
-    .about-info-image {
-        margin-left: 0px;
-        margin-bottom: 50px;
-    }
-
-}

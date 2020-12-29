@@ -122,6 +122,7 @@
     .overlay-thumb {
         &-image {
             position: relative;
+
             &::before {
                 position: absolute;
                 content: '';
@@ -135,11 +136,13 @@
             }
 
         }
-        .overlay-playbutton{
+
+        .overlay-playbutton {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
             .popup-video {
                 @include transition(.4s);
                 color: red;
@@ -156,6 +159,7 @@
                 align-items: center;
                 position: relative;
                 z-index: 1;
+
                 &::after {
                     z-index: -1;
                     position: absolute;
@@ -169,10 +173,12 @@
                     transform: translateX(-50%) translateY(-50%);
                     animation: pulse-border 1500ms ease-out infinite;
                 }
+
                 & i {
                     font-size: 18px;
                     color: $tertiary;
                 }
+
                 &:hover {
                     border-color: white;
                 }
@@ -571,6 +577,7 @@
                 img {
                     width: 100px;
                     height: 100px;
+                    max-width: 100px;
                     object-fit: cover;
                     border-radius: 50%;
                     border: 1px solid #BBBBBB;
@@ -606,6 +613,7 @@
                     img {
                         height: 75px;
                         width: 75px;
+                        max-width: 75px;
                         border-radius: 50%;
                         object-fit: cover;
                     }
@@ -725,13 +733,12 @@
 
 @keyframes pulse-border {
     0% {
-      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-      opacity: 1;
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
     }
-  
+
     100% {
-      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-      opacity: 0;
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
     }
 }
-  

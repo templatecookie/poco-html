@@ -1,5 +1,9 @@
+/*----------------------------------------*/
+/*  HOMPAGE 01
+/*----------------------------------------*/
 .header-area {
   padding: 20px 0px;
+  position: relative;
 
   .main-menu {
     padding-left: 155px;
@@ -238,7 +242,81 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  HOMPAGE 2 CSS
+/*  SEarch Box CSS
+/*----------------------------------------*/
+.search-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 99 !important;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease;
+
+  .search-close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 28px;
+    color: $secondary;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $tertiary;
+    }
+  }
+}
+
+.search-box.search-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.search-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+}
+
+.search-form {
+  input {
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    font-size: 14px;
+    color: $secondary;
+    padding: 0 15px;
+    padding-right: 55px;
+    background-color: rgba(255, 70, 94, 0.05);
+    border: 3px solid #DDDDDD;
+    position: relative;
+  }
+
+  &::placeholder {
+    color: $secondary;
+    font-size: 14px;
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    line-height: 56px;
+    border-radius: 50%;
+    background: transparent;
+  }
+}
+
+/*----------------------------------------*/
+/*  HOMPAGE 02
 /*----------------------------------------*/
 .header-area02 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -255,7 +333,7 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  HOMPAGE 3 CSS
+/*  HOMPAGE 03
 /*----------------------------------------*/
 .header-area03 {
   margin: 0;
@@ -290,7 +368,7 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  HOMPAGE 4 CSS
+/*  HOMPAGE 04
 /*----------------------------------------*/
 .header-area04 {
   position: absolute;
@@ -352,67 +430,6 @@ aside,
   }
 }
 
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-
-  /* common area start */
-  .header-area {
-    padding: 20px 0px;
-  }
-
-  .header-area .main-menu {
-    padding-left: 50px;
-  }
-
-  .header-area .main-menu li {
-    padding-right: 40px;
-  }
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-
-  /* common area start */
-  .header-area {
-    padding: 20px 0px;
-  }
-
-  .header-area .main-menu {
-    padding-left: 30px;
-  }
-
-  .header-area .main-menu li {
-    padding-right: 25px;
-  }
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-  /* common area start */
-}
-
-/* Small devices 0 - 767 */
-@media #{$xs} {
-  .t-btn {
-    padding: 15px 30px;
-  }
-
-  .header-area {
-    padding: 20px 0px;
-  }
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-  /* common area start */
-}
-
-
-
 @media(max-width: 1200px) {
 
   aside,
@@ -451,14 +468,30 @@ aside,
   }
 }
 
+//home page 2 sticky menu
 .header-area02 {
   transition: padding .3s ease-in-out;
 
   .main-menu li a::before {
     transition: all .3s ease-in-out;
   }
+
   &.sticky {
     box-shadow: inherit;
     background-color: #29303E;
+  }
+}
+
+//home page 3 sticky menu
+.header-area03 {
+  transition: padding .3s ease-in-out;
+
+  .main-menu li a::before {
+    transition: all .3s ease-in-out;
+  }
+
+  &.sticky {
+    box-shadow: inherit;
+    background-color: #1F99F4;
   }
 }
