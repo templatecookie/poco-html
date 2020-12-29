@@ -3153,7 +3153,43 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
+  .breadcrumb-area {
+    margin: 0px 0px 60px 0px;
+    padding-bottom: 50px;
+    border-radius: 0px;
+  }
+  .breadcrumb-area .breadcrumbmask {
+    display: none;
+  }
+  .breadcrumb-area .banner-wrapper .banner-title {
+    margin-top: 10px;
+  }
+  .breadcrumb-area .banner-wrapper .banner-title h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .breadcrumb-area .banner-wrapper p {
+    max-width: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .breadcrumb-area .breadcrumb-wrapper {
+    bottom: -75px !important;
+    left: 40px !important;
+  }
+  .breadcrumb-area .breadcrumb-wrapper .breadcrumb {
+    padding: 10px 15px !important;
+  }
+  .breadcrumb-area .breadcrumb-wrapper .breadcrumb-item {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .breadcrumb-area .banner-image {
+    padding-top: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 /* extra Small devices 420 */
