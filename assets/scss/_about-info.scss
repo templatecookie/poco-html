@@ -360,6 +360,41 @@
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
+    //  Globally WORK SOLUTION AREA
+    .about-skill{
+        padding: 100px 0px;
+        &-image{
+            img{
+                width: 100%;
+            }
+        }
+        &-title{
+            margin-bottom: 30px !important;
+            h2{
+                font-size: 35px !important;
+                line-height: 43px !important;
+                margin-bottom: 20px !important;
+            }
+            p{
+                font-size: 18px !important;
+                line-height: 26px !important;
+            }
+        }
+        &-pogressbar{
+            .round-wrapper{
+                &:nth-child(1){
+                    margin-right: 50px !important;
+                }
+                .skill-text{
+                    margin-top: 15px !important;
+                    p{
+                        padding-top: 5px !important;
+                    }
+                }
+            }
+        }
+    }
+
     // Globally Section Title
     .section-title{
         margin-bottom: 40px !important;

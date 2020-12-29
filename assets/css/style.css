@@ -1744,6 +1744,33 @@ aside,
 /*----------------------------------------*/
 /* large devices 992 - 1169*/
 @media only screen and (min-width: 992px) and (max-width: 1169px) {
+  .about-skill {
+    padding: 100px 0px;
+  }
+  .about-skill-image img {
+    width: 100%;
+  }
+  .about-skill-title {
+    margin-bottom: 30px !important;
+  }
+  .about-skill-title h2 {
+    font-size: 35px !important;
+    line-height: 43px !important;
+    margin-bottom: 20px !important;
+  }
+  .about-skill-title p {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+  .about-skill-pogressbar .round-wrapper:nth-child(1) {
+    margin-right: 50px !important;
+  }
+  .about-skill-pogressbar .round-wrapper .skill-text {
+    margin-top: 15px !important;
+  }
+  .about-skill-pogressbar .round-wrapper .skill-text p {
+    padding-top: 5px !important;
+  }
   .section-title {
     margin-bottom: 40px !important;
   }
