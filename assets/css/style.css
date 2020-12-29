@@ -1775,6 +1775,7 @@ aside,
   }
   .about-us {
     padding-top: 0;
+    padding-bottom: 100px;
   }
   .about-us .about-us-image .sm-feauter-top {
     top: -25% !important;
