@@ -68,3 +68,62 @@
         }
     }
 }
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    .breadcrumb-area{
+        margin: 0px 25px 100px 25px;
+        .banner-wrapper{
+            .banner-title{
+                h1{
+                    font-size: 60px;
+                    line-height: 68px;
+                }
+            }
+            p{
+                margin-top: 25px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        
+        .breadcrumb{
+            padding: 10px 20px !important;
+            &-item{
+                font-size: 18px !important;
+                line-height: 26px !important;
+            }
+        }
+    }
+    .about-us{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS END 
+/*----------------------------------------*/

@@ -3048,6 +3048,59 @@ aside,
 }
 
 /*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  .breadcrumb-area {
+    margin: 0px 25px 100px 25px;
+  }
+  .breadcrumb-area .banner-wrapper .banner-title h1 {
+    font-size: 60px;
+    line-height: 68px;
+  }
+  .breadcrumb-area .banner-wrapper p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .breadcrumb-area .breadcrumb {
+    padding: 10px 20px !important;
+  }
+  .breadcrumb-area .breadcrumb-item {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+  .about-us {
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS END 
+/*----------------------------------------*/
+/*----------------------------------------*/
 /*  HOMEPAGE 01
 /*----------------------------------------*/
 .footer-area {
