@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/*  HOMEPAGE 01
+/*----------------------------------------*/
 .special-services {
     &-image {
         margin-bottom: 23px;
@@ -46,7 +49,9 @@
     }
 }
 
-// HomePage-02
+/*----------------------------------------*/
+/*  HOMEPAGE 02 
+/*----------------------------------------*/
 .valuable-services {
     background-color: rgba(255, 246, 247, 1);
     background-size: cover;
@@ -127,7 +132,9 @@
     }
 }
 
-// HomePage-03
+/*----------------------------------------*/
+/*  HOMEPAGE 03 
+/*----------------------------------------*/
 .homepage-03 {
     .provide-services-item {
         background-color: #FFFFFF;
@@ -207,68 +214,4 @@
             }
         }
     }
-}
-
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-    /* common area start */
-
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-    /* common area start */
-
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-    /* common area start */
-    h5{
-        font-size: 20px;
-    }
-}
-
-/* Small devices 0 - 768 */
-@media #{$xs} {
-
-    /* common area start */
-    .special-services {
-        padding: 0;
-        padding-bottom: 100px;
-    }
-
-    .valuable-services {
-        padding: 100px 0;
-        border-top-right-radius: 0px;
-        .valuable-services-item{
-            margin-bottom: 50px;
-            &-icon{
-                margin: 0 auto;
-                margin-bottom: 20px;
-            }
-            &-text{
-                text-align: center;
-                p{
-                    margin: 0 auto;
-                }
-            }
-        }
-    }
-    .services03{
-        padding: 0;
-        padding-top: 100px;
-        .provide-services-item{
-            margin-bottom: 140px;
-        } 
-    }
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-    /* common area start */
 }

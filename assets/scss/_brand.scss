@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/*  HOME PAGE 01
+/*----------------------------------------*/
 .brand-area{
     .brand-slider-active{
         .slick-track{
@@ -16,7 +19,9 @@
         }
     }
 }
-// HomePage-02
+/*----------------------------------------*/
+/*  HOME PAGE 02
+/*----------------------------------------*/
 .brands{
     margin-top: -50px;
     z-index: 99;
@@ -41,52 +46,4 @@
         }
         
     }
-}
-
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-    /* common area start */
-
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-    /* common area start */
-
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-    /* common area start */
-    .brands {
-        margin-top: 100px;
-    }
-}
-
-/* Small devices 0 - 768 */
-@media #{$xs} {
-    /* common area start */
-    .brands{
-        padding-top: 100px;
-        margin: 0;
-        .brands-area{
-            padding: 0;
-            box-shadow: inherit !important;
-            ul{
-                flex-direction: unset;
-                li{
-                    margin-bottom: 30px;
-                }
-            }
-        }
-    }
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-    /* common area start */
 }

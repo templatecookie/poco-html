@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/*  HOME PAGE 01
+/*----------------------------------------*/
 .callto-action {
     background-color: rgba(255, 70, 94, 0.05);
     margin: 0 45px;
@@ -44,7 +47,9 @@
     }
 }
 
-// HomePage-02
+/*----------------------------------------*/
+/*  HOME PAGE 02
+/*----------------------------------------*/
 .call-action-two {
     padding-top: 250px;
     padding-bottom: 380px;
@@ -57,8 +62,9 @@
 
 }
 
-
-// HomePage-03
+/*----------------------------------------*/
+/*  HOME PAGE 03
+/*----------------------------------------*/
 .homepage-03 {
     .call-action-text {
         .sub-section-heading {
@@ -137,8 +143,9 @@
 
     }
 }
-
-//team-member page
+/*----------------------------------------*/
+/*  TEAM MEMBER PAGE
+/*----------------------------------------*/
 .callto-action-modifi {
     background-color: inherit;
     border-radius: 0;
@@ -152,162 +159,5 @@
             left: 3%;
             z-index: -1;
         }
-    }
-}
-
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-
-    /* common area start */
-    .callto-action-image {
-        margin-right: 0px;
-    }
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-
-    /* common area start */
-    .callto-action {
-        margin: 0 25px;
-        margin-top: 0;
-    }
-
-    .callto-action-image {
-        margin-right: 0px;
-    }
-
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-
-    /* common area start */
-    .callto-action {
-        padding-top: 100px;
-        padding-bottom: 100px;
-
-        .mask-group {
-            display: none !important;
-        }
-
-        margin: 0 25px;
-        margin-top: 0;
-    }
-
-    .callto-action-image {
-        margin-right: 0px;
-        margin-bottom: 50px;
-    }
-
-    .callto-action-text {
-        padding-bottom: 50px;
-    }
-
-    .homepage-03 {
-        &.call-to-action03 {
-            .call-action-video {
-                margin-top: 100px;
-            }
-
-            .pattern {
-                .pattern-one {
-                    top: -10%;
-                    left: -4%;
-                    z-index: -1;
-                }
-                .pattern-two {
-                    bottom: -10%;
-                    right: -4%;
-                    z-index: -1;
-                }
-            }
-
-        }
-    }
-
-}
-
-/* Small devices 0 - 768 */
-@media #{$xs} {
-    .callto-action {
-        padding-top: 50px;
-        padding-bottom: 50px;
-
-        .mask-group {
-            display: none !important;
-        }
-    }
-
-    /* common area start */
-    .callto-action-image {
-        margin-right: 0px;
-        margin-bottom: 50px;
-    }
-
-    .callto-action-text {
-        margin-bottom: 50px;
-    }
-
-    .callto-action {
-        margin: 0px;
-        margin-top: 0;
-        border-radius: 0;
-    }
-
-    .callto-action-mask {
-        display: none;
-    }
-
-    .call-action-two {
-        border-top-left-radius: 0px;
-    }
-
-    .small-feature {
-        display: none;
-    }
-    
-    .homepage-03 {
-        &.call-to-action03 {
-            padding: 100px 0;
-            .call-action-video {
-                margin-top: 50px;
-                .play-video{
-                    a{
-                        width: 70px;
-                        height: 70px;
-
-                    }
-                }
-            }
-
-            .pattern {
-                .pattern-one {
-                    display: none;
-                }
-                .pattern-two {
-                        display: none;
-                }
-            }
-
-        }
-    }
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-
-    /* common area start */
-    .callto-action-image {
-        margin-right: 0px;
-    }
-
-    .callto-action {
-        margin: 0 25px;
-        margin-top: 0;
     }
 }

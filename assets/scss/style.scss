@@ -1,10 +1,10 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Sample - Corporate Business Bootstrap4 HTML5 Template
-    Template URI: site.com
-    Description: Sample - Corporate Business Bootstrap4 HTML5 Template
-    Author: BasicTheme
-    Author URI: site.com
+    Template Name: Poco - Agency Bootstrap4 HTML5 Template
+    Template URI: zakirsoft.com
+    Description: Agency - Agency Bootstrap4 HTML5 Template
+    Author: Templatecookie
+    Author URI: zakirhossen.com
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -15,24 +15,20 @@
     01. Theme default CSS	
     02. Header CSS	
     03. Banner CSS	
-    04. Features CSS	
+    04. Brand CSS	
     05. About CSS	
-    06. Services CSS	
-    07. Sychologist CSS	
-    08. Appointment CSS	
-    09. Case CSS	
-    10. Client CSS	
-    11. Pricing CSS	
+    06. Skill CSS	
+    07. Services CSS	
+    08. Pricing CSS		
+    09. Call To Action CSS	
+    10. Testimonial CSS		
+    11. Newsletter	
     12. Contact CSS	
     13. Testimonial CSS	
-    14. Blog CSS	
+    14. Client CSS	
     15. Team CSS	
-    16. Why CSS	
-    17. Faq CSS	
-    18. Project CSS	
-    19. Counter CSS	
-    20. Event CSS	
-    21. Footer CSS
+    16. Breadcrumb CSS	
+    17. Footer CSS
 
 -----------------------------------------------------------------------------------*/
 @import 'typography';
@@ -45,15 +41,13 @@
 @import 'about-info';
 @import 'skill';
 @import 'special-services';
+@import 'services-introduction';
 @import 'price';
-@import 'responsive';
 @import 'callto-action';
 @import 'testimonial';
 @import 'review-testimonial';
 @import 'newsletter';
-@import 'services-introduction';
 @import 'client';
-@import 'team';
 @import 'team-member';
 @import 'breadcrumb';
 @import 'footer';
@@ -65,3 +59,6 @@
 @import 'page/project';
 @import 'page/contact';
 @import 'page/blog';
+
+//Responsive
+@import 'responsive';

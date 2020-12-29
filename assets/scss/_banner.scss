@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/*  HOME PAGE 01
+/*----------------------------------------*/
 .banner-area {
     background-color: rgba(255, 70, 94, 0.05);
     margin: 0 45px;
@@ -76,7 +79,7 @@
 }
 
 /*----------------------------------------*/
-/*  HOME PAGE 02 BANNER CSS
+/*  HOME PAGE 02
 /*----------------------------------------*/
 .banner-area02 {
     background-color: #29303E;
@@ -143,7 +146,7 @@
 }
 
 /*----------------------------------------*/
-/*  HOME PAGE 03 BANNER CSS
+/*  HOME PAGE 03
 /*----------------------------------------*/
 .banner-area03 {
     background-color: #1F99F4;
@@ -268,7 +271,7 @@
 }
 
 /*----------------------------------------*/
-/*  HOME PAGE 04 BANNER CSS
+/*  HOME PAGE 04
 /*----------------------------------------*/
 .banner-area04 {
     background-color: #191C26;
@@ -335,323 +338,4 @@
         }
 
     }
-}
-
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-    h1 {
-        font-size: 62px;
-        line-height: 72px;
-    }
-
-    .banner-area02 {
-        .banner-image {
-            margin-left: 0;
-
-            img {
-                max-width: 100%;
-            }
-        }
-
-        .small-feature01 {
-            right: 26%;
-        }
-
-        .banner-wrapper {
-            padding-left: 30px;
-        }
-    }
-
-    .aboutus-introduction02 {
-        .aboutus-introduction02-image {
-
-            margin-left: -100px !important;
-        }
-    }
-
-    .banner-area03 {
-        .banner-brand-title {
-            margin-top: 35px;
-        }
-
-        .banner-image {
-            .banner02 {
-            display: none;
-            }
-
-            .banner03 {
-
-                display: none;
-            }
-
-            .banner04 {
-                display: none;
-            }
-
-            .banner05 {
-            display: none;
-            }
-        }
-    }
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-    img {
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 42px;
-        line-height: 52px;
-    }
-
-    h2 {
-        font-size: 38px;
-    }
-
-    .banner-area {
-        margin: 0 25px;
-        padding: 0 20px;
-
-    }
-
-    .banner-area .banner-wrapper p {
-        font-size: 18px;
-        line-height: 27px;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .banner-area .banner-button {
-        margin-top: 20px;
-    }
-
-    .banner-area02 {
-        .banner-image {
-            margin-left: 0;
-
-            img {
-                max-width: 100%;
-            }
-        }
-
-        .small-feature {
-            display: none;
-        }
-
-        .banner-wrapper {
-            padding-left: 30px;
-
-            p {
-                max-width: 100%;
-            }
-        }
-    }
-
-    .aboutus-introduction02 {
-        .aboutus-introduction02-image {
-            img {
-                max-width: 100%;
-            }
-
-            margin-left: 0px !important;
-        }
-    }
-
-    .banner-area03 {
-        margin: 0;
-
-        .banner-brand-title {
-            margin-top: 35px;
-        }
-        .banner-image {
-            .banner02 {
-            display: none;
-            }
-
-            .banner03 {
-
-                display: none;
-            }
-
-            .banner04 {
-                display: none;
-            }
-
-            .banner05 {
-            display: none;
-            }
-        }
-    }
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-    img {
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 48px;
-        line-height: 62px;
-    }
-
-    .banner-area {
-        margin: 0 25px;
-        padding: 0 18px;
-    }
-
-    .banner-area .banner-image {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .banner-area .banner-wrapper p {
-        line-height: 34px;
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .banner-area .banner-button {
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-
-    .banner-area02 {
-        .small-feature01 {
-            top: 53%;
-            right: 47%;
-        }
-
-        .small-feature02 {
-            top: 61%;
-            right: 73%;
-        }
-
-        .banner-wrapper {
-            padding-top: 70px;
-            padding-bottom: 50px;
-        }
-    }
-
-    .banner-area03 {
-        margin: 0;
-
-        .mask-group {
-            display: none;
-        }
-
-        .banner-wrapper {
-            padding-top: 150px;
-        }
-
-        .banner-brand {
-            ul {
-                li {
-                    padding-bottom: 20px;
-                }
-            }
-        }
-
-        .banner-image {
-            display: none;
-        }
-    }
-}
-
-/* Small devices 0 - 767 */
-@media #{$xs} {
-    h1 {
-        font-size: 34px;
-        line-height: 42px;
-    }
-
-    .mask-group {
-        display: none;
-    }
-
-    .banner-area {
-        margin: 0;
-        padding: 0;
-        border-radius: 0;
-    }
-
-    .banner-area .banner-image {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .banner-area .banner-wrapper p {
-        font-size: 16px;
-        line-height: 27px;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .banner-area .banner-button {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-
-    .banner-area02 {
-        border-bottom-left-radius: 0px;
-
-        .banner-title {
-            h1 {
-                font-size: 42px;
-                line-height: 52px;
-            }
-
-            p {
-                font-size: 18px;
-                line-height: 32px;
-            }
-        }
-
-        .banner-image {
-            img {
-                display: none;
-            }
-        }
-
-        .small-feature01 {
-            display: none;
-        }
-
-        .small-feature02 {
-            display: none;
-        }
-
-        .banner-wrapper {
-            padding-top: 70px;
-            padding-bottom: 50px;
-
-            p {
-                max-width: 100%;
-                font-size: 18px;
-                line-height: 28px;
-            }
-        }
-
-        .mask-group-home02 {
-            .mask-home02 {
-                display: none;
-            }
-        }
-    }
-
-    .banner-image {
-        display: none;
-    }
-
-}
-
-/* Small devices 575 - 767 */
-@media #{$sm} {
-    /* common area start */
 }

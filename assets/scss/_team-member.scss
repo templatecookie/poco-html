@@ -1,4 +1,8 @@
 // START OUR TEAMS
+
+/*----------------------------------------*/
+/*  Team Member Page (Inner Page)
+/*----------------------------------------*/
 .our-teams{
     &-member{
         &:hover{
@@ -59,7 +63,7 @@
 }
 // END OUR TEAMS
 
-//teams-modification team member
+//Teams Modification Team Member Page
 .teams-modifi{
     background-color: #FFF5F7;
     margin: 0 45px;
@@ -83,39 +87,34 @@
         }
     }
 }
+// END OUR TEAMS
+
 /*----------------------------------------*/
-/*  RESPONSIVE CSS START 
+/*  HOMEPAGE 03
 /*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-    /* common area start */
-
+.our-team{
+    background-color: #FFFAF5;
+    &-member{
+        &-info{
+            .top-information{
+                p{
+                    margin-top: 5px;
+                    font-size: 18px;
+                    font-family: $gilroy-medium;
+                }
+            }
+            .bottom-information{
+                max-width: 222px;
+                a{
+                    transition: 0.3s all linear;
+                    color: $secondary;
+                    font-size: 20px;
+                    &:hover{
+                        color: #ED880A;
+                    }
+                }
+            }
+        }
+    }
 }
 
-/* large devices 992 - 1199*/
-@media #{$lg} {
-    /* common area start */
-
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-   .our-teams{
-       padding-top: 60px;
-       padding-bottom: 60px;
-       .section-title{
-           margin-bottom: 40px;
-       }
-   }
-}
-
-/* Small devices 0 - 768 */
-@media #{$xs} {
-    /* common area start */
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-    /* common area start */
-}

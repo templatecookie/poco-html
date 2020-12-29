@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/*  HOMEPAGE 01
+/*----------------------------------------*/
 .testimonial-area {
     padding-top: 120px;
     padding-bottom: 225px;
@@ -100,7 +103,7 @@
 }
 
 /*----------------------------------------*/
-/*  HOMEPAGE 2 CSS START 
+/*  HOMEPAGE 02
 /*----------------------------------------*/
 .testimonial02 {
     background-color: inherit;
@@ -156,7 +159,7 @@
 }
 
 /*----------------------------------------*/
-/*  HOMEPAGE 3 CSS START 
+/*  HOMEPAGE 03
 /*----------------------------------------*/
 .testimonial02 {
     background-color: inherit;
@@ -202,7 +205,7 @@
 }
 
 /*----------------------------------------*/
-/*  HOMEPAGE 4 CSS START 
+/*  HOMEPAGE 04
 /*----------------------------------------*/
 .testimonial04 {
     padding-bottom: 100px 0;
@@ -303,106 +306,3 @@
         }
     }
 }
-
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-    .testimonial-area {
-        margin: 0 25px;
-    }
-
-    .testimonial-area .w-65 {
-        max-width: 70%;
-    }
-
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-    .testimonial-area .w-65 {
-        max-width: 100%;
-    }
-
-    .testimonial-area {
-        margin: 0 25px;
-    }
-
-    .testimonial02 {
-        padding-top: 50px;
-        padding-bottom: 150px;
-    }
-
-    .testimonial02 {
-        .project-info {
-            h4 {
-                font-size: 18px;
-                margin-right: 60px;
-            }
-        }
-    }
-    .testimonial03 {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-
-/* Small devices 0 - 767 */
-@media #{$xs} {
-    .testimonial-area {
-        padding-top: 100px;
-        padding-bottom: 160px;
-    }
-
-    .testimonial-area .w-65 {
-        max-width: 100%;
-    }
-
-    .testimonial-area {
-        margin: 0;
-    }
-
-    .slick-arrow {
-        bottom: -70px !important;
-        width: 42px !important;
-        height: 42px !important;
-
-        &.prev-arrow {
-            right: 55px !important;
-        }
-    }
-
-    .mask-group2 {
-        display: none;
-    }
-
-    .testimonial02 {
-        padding: 100px 0;
-
-        .testimonial-active {
-            .slick-arrow {
-                display: none !important;
-            }
-        }
-
-        .project-info {
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-
-            h4 {
-                font-size: 18px;
-                margin-right: 0;
-            }
-        }
-    }
-
-}
-
-/* Small devices 576 - 767  */
-@media #{$sm} {}

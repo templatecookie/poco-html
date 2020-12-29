@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/*  HOMEPAGE 01
+/*----------------------------------------*/
 .price-area {
     position: relative;
     .price-box {
@@ -81,44 +84,3 @@
         }
     }
 }
-
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-    /* common area start */
-
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-    /* common area start */
-
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-    /* common area start */
-}
-
-/* Small devices 0 - 768 */
-@media #{$xs} {
-    /* common area start */
-    .price-area{
-        padding-top: 100px;
-    }
-    .price-area .price-box .price-body ul li{
-        margin-bottom: 10px;
-    }
-    .mask-group3{
-        display: none;
-    }
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-    /* common area start */
-}
-

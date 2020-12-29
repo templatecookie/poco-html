@@ -1,3 +1,6 @@
+/*----------------------------------------*/
+/*  HOMPAGE 01
+/*----------------------------------------*/
 .header-area {
   padding: 20px 0px;
   position: relative;
@@ -246,7 +249,7 @@ aside,
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: white;
   z-index: 99 !important;
   visibility: hidden;
@@ -313,7 +316,7 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  HOMPAGE 2 CSS
+/*  HOMPAGE 02
 /*----------------------------------------*/
 .header-area02 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -330,7 +333,7 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  HOMPAGE 3 CSS
+/*  HOMPAGE 03
 /*----------------------------------------*/
 .header-area03 {
   margin: 0;
@@ -365,7 +368,7 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  HOMPAGE 4 CSS
+/*  HOMPAGE 04
 /*----------------------------------------*/
 .header-area04 {
   position: absolute;
@@ -426,103 +429,6 @@ aside,
     }
   }
 }
-
-/*----------------------------------------*/
-/*  RESPONSIVE CSS START 
-/*----------------------------------------*/
-
-/* laptop devices 1200 - 1600 */
-@media #{$laptop} {
-
-  /* common area start */
-  .header-area {
-    padding: 20px 0px;
-  }
-
-  .header-area .main-menu {
-    padding-left: 50px;
-  }
-
-  .header-area .main-menu li {
-    padding-right: 40px;
-  }
-
-  .header-area03 {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
-
-  /* common area start */
-  .header-area {
-    padding: 20px 0px;
-  }
-
-  .header-area .main-menu {
-    padding-left: 30px;
-  }
-
-  .header-area .main-menu li {
-    padding-right: 25px;
-  }
-
-  .header-area03 {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-  /* common area start */
-}
-
-/* Small devices 0 - 767 */
-@media #{$xs} {
-  .t-btn {
-    font-size: 18px !important;
-    padding: 15px 30px;
-  }
-
-  .header-area {
-    padding: 20px 0px;
-  }
-
-  .banner-area03 {
-    .banner-wrapper {
-      padding-top: 130px !important;
-    }
-
-    .banner-brand-title {
-      h3 {
-        &::before {
-          left: 173px !important;
-          width: 100px !important;
-        }
-      }
-    }
-    .banner-brand{
-     ul{
-       flex-direction: column;
-       li{
-         padding-bottom: 30px;
-       }
-     }
-     margin-bottom: 50px;
-    }
-  }
-}
-
-/* Small devices 576 - 767 */
-@media #{$sm} {
-  /* common area start */
-}
-
-
 
 @media(max-width: 1200px) {
 
