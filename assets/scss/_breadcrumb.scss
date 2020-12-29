@@ -142,7 +142,45 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    /* common area start */
+    .breadcrumb-area{
+        margin: 0px 0px 60px 0px;
+        padding-bottom: 50px;
+        border-radius: 0px;
+        .breadcrumbmask{
+            display: none;
+        }
+        .banner-wrapper{
+            .banner-title{
+                margin-top: 15px;
+                h1{
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+            }
+            p{
+                max-width: 100%;
+                margin-top: 15px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .breadcrumb-wrapper{
+            bottom: -75px !important;
+            left: 40px !important;
+            .breadcrumb{
+                padding: 10px 15px !important;
+                &-item{
+                    font-size: 16px !important;
+                    line-height: 24px !important;
+                }
+            }
+        }
+        .banner-image {
+            padding-top: 20px;
+            padding-left: 0;
+            text-align: center;
+        }
+    }
 }
 
 /* Small devices 420 - 574 */
