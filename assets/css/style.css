@@ -495,11 +495,11 @@ p {
 
 .header-area .main-menu li .sub-menu li {
   display: block;
-  margin-top: 5px;
+  margin-right: 0;
 }
 
 .header-area .main-menu li .sub-menu li a {
-  padding: 10px 20px;
+  padding: 0px 20px;
   color: #65729E;
   font-size: 18px;
   line-height: 42px;
@@ -560,6 +560,25 @@ aside.active .sidebar-menu {
   transition: all .3s ease-in-out;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+aside .asidesearch-bar {
+  position: relative;
+}
+
+aside .asidesearch-bar input {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border: 1px solid #dadada;
+}
+
+aside .asidesearch-bar img {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 aside .overlay {
@@ -1287,6 +1306,34 @@ aside,
   top: 0;
   left: 0;
   z-index: -3;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
 }
 
 /*----------------------------------------*/
