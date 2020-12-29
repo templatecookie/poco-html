@@ -306,3 +306,36 @@
         }
     }
 }
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    // Globally Testimonial 
+    .testimonial-area{
+        padding: 100px 0px 180px  0px!important;
+        margin: 0px 25px !important;
+    }
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
+}
