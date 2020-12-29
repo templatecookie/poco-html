@@ -1,0 +1,308 @@
+/*----------------------------------------*/
+/*  HOMEPAGE 01
+/*----------------------------------------*/
+.testimonial-area {
+    padding-top: 120px;
+    padding-bottom: 225px;
+    background-color: rgba(255, 70, 94, 0.05);
+    margin: 0 45px;
+    border-radius: 24px;
+    position: relative;
+    margin-bottom: 110px;
+
+    .w-65 {
+        max-width: 65%;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    .testimonial-active {
+        .slick-current {
+            .testimonial-wrapper {
+                border-color: $tertiary;
+            }
+        }
+
+        .testimonial-wrapper {
+            padding: 20px;
+            border: 2px solid #dddddd;
+            border-radius: 5px;
+            @include transition(.3s);
+
+            .client-name {
+                span {
+                    color: $secondary;
+                    font-size: 16px;
+                    line-height: 30px;
+                    font-family: $gilroy-medium;
+                }
+            }
+
+            .reatting {
+                color: #FF8B17;
+                font-family: $gilroy-medium;
+            }
+
+            p {
+                font-family: $gilroy-medium;
+            }
+        }
+
+        .slick-arrow {
+            position: absolute;
+            right: 0px;
+            bottom: -95px;
+            background-color: $tertiary;
+            border: 1px solid transparent;
+            width: 56px;
+            height: 56px;
+            cursor: pointer;
+            border-radius: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.prev-arrow {
+                right: 75px;
+            }
+        }
+    }
+
+    .mask-group2 {
+        img {
+            position: absolute;
+            z-index: -99;
+        }
+
+        .mask1 {
+            bottom: 0;
+            left: 0;
+        }
+
+        .mask2 {
+            top: 0;
+            right: 0;
+        }
+
+        .mask5 {
+            bottom: -10%;
+            left: 38%;
+        }
+
+        .mask6 {
+            top: 9.5%;
+            left: 4.5%;
+        }
+
+        .mask7 {
+            bottom: -7%;
+            right: 3%;
+        }
+    }
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 02
+/*----------------------------------------*/
+.testimonial02 {
+    background-color: inherit;
+    margin: 0;
+    border-radius: 0;
+
+    .testimonial-wrapper {
+        padding: 40px !important;
+        border-radius: 42px !important;
+        border-bottom-right-radius: 0 !important;
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $gilroy-medium;
+        }
+
+    }
+
+    .testimonial-active {
+        .slick-arrow {
+            top: -132px;
+        }
+    }
+
+    .project-info {
+        display: flex;
+        align-items: center;
+
+        h4 {
+            padding-left: 50px;
+            position: relative;
+            margin-right: 100px;
+
+            span {
+                font-family: $gilroy-medium;
+                margin-left: 10px solid #141824;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: -20px;
+                width: 47px;
+                height: 6px;
+                background-color: $tertiary;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 03
+/*----------------------------------------*/
+.testimonial02 {
+    background-color: inherit;
+    margin: 0;
+    border-radius: 0;
+
+    .testimonial-wrapper {
+        padding: 40px !important;
+        border-radius: 42px !important;
+        border-bottom-right-radius: 0 !important;
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $gilroy-medium;
+        }
+
+    }
+
+    .testimonial-active {
+        .slick-current {
+            .testimonial-wrapper {
+                border-color: #ED880A;
+            }
+        }
+
+        .slick-arrow {
+            background-color: #ED880A;
+        }
+    }
+
+    .project-info {
+        display: flex;
+        align-items: center;
+
+        h4 {
+            &::before {
+                background-color: #ED880A;
+            }
+        }
+    }
+
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.testimonial04 {
+    padding-bottom: 100px 0;
+    background-color: inherit;
+    margin: 0px;
+    border-radius: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section-title {
+        h2 {
+            font-size: 60px;
+            line-height: 70px;
+            font-family: $teko;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+
+            span {
+                color: $tertiary;
+            }
+        }
+    }
+
+    .testimoial-icon {
+        width: 185px;
+        height: 185px;
+        background-color: #2C2F3B;
+        border: 10px solid #141824;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .testimonial-wrappers {
+        background-color: #2C2F3B;
+        border: 0;
+        text-align: center;
+        padding: 120px 23px 45px 23px;
+        margin-top: -100px;
+
+        .tesmonial-text {
+            h2 {
+                font-size: 35px;
+                font-family: $teko;
+                font-weight: 600;
+                line-height: 48px;
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-family: $hind;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 27px;
+            }
+        }
+
+        .testimonial-icon {
+            width: 63px;
+            height: 63px;
+            display: flex;
+            justify-content: center;
+            border: 3px solid #3B4A51;
+            margin: 0 auto;
+            border-radius: 100%;
+            @include transition (.3s);
+            margin-top: 20px;
+
+        }
+
+        &:hover {
+            .testimonial-icon {
+                background-color: $tertiary;
+                border-color: $tertiary;
+            }
+        }
+    }
+
+    .testimonial-active {
+        .slick-arrow {
+            background-color: #111523;
+            top: -132px;
+            width: 57px;
+            height: 57px;
+            border-radius: 0;
+            border: 3px solid #3B4A51;
+            @include transition (.3s);
+
+            &:hover {
+                background-color: $tertiary;
+                border-color: $tertiary;
+            }
+        }
+    }
+}

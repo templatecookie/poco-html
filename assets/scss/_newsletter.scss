@@ -1,0 +1,44 @@
+/*----------------------------------------*/
+/*  HOMEPAGE 01
+/*----------------------------------------*/
+.newsletter-area {
+    padding-bottom: 150px;
+    &-text {
+        h2 {
+            margin-bottom: 12px;
+            font-family: $gilroy-bold;
+        }
+
+        p {
+            font-family: $gilroy-medium;
+            font-size: 26px;
+        }
+    }
+
+    &-form {
+        form {
+            .input-group {
+                margin-bottom: 20px;
+
+                input {
+                    height: 65px;
+                    line-height: 30px;
+                    padding: 20px 0px 20px 30px;
+                    border-radius: 35px;
+                    background-color: rgba(255, 70, 94, 0.05);
+                    border: 1px solid #DDDDDD;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .t-btn {
+                i {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,357 @@
+/*----------------------------------------*/
+/* HOMEPAGE 02
+/*----------------------------------------*/
+// About-Info Starts Here
+.about-info {
+    &-image {
+        margin-left: -110px;
+    }
+
+    &-text {
+        h2 {
+            font-family: $gilroy-bold;
+            max-width: 530px;
+        }
+
+        p {
+            font-family: $gilroy-medium;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-project {
+        padding-top: 27px;
+        border-top: 1px solid #B4C1E9;
+
+        .project-rating {
+            h3 {
+                font-family: $gilroy-bold;
+                font-size: 34px;
+            }
+
+            &-star {
+                margin-top: 2px;
+
+                i {
+                    color: #FF8B17;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+                font-family: $gilroy-medium;
+            }
+        }
+
+        .project-information {
+            h3 {
+                margin-top: 2px;
+                font-size: 34px;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-family: $gilroy-medium;
+            }
+        }
+    }
+}
+
+/*----------------------------------------*/
+/* HOMEPAGE 02
+/*----------------------------------------*/
+.aboutus02 {
+    padding: 130px 0;
+    position: relative;
+
+    &-wrapper {
+        max-width: 93%;
+
+        &-title {
+            p {
+                font-size: 18px;
+                font-family: $gilroy-medium;
+                line-height: 30px;
+                margin-top: 20px;
+            }
+
+            margin-bottom: 20px;
+        }
+
+        &-list {
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    font-family: $gilroy-medium;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+
+                    img {
+                        border: 1px solid #FF465E;
+                        border-radius: 50%;
+                        padding: 6px 4px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            margin-bottom: 35px;
+        }
+    }
+
+    &-image {
+        position: relative;
+
+        img {
+            width: 516px;
+            height: 686px;
+            border-radius: 101px;
+            border-top-left-radius: 0;
+            object-fit: cover;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 30px;
+            border: 5px solid $white;
+            right: -15px;
+            width: 516px;
+            height: 693px;
+            border-radius: 101px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0;
+
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 63px;
+            border: 5px solid #FF465E;
+            right: -75px;
+            width: 455px;
+            height: 654px;
+            border-radius: 101px;
+            z-index: -99;
+
+        }
+    }
+
+    .small-feature {
+        position: absolute;
+        bottom: 21%;
+        right: 40%;
+    }
+}
+
+//About introduction 02
+.aboutus-introduction02 {
+    position: relative;
+
+    .aboutus-introduction02-image {
+        margin-left: -175px;
+        position: relative;
+
+        img {
+            width: 516px;
+            height: 686px;
+            object-fit: cover;
+            border-radius: 101px;
+            border-top-right-radius: 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 30px;
+            border: 5px solid $white;
+            right: 0;
+            width: 516px;
+            height: 693px;
+            border-radius: 101px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+
+        }
+
+        &::before {
+            left: -35px;
+            content: "";
+            position: absolute;
+            top: 68px;
+            border: 5px solid #FF465E;
+            width: 455px;
+            height: 654px;
+            border-radius: 101px;
+            z-index: -99;
+
+        }
+    }
+
+    .introduction-feature {
+        position: absolute;
+        bottom: 22%;
+        left: 33%;
+    }
+
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 03
+/*----------------------------------------*/
+.homepage-03 {
+    &.about-introduction{
+        padding-bottom: 260px;
+    }
+    .sub-section-heading {
+        p {
+            font-size: 18px;
+            font-family: $gilroy-medium;
+        }
+    }
+
+    .work-process {
+        max-width: 485px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-item {
+            i {
+                color: #ED880A;
+            }
+        }
+    }
+
+    .about-intro-left {
+        position: relative;
+
+        .image {
+            position: relative;
+            .about01{
+                border-top-right-radius: 75px;
+                width: 490px;
+                height: 550px;
+                object-fit: cover;
+            }
+            .about02 {
+                position: absolute;
+                bottom: -25%;
+                left: 65%;
+                background-color: #fff;
+                border: 13px solid #ffff;
+                border-top-left-radius: 85px;
+                width: 395px;
+                height: 495px;
+                object-fit: cover;
+            }
+        }
+
+        .award {
+            position: absolute;
+            bottom: -15%;
+            left: 58%;
+            width: 185px;
+            height: 185px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #ffffff;
+
+            &-icon {
+                i {
+                    font-size: 55px;
+                    color: #ED880A;
+                }
+            }
+
+            h6 {
+                font-size: 18px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.about-info04 {
+    padding-top: 120px;
+    padding-bottom: 27px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .about-info-image {
+        margin-left: -257px;
+    }
+
+    .about-info-text {
+        h2 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 60px;
+            font-family: $teko;
+            line-height: 118px;
+            font-weight: 600;
+
+            span {
+                color: $tertiary;
+            }
+
+        }
+
+        p {
+            font-family: $hind;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+        .about-info-project {
+            padding-top: 0px;
+            border-top: 0;
+
+            .project-information {
+                margin-top: 20px;
+
+                h3 {
+                    font-size: 60px;
+                    line-height: 34px;
+                    font-weight: 600;
+                    font-family: $teko;
+                    color: $tertiary;
+                    margin: 0;
+                }
+
+                p {
+                    font-family: $hind;
+                    font-family: 500;
+                    font-size: 20px;
+                    line-height: 34px;
+                    color: #9DADB7;
+                }
+            }
+        }
+
+    }
+
+    .right-vcetor {
+        img {
+            position: absolute;
+            top: 31%;
+            right: 5%;
+        }
+
+    }
+}
+
+

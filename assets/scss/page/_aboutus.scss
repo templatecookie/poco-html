@@ -1,0 +1,256 @@
+//WORK SOLUTION AREA
+.about-solution {
+    background-color: #FFF5F7;
+    padding: 130px 0;
+    margin: 0 45px;
+    border-radius: 24px;
+    position: relative;
+
+    .solution-wrapper {
+
+        .solution-title {
+            h4 {
+                span {
+                    color: $tertiary;
+                }
+
+                margin-bottom: 10px;
+            }
+
+            &.center {
+                text-align: center;
+                margin: auto;
+                max-width: 30%;
+            }
+
+            &.left {
+                text-align: right;
+                max-width: 92%;
+            }
+
+            &.right {
+                p {
+                    max-width: 92%;
+                }
+            }
+        }
+    }
+
+    .mask-group {
+        img {
+            position: absolute;
+        }
+
+        .mask1 {
+            top: -5%;
+            left: 5%;
+        }
+
+        .mask2 {
+            top: -4%;
+            right: 10%;
+        }
+
+        .mask3 {
+            bottom: -40px;
+            left: 10%;
+        }
+    }
+}
+
+//ABOUT SKILL AREA
+.about-skill {
+    &-wrapper {
+        max-width: 90%;
+
+        .about-skill-title {
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-family: $gilroy-medium;
+                font-size: 18px;
+                line-height: 20px;
+                line-height: 30px;
+            }
+
+            margin-bottom: 50px;
+        }
+
+        .about-skill-pogressbar {
+            display: flex;
+            align-items: center;
+
+            .round-wrapper {
+                margin-right: 120px;
+                text-align: center;
+
+                .round {
+                    position: relative;
+
+                    .round-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+
+                        strong {
+                            color: $primary;
+                            font-family: $gilroy-bold;
+                            font-size: 45px;
+                            line-height: 55px;
+                        }
+                    }
+                }
+
+                .skill-text {
+                    margin-top: 20px;
+
+                    p {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// START ABOUT US
+.about-us {
+    &-image {
+        position: relative;
+
+        .image {
+            margin-left: -120px;
+        }
+
+        .small-feature {
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-item {
+                h3 {
+                    color: #FFFFFF;
+                    font-size: 34px;
+                }
+
+                .ratings {
+                    color: #FFFFFF;
+                    font-size: 12px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    font-family: $gilroy-medium;
+                }
+            }
+        }
+
+        .sm-feauter-top {
+            top: -18%;
+            left: 35%;
+            transform: translateX(-35%);
+        }
+
+        .sm-feauter-left {
+            top: 50%;
+            left: -30%;
+        }
+
+        .sm-feauter-bottom {
+            bottom: -13%;
+            right: 26%;
+        }
+    }
+
+    &-text {
+        .sub-heading {
+            margin-bottom: 30px;
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 18px;
+                font-family: $gilroy-medium;
+            }
+        }
+
+        .feature {
+            .icon {
+                margin-top: 5px;
+                height: 30px;
+                width: 30px;
+                border-radius: 9px;
+
+                i {
+                    color: #ffffff;
+                }
+            }
+
+            .text {
+                h6 {
+                    margin-bottom: 15px;
+                    font-size: 18px;
+                }
+
+                p {
+                    font-family: $gilroy-medium;
+                }
+            }
+        }
+
+        .alart {
+            position: relative;
+            background-color: #FFF5F7;
+            max-width: 490px;
+            padding: 15px 50px 15px 25px;
+            border-radius: 6px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                background-color: #FF465E;
+                width: 7px;
+                height: 100%;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+
+            &-icon {
+                i {
+                    color: #65729E;
+                    font-size: 50px;
+                }
+            }
+
+            &-text {
+                p {
+                    color: #000560;
+                    font-size: 18px;
+                    font-family: $gilroy-medium;
+                }
+            }
+
+            &-boldtext {
+                h2 {
+                    color: #FF465E;
+                    font-size: 55px;
+                }
+            }
+        }
+    }
+}
+// END ABOUT US

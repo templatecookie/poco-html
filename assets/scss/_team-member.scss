@@ -1,0 +1,120 @@
+// START OUR TEAMS
+
+/*----------------------------------------*/
+/*  Team Member Page (Inner Page)
+/*----------------------------------------*/
+.our-teams{
+    &-member{
+        &:hover{
+            .member-info{
+                background-color: #FF465E;
+                .name{
+                    h5{
+                        color: #FFFFFF;
+                    }
+                    p{
+                        color: #FFFFFF;
+                    }
+                }
+                .social-links{
+                    a{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .image{
+            position: relative;
+            img{
+                border-radius: 8px;
+            }
+        }
+        .member-info{
+            position: absolute;
+            bottom: -5%;
+            left: 0;
+            right: 0;
+            transition: 0.3s all linear;
+            border-radius: 6px;
+            margin: 0px 30px 0px 30px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            .name{
+                h5{
+                    margin-bottom: 3px;
+                }
+                p{
+                    font-family:  $gilroy-medium;
+                }
+            }
+            .social-links{
+                a{
+                    color: #65729E;
+                    font-size: 16px;
+                    transition: 0.3s all linear;
+                    &:hover{
+                        color: #333333;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+// END OUR TEAMS
+
+//Teams Modification Team Member Page
+.teams-modifi{
+    background-color: #FFF5F7;
+    margin: 0 45px;
+    padding-top: 130px;
+    padding-bottom: 160px;
+    border-radius: 24px;
+    position: relative;
+    z-index: -5;
+    .mask-group{
+        img{
+            position: absolute;
+            z-index: -3;
+        }
+        .mask01{
+            top: -3%;
+            right: 5%;
+        }
+        .mask02{
+            top: -4%;
+            left: 4%;
+        }
+    }
+}
+// END OUR TEAMS
+
+/*----------------------------------------*/
+/*  HOMEPAGE 03
+/*----------------------------------------*/
+.our-team{
+    background-color: #FFFAF5;
+    &-member{
+        &-info{
+            .top-information{
+                p{
+                    margin-top: 5px;
+                    font-size: 18px;
+                    font-family: $gilroy-medium;
+                }
+            }
+            .bottom-information{
+                max-width: 222px;
+                a{
+                    transition: 0.3s all linear;
+                    color: $secondary;
+                    font-size: 20px;
+                    &:hover{
+                        color: #ED880A;
+                    }
+                }
+            }
+        }
+    }
+}
+

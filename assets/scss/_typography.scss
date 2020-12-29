@@ -1,36 +1,39 @@
 @font-face {
-    font-family: 'gilroy-bold';
-    src: url('../fonts/gilroy/gilroy-bold-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-bold-webfont.woff') format('woff');
-    font-style: normal;
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/gilroy/Gilroy-Bold.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/gilroy/Gilroy-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/gilroy/Gilroy-Bold.woff') format('woff'), /* Pretty Modern Browsers */
 }
 
-@font-face {
-    font-family: 'gilroy-heavy';
-    src: url('../fonts/gilroy/gilroy-heavy-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-heavy-webfont.woff') format('woff');
-    font-style: normal;
-}
 
 @font-face {
-    font-family: 'gilroy-light';
-    src: url('../fonts/gilroy/gilroy-light-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-light-webfont.woff') format('woff');
-    font-style: normal;
+    font-family: 'Gilroy-Heavy';
+    src: url('../fonts/gilroy/Gilroy-Heavy.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/gilroy/Gilroy-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/gilroy/Gilroy-Heavy.woff') format('woff'), /* Pretty Modern Browsers */
 }
 
+
 @font-face {
-    font-family: 'gilroy-medium';
-    src: url('../fonts/gilroy/gilroy-medium-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/gilroy/Gilroy-Light.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/gilroy/Gilroy-Light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/gilroy/Gilroy-Light.woff') format('woff'), /* Pretty Modern Browsers */
 }
-  
+
+
 @font-face {
-    font-family: 'gilroy-regular';
-    src: url('../fonts/gilroy/gilroy-regular-webfont.woff2') format('woff2'),
-         url('../fonts/gilroy/gilroy-regular-webfont.woff') format('woff');
-    font-style: normal;
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/gilroy/Gilroy-Medium.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/gilroy/Gilroy-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/gilroy/Gilroy-Medium.woff') format('woff'), /* Pretty Modern Browsers */
 }
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/gilroy/Gilroy-Regular.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/gilroy/Gilroy-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/gilroy/Gilroy-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Teko:wght@400;500;600;700&display=swap');

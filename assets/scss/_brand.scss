@@ -1,0 +1,49 @@
+/*----------------------------------------*/
+/*  HOME PAGE 01
+/*----------------------------------------*/
+.brand-area{
+    .brand-slider-active{
+        .slick-track{
+            display:flex;
+            align-items: center;
+        }
+        .single-brand{
+            img{
+                margin: auto;
+                width: 150px;
+                filter: grayscale(100%);
+                &:hover{
+                    filter: grayscale(0%);
+                }
+            }
+        }
+    }
+}
+/*----------------------------------------*/
+/*  HOME PAGE 02
+/*----------------------------------------*/
+.brands{
+    margin-top: -50px;
+    z-index: 99;
+    position: relative;
+    &-area{
+        padding: 60px 0px;
+        border-radius: 10px;
+        background-color: #fff;
+        ul{
+            li{
+                text-align: center;
+                img{
+                    width: 120px;
+                    filter: grayscale(100%);
+                    cursor: pointer;
+                    &:hover{
+                        filter: grayscale(0);
+                    }
+                }
+            }
+
+        }
+        
+    }
+}

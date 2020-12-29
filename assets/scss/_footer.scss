@@ -1,0 +1,283 @@
+/*----------------------------------------*/
+/*  HOMEPAGE 01
+/*----------------------------------------*/
+.footer-area {
+    background-color: rgba(255, 70, 94, 0.05);
+    margin: 0 45px;
+    padding: 130px 0px;
+    border-radius: 24px;
+    position: relative;
+
+    &-shape {
+        img {
+            position: absolute;
+        }
+
+        .ft-shape-01 {
+            top: -50px;
+            left: 30px;
+            z-index: -1;
+        }
+
+        .ft-shape-02 {
+            top: -30px;
+            right: 30px;
+            z-index: -1;
+        }
+
+        .ft-shape-03 {
+            bottom: -30px;
+            right: 30px;
+            z-index: -1;
+        }
+    }
+
+    &-about {
+        p {
+            max-width: 305px;
+            margin-bottom: 18px;
+            font-family: $gilroy-medium;
+        }
+    }
+
+    &-links {
+        a {
+            border: 1px solid #FF465E;
+            color: #FF465E;
+            border-radius: 50%;
+            height: 47px;
+            width: 47px;
+            line-height: 47px;
+            text-align: center;
+            margin-right: 14px;
+            display: inline-block;
+            transition: 0.3s all linear;
+
+            &:hover {
+                color: #ffffff;
+                background-color: #FF465E;
+            }
+        }
+    }
+
+    &-lists {
+        h4 {
+            margin-bottom: 5px;
+        }
+
+        ul {
+            li {
+                a {
+                    font-family: $gilroy-medium;
+                    font-size: 16px;
+                    color: $secondary;
+                    margin-bottom: 12px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+// Copyright Area
+.copyright {
+    padding: 33px;
+
+    &-area {
+        &-text {
+            p {
+                color: $primary;
+                font-family: $gilroy-bold;
+            }
+        }
+
+        &-top {
+            a {
+                color: $primary;
+                font-size: 16px;
+                font-family: $gilroy-bold;
+
+                i {
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 02
+/*----------------------------------------*/
+.dark-footer {
+    padding-top: 110px;
+    background-color: #29303E;
+    border-top-right-radius: 166px;
+
+    .footer-area {
+        background-color: transparent;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0px;
+
+        &-about {
+            p {
+                margin-top: 25px;
+                color: #C6C6C6;
+            }
+        }
+
+        &-lists {
+            h4 {
+                color: #FFFFFF;
+            }
+
+            ul li a {
+                color: #C6C6C6;
+            }
+        }
+    }
+
+    .copyright {
+        &-area-text {
+            p {
+                color: #FFFFFF;
+            }
+        }
+
+        &-area-top {
+            a {
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 03
+/*----------------------------------------*/
+.footer03 {
+    background-color: #1F99F4;
+
+    .footer-area {
+        background-color: inherit;
+        padding: 0;
+        padding-top: 130px;
+
+        &-links {
+            a {
+                background-color: rgba(255, 255, 255, 0.24);
+                border: 0;
+                color: #fff;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #ED880A;
+                }
+            }
+        }
+
+        &-lists {
+            h4 {
+                margin-bottom: 5px;
+                color: #FFFFFF;
+            }
+
+            ul {
+                li {
+                    a {
+                        color: white;
+                        transition: 0.3s all linear;
+                        &:hover{
+                            color: #ED880A;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.footer04 {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+
+    .footer-area {
+        padding: 0;
+        background-color: inherit;
+
+
+        &-about {
+            .logo {
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 16px;
+                color: #9DADB7;
+                font-weight: 500;
+                font-family: $hind;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-lists {
+            h4 {
+                color: white;
+                font-size: 26px;
+                line-height: 39px;
+                font-family: $teko;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            li {
+                margin: 0;
+
+                a {
+                    color: #9DADB7;
+                    font-family: $hind;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding: 20px;
+
+        &-area-text {
+            p {
+                color: #9DADB7;
+                font-family: $hind;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 27px;
+            }
+        }
+
+        &-area-list {
+            ul {
+                li {
+                    color: #9DADB7;
+                    font-family: $hind;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 27px;
+                    margin-right: 35px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

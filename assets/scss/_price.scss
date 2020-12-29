@@ -1,0 +1,86 @@
+/*----------------------------------------*/
+/*  HOMEPAGE 01
+/*----------------------------------------*/
+.price-area {
+    position: relative;
+    .price-box {
+        border: 2px solid #DDDDDD;
+        padding: 50px 0;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include transition(.3s);
+        .price-body {
+            ul {
+                li {
+                    font-family: $gilroy-medium;
+                    line-height: 30px;
+                    color: $primary;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .price-link {
+            margin-top: auto;
+            h3{
+                margin-bottom: 15px;
+            }
+            h4 {
+                font-size: 25px;
+                line-height: 49px;
+                font-family: $gilroy-medium;
+                margin-bottom: 8px;
+                span {
+                    font-size: 32px;
+                    line-height: 49px;
+                    font-family: $gilroy-bold;
+                }
+            }
+
+            .t-btn {
+                color: $tertiary;
+                background: transparent;
+                border: 2px solid;
+            }
+
+            .t-bg-primary {
+                &:hover {
+                    color: white;
+                    background: $tertiary;
+                    border-color: $tertiary;
+                }
+            }
+        }
+        &:hover{
+            .t-bg-primary{
+                color: white;
+                background: $tertiary;
+                border-color: $tertiary;
+            }
+            border-color: $tertiary;
+        }
+    }
+    .mask-group3 {
+        img {
+            position: absolute;
+            z-index: -99;
+        }
+
+        .mask9 {
+            top: 0;
+            left: 7%;
+        }
+
+        .mask6 {
+            top: 14%;
+            right: 4%;
+        }
+
+        .mask8 {
+            bottom: 12%;
+            left: 2%;
+        }
+    }
+}

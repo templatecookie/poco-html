@@ -1,0 +1,70 @@
+//BREADCRUMB AREA
+.breadcrumb-area {
+    margin-bottom: 130px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .banner-image {
+        padding-top: 35px;
+        padding-left: 75px;
+    }
+
+    .banner-wrapper {
+        padding-left: 30px;
+
+        p {
+            max-width: 85%;
+        }
+    }
+
+    .breadcrumb-wrapper {
+        position: absolute;
+        bottom: -28px;
+        left: 45px;
+
+        .breadcrumb {
+            align-items: center;
+            padding: 15px 22px;
+            border-radius: 13px 13px 0 0;
+            background-color: white;
+            margin: 0;
+
+            .breadcrumb-item {
+                font-size: 20px;
+                line-height: 36px;
+                color: $primary;
+                font-family: $gilroy-bold;
+
+                a {
+                    transition: .3s;
+
+                    &:hover {
+                        color: $tertiary;
+                    }
+                }
+
+                &::before {
+                    font-size: 20px;
+                    line-height: 36px;
+                    color: $primary;
+                    font-family: $gilroy-bold;
+                }
+
+                +.active {
+                    color: $tertiary !important;
+                }
+            }
+        }
+    }
+
+    .breadcrumbmask {
+        .mask1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+}

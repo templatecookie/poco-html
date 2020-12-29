@@ -1,0 +1,63 @@
+.conatact-area{
+    background: #FCF8F8;
+    padding-top: 160px;
+    padding-bottom: 50px;
+    .contact-form{
+        padding: 0 30px;
+        text-align: center;
+       .form-row{
+           .form-control{
+            font-size: 18px;
+            font-family: $gilroy-medium;
+            line-height: 30px;
+            color: #65729E;
+            height: 80px;
+            border: 1px solid #DDDDDD;
+            background: white;
+            padding: 0 50px;
+            position: relative;
+            &:focus{
+                color: inherit;
+                box-shadow: inherit;
+            }
+        }
+        .icon{
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: $secondary;
+        }
+       } 
+       .form-message{
+        textarea{
+            color: #65729E !important;
+            width: 100%;
+            border: 1px solid #DDDDDD;
+            background: white;
+            padding: 30px 50px;
+            position: relative;
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+            }
+        }
+       }
+       .t-btn{
+           padding: 20px 52px;
+           margin-top: 20px !important;
+       }
+    }
+}
+
+.form-message {
+    position: relative;
+    .icon {
+        position: absolute;
+        top: 30px;
+        left: 25px;
+    }
+}
