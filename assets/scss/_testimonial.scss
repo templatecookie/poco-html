@@ -317,6 +317,12 @@
     .testimonial-area{
         padding: 100px 0px 180px  0px!important;
         margin: 0px 25px !important;
+        .testimonial-active .slick-arrow.prev-arrow{
+            right: 125px !important;
+        }
+        .testimonial-active .slick-arrow{
+            right: 45px !important;
+        }
     }
 
 }
