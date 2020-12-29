@@ -99,15 +99,45 @@
             }
         }
     }
-    .about-us{
-        padding-top: 30px;
-        padding-bottom: 100px;
-    }
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
+    .breadcrumb-area{
+        margin: 0px 20px 70px 20px;
+        padding-bottom: 50px;
+        .banner-wrapper{
+            .banner-title{
+                margin-top: 20px;
+                h1{
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+            }
+            p{
+                max-width: 100%;
+                margin-top: 20px;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        .breadcrumb-wrapper{
+            bottom: -75px !important;
+            left: 40px !important;
+            .breadcrumb{
+                padding: 10px 20px !important;
+                &-item{
+                    font-size: 18px !important;
+                    line-height: 26px !important;
+                }
+            }
+        }
+        .banner-image {
+            padding-top: 30px;
+            padding-left: 0;
+            text-align: center;
+        }
+    }
 }
 
 /* Small devices 575 - 767 */

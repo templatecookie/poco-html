@@ -3071,15 +3071,43 @@ aside,
     font-size: 18px !important;
     line-height: 26px !important;
   }
-  .about-us {
-    padding-top: 30px;
-    padding-bottom: 100px;
-  }
 }
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
+  .breadcrumb-area {
+    margin: 0px 20px 70px 20px;
+    padding-bottom: 50px;
+  }
+  .breadcrumb-area .banner-wrapper .banner-title {
+    margin-top: 20px;
+  }
+  .breadcrumb-area .banner-wrapper .banner-title h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .breadcrumb-area .banner-wrapper p {
+    max-width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .breadcrumb-area .breadcrumb-wrapper {
+    bottom: -75px !important;
+    left: 40px !important;
+  }
+  .breadcrumb-area .breadcrumb-wrapper .breadcrumb {
+    padding: 10px 20px !important;
+  }
+  .breadcrumb-area .breadcrumb-wrapper .breadcrumb-item {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+  .breadcrumb-area .banner-image {
+    padding-top: 30px;
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 /* Small devices 575 - 767 */
