@@ -26,3 +26,10 @@ $white: #FFFFFF;
 
 // Black Color
 $black: #9DADB7;
+
+// Responsive Variables
+$lg : 'only screen and (min-width: 992px) and (max-width: 1169px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 575px) and (max-width: 767px)';
+$xs: 'only screen and (min-width: 420px) and (max-width: 574px)';
+$xsm:'(max-width: 420px)';
