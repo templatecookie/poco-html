@@ -2849,7 +2849,31 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
+  .testimonial-area {
+    padding: 70px 0px 120px 0px !important;
+    margin: 0px 20px !important;
+  }
+  .testimonial-area .testimonial-active .slick-arrow.prev-arrow {
+    right: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+  }
+  .testimonial-area .testimonial-active .slick-arrow {
+    right: 42% !important;
+  }
+  .testimonial-area .section-title {
+    margin-bottom: 35px !important;
+  }
+  .testimonial-area .section-title h2 {
+    font-size: 32px !important;
+    margin-bottom: 5px !important;
+  }
+  .testimonial-area .section-title p {
+    text-align: left !important;
+  }
+  .testimonial-area .mask-group2 .mask5 {
+    display: none !important;
+  }
 }
 
 /* Small devices 575 - 767 */

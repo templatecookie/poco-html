@@ -313,14 +313,17 @@
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
+
     // Globally Testimonial 
-    .testimonial-area{
-        padding: 100px 0px 180px  0px!important;
+    .testimonial-area {
+        padding: 100px 0px 180px 0px !important;
         margin: 0px 25px !important;
-        .testimonial-active .slick-arrow.prev-arrow{
+
+        .testimonial-active .slick-arrow.prev-arrow {
             right: 125px !important;
         }
-        .testimonial-active .slick-arrow{
+
+        .testimonial-active .slick-arrow {
             right: 45px !important;
         }
     }
@@ -329,7 +332,39 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
+
+    // Globally Testimonial 
+    .testimonial-area {
+        padding: 70px 0px 120px 0px !important;
+        margin: 0px 20px !important;
+
+        .testimonial-active .slick-arrow.prev-arrow {
+            right: 50% !important;
+            transform: translateX(-50%) !important;
+        }
+
+        .testimonial-active .slick-arrow {
+            right: 42% !important;
+            // transform: translateX(-55%) !important;
+        }
+
+        .section-title {
+            margin-bottom: 35px !important;
+
+            h2 {
+                font-size: 32px !important;
+                margin-bottom: 5px !important;
+            }
+
+            p {
+                text-align: left !important;
+            }
+        }
+
+        .mask-group2 .mask5 {
+            display: none !important;
+        }
+    }
 }
 
 /* Small devices 575 - 767 */
@@ -341,6 +376,7 @@
 @media #{$xs} {
     /* common area start */
 }
+
 /* extra Small devices 420 */
 @media #{$xsm} {
     /* common area start */
