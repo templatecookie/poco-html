@@ -3206,7 +3206,23 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
+  .our-teams {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+  }
+  .our-teams .all-member {
+    margin-top: 20px !important;
+  }
+  .our-teams .all-member .member-info .name h5 {
+    font-size: 18px !important;
+  }
+  .our-teams .all-member .member-info .name p {
+    font-size: 14px !important;
+  }
+  .our-teams .all-member .md-positioning {
+    top: 67% !important;
+    margin-bottom: 77px !important;
+  }
 }
 
 /* Small devices 575 - 767 */
