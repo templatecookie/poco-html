@@ -4096,6 +4096,9 @@ aside,
     width: 35px;
     line-height: 35px;
   }
+  .copyright {
+    text-align: center !important;
+  }
   .copyright-area-text p {
     font-size: 13px;
     line-height: 21px;
@@ -4107,12 +4110,80 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
+  .footer-area {
+    padding: 50px 0px 20px 0px !important;
+    margin: 0 0px !important;
+    border-radius: 0px !important;
+  }
+  .footer-area .footer-area-shape {
+    display: none !important;
+  }
+  .footer-area .footer-area-about h4, .footer-area .footer-area-lists h4 {
+    font-size: 22px;
+  }
+  .footer-area .footer-area-about p, .footer-area .footer-area-lists ul li a {
+    font-size: 14px;
+  }
+  .footer-area .footer-area-lists ul li a {
+    margin-bottom: 5px;
+  }
+  .footer-area .footer-area-links a {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+  }
+  .copyright {
+    text-align: center !important;
+  }
+  .copyright-area-text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .copyright-area-top a {
+    font-size: 14px;
+  }
+  .copyright-area-logo a img {
+    width: 65% !important;
+  }
 }
 
 /* extra Small devices 420 */
 @media (max-width: 420px) {
-  /* common area start */
+  .footer-area {
+    padding: 50px 0px 20px 0px !important;
+    margin: 0 0px !important;
+    border-radius: 0px !important;
+  }
+  .footer-area .footer-area-shape {
+    display: none !important;
+  }
+  .footer-area .footer-area-about h4, .footer-area .footer-area-lists h4 {
+    font-size: 22px;
+  }
+  .footer-area .footer-area-about p, .footer-area .footer-area-lists ul li a {
+    font-size: 14px;
+  }
+  .footer-area .footer-area-lists ul li a {
+    margin-bottom: 5px;
+  }
+  .footer-area .footer-area-links a {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+  }
+  .copyright {
+    text-align: center !important;
+  }
+  .copyright-area-text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .copyright-area-top a {
+    font-size: 14px;
+  }
+  .copyright-area-logo a img {
+    width: 65% !important;
+  }
 }
 
 .about-solution {
