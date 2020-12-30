@@ -664,7 +664,200 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    /* common area start */
+            //  Globally WORK SOLUTION AREA
+            .about-skill {
+                padding: 50px 0px 70px 0px;
+        
+                &-image {
+                    img {
+                        width: 100%;
+                    }
+                }
+        
+                &-title {
+                    margin-bottom: 20px !important;
+        
+                    h2 {
+                        font-size: 30px !important;
+                        line-height: 45px !important;
+                        margin-bottom: 20px !important;
+                    }
+        
+                    p {
+                        font-size: 16px !important;
+                        line-height: 24px !important;
+                    }
+                }
+        
+                &-pogressbar {
+                    .round-wrapper {
+                        &:nth-child(1) {
+                            margin-right: 50px !important;
+                        }
+                        &:nth-child(2) {
+                            margin-right: 0px !important;
+                        }
+        
+                        .skill-text {
+                            margin-top: 15px !important;
+        
+                            p {
+                                padding-top: 5px !important;
+                            }
+                        }
+                        .round{
+                            canvas{
+                                height: 130px !important;
+                                width: 130px !important;
+                            }
+                        }
+                    }
+                }
+                .about-skill-wrapper .about-skill-pogressbar{
+                    justify-content: center !important;
+                }
+                .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong{
+                    font-size: 35px !important;
+                }
+            }
+    
+    // Globally Section Title
+    .section-title {
+        margin-bottom: 20px !important;
+
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+
+
+        // ABOUT SOLUTION AREA ==> About Us Page
+        .about-solution {
+            padding: 50px 0px !important;
+            margin: 0px !important;
+            border-radius: 0px !important;
+            // Mask
+            .mask-group {
+                .mask3,
+                .mask2,
+                .mask1 {
+                    display: none !important;
+                }
+            }
+    
+            // Solution Wrapper
+            .solution-wrapper .solution-title.center {
+                max-width: 100% !important;
+    
+                h4 {
+                    text-align: left !important;
+                    font-size: 20px !important;
+                    line-height: 28px !important;
+                }
+    
+                p {
+                    font-size: 16px !important;
+                    line-height: 24px !important;
+                    text-align: justify !important;
+                }
+            }
+        }
+      // Globally Feature & Alarat For About US
+      .about-us {
+        .feature {
+            margin-top: 20px !important;
+            margin-bottom: 15px !important;
+
+            .icon {
+                width: 30px !important;
+            }
+
+            .text {
+                h6 {
+                    margin-bottom: 5px !important;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px !important;
+                }
+            }
+        }
+
+        .about-us-text .alart {
+            margin-bottom: 70px !important;
+            margin-top: 30px !important;
+            .alart-icon {
+                i {
+                    font-size: 35px !important;
+                }
+            }
+
+            .alart-text {
+                p {
+                    line-height: 23px !important;
+                }
+            }
+
+            .alart-boldtext {
+                h2 {
+                    font-size: 40px !important;
+                }
+            }
+        }
+    }
+
+
+          // Globally Sub Heading
+    .sub-heading {
+        margin-bottom: 15px !important;
+
+        h2 {
+            font-size: 30px !important;
+            line-height: 38px !important;
+            margin-bottom: 10px !important;
+        }
+        p{
+            font-size: 14px !important;
+            line-height: 22px !important;
+        }
+    }
+
+        // About Us Section ==> About Us Page
+        .about-us {
+            padding-top: 70px;
+            padding-bottom: 50px;
+    
+            .about-us-image .sm-feauter-top {
+                left: 50% !important;
+                transform: translateX(-50%);
+                top: -25% !important;
+                h3{ 
+                    text-align: center !important;
+                    font-size: 30px !important;
+                    line-height: 38px !important;
+                }
+                .ratings{
+                    text-align: center !important;
+                }
+                p{
+                    font-size: 14px !important;
+                    text-align: center !important;
+                }
+            }
+            .about-us-image .sm-feauter-left,
+            .about-us-image .sm-feauter-bottom{
+                display: none !important;
+            }
+    
+            &-image {
+                .image {
+                    text-align: center !important;
+                    margin-left: 0 !important;
+                }
+            }
+        }
+        
 }
 
 /* Small devices 420 - 574 */
