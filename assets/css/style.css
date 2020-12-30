@@ -1821,7 +1821,78 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
+  .section-title {
+    margin-bottom: 30px !important;
+  }
+  .section-title h2 {
+    font-size: 35px !important;
+  }
+  .sub-heading {
+    margin-bottom: 20px !important;
+  }
+  .sub-heading h2 {
+    font-size: 35px !important;
+    line-height: 43px !important;
+    margin-bottom: 20px !important;
+  }
+  .about-us .feature {
+    margin-bottom: 20px !important;
+  }
+  .about-us .feature .icon {
+    width: 30px !important;
+  }
+  .about-us .feature .text h6 {
+    margin-bottom: 5px !important;
+  }
+  .about-us .feature .text p {
+    line-height: 25px !important;
+  }
+  .about-us .about-us-text .alart {
+    margin-bottom: 70px !important;
+  }
+  .about-us .about-us-text .alart .alart-icon i {
+    font-size: 35px !important;
+  }
+  .about-us .about-us-text .alart .alart-text p {
+    line-height: 23px !important;
+  }
+  .about-us .about-us-text .alart .alart-boldtext h2 {
+    font-size: 45px !important;
+  }
+  .about-us {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .about-us .about-us-image .sm-feauter-top {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .about-us-image .image {
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+  .about-solution {
+    padding: 70px 0px !important;
+    margin: 0px 20px !important;
+  }
+  .about-solution .mask-group .mask2,
+  .about-solution .mask-group .mask1 {
+    top: -50px !important;
+  }
+  .about-solution .solution-wrapper .solution-title.center {
+    max-width: 50% !important;
+  }
+  .about-solution .solution-wrapper .solution-title.center h4 {
+    text-align: left !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .about-solution .solution-wrapper .solution-title.center p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: justify !important;
+  }
 }
 
 /* Small devices 575 - 767 */

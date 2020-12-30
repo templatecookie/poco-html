@@ -204,9 +204,10 @@
 /*  HOMEPAGE 03
 /*----------------------------------------*/
 .homepage-03 {
-    &.about-introduction{
+    &.about-introduction {
         padding-bottom: 260px;
     }
+
     .sub-section-heading {
         p {
             font-size: 18px;
@@ -232,12 +233,14 @@
 
         .image {
             position: relative;
-            .about01{
+
+            .about01 {
                 border-top-right-radius: 75px;
                 width: 490px;
                 height: 550px;
                 object-fit: cover;
             }
+
             .about02 {
                 position: absolute;
                 bottom: -25%;
@@ -360,34 +363,42 @@
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
+
     //  Globally WORK SOLUTION AREA
-    .about-skill{
+    .about-skill {
         padding: 100px 0px;
-        &-image{
-            img{
+
+        &-image {
+            img {
                 width: 100%;
             }
         }
-        &-title{
+
+        &-title {
             margin-bottom: 30px !important;
-            h2{
+
+            h2 {
                 font-size: 35px !important;
                 line-height: 43px !important;
                 margin-bottom: 20px !important;
             }
-            p{
+
+            p {
                 font-size: 18px !important;
                 line-height: 26px !important;
             }
         }
-        &-pogressbar{
-            .round-wrapper{
-                &:nth-child(1){
+
+        &-pogressbar {
+            .round-wrapper {
+                &:nth-child(1) {
                     margin-right: 50px !important;
                 }
-                .skill-text{
+
+                .skill-text {
                     margin-top: 15px !important;
-                    p{
+
+                    p {
                         padding-top: 5px !important;
                     }
                 }
@@ -396,51 +407,60 @@
     }
 
     // Globally Section Title
-    .section-title{
+    .section-title {
         margin-bottom: 40px !important;
-        h2{
+
+        h2 {
             font-size: 40px !important;
         }
     }
 
     // Globally Sub Heading
-    .sub-heading{
+    .sub-heading {
         margin-bottom: 20px !important;
-        h2{
+
+        h2 {
             font-size: 35px !important;
             line-height: 43px !important;
             margin-bottom: 20px !important;
         }
     }
+
     // Globally Feature & Alarat For About US
-    .about-us{
+    .about-us {
         .feature {
             margin-bottom: 20px !important;
-            .icon{
+
+            .icon {
                 width: 33px !important;
             }
-            .text{
-                h6{
+
+            .text {
+                h6 {
                     margin-bottom: 5px !important;
                 }
-                p{
+
+                p {
                     line-height: 25px !important;
                 }
             }
         }
-        .about-us-text .alart{
-            .alart-icon{
-                i{
+
+        .about-us-text .alart {
+            .alart-icon {
+                i {
                     font-size: 35px !important;
                 }
             }
-            .alart-text{
-                p{
+
+            .alart-text {
+                p {
                     line-height: 23px !important;
                 }
             }
-            .alart-boldtext{
-                h2{
+
+            .alart-boldtext {
+                h2 {
                     font-size: 45px !important;
                 }
             }
@@ -448,16 +468,18 @@
     }
 
     // About Us Section ==> About Us Page
-    .about-us{
+    .about-us {
         padding-top: 0;
         padding-bottom: 100px;
-        .about-us-image .sm-feauter-top{
+
+        .about-us-image .sm-feauter-top {
             top: -25% !important;
         }
-        
+
     }
+
     // ABOUT SOLUTION AREA ==> About Us Page
-    .about-solution{
+    .about-solution {
         padding: 100px 0px !important;
         margin: 0px 25px !important;
     }
@@ -466,7 +488,121 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
+
+
+    // Globally Section Title
+    .section-title {
+        margin-bottom: 30px !important;
+
+        h2 {
+            font-size: 35px !important;
+        }
+    }
+
+    // Globally Sub Heading
+    .sub-heading {
+        margin-bottom: 20px !important;
+
+        h2 {
+            font-size: 35px !important;
+            line-height: 43px !important;
+            margin-bottom: 20px !important;
+        }
+    }
+
+    // Globally Feature & Alarat For About US
+    .about-us {
+        .feature {
+            margin-bottom: 20px !important;
+
+            .icon {
+                width: 30px !important;
+            }
+
+            .text {
+                h6 {
+                    margin-bottom: 5px !important;
+                }
+
+                p {
+                    line-height: 25px !important;
+                }
+            }
+        }
+
+        .about-us-text .alart {
+            margin-bottom: 70px !important;
+
+            .alart-icon {
+                i {
+                    font-size: 35px !important;
+                }
+            }
+
+            .alart-text {
+                p {
+                    line-height: 23px !important;
+                }
+            }
+
+            .alart-boldtext {
+                h2 {
+                    font-size: 45px !important;
+                }
+            }
+        }
+    }
+
+    // About Us Section ==> About Us Page
+    .about-us {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        .about-us-image .sm-feauter-top {
+            left: 50% !important;
+            transform: translateX(-50%);
+        }
+
+        &-image {
+            .image {
+                text-align: center !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    // ABOUT SOLUTION AREA ==> About Us Page
+    .about-solution {
+        padding: 70px 0px !important;
+        margin: 0px 20px !important;
+
+        // Mask
+        .mask-group {
+
+            .mask2,
+            .mask1 {
+                top: -50px !important;
+            }
+        }
+
+        // Solution Wrapper
+        .solution-wrapper .solution-title.center {
+            max-width: 50% !important;
+
+            h4 {
+                text-align: left !important;
+                font-size: 24px !important;
+                line-height: 32px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+                line-height: 24px !important;
+                text-align: justify !important;
+            }
+        }
+    }
+
 }
 
 /* Small devices 575 - 767 */
@@ -478,6 +614,7 @@
 @media #{$xs} {
     /* common area start */
 }
+
 /* extra Small devices 420 */
 @media #{$xsm} {
     /* common area start */
