@@ -3840,7 +3840,33 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
+  .footer-area {
+    padding: 70px 0px 20px 0px !important;
+    margin: 0 20px !important;
+  }
+  .footer-area .footer-area-about h4, .footer-area .footer-area-lists h4 {
+    font-size: 24px;
+  }
+  .footer-area .footer-area-about p, .footer-area .footer-area-lists ul li a {
+    font-size: 16px;
+  }
+  .footer-area .footer-area-lists ul li a {
+    margin-bottom: 5px;
+  }
+  .footer-area .footer-area-links a {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+  .copyright-area-text p {
+    font-size: 14px;
+  }
+  .copyright-area-top a {
+    font-size: 14px;
+  }
+  .copyright-area-logo a img {
+    width: 65% !important;
+  }
 }
 
 /* Small devices 575 - 767 */
