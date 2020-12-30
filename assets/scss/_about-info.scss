@@ -489,6 +489,63 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
 
+        //  Globally WORK SOLUTION AREA
+        .about-skill {
+            padding: 70px 0px;
+    
+            &-image {
+                img {
+                    width: 100%;
+                }
+            }
+    
+            &-title {
+                margin-bottom: 30px !important;
+    
+                h2 {
+                    font-size: 30px !important;
+                    line-height: 50px !important;
+                    margin-bottom: 20px !important;
+                }
+    
+                p {
+                    font-size: 16px !important;
+                    line-height: 24px !important;
+                }
+            }
+    
+            &-pogressbar {
+                .round-wrapper {
+                    &:nth-child(1) {
+                        margin-right: 50px !important;
+                    }
+                    &:nth-child(2) {
+                        margin-right: 0px !important;
+                    }
+    
+                    .skill-text {
+                        margin-top: 15px !important;
+    
+                        p {
+                            padding-top: 5px !important;
+                        }
+                    }
+                    .round{
+                        canvas{
+                            height: 180px !important;
+                            width: 180px !important;
+                        }
+                    }
+                }
+            }
+            .about-skill-wrapper .about-skill-pogressbar{
+                justify-content: center !important;
+            }
+            .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong{
+                font-size: 35px !important;
+            }
+        }
+
 
     // Globally Section Title
     .section-title {
