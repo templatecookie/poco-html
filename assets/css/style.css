@@ -1852,8 +1852,8 @@ aside,
     padding-top: 5px !important;
   }
   .about-skill-pogressbar .round-wrapper .round canvas {
-    height: 180px !important;
-    width: 180px !important;
+    height: 150px !important;
+    width: 150px !important;
   }
   .about-skill .about-skill-wrapper .about-skill-pogressbar {
     -webkit-box-pack: center !important;
