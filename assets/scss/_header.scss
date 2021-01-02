@@ -127,7 +127,20 @@ aside {
       transform: translateX(0%);
     }
   }
+  .main-menu{
+    li{
+      a{
+        &::before{
+          display: none;
+        }
+        &:hover{
+          color: $tertiary;
+        }
+      }
+    }
+  }
   .asidesearch-bar{
+    margin-top: 40px;
     position: relative;
     input{
       width: 100%;
