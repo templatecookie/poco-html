@@ -2083,7 +2083,54 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
+  .about-skill {
+    padding: 50px 0px 70px 0px;
+  }
+  .about-skill-image img {
+    width: 100%;
+  }
+  .about-skill-title {
+    margin-bottom: 20px !important;
+  }
+  .about-skill-title h2 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+    margin-bottom: 10px !important;
+  }
+  .about-skill-title p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .about-skill-pogressbar .round-wrapper:nth-child(1) {
+    margin-right: 5px !important;
+  }
+  .about-skill-pogressbar .round-wrapper:nth-child(2) {
+    margin-right: 0px !important;
+  }
+  .about-skill-pogressbar .round-wrapper .skill-text {
+    margin-top: 15px !important;
+  }
+  .about-skill-pogressbar .round-wrapper .skill-text h6 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .about-skill-pogressbar .round-wrapper .skill-text p {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 5px !important;
+  }
+  .about-skill-pogressbar .round-wrapper .round canvas {
+    height: 130px !important;
+    width: 130px !important;
+  }
+  .about-skill .about-skill-wrapper .about-skill-pogressbar {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .about-skill .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong {
+    font-size: 35px !important;
+  }
 }
 
 /* extra Small devices 420 */

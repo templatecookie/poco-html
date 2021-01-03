@@ -862,7 +862,67 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    /* common area start */
+                //  Globally WORK SOLUTION AREA
+                .about-skill {
+                    padding: 50px 0px 70px 0px;
+            
+                    &-image {
+                        img {
+                            width: 100%;
+                        }
+                    }
+            
+                    &-title {
+                        margin-bottom: 20px !important;
+            
+                        h2 {
+                            font-size: 18px !important;
+                            line-height: 26px !important;
+                            margin-bottom: 10px !important;
+                        }
+            
+                        p {
+                            font-size: 14px !important;
+                            line-height: 22px !important;
+                        }
+                    }
+            
+                    &-pogressbar {
+                        .round-wrapper {
+                            &:nth-child(1) {
+                                margin-right: 5px !important;
+                            }
+                            &:nth-child(2) {
+                                margin-right: 0px !important;
+                            }
+            
+                            .skill-text {
+                                margin-top: 15px !important;
+                                h6{
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                }
+                                p {
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    padding-top: 5px !important;
+                                }
+                            }
+                            .round{
+                                canvas{
+                                    height: 130px !important;
+                                    width: 130px !important;
+                                }
+                            }
+                        }
+                    }
+                    .about-skill-wrapper .about-skill-pogressbar{
+                        justify-content: center !important;
+                    }
+                    .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong{
+                        font-size: 35px !important;
+                    }
+                }
 }
 
 /* extra Small devices 420 */
