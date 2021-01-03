@@ -2083,6 +2083,9 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
+  .about-skill-wrapper {
+    max-width: 100% !important;
+  }
   .about-skill {
     padding: 50px 0px 70px 0px;
   }
@@ -2102,7 +2105,7 @@ aside,
     line-height: 22px !important;
   }
   .about-skill-pogressbar .round-wrapper:nth-child(1) {
-    margin-right: 5px !important;
+    margin-right: 15px !important;
   }
   .about-skill-pogressbar .round-wrapper:nth-child(2) {
     margin-right: 0px !important;
@@ -3156,7 +3159,52 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
+  .testimonial-area {
+    padding: 50px 0px 120px 0px !important;
+    margin: 0px !important;
+    margin-top: 50px !important;
+    border-radius: 0px !important;
+  }
+  .testimonial-area .mask-group2 {
+    display: none !important;
+  }
+  .testimonial-area .testimonial-active .slick-arrow.prev-arrow {
+    right: 55% !important;
+    width: 45px;
+    height: 45px;
+    bottom: -75px;
+  }
+  .testimonial-area .testimonial-active .slick-arrow {
+    right: 40% !important;
+    width: 45px;
+    height: 45px;
+    bottom: -75px;
+  }
+  .testimonial-area .section-title {
+    margin-bottom: 30px !important;
+    max-width: 100%;
+  }
+  .testimonial-area .section-title h2 {
+    font-size: 25px !important;
+    margin-bottom: 5px !important;
+  }
+  .testimonial-area .section-title p {
+    text-align: left !important;
+  }
+  .testimonial-area .mask-group2 .mask5 {
+    display: none !important;
+  }
+  .testimonial-area .client-name h6 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+  .testimonial-area .client-name span {
+    font-size: 13px !important;
+    line-height: 22px !important;
+  }
+  .testimonial-area .reatting {
+    font-size: 14px !important;
+  }
 }
 
 /* extra Small devices 420 */

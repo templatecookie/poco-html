@@ -863,6 +863,9 @@
 /* Small devices 420 - 574 */
 @media #{$xs} {
                 //  Globally WORK SOLUTION AREA
+                .about-skill-wrapper{
+                    max-width: 100% !important;
+                }
                 .about-skill {
                     padding: 50px 0px 70px 0px;
             
@@ -890,7 +893,7 @@
                     &-pogressbar {
                         .round-wrapper {
                             &:nth-child(1) {
-                                margin-right: 5px !important;
+                                margin-right: 15px !important;
                             }
                             &:nth-child(2) {
                                 margin-right: 0px !important;
