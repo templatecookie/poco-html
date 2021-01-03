@@ -1813,6 +1813,10 @@ aside,
   .about-us .about-us-image .sm-feauter-top {
     top: -25% !important;
   }
+  .about-us .about-us-image .sm-feauter-left,
+  .about-us .about-us-image .sm-feauter-bottom {
+    display: none !important;
+  }
   .about-solution {
     padding: 100px 0px !important;
     margin: 0px 25px !important;
@@ -1909,6 +1913,10 @@ aside,
     left: 50% !important;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  .about-us .about-us-image .sm-feauter-left,
+  .about-us .about-us-image .sm-feauter-bottom {
+    display: none !important;
   }
   .about-us-image .image {
     text-align: center !important;

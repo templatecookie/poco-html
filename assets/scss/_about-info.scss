@@ -476,6 +476,10 @@
             top: -25% !important;
         }
 
+        .about-us-image .sm-feauter-left,
+        .about-us-image .sm-feauter-bottom {
+            display: none !important;
+        }
     }
 
     // ABOUT SOLUTION AREA ==> About Us Page
@@ -622,6 +626,11 @@
         .about-us-image .sm-feauter-top {
             left: 50% !important;
             transform: translateX(-50%);
+        }
+
+        .about-us-image .sm-feauter-left,
+        .about-us-image .sm-feauter-bottom {
+            display: none !important;
         }
 
         &-image {

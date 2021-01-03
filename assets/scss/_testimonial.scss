@@ -369,15 +369,18 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
+
     // Globally Testimonial 
     .testimonial-area {
         padding: 50px 0px 120px 0px !important;
         margin: 0px !important;
         margin-top: 50px !important;
         border-radius: 0px !important;
-        .mask-group2{
+
+        .mask-group2 {
             display: none !important;
         }
+
         .testimonial-active .slick-arrow.prev-arrow {
             right: 52% !important;
             width: 45px;
@@ -395,6 +398,7 @@
         .section-title {
             margin-bottom: 30px !important;
             max-width: 100%;
+
             h2 {
                 font-size: 25px !important;
                 margin-bottom: 5px !important;
@@ -408,17 +412,20 @@
         .mask-group2 .mask5 {
             display: none !important;
         }
-        .client-name{
-            h6{
+
+        .client-name {
+            h6 {
                 font-size: 18px !important;
                 line-height: 26px !important;
             }
-            span{
+
+            span {
                 font-size: 13px !important;
                 line-height: 22px !important;
             }
         }
-        .reatting{
+
+        .reatting {
             font-size: 14px !important;
         }
     }
@@ -426,15 +433,18 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-      // Globally Testimonial 
-      .testimonial-area {
+
+    // Globally Testimonial 
+    .testimonial-area {
         padding: 50px 0px 120px 0px !important;
         margin: 0px !important;
         margin-top: 50px !important;
         border-radius: 0px !important;
-        .mask-group2{
+
+        .mask-group2 {
             display: none !important;
         }
+
         .testimonial-active .slick-arrow.prev-arrow {
             right: 55% !important;
             width: 45px;
@@ -452,6 +462,7 @@
         .section-title {
             margin-bottom: 30px !important;
             max-width: 100%;
+
             h2 {
                 font-size: 25px !important;
                 margin-bottom: 5px !important;
@@ -465,17 +476,20 @@
         .mask-group2 .mask5 {
             display: none !important;
         }
-        .client-name{
-            h6{
+
+        .client-name {
+            h6 {
                 font-size: 18px !important;
                 line-height: 26px !important;
             }
-            span{
+
+            span {
                 font-size: 13px !important;
                 line-height: 22px !important;
             }
         }
-        .reatting{
+
+        .reatting {
             font-size: 14px !important;
         }
     }
@@ -483,15 +497,18 @@
 
 /* extra Small devices 420 */
 @media #{$xsm} {
-       // Globally Testimonial 
-       .testimonial-area {
+
+    // Globally Testimonial 
+    .testimonial-area {
         padding: 50px 0px 120px 0px !important;
         margin: 0px !important;
         margin-top: 50px !important;
         border-radius: 0px !important;
-        .mask-group2{
+
+        .mask-group2 {
             display: none !important;
         }
+
         .testimonial-active .slick-arrow.prev-arrow {
             right: 55% !important;
             width: 45px;
@@ -509,6 +526,7 @@
         .section-title {
             margin-bottom: 30px !important;
             max-width: 100%;
+
             h2 {
                 font-size: 25px !important;
                 margin-bottom: 5px !important;
@@ -522,17 +540,20 @@
         .mask-group2 .mask5 {
             display: none !important;
         }
-        .client-name{
-            h6{
+
+        .client-name {
+            h6 {
                 font-size: 18px !important;
                 line-height: 26px !important;
             }
-            span{
+
+            span {
                 font-size: 13px !important;
                 line-height: 22px !important;
             }
         }
-        .reatting{
+
+        .reatting {
             font-size: 14px !important;
         }
     }
