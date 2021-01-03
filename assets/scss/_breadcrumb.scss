@@ -235,8 +235,8 @@
 
         .breadcrumb-wrapper {
             bottom: -75px !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
+            left: 50%;
+            transform: translateX(-50%);
 
             .breadcrumb {
                 padding: 10px 15px !important;
@@ -290,7 +290,9 @@
 
         .breadcrumb-wrapper {
             bottom: -75px !important;
-            left: 50% !important;
+            left: 50%;
+            transform: translateX(-50%);
+            width:100%;
             .breadcrumb {
                 padding: 10px 15px !important;
                 display: flex;

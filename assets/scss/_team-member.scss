@@ -259,5 +259,29 @@
 
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
+     // Globally Our Teams
+     .our-teams {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+        .our-teams-member .image{
+           text-align: center !important;
+        }
+        .all-member {
+            margin-top: 25px !important;
+
+            .member-info {
+                max-width: 80%;
+               margin: 0 auto;
+                .name {
+                    h5 {
+                        font-size: 18px !important;
+                    }
+
+                    p {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
 }

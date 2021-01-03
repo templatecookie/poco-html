@@ -3702,7 +3702,26 @@ aside,
 
 /* extra Small devices 420 */
 @media (max-width: 420px) {
-  /* common area start */
+  .our-teams {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  .our-teams .our-teams-member .image {
+    text-align: center !important;
+  }
+  .our-teams .all-member {
+    margin-top: 25px !important;
+  }
+  .our-teams .all-member .member-info {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .our-teams .all-member .member-info .name h5 {
+    font-size: 18px !important;
+  }
+  .our-teams .all-member .member-info .name p {
+    font-size: 14px !important;
+  }
 }
 
 .breadcrumb-area {
@@ -3909,9 +3928,9 @@ aside,
   }
   .breadcrumb-area .breadcrumb-wrapper {
     bottom: -75px !important;
-    left: 50% !important;
-    -webkit-transform: translateX(-50%) !important;
-            transform: translateX(-50%) !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .breadcrumb-area .breadcrumb-wrapper .breadcrumb {
     padding: 10px 15px !important;
@@ -3956,7 +3975,10 @@ aside,
   }
   .breadcrumb-area .breadcrumb-wrapper {
     bottom: -75px !important;
-    left: 50% !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
   }
   .breadcrumb-area .breadcrumb-wrapper .breadcrumb {
     padding: 10px 15px !important;
