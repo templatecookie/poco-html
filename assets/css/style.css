@@ -2083,6 +2083,13 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
+  .section-title {
+    margin-bottom: 10px !important;
+  }
+  .section-title h2 {
+    font-size: 25px !important;
+    line-height: 33px !important;
+  }
   .about-skill-wrapper {
     max-width: 100% !important;
   }
@@ -2096,8 +2103,8 @@ aside,
     margin-bottom: 20px !important;
   }
   .about-skill-title h2 {
-    font-size: 18px !important;
-    line-height: 26px !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
     margin-bottom: 10px !important;
   }
   .about-skill-title p {
