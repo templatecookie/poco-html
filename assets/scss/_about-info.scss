@@ -489,62 +489,66 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
 
-        //  Globally WORK SOLUTION AREA
-        .about-skill {
-            padding: 70px 0px;
-    
-            &-image {
-                img {
-                    width: 100%;
-                }
-            }
-    
-            &-title {
-                margin-bottom: 30px !important;
-    
-                h2 {
-                    font-size: 30px !important;
-                    line-height: 50px !important;
-                    margin-bottom: 20px !important;
-                }
-    
-                p {
-                    font-size: 16px !important;
-                    line-height: 24px !important;
-                }
-            }
-    
-            &-pogressbar {
-                .round-wrapper {
-                    &:nth-child(1) {
-                        margin-right: 50px !important;
-                    }
-                    &:nth-child(2) {
-                        margin-right: 0px !important;
-                    }
-    
-                    .skill-text {
-                        margin-top: 15px !important;
-    
-                        p {
-                            padding-top: 5px !important;
-                        }
-                    }
-                    .round{
-                        canvas{
-                            height: 150px !important;
-                            width: 150px !important;
-                        }
-                    }
-                }
-            }
-            .about-skill-wrapper .about-skill-pogressbar{
-                justify-content: center !important;
-            }
-            .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong{
-                font-size: 35px !important;
+    //  Globally WORK SOLUTION AREA
+    .about-skill {
+        padding: 70px 0px;
+
+        &-image {
+            img {
+                width: 100%;
             }
         }
+
+        &-title {
+            margin-bottom: 30px !important;
+
+            h2 {
+                font-size: 30px !important;
+                line-height: 50px !important;
+                margin-bottom: 20px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+                line-height: 24px !important;
+            }
+        }
+
+        &-pogressbar {
+            .round-wrapper {
+                &:nth-child(1) {
+                    margin-right: 50px !important;
+                }
+
+                &:nth-child(2) {
+                    margin-right: 0px !important;
+                }
+
+                .skill-text {
+                    margin-top: 15px !important;
+
+                    p {
+                        padding-top: 5px !important;
+                    }
+                }
+
+                .round {
+                    canvas {
+                        height: 150px !important;
+                        width: 150px !important;
+                    }
+                }
+            }
+        }
+
+        .about-skill-wrapper .about-skill-pogressbar {
+            justify-content: center !important;
+        }
+
+        .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong {
+            font-size: 35px !important;
+        }
+    }
 
 
     // Globally Section Title
@@ -664,63 +668,68 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-            //  Globally WORK SOLUTION AREA
-            .about-skill {
-                padding: 50px 0px 70px 0px;
-        
-                &-image {
-                    img {
-                        width: 100%;
-                    }
+
+    //  Globally WORK SOLUTION AREA
+    .about-skill {
+        padding: 50px 0px 70px 0px;
+
+        &-image {
+            img {
+                width: 100%;
+            }
+        }
+
+        &-title {
+            margin-bottom: 20px !important;
+
+            h2 {
+                font-size: 30px !important;
+                line-height: 45px !important;
+                margin-bottom: 20px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+                line-height: 24px !important;
+            }
+        }
+
+        &-pogressbar {
+            .round-wrapper {
+                &:nth-child(1) {
+                    margin-right: 50px !important;
                 }
-        
-                &-title {
-                    margin-bottom: 20px !important;
-        
-                    h2 {
-                        font-size: 30px !important;
-                        line-height: 45px !important;
-                        margin-bottom: 20px !important;
-                    }
-        
+
+                &:nth-child(2) {
+                    margin-right: 0px !important;
+                }
+
+                .skill-text {
+                    margin-top: 15px !important;
+
                     p {
-                        font-size: 16px !important;
-                        line-height: 24px !important;
+                        padding-top: 5px !important;
                     }
                 }
-        
-                &-pogressbar {
-                    .round-wrapper {
-                        &:nth-child(1) {
-                            margin-right: 50px !important;
-                        }
-                        &:nth-child(2) {
-                            margin-right: 0px !important;
-                        }
-        
-                        .skill-text {
-                            margin-top: 15px !important;
-        
-                            p {
-                                padding-top: 5px !important;
-                            }
-                        }
-                        .round{
-                            canvas{
-                                height: 130px !important;
-                                width: 130px !important;
-                            }
-                        }
+
+                .round {
+                    canvas {
+                        height: 130px !important;
+                        width: 130px !important;
                     }
-                }
-                .about-skill-wrapper .about-skill-pogressbar{
-                    justify-content: center !important;
-                }
-                .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong{
-                    font-size: 35px !important;
                 }
             }
-    
+        }
+
+        .about-skill-wrapper .about-skill-pogressbar {
+            justify-content: center !important;
+        }
+
+        .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong {
+            font-size: 35px !important;
+        }
+    }
+
     // Globally Section Title
     .section-title {
         margin-bottom: 20px !important;
@@ -731,39 +740,42 @@
     }
 
 
-        // ABOUT SOLUTION AREA ==> About Us Page
-        .about-solution {
-            padding: 50px 0px !important;
-            margin: 0px !important;
-            border-radius: 0px !important;
-            // Mask
-            .mask-group {
-                .mask3,
-                .mask2,
-                .mask1 {
-                    display: none !important;
-                }
-            }
-    
-            // Solution Wrapper
-            .solution-wrapper .solution-title.center {
-                max-width: 100% !important;
-    
-                h4 {
-                    text-align: left !important;
-                    font-size: 20px !important;
-                    line-height: 28px !important;
-                }
-    
-                p {
-                    font-size: 16px !important;
-                    line-height: 24px !important;
-                    text-align: justify !important;
-                }
+    // ABOUT SOLUTION AREA ==> About Us Page
+    .about-solution {
+        padding: 50px 0px !important;
+        margin: 0px !important;
+        border-radius: 0px !important;
+
+        // Mask
+        .mask-group {
+
+            .mask3,
+            .mask2,
+            .mask1 {
+                display: none !important;
             }
         }
-      // Globally Feature & Alarat For About US
-      .about-us {
+
+        // Solution Wrapper
+        .solution-wrapper .solution-title.center {
+            max-width: 100% !important;
+
+            h4 {
+                text-align: left !important;
+                font-size: 20px !important;
+                line-height: 28px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+                line-height: 24px !important;
+                text-align: justify !important;
+            }
+        }
+    }
+
+    // Globally Feature & Alarat For About US
+    .about-us {
         .feature {
             margin-top: 20px !important;
             margin-bottom: 15px !important;
@@ -787,6 +799,7 @@
         .about-us-text .alart {
             margin-bottom: 70px !important;
             margin-top: 30px !important;
+
             .alart-icon {
                 i {
                     font-size: 35px !important;
@@ -808,7 +821,7 @@
     }
 
 
-          // Globally Sub Heading
+    // Globally Sub Heading
     .sub-heading {
         margin-bottom: 15px !important;
 
@@ -817,69 +830,75 @@
             line-height: 38px !important;
             margin-bottom: 10px !important;
         }
-        p{
+
+        p {
             font-size: 14px !important;
             line-height: 22px !important;
         }
     }
 
-        // About Us Section ==> About Us Page
-        .about-us {
-            padding-top: 70px;
-            padding-bottom: 50px;
-    
-            .about-us-image .sm-feauter-top {
-                left: 50% !important;
-                transform: translateX(-50%);
-                top: -25% !important;
-                h3{ 
-                    text-align: center !important;
-                    font-size: 30px !important;
-                    line-height: 38px !important;
-                }
-                .ratings{
-                    text-align: center !important;
-                }
-                p{
-                    font-size: 14px !important;
-                    text-align: center !important;
-                }
+    // About Us Section ==> About Us Page
+    .about-us {
+        padding-top: 70px;
+        padding-bottom: 50px;
+
+        .about-us-image .sm-feauter-top {
+            left: 50% !important;
+            transform: translateX(-50%);
+            top: -25% !important;
+
+            h3 {
+                text-align: center !important;
+                font-size: 30px !important;
+                line-height: 38px !important;
             }
-            .about-us-image .sm-feauter-left,
-            .about-us-image .sm-feauter-bottom{
-                display: none !important;
+
+            .ratings {
+                text-align: center !important;
             }
-    
-            &-image {
-                .image {
-                    text-align: center !important;
-                    margin-left: 0 !important;
-                }
+
+            p {
+                font-size: 14px !important;
+                text-align: center !important;
             }
         }
-        
+
+        .about-us-image .sm-feauter-left,
+        .about-us-image .sm-feauter-bottom {
+            display: none !important;
+        }
+
+        &-image {
+            .image {
+                text-align: center !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
 
-                // About Us Section ==> About Us Page
-                .about-us {
-                    .about-us-image .sm-feauter-top,
-                    .about-us-image .sm-feauter-left,
-                    .about-us-image .sm-feauter-bottom{
-                        display: none !important;
-                    }
-            
-                    &-image {
-                        .image {
-                            text-align: center !important;
-                            margin-left: 0 !important;
-                        }
-                    }
-                }
-        
-          // Globally Sub Heading
+    // About Us Section ==> About Us Page
+    .about-us {
+
+        .about-us-image .sm-feauter-top,
+        .about-us-image .sm-feauter-left,
+        .about-us-image .sm-feauter-bottom {
+            display: none !important;
+        }
+
+        &-image {
+            .image {
+                text-align: center !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    // Globally Sub Heading
     .sub-heading {
         margin-bottom: 15px !important;
 
@@ -888,82 +907,90 @@
             line-height: 33px !important;
             margin-bottom: 10px !important;
         }
-        p{
+
+        p {
             font-size: 14px !important;
             line-height: 22px !important;
         }
     }
 
-          // Globally Feature & Alart For About US
-          .about-us {
-              padding: 50px 0px !important;
-              padding-top: 0 !important;
-            .feature {
-                margin-top: 18px !important;
-                margin-bottom: 15px !important;
-    
-                .icon {
-                    width: 35px !important;
-                }
-    
-                .text {
-                    h6 {
-                        margin-bottom: 5px !important;
-                    }
-    
-                    p {
-                        font-size: 16px;
-                        line-height: 24px !important;
-                    }
-                }
+    // Globally Feature & Alart For About US
+    .about-us {
+        padding: 50px 0px !important;
+        padding-top: 0 !important;
+
+        .feature {
+            margin-top: 18px !important;
+            margin-bottom: 15px !important;
+
+            .icon {
+                width: 35px !important;
             }
-    
-            .about-us-text .alart {
-                margin-bottom: 0px !important;
-                margin-top: 30px !important;
-                .alart-icon {
-                    i {
-                        font-size: 35px !important;
-                    }
+
+            .text {
+                h6 {
+                    margin-bottom: 5px !important;
                 }
-    
-                .alart-text {
-                    p {
-                        font-size: 16px;
-                        line-height: 24px !important;
-                    }
-                }
-    
-                .alart-boldtext {
-                    h2 {
-                        font-size: 35px !important;
-                    }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px !important;
                 }
             }
         }
 
-     // ABOUT SOLUTION AREA ==> About Us Page
-     .about-solution {
+        .about-us-text .alart {
+            margin-bottom: 0px !important;
+            margin-top: 30px !important;
+
+            .alart-icon {
+                i {
+                    font-size: 35px !important;
+                }
+            }
+
+            .alart-text {
+                p {
+                    font-size: 16px;
+                    line-height: 24px !important;
+                }
+            }
+
+            .alart-boldtext {
+                h2 {
+                    font-size: 35px !important;
+                }
+            }
+        }
+    }
+
+    // ABOUT SOLUTION AREA ==> About Us Page
+    .about-solution {
         padding: 50px 0px !important;
         margin: 0px !important;
         border-radius: 0px !important;
+
         // Mask
         .mask-group {
+
             .mask3,
             .mask2,
             .mask1 {
                 display: none !important;
             }
         }
+
         // Main Content
-        .solution-wrapper .solution-title.center{
+        .solution-wrapper .solution-title.center {
             max-width: 100% !important;
             text-align: left !important;
-            h4{
+
+            h4 {
                 font-size: 20px;
                 line-height: 28px;
             }
-            p{
+
+            p {
                 font-size: 14px;
                 line-height: 22px;
             }
@@ -979,73 +1006,284 @@
             line-height: 33px !important;
         }
     }
-                //  Globally WORK SOLUTION AREA
-                .about-skill-wrapper{
-                    max-width: 100% !important;
+
+    //  Globally WORK SOLUTION AREA
+    .about-skill-wrapper {
+        max-width: 100% !important;
+    }
+
+    .about-skill {
+        padding: 50px 0px 70px 0px;
+
+        &-image {
+            img {
+                width: 100%;
+            }
+        }
+
+        &-title {
+            margin-bottom: 20px !important;
+
+            h2 {
+                font-size: 20px !important;
+                line-height: 28px !important;
+                margin-bottom: 10px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                line-height: 22px !important;
+            }
+        }
+
+        &-pogressbar {
+            .round-wrapper {
+                &:nth-child(1) {
+                    margin-right: 15px !important;
                 }
-                .about-skill {
-                    padding: 50px 0px 70px 0px;
-            
-                    &-image {
-                        img {
-                            width: 100%;
-                        }
+
+                &:nth-child(2) {
+                    margin-right: 0px !important;
+                }
+
+                .skill-text {
+                    margin-top: 15px !important;
+
+                    h6 {
+                        font-size: 20px;
+                        line-height: 28px;
                     }
-            
-                    &-title {
-                        margin-bottom: 20px !important;
-            
-                        h2 {
-                            font-size: 20px !important;
-                            line-height: 28px !important;
-                            margin-bottom: 10px !important;
-                        }
-            
-                        p {
-                            font-size: 14px !important;
-                            line-height: 22px !important;
-                        }
-                    }
-            
-                    &-pogressbar {
-                        .round-wrapper {
-                            &:nth-child(1) {
-                                margin-right: 15px !important;
-                            }
-                            &:nth-child(2) {
-                                margin-right: 0px !important;
-                            }
-            
-                            .skill-text {
-                                margin-top: 15px !important;
-                                h6{
-                                    font-size: 20px;
-                                    line-height: 28px;
-                                }
-                                p {
-                                    font-size: 14px;
-                                    line-height: 22px;
-                                    padding-top: 5px !important;
-                                }
-                            }
-                            .round{
-                                canvas{
-                                    height: 130px !important;
-                                    width: 130px !important;
-                                }
-                            }
-                        }
-                    }
-                    .about-skill-wrapper .about-skill-pogressbar{
-                        justify-content: center !important;
-                    }
-                    .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong{
-                        font-size: 35px !important;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 22px;
+                        padding-top: 5px !important;
                     }
                 }
+
+                .round {
+                    canvas {
+                        height: 130px !important;
+                        width: 130px !important;
+                    }
+                }
+            }
+        }
+
+        .about-skill-wrapper .about-skill-pogressbar {
+            justify-content: center !important;
+        }
+
+        .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong {
+            font-size: 35px !important;
+        }
+    }
 }
 
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
+
+    // About Us Section ==> About Us Page
+    .about-us {
+
+        .about-us-image .sm-feauter-top,
+        .about-us-image .sm-feauter-left,
+        .about-us-image .sm-feauter-bottom {
+            display: none !important;
+        }
+
+        &-image {
+            .image {
+                text-align: center !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    // Globally Sub Heading
+    .sub-heading {
+        margin-bottom: 15px !important;
+
+        h2 {
+            font-size: 25px !important;
+            line-height: 33px !important;
+            margin-bottom: 10px !important;
+        }
+
+        p {
+            font-size: 14px !important;
+            line-height: 22px !important;
+        }
+    }
+
+    // Globally Feature & Alart For About US
+    .about-us {
+        padding: 50px 0px !important;
+        padding-top: 0 !important;
+
+        .feature {
+            margin-top: 18px !important;
+            margin-bottom: 15px !important;
+
+            .icon {
+                width: 52px !important;
+            }
+
+            .text {
+                h6 {
+                    margin-bottom: 5px !important;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px !important;
+                }
+            }
+        }
+
+        .about-us-text .alart {
+            margin-bottom: 0px !important;
+            margin-top: 30px !important;
+            flex-direction: column;
+
+            .alart-icon {
+                i {
+                    font-size: 35px !important;
+                }
+            }
+
+            .alart-text {
+                margin-top: 5px;
+                margin-bottom: 2px;
+
+                p {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 24px !important;
+                }
+            }
+
+            .alart-boldtext {
+                h2 {
+                    font-size: 30px !important;
+                    line-height: 38px;
+                }
+            }
+        }
+    }
+
+    // ABOUT SOLUTION AREA ==> About Us Page
+    .about-solution {
+        padding: 50px 0px !important;
+        margin: 0px !important;
+        border-radius: 0px !important;
+
+        // Mask
+        .mask-group {
+
+            .mask3,
+            .mask2,
+            .mask1 {
+                display: none !important;
+            }
+        }
+
+        // Main Content
+        .solution-wrapper .solution-title.center {
+            max-width: 100% !important;
+            text-align: left !important;
+
+            h4 {
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    // Globally Section Title
+    .section-title {
+        margin-bottom: 20px !important;
+
+        h2 {
+            font-size: 25px !important;
+            line-height: 33px !important;
+        }
+    }
+
+    //  Globally WORK SOLUTION AREA
+    .about-skill-wrapper {
+        max-width: 100% !important;
+    }
+
+    .about-skill {
+        padding: 50px 0px 70px 0px;
+
+        &-image {
+            img {
+                width: 100%;
+            }
+        }
+
+        &-title {
+            margin-bottom: 20px !important;
+
+            h2 {
+                font-size: 20px !important;
+                line-height: 28px !important;
+                margin-bottom: 10px !important;
+            }
+
+            p {
+                font-size: 14px !important;
+                line-height: 22px !important;
+            }
+        }
+
+        &-pogressbar {
+            .round-wrapper {
+                &:nth-child(1) {
+                    margin-right: 15px !important;
+                }
+
+                &:nth-child(2) {
+                    margin-right: 0px !important;
+                }
+
+                .skill-text {
+                    margin-top: 15px !important;
+
+                    h6 {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 22px;
+                        padding-top: 5px !important;
+                    }
+                }
+
+                .round {
+                    canvas {
+                        height: 130px !important;
+                        width: 130px !important;
+                    }
+                }
+            }
+        }
+
+        .about-skill-wrapper .about-skill-pogressbar {
+            justify-content: center !important;
+        }
+
+        .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong {
+            font-size: 35px !important;
+        }
+    }
 }

@@ -2220,7 +2220,149 @@ aside,
 
 /* extra Small devices 420 */
 @media (max-width: 420px) {
-  /* common area start */
+  .about-us .about-us-image .sm-feauter-top,
+  .about-us .about-us-image .sm-feauter-left,
+  .about-us .about-us-image .sm-feauter-bottom {
+    display: none !important;
+  }
+  .about-us-image .image {
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+  .sub-heading {
+    margin-bottom: 15px !important;
+  }
+  .sub-heading h2 {
+    font-size: 25px !important;
+    line-height: 33px !important;
+    margin-bottom: 10px !important;
+  }
+  .sub-heading p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .about-us {
+    padding: 50px 0px !important;
+    padding-top: 0 !important;
+  }
+  .about-us .feature {
+    margin-top: 18px !important;
+    margin-bottom: 15px !important;
+  }
+  .about-us .feature .icon {
+    width: 52px !important;
+  }
+  .about-us .feature .text h6 {
+    margin-bottom: 5px !important;
+  }
+  .about-us .feature .text p {
+    font-size: 16px;
+    line-height: 24px !important;
+  }
+  .about-us .about-us-text .alart {
+    margin-bottom: 0px !important;
+    margin-top: 30px !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-us .about-us-text .alart .alart-icon i {
+    font-size: 35px !important;
+  }
+  .about-us .about-us-text .alart .alart-text {
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+  .about-us .about-us-text .alart .alart-text p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px !important;
+  }
+  .about-us .about-us-text .alart .alart-boldtext h2 {
+    font-size: 30px !important;
+    line-height: 38px;
+  }
+  .about-solution {
+    padding: 50px 0px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+  }
+  .about-solution .mask-group .mask3,
+  .about-solution .mask-group .mask2,
+  .about-solution .mask-group .mask1 {
+    display: none !important;
+  }
+  .about-solution .solution-wrapper .solution-title.center {
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+  .about-solution .solution-wrapper .solution-title.center h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .about-solution .solution-wrapper .solution-title.center p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .section-title {
+    margin-bottom: 20px !important;
+  }
+  .section-title h2 {
+    font-size: 25px !important;
+    line-height: 33px !important;
+  }
+  .about-skill-wrapper {
+    max-width: 100% !important;
+  }
+  .about-skill {
+    padding: 50px 0px 70px 0px;
+  }
+  .about-skill-image img {
+    width: 100%;
+  }
+  .about-skill-title {
+    margin-bottom: 20px !important;
+  }
+  .about-skill-title h2 {
+    font-size: 20px !important;
+    line-height: 28px !important;
+    margin-bottom: 10px !important;
+  }
+  .about-skill-title p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .about-skill-pogressbar .round-wrapper:nth-child(1) {
+    margin-right: 15px !important;
+  }
+  .about-skill-pogressbar .round-wrapper:nth-child(2) {
+    margin-right: 0px !important;
+  }
+  .about-skill-pogressbar .round-wrapper .skill-text {
+    margin-top: 15px !important;
+  }
+  .about-skill-pogressbar .round-wrapper .skill-text h6 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .about-skill-pogressbar .round-wrapper .skill-text p {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 5px !important;
+  }
+  .about-skill-pogressbar .round-wrapper .round canvas {
+    height: 130px !important;
+    width: 130px !important;
+  }
+  .about-skill .about-skill-wrapper .about-skill-pogressbar {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .about-skill .about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong {
+    font-size: 35px !important;
+  }
 }
 
 /*----------------------------------------*/
@@ -3307,7 +3449,7 @@ aside,
     bottom: -75px;
   }
   .testimonial-area .testimonial-active .slick-arrow {
-    right: 40% !important;
+    right: 35% !important;
     width: 45px;
     height: 45px;
     bottom: -75px;
