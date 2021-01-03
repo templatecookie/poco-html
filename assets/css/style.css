@@ -562,7 +562,16 @@ aside.active .sidebar-menu {
           transform: translateX(0%);
 }
 
+aside .main-menu li a::before {
+  display: none;
+}
+
+aside .main-menu li a:hover {
+  color: #FF465E;
+}
+
 aside .asidesearch-bar {
+  margin-top: 40px;
   position: relative;
 }
 
