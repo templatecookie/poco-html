@@ -2083,8 +2083,30 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
+  .about-solution {
+    padding: 50px 0px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+  }
+  .about-solution .mask-group .mask3,
+  .about-solution .mask-group .mask2,
+  .about-solution .mask-group .mask1 {
+    display: none !important;
+  }
+  .about-solution .solution-wrapper .solution-title.center {
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+  .about-solution .solution-wrapper .solution-title.center h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .about-solution .solution-wrapper .solution-title.center p {
+    font-size: 14px;
+    line-height: 22px;
+  }
   .section-title {
-    margin-bottom: 10px !important;
+    margin-bottom: 20px !important;
   }
   .section-title h2 {
     font-size: 25px !important;

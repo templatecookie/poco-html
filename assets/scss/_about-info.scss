@@ -862,9 +862,38 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
+
+     // ABOUT SOLUTION AREA ==> About Us Page
+     .about-solution {
+        padding: 50px 0px !important;
+        margin: 0px !important;
+        border-radius: 0px !important;
+        // Mask
+        .mask-group {
+            .mask3,
+            .mask2,
+            .mask1 {
+                display: none !important;
+            }
+        }
+        // Main Content
+        .solution-wrapper .solution-title.center{
+            max-width: 100% !important;
+            text-align: left !important;
+            h4{
+                font-size: 20px;
+                line-height: 28px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+
     // Globally Section Title
     .section-title {
-        margin-bottom: 10px !important;
+        margin-bottom: 20px !important;
 
         h2 {
             font-size: 25px !important;
