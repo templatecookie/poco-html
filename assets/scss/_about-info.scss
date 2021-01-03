@@ -863,6 +863,21 @@
 /* Small devices 420 - 574 */
 @media #{$xs} {
 
+                // About Us Section ==> About Us Page
+                .about-us {
+                    .about-us-image .sm-feauter-top,
+                    .about-us-image .sm-feauter-left,
+                    .about-us-image .sm-feauter-bottom{
+                        display: none !important;
+                    }
+            
+                    &-image {
+                        .image {
+                            text-align: center !important;
+                            margin-left: 0 !important;
+                        }
+                    }
+                }
         
           // Globally Sub Heading
     .sub-heading {
@@ -879,9 +894,10 @@
         }
     }
 
-          // Globally Feature & Alarat For About US
+          // Globally Feature & Alart For About US
           .about-us {
               padding: 50px 0px !important;
+              padding-top: 0 !important;
             .feature {
                 margin-top: 18px !important;
                 margin-bottom: 15px !important;
