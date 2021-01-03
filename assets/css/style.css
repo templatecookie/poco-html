@@ -3956,8 +3956,7 @@ aside,
   }
   .breadcrumb-area .breadcrumb-wrapper {
     bottom: -75px !important;
-    left: 0 !important;
-    right: 0 !important;
+    left: 50% !important;
   }
   .breadcrumb-area .breadcrumb-wrapper .breadcrumb {
     padding: 10px 15px !important;
