@@ -3596,7 +3596,26 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
+  .our-teams {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  .our-teams .our-teams-member .image {
+    text-align: center !important;
+  }
+  .our-teams .all-member {
+    margin-top: 25px !important;
+  }
+  .our-teams .all-member .member-info {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .our-teams .all-member .member-info .name h5 {
+    font-size: 18px !important;
+  }
+  .our-teams .all-member .member-info .name p {
+    font-size: 14px !important;
+  }
 }
 
 /* extra Small devices 420 */
