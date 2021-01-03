@@ -3291,7 +3291,52 @@ aside,
 
 /* extra Small devices 420 */
 @media (max-width: 420px) {
-  /* common area start */
+  .testimonial-area {
+    padding: 50px 0px 120px 0px !important;
+    margin: 0px !important;
+    margin-top: 50px !important;
+    border-radius: 0px !important;
+  }
+  .testimonial-area .mask-group2 {
+    display: none !important;
+  }
+  .testimonial-area .testimonial-active .slick-arrow.prev-arrow {
+    right: 55% !important;
+    width: 45px;
+    height: 45px;
+    bottom: -75px;
+  }
+  .testimonial-area .testimonial-active .slick-arrow {
+    right: 40% !important;
+    width: 45px;
+    height: 45px;
+    bottom: -75px;
+  }
+  .testimonial-area .section-title {
+    margin-bottom: 30px !important;
+    max-width: 100%;
+  }
+  .testimonial-area .section-title h2 {
+    font-size: 25px !important;
+    margin-bottom: 5px !important;
+  }
+  .testimonial-area .section-title p {
+    text-align: left !important;
+  }
+  .testimonial-area .mask-group2 .mask5 {
+    display: none !important;
+  }
+  .testimonial-area .client-name h6 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+  .testimonial-area .client-name span {
+    font-size: 13px !important;
+    line-height: 22px !important;
+  }
+  .testimonial-area .reatting {
+    font-size: 14px !important;
+  }
 }
 
 /*----------------------------------------*/
