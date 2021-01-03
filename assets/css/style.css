@@ -2083,6 +2083,49 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
+  .sub-heading {
+    margin-bottom: 15px !important;
+  }
+  .sub-heading h2 {
+    font-size: 25px !important;
+    line-height: 33px !important;
+    margin-bottom: 10px !important;
+  }
+  .sub-heading p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .about-us {
+    padding: 50px 0px !important;
+  }
+  .about-us .feature {
+    margin-top: 18px !important;
+    margin-bottom: 15px !important;
+  }
+  .about-us .feature .icon {
+    width: 35px !important;
+  }
+  .about-us .feature .text h6 {
+    margin-bottom: 5px !important;
+  }
+  .about-us .feature .text p {
+    font-size: 16px;
+    line-height: 24px !important;
+  }
+  .about-us .about-us-text .alart {
+    margin-bottom: 0px !important;
+    margin-top: 30px !important;
+  }
+  .about-us .about-us-text .alart .alart-icon i {
+    font-size: 35px !important;
+  }
+  .about-us .about-us-text .alart .alart-text p {
+    font-size: 16px;
+    line-height: 24px !important;
+  }
+  .about-us .about-us-text .alart .alart-boldtext h2 {
+    font-size: 35px !important;
+  }
   .about-solution {
     padding: 50px 0px !important;
     margin: 0px !important;

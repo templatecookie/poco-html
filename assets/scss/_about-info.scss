@@ -863,6 +863,69 @@
 /* Small devices 420 - 574 */
 @media #{$xs} {
 
+        
+          // Globally Sub Heading
+    .sub-heading {
+        margin-bottom: 15px !important;
+
+        h2 {
+            font-size: 25px !important;
+            line-height: 33px !important;
+            margin-bottom: 10px !important;
+        }
+        p{
+            font-size: 14px !important;
+            line-height: 22px !important;
+        }
+    }
+
+          // Globally Feature & Alarat For About US
+          .about-us {
+              padding: 50px 0px !important;
+            .feature {
+                margin-top: 18px !important;
+                margin-bottom: 15px !important;
+    
+                .icon {
+                    width: 35px !important;
+                }
+    
+                .text {
+                    h6 {
+                        margin-bottom: 5px !important;
+                    }
+    
+                    p {
+                        font-size: 16px;
+                        line-height: 24px !important;
+                    }
+                }
+            }
+    
+            .about-us-text .alart {
+                margin-bottom: 0px !important;
+                margin-top: 30px !important;
+                .alart-icon {
+                    i {
+                        font-size: 35px !important;
+                    }
+                }
+    
+                .alart-text {
+                    p {
+                        font-size: 16px;
+                        line-height: 24px !important;
+                    }
+                }
+    
+                .alart-boldtext {
+                    h2 {
+                        font-size: 35px !important;
+                    }
+                }
+            }
+        }
+
      // ABOUT SOLUTION AREA ==> About Us Page
      .about-solution {
         padding: 50px 0px !important;
