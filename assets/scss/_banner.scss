@@ -376,12 +376,57 @@
     .banner-area{
         margin: 0 20px;
         padding: 0 10px;
+        .banner-wrapper{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            p{
+                font-size: 16px;
+                line-height: 26px;
+                width: 100%;
+                margin-top: 15px;
+            }
+            .banner-button{
+                margin-top: 20px;
+                .play-icon {
+                    width: 60px;
+                    height: 60px;
+                    box-sizing: border-box;
+                    svg {
+                        width: 20px;
+        
+                    }
+                }
+                .t-btn{
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    /* common area start */
+    .banner-area{
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0px;
+        .banner-image{
+            margin-bottom: 30px;
+        }
+        .banner-wrapper{
+            padding-bottom: 70px;
+            p{
+                width: 100%;
+                font-size: 16px;
+                line-height: 26px;
+                margin-top: 15px;
+            }
+        }
+        .banner-button {
+            margin-top: 15px;
+        }
+    }
+
 }
 
 /* Small devices 420 - 574 */

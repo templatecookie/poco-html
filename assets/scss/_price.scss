@@ -104,10 +104,25 @@
     }
 }
 
-// /* Medium devices 768 - 991 */
-// @media #{$md} {
-//     /* common area start */
-// }
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    .price-area{
+        padding: 100px 0;
+        .md-modifi{
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .price-box{
+            padding: 40px 0;
+            .price-title{
+                margin-bottom: 20px;
+            }
+            .price-body ul li {
+                margin-bottom: 8px;
+            }   
+        } 
+    }
+}
 
 // /* Small devices 575 - 767 */
 // @media #{$sm} {

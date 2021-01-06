@@ -233,6 +233,22 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
     /* common area start */
+    .special-services{
+        padding-bottom: 50px;
+        .special-services-image{
+            height: 70px;
+            width: 70px;
+            padding: 18px;
+        }
+        .special-services-text{
+            h5{
+                margin-bottom: 5px;
+            }
+            p{
+                min-width: 100%;
+            }
+        }
+    }
 }
 
 /* Small devices 575 - 767 */

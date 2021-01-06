@@ -187,7 +187,23 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
+    .callto-action{
+        margin: 0 20px;
+        .callto-action-image{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .callto-action-text {
+            padding-bottom: 70px;
+            h2{
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            p{
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 /* Small devices 575 - 767 */

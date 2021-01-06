@@ -302,14 +302,17 @@
     .footer-area{
         padding: 70px 0px  20px 0px!important;
         margin: 0 20px !important;
+        .footer-area-about{
+            margin-bottom: 30px;
+        }
         .footer-area-about h4, .footer-area-lists h4{
-            font-size: 24px;
+            font-size: 22px;
         }
         .footer-area-about p, .footer-area-lists ul li a{
-            font-size: 16px;
+            font-size: 14px;
         }
         .footer-area-lists ul li a{
-            margin-bottom: 5px;
+            margin-bottom: 0px;
         }
         .footer-area-links{
             a{
