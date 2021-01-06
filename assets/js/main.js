@@ -16,7 +16,12 @@
 		autoplay: true,
 		autoplaySpeed: 1200,
 		responsive: [{
-				breakpoint: 1024,
+				breakpoint: 1169,
+				settings: {
+					slidesToShow: 4,
+				},
+			},{
+				breakpoint: 991,
 				settings: {
 					slidesToShow: 3,
 				},
@@ -33,16 +38,16 @@
 	});
 
 	//testimonial_slider
-	$('.testimonial-active').slick({
+	$('.testimonial-slider').slick({
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		arrows: false,
-		autoplay: true,
+		autoplay: false,
 		arrows: true,
 		autoplaySpeed: 2000,
-		prevArrow: '<div class="prev-arrow"><img class="img-fluid logo-img" src="assets/img/icon/f.svg" alt="icon"></div>',
-		nextArrow: '<div class="next-arrow"><img class="img-fluid logo-img" src="assets/img/icon/right.svg" alt="icon"></div>',
+		prevArrow: '.testimonial-wrapper .prev-arrow',
+		nextArrow: '.testimonial-wrapper .next-arrow',
 		responsive: [{
 				breakpoint: 1024,
 				settings: {

@@ -424,6 +424,24 @@ p {
   text-align: center;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  h1 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+  h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  .t-btn {
+    font-size: 16px;
+    padding: 15px 35px;
+  }
+}
+
 /*----------------------------------------*/
 /*  HOMPAGE 01
 /*----------------------------------------*/
@@ -1323,11 +1341,37 @@ aside,
 /* large devices 992 - 1169*/
 @media only screen and (min-width: 992px) and (max-width: 1169px) {
   /* common area start */
+  .banner-area {
+    padding: 40px 20px;
+    margin: 0 30px;
+  }
+  .banner-area .banner-wrapper p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 100%;
+  }
+  .banner-area .banner-button .t-btn {
+    font-size: 18px;
+    padding: 15px 35px;
+  }
+  .banner-area .banner-button .play-icon {
+    width: 50px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .banner-area .banner-button .play-icon svg {
+    width: 17px;
+  }
 }
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* common area start */
+  .banner-area {
+    margin: 0 20px;
+    padding: 0 10px;
+  }
 }
 
 /* Small devices 575 - 767 */
@@ -2383,6 +2427,49 @@ aside,
 }
 
 /*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  /* common area start */
+  .about-info-project .project-rating h3,
+  .about-info-project .project-information h3 {
+    font-size: 30px;
+  }
+  .about-info-text h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  .about-info-image {
+    margin-left: 0;
+  }
+  .about-info {
+    padding: 95px 0px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
+}
+
+/*----------------------------------------*/
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 #circleBar {
@@ -2674,6 +2761,37 @@ aside,
   color: #FFFFFF;
 }
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  /* common area start */
+  .special-services {
+    padding-bottom: 45px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
+}
+
 .services-introduction {
   padding: 100px 0;
 }
@@ -2839,6 +2957,23 @@ aside,
   left: 2%;
 }
 
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  /* common area start */
+  .price-area .price-box .price-body {
+    margin-bottom: 15px;
+  }
+  .price-area .price-box .price-body ul li {
+    margin-bottom: 5px;
+  }
+  .price-area .price-box .price-title {
+    margin-bottom: 15px;
+  }
+  .price-area {
+    padding-bottom: 95px;
+  }
+}
+
 /*----------------------------------------*/
 /*  HOME PAGE 01
 /*----------------------------------------*/
@@ -2881,8 +3016,8 @@ aside,
   margin-bottom: 20px;
 }
 
-.callto-action-image {
-  margin-right: -170px;
+.callto-action-image img {
+  max-width: 100%;
 }
 
 /*----------------------------------------*/
@@ -2996,6 +3131,45 @@ aside,
   z-index: -1;
 }
 
+@media (min-width: 1340) {
+  .callto-action-image {
+    margin-right: -170px;
+  }
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  /* common area start */
+  .callto-action {
+    margin: 0 30px;
+    margin-top: 50px;
+    padding: 20px 25px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
+}
+
 /*----------------------------------------*/
 /*  HOMEPAGE 01
 /*----------------------------------------*/
@@ -3015,11 +3189,18 @@ aside,
   margin-bottom: 60px;
 }
 
-.testimonial-area .testimonial-active .slick-current .testimonial-wrapper {
+.testimonial-area .testimonial-slider {
+  margin: 0px -15px;
+  margin-bottom: 20px;
+}
+
+.testimonial-area .testimonial-slider .slick-current.testimonial-item {
   border-color: #FF465E;
 }
 
-.testimonial-area .testimonial-active .testimonial-wrapper {
+.testimonial-area .testimonial-slider .testimonial-item {
+  margin-right: 15px;
+  margin-left: 15px;
   padding: 20px;
   border: 2px solid #dddddd;
   border-radius: 5px;
@@ -3027,26 +3208,34 @@ aside,
   transition: all 0.3s ease-out 0s;
 }
 
-.testimonial-area .testimonial-active .testimonial-wrapper .client-name span {
+.testimonial-area .testimonial-slider .testimonial-item .client-name span {
   color: #65729E;
   font-size: 16px;
   line-height: 30px;
   font-family: "Gilroy-Medium";
 }
 
-.testimonial-area .testimonial-active .testimonial-wrapper .reatting {
+.testimonial-area .testimonial-slider .testimonial-item .reatting {
   color: #FF8B17;
   font-family: "Gilroy-Medium";
 }
 
-.testimonial-area .testimonial-active .testimonial-wrapper p {
+.testimonial-area .testimonial-slider .testimonial-item p {
   font-family: "Gilroy-Medium";
 }
 
-.testimonial-area .testimonial-active .slick-arrow {
-  position: absolute;
-  right: 0px;
-  bottom: -95px;
+.testimonial-area .slider-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.testimonial-area .slider-arrows .prev-arrow,
+.testimonial-area .slider-arrows .next-arrow {
   background-color: #FF465E;
   border: 1px solid transparent;
   width: 56px;
@@ -3063,10 +3252,7 @@ aside,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.testimonial-area .testimonial-active .slick-arrow.prev-arrow {
-  right: 75px;
+  margin: 0 5px;
 }
 
 .testimonial-area .mask-group2 img {
@@ -3120,7 +3306,7 @@ aside,
   font-family: "Gilroy-Medium";
 }
 
-.testimonial02 .testimonial-active .slick-arrow {
+.testimonial02 .testimonial-slider .slick-arrow {
   top: -132px;
 }
 
@@ -3177,11 +3363,11 @@ aside,
   font-family: "Gilroy-Medium";
 }
 
-.testimonial02 .testimonial-active .slick-current .testimonial-wrapper {
+.testimonial02 .testimonial-slider .slick-current .testimonial-item {
   border-color: #ED880A;
 }
 
-.testimonial02 .testimonial-active .slick-arrow {
+.testimonial02 .testimonial-slider .slick-arrow {
   background-color: #ED880A;
 }
 
@@ -3286,7 +3472,7 @@ aside,
   border-color: #FF465E;
 }
 
-.testimonial04 .testimonial-active .slick-arrow {
+.testimonial04 .testimonial-slider .slick-arrow {
   background-color: #111523;
   top: -132px;
   width: 57px;
@@ -3297,7 +3483,7 @@ aside,
   transition: all 0.3s ease-out 0s;
 }
 
-.testimonial04 .testimonial-active .slick-arrow:hover {
+.testimonial04 .testimonial-slider .slick-arrow:hover {
   background-color: #FF465E;
   border-color: #FF465E;
 }
@@ -3311,10 +3497,10 @@ aside,
     padding: 100px 0px 180px 0px !important;
     margin: 0px 25px !important;
   }
-  .testimonial-area .testimonial-active .slick-arrow.prev-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow.prev-arrow {
     right: 125px !important;
   }
-  .testimonial-area .testimonial-active .slick-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow {
     right: 45px !important;
   }
 }
@@ -3325,12 +3511,12 @@ aside,
     padding: 70px 0px 120px 0px !important;
     margin: 0px 20px !important;
   }
-  .testimonial-area .testimonial-active .slick-arrow.prev-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow.prev-arrow {
     right: 50% !important;
     -webkit-transform: translateX(-50%) !important;
             transform: translateX(-50%) !important;
   }
-  .testimonial-area .testimonial-active .slick-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow {
     right: 42% !important;
   }
   .testimonial-area .section-title {
@@ -3359,13 +3545,13 @@ aside,
   .testimonial-area .mask-group2 {
     display: none !important;
   }
-  .testimonial-area .testimonial-active .slick-arrow.prev-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow.prev-arrow {
     right: 52% !important;
     width: 45px;
     height: 45px;
     bottom: -75px;
   }
-  .testimonial-area .testimonial-active .slick-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow {
     right: 40% !important;
     width: 45px;
     height: 45px;
@@ -3409,13 +3595,13 @@ aside,
   .testimonial-area .mask-group2 {
     display: none !important;
   }
-  .testimonial-area .testimonial-active .slick-arrow.prev-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow.prev-arrow {
     right: 55% !important;
     width: 45px;
     height: 45px;
     bottom: -75px;
   }
-  .testimonial-area .testimonial-active .slick-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow {
     right: 40% !important;
     width: 45px;
     height: 45px;
@@ -3459,13 +3645,13 @@ aside,
   .testimonial-area .mask-group2 {
     display: none !important;
   }
-  .testimonial-area .testimonial-active .slick-arrow.prev-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow.prev-arrow {
     right: 55% !important;
     width: 45px;
     height: 45px;
     bottom: -75px;
   }
-  .testimonial-area .testimonial-active .slick-arrow {
+  .testimonial-area .testimonial-slider .slick-arrow {
     right: 35% !important;
     width: 45px;
     height: 45px;
@@ -3495,6 +3681,19 @@ aside,
   }
   .testimonial-area .reatting {
     font-size: 14px !important;
+  }
+}
+
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  /* common area start */
+  .testimonial-area .slider-arrows {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .testimonial-area {
+    padding: 85px 0px 95px 0px !important;
   }
 }
 
@@ -3667,6 +3866,39 @@ aside,
 
 .newsletter-area-form form .t-btn i {
   margin-left: 8px;
+}
+
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+  .newsletter-area {
+    padding: 95px 0;
+  }
+  .newsletter-area .newsletter-area-text p {
+    font-size: 22px;
+  }
+  .newsletter-area-form form .input-group input {
+    height: 60px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
 }
 
 .beloved-client {
@@ -4457,8 +4689,8 @@ aside,
 /* large devices 992 - 1169*/
 @media only screen and (min-width: 992px) and (max-width: 1169px) {
   .footer-area {
-    padding: 100px 0px !important;
-    margin: 0 25px !important;
+    padding: 70px 0px;
+    margin: 0 30px;
   }
 }
 
