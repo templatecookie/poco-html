@@ -7,7 +7,6 @@
     margin-top: 90px;
     border-radius: 24px;
     position: relative;
-
     &-mask {
         img {
             position: absolute;
@@ -22,7 +21,7 @@
         .second-mask {
             bottom: -65px;
             right: 50%;
-            left: 50%;
+            left: 39.5%;
             transform: translateX(-100px);
             z-index: -1;
         }
@@ -32,20 +31,24 @@
         h2 {
             font-family: $gilroy-bold;
             max-width: 620px;
-            margin-bottom: 5px;
+            margin-bottom: 12px;
         }
 
         p {
-            max-width: 625px;
+            max-width: 575px;
             font-family: $gilroy-medium;
             margin-bottom: 20px;
+            line-height: 30px;
+        }
+        .t-btn {
+            margin-top: 30px;
         }
     }
 
     &-image {
         // margin-right: -170px;
         img {
-            max-width: 100%;
+            margin-left: 25px;
         }
     }
 }
@@ -73,7 +76,7 @@
             h6 {
                 letter-spacing: 2px;
                 word-spacing: 5px;
-                color: #899DA7;
+                color: #899da7;
                 font-size: 14px;
                 font-family: $gilroy-regular;
             }
@@ -95,7 +98,7 @@
 
         .image-overlay {
             position: absolute;
-            background: rgba(0, 5, 96, 0.60);
+            background: rgba(0, 5, 96, 0.6);
             border-radius: 4px;
             top: 0;
             left: 0;
@@ -115,7 +118,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #ED880A;
+                background-color: #ed880a;
                 border-radius: 50%;
 
                 i {
@@ -142,7 +145,6 @@
                 z-index: -1;
             }
         }
-
     }
 }
 /*----------------------------------------*/
@@ -164,8 +166,7 @@
     }
 }
 
-
-@media(min-width: 1340){
+@media (min-width: 1340) {
     .callto-action-image {
         margin-right: -170px;
     }
@@ -174,6 +175,37 @@
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
+
+/*common max-Sizes */
+@media (max-width: 1200px) {
+    .callto-action {
+        &-image {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .callto-action {
+        &-image {
+            img {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .callto-action {
+        margin: 0px;
+        &-text {
+            padding: 30px 10px;
+        }
+    }
+}
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
@@ -187,19 +219,19 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    .callto-action{
+    .callto-action {
         margin: 0 20px;
-        .callto-action-image{
+        .callto-action-image {
             text-align: center;
             margin-bottom: 50px;
         }
         .callto-action-text {
             padding-bottom: 70px;
-            h2{
+            h2 {
                 max-width: 100%;
                 margin-bottom: 20px;
             }
-            p{
+            p {
                 max-width: 100%;
             }
         }
