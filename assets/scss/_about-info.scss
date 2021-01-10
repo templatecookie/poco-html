@@ -1,5 +1,5 @@
 /*----------------------------------------*/
-/* HOMEPAGE 02
+/* HOMEPAGE 01
 /*----------------------------------------*/
 // About-Info Starts Here
 .about-info {
@@ -204,9 +204,10 @@
 /*  HOMEPAGE 03
 /*----------------------------------------*/
 .homepage-03 {
-    &.about-introduction{
+    &.about-introduction {
         padding-bottom: 260px;
     }
+
     .sub-section-heading {
         p {
             font-size: 18px;
@@ -232,12 +233,14 @@
 
         .image {
             position: relative;
-            .about01{
+
+            .about01 {
                 border-top-right-radius: 75px;
                 width: 490px;
                 height: 550px;
                 object-fit: cover;
             }
+
             .about02 {
                 position: absolute;
                 bottom: -25%;
@@ -355,3 +358,76 @@
 }
 
 
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    /* common area start */
+    .about-info-project .project-rating h3,
+    .about-info-project .project-information h3 {
+        font-size: 30px;
+    }
+    .about-info-text {
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 15px;
+        }
+    }
+    .about-info-image{
+        margin-left: 0;
+    }
+    .about-info {
+        padding: 95px 0px;
+    }
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+
+    .about-info{
+        padding-top: 100px;
+        padding-bottom: 70px;
+        .about-info-image {
+            margin-left: 0px;
+            margin-bottom: 50px;
+        }
+        .about-info-text{
+            h2{
+                min-width: 100%;
+                padding-bottom: 20px;
+            }
+        }
+        .about-info-project {
+            padding-top: 20px;
+        }
+    .about-info-project .project-rating h3,
+    .about-info-project .project-information h3 {
+        font-size: 28px;
+    }
+    }
+
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+    .about-info{
+        padding: 70px 0;
+        .about-info-image{
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
+}

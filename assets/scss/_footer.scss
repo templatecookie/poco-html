@@ -281,3 +281,208 @@
         }
     }
 }
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    // Globally Footer
+    .footer-area{
+        padding: 70px 0px;
+        margin: 0 30px;
+    }
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    // Globally Footer
+    .footer-area{
+        padding: 70px 0px  20px 0px!important;
+        margin: 0 20px !important;
+        .footer-area-about{
+            margin-bottom: 30px;
+        }
+        .footer-area-about h4, .footer-area-lists h4{
+            font-size: 22px;
+        }
+        .footer-area-about p, .footer-area-lists ul li a{
+            font-size: 14px;
+        }
+        .footer-area-lists ul li a{
+            margin-bottom: 0px;
+        }
+        .footer-area-links{
+            a{
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+    // Copyright Area
+    .copyright-area-text{
+        p{
+            font-size: 14px;
+        }
+    }
+    .copyright-area-top {
+        a{
+            font-size: 14px;   
+        }
+    }
+    .copyright-area-logo{
+        a{
+            img{
+                width: 65% !important;
+            }
+        }
+    }
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    // Globally Footer
+    .footer-area{
+        padding: 50px 0px  20px 0px!important;
+        margin: 0 0px !important;
+        border-radius: 0px !important;
+        .footer-area-shape{
+            display: none !important;
+        }
+        .footer-area-about h4, .footer-area-lists h4{
+            font-size: 22px;
+        }
+        .footer-area-about p, .footer-area-lists ul li a{
+            font-size: 14px;
+        }
+        .footer-area-lists ul li a{
+            margin-bottom: 5px;
+        }
+        .footer-area-links{
+            a{
+                height: 35px;
+                width: 35px;
+                line-height: 35px;
+            }
+        }
+    }
+    .copyright{
+        text-align: center !important;
+    }
+    // Copyright Area
+    .copyright-area-text{
+        p{
+            font-size: 13px;
+            line-height: 21px;
+        }
+    }
+    .copyright-area-top {
+        a{
+            font-size: 13px;   
+        }
+    }
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+        // Globally Footer
+        .footer-area{
+            padding: 50px 0px  20px 0px!important;
+            margin: 0 0px !important;
+            border-radius: 0px !important;
+            .footer-area-shape{
+                display: none !important;
+            }
+            .footer-area-about h4, .footer-area-lists h4{
+                font-size: 22px;
+            }
+            .footer-area-about p, .footer-area-lists ul li a{
+                font-size: 14px;
+            }
+            .footer-area-lists ul li a{
+                margin-bottom: 5px;
+            }
+            .footer-area-links{
+                a{
+                    height: 35px;
+                    width: 35px;
+                    line-height: 35px;
+                }
+            }
+        }
+        // Copyright Area
+        .copyright{
+            text-align: center !important;
+        }
+        .copyright-area-text{
+            p{
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        .copyright-area-top {
+            a{
+                font-size: 14px;   
+            }
+        }
+        .copyright-area-logo{
+            a{
+                img{
+                    width: 65% !important;
+                }
+            }
+        }
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+     // Globally Footer
+     .footer-area{
+        padding: 50px 0px  20px 0px!important;
+        margin: 0 0px !important;
+        border-radius: 0px !important;
+        .footer-area-shape{
+            display: none !important;
+        }
+        .footer-area-about h4, .footer-area-lists h4{
+            font-size: 22px;
+        }
+        .footer-area-about p, .footer-area-lists ul li a{
+            font-size: 14px;
+        }
+        .footer-area-lists ul li a{
+            margin-bottom: 5px;
+        }
+        .footer-area-links{
+            a{
+                height: 35px;
+                width: 35px;
+                line-height: 35px;
+            }
+        }
+    }
+    // Copyright Area
+    .copyright{
+        text-align: center !important;
+    }
+    .copyright-area-text{
+        p{
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    .copyright-area-top {
+        a{
+            font-size: 14px;   
+        }
+    }
+    .copyright-area-logo{
+        a{
+            img{
+                width: 65% !important;
+            }
+        }
+    }
+}

@@ -42,3 +42,44 @@
         }
     }
 }
+
+/* large devices 992 - 1169*/
+@media #{$lg} { 
+    .newsletter-area {
+        padding: 95px 0;
+        .newsletter-area-text p {
+            font-size: 22px;
+        }
+    }
+    .newsletter-area-form form .input-group input {
+        height: 60px;
+    }
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+    .newsletter-area{
+        padding: 100px 0;
+        .newsletter-area-text{
+            margin-bottom: 50px;    
+            p{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
+}

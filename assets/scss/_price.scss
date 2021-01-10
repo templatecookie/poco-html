@@ -84,3 +84,56 @@
         }
     }
 }
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    /* common area start */
+    .price-area .price-box {
+        .price-body{
+            margin-bottom: 15px;
+            ul li {
+                margin-bottom: 5px;
+            }
+        }
+        .price-title { 
+            margin-bottom: 15px;
+        }
+    }
+    .price-area {
+        padding-bottom: 95px;
+    }
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    .price-area{
+        padding: 100px 0;
+        .md-modifi{
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .price-box{
+            padding: 40px 0;
+            .price-title{
+                margin-bottom: 20px;
+            }
+            .price-body ul li {
+                margin-bottom: 8px;
+            }   
+        } 
+    }
+}
+
+// /* Small devices 575 - 767 */
+// @media #{$sm} {
+//     /* common area start */
+// }
+
+// /* Small devices 420 - 574 */
+// @media #{$xs} {
+//     /* common area start */
+// }
+// /* extra Small devices 420 */
+// @media #{$xsm} {
+//     /* common area start */
+// }

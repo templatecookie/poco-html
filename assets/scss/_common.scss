@@ -334,3 +334,93 @@ p {
         }
     }
 }
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+	/* common area start */
+	h1 {
+		font-size: 42px;
+		line-height: 55px;
+	}
+	h2 {
+		font-size: 34px;
+		line-height: 46px;
+	}
+	h4{
+		font-size: 22px;
+	}
+	.t-btn {
+		font-size: 16px;
+		padding: 15px 35px;
+	}
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+	/* common area start */
+	h1{
+		font-size: 42px;
+		line-height: 50px;
+	}
+	h2{
+		font-size: 38px;
+		line-height: 48px;
+	}
+	h3{
+		font-size: 28px;
+		line-height: 1;
+	}
+	h4{
+		font-size: 22px;
+		line-height: 32px;
+	}
+	h5{
+		font-size: 18px;
+	}
+	.t-btn{
+		font-size: 16px;
+		padding: 18px 40px;
+	}
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+	/* common area start */
+		/* common area start */
+		h1{
+			font-size: 32px;
+			line-height: 1.2;
+		}
+		h2{
+			font-size: 26px;
+			line-height: 1.2;
+		}
+		h3{
+			font-size: 20px;
+			line-height: 1.2;
+		}
+		h4{
+			font-size: 16px;
+			line-height: 1.2;
+		}
+		h5{
+			font-size: 14px;
+		}
+		.t-btn{
+			font-size: 16px;
+			padding: 18px 40px;
+		}
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
+}

@@ -742,3 +742,98 @@
         opacity: 0;
     }
 }
+
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    .blog-details .article-item h3{
+        font-size: 36px;
+    }
+    .blog-details-quotes::after{
+        bottom: 12%;
+    }
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    .blog-area .aside .blog-meta,
+    .blog-area .aside .blog-gallery,
+    .blog-area .aside .archive-posts,
+    .blog-area .aside .blog-catagories,
+    .blog-area .aside .recent-post,
+    .blog-area .aside .search{
+        max-width: 100% !important;
+    }
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    .blog-details{
+        padding-bottom: 70px;
+    }
+    .blog-details .article-item h3{
+        font-size: 30px;
+    }
+    .blog-details-quotes::after{
+        bottom: 10%;
+        left: 90%;
+    }
+    .blog-details .article-item .author-details{
+        flex-wrap: wrap;
+    }
+    .blog-details .article-item .author-details-image{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .blog-details .article-item .author-details-info h6{
+        text-align: right;
+    }
+    .blog-details .article-item .author-details-info span{
+        text-align: right;
+        display: inherit;
+    }
+    .pl-sm-0{
+        padding-left: 0 !important;
+    }
+    .blog-details .article-item .write-comment-area form input{
+        padding: 25px 0px;
+        padding-left: 20px;
+    }
+    .blog-details .article-item .write-comment-area form textarea{
+        padding-bottom: 100px;
+        margin-bottom: 30px; 
+    }
+    .blog-area .aside .blog-meta,
+    .blog-area .aside .blog-gallery,
+    .blog-area .aside .archive-posts,
+    .blog-area .aside .blog-catagories,
+    .blog-area .aside .recent-post,
+    .blog-area .aside .search{
+        max-width: 100% !important;
+    }
+    // Globally BTN
+    .t-btn{
+        padding: 15px 40px !important;
+        font-size: 16px !important;
+    }
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    .blog-area .aside .blog-meta,
+    .blog-area .aside .blog-gallery,
+    .blog-area .aside .archive-posts,
+    .blog-area .aside .blog-catagories,
+    .blog-area .aside .recent-post,
+    .blog-area .aside .search{
+        max-width: 100% !important;
+    }
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
+}
