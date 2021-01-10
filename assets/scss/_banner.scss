@@ -4,17 +4,24 @@
 .banner-area {
     background-color: rgba(255, 70, 94, 0.05);
     margin: 0 45px;
-    padding: 0 40px;
+    padding: 75px 40px 190px 40px;
     border-radius: 24px;
     position: relative;
 
     .banner-wrapper {
+        margin-top: 90px;
         p {
-            font-size: 22px;
+            display: inline-block;
+            width: 90%;
+            margin: 25px 0px;
             line-height: 36px;
             font-family: $gilroy-medium;
-            width: 90%;
-            margin-top: 30px;
+            font-size: 21px;
+        }
+        .banner-title {
+            h1 {
+                margin-bottom: 4px;
+            }
         }
     }
 
@@ -44,7 +51,9 @@
     }
 
     .banner-image {
-        padding-top: 90px;
+        position: absolute;
+        bottom: -448px;
+        right: 0px;
     }
 
     .mask-group {
@@ -66,13 +75,13 @@
 
         .mask3 {
             bottom: -40px;
-            left: 37%;
+            left: 30%;
             z-index: -99;
         }
 
         .mask4 {
-            top: 14.5%;
-            left: 1.5%;
+            top: 130px;
+            left: 22px;
             z-index: -99;
         }
     }
@@ -82,7 +91,7 @@
 /*  HOME PAGE 02
 /*----------------------------------------*/
 .banner-area02 {
-    background-color: #29303E;
+    background-color: #29303e;
     position: relative;
     border-bottom-left-radius: 166px;
     padding-top: 115px;
@@ -134,7 +143,7 @@
         right: 27%;
 
         .image {
-            background-color: #FD6F00;
+            background-color: #fd6f00;
         }
     }
 
@@ -149,7 +158,7 @@
 /*  HOME PAGE 03
 /*----------------------------------------*/
 .banner-area03 {
-    background-color: #1F99F4;
+    background-color: #1f99f4;
     margin: 0;
     border-radius: 0;
     position: relative;
@@ -223,7 +232,7 @@
 
     .banner-button {
         .play-icon {
-            background-color: #2CA5FF;
+            background-color: #2ca5ff;
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
     }
@@ -239,15 +248,14 @@
             color: white;
 
             &::before {
-                content: "";
+                content: '';
                 position: absolute;
                 top: 50%;
                 left: 176px;
                 width: 148px;
                 height: 1px;
-                background-color: #FFFFFF;
+                background-color: #ffffff;
                 transform: translateY(-50%);
-
             }
         }
     }
@@ -274,7 +282,7 @@
 /*  HOME PAGE 04
 /*----------------------------------------*/
 .banner-area04 {
-    background-color: #191C26;
+    background-color: #191c26;
     margin: 0;
     border-radius: 0;
     z-index: 9;
@@ -307,9 +315,8 @@
             line-height: 42px;
             font-weight: 500;
             max-width: 70%;
-            color: #9DADB7;
+            color: #9dadb7;
             margin: 0;
-
         }
 
         .banner-button {
@@ -336,23 +343,84 @@
             left: 0;
             z-index: -3;
         }
-
     }
 }
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/* large devices 992 - 1169*/
+/* Common max- Sizes */
+@media (max-width: 1200px) {
+    .banner-area {
+        .banner-image {
+            position: relative;
+            bottom: 0;
+            padding-bottom: 60px;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .banner-wrapper {
+            text-align: center;
+        }
+        .banner-button {
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 767px) {
+    // banner section
+    .banner-area {
+        margin: 0px;
+    }
+}
+@media (max-width: 575px) {
+    .banner {
+        &-area {
+            padding: 75px 0px;
+
+            .mask-group {
+                .mask3 {
+                    left: 60%;
+                }
+            }
+        }
+        &-image {
+            margin-bottom: 0px !important;
+        }
+        &-title {
+            h1 {
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
+        &-wrapper {
+            margin-top: 0px !important;
+            p {
+                width: 100%;
+                margin: 15px 0px;
+            }
+        }
+    }
+}
+
+/* large devices 992 - 1199*/
 @media #{$lg} {
-    /* common area start */
+    /* banner area start */
     .banner-area {
         padding: 40px 20px;
         margin: 0 30px;
-        .banner-wrapper p {
-            font-size: 18px;
-            line-height: 26px;
-            width: 100%;
+        .banner-wrapper {
+            margin-top: 0px;
+            p {
+                font-size: 18px;
+                line-height: 26px;
+                width: 100%;
+            }
+        }
+        .banner-button {
+            margin-top: 0px;
         }
         .banner-button .t-btn {
             font-size: 18px;
@@ -364,7 +432,14 @@
             box-sizing: border-box;
             svg {
                 width: 17px;
+            }
+        }
+        // banner-img
 
+        // .mask-group
+        .mask-group {
+            .mask3 {
+                left: 85%;
             }
         }
     }
@@ -373,19 +448,19 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
     /* common area start */
-    .banner-area{
+    .banner-area {
         margin: 0 20px;
         padding: 0 10px;
-        .banner-wrapper{
+        .banner-wrapper {
             margin-top: 50px;
             margin-bottom: 100px;
-            p{
+            p {
                 font-size: 16px;
                 line-height: 26px;
                 width: 100%;
                 margin-top: 15px;
             }
-            .banner-button{
+            .banner-button {
                 margin-top: 20px;
                 .play-icon {
                     width: 60px;
@@ -393,12 +468,16 @@
                     box-sizing: border-box;
                     svg {
                         width: 20px;
-        
                     }
                 }
-                .t-btn{
+                .t-btn {
                     font-size: 18px;
                 }
+            }
+        }
+        .mask-group {
+            .mask3 {
+                left: 80%;
             }
         }
     }
@@ -406,16 +485,16 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    .banner-area{
+    .banner-area {
         margin: 0px;
         padding: 0px;
         border-radius: 0px;
-        .banner-image{
+        .banner-image {
             margin-bottom: 30px;
         }
-        .banner-wrapper{
+        .banner-wrapper {
             padding-bottom: 70px;
-            p{
+            p {
                 width: 100%;
                 font-size: 16px;
                 line-height: 26px;
@@ -425,8 +504,12 @@
         .banner-button {
             margin-top: 15px;
         }
+        .mask-group {
+            .mask3 {
+                left: 75%;
+            }
+        }
     }
-
 }
 
 /* Small devices 420 - 574 */
