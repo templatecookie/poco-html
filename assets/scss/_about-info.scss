@@ -3,25 +3,29 @@
 /*----------------------------------------*/
 // About-Info Starts Here
 .about-info {
+    position: relative;
     &-image {
-        margin-left: -110px;
+        margin-left: -190px;
     }
 
     &-text {
         h2 {
             font-family: $gilroy-bold;
             max-width: 530px;
+            line-height: 64px;
+            margin-bottom: 12px;
         }
 
         p {
             font-family: $gilroy-medium;
-            margin-bottom: 20px;
+            margin-bottom: 45px;
+            line-height: 30px;
         }
     }
 
     &-project {
         padding-top: 27px;
-        border-top: 1px solid #B4C1E9;
+        border-top: 1px solid #b4c1e9;
 
         .project-rating {
             h3 {
@@ -33,7 +37,7 @@
                 margin-top: 2px;
 
                 i {
-                    color: #FF8B17;
+                    color: #ff8b17;
                 }
             }
 
@@ -53,6 +57,17 @@
                 margin-bottom: 0;
                 font-family: $gilroy-medium;
             }
+        }
+    }
+
+    .mask-group {
+        .mask1 {
+            position: absolute;
+            right: 0px;
+            bottom: 135px;
+            // pointer-events: none;
+            // user-select: none;
+            // z-index: -1;
         }
     }
 }
@@ -89,7 +104,7 @@
                     margin-bottom: 10px;
 
                     img {
-                        border: 1px solid #FF465E;
+                        border: 1px solid #ff465e;
                         border-radius: 50%;
                         padding: 6px 4px;
                         margin-right: 10px;
@@ -113,7 +128,7 @@
         }
 
         &::after {
-            content: "";
+            content: '';
             position: absolute;
             bottom: 30px;
             border: 5px solid $white;
@@ -123,20 +138,18 @@
             border-radius: 101px;
             border-top-right-radius: 0;
             border-bottom-left-radius: 0;
-
         }
 
         &::before {
-            content: "";
+            content: '';
             position: absolute;
             top: 63px;
-            border: 5px solid #FF465E;
+            border: 5px solid #ff465e;
             right: -75px;
             width: 455px;
             height: 654px;
             border-radius: 101px;
             z-index: -99;
-
         }
     }
 
@@ -164,7 +177,7 @@
         }
 
         &::after {
-            content: "";
+            content: '';
             position: absolute;
             bottom: 30px;
             border: 5px solid $white;
@@ -174,21 +187,18 @@
             border-radius: 101px;
             border-top-left-radius: 0;
             border-bottom-right-radius: 0;
-
-
         }
 
         &::before {
             left: -35px;
-            content: "";
+            content: '';
             position: absolute;
             top: 68px;
-            border: 5px solid #FF465E;
+            border: 5px solid #ff465e;
             width: 455px;
             height: 654px;
             border-radius: 101px;
             z-index: -99;
-
         }
     }
 
@@ -197,7 +207,6 @@
         bottom: 22%;
         left: 33%;
     }
-
 }
 
 /*----------------------------------------*/
@@ -223,7 +232,7 @@
 
         &-item {
             i {
-                color: #ED880A;
+                color: #ed880a;
             }
         }
     }
@@ -270,7 +279,7 @@
             &-icon {
                 i {
                     font-size: 55px;
-                    color: #ED880A;
+                    color: #ed880a;
                 }
             }
 
@@ -309,7 +318,6 @@
             span {
                 color: $tertiary;
             }
-
         }
 
         p {
@@ -340,11 +348,10 @@
                     font-family: 500;
                     font-size: 20px;
                     line-height: 34px;
-                    color: #9DADB7;
+                    color: #9dadb7;
                 }
             }
         }
-
     }
 
     .right-vcetor {
@@ -353,16 +360,42 @@
             top: 31%;
             right: 5%;
         }
-
     }
 }
-
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/* large devices 992 - 1169*/
+/* Common max-Sizes */
+@media (max-width: 1200px) {
+    .about {
+        &-info {
+            &-image {
+                margin-left: 0px;
+            }
+            .mask-group {
+                .mask1 {
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .about {
+        &-info {
+            .mask-group {
+                .mask1 {
+                    bottom: -20px;
+                }
+            }
+        }
+    }
+}
+
+/* large devices 992 - 1199*/
 @media #{$lg} {
     /* common area start */
     .about-info-project .project-rating h3,
@@ -376,7 +409,7 @@
             margin-bottom: 15px;
         }
     }
-    .about-info-image{
+    .about-info-image {
         margin-left: 0;
     }
     .about-info {
@@ -386,16 +419,15 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-
-    .about-info{
+    .about-info {
         padding-top: 100px;
         padding-bottom: 70px;
         .about-info-image {
             margin-left: 0px;
             margin-bottom: 50px;
         }
-        .about-info-text{
-            h2{
+        .about-info-text {
+            h2 {
                 min-width: 100%;
                 padding-bottom: 20px;
             }
@@ -403,20 +435,25 @@
         .about-info-project {
             padding-top: 20px;
         }
-    .about-info-project .project-rating h3,
-    .about-info-project .project-information h3 {
-        font-size: 28px;
+        .about-info-project .project-rating h3,
+        .about-info-project .project-information h3 {
+            font-size: 28px;
+        }
+        // mask-group
+        .mask-group {
+            .mask1 {
+                bottom: -25px;
+            }
+        }
     }
-    }
-
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
     /* common area start */
-    .about-info{
+    .about-info {
         padding: 70px 0;
-        .about-info-image{
+        .about-info-image {
             margin-left: 0;
             margin-bottom: 30px;
         }

@@ -1545,23 +1545,30 @@ aside,
 /*----------------------------------------*/
 /* HOMEPAGE 01
 /*----------------------------------------*/
+.about-info {
+  position: relative;
+}
+
 .about-info-image {
-  margin-left: -110px;
+  margin-left: -190px;
 }
 
 .about-info-text h2 {
   font-family: "Gilroy-Bold";
   max-width: 530px;
+  line-height: 64px;
+  margin-bottom: 12px;
 }
 
 .about-info-text p {
   font-family: "Gilroy-Medium";
-  margin-bottom: 20px;
+  margin-bottom: 45px;
+  line-height: 30px;
 }
 
 .about-info-project {
   padding-top: 27px;
-  border-top: 1px solid #B4C1E9;
+  border-top: 1px solid #b4c1e9;
 }
 
 .about-info-project .project-rating h3 {
@@ -1574,7 +1581,7 @@ aside,
 }
 
 .about-info-project .project-rating-star i {
-  color: #FF8B17;
+  color: #ff8b17;
 }
 
 .about-info-project .project-rating p {
@@ -1590,6 +1597,12 @@ aside,
 .about-info-project .project-information p {
   margin-bottom: 0;
   font-family: "Gilroy-Medium";
+}
+
+.about-info .mask-group .mask1 {
+  position: absolute;
+  right: 0px;
+  bottom: 135px;
 }
 
 /*----------------------------------------*/
@@ -1629,7 +1642,7 @@ aside,
 }
 
 .aboutus02-wrapper-list ul li img {
-  border: 1px solid #FF465E;
+  border: 1px solid #ff465e;
   border-radius: 50%;
   padding: 6px 4px;
   margin-right: 10px;
@@ -1648,7 +1661,7 @@ aside,
 }
 
 .aboutus02-image::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 30px;
   border: 5px solid #FFFFFF;
@@ -1661,10 +1674,10 @@ aside,
 }
 
 .aboutus02-image::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 63px;
-  border: 5px solid #FF465E;
+  border: 5px solid #ff465e;
   right: -75px;
   width: 455px;
   height: 654px;
@@ -1696,7 +1709,7 @@ aside,
 }
 
 .aboutus-introduction02 .aboutus-introduction02-image::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 30px;
   border: 5px solid #FFFFFF;
@@ -1710,10 +1723,10 @@ aside,
 
 .aboutus-introduction02 .aboutus-introduction02-image::before {
   left: -35px;
-  content: "";
+  content: '';
   position: absolute;
   top: 68px;
-  border: 5px solid #FF465E;
+  border: 5px solid #ff465e;
   width: 455px;
   height: 654px;
   border-radius: 101px;
@@ -1746,7 +1759,7 @@ aside,
 }
 
 .homepage-03 .work-process-item i {
-  color: #ED880A;
+  color: #ed880a;
 }
 
 .homepage-03 .about-intro-left {
@@ -1792,7 +1805,7 @@ aside,
 
 .homepage-03 .about-intro-left .award-icon i {
   font-size: 55px;
-  color: #ED880A;
+  color: #ed880a;
 }
 
 .homepage-03 .about-intro-left .award h6 {
@@ -1859,7 +1872,7 @@ aside,
   font-family: 500;
   font-size: 20px;
   line-height: 34px;
-  color: #9DADB7;
+  color: #9dadb7;
 }
 
 .about-info04 .right-vcetor img {
@@ -1871,7 +1884,23 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
-/* large devices 992 - 1169*/
+/* Common max-Sizes */
+@media (max-width: 1200px) {
+  .about-info-image {
+    margin-left: 0px;
+  }
+  .about-info .mask-group .mask1 {
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-info .mask-group .mask1 {
+    bottom: -20px;
+  }
+}
+
+/* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1169px) {
   /* common area start */
   .about-info-project .project-rating h3,
@@ -1911,6 +1940,9 @@ aside,
   .about-info .about-info-project .project-rating h3,
   .about-info .about-info-project .project-information h3 {
     font-size: 28px;
+  }
+  .about-info .mask-group .mask1 {
+    bottom: -25px;
   }
 }
 
