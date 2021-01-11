@@ -2,14 +2,13 @@
 /*  HOMEPAGE 01
 /*----------------------------------------*/
 .testimonial-area {
-    padding-top: 120px;
-    padding-bottom: 225px;
+    padding-top: 130px;
+    padding-bottom: 145px;
     background-color: rgba(255, 70, 94, 0.05);
     margin: 0 45px;
     border-radius: 24px;
     position: relative;
     margin-bottom: 110px;
-
     .w-65 {
         max-width: 65%;
         margin: auto;
@@ -18,7 +17,7 @@
 
     .testimonial-slider {
         margin: 0px -15px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         .slick-current.testimonial-item {
             border-color: $tertiary;
         }
@@ -29,7 +28,7 @@
             padding: 20px;
             border: 2px solid #dddddd;
             border-radius: 5px;
-            @include transition(.3s);
+            @include transition(0.3s);
 
             .client-name {
                 span {
@@ -41,7 +40,7 @@
             }
 
             .reatting {
-                color: #FF8B17;
+                color: #ff8b17;
                 font-family: $gilroy-medium;
             }
 
@@ -51,7 +50,7 @@
         }
     }
 
-    .slider-arrows{
+    .slider-arrows {
         display: flex;
         width: 100%;
         justify-content: flex-end;
@@ -67,9 +66,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 5px;
-            transition: .3s;
-            &:hover{
+            margin: 0 10px;
+            transition: 0.3s;
+            &:hover {
                 background: transparent;
                 border: 1px solid $tertiary;
                 svg {
@@ -79,7 +78,10 @@
                 }
             }
         }
-}
+        .next-arrow {
+            margin-right: 0px;
+        }
+    }
     .mask-group2 {
         img {
             position: absolute;
@@ -98,7 +100,7 @@
 
         .mask5 {
             bottom: -10%;
-            left: 38%;
+            left: 38.5%;
         }
 
         .mask6 {
@@ -149,14 +151,14 @@
             margin-right: 100px;
 
             span {
-                color: #65729E;
+                color: #65729e;
                 font-family: $gilroy-medium;
                 margin-left: 10px solid #141824;
                 padding-left: 8px;
             }
 
             &::before {
-                content: "";
+                content: '';
                 position: absolute;
                 top: 50%;
                 left: -20px;
@@ -180,28 +182,28 @@
         margin: 0px -15px;
         margin-bottom: 20px;
         .slick-current.testimonial-item {
-            border-color: #ED880A;
+            border-color: #ed880a;
         }
     }
 
-    .slider-arrows{
+    .slider-arrows {
         display: flex;
         width: 100%;
         justify-content: flex-end;
         .prev-arrow,
         .next-arrow {
-            background-color: #ED880A;
-            &:hover{
+            background-color: #ed880a;
+            &:hover {
                 background: rgba(237, 136, 10, 0.13);
-                border: 1px solid #ED880A;
+                border: 1px solid #ed880a;
                 svg {
                     path {
-                        fill: #ED880A;
+                        fill: #ed880a;
                     }
                 }
             }
         }
-}
+    }
 
     .project-info {
         display: flex;
@@ -209,11 +211,10 @@
 
         h4 {
             &::before {
-                background-color: #ED880A !important;
+                background-color: #ed880a !important;
             }
         }
     }
-
 }
 
 /*----------------------------------------*/
@@ -246,7 +247,7 @@
     .testimoial-icon {
         width: 185px;
         height: 185px;
-        background-color: #2C2F3B;
+        background-color: #2c2f3b;
         border: 10px solid #141824;
         border-radius: 100%;
         display: flex;
@@ -256,7 +257,7 @@
     }
 
     .testimonial-wrappers {
-        background-color: #2C2F3B;
+        background-color: #2c2f3b;
         border: 0;
         text-align: center;
         padding: 120px 23px 45px 23px;
@@ -285,12 +286,11 @@
             height: 63px;
             display: flex;
             justify-content: center;
-            border: 3px solid #3B4A51;
+            border: 3px solid #3b4a51;
             margin: 0 auto;
             border-radius: 100%;
-            @include transition (.3s);
+            @include transition(0.3s);
             margin-top: 20px;
-
         }
 
         &:hover {
@@ -308,8 +308,8 @@
             width: 57px;
             height: 57px;
             border-radius: 0;
-            border: 3px solid #3B4A51;
-            @include transition (.3s);
+            border: 3px solid #3b4a51;
+            @include transition(0.3s);
 
             &:hover {
                 background-color: $tertiary;
@@ -323,10 +323,20 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/* large devices 992 - 1169*/
-@media #{$lg} {
+/* common device-sizes */
+@media (max-width: 575px) {
+    .testimonial-area {
+        .mask-group2 {
+            .mask6 {
+                top: 32px;
+            }
+        }
+    }
+}
 
-    // Globally Testimonial 
+/* large devices 992 - 1199*/
+@media #{$lg} {
+    // Globally Testimonial
     .testimonial-area {
         padding: 100px 0px 180px 0px !important;
         margin: 0px 25px !important;
@@ -339,17 +349,15 @@
             right: 45px !important;
         }
     }
-
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-
-    // Globally Testimonial 
+    // Globally Testimonial
     .testimonial-area {
         padding: 70px 0px 90px 0px !important;
         margin: 0px 20px !important;
-        
+
         .mask-group2 .mask5 {
             display: none !important;
         }
@@ -358,8 +366,7 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-
-    // Globally Testimonial 
+    // Globally Testimonial
     .testimonial-area {
         padding: 50px 0px 120px 0px !important;
         margin: 0px !important;
@@ -367,7 +374,7 @@
         border-radius: 0px !important;
 
         .mask-group2 {
-            display: none !important;
+            // display: none !important;
         }
 
         .testimonial-slider .slick-arrow.prev-arrow {
@@ -422,8 +429,7 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-
-    // Globally Testimonial 
+    // Globally Testimonial
     .testimonial-area {
         padding: 50px 0px 120px 0px !important;
         margin: 0px !important;
@@ -431,7 +437,11 @@
         border-radius: 0px !important;
 
         .mask-group2 {
-            display: none !important;
+            // display: none !important;
+            .mask6 {
+                top: 20px;
+                left: 0px;
+            }
         }
 
         .testimonial-slider .slick-arrow.prev-arrow {
@@ -486,8 +496,7 @@
 
 /* extra Small devices 420 */
 @media #{$xsm} {
-
-    // Globally Testimonial 
+    // Globally Testimonial
     .testimonial-area {
         padding: 50px 0px 120px 0px !important;
         margin: 0px !important;
@@ -495,7 +504,11 @@
         border-radius: 0px !important;
 
         .mask-group2 {
-            display: none !important;
+            // display: none !important;
+            .mask6 {
+                top: 0;
+                left: -35px;
+            }
         }
 
         .testimonial-slider .slick-arrow.prev-arrow {
@@ -549,7 +562,7 @@
 }
 
 // /*----------------------------------------*/
-// /*  RESPONSIVE CSS START 
+// /*  RESPONSIVE CSS START
 // /*----------------------------------------*/
 
 /* large devices 992 - 1169*/
@@ -581,4 +594,3 @@
 // @media #{$xsm} {
 //     /* common area start */
 // }
-
