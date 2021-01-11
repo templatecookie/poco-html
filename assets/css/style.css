@@ -1778,7 +1778,7 @@ aside,
 /* HOMEPAGE 02
 /*----------------------------------------*/
 .aboutus02 {
-  padding: 130px 0;
+  padding: 130px 0px 160px 0px;
   position: relative;
 }
 
@@ -1790,11 +1790,19 @@ aside,
   margin-bottom: 20px;
 }
 
+.aboutus02-wrapper-title h2 {
+  line-height: 64px;
+  display: inline-block;
+  margin-bottom: 45px;
+}
+
 .aboutus02-wrapper-title p {
   font-size: 18px;
   font-family: "Gilroy-Medium";
   line-height: 30px;
   margin-top: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .aboutus02-wrapper-list {
@@ -1807,7 +1815,7 @@ aside,
   font-size: 20px;
   font-family: "Gilroy-Medium";
   line-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .aboutus02-wrapper-list ul li img {
@@ -1819,6 +1827,7 @@ aside,
 
 .aboutus02-image {
   position: relative;
+  margin-left: 30px;
 }
 
 .aboutus02-image img {
@@ -1834,7 +1843,7 @@ aside,
   position: absolute;
   bottom: 30px;
   border: 5px solid #ffffff;
-  right: -15px;
+  right: 30px;
   width: 516px;
   height: 693px;
   border-radius: 101px;
@@ -1847,7 +1856,7 @@ aside,
   position: absolute;
   top: 63px;
   border: 5px solid #ff465e;
-  right: -75px;
+  right: -100px;
   width: 455px;
   height: 654px;
   border-radius: 101px;
@@ -1856,8 +1865,8 @@ aside,
 
 .aboutus02 .small-feature {
   position: absolute;
-  bottom: 21%;
-  right: 40%;
+  bottom: 24.1%;
+  right: 38.5%;
 }
 
 .aboutus-introduction02 {
@@ -2061,12 +2070,61 @@ aside,
   .about-info .mask-group .mask1 {
     bottom: 0px;
   }
+  .aboutus02 .small-feature {
+    bottom: 30.1%;
+    right: 30.5%;
+  }
+  .aboutus02-image::before {
+    right: -10px;
+    top: 30px;
+  }
+  .aboutus02-image::after {
+    bottom: 0;
+    right: -4px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .aboutus02 .small-feature {
+    bottom: 26.1%;
+    right: 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutus02-image::before {
+    right: 140px;
+    top: 30px;
+    z-index: 1;
+  }
+  .aboutus02-image::after {
+    right: 125px;
+  }
+  .aboutus02 .small-feature {
+    bottom: 62%;
+    right: 10%;
+    z-index: 9;
+  }
+  .aboutus02-wrapper-title h2 {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
 }
 
 @media (max-width: 767px) {
   .about-info-text h2 {
     font-size: 32px;
     line-height: 42px;
+  }
+  .aboutus02 .small-feature {
+    right: 5%;
+  }
+  .aboutus02-image::before {
+    right: 30px;
+  }
+  .aboutus02-image::after {
+    right: -1px;
   }
 }
 
@@ -2076,6 +2134,18 @@ aside,
   }
   .about-info .mask-group .mask1 {
     bottom: -5px;
+  }
+  .aboutus02 .small-feature {
+    right: 60%;
+    bottom: 52%;
+  }
+  .aboutus02-wrapper-title h2 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .aboutus02-wrapper-title p {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
@@ -2140,6 +2210,13 @@ aside,
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   /* common area start */
+  .aboutus02-image::before {
+    right: 2px;
+  }
+  .aboutus02 .small-feature {
+    right: 46%;
+    bottom: 52%;
+  }
 }
 
 /* extra Small devices 420 */
