@@ -10,6 +10,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: auto;
             margin-bottom: 25px;
         }
 
@@ -18,10 +19,13 @@
             color: $primary;
             font-family: $gilroy-bold;
             line-height: 22px;
+            margin: auto;
+            text-align: center;
         }
     }
 
     &-text {
+        margin-left: -15px;
         .section-heading {
             h2 {
                 margin-bottom: 45px;
@@ -34,12 +38,14 @@
                 list-style: 30px;
                 font-family: $gilroy-medium;
                 font-size: 18px;
+                margin-top: 60px;
             }
         }
 
         a {
             margin-top: 50px;
             transition: 0.3s;
+            margin-top: 55px;
         }
     }
 }

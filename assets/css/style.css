@@ -2456,6 +2456,7 @@ aside,
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
   margin-bottom: 25px;
 }
 
@@ -2464,6 +2465,12 @@ aside,
   color: #000560;
   font-family: "Gilroy-Bold";
   line-height: 22px;
+  margin: auto;
+  text-align: center;
+}
+
+.services-introduction-text {
+  margin-left: -15px;
 }
 
 .services-introduction-text .section-heading h2 {
@@ -2477,11 +2484,13 @@ aside,
   list-style: 30px;
   font-family: "Gilroy-Medium";
   font-size: 18px;
+  margin-top: 60px;
 }
 
 .services-introduction-text a {
   margin-top: 50px;
   transition: 0.3s;
+  margin-top: 55px;
 }
 
 /*----------------------------------------*/
