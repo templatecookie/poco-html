@@ -17,13 +17,13 @@
         autoplaySpeed: 1200,
         responsive: [
             {
-                breakpoint: 1169,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 4,
                 },
             },
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
                 },
