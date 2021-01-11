@@ -4,10 +4,14 @@
 .footer-area {
     background-color: rgba(255, 70, 94, 0.05);
     margin: 0 45px;
-    padding: 130px 0px;
+    padding: 130px 0px 85px 0px;
     border-radius: 24px;
     position: relative;
-
+    @media (min-width: 1200px) {
+        .mr-lg-65 {
+            margin-right: 65px;
+        }
+    }
     &-shape {
         img {
             position: absolute;
@@ -15,19 +19,19 @@
 
         .ft-shape-01 {
             top: -50px;
-            left: 30px;
+            left: 20px;
             z-index: -1;
         }
 
         .ft-shape-02 {
             top: -30px;
-            right: 30px;
+            right: 80px;
             z-index: -1;
         }
 
         .ft-shape-03 {
             bottom: -30px;
-            right: 30px;
+            right: 80px;
             z-index: -1;
         }
     }
@@ -37,13 +41,14 @@
             max-width: 305px;
             margin-bottom: 18px;
             font-family: $gilroy-medium;
+            line-height: 30px;
         }
     }
 
     &-links {
         a {
-            border: 1px solid #FF465E;
-            color: #FF465E;
+            border: 1px solid #ff465e;
+            color: #ff465e;
             border-radius: 50%;
             height: 47px;
             width: 47px;
@@ -55,7 +60,7 @@
 
             &:hover {
                 color: #ffffff;
-                background-color: #FF465E;
+                background-color: #ff465e;
             }
         }
     }
@@ -71,7 +76,7 @@
                     font-family: $gilroy-medium;
                     font-size: 16px;
                     color: $secondary;
-                    margin-bottom: 12px;
+                    margin-bottom: 5px;
                     display: inline-block;
                 }
             }
@@ -110,7 +115,7 @@
 /*----------------------------------------*/
 .dark-footer {
     padding-top: 110px;
-    background-color: #29303E;
+    background-color: #29303e;
     border-top-right-radius: 166px;
 
     .footer-area {
@@ -122,17 +127,17 @@
         &-about {
             p {
                 margin-top: 25px;
-                color: #C6C6C6;
+                color: #c6c6c6;
             }
         }
 
         &-lists {
             h4 {
-                color: #FFFFFF;
+                color: #ffffff;
             }
 
             ul li a {
-                color: #C6C6C6;
+                color: #c6c6c6;
             }
         }
     }
@@ -140,13 +145,13 @@
     .copyright {
         &-area-text {
             p {
-                color: #FFFFFF;
+                color: #ffffff;
             }
         }
 
         &-area-top {
             a {
-                color: #FFFFFF;
+                color: #ffffff;
             }
         }
     }
@@ -156,7 +161,7 @@
 /*  HOMEPAGE 03
 /*----------------------------------------*/
 .footer03 {
-    background-color: #1F99F4;
+    background-color: #1f99f4;
 
     .footer-area {
         background-color: inherit;
@@ -171,7 +176,7 @@
 
                 &:hover {
                     color: #fff;
-                    background-color: #ED880A;
+                    background-color: #ed880a;
                 }
             }
         }
@@ -179,7 +184,7 @@
         &-lists {
             h4 {
                 margin-bottom: 5px;
-                color: #FFFFFF;
+                color: #ffffff;
             }
 
             ul {
@@ -187,8 +192,8 @@
                     a {
                         color: white;
                         transition: 0.3s all linear;
-                        &:hover{
-                            color: #ED880A;
+                        &:hover {
+                            color: #ed880a;
                         }
                     }
                 }
@@ -210,7 +215,6 @@
         padding: 0;
         background-color: inherit;
 
-
         &-about {
             .logo {
                 margin-bottom: 25px;
@@ -218,7 +222,7 @@
 
             p {
                 font-size: 16px;
-                color: #9DADB7;
+                color: #9dadb7;
                 font-weight: 500;
                 font-family: $hind;
                 line-height: 30px;
@@ -240,7 +244,7 @@
                 margin: 0;
 
                 a {
-                    color: #9DADB7;
+                    color: #9dadb7;
                     font-family: $hind;
                     font-weight: 500;
                     font-size: 16px;
@@ -255,7 +259,7 @@
 
         &-area-text {
             p {
-                color: #9DADB7;
+                color: #9dadb7;
                 font-family: $hind;
                 font-weight: 500;
                 font-size: 16px;
@@ -266,7 +270,7 @@
         &-area-list {
             ul {
                 li {
-                    color: #9DADB7;
+                    color: #9dadb7;
                     font-family: $hind;
                     font-weight: 500;
                     font-size: 16px;
@@ -286,36 +290,39 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/* large devices 992 - 1169*/
+/* Common Devices-Sizes */
+
+/* large devices 992 - 1199*/
 @media #{$lg} {
     // Globally Footer
-    .footer-area{
+    .footer-area {
         padding: 70px 0px;
         margin: 0 30px;
     }
-
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
     // Globally Footer
-    .footer-area{
-        padding: 70px 0px  20px 0px!important;
+    .footer-area {
+        padding: 70px 0px 20px 0px !important;
         margin: 0 20px !important;
-        .footer-area-about{
+        .footer-area-about {
             margin-bottom: 30px;
         }
-        .footer-area-about h4, .footer-area-lists h4{
+        .footer-area-about h4,
+        .footer-area-lists h4 {
             font-size: 22px;
         }
-        .footer-area-about p, .footer-area-lists ul li a{
+        .footer-area-about p,
+        .footer-area-lists ul li a {
             font-size: 14px;
         }
-        .footer-area-lists ul li a{
+        .footer-area-lists ul li a {
             margin-bottom: 0px;
         }
-        .footer-area-links{
-            a{
+        .footer-area-links {
+            a {
                 height: 40px;
                 width: 40px;
                 line-height: 40px;
@@ -323,19 +330,19 @@
         }
     }
     // Copyright Area
-    .copyright-area-text{
-        p{
+    .copyright-area-text {
+        p {
             font-size: 14px;
         }
     }
     .copyright-area-top {
-        a{
-            font-size: 14px;   
+        a {
+            font-size: 14px;
         }
     }
-    .copyright-area-logo{
-        a{
-            img{
+    .copyright-area-logo {
+        a {
+            img {
                 width: 65% !important;
             }
         }
@@ -345,118 +352,72 @@
 /* Small devices 575 - 767 */
 @media #{$sm} {
     // Globally Footer
-    .footer-area{
-        padding: 50px 0px  20px 0px!important;
+    .footer-area {
+        padding: 50px 0px 20px 0px !important;
         margin: 0 0px !important;
         border-radius: 0px !important;
-        .footer-area-shape{
+        .footer-area-shape {
             display: none !important;
         }
-        .footer-area-about h4, .footer-area-lists h4{
+        .footer-area-about h4,
+        .footer-area-lists h4 {
             font-size: 22px;
         }
-        .footer-area-about p, .footer-area-lists ul li a{
+        .footer-area-about p,
+        .footer-area-lists ul li a {
             font-size: 14px;
         }
-        .footer-area-lists ul li a{
+        .footer-area-lists ul li a {
             margin-bottom: 5px;
         }
-        .footer-area-links{
-            a{
+        .footer-area-links {
+            a {
                 height: 35px;
                 width: 35px;
                 line-height: 35px;
             }
         }
     }
-    .copyright{
+    .copyright {
         text-align: center !important;
     }
     // Copyright Area
-    .copyright-area-text{
-        p{
+    .copyright-area-text {
+        p {
             font-size: 13px;
             line-height: 21px;
         }
     }
     .copyright-area-top {
-        a{
-            font-size: 13px;   
+        a {
+            font-size: 13px;
         }
     }
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-        // Globally Footer
-        .footer-area{
-            padding: 50px 0px  20px 0px!important;
-            margin: 0 0px !important;
-            border-radius: 0px !important;
-            .footer-area-shape{
-                display: none !important;
-            }
-            .footer-area-about h4, .footer-area-lists h4{
-                font-size: 22px;
-            }
-            .footer-area-about p, .footer-area-lists ul li a{
-                font-size: 14px;
-            }
-            .footer-area-lists ul li a{
-                margin-bottom: 5px;
-            }
-            .footer-area-links{
-                a{
-                    height: 35px;
-                    width: 35px;
-                    line-height: 35px;
-                }
-            }
-        }
-        // Copyright Area
-        .copyright{
-            text-align: center !important;
-        }
-        .copyright-area-text{
-            p{
-                font-size: 14px;
-                line-height: 22px;
-            }
-        }
-        .copyright-area-top {
-            a{
-                font-size: 14px;   
-            }
-        }
-        .copyright-area-logo{
-            a{
-                img{
-                    width: 65% !important;
-                }
-            }
-        }
-}
-/* extra Small devices 420 */
-@media #{$xsm} {
-     // Globally Footer
-     .footer-area{
-        padding: 50px 0px  20px 0px!important;
+    // Globally Footer
+    .footer-area {
+        padding: 50px 0px 20px 0px !important;
         margin: 0 0px !important;
         border-radius: 0px !important;
-        .footer-area-shape{
+        .footer-area-shape {
             display: none !important;
         }
-        .footer-area-about h4, .footer-area-lists h4{
+        .footer-area-about h4,
+        .footer-area-lists h4 {
             font-size: 22px;
         }
-        .footer-area-about p, .footer-area-lists ul li a{
+        .footer-area-about p,
+        .footer-area-lists ul li a {
             font-size: 14px;
         }
-        .footer-area-lists ul li a{
+        .footer-area-lists ul li a {
             margin-bottom: 5px;
         }
-        .footer-area-links{
-            a{
+        .footer-area-links {
+            a {
                 height: 35px;
                 width: 35px;
                 line-height: 35px;
@@ -464,23 +425,75 @@
         }
     }
     // Copyright Area
-    .copyright{
+    .copyright {
         text-align: center !important;
     }
-    .copyright-area-text{
-        p{
+    .copyright-area-text {
+        p {
             font-size: 14px;
             line-height: 22px;
         }
     }
     .copyright-area-top {
-        a{
-            font-size: 14px;   
+        a {
+            font-size: 14px;
         }
     }
-    .copyright-area-logo{
-        a{
-            img{
+    .copyright-area-logo {
+        a {
+            img {
+                width: 65% !important;
+            }
+        }
+    }
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    // Globally Footer
+    .footer-area {
+        padding: 50px 0px 20px 0px !important;
+        margin: 0 0px !important;
+        border-radius: 0px !important;
+        .footer-area-shape {
+            display: none !important;
+        }
+        .footer-area-about h4,
+        .footer-area-lists h4 {
+            font-size: 22px;
+        }
+        .footer-area-about p,
+        .footer-area-lists ul li a {
+            font-size: 14px;
+        }
+        .footer-area-lists ul li a {
+            margin-bottom: 5px;
+        }
+        .footer-area-links {
+            a {
+                height: 35px;
+                width: 35px;
+                line-height: 35px;
+            }
+        }
+    }
+    // Copyright Area
+    .copyright {
+        text-align: center !important;
+    }
+    .copyright-area-text {
+        p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    .copyright-area-top {
+        a {
+            font-size: 14px;
+        }
+    }
+    .copyright-area-logo {
+        a {
+            img {
                 width: 65% !important;
             }
         }

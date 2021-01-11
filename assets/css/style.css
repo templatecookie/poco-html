@@ -4018,9 +4018,15 @@ aside,
 .footer-area {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
-  padding: 130px 0px;
+  padding: 130px 0px 85px 0px;
   border-radius: 24px;
   position: relative;
+}
+
+@media (min-width: 1200px) {
+  .footer-area .mr-lg-65 {
+    margin-right: 65px;
+  }
 }
 
 .footer-area-shape img {
@@ -4029,19 +4035,19 @@ aside,
 
 .footer-area-shape .ft-shape-01 {
   top: -50px;
-  left: 30px;
+  left: 20px;
   z-index: -1;
 }
 
 .footer-area-shape .ft-shape-02 {
   top: -30px;
-  right: 30px;
+  right: 80px;
   z-index: -1;
 }
 
 .footer-area-shape .ft-shape-03 {
   bottom: -30px;
-  right: 30px;
+  right: 80px;
   z-index: -1;
 }
 
@@ -4049,11 +4055,12 @@ aside,
   max-width: 305px;
   margin-bottom: 18px;
   font-family: "Gilroy-Medium";
+  line-height: 30px;
 }
 
 .footer-area-links a {
-  border: 1px solid #FF465E;
-  color: #FF465E;
+  border: 1px solid #ff465e;
+  color: #ff465e;
   border-radius: 50%;
   height: 47px;
   width: 47px;
@@ -4066,7 +4073,7 @@ aside,
 
 .footer-area-links a:hover {
   color: #ffffff;
-  background-color: #FF465E;
+  background-color: #ff465e;
 }
 
 .footer-area-lists h4 {
@@ -4077,7 +4084,7 @@ aside,
   font-family: "Gilroy-Medium";
   font-size: 16px;
   color: #65729E;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   display: inline-block;
 }
 
@@ -4105,7 +4112,7 @@ aside,
 /*----------------------------------------*/
 .dark-footer {
   padding-top: 110px;
-  background-color: #29303E;
+  background-color: #29303e;
   border-top-right-radius: 166px;
 }
 
@@ -4118,30 +4125,30 @@ aside,
 
 .dark-footer .footer-area-about p {
   margin-top: 25px;
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 .dark-footer .footer-area-lists h4 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .dark-footer .footer-area-lists ul li a {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 
 .dark-footer .copyright-area-text p {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .dark-footer .copyright-area-top a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*----------------------------------------*/
 /*  HOMEPAGE 03
 /*----------------------------------------*/
 .footer03 {
-  background-color: #1F99F4;
+  background-color: #1f99f4;
 }
 
 .footer03 .footer-area {
@@ -4158,12 +4165,12 @@ aside,
 
 .footer03 .footer-area-links a:hover {
   color: #fff;
-  background-color: #ED880A;
+  background-color: #ed880a;
 }
 
 .footer03 .footer-area-lists h4 {
   margin-bottom: 5px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer03 .footer-area-lists ul li a {
@@ -4172,7 +4179,7 @@ aside,
 }
 
 .footer03 .footer-area-lists ul li a:hover {
-  color: #ED880A;
+  color: #ed880a;
 }
 
 /*----------------------------------------*/
@@ -4196,7 +4203,7 @@ aside,
 
 .footer04 .footer-area-about p {
   font-size: 16px;
-  color: #9DADB7;
+  color: #9dadb7;
   font-weight: 500;
   font-family: "Hind", sans-serif;
   line-height: 30px;
@@ -4217,7 +4224,7 @@ aside,
 }
 
 .footer04 .footer-area-lists li a {
-  color: #9DADB7;
+  color: #9dadb7;
   font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -4229,7 +4236,7 @@ aside,
 }
 
 .footer04 .copyright-area-text p {
-  color: #9DADB7;
+  color: #9dadb7;
   font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -4237,7 +4244,7 @@ aside,
 }
 
 .footer04 .copyright-area-list ul li {
-  color: #9DADB7;
+  color: #9dadb7;
   font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -4252,7 +4259,8 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
-/* large devices 992 - 1169*/
+/* Common Devices-Sizes */
+/* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1169px) {
   .footer-area {
     padding: 70px 0px;
@@ -4269,10 +4277,12 @@ aside,
   .footer-area .footer-area-about {
     margin-bottom: 30px;
   }
-  .footer-area .footer-area-about h4, .footer-area .footer-area-lists h4 {
+  .footer-area .footer-area-about h4,
+  .footer-area .footer-area-lists h4 {
     font-size: 22px;
   }
-  .footer-area .footer-area-about p, .footer-area .footer-area-lists ul li a {
+  .footer-area .footer-area-about p,
+  .footer-area .footer-area-lists ul li a {
     font-size: 14px;
   }
   .footer-area .footer-area-lists ul li a {
@@ -4304,10 +4314,12 @@ aside,
   .footer-area .footer-area-shape {
     display: none !important;
   }
-  .footer-area .footer-area-about h4, .footer-area .footer-area-lists h4 {
+  .footer-area .footer-area-about h4,
+  .footer-area .footer-area-lists h4 {
     font-size: 22px;
   }
-  .footer-area .footer-area-about p, .footer-area .footer-area-lists ul li a {
+  .footer-area .footer-area-about p,
+  .footer-area .footer-area-lists ul li a {
     font-size: 14px;
   }
   .footer-area .footer-area-lists ul li a {
@@ -4340,10 +4352,12 @@ aside,
   .footer-area .footer-area-shape {
     display: none !important;
   }
-  .footer-area .footer-area-about h4, .footer-area .footer-area-lists h4 {
+  .footer-area .footer-area-about h4,
+  .footer-area .footer-area-lists h4 {
     font-size: 22px;
   }
-  .footer-area .footer-area-about p, .footer-area .footer-area-lists ul li a {
+  .footer-area .footer-area-about p,
+  .footer-area .footer-area-lists ul li a {
     font-size: 14px;
   }
   .footer-area .footer-area-lists ul li a {
@@ -4379,10 +4393,12 @@ aside,
   .footer-area .footer-area-shape {
     display: none !important;
   }
-  .footer-area .footer-area-about h4, .footer-area .footer-area-lists h4 {
+  .footer-area .footer-area-about h4,
+  .footer-area .footer-area-lists h4 {
     font-size: 22px;
   }
-  .footer-area .footer-area-about p, .footer-area .footer-area-lists ul li a {
+  .footer-area .footer-area-about p,
+  .footer-area .footer-area-lists ul li a {
     font-size: 14px;
   }
   .footer-area .footer-area-lists ul li a {
