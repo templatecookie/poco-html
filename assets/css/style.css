@@ -499,7 +499,7 @@ p {
   line-height: 42px;
   position: relative;
   font-family: "Gilroy-Medium";
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .header-area .main-menu li a:hover {
@@ -529,7 +529,7 @@ p {
   top: 120%;
   opacity: 0;
   visibility: hidden;
-  transition: .5s;
+  transition: 0.5s;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background: white;
   border-radius: 5px;
@@ -548,7 +548,7 @@ p {
   font-size: 18px;
   line-height: 42px;
   font-family: "Gilroy-Medium";
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .header-area .main-menu li .sub-menu li a:hover {
@@ -595,7 +595,7 @@ aside.active {
 }
 
 aside.active .sidebar-menu {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: translateX(0%);
 }
 
@@ -643,7 +643,7 @@ aside .sidebar-menu {
   top: 0;
   left: 0;
   z-index: 15;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: translateX(-100%);
 }
 
@@ -705,7 +705,7 @@ aside,
   background-color: #000560;
   position: absolute;
   transform: rotate(0deg);
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .hamburger-menu span:nth-child(1),
@@ -750,7 +750,7 @@ aside,
   z-index: 99 !important;
   visibility: hidden;
   opacity: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .search-box .search-close {
@@ -759,7 +759,7 @@ aside,
   right: 50px;
   font-size: 28px;
   color: #65729E;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .search-box .search-close:hover {
@@ -788,7 +788,7 @@ aside,
   padding: 0 15px;
   padding-right: 55px;
   background-color: rgba(255, 70, 94, 0.05);
-  border: 3px solid #DDDDDD;
+  border: 3px solid #dddddd;
   position: relative;
 }
 
@@ -818,8 +818,21 @@ aside,
   z-index: 999;
 }
 
+.header-area02 .main-menu {
+  padding-left: 135px;
+}
+
+.header-area02 .main-menu li {
+  padding-right: 50px;
+}
+
 .header-area02 .right-content .search-bar {
   border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-right: 25px;
+}
+
+.header-area02 .hamburger-menu span {
+  background-color: #fff;
 }
 
 /*----------------------------------------*/
@@ -879,7 +892,7 @@ aside,
 }
 
 .header-area04 .contact-number .t-btn {
-  border: 2px solid #3C5B6B;
+  border: 2px solid #3c5b6b;
   font-family: "Teko", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -890,7 +903,7 @@ aside,
 }
 
 .header-area04 .right-content .social-icon a {
-  border: 2px solid #3C5B6B;
+  border: 2px solid #3c5b6b;
   color: #fff;
   border-radius: 50%;
   height: 60px;
@@ -920,11 +933,11 @@ aside,
 }
 
 .header-area {
-  transition: padding .3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
 }
 
 .header-area .main-menu li a::before {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-area.sticky {
@@ -943,29 +956,29 @@ aside,
 }
 
 .header-area02 {
-  transition: padding .3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
 }
 
 .header-area02 .main-menu li a::before {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-area02.sticky {
   box-shadow: inherit;
-  background-color: #29303E;
+  background-color: #29303e;
 }
 
 .header-area03 {
-  transition: padding .3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
 }
 
 .header-area03 .main-menu li a::before {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-area03.sticky {
   box-shadow: inherit;
-  background-color: #1F99F4;
+  background-color: #1f99f4;
 }
 
 /*----------------------------------------*/
