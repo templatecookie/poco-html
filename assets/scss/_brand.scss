@@ -30,10 +30,18 @@
         padding: 60px 0px;
         border-radius: 10px;
         background-color: #fff;
-        ul {
-            li {
-                text-align: center;
+        .brand-slider-item {
+            .slick-track {
+                display: flex;
+                align-items: center;
+            }
+            div {
+                // text-align: center;
+                display: flex;
+                align-items: center;
+                margin: 0px 15px;
                 img {
+                    // margin: auto;
                     width: 120px;
                     filter: grayscale(100%);
                     cursor: pointer;

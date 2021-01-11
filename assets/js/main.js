@@ -44,6 +44,43 @@
             },
         ],
     });
+    // Homepage-02 // brand-slider
+    $('.brand-slider-item').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        autoplaySpeed: 1200,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '10px',
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
 
     //testimonial_slider
     $('.testimonial-slider').slick({
