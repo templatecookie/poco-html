@@ -108,7 +108,7 @@
                     font-size: 20px;
                     font-family: $gilroy-medium;
                     line-height: 30px;
-                    margin-bottom: 15px;
+                    margin-bottom: 18px;
 
                     img {
                         border: 1px solid #ff465e;
@@ -505,6 +505,26 @@
                 font-size: 18px;
                 line-height: 28px;
             }
+        }
+    }
+}
+
+@media (min-width: 420px) and (max-width: 480px) {
+    .aboutus02 {
+        &-image {
+            img {
+                height: auto !important;
+            }
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        .small-feature {
+            right: 55% !important;
+            bottom: 60% !important;
         }
     }
 }
