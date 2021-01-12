@@ -1815,7 +1815,7 @@ aside,
   font-size: 20px;
   font-family: "Gilroy-Medium";
   line-height: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .aboutus02-wrapper-list ul li img {
@@ -2149,6 +2149,22 @@ aside,
   }
 }
 
+@media (min-width: 420px) and (max-width: 480px) {
+  .aboutus02-image img {
+    height: auto !important;
+  }
+  .aboutus02-image::before {
+    display: none;
+  }
+  .aboutus02-image::after {
+    display: none;
+  }
+  .aboutus02 .small-feature {
+    right: 55% !important;
+    bottom: 60% !important;
+  }
+}
+
 /* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* common area start */
@@ -2479,7 +2495,14 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
-/* large devices 992 - 1169*/
+@media (max-width: 575px) {
+  .valuable-services {
+    border-top-right-radius: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+/* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* common area start */
   .special-services {
@@ -2591,6 +2614,58 @@ aside,
   max-width: 100%;
   font-family: "Gilroy-Medium";
   color: #65729e;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* Common Devices-Sizes */
+@media (max-width: 991px) {
+  .services-introduction .section-heading h2 {
+    line-height: 48px;
+    margin-bottom: 15px;
+  }
+  .services-introduction .section-heading p {
+    margin-top: 0px;
+  }
+  .services-introduction-text a {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .services-introduction-text {
+    margin-left: 0px;
+  }
+  .services-introduction .section-heading h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
 }
 
 /*----------------------------------------*/

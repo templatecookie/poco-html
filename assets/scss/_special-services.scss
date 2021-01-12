@@ -221,7 +221,14 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/* large devices 992 - 1169*/
+@media (max-width: 575px) {
+    .valuable-services {
+        border-top-right-radius: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+/* large devices 992 - 1199*/
 @media #{$lg} {
     /* common area start */
     .special-services {
