@@ -100,11 +100,17 @@
                 },
             },
             {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                 },
             },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //     },
+            // },
         ],
     });
     //Client review_slider

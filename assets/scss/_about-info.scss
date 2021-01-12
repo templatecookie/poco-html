@@ -188,7 +188,7 @@
             position: absolute;
             bottom: 30px;
             border: 5px solid $white;
-            right: 0;
+            left: 30px;
             width: 516px;
             height: 693px;
             border-radius: 101px;
@@ -197,7 +197,7 @@
         }
 
         &::before {
-            left: -35px;
+            left: -30px;
             content: '';
             position: absolute;
             top: 68px;
@@ -213,6 +213,10 @@
         position: absolute;
         bottom: 22%;
         left: 33%;
+    }
+    .aboutus02-wrapper {
+        max-width: 94%;
+        margin-left: 10px;
     }
 }
 
@@ -406,7 +410,47 @@
             right: -4px;
         }
     }
+
+    // Homepage-02 / Aboutus-introduction
+    .aboutus-introduction02 {
+        .aboutus-introduction02-image {
+            margin-left: 0px;
+            img {
+                width: 516px;
+                height: 686px;
+                border-radius: 101px;
+                border-top-left-radius: 0;
+                object-fit: cover;
+            }
+        }
+    }
 }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .aboutus-introduction02 {
+        .aboutus02-wrapper {
+            max-width: 100%;
+            margin-left: 130px;
+        }
+        .aboutus-introduction02-image {
+            &::before {
+                // z-index: 1;
+                top: -2px;
+                left: 20px;
+            }
+            &::after {
+                left: 0px;
+                bottom: 0px;
+                z-index: -999;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
 @media (min-width: 992px) and(max-width: 1024px) {
     // homepage-02
     // about us-02
@@ -414,6 +458,23 @@
         .small-feature {
             bottom: 26.1%;
             right: 40%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .aboutus-introduction02 {
+        .aboutus02-wrapper {
+            &-title {
+                h2 {
+                    line-height: 52px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        .small-feature {
+            bottom: 25%;
+            left: 42%;
         }
     }
 }
@@ -471,6 +532,28 @@
             &::after {
                 right: -1px;
             }
+        }
+    }
+
+    // Homepage-02 / aboutus-introduction02
+    .aboutus-introduction02 {
+        .aboutus-introduction02 {
+            &-image {
+                &::before {
+                    top: 32px !important;
+                    left: 0px;
+                    z-index: 1;
+                }
+                &::after {
+                    left: -5px !important;
+                    bottom: -2px !important;
+                    border-radius: 101px !important;
+                    width: 523px;
+                }
+            }
+        }
+        .small-feature {
+            left: 70%;
         }
     }
 }
@@ -578,6 +661,25 @@
             .mask1 {
                 bottom: -25px;
             }
+        }
+    }
+    // Homepage-02 / About-us-introduction-02
+    .aboutus-introduction02 {
+        &-image {
+            &::before {
+                z-index: 1 !important;
+                left: 65px !important;
+                top: 0px !important;
+                height: 690px !important;
+            }
+            &::after {
+                border-radius: 101px !important;
+                left: 30px !important;
+                bottom: -2px !important;
+            }
+        }
+        .small-feature {
+            left: 69%;
         }
     }
 }
