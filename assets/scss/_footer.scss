@@ -292,6 +292,39 @@
 
 /* Common Devices-Sizes */
 
+@media (max-width: 767px) {
+    .dark-footer {
+        .footer-area {
+            &-lists {
+                margin-bottom: 15px;
+            }
+            &-about {
+                margin-bottom: 0px;
+                p {
+                    max-width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .dark-footer {
+        padding-top: 15px;
+        border-top-right-radius: 0px;
+        .footer-area {
+            &-about {
+                margin-top: 15px;
+                p {
+                }
+            }
+            &-lists {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
 /* large devices 992 - 1199*/
 @media #{$lg} {
     // Globally Footer
