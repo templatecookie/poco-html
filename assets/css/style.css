@@ -2945,13 +2945,121 @@ aside,
 /*----------------------------------------*/
 .call-action-two {
   padding-top: 250px;
-  padding-bottom: 380px;
+  padding-bottom: 390px;
   background-color: #fff6f7;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-top-left-radius: 166px;
   position: relative;
+}
+
+.call-action-two-content h2 {
+  margin-top: 20px;
+}
+
+.call-action-two-content p {
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+.call-action-two-content a.t-btn {
+  margin-top: 35px;
+}
+
+.call-action-two_group {
+  position: absolute;
+}
+
+.call-action-two_group::after {
+  position: absolute;
+}
+
+.call-action-two_group.call-action_group-1 {
+  top: 240px;
+  left: 365px;
+}
+
+.call-action-two_group.call-action_group-1 span.comments {
+  left: 60px;
+}
+
+.call-action-two_group.call-action_group-1 span.comments::before {
+  left: 30px;
+}
+
+.call-action-two_group.call-action_group-1 span.comments::after {
+  left: 20px;
+}
+
+.call-action-two_group.call-action_group-2 {
+  top: 172px;
+  right: 472px;
+}
+
+.call-action-two_group.call-action_group-3 {
+  top: 525px;
+  right: 362px;
+}
+
+.call-action-two_group.call-action_group-4 {
+  top: 650px;
+  right: 700px;
+}
+
+.call-action-two_group.call-action_group-5 {
+  top: 555px;
+  right: 1153px;
+}
+
+.call-action-two_group span.comments {
+  position: absolute;
+  top: -30px;
+  max-width: 275px;
+  width: 275px;
+  text-align: center;
+  background-color: #fff;
+  color: #000560;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 10px 0px;
+  border-radius: 25px;
+  border-bottom-left-radius: 0px;
+}
+
+.call-action-two_group span.comments::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.call-action-two_group span.comments::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.call-action-two_group.call-action_group-2 span.comments, .call-action-two_group.call-action_group-3 span.comments, .call-action-two_group.call-action_group-4 span.comments, .call-action-two_group.call-action_group-5 span.comments {
+  left: -240px;
+  border-radius: 25px;
+  border-bottom-right-radius: 0px;
+}
+
+.call-action-two_group.call-action_group-2 span.comments::before, .call-action-two_group.call-action_group-3 span.comments::before, .call-action-two_group.call-action_group-4 span.comments::before, .call-action-two_group.call-action_group-5 span.comments::before {
+  right: 35px;
+}
+
+.call-action-two_group.call-action_group-2 span.comments::after, .call-action-two_group.call-action_group-3 span.comments::after, .call-action-two_group.call-action_group-4 span.comments::after, .call-action-two_group.call-action_group-5 span.comments::after {
+  right: 15px;
 }
 
 /*----------------------------------------*/
@@ -3059,30 +3167,77 @@ aside,
     max-width: 100%;
     height: auto;
   }
+  .call-action-two_group.call-action_group-1 {
+    top: 180px;
+    left: 120px;
+  }
+  .call-action-two_group.call-action_group-2 {
+    top: 235px;
+    right: 120px;
+  }
+  .call-action-two_group.call-action_group-3 {
+    top: 595px;
+    right: 220px;
+  }
+  .call-action-two_group.call-action_group-4 {
+    top: 715px;
+    right: 600px;
+  }
+  .call-action-two_group.call-action_group-5 {
+    top: 510px;
+    right: 810px;
+  }
 }
 
 @media (max-width: 991px) {
   .callto-action-image img {
     margin-left: 0px;
   }
+  .call-action-two_group.call-action_group-3 {
+    right: 75px;
+  }
+  .call-action-two_group.call-action_group-5 {
+    right: 625px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .callto-action {
     margin: 0px;
   }
   .callto-action-text {
     padding: 30px 10px;
   }
+  .call-action-two_group.call-action_group-1 {
+    top: 90px;
+    left: 55px;
+  }
+  .call-action-two_group.call-action_group-2 {
+    top: 170px;
+    right: 70px;
+  }
+  .call-action-two_group.call-action_group-3 {
+    top: 555px;
+    right: 145px;
+  }
+  .call-action-two_group.call-action_group-4 {
+    right: 400px;
+  }
+  .call-action-two_group.call-action_group-5 {
+    display: none;
+  }
 }
 
-/* large devices 992 - 1169*/
+/* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* common area start */
   .callto-action {
     margin: 0 30px;
     margin-top: 50px;
     padding: 20px 25px;
+  }
+  .call-action-two_group.call-action_group-5 {
+    right: 655px;
   }
 }
 
@@ -3105,21 +3260,58 @@ aside,
   .callto-action .callto-action-text p {
     max-width: 100%;
   }
+  .call-action-two_group.call-action_group-1 {
+    top: 85px;
+    left: 70px;
+  }
+  .call-action-two_group.call-action_group-2 {
+    top: 170px;
+    right: 35px;
+  }
+  .call-action-two_group.call-action_group-3 {
+    top: 545px;
+  }
+  .call-action-two_group.call-action_group-4 {
+    top: 755px;
+    right: 300px;
+  }
+  .call-action-two_group.call-action_group-5 {
+    top: 580px;
+    right: 410px;
+  }
 }
 
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   /* common area start */
+  .call-action-two_group.call-action_group-2 {
+    right: 15px;
+  }
+  .call-action-two_group.call-action_group-3 {
+    right: 200px;
+  }
+  .call-action-two_group.call-action_group-4 {
+    right: 30px;
+  }
 }
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   /* common area start */
+  .call-action-two_group.call-action_group-2, .call-action-two_group.call-action_group-3 {
+    display: none;
+  }
+  .call-action-two_group.call-action_group-4 {
+    right: 20px;
+  }
 }
 
 /* extra Small devices 420 */
 @media (max-width: 420px) {
   /* common area start */
+  .call-action-two_group.call-action_group-1, .call-action-two_group.call-action_group-2, .call-action-two_group.call-action_group-3, .call-action-two_group.call-actiong_group-4 {
+    display: none;
+  }
 }
 
 /*----------------------------------------*/
@@ -4738,6 +4930,31 @@ aside,
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* Common Devices-Sizes */
+@media (max-width: 767px) {
+  .dark-footer .footer-area-lists {
+    margin-bottom: 15px;
+  }
+  .dark-footer .footer-area-about {
+    margin-bottom: 0px;
+  }
+  .dark-footer .footer-area-about p {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .dark-footer {
+    padding-top: 15px;
+    border-top-right-radius: 0px;
+  }
+  .dark-footer .footer-area-about {
+    margin-top: 15px;
+  }
+  .dark-footer .footer-area-lists {
+    margin-bottom: 15px;
+  }
+}
+
 /* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .footer-area {

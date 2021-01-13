@@ -58,13 +58,120 @@
 /*----------------------------------------*/
 .call-action-two {
     padding-top: 250px;
-    padding-bottom: 380px;
+    padding-bottom: 390px;
     background-color: rgba(255, 246, 247, 1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-top-left-radius: 166px;
     position: relative;
+    &-content {
+        h2 {
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+            margin-top: -5px;
+        }
+        a.t-btn {
+            margin-top: 35px;
+        }
+    }
+    // Comments Group
+    &_group {
+        position: absolute;
+
+        &::after {
+            position: absolute;
+        }
+
+        &.call-action_group-1 {
+            top: 240px;
+            left: 365px;
+            span.comments {
+                left: 60px;
+                &::before {
+                    left: 30px;
+                }
+                &::after {
+                    left: 20px;
+                }
+            }
+        }
+
+        &.call-action_group-2 {
+            top: 172px;
+            right: 472px;
+        }
+
+        &.call-action_group-3 {
+            top: 525px;
+            right: 362px;
+        }
+
+        &.call-action_group-4 {
+            top: 650px;
+            right: 700px;
+        }
+
+        &.call-action_group-5 {
+            top: 555px;
+            right: 1153px;
+        }
+
+        // comments span
+        span.comments {
+            position: absolute;
+            top: -30px;
+            max-width: 275px;
+            width: 275px;
+            text-align: center;
+            background-color: #fff;
+            color: #000560;
+            font-size: 16px;
+            line-height: 21px;
+            padding: 10px 0px;
+            border-radius: 25px;
+            border-bottom-left-radius: 0px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 30px;
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50px;
+                right: 0px;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+        }
+
+        // border-radius
+        &.call-action_group-2,
+        &.call-action_group-3,
+        &.call-action_group-4,
+        &.call-action_group-5 {
+            span.comments {
+                left: -240px;
+                border-radius: 25px;
+                border-bottom-right-radius: 0px;
+                &::before {
+                    right: 35px;
+                }
+                &::after {
+                    right: 15px;
+                }
+            }
+        }
+    }
 }
 
 /*----------------------------------------*/
@@ -186,6 +293,31 @@
             }
         }
     }
+    // Homepage 02 / Callaction-02
+    .call-action-two {
+        &_group {
+            &.call-action_group-1 {
+                top: 180px;
+                left: 120px;
+            }
+            &.call-action_group-2 {
+                top: 235px;
+                right: 120px;
+            }
+            &.call-action_group-3 {
+                top: 595px;
+                right: 220px;
+            }
+            &.call-action_group-4 {
+                top: 715px;
+                right: 600px;
+            }
+            &.call-action_group-5 {
+                top: 510px;
+                right: 810px;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -196,24 +328,66 @@
             }
         }
     }
+    // HOmepage -02 / Callaction -02
+    .call-action-two {
+        &_group {
+            &.call-action_group-3 {
+                right: 75px;
+            }
+            &.call-action_group-5 {
+                right: 625px;
+            }
+        }
+    }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .callto-action {
         margin: 0px;
         &-text {
             padding: 30px 10px;
         }
     }
+    // Homepage -02 / Callaction -02
+    .call-action-two {
+        &_group {
+            &.call-action_group-1 {
+                top: 90px;
+                left: 55px;
+            }
+            &.call-action_group-2 {
+                top: 170px;
+                right: 70px;
+            }
+            &.call-action_group-3 {
+                top: 555px;
+                right: 145px;
+            }
+            &.call-action_group-4 {
+                right: 400px;
+            }
+            &.call-action_group-5 {
+                display: none;
+            }
+        }
+    }
 }
 
-/* large devices 992 - 1169*/
+/* large devices 992 - 1199*/
 @media #{$lg} {
     /* common area start */
     .callto-action {
         margin: 0 30px;
         margin-top: 50px;
         padding: 20px 25px;
+    }
+    // Homepage-02 / Callaction -02
+    .call-action-two {
+        &_group {
+            &.call-action_group-5 {
+                right: 655px;
+            }
+        }
     }
 }
 
@@ -236,18 +410,82 @@
             }
         }
     }
+    // Homepage -02 / callaction -02
+    .call-action-two {
+        &_group {
+            &.call-action_group-1 {
+                top: 85px;
+                left: 70px;
+            }
+            &.call-action_group-2 {
+                top: 170px;
+                right: 35px;
+            }
+            &.call-action_group-3 {
+                top: 545px;
+            }
+            &.call-action_group-4 {
+                top: 755px;
+                right: 300px;
+            }
+            &.call-action_group-5 {
+                top: 580px;
+                right: 410px;
+            }
+        }
+    }
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
     /* common area start */
+    // Homepage -02 / callaction -02
+    .call-action-two {
+        &_group {
+            &.call-action_group-2 {
+                right: 15px;
+            }
+            &.call-action_group-3 {
+                right: 200px;
+            }
+            &.call-action_group-4 {
+                right: 30px;
+            }
+        }
+    }
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
     /* common area start */
+    // Homepage -02 / callaction -02
+    .call-action-two {
+        &_group {
+            &.call-action_group-2,
+            &.call-action_group-3 {
+                display: none;
+            }
+            &.call-action_group-4 {
+                right: 20px;
+            }
+            // &.call-action_group-4 {
+            //     right: 30px;
+            // }
+        }
+    }
 }
 /* extra Small devices 420 */
 @media #{$xsm} {
     /* common area start */
+    // Homepage -02 / callaction -02
+    .call-action-two {
+        &_group {
+            &.call-action_group-1,
+            &.call-action_group-2,
+            &.call-action_group-3,
+            &.call-actiong_group-4 {
+                display: none;
+            }
+        }
+    }
 }
