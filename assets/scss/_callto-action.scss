@@ -80,7 +80,7 @@
     // Comments Group
     &_group {
         position: absolute;
-
+        pointer-events: none;
         &::after {
             position: absolute;
         }

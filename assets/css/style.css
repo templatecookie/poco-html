@@ -2969,6 +2969,7 @@ aside,
 
 .call-action-two_group {
   position: absolute;
+  pointer-events: none;
 }
 
 .call-action-two_group::after {
