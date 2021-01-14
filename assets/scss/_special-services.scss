@@ -220,13 +220,18 @@
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
-
 @media (max-width: 575px) {
     .valuable-services {
         border-top-right-radius: 0px;
         margin-bottom: 0px;
+        &-item-text {
+            p {
+                max-width: 100%;
+            }
+        }
     }
 }
+
 @media (min-width: 320px) and (max-width: 419px) {
     .valuable-services {
         &-heading {
@@ -235,16 +240,10 @@
                 line-height: 48px;
             }
         }
-        &-item-text {
-            p {
-                max-width: 100%;
-            }
-        }
     }
 }
 /* large devices 992 - 1199*/
 @media #{$lg} {
-    /* common area start */
     .special-services {
         padding-bottom: 45px;
     }
@@ -252,7 +251,6 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
     .special-services {
         padding-bottom: 50px;
         .special-services-image {
@@ -273,14 +271,11 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    /* common area start */
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    /* common area start */
 }
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
 }
