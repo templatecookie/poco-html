@@ -1923,7 +1923,6 @@ aside,
 }
 
 .aboutus-introduction02 .aboutus-introduction02-image {
-  margin-left: -175px;
   position: relative;
 }
 
@@ -1963,12 +1962,13 @@ aside,
 .aboutus-introduction02 .introduction-feature {
   position: absolute;
   bottom: 22%;
-  left: 33%;
+  left: 39.5%;
 }
 
 .aboutus-introduction02 .aboutus02-wrapper {
   max-width: 94%;
   margin-left: 10px;
+  margin-left: 125px;
 }
 
 /*----------------------------------------*/
@@ -2146,12 +2146,15 @@ aside,
     border-top-left-radius: 0;
     object-fit: cover;
   }
+  .aboutus-introduction02 .introduction-feature {
+    left: 33.5%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .aboutus-introduction02 .aboutus02-wrapper {
     max-width: 100%;
-    margin-left: 130px;
+    margin-left: 110px;
   }
   .aboutus-introduction02 .aboutus-introduction02-image::before {
     top: -2px;
@@ -2258,6 +2261,9 @@ aside,
   }
   .aboutus02-image::after, .aboutus02-image::before {
     display: none;
+  }
+  .aboutus-introduction02 .aboutus02-wrapper {
+    margin-left: 0px;
   }
   .aboutus-introduction02-image {
     margin-left: 30px !important;

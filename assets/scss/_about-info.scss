@@ -172,7 +172,7 @@
     position: relative;
 
     .aboutus-introduction02-image {
-        margin-left: -175px;
+        // margin-left: 0p;
         position: relative;
 
         img {
@@ -212,11 +212,12 @@
     .introduction-feature {
         position: absolute;
         bottom: 22%;
-        left: 33%;
+        left: 39.5%;
     }
     .aboutus02-wrapper {
         max-width: 94%;
         margin-left: 10px;
+        margin-left: 125px;
     }
 }
 
@@ -423,6 +424,9 @@
                 object-fit: cover;
             }
         }
+        .introduction-feature {
+            left: 33.5%;
+        }
     }
 }
 
@@ -430,7 +434,7 @@
     .aboutus-introduction02 {
         .aboutus02-wrapper {
             max-width: 100%;
-            margin-left: 130px;
+            margin-left: 110px;
         }
         .aboutus-introduction02-image {
             &::before {
@@ -598,6 +602,9 @@
     }
     // Homepage-02 / aboutus-introduction
     .aboutus-introduction02 {
+        .aboutus02-wrapper {
+            margin-left: 0px;
+        }
         &-image {
             margin-left: 30px !important;
             &::before,
