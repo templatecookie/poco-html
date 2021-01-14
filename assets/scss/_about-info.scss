@@ -589,25 +589,39 @@
                 line-height: 28px;
             }
         }
-    }
-}
-
-@media (min-width: 420px) and (max-width: 480px) {
-    .aboutus02 {
         &-image {
-            img {
-                height: auto !important;
-            }
+            &::after,
             &::before {
                 display: none;
             }
+        }
+    }
+    // Homepage-02 / aboutus-introduction
+    .aboutus-introduction02 {
+        &-image {
+            margin-left: 30px !important;
+            &::before,
             &::after {
                 display: none;
             }
         }
         .small-feature {
-            right: 55% !important;
-            bottom: 60% !important;
+            left: 7%;
+        }
+    }
+}
+
+@media (min-width: 320px) and(max-width: 419px) {
+    // Homepage -02 / Aboutus -02
+    .aboutus02 {
+        .small-feature {
+            right: 90px;
+            bottom: 52%;
+        }
+    }
+    .aboutus-introduction02 {
+        .small-feature {
+            bottom: 54%;
         }
     }
 }
@@ -711,6 +725,13 @@
         .small-feature {
             right: 46%;
             bottom: 52%;
+        }
+    }
+
+    // Homepage-02 / aboutus-introduction
+    .aboutus-introduction02 {
+        .small-feature {
+            left: 10%;
         }
     }
 }

@@ -2256,21 +2256,27 @@ aside,
     font-size: 18px;
     line-height: 28px;
   }
+  .aboutus02-image::after, .aboutus02-image::before {
+    display: none;
+  }
+  .aboutus-introduction02-image {
+    margin-left: 30px !important;
+  }
+  .aboutus-introduction02-image::before, .aboutus-introduction02-image::after {
+    display: none;
+  }
+  .aboutus-introduction02 .small-feature {
+    left: 7%;
+  }
 }
 
-@media (min-width: 420px) and (max-width: 480px) {
-  .aboutus02-image img {
-    height: auto !important;
-  }
-  .aboutus02-image::before {
-    display: none;
-  }
-  .aboutus02-image::after {
-    display: none;
-  }
+@media (min-width: 320px) and (max-width: 419px) {
   .aboutus02 .small-feature {
-    right: 55% !important;
-    bottom: 60% !important;
+    right: 90px;
+    bottom: 52%;
+  }
+  .aboutus-introduction02 .small-feature {
+    bottom: 54%;
   }
 }
 
@@ -2355,6 +2361,9 @@ aside,
   .aboutus02 .small-feature {
     right: 46%;
     bottom: 52%;
+  }
+  .aboutus-introduction02 .small-feature {
+    left: 10%;
   }
 }
 
@@ -3493,6 +3502,7 @@ aside,
   margin: 0;
   border-radius: 0;
   padding-top: 140px;
+  overflow: hidden;
 }
 
 .testimonial02 .section-title {
