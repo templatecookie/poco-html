@@ -2634,6 +2634,16 @@ aside,
   }
 }
 
+@media (min-width: 320px) and (max-width: 419px) {
+  .valuable-services-heading h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .valuable-services-item-text p {
+    max-width: 100%;
+  }
+}
+
 /* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* common area start */
