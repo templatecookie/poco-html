@@ -85,6 +85,34 @@
             z-index: -99;
         }
     }
+
+    // breadcrumb-area
+    &.breadcrumb-area {
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+        .banner-wrapper {
+            margin-top: 15px;
+            padding-left: 65px;
+            p {
+                margin-top: 20px;
+                max-width: 80%;
+            }
+        }
+        .banner-image {
+            position: absolute;
+            bottom: -310px;
+            right: 210px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumb-wrapper {
+            position: absolute;
+            bottom: -220px;
+            left: 45px;
+        }
+    }
 }
 
 /*----------------------------------------*/
@@ -372,6 +400,19 @@
         .banner-button {
             justify-content: center;
         }
+        &.breadcrumb-area {
+            padding-top: 160px;
+            padding-bottom: 0px;
+            .banner-wrapper {
+                text-align: left;
+            }
+            .banner-image {
+                position: static;
+            }
+            .breadcrumb-wrapper {
+                bottom: -35px;
+            }
+        }
     }
     // banner - 02
     .banner-area02 {
@@ -548,6 +589,22 @@
             right: 165px;
         }
     }
+
+    .banner-area {
+        &.breadcrumb-area {
+            padding: 80px 0px;
+            .banner-wrapper {
+                padding-left: 0px;
+            }
+            .breadcrumb-wrapper {
+                left: 160px;
+                bottom: -85px !important;
+                .breadcrumb-item {
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 1750px) {
     .banner-area02 {
@@ -660,6 +717,11 @@
                 left: 80%;
             }
         }
+        &.breadcrumb-area {
+            .breadcrumb-wrapper {
+                bottom: -20px !important;
+            }
+        }
     }
     // Homepage -02 / Banner -02
     .banner-area02 {
@@ -697,6 +759,14 @@
                 left: 75%;
             }
         }
+        &.breadcrumb-area {
+            .banner-wrapper {
+                padding-left: 15px;
+            }
+            .breadcrumb-wrapper {
+                bottom: -20px !important;
+            }
+        }
     }
     // banner-02
     .banner-area02 {
@@ -723,7 +793,23 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    /* common area start */
+    .banner-area {
+        &.breadcrumb-area {
+            padding-top: 60px;
+            padding-bottom: 90px;
+            .banner-wrapper {
+                padding-left: 10px;
+            }
+            .breadcrumb-wrapper {
+                left: 210px;
+                bottom: -95px !important;
+                .breadcrumb-item {
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+
     .banner-area02 {
         .banner-wrapper {
             padding-top: 100px;

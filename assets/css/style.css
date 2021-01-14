@@ -1068,6 +1068,36 @@ aside,
   z-index: -99;
 }
 
+.banner-area.breadcrumb-area {
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.banner-area.breadcrumb-area .banner-wrapper {
+  margin-top: 15px;
+  padding-left: 65px;
+}
+
+.banner-area.breadcrumb-area .banner-wrapper p {
+  margin-top: 20px;
+  max-width: 80%;
+}
+
+.banner-area.breadcrumb-area .banner-image {
+  position: absolute;
+  bottom: -310px;
+  right: 210px;
+  padding: 0;
+  margin: 0;
+}
+
+.banner-area.breadcrumb-area .breadcrumb-wrapper {
+  position: absolute;
+  bottom: -220px;
+  left: 45px;
+}
+
 /*----------------------------------------*/
 /*  HOME PAGE 02
 /*----------------------------------------*/
@@ -1344,6 +1374,19 @@ aside,
   .banner-area .banner-button {
     justify-content: center;
   }
+  .banner-area.breadcrumb-area {
+    padding-top: 160px;
+    padding-bottom: 0px;
+  }
+  .banner-area.breadcrumb-area .banner-wrapper {
+    text-align: left;
+  }
+  .banner-area.breadcrumb-area .banner-image {
+    position: static;
+  }
+  .banner-area.breadcrumb-area .breadcrumb-wrapper {
+    bottom: -35px;
+  }
   .banner-area02 .banner-wrapper {
     padding-top: 0px;
   }
@@ -1492,6 +1535,19 @@ aside,
   .banner-area02 .small-feature02 {
     right: 165px;
   }
+  .banner-area.breadcrumb-area {
+    padding: 80px 0px;
+  }
+  .banner-area.breadcrumb-area .banner-wrapper {
+    padding-left: 0px;
+  }
+  .banner-area.breadcrumb-area .breadcrumb-wrapper {
+    left: 160px;
+    bottom: -85px !important;
+  }
+  .banner-area.breadcrumb-area .breadcrumb-wrapper .breadcrumb-item {
+    font-size: 18px !important;
+  }
 }
 
 @media (max-width: 1750px) {
@@ -1589,6 +1645,9 @@ aside,
   .banner-area .mask-group .mask3 {
     left: 80%;
   }
+  .banner-area.breadcrumb-area .breadcrumb-wrapper {
+    bottom: -20px !important;
+  }
   .banner-area02 .banner-image {
     margin-left: 0px;
     position: absolute;
@@ -1621,6 +1680,12 @@ aside,
   .banner-area .mask-group .mask3 {
     left: 75%;
   }
+  .banner-area.breadcrumb-area .banner-wrapper {
+    padding-left: 15px;
+  }
+  .banner-area.breadcrumb-area .breadcrumb-wrapper {
+    bottom: -20px !important;
+  }
   .banner-area02 {
     position: relative;
   }
@@ -1645,7 +1710,20 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
+  .banner-area.breadcrumb-area {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+  .banner-area.breadcrumb-area .banner-wrapper {
+    padding-left: 10px;
+  }
+  .banner-area.breadcrumb-area .breadcrumb-wrapper {
+    left: 210px;
+    bottom: -95px !important;
+  }
+  .banner-area.breadcrumb-area .breadcrumb-wrapper .breadcrumb-item {
+    font-size: 18px !important;
+  }
   .banner-area02 .banner-wrapper {
     padding-top: 100px;
   }
