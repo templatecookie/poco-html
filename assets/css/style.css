@@ -2248,8 +2248,8 @@ aside,
     bottom: -5px;
   }
   .aboutus02 .small-feature {
-    right: 60%;
-    bottom: 52%;
+    right: 65%;
+    bottom: 46%;
   }
   .aboutus02-wrapper-title h2 {
     font-size: 26px;
@@ -2259,6 +2259,9 @@ aside,
     font-size: 18px;
     line-height: 28px;
   }
+  .aboutus02-image {
+    margin-left: 0px;
+  }
   .aboutus02-image::after, .aboutus02-image::before {
     display: none;
   }
@@ -2266,23 +2269,24 @@ aside,
     margin-left: 0px;
   }
   .aboutus-introduction02-image {
-    margin-left: 30px !important;
+    margin-left: 0px !important;
   }
   .aboutus-introduction02-image::before, .aboutus-introduction02-image::after {
     display: none;
   }
   .aboutus-introduction02 .small-feature {
-    left: 7%;
+    left: 2%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
   .aboutus02 .small-feature {
-    right: 90px;
+    right: 65px;
     bottom: 52%;
   }
   .aboutus-introduction02 .small-feature {
-    bottom: 54%;
+    bottom: 52%;
+    left: 65px;
   }
   .aboutus-introduction02 .aboutus02-wrapper-title h2 {
     line-height: 38px !important;
@@ -2368,11 +2372,12 @@ aside,
     right: 2px;
   }
   .aboutus02 .small-feature {
-    right: 46%;
-    bottom: 52%;
+    right: 52%;
+    bottom: 48%;
   }
   .aboutus-introduction02 .small-feature {
-    left: 10%;
+    left: 3%;
+    bottom: 49%;
   }
 }
 
