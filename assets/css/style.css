@@ -3300,9 +3300,49 @@ aside,
   }
 }
 
+@media (max-width: 575px) {
+  .call-action-two {
+    border-top-left-radius: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  .call-action-two {
+    border-top-left-radius: 0px;
+    padding-bottom: 250px;
+  }
+  .call-action-two-content h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .call-action-two-content p {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .call-action-two_group img {
+    max-width: 80px;
+  }
+  .call-action-two_group span.comments {
+    width: 210px;
+    font-size: 12px;
+  }
+  .call-action-two_group.call-action_group-1 {
+    left: 10px;
+  }
+  .call-action-two_group.call-action_group-1 span.comments {
+    left: 42px;
+  }
+  .call-action-two_group.call-action_group-3 {
+    top: 640px;
+    right: 40px;
+  }
+  .call-action-two_group.call-action_group-3 span.comments {
+    left: -175px;
+  }
+}
+
 /* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* common area start */
   .callto-action {
     margin: 0 30px;
     margin-top: 50px;
@@ -3355,7 +3395,6 @@ aside,
 
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
-  /* common area start */
   .call-action-two_group.call-action_group-2 {
     right: 15px;
   }
@@ -3369,9 +3408,12 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
-  .call-action-two_group.call-action_group-2, .call-action-two_group.call-action_group-3 {
+  .call-action-two_group.call-action_group-2, .call-action-two_group.call-action_group-4 {
     display: none;
+  }
+  .call-action-two_group.call-action_group-3 {
+    top: 765px;
+    right: 60px;
   }
   .call-action-two_group.call-action_group-4 {
     right: 20px;
@@ -3380,8 +3422,7 @@ aside,
 
 /* extra Small devices 420 */
 @media (max-width: 420px) {
-  /* common area start */
-  .call-action-two_group.call-action_group-1, .call-action-two_group.call-action_group-2, .call-action-two_group.call-action_group-3, .call-action-two_group.call-actiong_group-4 {
+  .call-action-two_group.call-action_group-2, .call-action-two_group.call-action_group-4 {
     display: none;
   }
 }
