@@ -2278,6 +2278,9 @@ aside,
   .aboutus-introduction02 .small-feature {
     bottom: 54%;
   }
+  .aboutus-introduction02 .aboutus02-wrapper-title h2 {
+    line-height: 38px !important;
+  }
 }
 
 /* large devices 992 - 1199*/
