@@ -50,7 +50,7 @@
         slidesToShow: 5,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 1200,
         responsive: [
             {
@@ -69,6 +69,7 @@
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1,
                 },
             },
             {
