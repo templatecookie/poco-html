@@ -124,6 +124,7 @@
     margin: 0;
     border-radius: 0;
     padding-top: 140px;
+    overflow: hidden;
     .section-title {
         margin-bottom: 50px;
     }
@@ -582,6 +583,8 @@
                     left: -30px;
                 }
             }
+        }
+        .testimonial-wrapper {
         }
     }
 }
