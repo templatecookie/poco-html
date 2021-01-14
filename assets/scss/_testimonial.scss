@@ -399,7 +399,51 @@
         }
     }
 }
-
+@media (min-width: 320px) and (max-width: 419px) {
+    .testimonial02 {
+        .section-title {
+            h2 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+        .testimonial-wrapper {
+            .slider-arrows {
+                position: static;
+                margin-bottom: 30px;
+            }
+        }
+        .testimonial-slider {
+            .testimonial-item {
+                padding: 20px !important;
+            }
+        }
+        .slider-arrows {
+            .prev-arrow,
+            .next-arrow {
+                width: 38px;
+                height: 38px;
+                svg {
+                    width: 18px;
+                }
+            }
+        }
+        .project-info {
+            h4 {
+                font-size: 18px;
+                line-height: 28px;
+                margin-right: 25px;
+                padding-left: 0px;
+                &::before {
+                    width: 15px;
+                    height: 2px;
+                }
+                span {
+                }
+            }
+        }
+    }
+}
 /* large devices 992 - 1199*/
 @media #{$lg} {
     // Globally Testimonial
