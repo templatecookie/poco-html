@@ -2520,8 +2520,12 @@ aside,
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 #circleBar {
-  margin-top: 60px;
+  margin-top: 45px;
   text-align: center;
+}
+
+#circleBar .section-title {
+  margin-bottom: 35px;
 }
 
 #circleBar .section-title h2 {
@@ -2555,7 +2559,7 @@ aside,
   line-height: 45px;
   color: #fff;
   font-weight: 600 !important;
-  font-family: "Teko", sans-serif;
+  font-family: 'Teko', sans-serif;
   transform: translate(-50%, -50%);
   text-align: center;
   margin-top: -30px;
