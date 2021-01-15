@@ -921,6 +921,18 @@ aside,
   border-color: #ff465e;
 }
 
+.header-area04.sticky .right-content .social-icon a {
+  background-color: #65729e;
+}
+
+.header-area04.sticky .hamburger-menu span {
+  background-color: #3c5b6b;
+}
+
+.header-area04 .hamburger-menu span {
+  background-color: #fff;
+}
+
 @media (max-width: 1200px) {
   aside,
   .hamburger-menu {
@@ -1300,6 +1312,7 @@ aside,
   margin: 0;
   border-radius: 0;
   z-index: 9;
+  padding-top: 130px;
 }
 
 .banner-area04 .banner-wrapper .banner-title span {
@@ -1318,7 +1331,7 @@ aside,
   line-height: 135px;
   font-weight: 600;
   color: white;
-  margin-top: 20px;
+  margin-top: 45px;
 }
 
 .banner-area04 .banner-wrapper p {
@@ -1326,13 +1339,12 @@ aside,
   font-family: "Teko", sans-serif;
   line-height: 42px;
   font-weight: 500;
-  max-width: 70%;
   color: #9dadb7;
   margin: 0;
 }
 
 .banner-area04 .banner-wrapper .banner-button {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .banner-area04 .banner-wrapper .banner-button .t-btn {
@@ -1344,7 +1356,7 @@ aside,
 
 .banner-area04 .banner-image {
   padding-top: 185px;
-  padding-bottom: 130px;
+  padding-bottom: 90px;
 }
 
 .banner-area04 .mask-page-04 img {
@@ -1433,6 +1445,13 @@ aside,
   }
   .banner-area02 .small-feature02 {
     right: 39%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-area04 .banner-wrapper .banner-title h1 {
+    font-size: 102px;
+    line-height: 112px;
   }
 }
 
@@ -1547,6 +1566,14 @@ aside,
   }
   .banner-area.breadcrumb-area .breadcrumb-wrapper .breadcrumb-item {
     font-size: 18px !important;
+  }
+  .banner-area04 .banner-wrapper .banner-title h1 {
+    font-size: 68px;
+    line-height: 78px;
+  }
+  .banner-area04 .banner-wrapper p {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 

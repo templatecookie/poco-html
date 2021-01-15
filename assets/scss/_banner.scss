@@ -319,7 +319,7 @@
     margin: 0;
     border-radius: 0;
     z-index: 9;
-
+    padding-top: 130px;
     .banner-wrapper {
         .banner-title {
             span {
@@ -338,7 +338,7 @@
                 line-height: 135px;
                 font-weight: 600;
                 color: white;
-                margin-top: 20px;
+                margin-top: 45px;
             }
         }
 
@@ -347,13 +347,12 @@
             font-family: $teko;
             line-height: 42px;
             font-weight: 500;
-            max-width: 70%;
             color: #9dadb7;
             margin: 0;
         }
 
         .banner-button {
-            margin-top: 20px;
+            margin-top: 30px;
 
             .t-btn {
                 border-radius: 0;
@@ -366,7 +365,7 @@
 
     .banner-image {
         padding-top: 185px;
-        padding-bottom: 130px;
+        padding-bottom: 90px;
     }
 
     .mask-page-04 {
@@ -468,6 +467,18 @@
         }
         .small-feature02 {
             right: 39%;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .banner-area04 {
+        .banner-wrapper {
+            .banner-title {
+                h1 {
+                    font-size: 102px;
+                    line-height: 112px;
+                }
+            }
         }
     }
 }
@@ -602,6 +613,21 @@
                 .breadcrumb-item {
                     font-size: 18px !important;
                 }
+            }
+        }
+    }
+
+    .banner-area04 {
+        .banner-wrapper {
+            .banner-title {
+                h1 {
+                    font-size: 68px;
+                    line-height: 78px;
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 28px;
             }
         }
     }
