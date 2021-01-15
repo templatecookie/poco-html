@@ -5836,8 +5836,7 @@ aside,
 }
 
 .profession-area {
-  padding-top: 100px;
-  padding-bottom: 130px;
+  padding: 175px 0px;
 }
 
 .profession-area .profession-img {
@@ -5848,7 +5847,11 @@ aside,
 .profession-area .profession-img .small-feature {
   position: absolute;
   bottom: -10%;
-  left: -11%;
+  left: -125px;
+}
+
+.profession-area .profession-wrapper {
+  margin-left: 30px;
 }
 
 .profession-area .profession-wrapper .profession-tittle {
@@ -5856,11 +5859,93 @@ aside,
 }
 
 .profession-area .profession-wrapper .profession-tittle h2 {
-  margin-bottom: 30PX;
+  margin-bottom: 30px;
 }
 
 .profession-area .profession-wrapper .profession-tittle p {
   font-size: 18px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START
+/*----------------------------------------*/
+/*Common Devices - Sizes */
+@media (max-width: 1200px) {
+  .profession-area .profession-img .small-feature {
+    left: 0px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .profession-area .profession-img .small-feature {
+    bottom: -35%;
+  }
+}
+
+@media (max-width: 991px) {
+  .profession-area .profession-wrapper,
+  .profession-area .profession-img {
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .profession-area .profession-img .small-feature {
+    width: 180px;
+    height: 130px;
+    padding: 25px;
+  }
+  .profession-area .profession-img .small-feature .small-feature-percentage {
+    margin-bottom: 10px !important;
+  }
+  .profession-area .profession-img .small-feature .small-feature-percentage h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .profession-area .profession-img .small-feature .small-feature-text p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .profession-area .profession-wrapper .profession-tittle h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  .profession-wrapper .profession-tittle h2 {
+    font-size: 28px !important;
+    line-height: 48px;
+  }
+}
+
+/* large devices 992 - 1199*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+  .profession-area .profession-wrapper .profession-tittle h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
 }
 
 .project-wrapper-image {
