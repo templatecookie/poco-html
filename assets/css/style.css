@@ -4469,19 +4469,19 @@ aside,
 /*  Team Member Page (Inner Page)
 /*----------------------------------------*/
 .our-teams-member:hover .member-info {
-  background-color: #FF465E;
+  background-color: #ff465e;
 }
 
 .our-teams-member:hover .member-info .name h5 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .our-teams-member:hover .member-info .name p {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .our-teams-member:hover .member-info .social-links a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .our-teams-member .image {
@@ -4494,14 +4494,14 @@ aside,
 
 .our-teams-member .member-info {
   position: absolute;
-  bottom: -5%;
+  bottom: 25px;
   left: 0;
   right: 0;
   transition: 0.3s all linear;
   border-radius: 6px;
   margin: 0px 30px 0px 30px;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .our-teams-member .member-info .name h5 {
@@ -4513,7 +4513,7 @@ aside,
 }
 
 .our-teams-member .member-info .social-links a {
-  color: #65729E;
+  color: #65729e;
   font-size: 16px;
   transition: 0.3s all linear;
 }
@@ -4523,10 +4523,10 @@ aside,
 }
 
 .teams-modifi {
-  background-color: #FFF5F7;
+  background-color: #fff5f7;
   margin: 0 45px;
   padding-top: 130px;
-  padding-bottom: 160px;
+  padding-bottom: 75px;
   border-radius: 24px;
   position: relative;
   z-index: -5;
@@ -4551,7 +4551,7 @@ aside,
 /*  HOMEPAGE 03
 /*----------------------------------------*/
 .our-team {
-  background-color: #FFFAF5;
+  background-color: #fffaf5;
 }
 
 .our-team-member-info .top-information p {
@@ -4571,13 +4571,38 @@ aside,
 }
 
 .our-team-member-info .bottom-information a:hover {
-  color: #ED880A;
+  color: #ed880a;
 }
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
-/* large devices 992 - 1169*/
+/* common devices - Sizes */
+@media (max-width: 767px) {
+  .our-teams .mask-group .mask01 {
+    top: -45px;
+  }
+  .our-teams .mask-group .mask02 {
+    top: -2px;
+  }
+}
+
+@media (max-width: 575px) {
+  .teams-modifi {
+    margin: 0px;
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  .our-teams-member .member-info {
+    position: relative;
+    width: 290px;
+    margin: auto;
+  }
+}
+
+/* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .our-teams {
     padding-top: 100px !important;
@@ -4637,6 +4662,10 @@ aside,
   .our-teams .all-member .member-info .name p {
     font-size: 14px !important;
   }
+  .our-teams-member .member-info {
+    position: relative;
+    margin: 0px 40px;
+  }
 }
 
 /* Small devices 420 - 574 */
@@ -4644,6 +4673,12 @@ aside,
   .our-teams {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
+  }
+  .our-teams .section-title {
+    margin-top: 60px;
+  }
+  .our-teams .section-title h2 {
+    font-size: 38px;
   }
   .our-teams .our-teams-member .image {
     text-align: center !important;
@@ -4661,6 +4696,10 @@ aside,
   .our-teams .all-member .member-info .name p {
     font-size: 14px !important;
   }
+  .our-teams-member .member-info {
+    position: relative;
+    margin: 0px 0px;
+  }
 }
 
 /* extra Small devices 420 */
@@ -4668,6 +4707,13 @@ aside,
   .our-teams {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
+  }
+  .our-teams .section-title {
+    margin-top: 60px;
+  }
+  .our-teams .section-title h2 {
+    font-size: 32px;
+    line-height: 42px;
   }
   .our-teams .our-teams-member .image {
     text-align: center !important;
