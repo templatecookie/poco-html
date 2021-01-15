@@ -6319,6 +6319,10 @@ aside,
   left: 25px;
 }
 
+.blog-area {
+  padding-top: 35px;
+}
+
 .blog-area .article-item {
   margin-bottom: 55px;
 }
@@ -6352,13 +6356,13 @@ aside,
 }
 
 .blog-area .article-item .article-info .author a:hover {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .article-item .article-info .date span {
   font-size: 16px;
   font-family: "Gilroy-Medium";
-  color: #65729E;
+  color: #65729e;
 }
 
 .blog-area .article-item .article-info .date .icon {
@@ -6367,18 +6371,18 @@ aside,
 
 .blog-area .article-item .article-info .date .icon i {
   margin-right: 8px;
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .article-item .article-info .comments span a {
   font-size: 16px;
   font-family: "Gilroy-Medium";
-  color: #65729E;
+  color: #65729e;
   transition: 0.3s all linear;
 }
 
 .blog-area .article-item .article-info .comments span a:hover {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .article-item .article-info .comments .icon {
@@ -6387,7 +6391,7 @@ aside,
 
 .blog-area .article-item .article-info .comments .icon i {
   margin-right: 8px;
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .article-item .article-thumb {
@@ -6404,7 +6408,7 @@ aside,
 }
 
 .blog-area .blog-quotes {
-  background-color: #FFF5F7;
+  background-color: #fff5f7;
   position: relative;
   z-index: 1;
 }
@@ -6416,7 +6420,7 @@ aside,
   left: 50%;
   transform: translateX(-50%);
   color: rgba(255, 210, 219, 0.5);
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   font-size: 150px;
   z-index: -1;
@@ -6426,7 +6430,7 @@ aside,
   text-align: center;
   max-width: 625px;
   font-size: 36px;
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .overlay-thumb-image {
@@ -6506,7 +6510,7 @@ aside,
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-  background-color: #FFF5F7;
+  background-color: #fff5f7;
   font-size: 24px;
   color: #000560;
   transition: 0.3s all linear;
@@ -6514,7 +6518,7 @@ aside,
 }
 
 .blog-area .pagination-area nav .pagination li a:hover {
-  background-color: #FF465E;
+  background-color: #ff465e;
   color: #ffffff;
 }
 
@@ -6523,21 +6527,21 @@ aside,
 }
 
 .blog-area .pagination-area nav .pagination li a i {
-  color: #FF465E;
+  color: #ff465e;
   transition: 0.3s all linear;
 }
 
 .blog-area .aside .search {
   max-width: 300px;
   padding: 20px;
-  border: 1px solid #DEE3FF;
+  border: 1px solid #dee3ff;
   border-radius: 8px;
 }
 
 .blog-area .aside .search form input {
   border-radius: 0px;
   border: none;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #dddddd;
   padding-left: 0;
 }
 
@@ -6546,7 +6550,7 @@ aside,
 }
 
 .blog-area .aside .search form ::placeholder {
-  color: #65729E;
+  color: #65729e;
   font-size: 16px;
   font-family: "Gilroy-Medium";
 }
@@ -6558,13 +6562,13 @@ aside,
 
 .blog-area .aside .search .input-text h6 {
   font-size: 16px;
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .aside .recent-post {
   max-width: 300px;
   padding: 20px;
-  border: 1px solid #DEE3FF;
+  border: 1px solid #dee3ff;
   border-radius: 8px;
 }
 
@@ -6573,7 +6577,7 @@ aside,
 }
 
 .blog-area .aside .recent-post-item {
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #dddddd;
   padding-bottom: 15px;
   margin-bottom: 25px;
 }
@@ -6603,13 +6607,13 @@ aside,
 }
 
 .blog-area .aside .recent-post-text .post-text-bottom span {
-  color: #65729E;
+  color: #65729e;
   font-size: 14px;
   font-size: "Gilroy-Regular";
 }
 
 .blog-area .aside .recent-post-text .post-text-bottom span a {
-  color: #FF465E;
+  color: #ff465e;
   margin-right: 4px;
   font-size: "Gilroy-Regular" !important;
 }
@@ -6617,7 +6621,7 @@ aside,
 .blog-area .aside .blog-catagories {
   max-width: 300px;
   padding: 20px;
-  border: 1px solid #DEE3FF;
+  border: 1px solid #dee3ff;
   border-radius: 8px;
 }
 
@@ -6626,31 +6630,31 @@ aside,
 }
 
 .blog-area .aside .blog-catagories-item ul .active {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .aside .blog-catagories-item ul li {
-  color: #65729E;
+  color: #65729e;
   font-size: 16px;
   font-family: "Gilroy-Medium";
   margin-bottom: 5px;
 }
 
 .blog-area .aside .blog-catagories-item ul li a {
-  color: #65729E;
+  color: #65729e;
   font-size: 16px;
   font-family: "Gilroy-Medium";
   transition: 0.3s all linear;
 }
 
 .blog-area .aside .blog-catagories-item ul li a:hover {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .aside .archive-posts {
   max-width: 300px;
   padding: 20px;
-  border: 1px solid #DEE3FF;
+  border: 1px solid #dee3ff;
   border-radius: 8px;
 }
 
@@ -6665,23 +6669,23 @@ aside,
 .blog-area .aside .archive-posts-item ul li a {
   font-size: 16px;
   font-family: "Gilroy-Medium";
-  color: #65729E;
+  color: #65729e;
   transition: 0.3s all linear;
 }
 
 .blog-area .aside .archive-posts-item ul li a:hover {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .aside .archive-posts-item ul li a i {
   margin-right: 8px;
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .aside .blog-gallery {
   max-width: 300px;
   padding: 20px;
-  border: 1px solid #DEE3FF;
+  border: 1px solid #dee3ff;
   border-radius: 8px;
 }
 
@@ -6704,7 +6708,7 @@ aside,
 .blog-area .aside .blog-meta {
   max-width: 300px;
   padding: 20px;
-  border: 1px solid #DEE3FF;
+  border: 1px solid #dee3ff;
   border-radius: 8px;
 }
 
@@ -6717,20 +6721,20 @@ aside,
 }
 
 .blog-area .aside .blog-meta-item ul li a {
-  color: #65729E;
+  color: #65729e;
   font-size: 16px;
   font-family: "Gilroy-Medium";
   transition: 0.3s all linear;
 }
 
 .blog-area .aside .blog-meta-item ul li a:hover {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-area .aside .aside-item-heading {
   position: relative;
   margin-bottom: 15px;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #dddddd;
 }
 
 .blog-area .aside .aside-item-heading::after {
@@ -6738,7 +6742,7 @@ aside,
   content: '';
   bottom: -3px;
   left: 0;
-  background-color: #FF465E;
+  background-color: #ff465e;
   width: 35px;
   height: 3px;
 }
@@ -6754,19 +6758,19 @@ aside,
 }
 
 .blog-details .article-item .article-info .author i {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-details .article-item .article-info .author span {
   margin-left: 5px;
-  color: #65729E;
+  color: #65729e;
   font-family: "Gilroy-Medium" !important;
 }
 
 .blog-details .article-item .article-info .author span a {
   font-family: "Gilroy-Medium" !important;
   font-size: 16px !important;
-  color: #FF465E !important;
+  color: #ff465e !important;
   margin-left: 0 !important;
 }
 
@@ -6797,17 +6801,17 @@ aside,
 .blog-details .article-item .article-tags-left a {
   font-size: 14px;
   font-family: "Gilroy-Medium";
-  color: #65729E;
+  color: #65729e;
   transition: 0.3s all linear;
 }
 
 .blog-details .article-item .article-tags-left a:hover {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-details .article-item .article-tags-left .active {
   margin-left: 3px;
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-details .article-item .article-tags-right .share-article {
@@ -6817,23 +6821,23 @@ aside,
 }
 
 .blog-details .article-item .article-tags-right .active {
-  color: #FF465E;
+  color: #ff465e;
   margin-left: 5px;
 }
 
 .blog-details .article-item .article-tags-right a {
   font-size: 14px;
-  color: #CACACA;
+  color: #cacaca;
   margin-right: 3px;
   transition: 0.3s all linear;
 }
 
 .blog-details .article-item .article-tags-right a:hover {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-details .article-item .author-details {
-  background-color: #FFF5F7;
+  background-color: #fff5f7;
   padding: 30px;
   border-radius: 8px;
   display: flex;
@@ -6851,7 +6855,7 @@ aside,
   max-width: 100px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid #BBBBBB;
+  border: 1px solid #bbbbbb;
 }
 
 .blog-details .article-item .author-details-info h6 {
@@ -6859,7 +6863,7 @@ aside,
 }
 
 .blog-details .article-item .author-details-info span {
-  color: #65729E;
+  color: #65729e;
   font-size: 16px;
   font-family: "Gilroy-Medium";
 }
@@ -6898,14 +6902,14 @@ aside,
 
 .blog-details .article-item .comments-section-area-comment .commenter .commenter-info span {
   font-size: 16px;
-  color: #65729E;
+  color: #65729e;
   font-family: "Gilroy-Medium";
 }
 
 .blog-details .article-item .comments-section-area-comment .commenter .replay a {
   font-size: 16px;
   font-family: "Gilroy-Medium";
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-details .article-item .comments-section-area-comment .commenter .replay a i {
@@ -6917,32 +6921,32 @@ aside,
 }
 
 .blog-details .article-item .write-comment-area form input {
-  background-color: #F9F9FF;
-  border: 1px solid #DDDDDD;
+  background-color: #f9f9ff;
+  border: 1px solid #dddddd;
 }
 
 .blog-details .article-item .write-comment-area form input:focus::-webkit-input-placeholder {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-details .article-item .write-comment-area form input:focus {
   box-shadow: none;
-  border-color: #FF465E;
+  border-color: #ff465e;
 }
 
 .blog-details .article-item .write-comment-area form textarea {
-  background-color: #F9F9FF;
-  border: 1px solid #DDDDDD;
+  background-color: #f9f9ff;
+  border: 1px solid #dddddd;
   resize: none;
 }
 
 .blog-details .article-item .write-comment-area form textarea:focus::-webkit-input-placeholder {
-  color: #FF465E;
+  color: #ff465e;
 }
 
 .blog-details .article-item .write-comment-area form textarea:focus {
   box-shadow: none;
-  border-color: #FF465E;
+  border-color: #ff465e;
 }
 
 .blog-details .article-item .write-comment-area form button {
@@ -6950,7 +6954,7 @@ aside,
 }
 
 .blog-details .article-item .write-comment-area form ::placeholder {
-  color: #69798D;
+  color: #69798d;
   font-size: 16px;
   font-family: "Gilroy-Medium";
 }
@@ -6958,7 +6962,7 @@ aside,
 .blog-details-quotes {
   padding: 30px;
   padding-bottom: 50px;
-  background-color: #FF465E;
+  background-color: #ff465e;
   border-radius: 10px;
   position: relative;
 }
@@ -6969,16 +6973,16 @@ aside,
   bottom: 18%;
   left: 67%;
   transform: rotate(180deg) scale(-1, 1);
-  color: #FF465E;
-  font-family: "Font Awesome 5 Free";
+  color: #ff465e;
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   font-size: 30px;
-  -webkit-text-stroke: 2px #FFFFFF;
+  -webkit-text-stroke: 2px #ffffff;
 }
 
 .blog-details-quotes p {
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Gilroy-Medium";
   font-size: 18px;
 }
@@ -6997,7 +7001,29 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
-/* large devices 992 - 1169*/
+@media (max-width: 575px) {
+  .blog-area .blog-quotes h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .blog-area .overlay-thumb .overlay-playbutton .popup-video {
+    width: 45px;
+    height: 45px;
+  }
+  .blog-area .article-item h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .blog-area .article-item .article-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blog-area .article-item .article-info > div {
+    margin-bottom: 5px;
+  }
+}
+
+/* large devices 992 - 1199*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .blog-details .article-item h3 {
     font-size: 36px;
@@ -7085,4 +7111,12 @@ aside,
 /* extra Small devices 420 */
 @media (max-width: 420px) {
   /* common area start */
+  .blog-area .pagination-area nav .pagination {
+    justify-content: center;
+  }
+  .blog-area .pagination-area nav .pagination li a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
 }
