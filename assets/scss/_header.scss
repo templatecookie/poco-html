@@ -409,7 +409,6 @@ aside,
     width: 100%;
     left: 0;
     z-index: 9999;
-
     .main-menu {
         padding-left: 105px;
 
@@ -460,6 +459,25 @@ aside,
                     border-color: $tertiary;
                 }
             }
+        }
+    }
+    &.sticky {
+        .right-content {
+            .social-icon {
+                a {
+                    background-color: #65729e;
+                }
+            }
+        }
+        .hamburger-menu {
+            span {
+                background-color: #3c5b6b;
+            }
+        }
+    }
+    .hamburger-menu {
+        span {
+            background-color: #fff;
         }
     }
 }
