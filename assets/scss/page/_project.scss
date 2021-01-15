@@ -56,6 +56,7 @@
 }
 
 .project-detail {
+    padding-top: 35px;
     .overview-image {
         img {
             border-radius: 5px;
@@ -91,12 +92,12 @@
     }
 
     .project-detail-content {
-        margin-top: 50px;
+        margin-top: 58px;
 
         h2 {
             font-size: 40px;
             line-height: 49px;
-            margin-bottom: 15px;
+            margin-bottom: 35px;
         }
 
         p {
@@ -106,7 +107,7 @@
     }
 
     .project-next-prev-button {
-        margin-top: 80px;
+        margin-top: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -206,6 +207,18 @@
             }
         }
     }
+    .project-detail {
+        .project-overview-wrapper {
+            margin-top: 40px;
+            .overview-detail {
+                display: list-item;
+                text-align: center;
+                .detail-tittle {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -213,6 +226,11 @@
     .project-work-process {
         margin: 0;
         border-radius: 0px;
+    }
+    .project-detail {
+        .project-overview-wrapper {
+            margin: 40px 15px 0px 15px;
+        }
     }
 }
 @media (min-width: 320px) and (max-width: 419px) {
@@ -227,6 +245,13 @@
                     font-size: 28px;
                     line-height: 28px;
                 }
+            }
+        }
+    }
+    .project-detail {
+        .project-overview-wrapper {
+            .overview-detail {
+                padding: 30px 20px;
             }
         }
     }
