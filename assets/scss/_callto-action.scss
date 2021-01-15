@@ -286,6 +286,14 @@
             left: 3.9%;
         }
     }
+    // project details
+    &.callto-action-project-d {
+        padding-top: 130px;
+        padding-bottom: 95px;
+        .callto-action-text {
+            margin-top: 95px;
+        }
+    }
 }
 
 @media (min-width: 1340) {

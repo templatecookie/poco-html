@@ -49,7 +49,8 @@
 //OUR PROJECT DEATIL AREA
 .project-details-content {
     .our-work-process {
-        margin-top: 130px;
+        margin-top: 145px;
+        padding-bottom: 150px;
         z-index: 5;
     }
 }
@@ -149,18 +150,19 @@
     }
 
     .shape {
+        pointer-events: none;
         img {
             position: absolute;
         }
 
         .round-shape01 {
             top: -7%;
-            right: 5%;
+            right: 3%;
         }
 
         .round-shape02 {
             top: -10%;
-            left: 5%;
+            left: 3.5%;
         }
     }
 }
@@ -181,7 +183,38 @@
         }
     }
 }
+@media (max-width: 991px) {
+    // project-worck-proecess
+    .project-work-process {
+        .process-item {
+            .dashed01,
+            .dashed02,
+            .dashed03 {
+                &::before,
+                &::after {
+                    display: none;
+                }
+            }
+        }
 
+        .shape {
+            .round-shape01 {
+                top: -5%;
+            }
+            .round-shape02 {
+                top: -6%;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    // project-worck-proecess
+    .project-work-process {
+        margin: 0;
+        border-radius: 0px;
+    }
+}
 @media (min-width: 320px) and (max-width: 419px) {
     .project {
         &-wrapper {
@@ -210,6 +243,17 @@
         &-wrapper {
             &-image {
                 margin-left: -15px;
+            }
+        }
+    }
+    // project-worck-proecess
+    .project-work-process {
+        .shape {
+            .round-shape01 {
+                top: -5%;
+            }
+            .round-shape02 {
+                top: -6%;
             }
         }
     }
