@@ -7021,6 +7021,13 @@ aside,
   .blog-area .article-item .article-info > div {
     margin-bottom: 5px;
   }
+  .blog-details .article-item .author-details {
+    flex-direction: column;
+  }
+  .blog-details .article-item .comments-section-area {
+    flex-direction: column;
+    padding-left: 0px;
+  }
 }
 
 /* large devices 992 - 1199*/
@@ -7105,6 +7112,12 @@ aside,
   .blog-area .aside .recent-post,
   .blog-area .aside .search {
     max-width: 100% !important;
+  }
+  .blog-details .article-item .author-details {
+    align-items: center;
+  }
+  .blog-details .article-item .author-details-image {
+    margin-bottom: 15px;
   }
 }
 

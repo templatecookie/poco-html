@@ -774,6 +774,17 @@
             }
         }
     }
+    .blog-details {
+        .article-item {
+            .author-details {
+                flex-direction: column;
+            }
+            .comments-section-area {
+                flex-direction: column;
+                padding-left: 0px;
+            }
+        }
+    }
 }
 /* large devices 992 - 1199*/
 @media #{$lg} {
@@ -858,6 +869,16 @@
     .blog-area .aside .recent-post,
     .blog-area .aside .search {
         max-width: 100% !important;
+    }
+    .blog-details {
+        .article-item {
+            .author-details {
+                align-items: center;
+            }
+            .author-details-image {
+                margin-bottom: 15px;
+            }
+        }
     }
 }
 /* extra Small devices 420 */
