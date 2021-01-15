@@ -6250,7 +6250,7 @@ aside,
 }
 
 .conatact-area {
-  background: #FCF8F8;
+  background: #fcf8f8;
   padding-top: 160px;
   padding-bottom: 50px;
 }
@@ -6264,9 +6264,9 @@ aside,
   font-size: 18px;
   font-family: "Gilroy-Medium";
   line-height: 30px;
-  color: #65729E;
+  color: #65729e;
   height: 80px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   background: white;
   padding: 0 50px;
   position: relative;
@@ -6287,9 +6287,9 @@ aside,
 }
 
 .conatact-area .contact-form .form-message textarea {
-  color: #65729E !important;
+  color: #65729e !important;
   width: 100%;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   background: white;
   padding: 30px 50px;
   position: relative;
@@ -6299,9 +6299,9 @@ aside,
   position: absolute;
   top: 0;
   left: 0;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: "\f007";
+  content: '\f007';
 }
 
 .conatact-area .contact-form .t-btn {
@@ -6317,6 +6317,41 @@ aside,
   position: absolute;
   top: 30px;
   left: 25px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/*Common Devices - Sizes */
+@media (max-width: 575px) {
+  .conatact-area .contact-form {
+    padding: 0px;
+  }
+}
+
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
 }
 
 .blog-area {
