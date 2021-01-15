@@ -1313,6 +1313,7 @@ aside,
   border-radius: 0;
   z-index: 9;
   padding-top: 130px;
+  overflow: hidden;
 }
 
 .banner-area04 .banner-wrapper .banner-title span {
@@ -2154,7 +2155,7 @@ aside,
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 .about-info04 {
-  padding-top: 120px;
+  padding-top: 115px;
   padding-bottom: 27px;
   background-position: top center;
   background-repeat: no-repeat;
@@ -2173,6 +2174,7 @@ aside,
   font-family: "Teko", sans-serif;
   line-height: 118px;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .about-info04 .about-info-text h2 span {
@@ -2184,6 +2186,8 @@ aside,
   font-weight: 500;
   font-size: 16px;
   line-height: 27px;
+  position: relative;
+  z-index: 9;
 }
 
 .about-info04 .about-info-text .about-info-project {
@@ -2254,6 +2258,18 @@ aside,
   .aboutus-introduction02 .introduction-feature {
     left: 33.5%;
   }
+  .about-info04 .about-info-image {
+    margin-left: 0px;
+  }
+  .about-info04 .about-info-image img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .about-info04 .right-vcetor img {
+    top: 25%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2312,6 +2328,9 @@ aside,
     display: inline-block;
     margin-top: 30px;
     margin-bottom: 0px;
+  }
+  .about-info04 .right-vcetor img {
+    top: 60%;
   }
 }
 
@@ -2382,6 +2401,9 @@ aside,
   .aboutus-introduction02 .small-feature {
     left: 2%;
   }
+  .about-info04 .about-info-text .about-info-project .project-information {
+    z-index: 9;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
@@ -2395,6 +2417,9 @@ aside,
   }
   .aboutus-introduction02 .aboutus02-wrapper-title h2 {
     line-height: 38px !important;
+  }
+  .about-info04 .about-info-text h2 {
+    font-size: 48px;
   }
 }
 

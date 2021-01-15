@@ -307,7 +307,7 @@
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 .about-info04 {
-    padding-top: 120px;
+    padding-top: 115px;
     padding-bottom: 27px;
     background-position: top center;
     background-repeat: no-repeat;
@@ -326,7 +326,7 @@
             font-family: $teko;
             line-height: 118px;
             font-weight: 600;
-
+            margin-bottom: 5px;
             span {
                 color: $tertiary;
             }
@@ -337,6 +337,8 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 27px;
+            position: relative;
+            z-index: 9;
         }
 
         .about-info-project {
@@ -428,6 +430,25 @@
             left: 33.5%;
         }
     }
+
+    // homepage -04 / Aboutus -info
+    .about-info04 {
+        .about-info-image {
+            margin-left: 0px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .about-info04 {
+        .right-vcetor {
+            img {
+                top: 25%;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -464,6 +485,9 @@
             right: 40%;
         }
     }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
 }
 
 @media (max-width: 1024px) {
@@ -507,6 +531,14 @@
                 display: inline-block;
                 margin-top: 30px;
                 margin-bottom: 0px;
+            }
+        }
+    }
+
+    .about-info04 {
+        .right-vcetor {
+            img {
+                top: 60%;
             }
         }
     }
@@ -617,6 +649,16 @@
             left: 2%;
         }
     }
+
+    .about-info04 {
+        .about-info-text {
+            .about-info-project {
+                .project-information {
+                    z-index: 9;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 320px) and(max-width: 419px) {
@@ -635,6 +677,13 @@
         .aboutus02-wrapper-title {
             h2 {
                 line-height: 38px !important;
+            }
+        }
+    }
+    .about-info04 {
+        .about-info-text {
+            h2 {
+                font-size: 48px;
             }
         }
     }
