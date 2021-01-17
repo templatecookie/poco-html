@@ -5545,7 +5545,7 @@ aside,
 }
 
 .about-solution {
-  background-color: #FFF5F7;
+  background-color: #fff5f7;
   padding: 130px 0;
   margin: 0 45px;
   border-radius: 24px;
@@ -5670,18 +5670,18 @@ aside,
 }
 
 .about-us-image .small-feature-item h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 34px;
 }
 
 .about-us-image .small-feature-item .ratings {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 12px;
 }
 
 .about-us-image .small-feature-item p {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Gilroy-Medium";
 }
 
@@ -5701,8 +5701,13 @@ aside,
   right: 26%;
 }
 
+.about-us-text {
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
 .about-us-text .sub-heading {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 
 .about-us-text .sub-heading h2 {
@@ -5712,6 +5717,10 @@ aside,
 .about-us-text .sub-heading p {
   font-size: 18px;
   font-family: "Gilroy-Medium";
+}
+
+.about-us-text .feature {
+  margin-bottom: 45px;
 }
 
 .about-us-text .feature .icon {
@@ -5734,9 +5743,14 @@ aside,
   font-family: "Gilroy-Medium";
 }
 
+.about-us-text .c-wrapper {
+  display: inline-block;
+  margin-top: 10px;
+}
+
 .about-us-text .alart {
   position: relative;
-  background-color: #FFF5F7;
+  background-color: #fff5f7;
   max-width: 490px;
   padding: 15px 50px 15px 25px;
   border-radius: 6px;
@@ -5747,7 +5761,7 @@ aside,
   content: '';
   top: 0;
   left: 0;
-  background-color: #FF465E;
+  background-color: #ff465e;
   width: 7px;
   height: 100%;
   border-top-left-radius: 6px;
@@ -5755,7 +5769,7 @@ aside,
 }
 
 .about-us-text .alart-icon i {
-  color: #65729E;
+  color: #65729e;
   font-size: 50px;
 }
 
@@ -5766,8 +5780,100 @@ aside,
 }
 
 .about-us-text .alart-boldtext h2 {
-  color: #FF465E;
+  color: #ff465e;
   font-size: 55px;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/*common devices- sizes */
+@media (max-width: 1200px) {
+  .about-us-image .image {
+    margin-left: 0px;
+  }
+  .about-us-image .sm-feauter-left {
+    left: 0px;
+  }
+  .about-us-image .sm-feauter-top {
+    top: -125px;
+  }
+  .about-us-image .sm-feauter-bottom {
+    bottom: -120px;
+  }
+  .about-us-text {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .about-us-image .sm-feauter-left {
+    left: -30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us {
+    padding: 150px 0px;
+  }
+  .about-us-text {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-us-text .feature .icon {
+    border-radius: 0px;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  .about-us-text .sub-heading h2 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .about-us-text .alart {
+    flex-direction: column;
+    padding: 15px 50px;
+  }
+  .about-us-text .alart-icon {
+    margin-bottom: 10px;
+  }
+  .about-us-text .alart-text p {
+    text-align: center;
+  }
+  .about-us-image .sm-feauter-bottom {
+    right: 0px;
+  }
+  .about-us-image .sm-feauter-left {
+    top: 140px;
+  }
+}
+
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
 }
 
 .our-services .about-us-text .sub-heading {

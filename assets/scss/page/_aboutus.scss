@@ -1,13 +1,12 @@
 //WORK SOLUTION AREA
 .about-solution {
-    background-color: #FFF5F7;
+    background-color: #fff5f7;
     padding: 130px 0;
     margin: 0 45px;
     border-radius: 24px;
     position: relative;
 
     .solution-wrapper {
-
         .solution-title {
             h4 {
                 span {
@@ -138,18 +137,18 @@
 
             &-item {
                 h3 {
-                    color: #FFFFFF;
+                    color: #ffffff;
                     font-size: 34px;
                 }
 
                 .ratings {
-                    color: #FFFFFF;
+                    color: #ffffff;
                     font-size: 12px;
                 }
 
                 p {
                     font-size: 16px;
-                    color: #FFFFFF;
+                    color: #ffffff;
                     font-family: $gilroy-medium;
                 }
             }
@@ -173,8 +172,10 @@
     }
 
     &-text {
+        margin-top: -20px;
+        margin-left: -20px;
         .sub-heading {
-            margin-bottom: 30px;
+            margin-bottom: 45px;
 
             h2 {
                 margin-bottom: 30px;
@@ -187,6 +188,7 @@
         }
 
         .feature {
+            margin-bottom: 45px;
             .icon {
                 margin-top: 5px;
                 height: 30px;
@@ -209,10 +211,15 @@
                 }
             }
         }
+        // custom-wrapper for buisness solutions
+        .c-wrapper {
+            display: inline-block;
+            margin-top: 10px;
+        }
 
         .alart {
             position: relative;
-            background-color: #FFF5F7;
+            background-color: #fff5f7;
             max-width: 490px;
             padding: 15px 50px 15px 25px;
             border-radius: 6px;
@@ -222,7 +229,7 @@
                 content: '';
                 top: 0;
                 left: 0;
-                background-color: #FF465E;
+                background-color: #ff465e;
                 width: 7px;
                 height: 100%;
                 border-top-left-radius: 6px;
@@ -231,7 +238,7 @@
 
             &-icon {
                 i {
-                    color: #65729E;
+                    color: #65729e;
                     font-size: 50px;
                 }
             }
@@ -246,7 +253,7 @@
 
             &-boldtext {
                 h2 {
-                    color: #FF465E;
+                    color: #ff465e;
                     font-size: 55px;
                 }
             }
@@ -254,3 +261,118 @@
     }
 }
 // END ABOUT US
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/*common devices- sizes */
+@media (max-width: 1200px) {
+    // aboutus-
+    .about-us-image {
+    }
+    .about-us {
+        &-image {
+            .image {
+                margin-left: 0px;
+            }
+            .sm-feauter-left {
+                left: 0px;
+            }
+            .sm-feauter-top {
+                top: -125px;
+            }
+            .sm-feauter-bottom {
+                bottom: -120px;
+            }
+        }
+        &-text {
+            margin-left: 0px;
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .about-us {
+        &-image {
+            .sm-feauter-left {
+                left: -30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .about-us {
+        padding: 150px 0px;
+        &-text {
+            margin-top: 100px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .about-us {
+        &-text {
+            .feature {
+                .icon {
+                    border-radius: 0px;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 419px) {
+    .about-us {
+        &-text {
+            .sub-heading {
+                h2 {
+                    font-size: 32px;
+                    line-height: 46px;
+                }
+            }
+            // .fea
+            .alart {
+                flex-direction: column;
+                padding: 15px 50px;
+                &-icon {
+                    margin-bottom: 10px;
+                }
+                &-text {
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &-image {
+            .sm-feauter-bottom {
+                right: 0px;
+            }
+            .sm-feauter-left {
+                top: 140px;
+            }
+        }
+    }
+}
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
+}
