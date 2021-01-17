@@ -443,6 +443,14 @@
             }
         }
     }
+    .testimonial-area {
+        .section-title {
+            h2 {
+                font-size: 32px;
+                line-height: 48px;
+            }
+        }
+    }
 }
 /* large devices 992 - 1199*/
 @media #{$lg} {

@@ -2800,6 +2800,10 @@ aside,
     font-size: 38px;
     line-height: 48px;
   }
+  .special-services .section-title h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 
 /* large devices 992 - 1199*/
@@ -3062,6 +3066,14 @@ aside,
   }
   .price-area .mask-group3 .mask6 {
     top: 2%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  .price-area .section-title h2 {
+    font-size: 32px;
+    line-height: 100px;
+    margin-bottom: 0px;
   }
 }
 
@@ -4047,6 +4059,10 @@ aside,
   .testimonial02 .project-info h4::before {
     width: 15px;
     height: 2px;
+  }
+  .testimonial-area .section-title h2 {
+    font-size: 32px;
+    line-height: 48px;
   }
 }
 
