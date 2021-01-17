@@ -5552,6 +5552,10 @@ aside,
   position: relative;
 }
 
+.about-solution .section-title {
+  margin-bottom: 40px;
+}
+
 .about-solution .solution-wrapper .solution-title h4 {
   margin-bottom: 10px;
 }
@@ -5812,12 +5816,17 @@ aside,
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .about-us {
     padding: 150px 0px;
   }
   .about-us-text {
     margin-top: 100px;
+  }
+  .about-solution .solution-wrapper .solution-title.center {
+    display: inline-block;
+    max-width: 95%;
+    margin-bottom: 30px;
   }
 }
 
@@ -5825,6 +5834,10 @@ aside,
   .about-us-text .feature .icon {
     border-radius: 0px;
     padding: 15px;
+  }
+  .about-solution {
+    margin: 0px;
+    border-radius: 0px;
   }
 }
 
@@ -5848,6 +5861,10 @@ aside,
   }
   .about-us-image .sm-feauter-left {
     top: 140px;
+  }
+  .about-solution .section-title h2 {
+    font-size: 32px;
+    line-height: 48px;
   }
 }
 

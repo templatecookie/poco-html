@@ -5,7 +5,9 @@
     margin: 0 45px;
     border-radius: 24px;
     position: relative;
-
+    .section-title {
+        margin-bottom: 40px;
+    }
     .solution-wrapper {
         .solution-title {
             h4 {
@@ -290,6 +292,7 @@
         }
     }
 }
+
 @media (min-width: 1024px) and (max-width: 1199px) {
     .about-us {
         &-image {
@@ -300,14 +303,24 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .about-us {
         padding: 150px 0px;
         &-text {
             margin-top: 100px;
         }
     }
+    .about-solution {
+        .solution-wrapper {
+            .solution-title.center {
+                display: inline-block;
+                max-width: 95%;
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
+
 @media (max-width: 575px) {
     .about-us {
         &-text {
@@ -319,7 +332,15 @@
             }
         }
     }
+    .about-solution {
+        margin: 0px;
+        border-radius: 0px;
+    }
 }
+
+@media (max-width: 420px) and (max-width: 574px) {
+}
+
 @media (min-width: 320px) and (max-width: 419px) {
     .about-us {
         &-text {
@@ -352,7 +373,16 @@
             }
         }
     }
+    .about-solution {
+        .section-title {
+            h2 {
+                font-size: 32px;
+                line-height: 48px;
+            }
+        }
+    }
 }
+
 /* large devices 992 - 1169*/
 @media #{$lg} {
     /* common area start */
