@@ -475,7 +475,19 @@
             }
         }
     }
+
+    .callto-action-text {
+        padding: 90px 0px;
+        h2 {
+            font-size: 32px;
+            line-height: 42px;
+        }
+        .t-btn {
+            margin-top: 0px;
+        }
+    }
 }
+
 /* large devices 992 - 1199*/
 @media #{$lg} {
     .callto-action {
