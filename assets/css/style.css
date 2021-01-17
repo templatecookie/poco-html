@@ -2783,6 +2783,16 @@ aside,
   .valuable-services-item-text p {
     max-width: 100%;
   }
+  .special-services-image {
+    margin: auto;
+  }
+  .special-services-text {
+    text-align: center;
+  }
+  .special-services-text p {
+    max-width: 95%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {

@@ -230,6 +230,18 @@
             }
         }
     }
+    .special-services {
+        &-image {
+            margin: auto;
+        }
+        &-text {
+            text-align: center;
+            p {
+                max-width: 95%;
+                margin: auto;
+            }
+        }
+    }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
