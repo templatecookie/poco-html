@@ -1568,6 +1568,10 @@ aside,
   .banner-area.breadcrumb-area .breadcrumb-wrapper .breadcrumb-item {
     font-size: 18px !important;
   }
+  .banner-area .banner-wrapper p {
+    width: 100%;
+    font-size: 18px;
+  }
   .banner-area04 .banner-wrapper .banner-title h1 {
     font-size: 68px;
     line-height: 78px;
@@ -5367,6 +5371,12 @@ aside,
   }
   .dark-footer .footer-area-lists {
     margin-bottom: 15px;
+  }
+  .copyright-area-logo a img {
+    display: none;
+  }
+  .copyright-area-top {
+    margin-top: 30px;
   }
 }
 
