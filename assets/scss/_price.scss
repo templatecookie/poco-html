@@ -10,7 +10,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: #fff;
         @include transition(0.3s);
+
+        &:hover {
+            .t-btn {
+                background-color: rgb(255,70,94);
+            }
+        }
         .price-body {
             ul {
                 li {
@@ -109,8 +116,20 @@
                 top: 2%;
             }
         }
+        .section-title {
+            h2 {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+        .align-items-stretch {
+            .mb-30 {
+                margin-bottom: 30px;
+            }
+        }
     }
 }
+
 
 @media (min-width: 320px) and (max-width: 419px) {
     .price-area {

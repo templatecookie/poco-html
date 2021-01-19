@@ -3049,7 +3049,12 @@ aside,
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
   transition: all 0.3s ease-out 0s;
+}
+
+.price-area .price-box:hover .t-btn {
+  background-color: #ff465e;
 }
 
 .price-area .price-box .price-body ul li {
@@ -3143,6 +3148,13 @@ aside,
   }
   .price-area .mask-group3 .mask6 {
     top: 2%;
+  }
+  .price-area .section-title h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .price-area .align-items-stretch .mb-30 {
+    margin-bottom: 30px;
   }
 }
 
