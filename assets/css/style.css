@@ -2834,6 +2834,18 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
+@media (max-width: 767px) {
+  .special-services {
+    padding: 120px 0px;
+  }
+  .special-services-image {
+    margin-bottom: 15px !important;
+  }
+  .special-services-text h5 {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 575px) {
   .valuable-services {
     border-top-right-radius: 0px;
@@ -2841,6 +2853,9 @@ aside,
   }
   .valuable-services-item-text p {
     max-width: 100%;
+  }
+  .special-services {
+    padding: 120px 0px;
   }
   .special-services-image {
     margin: auto;
@@ -2851,6 +2866,9 @@ aside,
   .special-services-text p {
     max-width: 95%;
     margin: auto;
+  }
+  .special-services .section-title h2 {
+    font-size: 32px;
   }
 }
 
@@ -5987,6 +6005,18 @@ aside,
   /* common area start */
 }
 
+.our-services.pt-130 {
+  padding-top: 120px;
+}
+
+.our-services .about-us-image .image {
+  margin-top: -35px;
+}
+
+.our-services .about-us-text {
+  margin-top: 10px;
+}
+
 .our-services .about-us-text .sub-heading {
   margin-bottom: 15px;
 }
@@ -6206,6 +6236,84 @@ aside,
 .design-services-text .t-outile-btn:hover {
   background-color: #FF465E;
   color: #ffffff;
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+/* common devices-sizes */
+@media (max-width: 1200px) {
+  .our-services .offset-lg-1 {
+    margin-left: 0px;
+  }
+  .our-services .about-us-text .feature .icon {
+    padding: 10px;
+  }
+  .our-services .shape .right {
+    top: -65px;
+  }
+  .our-services .shape .top {
+    top: -45px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-services .shape .bottom {
+    bottom: -45px;
+  }
+  .our-services .top-right {
+    top: -125px;
+  }
+}
+
+@media (max-width: 575px) {
+  .our-services {
+    border-radius: 0px !important;
+    margin: 0px !important;
+  }
+  .our-services .shape .bottom {
+    bottom: -35px;
+  }
+  .our-services .about-us-text {
+    margin-top: 35px;
+  }
+  .our-services .about-us-text .sub-heading h2 {
+    margin-bottom: 30px;
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  .our-services .about-us-text .sub-heading h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+/* large devices 992 - 1169*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  /* common area start */
+}
+
+/* extra Small devices 420 */
+@media (max-width: 420px) {
+  /* common area start */
 }
 
 .profession-area {

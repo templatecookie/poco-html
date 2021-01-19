@@ -1,6 +1,16 @@
 // START ABOUT US
 .our-services{
+    &.pt-130 {
+        padding-top: 120px;
+    }
+    .about-us-image {
+       .image {
+           margin-top: -35px;
+       }
+    }
+
     .about-us-text{
+        margin-top: 10px;
         .sub-heading{
             margin-bottom: 15px;
             h2{
@@ -201,4 +211,107 @@
             color: #ffffff;
         }
     }
+}
+
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* common devices-sizes */
+@media(max-width: 1200px) {
+    .our-services {
+        .offset-lg-1 {
+            margin-left: 0px;
+        }
+        .about-us-text {
+            .feature {
+                .icon {
+                    padding: 10px;
+                }
+            }
+        }
+        .shape {
+            .right {
+                top: -65px;
+            }
+            .top {
+                top: -45px;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .our-services {
+        .shape  {
+            .bottom  {
+                bottom: -45px;
+            }
+        }
+        .top-right {
+            top: -125px;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .our-services {
+        border-radius: 0px !important;
+        margin: 0px !important;
+        .shape {
+            .bottom {
+                bottom: -35px;
+            }
+        }
+        .about-us-text {
+            margin-top: 35px;
+            .sub-heading {
+                h2 {
+                    margin-bottom: 30px;
+                    font-size: 38px;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 320px) and (max-width: 419px) {
+    .our-services {
+        .about-us-text {
+            .sub-heading {
+                h2 {
+                    font-size: 32px;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+}
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    /* common area start */
+
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
 }

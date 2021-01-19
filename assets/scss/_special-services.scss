@@ -220,6 +220,20 @@
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
+
+@media(max-width: 767px) {
+    .special-services {
+        padding: 120px 0px;
+        &-image {
+            margin-bottom: 15px !important;
+        }
+        &-text {
+            h5 {
+                font-size: 28px;
+            }
+        }
+    }
+}
 @media (max-width: 575px) {
     .valuable-services {
         border-top-right-radius: 0px;
@@ -231,6 +245,7 @@
         }
     }
     .special-services {
+        padding: 120px 0px;
         &-image {
             margin: auto;
         }
@@ -241,8 +256,17 @@
                 margin: auto;
             }
         }
+        .section-title {
+           h2 {
+            font-size: 32px;
+           }
+        }
     }
 }
+
+
+
+
 
 @media (min-width: 320px) and (max-width: 419px) {
     .valuable-services {
