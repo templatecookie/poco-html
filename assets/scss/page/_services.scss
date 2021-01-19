@@ -66,6 +66,12 @@
 // START OUR WORK PROCESS 
 .our-work-process{
     position: relative;
+    &.pt-125{
+        padding-top: 155px;
+    }
+    &.pb-130 {
+        padding-bottom: 155px;
+    }
     .process-item{
         position: relative;
         &::before{
@@ -171,7 +177,7 @@
         }
         .round-shape{
             top: 25%;
-            left: 15%;
+            left: 10%;
         }
     }
 }

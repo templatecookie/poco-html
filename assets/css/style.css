@@ -6057,6 +6057,14 @@ aside,
   position: relative;
 }
 
+.our-work-process.pt-125 {
+  padding-top: 155px;
+}
+
+.our-work-process.pb-130 {
+  padding-bottom: 155px;
+}
+
 .our-work-process .process-item {
   position: relative;
 }
@@ -6177,7 +6185,7 @@ aside,
 
 .our-work-process .shape .round-shape {
   top: 25%;
-  left: 15%;
+  left: 10%;
 }
 
 .design-services-text h2 {
@@ -6482,17 +6490,17 @@ aside,
 }
 
 @media (max-width: 991px) {
-  .project-work-process .process-item .dashed01::before, .project-work-process .process-item .dashed01::after,
-  .project-work-process .process-item .dashed02::before,
-  .project-work-process .process-item .dashed02::after,
-  .project-work-process .process-item .dashed03::before,
-  .project-work-process .process-item .dashed03::after {
+  .our-work-process .process-item .dashed01::before, .our-work-process .process-item .dashed01::after,
+  .our-work-process .process-item .dashed02::before,
+  .our-work-process .process-item .dashed02::after,
+  .our-work-process .process-item .dashed03::before,
+  .our-work-process .process-item .dashed03::after {
     display: none;
   }
-  .project-work-process .shape .round-shape01 {
+  .our-work-process .shape .round-shape01 {
     top: -5%;
   }
-  .project-work-process .shape .round-shape02 {
+  .our-work-process .shape .round-shape02 {
     top: -6%;
   }
   .project-detail .project-overview-wrapper {
