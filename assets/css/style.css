@@ -2227,6 +2227,17 @@ aside,
 }
 
 /*----------------------------------------*/
+/*  Our-Teams
+/*----------------------------------------*/
+.our-teams {
+  padding-bottom: 160px;
+}
+
+.our-teams .our-teams-member .member-info {
+  bottom: -25px;
+}
+
+/*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* Common max-Sizes */
@@ -2366,6 +2377,9 @@ aside,
   .aboutus-introduction02 .small-feature {
     left: 70%;
   }
+  .our-teams .our-teams-member .member-info {
+    bottom: 45px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2424,6 +2438,17 @@ aside,
   }
   .about-info04 .about-info-text h2 {
     font-size: 48px;
+  }
+  .our-teams .all-member .col-lg-4 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .our-teams .all-member .member-info {
+    max-width: 95% !important;
+  }
+  .our-teams .all-member .social-links {
+    display: flex;
+    align-items: center;
   }
 }
 

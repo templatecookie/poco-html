@@ -377,6 +377,21 @@
     }
 }
 
+
+/*----------------------------------------*/
+/*  Our-Teams
+/*----------------------------------------*/
+.our-teams {
+   padding-bottom: 160px;
+    .our-teams-member {
+        .member-info {
+            bottom: -25px;
+        }
+    }
+}
+
+
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
@@ -506,6 +521,7 @@
         }
     }
 }
+
 @media (max-width: 991px) {
     // homepage-02
 
@@ -543,6 +559,7 @@
         }
     }
 }
+
 @media (max-width: 767px) {
     .about {
         &-info {
@@ -592,6 +609,14 @@
             left: 70%;
         }
     }
+
+    .our-teams {
+        .our-teams-member {
+            .member-info {
+                bottom: 45px;
+            }
+        }
+     }
 }
 
 @media (max-width: 575px) {
@@ -687,6 +712,23 @@
             }
         }
     }
+
+    // our-teams
+    .our-teams {
+        .all-member {
+            .col-lg-4 {
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .member-info  {
+                max-width: 95% !important;
+            }
+            .social-links {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
 }
 
 /* large devices 992 - 1199*/
@@ -771,6 +813,7 @@
             margin-bottom: 30px;
         }
     }
+    
 }
 
 /* Small devices 420 - 574 */
