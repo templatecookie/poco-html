@@ -113,6 +113,21 @@
             right: 3%;
         }
     }
+    &.trust-us {
+        padding-bottom: 130px;
+        .section-title {
+             P {
+                 display: inline-block;
+                 margin-bottom: 15px;
+             }
+        }
+        .mask-group2 {
+            .mask6 {
+                top: 50px;
+                left: 100px;
+            }
+        }
+    }
 }
 
 /*----------------------------------------*/
@@ -387,6 +402,14 @@
         .mask-group2 {
             .mask6 {
                 top: 32px;
+            }
+        }
+        &.trust-us {
+            .mask-group2{
+                 .mask6 {
+                     top: -20px;
+                     left: 0px;
+                 }
             }
         }
     }

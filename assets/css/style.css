@@ -3794,6 +3794,20 @@ aside,
   right: 3%;
 }
 
+.testimonial-area.trust-us {
+  padding-bottom: 130px;
+}
+
+.testimonial-area.trust-us .section-title P {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.testimonial-area.trust-us .mask-group2 .mask6 {
+  top: 50px;
+  left: 100px;
+}
+
 /*----------------------------------------*/
 /*  HOMEPAGE 02
 /*----------------------------------------*/
@@ -4049,6 +4063,10 @@ aside,
 @media (max-width: 575px) {
   .testimonial-area .mask-group2 .mask6 {
     top: 32px;
+  }
+  .testimonial-area.trust-us .mask-group2 .mask6 {
+    top: -20px;
+    left: 0px;
   }
   .testimonial02 .slider-arrows {
     right: 30px !important;
