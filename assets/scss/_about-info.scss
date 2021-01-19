@@ -558,6 +558,14 @@
             }
         }
     }
+
+    .about-skill {
+        &-image {
+            img {
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -616,6 +624,20 @@
                 bottom: 45px;
             }
         }
+     }
+     .about-skill {
+         &-wrapper {
+             max-width: 100% !important;
+             margin-top: 0px !important;
+         }
+         &-title {
+             h2 {
+                line-height: 42px;
+             }
+         }
+         &-pogressbar {
+             justify-content: center;
+         }
      }
 }
 
@@ -684,6 +706,21 @@
             }
         }
     }
+    .about-skill { 
+        &-title {
+            h2 {
+                    font-size: 28px !important;
+                    line-height: 48px !important;
+            }
+        }
+        &-pogressbar {
+            flex-direction: column;
+            .round-wrapper {
+                margin-right: 0px;
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 
 @media (min-width: 320px) and(max-width: 419px) {
@@ -726,6 +763,13 @@
             .social-links {
                 display: flex;
                 align-items: center;
+            }
+        }
+    }
+    .about-skill {
+        &-pogressbar {
+            .round-wrapper {
+                margin-right: 0px !important;
             }
         }
     }
@@ -839,6 +883,13 @@
         .small-feature {
             left: 3%;
             bottom: 49%;
+        }
+    }
+    .about-skill {
+        &-pogressbar {
+            .round-wrapper {
+                margin-right: 0px !important;
+            }
         }
     }
 }

@@ -63,7 +63,7 @@
 .about-skill {
     &-wrapper {
         max-width: 90%;
-
+        margin-top: 145px;
         .about-skill-title {
             h2 {
                 margin-bottom: 30px;
@@ -289,6 +289,34 @@
         }
         &-text {
             margin-left: 0px;
+        }
+    }
+    .about-skill {
+        padding: 145px 0px;
+        &-wrapper {
+            margin-top: -30px;
+        }
+        &-image {
+            img {
+                max-width: 100%;
+            }
+        }
+        &-pogressbar {
+            .round-wrapper {
+                margin-right: 30px;
+                .round {
+                    canvas {
+                        width: 130px !important;
+                        height: 130px !important;
+                    }
+                    &-text {
+                        strong {
+                            font-size: 32px !important;
+                            line-height: 32px !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }

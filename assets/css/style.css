@@ -2347,6 +2347,9 @@ aside,
   .about-info04 .right-vcetor img {
     top: 60%;
   }
+  .about-skill-image img {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2379,6 +2382,16 @@ aside,
   }
   .our-teams .our-teams-member .member-info {
     bottom: 45px;
+  }
+  .about-skill-wrapper {
+    max-width: 100% !important;
+    margin-top: 0px !important;
+  }
+  .about-skill-title h2 {
+    line-height: 42px;
+  }
+  .about-skill-pogressbar {
+    justify-content: center;
   }
 }
 
@@ -2422,6 +2435,17 @@ aside,
   .about-info04 .about-info-text .about-info-project .project-information {
     z-index: 9;
   }
+  .about-skill-title h2 {
+    font-size: 28px !important;
+    line-height: 48px !important;
+  }
+  .about-skill-pogressbar {
+    flex-direction: column;
+  }
+  .about-skill-pogressbar .round-wrapper {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
@@ -2449,6 +2473,9 @@ aside,
   .our-teams .all-member .social-links {
     display: flex;
     align-items: center;
+  }
+  .about-skill-pogressbar .round-wrapper {
+    margin-right: 0px !important;
   }
 }
 
@@ -2537,6 +2564,9 @@ aside,
   .aboutus-introduction02 .small-feature {
     left: 3%;
     bottom: 49%;
+  }
+  .about-skill-pogressbar .round-wrapper {
+    margin-right: 0px !important;
   }
 }
 
@@ -5643,6 +5673,7 @@ aside,
 
 .about-skill-wrapper {
   max-width: 90%;
+  margin-top: 145px;
 }
 
 .about-skill-wrapper .about-skill-title {
@@ -5850,6 +5881,26 @@ aside,
   }
   .about-us-text {
     margin-left: 0px;
+  }
+  .about-skill {
+    padding: 145px 0px;
+  }
+  .about-skill-wrapper {
+    margin-top: -30px;
+  }
+  .about-skill-image img {
+    max-width: 100%;
+  }
+  .about-skill-pogressbar .round-wrapper {
+    margin-right: 30px;
+  }
+  .about-skill-pogressbar .round-wrapper .round canvas {
+    width: 130px !important;
+    height: 130px !important;
+  }
+  .about-skill-pogressbar .round-wrapper .round-text strong {
+    font-size: 32px !important;
+    line-height: 32px !important;
   }
 }
 
