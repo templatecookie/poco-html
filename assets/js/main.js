@@ -114,6 +114,42 @@
             // },
         ],
     });
+
+    //testimonial_slider
+    $('.testimonial-active').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: false,
+        autoplaySpeed: 2000,
+        prevArrow:
+            '<span class="prevArrow"><i class="fas fa-arrow-left"></i></span>',
+        nextArrow:
+            '<span class="nextArrow"><i class="fas fa-arrow-right"></i></span>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //     },
+            // },
+        ],
+    });
+
     //Client review_slider
     $('.review-active').slick({
         infinite: true,

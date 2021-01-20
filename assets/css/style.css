@@ -3997,7 +3997,8 @@ aside,
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 .testimonial04 {
-  padding-bottom: 100px 0;
+  padding-top: 140px;
+  padding-bottom: 100px;
   background-color: inherit;
   margin: 0px;
   border-radius: 0px;
@@ -4087,6 +4088,37 @@ aside,
   border-color: #ff465e;
 }
 
+.testimonial04 .testimonial-active {
+  position: relative;
+}
+
+.testimonial04 .testimonial-active .slick-arrow {
+  width: 57px;
+  height: 57px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #3b4a51;
+  position: absolute;
+  top: -170px;
+  right: 90px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.testimonial04 .testimonial-active .slick-arrow.nextArrow {
+  right: 10px;
+}
+
+.testimonial04 .testimonial-active .slick-arrow i {
+  color: #fff;
+}
+
+.testimonial04 .testimonial-active .slick-arrow:hover {
+  background-color: #ff465e;
+  border-color: transparent;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
@@ -4134,6 +4166,16 @@ aside,
   .testimonial02 .project-info {
     margin-left: 30px;
   }
+  .testimonial04 {
+    padding: 190px 0px !important;
+  }
+  .testimonial04 .section-title h2 {
+    font-size: 42px !important;
+    line-height: 52px;
+  }
+  .testimonial04 .testimonial-active .slick-arrow {
+    top: -90px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
@@ -4171,6 +4213,19 @@ aside,
     font-size: 32px;
     line-height: 48px;
   }
+  .testimonial04 {
+    padding-top: 115px !important;
+  }
+  .testimonial04 .section-title h2 {
+    font-size: 32px !important;
+  }
+  .testimonial04 .testimonial-active .slick-arrow {
+    top: inherit;
+    bottom: -95px !important;
+  }
+  .testimonial04 .testimonial-active .slick-arrow.nextArrow {
+    right: 15px;
+  }
 }
 
 /* large devices 992 - 1199*/
@@ -4201,7 +4256,7 @@ aside,
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   .testimonial-area {
-    padding: 50px 0px 120px 0px !important;
+    padding: 50px 0px 120px 0px;
     margin: 0px !important;
     margin-top: 50px !important;
     border-radius: 0px !important;
@@ -4223,7 +4278,7 @@ aside,
     max-width: 100%;
   }
   .testimonial-area .section-title h2 {
-    font-size: 25px !important;
+    font-size: 25px;
     margin-bottom: 5px !important;
   }
   .testimonial-area .section-title p {
@@ -4248,7 +4303,7 @@ aside,
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   .testimonial-area {
-    padding: 50px 0px 120px 0px !important;
+    padding: 50px 0px 120px 0px;
     margin: 0px !important;
     margin-top: 50px !important;
     border-radius: 0px !important;
@@ -4274,7 +4329,7 @@ aside,
     max-width: 100%;
   }
   .testimonial-area .section-title h2 {
-    font-size: 25px !important;
+    font-size: 25px;
     margin-bottom: 5px !important;
   }
   .testimonial-area .section-title p {
@@ -4319,12 +4374,19 @@ aside,
     width: 30px;
     left: -30px;
   }
+  .testimonial04 .testimonial-active .slick-arrow {
+    top: inherit;
+    bottom: -95px !important;
+  }
+  .testimonial04 .testimonial-active .slick-arrow.nextArrow {
+    right: 15px;
+  }
 }
 
 /* extra Small devices 420 */
 @media (max-width: 420px) {
   .testimonial-area {
-    padding: 50px 0px 120px 0px !important;
+    padding: 50px 0px 120px 0px;
     margin: 0px !important;
     margin-top: 50px !important;
     border-radius: 0px !important;
