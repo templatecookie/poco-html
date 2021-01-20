@@ -4476,7 +4476,7 @@ aside,
   font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 22px;
-  color: #9DADB7;
+  color: #9dadb7;
   line-height: 34px;
 }
 
@@ -4499,12 +4499,12 @@ aside,
   font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #9DADB7;
+  color: #9dadb7;
   line-height: 27px;
 }
 
 .client-review .review-active .single-testimonial .client-name::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -4538,30 +4538,137 @@ aside,
   color: #ff465e;
 }
 
-.client-review .review-active .slick-arrow.slick-next {
+.client-review .review-active .slick-arrow.nextArrow {
   left: -60px;
+  background-color: #fff;
+  color: #ff465e;
 }
 
-.client-review .review-active .slick-arrow.slick-next::before {
-  content: "\f061";
-  font-family: "Font Awesome 5 Free";
+.client-review .review-active .slick-arrow.nextArrow::before {
+  content: '\f061';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   position: absolute;
-  right: 38px;
+  right: 30px;
   font-size: 20px;
   top: 48%;
   transform: translateY(-50%);
 }
 
-.client-review .review-active .slick-arrow.slick-prev::before {
-  content: "\f060";
-  font-family: "Font Awesome 5 Free";
+.client-review .review-active .slick-arrow.nextArrow:hover {
+  background-color: #fff;
+}
+
+.client-review .review-active .slick-arrow.prevArrow::before {
+  content: '\f060';
+  font-family: 'Font Awesome 5 Free';
   font-size: 20px;
   font-weight: 900;
   position: absolute;
-  left: 18px;
+  left: 30px;
   top: 47%;
   transform: translateY(-50%);
+}
+
+.client-review .review-active .slick-arrow.prevArrow:hover {
+  background-color: #ff465e;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .client-review .banner-image img {
+    max-width: 100%;
+  }
+  .client-review .single-testimonial .client-name {
+    margin: 15px 0px !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .client-review {
+    padding: 160px 0px;
+  }
+  .client-review .review-active .slick-arrow {
+    bottom: -78px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .client-review {
+    padding: 160px 0px;
+  }
+  .client-review .review-active .slick-arrow {
+    bottom: -93px;
+  }
+  .client-review .section-title {
+    margin-bottom: 0px;
+  }
+  .client-review .single-testimonial .client-name {
+    margin: 15px 0px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .client-review .review-active .single-testimonial p {
+    font-size: 18px;
+  }
+  .client-review .review-active .slick-arrow {
+    left: -390px;
+  }
+  .client-review .review-active .slick-arrow.nextArrow {
+    left: -220px;
+  }
+}
+
+@media (max-width: 767px) {
+  .client-review .row .col-sm-12.pl-45 {
+    padding-left: 15px;
+  }
+  .client-review .banner-image {
+    display: flex;
+    justify-content: center;
+  }
+  .client-review .section-title h2 {
+    margin: 30px 0px;
+  }
+  .client-review .review-active .slick-arrow {
+    left: 0px;
+    bottom: -130px;
+  }
+  .client-review .review-active .slick-arrow.nextArrow {
+    left: 175px;
+  }
+}
+
+@media (max-width: 575px) {
+  .client-review .section-title h2 {
+    margin: 30px 0px;
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  .client-review .section-title h2 {
+    font-size: 38px;
+  }
+  .client-review .review-active .single-testimonial {
+    font-size: 18px;
+  }
+  .client-review .review-active .slick-arrow {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    bottom: -85px;
+  }
+  .client-review .review-active .slick-arrow.prevArrow::before {
+    left: 15px;
+  }
+  .client-review .review-active .slick-arrow.nextArrow {
+    left: 135px;
+  }
+  .client-review .review-active .slick-arrow.nextArrow::before {
+    left: 85px;
+  }
 }
 
 /*----------------------------------------*/

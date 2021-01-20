@@ -157,7 +157,9 @@
         slidesToScroll: 1,
         autoplay: true,
         arrows: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
+        prevArrow: '<button class="prevArrow">Prev</button>',
+        nextArrow: '<button class="nextArrow">Next</button>',
     });
 
     // magnificPopup video view
@@ -200,6 +202,7 @@
     $('.hamburger-menu').on('click', function () {
         toggleSidebar();
     });
+
     $('.close-sidebar').on('click', function () {
         toggleSidebar();
     });
