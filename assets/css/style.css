@@ -5478,8 +5478,11 @@ aside,
   .copyright-area-logo a img {
     display: none;
   }
+  .copyright {
+    padding: 32px 0px;
+  }
   .copyright-area-top {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 
@@ -6139,7 +6142,7 @@ aside,
 }
 
 .our-work-process .process-item .dashed01::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 100%;
@@ -6155,8 +6158,8 @@ aside,
   color: rgba(41, 198, 255, 0.5);
   top: 50%;
   left: 250%;
-  content: "\f054";
-  font-family: "Font Awesome 5 Free";
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   transform: translateY(-50%);
 }
@@ -6168,7 +6171,7 @@ aside,
 }
 
 .our-work-process .process-item .dashed02::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   border: none;
@@ -6184,8 +6187,8 @@ aside,
   position: absolute;
   top: 50%;
   left: 250%;
-  content: "\f054";
-  font-family: "Font Awesome 5 Free";
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   transform: translateY(-50%);
 }
@@ -6196,7 +6199,7 @@ aside,
 }
 
 .our-work-process .process-item .dashed03::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   right: 100%;
@@ -6240,14 +6243,18 @@ aside,
 }
 
 .design-services-text .t-outile-btn {
-  border: 2px solid #FF465E;
-  color: #FF465E;
+  border: 2px solid #ff465e;
+  color: #ff465e;
   transition: 0.3s all linear;
 }
 
 .design-services-text .t-outile-btn:hover {
-  background-color: #FF465E;
+  background-color: #ff465e;
   color: #ffffff;
+}
+
+.design-services__btn-wrapper .t-btn:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*----------------------------------------*/
@@ -6278,6 +6285,13 @@ aside,
   }
 }
 
+@media (max-width: 767px) {
+  .design-services-image .col-lg-5 .row .col-lg-12 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 575px) {
   .our-services {
     border-radius: 0px !important;
@@ -6294,12 +6308,35 @@ aside,
     font-size: 38px;
     line-height: 48px;
   }
+  .design-services__btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .design-services__btn-wrapper .t-btn {
+    margin: 0px !important;
+    width: 180px;
+    text-align: center;
+    padding: 20px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
   .our-services .about-us-text .sub-heading h2 {
     font-size: 32px;
     line-height: 48px;
+  }
+  .our-services .mask-top {
+    top: -60px;
+  }
+  .our-services .mask-right {
+    top: -40px;
+  }
+  .design-services__btn-wrapper {
+    flex-direction: column;
+  }
+  .design-services__btn-wrapper .t-btn {
+    margin-bottom: 15px !important;
   }
 }
 
