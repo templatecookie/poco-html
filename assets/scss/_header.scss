@@ -380,7 +380,9 @@ aside,
         li {
             a {
                 color: white;
-
+                &:hover {
+                    color: #000560;
+                }
                 &.active {
                     color: white;
                 }
@@ -388,6 +390,16 @@ aside,
                 &.active::before {
                     color: white;
                     background-color: white;
+                }
+            }
+            .sub-menu {
+                border-color: #1f99f4;
+                li {
+                    a {
+                        &:hover {
+                            color: #000560;
+                        }
+                    }
                 }
             }
         }

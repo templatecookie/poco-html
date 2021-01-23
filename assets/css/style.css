@@ -849,6 +849,10 @@ aside,
   color: white;
 }
 
+.header-area03 .main-menu li a:hover {
+  color: #000560;
+}
+
 .header-area03 .main-menu li a.active {
   color: white;
 }
@@ -856,6 +860,14 @@ aside,
 .header-area03 .main-menu li a.active::before {
   color: white;
   background-color: white;
+}
+
+.header-area03 .main-menu li .sub-menu {
+  border-color: #1f99f4;
+}
+
+.header-area03 .main-menu li .sub-menu li a:hover {
+  color: #000560;
 }
 
 .header-area03 .right-content .search-bar {
