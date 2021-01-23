@@ -82,6 +82,37 @@
             },
         ],
     });
+    $('.banner-brand__slider').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3200,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    // centerMode: true,
+                    // centerPadding: '30px',
+                },
+            },
+        ],
+    });
 
     //testimonial_slider
     $('.testimonial-slider').slick({
