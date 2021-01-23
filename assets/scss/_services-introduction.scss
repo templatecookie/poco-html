@@ -55,7 +55,15 @@
 /*----------------------------------------*/
 .homepage-03 {
     &.service-introduction {
-        padding-bottom: 130px;
+        padding-bottom: 150px;
+
+        .services-introduction-item-text {
+            text-align: center;
+        }
+        .services-introduction-item-image {
+            width: 135px;
+            height: 135px;
+        }
     }
 
     .section-heading {
@@ -101,6 +109,28 @@
         &-text {
             a {
                 margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .service-introduction {
+        .section-heading {
+            h2 {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+        .services-introduction {
+            &-item {
+                margin-bottom: 30px;
+                &-text {
+                    h5 {
+                        font-size: 28px;
+                        line-height: 42px;
+                    }
+                }
             }
         }
     }

@@ -205,7 +205,18 @@
         padding-top: 112px;
         position: relative;
         bottom: 0px;
-
+        .react-01,
+        .react-02 {
+            position: absolute;
+        }
+        .react-01 {
+            bottom: -100px;
+            right: -20px;
+        }
+        .react-02 {
+            top: 150px;
+            left: -55px;
+        }
         .banner01 {
             display: flex;
             margin: 0 auto;

@@ -1232,6 +1232,21 @@ aside,
   bottom: 0px;
 }
 
+.banner-area03 .banner-image .react-01,
+.banner-area03 .banner-image .react-02 {
+  position: absolute;
+}
+
+.banner-area03 .banner-image .react-01 {
+  bottom: -100px;
+  right: -20px;
+}
+
+.banner-area03 .banner-image .react-02 {
+  top: 150px;
+  left: -55px;
+}
+
 .banner-area03 .banner-image .banner01 {
   display: flex;
   margin: 0 auto;
@@ -3059,7 +3074,16 @@ aside,
 /*  HOMEPAGE 03 
 /*----------------------------------------*/
 .homepage-03.service-introduction {
-  padding-bottom: 130px;
+  padding-bottom: 150px;
+}
+
+.homepage-03.service-introduction .services-introduction-item-text {
+  text-align: center;
+}
+
+.homepage-03.service-introduction .services-introduction-item-image {
+  width: 135px;
+  height: 135px;
 }
 
 .homepage-03 .section-heading p {
@@ -3092,6 +3116,20 @@ aside,
   }
   .services-introduction-text a {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-introduction .section-heading h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .service-introduction .services-introduction-item {
+    margin-bottom: 30px;
+  }
+  .service-introduction .services-introduction-item-text h5 {
+    font-size: 28px;
+    line-height: 42px;
   }
 }
 
