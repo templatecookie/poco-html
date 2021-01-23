@@ -214,14 +214,17 @@
     // sticky menu
     var $window = $(window);
     var $fh = $('header');
-
+    var logo = document.querySelector('.logo-04');
+    console.log(logo);
     // Sticky Menu
     $window.on('scroll', function () {
         var $offset = $(this).scrollTop();
         if ($offset > 0.5) {
             $fh.addClass('sticky');
+            logo.setAttribute('src', 'assets/img/logo/logo.png');
         } else {
             $fh.removeClass('sticky');
+            logo.setAttribute('src', 'assets/img/logo/logo04.png');
         }
     });
     // @ts-ignore
