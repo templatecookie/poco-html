@@ -875,6 +875,22 @@ aside,
   background-color: rgba(255, 255, 255, 0.34);
 }
 
+.header-area03 .hamburger-menu span {
+  background-color: #fff;
+}
+
+.header-area03 aside .sidebar-menu {
+  background-color: #8ec5ff;
+}
+
+.header-area03 aside .sidebar-menu .main-menu li a {
+  color: #000560;
+}
+
+.header-area03 aside .sidebar-menu .main-menu li a.active {
+  color: #007bff;
+}
+
 /*----------------------------------------*/
 /*  HOMPAGE 04
 /*----------------------------------------*/
@@ -1552,6 +1568,9 @@ aside,
   .banner-area02 .small-feature02 {
     top: 35%;
     right: 190px;
+  }
+  .banner-area03 {
+    padding-bottom: 90px !important;
   }
   .banner-area03 .banner-image .banner01 {
     margin: auto;
