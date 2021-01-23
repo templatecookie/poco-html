@@ -252,6 +252,14 @@
                 }
             }
         }
+        &-links {
+            a {
+                background-color: #29303e;
+                &:hover {
+                    background-color: #ff465e;
+                }
+            }
+        }
     }
 
     .copyright {

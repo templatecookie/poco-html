@@ -5592,6 +5592,14 @@ aside,
   line-height: 36px;
 }
 
+.footer04 .footer-area-links a {
+  background-color: #29303e;
+}
+
+.footer04 .footer-area-links a:hover {
+  background-color: #ff465e;
+}
+
 .footer04 .copyright {
   padding: 20px;
 }
