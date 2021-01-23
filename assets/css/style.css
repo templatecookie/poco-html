@@ -2195,7 +2195,11 @@ aside,
 /*  HOMEPAGE 03
 /*----------------------------------------*/
 .homepage-03.about-introduction {
-  padding-bottom: 260px;
+  padding-bottom: 285px;
+}
+
+.homepage-03 .sub-section-heading {
+  margin-top: 75px;
 }
 
 .homepage-03 .sub-section-heading p {
@@ -2389,6 +2393,19 @@ aside,
   .about-info04 .about-info-image img {
     max-width: 100%;
   }
+  .homepage-03.about-introduction .about-intro-left .image {
+    margin-left: 0px;
+  }
+  .homepage-03.about-introduction .about-intro-left .image img {
+    max-width: 100%;
+  }
+  .homepage-03.about-introduction .about-intro-left .image .about02 {
+    display: none;
+  }
+  .homepage-03.about-introduction .about-intro-left .award {
+    bottom: 65px;
+    left: -90px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -2459,6 +2476,17 @@ aside,
   }
   .about-skill-image img {
     margin-bottom: 30px;
+  }
+  .homepage-03.about-introduction {
+    padding-bottom: 90px;
+  }
+  .homepage-03.about-introduction .about-intro-left .image {
+    display: flex;
+    justify-content: center;
+  }
+  .homepage-03.about-introduction .about-intro-left .award {
+    bottom: 65px;
+    left: 10px;
   }
 }
 
@@ -2556,6 +2584,24 @@ aside,
     margin-right: 0px;
     margin-bottom: 30px;
   }
+  .homepage-03 .sub-section-heading h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .homepage-03.about-introduction .about-intro-left .award {
+    width: 125px;
+    height: 125px;
+    top: 0px;
+    left: inherit;
+    right: -5px !important;
+  }
+  .homepage-03 .work-process {
+    flex-direction: column;
+  }
+  .homepage-03 .work-process-item i {
+    font-size: 32px;
+    margin-right: 15px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
@@ -2586,6 +2632,17 @@ aside,
   }
   .about-skill-pogressbar .round-wrapper {
     margin-right: 0px !important;
+  }
+  .homepage-03 .sub-section-heading h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .homepage-03.about-introduction .about-intro-left .award {
+    top: inherit;
+    bottom: -45px;
+  }
+  .homepage-03.about-introduction .about-intro-left .award-icon i {
+    font-size: 32px;
   }
 }
 
@@ -2671,17 +2728,10 @@ aside,
     right: 52%;
     bottom: 48%;
   }
-  .aboutus-introduction02 .small-feature {
-    left: 3%;
-    bottom: 49%;
-  }
-  .about-skill-pogressbar .round-wrapper {
-    margin-right: 0px !important;
-  }
+  /* extra Small devices 420 */
 }
 
-/* extra Small devices 420 */
-@media (max-width: 420px) {
+@media only screen and (min-width: 420px) and (max-width: 574px) and (max-width: 420px) {
   /* common area start */
 }
 

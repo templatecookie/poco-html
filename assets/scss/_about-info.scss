@@ -226,10 +226,11 @@
 /*----------------------------------------*/
 .homepage-03 {
     &.about-introduction {
-        padding-bottom: 260px;
+        padding-bottom: 285px;
     }
 
     .sub-section-heading {
+        margin-top: 75px;
         p {
             font-size: 18px;
             font-family: $gilroy-medium;
@@ -377,20 +378,17 @@
     }
 }
 
-
 /*----------------------------------------*/
 /*  Our-Teams
 /*----------------------------------------*/
 .our-teams {
-   padding-bottom: 160px;
+    padding-bottom: 160px;
     .our-teams-member {
         .member-info {
             bottom: -25px;
         }
     }
 }
-
-
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
@@ -452,6 +450,26 @@
             margin-left: 0px;
             img {
                 max-width: 100%;
+            }
+        }
+    }
+
+    .homepage-03 {
+        &.about-introduction {
+            .about-intro-left {
+                .image {
+                    margin-left: 0px;
+                    img {
+                        max-width: 100%;
+                    }
+                    .about02 {
+                        display: none;
+                    }
+                }
+                .award {
+                    bottom: 65px;
+                    left: -90px;
+                }
             }
         }
     }
@@ -566,6 +584,22 @@
             }
         }
     }
+
+    .homepage-03 {
+        &.about-introduction {
+            padding-bottom: 90px;
+            .about-intro-left {
+                .image {
+                    display: flex;
+                    justify-content: center;
+                }
+                .award {
+                    bottom: 65px;
+                    left: 10px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -624,21 +658,21 @@
                 bottom: 45px;
             }
         }
-     }
-     .about-skill {
-         &-wrapper {
-             max-width: 100% !important;
-             margin-top: 0px !important;
-         }
-         &-title {
-             h2 {
+    }
+    .about-skill {
+        &-wrapper {
+            max-width: 100% !important;
+            margin-top: 0px !important;
+        }
+        &-title {
+            h2 {
                 line-height: 42px;
-             }
-         }
-         &-pogressbar {
-             justify-content: center;
-         }
-     }
+            }
+        }
+        &-pogressbar {
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -706,11 +740,11 @@
             }
         }
     }
-    .about-skill { 
+    .about-skill {
         &-title {
             h2 {
-                    font-size: 28px !important;
-                    line-height: 48px !important;
+                font-size: 28px !important;
+                line-height: 48px !important;
             }
         }
         &-pogressbar {
@@ -718,6 +752,35 @@
             .round-wrapper {
                 margin-right: 0px;
                 margin-bottom: 30px;
+            }
+        }
+    }
+
+    .homepage-03 {
+        .sub-section-heading {
+            h2 {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+        &.about-introduction {
+            .about-intro-left {
+                .award {
+                    width: 125px;
+                    height: 125px;
+                    top: 0px;
+                    left: inherit;
+                    right: -5px !important;
+                }
+            }
+        }
+        .work-process {
+            flex-direction: column;
+            &-item {
+                i {
+                    font-size: 32px;
+                    margin-right: 15px;
+                }
             }
         }
     }
@@ -757,7 +820,7 @@
                 margin-bottom: 20px;
                 margin-top: 20px;
             }
-            .member-info  {
+            .member-info {
                 max-width: 95% !important;
             }
             .social-links {
@@ -770,6 +833,28 @@
         &-pogressbar {
             .round-wrapper {
                 margin-right: 0px !important;
+            }
+        }
+    }
+
+    .homepage-03 {
+        .sub-section-heading {
+            h2 {
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
+        &.about-introduction {
+            .about-intro-left {
+                .award {
+                    top: inherit;
+                    bottom: -45px;
+                    &-icon {
+                        i {
+                            font-size: 32px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -857,7 +942,6 @@
             margin-bottom: 30px;
         }
     }
-    
 }
 
 /* Small devices 420 - 574 */
@@ -879,21 +963,9 @@
     }
 
     // Homepage-02 / aboutus-introduction
-    .aboutus-introduction02 {
-        .small-feature {
-            left: 3%;
-            bottom: 49%;
-        }
+
+    /* extra Small devices 420 */
+    @media #{$xsm} {
+        /* common area start */
     }
-    .about-skill {
-        &-pogressbar {
-            .round-wrapper {
-                margin-right: 0px !important;
-            }
-        }
-    }
-}
-/* extra Small devices 420 */
-@media #{$xsm} {
-    /* common area start */
 }
