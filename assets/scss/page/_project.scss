@@ -2,6 +2,8 @@
 .project {
     &-wrapper {
         &-image {
+            margin-left: -30px;
+            margin-bottom: -10px;
             img {
                 max-width: 100%;
             }
@@ -25,11 +27,12 @@
             p {
                 font-size: 18px;
                 line-height: 30px;
+                margin-top: 5px;
             }
         }
 
         &-button {
-            margin-top: 20px;
+            margin-top: 45px;
         }
     }
 
@@ -46,12 +49,14 @@
 //OUR PROJECT DEATIL AREA
 .project-details-content {
     .our-work-process {
-        margin-top: 130px;
+        margin-top: 145px;
+        padding-bottom: 150px;
         z-index: 5;
     }
 }
 
 .project-detail {
+    padding-top: 35px;
     .overview-image {
         img {
             border-radius: 5px;
@@ -87,12 +92,12 @@
     }
 
     .project-detail-content {
-        margin-top: 50px;
+        margin-top: 58px;
 
         h2 {
             font-size: 40px;
             line-height: 49px;
-            margin-bottom: 15px;
+            margin-bottom: 35px;
         }
 
         p {
@@ -102,7 +107,7 @@
     }
 
     .project-next-prev-button {
-        margin-top: 80px;
+        margin-top: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -118,23 +123,22 @@
             &:hover {
                 background: $tertiary;
                 color: white;
-
             }
         }
 
         .icon01 {
-            padding-right: 5px
+            padding-right: 5px;
         }
 
         .icon02 {
-            padding-left: 5px
+            padding-left: 5px;
         }
     }
 }
 
 //project-work-process
 .project-work-process {
-    background: #FFF5F7;
+    background: #fff5f7;
     margin: 0 45px;
     border-radius: 24px;
     position: relative;
@@ -142,23 +146,161 @@
 
     .process-item {
         .dashed02 {
-            background-color: #FFF5F7;
+            background-color: #fff5f7;
         }
     }
 
     .shape {
+        pointer-events: none;
         img {
             position: absolute;
         }
 
         .round-shape01 {
             top: -7%;
-            right: 5%;
+            right: 3%;
         }
 
         .round-shape02 {
             top: -10%;
-            left: 5%;
+            left: 3.5%;
         }
     }
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/*Common Devices */
+@media (max-width: 1024px) {
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+    .project {
+        &-wrapper {
+            &-image {
+                margin-left: -25px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    // project-worck-proecess
+    .our-work-process {
+        .process-item {
+            .dashed01,
+            .dashed02,
+            .dashed03 {
+                &::before,
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        .shape {
+            .round-shape01 {
+                top: -5%;
+            }
+            .round-shape02 {
+                top: -6%;
+            }
+        }
+    }
+    .project-detail {
+        .project-overview-wrapper {
+            margin-top: 40px;
+            .overview-detail {
+                display: list-item;
+                text-align: center;
+                .detail-tittle {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    // project-worck-proecess
+    .project-work-process {
+        margin: 0;
+        border-radius: 0px;
+    }
+    .project-detail {
+        .project-overview-wrapper {
+            margin: 40px 15px 0px 15px;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 419px) {
+    .project {
+        &-wrapper {
+            &-image {
+                margin-left: -15px;
+            }
+            &-title {
+                h3 {
+                    margin-top: 15px;
+                    font-size: 28px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .project-detail {
+        .project-overview-wrapper {
+            .overview-detail {
+                padding: 30px 20px;
+            }
+        }
+    }
+}
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+    .project {
+        &-wrapper {
+            &-image {
+                margin-left: -15px;
+            }
+        }
+    }
+    // project-worck-proecess
+    .project-work-process {
+        .shape {
+            .round-shape01 {
+                top: -5%;
+            }
+            .round-shape02 {
+                top: -6%;
+            }
+        }
+    }
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+    .project {
+        &-wrapper {
+            &-image {
+                margin-left: -20px;
+            }
+        }
+    }
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
 }

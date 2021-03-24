@@ -2,10 +2,11 @@
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 #circleBar {
-    margin-top: 60px;
+    margin-top: 45px;
     text-align: center;
-    .section-title{
-        h2{
+    .section-title {
+        margin-bottom: 35px;
+        h2 {
             text-transform: uppercase;
             color: white;
             font-family: $teko;
@@ -13,11 +14,10 @@
             font-size: 60px;
             line-height: 118px;
         }
-        span{
+        span {
             color: $tertiary;
         }
     }
-
 }
 
 #circleBar .round {
@@ -27,10 +27,9 @@
 
 #circleBar {
     .round {
-        canvas{
+        canvas {
             width: 182px;
             height: 182px;
-            
         }
         .round-text {
             position: absolute;
@@ -40,11 +39,11 @@
             line-height: 45px;
             color: #fff;
             font-weight: 600 !important;
-            font-family: "Teko", sans-serif;
+            font-family: 'Teko', sans-serif;
             transform: translate(-50%, -50%);
             text-align: center;
             margin-top: -30px;
-            P{
+            P {
                 color: #fff;
                 font-size: 16px;
                 font-family: $hind;
@@ -54,6 +53,6 @@
         }
     }
 }
-.circleProgress{
+.circleProgress {
     background-color: transparent;
 }

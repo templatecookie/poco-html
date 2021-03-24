@@ -7,21 +7,21 @@
     &-member {
         &:hover {
             .member-info {
-                background-color: #FF465E;
+                background-color: #ff465e;
 
                 .name {
                     h5 {
-                        color: #FFFFFF;
+                        color: #ffffff;
                     }
 
                     p {
-                        color: #FFFFFF;
+                        color: #ffffff;
                     }
                 }
 
                 .social-links {
                     a {
-                        color: #FFFFFF;
+                        color: #ffffff;
                     }
                 }
             }
@@ -37,14 +37,14 @@
 
         .member-info {
             position: absolute;
-            bottom: -5%;
+            bottom: 25px;
             left: 0;
             right: 0;
             transition: 0.3s all linear;
             border-radius: 6px;
             margin: 0px 30px 0px 30px;
             padding: 20px;
-            background-color: #FFFFFF;
+            background-color: #ffffff;
 
             .name {
                 h5 {
@@ -58,7 +58,7 @@
 
             .social-links {
                 a {
-                    color: #65729E;
+                    color: #65729e;
                     font-size: 16px;
                     transition: 0.3s all linear;
 
@@ -68,7 +68,6 @@
                 }
             }
         }
-
     }
 }
 
@@ -76,10 +75,10 @@
 
 //Teams Modification Team Member Page
 .teams-modifi {
-    background-color: #FFF5F7;
+    background-color: #fff5f7;
     margin: 0 45px;
     padding-top: 130px;
-    padding-bottom: 160px;
+    padding-bottom: 75px;
     border-radius: 24px;
     position: relative;
     z-index: -5;
@@ -108,7 +107,7 @@
 /*  HOMEPAGE 03
 /*----------------------------------------*/
 .our-team {
-    background-color: #FFFAF5;
+    background-color: #fffaf5;
 
     &-member {
         &-info {
@@ -129,7 +128,7 @@
                     font-size: 20px;
 
                     &:hover {
-                        color: #ED880A;
+                        color: #ed880a;
                     }
                 }
             }
@@ -141,9 +140,37 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/* large devices 992 - 1169*/
-@media #{$lg} {
+/* common devices - Sizes */
+@media (max-width: 767px) {
+    .our-teams {
+        .mask-group {
+            .mask01 {
+                top: -45px;
+            }
+            .mask02 {
+                top: -2px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .teams-modifi {
+        margin: 0px;
+        border-radius: 0px;
+    }
+}
 
+@media (min-width: 320px) and (max-width: 419px) {
+    .our-teams-member {
+        .member-info {
+            position: relative;
+            width: 290px;
+            margin: auto;
+        }
+    }
+}
+/* large devices 992 - 1199*/
+@media #{$lg} {
     // Globally Our Teams
     .our-teams {
         padding-top: 100px !important;
@@ -165,12 +192,10 @@
             }
         }
     }
-
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-
     // Globally Our Teams
     .our-teams {
         padding-top: 70px !important;
@@ -201,48 +226,19 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-        // Globally Our Teams
-        .our-teams {
-            padding-top: 50px !important;
-            padding-bottom: 50px !important;
-            .our-teams-member .image{
-               text-align: center !important;
-            }
-            .all-member {
-                margin-top: 25px !important;
-    
-                .member-info {
-                    max-width: 60%;
-                   margin: 0 auto;
-                    .name {
-                        h5 {
-                            font-size: 18px !important;
-                        }
-    
-                        p {
-                            font-size: 14px !important;
-                        }
-                    }
-                }
-            }
-        }
-}
-
-/* Small devices 420 - 574 */
-@media #{$xs} {
     // Globally Our Teams
     .our-teams {
         padding-top: 50px !important;
         padding-bottom: 50px !important;
-        .our-teams-member .image{
-           text-align: center !important;
+        .our-teams-member .image {
+            text-align: center !important;
         }
         .all-member {
             margin-top: 25px !important;
 
             .member-info {
-                max-width: 80%;
-               margin: 0 auto;
+                max-width: 60%;
+                margin: 0 auto;
                 .name {
                     h5 {
                         font-size: 18px !important;
@@ -254,24 +250,80 @@
                 }
             }
         }
+        &-member {
+            .member-info {
+                position: relative;
+                margin: 0px 40px;
+            }
+        }
     }
 }
 
-/* extra Small devices 420 */
-@media #{$xsm} {
-     // Globally Our Teams
-     .our-teams {
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    // Globally Our Teams
+    .our-teams {
         padding-top: 50px !important;
         padding-bottom: 50px !important;
-        .our-teams-member .image{
-           text-align: center !important;
+
+        .section-title {
+            margin-top: 60px;
+            h2 {
+                font-size: 38px;
+            }
+        }
+
+        .our-teams-member .image {
+            text-align: center !important;
         }
         .all-member {
             margin-top: 25px !important;
 
             .member-info {
                 max-width: 80%;
-               margin: 0 auto;
+                margin: 0 auto;
+                .name {
+                    h5 {
+                        font-size: 18px !important;
+                    }
+
+                    p {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+        &-member {
+            .member-info {
+                position: relative;
+                margin: 0px 0px;
+            }
+        }
+    }
+}
+
+/* extra Small devices 420 */
+@media #{$xsm} {
+    // Globally Our Teams
+    .our-teams {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+        .section-title {
+            margin-top: 60px;
+            h2 {
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
+        .our-teams-member .image {
+            text-align: center !important;
+        }
+        .all-member {
+            margin-top: 25px !important;
+
+            .member-info {
+                max-width: 80%;
+                margin: 0 auto;
                 .name {
                     h5 {
                         font-size: 18px !important;

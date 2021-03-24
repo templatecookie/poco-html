@@ -3,25 +3,29 @@
 /*----------------------------------------*/
 // About-Info Starts Here
 .about-info {
+    position: relative;
     &-image {
-        margin-left: -110px;
+        margin-left: -190px;
     }
 
     &-text {
         h2 {
             font-family: $gilroy-bold;
             max-width: 530px;
+            line-height: 64px;
+            margin-bottom: 12px;
         }
 
         p {
             font-family: $gilroy-medium;
-            margin-bottom: 20px;
+            margin-bottom: 45px;
+            line-height: 30px;
         }
     }
 
     &-project {
         padding-top: 27px;
-        border-top: 1px solid #B4C1E9;
+        border-top: 1px solid #b4c1e9;
 
         .project-rating {
             h3 {
@@ -33,7 +37,7 @@
                 margin-top: 2px;
 
                 i {
-                    color: #FF8B17;
+                    color: #ff8b17;
                 }
             }
 
@@ -55,24 +59,42 @@
             }
         }
     }
+
+    .mask-group {
+        .mask1 {
+            position: absolute;
+            right: 0px;
+            bottom: 135px;
+            pointer-events: none;
+            user-select: none;
+            z-index: -1;
+        }
+    }
 }
 
 /*----------------------------------------*/
 /* HOMEPAGE 02
 /*----------------------------------------*/
 .aboutus02 {
-    padding: 130px 0;
+    padding: 130px 0px 160px 0px;
     position: relative;
 
     &-wrapper {
         max-width: 93%;
 
         &-title {
+            h2 {
+                line-height: 64px;
+                display: inline-block;
+                margin-bottom: 45px;
+            }
             p {
                 font-size: 18px;
                 font-family: $gilroy-medium;
                 line-height: 30px;
                 margin-top: 20px;
+                display: inline-block;
+                margin-bottom: 20px;
             }
 
             margin-bottom: 20px;
@@ -86,10 +108,10 @@
                     font-size: 20px;
                     font-family: $gilroy-medium;
                     line-height: 30px;
-                    margin-bottom: 10px;
+                    margin-bottom: 18px;
 
                     img {
-                        border: 1px solid #FF465E;
+                        border: 1px solid #ff465e;
                         border-radius: 50%;
                         padding: 6px 4px;
                         margin-right: 10px;
@@ -103,7 +125,7 @@
 
     &-image {
         position: relative;
-
+        margin-left: 30px;
         img {
             width: 516px;
             height: 686px;
@@ -113,37 +135,35 @@
         }
 
         &::after {
-            content: "";
+            content: '';
             position: absolute;
             bottom: 30px;
             border: 5px solid $white;
-            right: -15px;
+            right: 30px;
             width: 516px;
             height: 693px;
             border-radius: 101px;
             border-top-right-radius: 0;
             border-bottom-left-radius: 0;
-
         }
 
         &::before {
-            content: "";
+            content: '';
             position: absolute;
             top: 63px;
-            border: 5px solid #FF465E;
-            right: -75px;
+            border: 5px solid #ff465e;
+            right: -100px;
             width: 455px;
             height: 654px;
             border-radius: 101px;
             z-index: -99;
-
         }
     }
 
     .small-feature {
         position: absolute;
-        bottom: 21%;
-        right: 40%;
+        bottom: 24.1%;
+        right: 38.5%;
     }
 }
 
@@ -152,7 +172,7 @@
     position: relative;
 
     .aboutus-introduction02-image {
-        margin-left: -175px;
+        // margin-left: 0p;
         position: relative;
 
         img {
@@ -164,40 +184,41 @@
         }
 
         &::after {
-            content: "";
+            content: '';
             position: absolute;
             bottom: 30px;
             border: 5px solid $white;
-            right: 0;
+            left: 30px;
             width: 516px;
             height: 693px;
             border-radius: 101px;
             border-top-left-radius: 0;
             border-bottom-right-radius: 0;
-
-
         }
 
         &::before {
-            left: -35px;
-            content: "";
+            left: -30px;
+            content: '';
             position: absolute;
             top: 68px;
-            border: 5px solid #FF465E;
+            border: 5px solid #ff465e;
             width: 455px;
             height: 654px;
             border-radius: 101px;
             z-index: -99;
-
         }
     }
 
     .introduction-feature {
         position: absolute;
         bottom: 22%;
-        left: 33%;
+        left: 39.5%;
     }
-
+    .aboutus02-wrapper {
+        max-width: 94%;
+        margin-left: 10px;
+        margin-left: 125px;
+    }
 }
 
 /*----------------------------------------*/
@@ -205,10 +226,11 @@
 /*----------------------------------------*/
 .homepage-03 {
     &.about-introduction {
-        padding-bottom: 260px;
+        padding-bottom: 285px;
     }
 
     .sub-section-heading {
+        margin-top: 75px;
         p {
             font-size: 18px;
             font-family: $gilroy-medium;
@@ -223,7 +245,7 @@
 
         &-item {
             i {
-                color: #ED880A;
+                color: #ed880a;
             }
         }
     }
@@ -270,7 +292,7 @@
             &-icon {
                 i {
                     font-size: 55px;
-                    color: #ED880A;
+                    color: #ed880a;
                 }
             }
 
@@ -286,7 +308,7 @@
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 .about-info04 {
-    padding-top: 120px;
+    padding-top: 115px;
     padding-bottom: 27px;
     background-position: top center;
     background-repeat: no-repeat;
@@ -305,11 +327,10 @@
             font-family: $teko;
             line-height: 118px;
             font-weight: 600;
-
+            margin-bottom: 5px;
             span {
                 color: $tertiary;
             }
-
         }
 
         p {
@@ -317,6 +338,8 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 27px;
+            position: relative;
+            z-index: 9;
         }
 
         .about-info-project {
@@ -340,11 +363,10 @@
                     font-family: 500;
                     font-size: 20px;
                     line-height: 34px;
-                    color: #9DADB7;
+                    color: #9dadb7;
                 }
             }
         }
-
     }
 
     .right-vcetor {
@@ -353,16 +375,492 @@
             top: 31%;
             right: 5%;
         }
-
     }
 }
 
+/*----------------------------------------*/
+/*  Our-Teams
+/*----------------------------------------*/
+.our-teams {
+    padding-bottom: 160px;
+    .our-teams-member {
+        .member-info {
+            bottom: -25px;
+        }
+    }
+}
 
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/* large devices 992 - 1169*/
+/* Common max-Sizes */
+@media (max-width: 1200px) {
+    .about {
+        &-info {
+            &-image {
+                margin-left: 0px;
+            }
+            .mask-group {
+                .mask1 {
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+
+    // Homepage-02 / Aboutus-02
+    .aboutus02 {
+        .small-feature {
+            bottom: 30.1%;
+            right: 30.5%;
+        }
+    }
+    .aboutus02-image {
+        &::before {
+            right: -10px;
+            top: 30px;
+        }
+        &::after {
+            bottom: 0;
+            right: -4px;
+        }
+    }
+
+    // Homepage-02 / Aboutus-introduction
+    .aboutus-introduction02 {
+        .aboutus-introduction02-image {
+            margin-left: 0px;
+            img {
+                width: 516px;
+                height: 686px;
+                border-radius: 101px;
+                border-top-left-radius: 0;
+                object-fit: cover;
+            }
+        }
+        .introduction-feature {
+            left: 33.5%;
+        }
+    }
+
+    // homepage -04 / Aboutus -info
+    .about-info04 {
+        .about-info-image {
+            margin-left: 0px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .homepage-03 {
+        &.about-introduction {
+            .about-intro-left {
+                .image {
+                    margin-left: 0px;
+                    img {
+                        max-width: 100%;
+                    }
+                    .about02 {
+                        display: none;
+                    }
+                }
+                .award {
+                    bottom: 65px;
+                    left: -90px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .about-info04 {
+        .right-vcetor {
+            img {
+                top: 25%;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .aboutus-introduction02 {
+        .aboutus02-wrapper {
+            max-width: 100%;
+            margin-left: 110px;
+        }
+        .aboutus-introduction02-image {
+            &::before {
+                // z-index: 1;
+                top: -2px;
+                left: 20px;
+            }
+            &::after {
+                left: 0px;
+                bottom: 0px;
+                z-index: -999;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and(max-width: 1024px) {
+    // homepage-02
+    // about us-02
+    .aboutus02 {
+        .small-feature {
+            bottom: 26.1%;
+            right: 40%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 1024px) {
+    .aboutus-introduction02 {
+        .aboutus02-wrapper {
+            &-title {
+                h2 {
+                    line-height: 52px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        .small-feature {
+            bottom: 25%;
+            left: 42%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    // homepage-02
+
+    // aboutus-introduction02-image
+    .aboutus02 {
+        &-image {
+            &::before {
+                right: 140px;
+                top: 30px;
+                z-index: 1;
+            }
+            &::after {
+                right: 125px;
+            }
+        }
+        .small-feature {
+            bottom: 62%;
+            right: 10%;
+            z-index: 9;
+        }
+        &-wrapper-title {
+            h2 {
+                display: inline-block;
+                margin-top: 30px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .about-info04 {
+        .right-vcetor {
+            img {
+                top: 60%;
+            }
+        }
+    }
+
+    .about-skill {
+        &-image {
+            img {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .homepage-03 {
+        &.about-introduction {
+            padding-bottom: 90px;
+            .about-intro-left {
+                .image {
+                    display: flex;
+                    justify-content: center;
+                }
+                .award {
+                    bottom: 65px;
+                    left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        &-info {
+            &-text {
+                h2 {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+            }
+        }
+    }
+
+    // Homepage -02 / About us
+    .aboutus02 {
+        .small-feature {
+            right: 5%;
+        }
+
+        &-image {
+            &::before {
+                right: 30px;
+            }
+            &::after {
+                right: -1px;
+            }
+        }
+    }
+
+    // Homepage-02 / aboutus-introduction02
+    .aboutus-introduction02 {
+        .aboutus-introduction02 {
+            &-image {
+                &::before {
+                    top: 32px !important;
+                    left: 0px;
+                    z-index: 1;
+                }
+                &::after {
+                    left: -5px !important;
+                    bottom: -2px !important;
+                    border-radius: 101px !important;
+                    width: 523px;
+                }
+            }
+        }
+        .small-feature {
+            left: 70%;
+        }
+    }
+
+    .our-teams {
+        .our-teams-member {
+            .member-info {
+                bottom: 45px;
+            }
+        }
+    }
+    .about-skill {
+        &-wrapper {
+            max-width: 100% !important;
+            margin-top: 0px !important;
+        }
+        &-title {
+            h2 {
+                line-height: 42px;
+            }
+        }
+        &-pogressbar {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .about {
+        &-info {
+            &-text {
+                margin-top: 30px;
+            }
+            .mask-group {
+                .mask1 {
+                    bottom: -5px;
+                }
+            }
+        }
+    }
+
+    // Homepage-02 / Aboutus
+    .aboutus02 {
+        .small-feature {
+            right: 65%;
+            bottom: 46%;
+        }
+
+        &-wrapper-title {
+            h2 {
+                font-size: 26px;
+                line-height: 38px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &-image {
+            margin-left: 0px;
+            &::after,
+            &::before {
+                display: none;
+            }
+        }
+    }
+    // Homepage-02 / aboutus-introduction
+    .aboutus-introduction02 {
+        .aboutus02-wrapper {
+            margin-left: 0px;
+        }
+        &-image {
+            margin-left: 0px !important;
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+        .small-feature {
+            left: 2%;
+        }
+    }
+
+    .about-info04 {
+        .about-info-text {
+            .about-info-project {
+                .project-information {
+                    z-index: 9;
+                }
+            }
+        }
+    }
+    .about-skill {
+        &-title {
+            h2 {
+                font-size: 28px !important;
+                line-height: 48px !important;
+            }
+        }
+        &-pogressbar {
+            flex-direction: column;
+            .round-wrapper {
+                margin-right: 0px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .homepage-03 {
+        .sub-section-heading {
+            h2 {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+        &.about-introduction {
+            .about-intro-left {
+                .award {
+                    width: 125px;
+                    height: 125px;
+                    top: 0px;
+                    left: inherit;
+                    right: -5px !important;
+                }
+            }
+        }
+        .work-process {
+            flex-direction: column;
+            &-item {
+                i {
+                    font-size: 32px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and(max-width: 419px) {
+    // Homepage -02 / Aboutus -02
+    .aboutus02 {
+        .small-feature {
+            right: 65px;
+            bottom: 52%;
+        }
+    }
+    .aboutus-introduction02 {
+        .small-feature {
+            bottom: 52%;
+            left: 65px;
+        }
+        .aboutus02-wrapper-title {
+            h2 {
+                line-height: 38px !important;
+            }
+        }
+    }
+    .about-info04 {
+        .about-info-text {
+            h2 {
+                font-size: 48px;
+            }
+        }
+    }
+
+    // our-teams
+    .our-teams {
+        .all-member {
+            .col-lg-4 {
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            .member-info {
+                max-width: 95% !important;
+            }
+            .social-links {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .about-skill {
+        &-pogressbar {
+            .round-wrapper {
+                margin-right: 0px !important;
+            }
+        }
+    }
+
+    .homepage-03 {
+        .sub-section-heading {
+            h2 {
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
+        &.about-introduction {
+            .about-intro-left {
+                .award {
+                    top: inherit;
+                    bottom: -45px;
+                    &-icon {
+                        i {
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* large devices 992 - 1199*/
 @media #{$lg} {
     /* common area start */
     .about-info-project .project-rating h3,
@@ -376,7 +874,7 @@
             margin-bottom: 15px;
         }
     }
-    .about-info-image{
+    .about-info-image {
         margin-left: 0;
     }
     .about-info {
@@ -386,16 +884,15 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-
-    .about-info{
+    .about-info {
         padding-top: 100px;
         padding-bottom: 70px;
         .about-info-image {
             margin-left: 0px;
             margin-bottom: 50px;
         }
-        .about-info-text{
-            h2{
+        .about-info-text {
+            h2 {
                 min-width: 100%;
                 padding-bottom: 20px;
             }
@@ -403,20 +900,44 @@
         .about-info-project {
             padding-top: 20px;
         }
-    .about-info-project .project-rating h3,
-    .about-info-project .project-information h3 {
-        font-size: 28px;
+        .about-info-project .project-rating h3,
+        .about-info-project .project-information h3 {
+            font-size: 28px;
+        }
+        // mask-group
+        .mask-group {
+            .mask1 {
+                bottom: -25px;
+            }
+        }
     }
+    // Homepage-02 / About-us-introduction-02
+    .aboutus-introduction02 {
+        &-image {
+            &::before {
+                z-index: 1 !important;
+                left: 65px !important;
+                top: 0px !important;
+                height: 690px !important;
+            }
+            &::after {
+                border-radius: 101px !important;
+                left: 30px !important;
+                bottom: -2px !important;
+            }
+        }
+        .small-feature {
+            left: 69%;
+        }
     }
-
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
     /* common area start */
-    .about-info{
+    .about-info {
         padding: 70px 0;
-        .about-info-image{
+        .about-info-image {
             margin-left: 0;
             margin-bottom: 30px;
         }
@@ -426,8 +947,25 @@
 /* Small devices 420 - 574 */
 @media #{$xs} {
     /* common area start */
-}
-/* extra Small devices 420 */
-@media #{$xsm} {
-    /* common area start */
+
+    // Homepage-02 / About-us
+
+    .aboutus02 {
+        &-image {
+            &::before {
+                right: 2px;
+            }
+        }
+        .small-feature {
+            right: 52%;
+            bottom: 48%;
+        }
+    }
+
+    // Homepage-02 / aboutus-introduction
+
+    /* extra Small devices 420 */
+    @media #{$xsm} {
+        /* common area start */
+    }
 }

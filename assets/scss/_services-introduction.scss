@@ -10,6 +10,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: auto;
             margin-bottom: 25px;
         }
 
@@ -18,10 +19,13 @@
             color: $primary;
             font-family: $gilroy-bold;
             line-height: 22px;
+            margin: auto;
+            text-align: center;
         }
     }
 
     &-text {
+        margin-left: -15px;
         .section-heading {
             h2 {
                 margin-bottom: 45px;
@@ -34,12 +38,14 @@
                 list-style: 30px;
                 font-family: $gilroy-medium;
                 font-size: 18px;
+                margin-top: 60px;
             }
         }
 
         a {
             margin-top: 50px;
             transition: 0.3s;
+            margin-top: 55px;
         }
     }
 }
@@ -49,7 +55,15 @@
 /*----------------------------------------*/
 .homepage-03 {
     &.service-introduction {
-        padding-bottom: 130px;
+        padding-bottom: 150px;
+
+        .services-introduction-item-text {
+            text-align: center;
+        }
+        .services-introduction-item-image {
+            width: 135px;
+            height: 135px;
+        }
     }
 
     .section-heading {
@@ -73,4 +87,88 @@
             }
         }
     }
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+
+/* Common Devices-Sizes */
+
+@media (max-width: 991px) {
+    .services-introduction {
+        .section-heading {
+            h2 {
+                line-height: 48px;
+                margin-bottom: 15px;
+            }
+            p {
+                margin-top: 0px;
+            }
+        }
+        &-text {
+            a {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .service-introduction {
+        .section-heading {
+            h2 {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+        .services-introduction {
+            &-item {
+                margin-bottom: 30px;
+                &-text {
+                    h5 {
+                        font-size: 28px;
+                        line-height: 42px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .services-introduction {
+        &-text {
+            margin-left: 0px;
+        }
+        .section-heading {
+            h2 {
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+/* large devices 992 - 1169*/
+@media #{$lg} {
+    /* common area start */
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+    /* common area start */
+}
+
+/* Small devices 575 - 767 */
+@media #{$sm} {
+    /* common area start */
+}
+
+/* Small devices 420 - 574 */
+@media #{$xs} {
+    /* common area start */
+}
+/* extra Small devices 420 */
+@media #{$xsm} {
+    /* common area start */
 }

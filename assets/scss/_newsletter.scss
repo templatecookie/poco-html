@@ -2,11 +2,15 @@
 /*  HOMEPAGE 01
 /*----------------------------------------*/
 .newsletter-area {
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 145px;
     &-text {
         h2 {
             margin-bottom: 12px;
             font-family: $gilroy-bold;
+            display: inline-block;
+            padding-right: 75px;
+            line-height: 64px;
         }
 
         p {
@@ -16,9 +20,10 @@
     }
 
     &-form {
+        margin-left: 35px;
         form {
             .input-group {
-                margin-bottom: 20px;
+                margin-bottom: 22px;
 
                 input {
                     height: 65px;
@@ -26,7 +31,7 @@
                     padding: 20px 0px 20px 30px;
                     border-radius: 35px;
                     background-color: rgba(255, 70, 94, 0.05);
-                    border: 1px solid #DDDDDD;
+                    border: 1px solid #dddddd;
 
                     &:focus {
                         box-shadow: none;
@@ -43,8 +48,59 @@
     }
 }
 
+/*Responsive */
+
+/*Common Device-Sizes */
+@media (max-width: 991px) {
+    .newsletter-area {
+        &-form {
+            margin-left: 0px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .newsletter-area {
+        padding: 75px 0px;
+        &-text {
+            h2 {
+                font-size: 26px !important;
+                line-height: 36px !important;
+            }
+            p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &-form {
+            margin: 25px 0px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .newsletter-area {
+        &-text {
+            h2 {
+                padding-right: 0px;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        &-form {
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
 /* large devices 992 - 1169*/
-@media #{$lg} { 
+@media #{$lg} {
     .newsletter-area {
         padding: 95px 0;
         .newsletter-area-text p {
@@ -59,11 +115,11 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
     /* common area start */
-    .newsletter-area{
+    .newsletter-area {
         padding: 100px 0;
-        .newsletter-area-text{
-            margin-bottom: 50px;    
-            p{
+        .newsletter-area-text {
+            margin-bottom: 50px;
+            p {
                 font-size: 22px;
             }
         }

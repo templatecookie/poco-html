@@ -1,18 +1,18 @@
 /*----------------------------------------*/
 /*  HOME PAGE 01
 /*----------------------------------------*/
-.brand-area{
-    .brand-slider-active{
-        .slick-track{
-            display:flex;
+.brand-area {
+    .brand-slider-active {
+        .slick-track {
+            display: flex;
             align-items: center;
         }
-        .single-brand{
-            img{
+        .single-brand {
+            img {
                 margin: auto;
-                width: 150px;
+                width: 160px;
                 filter: grayscale(100%);
-                &:hover{
+                &:hover {
                     filter: grayscale(0%);
                 }
             }
@@ -22,29 +22,35 @@
 /*----------------------------------------*/
 /*  HOME PAGE 02
 /*----------------------------------------*/
-.brands{
+.brands {
     margin-top: -50px;
     z-index: 99;
     position: relative;
-    &-area{
+    &-area {
         padding: 60px 0px;
         border-radius: 10px;
         background-color: #fff;
-        ul{
-            li{
-                text-align: center;
-                img{
+        .brand-slider-item {
+            .slick-track {
+                display: flex;
+                align-items: center;
+            }
+            div {
+                // text-align: center;
+                display: flex;
+                align-items: center;
+                margin: 0px 15px;
+                img {
+                    // margin: auto;
                     width: 120px;
                     filter: grayscale(100%);
                     cursor: pointer;
-                    &:hover{
+                    &:hover {
                         filter: grayscale(0);
                     }
                 }
             }
-
         }
-        
     }
 }
 /*----------------------------------------*/
@@ -54,7 +60,6 @@
 /* large devices 992 - 1169*/
 @media #{$lg} {
     /* common area start */
-
 }
 
 /* Medium devices 768 - 991 */
@@ -65,9 +70,9 @@
 /* Small devices 575 - 767 */
 @media #{$sm} {
     /* common area start */
-    .brand-area{
+    .brand-area {
         padding-top: 70px;
-        .small-section{
+        .small-section {
             margin-bottom: 20px;
         }
     }
