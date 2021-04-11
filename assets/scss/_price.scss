@@ -98,6 +98,13 @@
 }
 
 /* Common max-Sizes */
+
+@media (max-width: 1199px) {
+  .brands-area {
+    padding: 35px 0px;
+  }
+}
+
 @media (max-width: 767px) {
   .price-area {
     .col-lg-4 {
