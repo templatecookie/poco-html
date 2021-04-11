@@ -4232,6 +4232,7 @@ aside,
   border-radius: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   position: relative;
 }
@@ -4261,10 +4262,11 @@ aside,
 }
 
 .testimonial04 .testimonial-wrappers .testimonial-icon {
-  width: 63px;
-  height: 63px;
+  width: 65px;
+  height: 65px;
   display: flex;
   justify-content: center;
+  align-items: center;
   border: 3px solid #3b4a51;
   margin: 0 auto;
   border-radius: 100%;
