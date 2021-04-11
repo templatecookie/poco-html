@@ -2,183 +2,192 @@
 /*  HOMEPAGE 01
 /*----------------------------------------*/
 .price-area {
-    position: relative;
-    .price-box {
-        border: 2px solid #dddddd;
-        padding: 50px 0;
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #fff;
-        @include transition(0.3s);
+  position: relative;
+  .price-box {
+    border: 2px solid #dddddd;
+    padding: 50px 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    @include transition(0.3s);
 
-        &:hover {
-            .t-btn {
-                background-color: rgb(255,70,94);
-            }
-        }
-        .price-body {
-            ul {
-                li {
-                    font-family: $gilroy-medium;
-                    line-height: 30px;
-                    color: $primary;
-                    margin-bottom: 8px;
-                }
-            }
-        }
-        .price-title {
-            margin-bottom: 42px;
-            h4 {
-                margin-bottom: 5px;
-            }
-        }
-        .price-link {
-            margin-top: auto;
-            h3 {
-                margin-bottom: 15px;
-            }
-            h4 {
-                font-size: 25px;
-                line-height: 49px;
-                font-family: $gilroy-medium;
-                margin-bottom: 8px;
-                span {
-                    font-size: 32px;
-                    line-height: 49px;
-                    font-family: $gilroy-bold;
-                }
-            }
-
-            .t-btn {
-                color: $tertiary;
-                background: transparent;
-                border: 2px solid;
-            }
-
-            .t-bg-primary {
-                &:hover {
-                    color: white;
-                    background: $tertiary;
-                    border-color: $tertiary;
-                }
-            }
-        }
-        &:hover {
-            .t-bg-primary {
-                color: white;
-                background: $tertiary;
-                border-color: $tertiary;
-            }
-            border-color: $tertiary;
-        }
+    &:hover {
+      .t-btn {
+        background-color: rgb(255, 70, 94);
+      }
     }
-    .mask-group3 {
-        img {
-            position: absolute;
-            z-index: -99;
+    .price-body {
+      ul {
+        li {
+          font-family: $gilroy-medium;
+          line-height: 30px;
+          color: $primary;
+          margin-bottom: 8px;
         }
-
-        .mask9 {
-            top: 0;
-            left: 7%;
-        }
-
-        .mask6 {
-            top: 14%;
-            right: 4%;
-        }
-
-        .mask8 {
-            bottom: 12%;
-            left: 2%;
-        }
+      }
     }
+    .price-title {
+      margin-bottom: 42px;
+      h4 {
+        margin-bottom: 5px;
+      }
+    }
+    .price-link {
+      margin-top: auto;
+      h3 {
+        margin-bottom: 15px;
+      }
+      h4 {
+        font-size: 25px;
+        line-height: 49px;
+        font-family: $gilroy-medium;
+        margin-bottom: 8px;
+        span {
+          font-size: 32px;
+          line-height: 49px;
+          font-family: $gilroy-bold;
+        }
+      }
+
+      .t-btn {
+        color: $tertiary;
+        background: transparent;
+        border: 2px solid;
+      }
+
+      .t-bg-primary {
+        &:hover {
+          color: white;
+          background: $tertiary;
+          border-color: $tertiary;
+        }
+      }
+    }
+    &:hover {
+      .t-bg-primary {
+        color: white;
+        background: $tertiary;
+        border-color: $tertiary;
+      }
+      border-color: $tertiary;
+    }
+  }
+  .mask-group3 {
+    img {
+      position: absolute;
+      z-index: -99;
+    }
+
+    .mask9 {
+      top: 0;
+      left: 7%;
+    }
+
+    .mask6 {
+      top: 14%;
+      right: 4%;
+    }
+
+    .mask8 {
+      bottom: 12%;
+      left: 2%;
+    }
+  }
 }
 
 /* Common max-Sizes */
 @media (max-width: 767px) {
-    .price-area {
-        .col-lg-4 {
-            margin-bottom: 15px;
-        }
+  .price-area {
+    .col-lg-4 {
+      margin-bottom: 15px;
     }
+  }
 }
 
 @media (max-width: 575px) {
-    .price-area {
-        .mask-group3 {
-            .mask8 {
-                bottom: 0%;
-            }
-            .mask6 {
-                top: 2%;
-            }
-        }
-        .section-title {
-            h2 {
-                font-size: 38px;
-                line-height: 48px;
-            }
-        }
-        .align-items-stretch {
-            .mb-30 {
-                margin-bottom: 30px;
-            }
-        }
+  .price-area {
+    .mask-group3 {
+      .mask8 {
+        bottom: 0%;
+      }
+      .mask6 {
+        top: 2%;
+      }
     }
+    .section-title {
+      h2 {
+        font-size: 38px;
+        line-height: 48px;
+      }
+    }
+    .align-items-stretch {
+      .mb-30 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .price {
+    &-title {
+      margin-bottom: 15px !important;
+    }
+    &-body {
+      ul {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
-
 @media (min-width: 320px) and (max-width: 419px) {
-    .price-area {
-        .section-title {
-            h2 {
-                font-size: 32px;
-                line-height: 100px;
-                margin-bottom: 0px;
-            }
-        }
+  .price-area {
+    .section-title {
+      h2 {
+        font-size: 32px;
+        line-height: 100px;
+        margin-bottom: 0px;
+      }
     }
+  }
 }
 /* large devices 992 - 1199*/
 @media #{$lg} {
-    /* common area start */
-    .price-area .price-box {
-        .price-body {
-            margin-bottom: 15px;
-            ul li {
-                margin-bottom: 5px;
-            }
-        }
-        .price-title {
-            margin-bottom: 15px;
-        }
+  /* common area start */
+  .price-area .price-box {
+    .price-body {
+      margin-bottom: 15px;
+      ul li {
+        margin-bottom: 5px;
+      }
     }
-    .price-area {
-        padding-bottom: 95px;
+    .price-title {
+      margin-bottom: 15px;
     }
+  }
+  .price-area {
+    padding-bottom: 95px;
+  }
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    .price-area {
-        padding: 100px 0;
-        .md-modifi {
-            margin: 0 auto;
-            margin-top: 50px;
-        }
-        .price-box {
-            padding: 40px 0;
-            .price-title {
-                margin-bottom: 20px;
-            }
-            .price-body ul li {
-                margin-bottom: 8px;
-            }
-        }
+  .price-area {
+    padding: 100px 0;
+    .md-modifi {
+      margin: 0 auto;
+      margin-top: 50px;
     }
+    .price-box {
+      padding: 40px 0;
+      .price-title {
+        margin-bottom: 20px;
+      }
+      .price-body ul li {
+        margin-bottom: 8px;
+      }
+    }
+  }
 }
 
 // /* Small devices 575 - 767 */

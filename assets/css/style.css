@@ -3027,8 +3027,14 @@ aside,
     max-width: 95%;
     margin: auto;
   }
+  .special-services .section-title {
+    margin-bottom: 115px;
+  }
   .special-services .section-title h2 {
     font-size: 32px;
+  }
+  .special-services-item {
+    margin-bottom: 120px;
   }
 }
 
@@ -3338,6 +3344,12 @@ aside,
   }
   .price-area .align-items-stretch .mb-30 {
     margin-bottom: 30px;
+  }
+  .price-title {
+    margin-bottom: 15px !important;
+  }
+  .price-body ul {
+    margin-bottom: 15px;
   }
 }
 
@@ -3773,6 +3785,9 @@ aside,
 }
 
 @media (max-width: 575px) {
+  .callto-action-text {
+    padding: 60px 15px;
+  }
   .call-action-two {
     border-top-left-radius: 0px;
   }
