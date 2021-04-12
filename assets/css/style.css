@@ -4651,9 +4651,11 @@ aside,
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 .client-review {
+  position: relative;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 145px;
 }
 
 .client-review .banner-image {
@@ -4781,6 +4783,13 @@ aside,
   color: #fff;
 }
 
+.client-review__quotes {
+  user-select: none;
+  position: absolute;
+  right: 20%;
+  bottom: 15%;
+}
+
 @media (max-width: 1200px) {
   .client-review .banner-image img {
     max-width: 100%;
@@ -4792,10 +4801,14 @@ aside,
 
 @media (max-width: 1199px) {
   .client-review {
-    padding: 160px 0px;
+    padding: 60px 0px;
+    padding-bottom: 110px;
   }
   .client-review .review-active .slick-arrow {
     bottom: -78px;
+  }
+  .client-review__quotes {
+    right: 0px;
   }
 }
 
@@ -4815,18 +4828,24 @@ aside,
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .client-review .pl-45 {
+    padding-left: 25px;
+  }
   .client-review .review-active .single-testimonial p {
     font-size: 18px;
   }
   .client-review .review-active .slick-arrow {
-    left: -390px;
+    left: -370px;
   }
   .client-review .review-active .slick-arrow.nextArrow {
-    left: -220px;
+    left: -200px;
   }
 }
 
 @media (max-width: 767px) {
+  .client-review {
+    padding-bottom: 340px;
+  }
   .client-review .row .col-sm-12.pl-45 {
     padding-left: 15px;
   }
@@ -4834,8 +4853,14 @@ aside,
     display: flex;
     justify-content: center;
   }
+  .client-review .section-title {
+    margin-left: 15px;
+  }
   .client-review .section-title h2 {
     margin: 30px 0px;
+  }
+  .client-review .review-active {
+    margin-left: 15px;
   }
   .client-review .review-active .slick-arrow {
     left: 0px;
@@ -4847,9 +4872,17 @@ aside,
 }
 
 @media (max-width: 575px) {
+  .client-review {
+    padding-top: 125px;
+    padding-bottom: 190px;
+  }
   .client-review .section-title h2 {
     margin: 30px 0px;
     font-size: 48px;
+  }
+  .client-review .banner-image {
+    justify-content: flex-start;
+    margin-left: 15px;
   }
 }
 
