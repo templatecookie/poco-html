@@ -258,6 +258,34 @@
   // @ts-ignore
 })(jQuery);
 
+$(document).ready(function () {
+  var $slider = $('.projectSlider__contentSlider');
+  var $progressBar = $('.projectSlider__ProgressBar');
+  var $progressBarLabel = $('.projectSlider__label');
+
+  $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+
+    $progressBar
+      .css('background-size', calc + '% 100%')
+      .attr('aria-valuenow', calc);
+
+    $progressBarLabel.text(calc + '% completed');
+  });
+
+  $slider.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    centerMode: true,
+    infinite: true,
+    centerPadding: '150px',
+    // autoplay: false,
+    // autoplaySpeed: 1900,
+  });
+});
+
 // disalbe scrolling
 function disableScrolling() {
   var x = window.scrollX;

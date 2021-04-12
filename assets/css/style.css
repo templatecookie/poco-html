@@ -5579,6 +5579,69 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS END 
 /*----------------------------------------*/
+.projectSlider {
+  padding: 60px 0px;
+  padding-bottom: 305px;
+  background-color: #3b3c3d;
+}
+
+.projectSlider .section-title h2 {
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 118px;
+}
+
+.projectSlider .section-title span {
+  color: #ff465e;
+}
+
+.projectSlider__subTitle {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Hind", sans-serif;
+  color: #9dadb7;
+  text-transform: capitalize;
+}
+
+.projectSlider__ContentTitle {
+  font-size: 36px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Teko", sans-serif;
+  margin-top: 15px;
+}
+
+.projectSlider__textContents {
+  line-height: 26px;
+  font-family: "Hind", sans-serif;
+}
+
+.projectSlider__buttons .t-btn {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px 40px;
+  border-radius: 0px;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.projectSlider__ProgressBar {
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #262832;
+  background-image: linear-gradient(to right, #50525a, #50525a);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.4s ease-in-out;
+}
+
 /*----------------------------------------*/
 /*  HOMEPAGE 01
 /*----------------------------------------*/
