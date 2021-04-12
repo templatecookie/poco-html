@@ -210,7 +210,7 @@
       position: absolute;
     }
     .react-01 {
-      bottom: -100px;
+      bottom: -45px;
       right: -20px;
     }
     .react-02 {
@@ -318,6 +318,34 @@
     .bannermask02 {
       bottom: 0;
       right: 0;
+    }
+  }
+}
+.banner-area {
+  &__downArrow {
+    // width: 350px;
+    // height: 250px;
+    // border-radius: 250px 250px 0px 0px;
+    // position: absolute;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // background-color: red;
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% 50% 48% 52% / 64% 64% 36% 36%;
+    img {
+      cursor: pointer;
+      width: 25px;
+      transform: translateY(-40px);
     }
   }
 }
@@ -518,6 +546,16 @@
         left: -60px;
         bottom: 100px;
       }
+      .react-02 {
+        z-index: -1;
+        top: 60px;
+        left: 48px;
+        user-select: none;
+      }
+      .react-01 {
+        bottom: -85px;
+        right: -10px;
+      }
     }
   }
 }
@@ -605,10 +643,10 @@
         margin: auto;
       }
       .banner02 {
-        left: 15px;
+        left: 120px;
       }
       .banner04 {
-        right: 20px;
+        right: 120px;
       }
 
       .banner04 {
@@ -617,25 +655,47 @@
       .banner05 {
         display: none;
       }
+      .react-02 {
+        top: 70px;
+        left: 250px;
+      }
+      .react-01 {
+        right: 225px;
+      }
     }
   }
 }
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
   // banner section
   .banner-area {
     margin: 0px;
   }
   .banner-area03 {
     .banner-image {
-      .banner02,
-      .banner03,
-      .banner04,
-      .banner05 {
-        display: none;
+      // .banner02,
+      // .banner03,
+      // .banner04,
+      // .banner05 {
+      //   // display: none;
+      // }
+      .react-01 {
+        right: 60px;
+      }
+      .react-02 {
+        left: 135px;
+      }
+      .banner02 {
+        left: 20px;
+        bottom: 100px;
+      }
+      .banner04 {
+        right: 20px;
       }
     }
   }
 }
+
 @media (max-width: 575px) {
   .banner {
     &-area {
@@ -674,10 +734,46 @@
       padding: 20px 5px;
     }
   }
+
   .banner-area03 {
     .slick-slide {
       img {
         margin: auto;
+      }
+    }
+    .banner-image {
+      padding-top: 195px;
+      .banner04,
+      .banner02 {
+        display: none;
+      }
+      .react-01 {
+        right: 20px;
+        bottom: 0px;
+      }
+      .react-02 {
+        left: 55px;
+        top: 155px;
+      }
+    }
+  }
+}
+
+@media (min-width: 420px) and (max-width: 574px) {
+  .banner-area03 {
+    .banner-image {
+      padding-top: 95px;
+      .react-01 {
+        right: 0px;
+        bottom: 0px;
+      }
+      .react-01 {
+        right: -25px;
+        bottom: 0px;
+      }
+      .react-02 {
+        left: -15px;
+        top: 70px;
       }
     }
   }
@@ -740,6 +836,7 @@
     }
   }
 }
+
 @media (max-width: 1750px) {
   .banner-area02 {
     .banner-image {

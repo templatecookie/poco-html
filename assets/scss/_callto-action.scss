@@ -354,6 +354,16 @@
       }
     }
   }
+
+  .homepage-03 {
+    .call-action-video {
+      .pattern {
+        .pattern-two {
+          right: 0px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .callto-action-modifi {
@@ -438,6 +448,19 @@
   }
   .call-action-two {
     border-top-left-radius: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .homepage-03 {
+    .call-action-video {
+      .play-video {
+        a {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
   }
 }
 
