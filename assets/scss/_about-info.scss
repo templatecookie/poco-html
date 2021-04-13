@@ -791,6 +791,16 @@
       }
     }
   }
+
+  .our-teams {
+    &-member {
+      flex-direction: column;
+      align-items: center;
+      .member-info {
+        width: 60%;
+      }
+    }
+  }
 }
 
 @media (min-width: 320px) and(max-width: 419px) {
@@ -827,9 +837,9 @@
         margin-bottom: 20px;
         margin-top: 20px;
       }
-      .member-info {
-        max-width: 95% !important;
-      }
+      // .member-info {
+      //   max-width: 95% !important;
+      // }
       .social-links {
         display: flex;
         align-items: center;

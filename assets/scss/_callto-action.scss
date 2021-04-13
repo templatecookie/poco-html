@@ -373,6 +373,9 @@
       }
     }
   }
+  .callto-action {
+    padding: 80px 25px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1023px) {
   .callto-action-modifi {
@@ -519,7 +522,7 @@
   .callto-action {
     margin: 0 30px;
     margin-top: 50px;
-    padding: 20px 25px;
+    // padding: 20px 25px;
   }
   // Homepage-02 / Callaction -02
   .call-action-two {

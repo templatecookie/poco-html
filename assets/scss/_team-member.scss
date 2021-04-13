@@ -141,6 +141,18 @@
 /*----------------------------------------*/
 
 /* common devices - Sizes */
+
+@media (max-width: 1200px) {
+  // Teams Section start
+  .our-teams {
+    &-member {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  // Teams Section end
+}
+
 @media (max-width: 991px) {
   .our-team {
     &-member {
@@ -179,12 +191,22 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  .our-teams {
+    &-member {
+      .member-info {
+        width: 90%;
+      }
+    }
+  }
+}
+
 @media (min-width: 320px) and (max-width: 419px) {
   .our-teams-member {
     .member-info {
       position: relative;
-      width: 290px;
-      margin: auto;
+      // width: 290px;
+      // margin: auto;
     }
   }
 }
