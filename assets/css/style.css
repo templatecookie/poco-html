@@ -3431,6 +3431,10 @@ aside,
 /*----------------------------------------*/
 /*  Price Plane 2
 /*----------------------------------------*/
+.priceArea {
+  position: relative;
+}
+
 .priceArea__contentBox {
   position: relative;
   background-color: #fff;
@@ -3443,6 +3447,11 @@ aside,
   outline: 0;
   border: 0;
   text-align: left;
+  width: 0px;
+}
+
+.priceArea__contentBox button .t-btn {
+  cursor: pointer;
 }
 
 .priceArea__contentBox button .t-btn.priceArea__Btninactive {
@@ -3511,10 +3520,41 @@ aside,
   margin-top: 12px;
 }
 
+.priceArea .shape .mask-bottom,
+.priceArea .shape .mask-top,
+.priceArea .shape .mask-right {
+  position: absolute;
+  pointer-events: none;
+}
+
+.priceArea .shape .mask-top {
+  top: -45px;
+  left: 100px;
+}
+
+.priceArea .shape .mask-right {
+  top: 130px;
+  right: 65px;
+}
+
+.priceArea .shape .mask-bottom {
+  left: 200px;
+  bottom: -35px;
+}
+
 /* Common max-Sizes */
 @media (max-width: 1199px) {
   .brands-area {
     padding: 35px 0px;
+  }
+  .priceArea {
+    margin: 0px 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .priceArea .shape .mask-right {
+    top: 70px;
   }
 }
 
@@ -3524,6 +3564,15 @@ aside,
   }
   .priceArea__contentBox {
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .priceArea .shape .mask-right {
+    top: 45px;
+  }
+  .priceArea .shape .mask-top {
+    left: 0px;
   }
 }
 
@@ -3546,6 +3595,22 @@ aside,
   }
   .price-body ul {
     margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .priceArea {
+    margin: 0px !important;
+  }
+  .priceArea__contentBox {
+    padding: 25px;
+  }
+  .priceArea .shape .mask-top {
+    left: 0px;
+  }
+  .priceArea .shape .mask-right {
+    right: 0px;
+    top: -15px;
   }
 }
 
@@ -3999,6 +4064,9 @@ aside,
   .homepage-03 .call-action-video .play-video a {
     width: 60px;
     height: 60px;
+  }
+  .callto-action-modifi {
+    padding-bottom: 30px;
   }
 }
 

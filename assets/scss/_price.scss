@@ -101,6 +101,7 @@
 /*  Price Plane 2
 /*----------------------------------------*/
 .priceArea {
+  position: relative;
   &__contentBox {
     position: relative;
     background-color: #fff;
@@ -111,7 +112,11 @@
       outline: 0;
       border: 0;
       text-align: left;
+      // cursor: none;
+      // pointer-events: none;
+      width: 0px;
       .t-btn {
+        cursor: pointer;
         &.priceArea__Btninactive {
           background-color: transparent;
           color: #ff465e;
@@ -170,6 +175,26 @@
     color: #65729e;
     margin-top: 12px;
   }
+  .shape {
+    .mask-bottom,
+    .mask-top,
+    .mask-right {
+      position: absolute;
+      pointer-events: none;
+    }
+    .mask-top {
+      top: -45px;
+      left: 100px;
+    }
+    .mask-right {
+      top: 130px;
+      right: 65px;
+    }
+    .mask-bottom {
+      left: 200px;
+      bottom: -35px;
+    }
+  }
 }
 
 /* Common max-Sizes */
@@ -177,6 +202,19 @@
 @media (max-width: 1199px) {
   .brands-area {
     padding: 35px 0px;
+  }
+  .priceArea {
+    margin: 0px 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .priceArea {
+    .shape {
+      .mask-right {
+        top: 70px;
+      }
+    }
   }
 }
 
@@ -189,6 +227,19 @@
   .priceArea {
     &__contentBox {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .priceArea {
+    .shape {
+      .mask-right {
+        top: 45px;
+      }
+      .mask-top {
+        left: 0px;
+      }
     }
   }
 }
@@ -222,6 +273,25 @@
     &-body {
       ul {
         margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .priceArea {
+    margin: 0px !important;
+
+    &__contentBox {
+      padding: 25px;
+    }
+    .shape {
+      .mask-top {
+        left: 0px;
+      }
+      .mask-right {
+        right: 0px;
+        top: -15px;
       }
     }
   }
