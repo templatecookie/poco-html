@@ -3428,6 +3428,89 @@ aside,
   left: 2%;
 }
 
+/*----------------------------------------*/
+/*  Price Plane 2
+/*----------------------------------------*/
+.priceArea__contentBox {
+  position: relative;
+  background-color: #fff;
+  border-color: #c9ccd4;
+  padding: 40px;
+}
+
+.priceArea__contentBox button {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  text-align: left;
+}
+
+.priceArea__contentBox button .t-btn.priceArea__Btninactive {
+  background-color: transparent;
+  color: #ff465e;
+}
+
+.priceArea__contentBox button .t-btn.priceArea__Btninactive:hover {
+  background-color: #ff465e;
+  color: #fff;
+}
+
+.priceArea__planTitle {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: "Gilroy-Medium";
+  color: #ff465e;
+}
+
+.priceArea__price {
+  font-size: 42px;
+  line-height: 48px;
+  font-family: "Gilroy-Bold";
+  color: #000560;
+}
+
+.priceArea__price span {
+  font-size: 28px;
+  font-family: "Gilroy-Medium";
+}
+
+.priceArea__planeFeatures {
+  border: 1px solid #ff465e;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 30px 0px;
+  margin: 30px 0px;
+}
+
+.priceArea__planeFeatures li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.priceArea__planeFeatures li span {
+  margin-right: 15px;
+}
+
+.priceArea__planeFeatures li span i {
+  color: #ff465e;
+}
+
+.priceArea__planeFeatures li p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Gilroy-Medium";
+  color: #65729e;
+}
+
+.priceArea__moneyBack {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Gilroy-Medium";
+  color: #65729e;
+  margin-top: 12px;
+}
+
 /* Common max-Sizes */
 @media (max-width: 1199px) {
   .brands-area {
@@ -3438,6 +3521,9 @@ aside,
 @media (max-width: 767px) {
   .price-area .col-lg-4 {
     margin-bottom: 15px;
+  }
+  .priceArea__contentBox {
+    margin-bottom: 30px;
   }
 }
 
@@ -6769,7 +6855,6 @@ aside,
 }
 
 .our-services .shape img {
-  z-index: -3;
   position: absolute;
 }
 

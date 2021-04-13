@@ -97,6 +97,81 @@
   }
 }
 
+/*----------------------------------------*/
+/*  Price Plane 2
+/*----------------------------------------*/
+.priceArea {
+  &__contentBox {
+    position: relative;
+    background-color: #fff;
+    border-color: #c9ccd4;
+    padding: 40px;
+    button {
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      text-align: left;
+      .t-btn {
+        &.priceArea__Btninactive {
+          background-color: transparent;
+          color: #ff465e;
+          &:hover {
+            background-color: #ff465e;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__planTitle {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: $gilroy-medium;
+    color: #ff465e;
+  }
+  &__price {
+    font-size: 42px;
+    line-height: 48px;
+    font-family: $gilroy-bold;
+    color: #000560;
+    span {
+      font-size: 28px;
+      font-family: $gilroy-medium;
+    }
+  }
+  &__planeFeatures {
+    border: 1px solid #ff465e;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 30px 0px;
+    margin: 30px 0px;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      span {
+        margin-right: 15px;
+        i {
+          color: #ff465e;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        font-family: $gilroy-medium;
+        color: #65729e;
+      }
+    }
+  }
+  &__moneyBack {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: $gilroy-medium;
+    color: #65729e;
+    margin-top: 12px;
+  }
+}
+
 /* Common max-Sizes */
 
 @media (max-width: 1199px) {
@@ -109,6 +184,11 @@
   .price-area {
     .col-lg-4 {
       margin-bottom: 15px;
+    }
+  }
+  .priceArea {
+    &__contentBox {
+      margin-bottom: 30px;
     }
   }
 }
