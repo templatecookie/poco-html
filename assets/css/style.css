@@ -4443,20 +4443,34 @@ aside,
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .testimonial-area.trust-us .mask-group2 .mask6 {
+    top: 20px;
+    left: 20px;
+  }
+}
+
 @media (max-width: 767px) {
   .testimonial02 .slider-arrows {
     top: 50px !important;
     right: 120px !important;
+  }
+  .testimonial-area.trust-us {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .testimonial-area.trust-us .mask-group2 .mask6 {
+    top: 30px;
+    left: 15px;
   }
 }
 
 @media (max-width: 575px) {
   .testimonial-area .mask-group2 .mask6 {
     top: 32px;
-  }
-  .testimonial-area.trust-us .mask-group2 .mask6 {
-    top: -20px;
-    left: 0px;
   }
   .testimonial02 .slider-arrows {
     right: 30px !important;
@@ -4473,6 +4487,19 @@ aside,
   }
   .testimonial04 .testimonial-active .slick-arrow {
     top: -90px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .testimonial-area.trust-us .mask-group2 .mask6 {
+    top: 20px;
+    left: 10px;
+  }
+  .testimonial-area .slider-arrows .prev-arrow,
+  .testimonial-area .slider-arrows .next-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 }
 
@@ -4574,10 +4601,6 @@ aside,
   .testimonial-area .section-title {
     margin-bottom: 30px !important;
     max-width: 100%;
-  }
-  .testimonial-area .section-title h2 {
-    font-size: 25px;
-    margin-bottom: 5px !important;
   }
   .testimonial-area .section-title p {
     text-align: left !important;
@@ -5315,6 +5338,9 @@ aside,
 @media (max-width: 991px) {
   .our-team-member {
     margin-bottom: 40px;
+  }
+  .our-teams .section-title {
+    margin: 60px 0px;
   }
 }
 
@@ -6567,10 +6593,41 @@ aside,
   .about-us-text {
     margin-top: 100px;
   }
+  .about-solution .solution-wrapper {
+    margin-bottom: 60px;
+  }
   .about-solution .solution-wrapper .solution-title.center {
     display: inline-block;
     max-width: 95%;
     margin-bottom: 30px;
+  }
+  .about-solution .section-title {
+    margin-bottom: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-skill-wrapper {
+    max-width: 100%;
+  }
+  .about-skill-image {
+    display: flex;
+    justify-content: center;
+  }
+  .about-skill-image img {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-skill {
+    padding: 120px 0px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .about-skill-wrapper .about-skill-pogressbar .round-wrapper {
+    margin: 30px 0px;
   }
 }
 
@@ -6582,6 +6639,16 @@ aside,
   .about-solution {
     margin: 0px;
     border-radius: 0px;
+  }
+  .about-solution .mask-group .mask1,
+  .about-solution .mask-group .mask2 {
+    width: 20%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .about-skill-pogressbar .round-wrapper {
+    margin: 45px 0px;
   }
 }
 
