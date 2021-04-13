@@ -1141,6 +1141,10 @@ aside,
   left: 45px;
 }
 
+.banner-area.banner__About .banner-image {
+  bottom: -175px !important;
+}
+
 /*----------------------------------------*/
 /*  HOME PAGE 02
 /*----------------------------------------*/
@@ -6618,6 +6622,18 @@ aside,
   justify-content: center;
 }
 
+.about-us-image .small-feature.sm-feauter-bottom {
+  box-shadow: 0px 6px 30px #5746ff;
+}
+
+.about-us-image .small-feature.sm-feauter-left {
+  box-sizing: 0px 6px 15px #4dadf7;
+}
+
+.about-us-image .small-feature.sm-feauter-top {
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.13);
+}
+
 .about-us-image .small-feature-item h3 {
   color: #ffffff;
   font-size: 34px;
@@ -6731,6 +6747,10 @@ aside,
 .about-us-text .alart-boldtext h2 {
   color: #ff465e;
   font-size: 55px;
+}
+
+.about-us .alart-boldtext {
+  margin-left: 15px;
 }
 
 /*----------------------------------------*/

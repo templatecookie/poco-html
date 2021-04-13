@@ -113,6 +113,13 @@
       left: 45px;
     }
   }
+
+  // About-us -Banner
+  &.banner__About {
+    .banner-image {
+      bottom: -175px !important;
+    }
+  }
 }
 
 /*----------------------------------------*/
@@ -705,12 +712,6 @@
   }
   .banner-area03 {
     .banner-image {
-      // .banner02,
-      // .banner03,
-      // .banner04,
-      // .banner05 {
-      //   // display: none;
-      // }
       .react-01 {
         right: 60px;
       }

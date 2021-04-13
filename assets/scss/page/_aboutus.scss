@@ -136,7 +136,15 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
+      &.sm-feauter-bottom {
+        box-shadow: 0px 6px 30px #5746ff;
+      }
+      &.sm-feauter-left {
+        box-sizing: 0px 6px 15px #4dadf7;
+      }
+      &.sm-feauter-top {
+        box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.13);
+      }
       &-item {
         h3 {
           color: #ffffff;
@@ -260,6 +268,9 @@
         }
       }
     }
+  }
+  .alart-boldtext {
+    margin-left: 15px;
   }
 }
 // END ABOUT US
