@@ -181,6 +181,7 @@
     .mask-right {
       position: absolute;
       pointer-events: none;
+      z-index: 1;
     }
     .mask-top {
       top: -45px;
@@ -194,6 +195,12 @@
       left: 200px;
       bottom: -35px;
     }
+  }
+
+  // price 2
+  &.priceArea-2 {
+    background-color: #fff;
+    margin-bottom: 60px !important;
   }
 }
 

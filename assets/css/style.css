@@ -3525,6 +3525,7 @@ aside,
 .priceArea .shape .mask-right {
   position: absolute;
   pointer-events: none;
+  z-index: 1;
 }
 
 .priceArea .shape .mask-top {
@@ -3540,6 +3541,11 @@ aside,
 .priceArea .shape .mask-bottom {
   left: 200px;
   bottom: -35px;
+}
+
+.priceArea.priceArea-2 {
+  background-color: #fff;
+  margin-bottom: 60px !important;
 }
 
 /* Common max-Sizes */
@@ -7168,6 +7174,7 @@ aside,
   .our-services {
     border-radius: 0px !important;
     margin: 0px !important;
+    margin-bottom: 65px !important;
   }
   .our-services .shape .bottom {
     bottom: -35px;
