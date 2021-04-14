@@ -467,7 +467,8 @@
     // contact form Banner
 
     &.contactBanner,
-    &.projectBanner {
+    &.projectBanner,
+    &.blogBanner {
       .banner-image {
         bottom: -215px;
       }
@@ -546,7 +547,8 @@
   .banner-area {
     // Contact form Banner
     &.contactBanner,
-    &.projectBanner {
+    &.projectBanner,
+    &.blogBanner {
       .banner-image {
         bottom: -185px !important;
       }

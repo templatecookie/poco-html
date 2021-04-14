@@ -1475,7 +1475,7 @@ aside,
   .banner-area.breadcrumb-area .breadcrumb-wrapper .breadcrumb {
     margin-bottom: -50px;
   }
-  .banner-area.contactBanner .banner-image, .banner-area.projectBanner .banner-image {
+  .banner-area.contactBanner .banner-image, .banner-area.projectBanner .banner-image, .banner-area.blogBanner .banner-image {
     bottom: -215px;
   }
   .banner-area02 .banner-wrapper {
@@ -1542,7 +1542,7 @@ aside,
 }
 
 @media (max-width: 1199px) {
-  .banner-area.contactBanner .banner-image, .banner-area.projectBanner .banner-image {
+  .banner-area.contactBanner .banner-image, .banner-area.projectBanner .banner-image, .banner-area.blogBanner .banner-image {
     bottom: -185px !important;
   }
 }
