@@ -7968,6 +7968,15 @@ aside,
   font-family: "Gilroy-Bold";
 }
 
+.blog-area .pagination-area nav .pagination li a.active {
+  background-color: #ff465e;
+  color: #ffffff;
+}
+
+.blog-area .pagination-area nav .pagination li a.active:hover {
+  background-color: #ff465e;
+}
+
 .blog-area .pagination-area nav .pagination li a:hover {
   background-color: #ff465e;
   color: #ffffff;
@@ -8367,6 +8376,10 @@ aside,
   margin-right: 10px;
 }
 
+.blog-details .article-item .comments-section-area.comments-section-areaReply {
+  margin-left: 105px;
+}
+
 .blog-details .article-item .write-comment-area h3 {
   font-size: 26px;
 }
@@ -8474,10 +8487,21 @@ aside,
   }
   .blog-details .article-item .author-details {
     flex-direction: column;
+    align-items: center;
+  }
+  .blog-details .article-item .author-details-image {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .blog-details .article-item .author-details-info {
+    text-align: center;
   }
   .blog-details .article-item .comments-section-area {
     flex-direction: column;
     padding-left: 0px;
+  }
+  .blog-details .article-item .comments-section-area.comments-section-areaReply {
+    margin-left: 50px;
   }
 }
 
