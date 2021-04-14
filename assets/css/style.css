@@ -1475,7 +1475,7 @@ aside,
   .banner-area.breadcrumb-area .breadcrumb-wrapper .breadcrumb {
     margin-bottom: -50px;
   }
-  .banner-area.contactBanner .banner-image {
+  .banner-area.contactBanner .banner-image, .banner-area.projectBanner .banner-image {
     bottom: -215px;
   }
   .banner-area02 .banner-wrapper {
@@ -1542,7 +1542,7 @@ aside,
 }
 
 @media (max-width: 1199px) {
-  .banner-area.contactBanner .banner-image {
+  .banner-area.contactBanner .banner-image, .banner-area.projectBanner .banner-image {
     bottom: -185px !important;
   }
 }
@@ -6045,6 +6045,12 @@ aside,
   background-repeat: no-repeat;
   background-size: 0 100%;
   transition: background-size 0.4s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .project {
+    padding: 60px 0px;
+  }
 }
 
 /*----------------------------------------*/
