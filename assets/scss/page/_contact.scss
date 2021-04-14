@@ -1,67 +1,73 @@
 .conatact-area {
+  padding-top: 160px;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+  .container {
     background: #fcf8f8;
-    padding-top: 160px;
-    padding-bottom: 50px;
-    .contact-form {
-        padding: 0 30px;
-        text-align: center;
-        .form-row {
-            .form-control {
-                font-size: 18px;
-                font-family: $gilroy-medium;
-                line-height: 30px;
-                color: #65729e;
-                height: 80px;
-                border: 1px solid #dddddd;
-                background: white;
-                padding: 0 50px;
-                position: relative;
-                &:focus {
-                    color: inherit;
-                    box-shadow: inherit;
-                }
-            }
-            .icon {
-                position: absolute;
-                top: 50%;
-                left: 30px;
-                transform: translateY(-50%);
-                font-size: 18px;
-                color: $secondary;
-            }
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .contact-form {
+    padding: 0 30px;
+    text-align: center;
+    .form-row {
+      .form-control {
+        font-size: 18px;
+        font-family: $gilroy-medium;
+        line-height: 30px;
+        color: #65729e;
+        height: 80px;
+        border: 1px solid #dddddd;
+        background: white;
+        padding: 0 50px;
+        position: relative;
+        &:focus {
+          color: inherit;
+          box-shadow: inherit;
         }
-        .form-message {
-            textarea {
-                color: #65729e !important;
-                width: 100%;
-                border: 1px solid #dddddd;
-                background: white;
-                padding: 30px 50px;
-                position: relative;
-                &::before {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    font-family: 'Font Awesome 5 Free';
-                    font-weight: 900;
-                    content: '\f007';
-                }
-            }
-        }
-        .t-btn {
-            padding: 20px 52px;
-            margin-top: 20px !important;
-        }
+      }
+      .icon {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: $secondary;
+      }
     }
+    .form-message {
+      padding-right: 10px;
+      textarea {
+        color: #65729e !important;
+        width: 100%;
+        border: 1px solid #dddddd;
+        background: white;
+        padding: 30px 50px;
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          content: '\f007';
+        }
+      }
+    }
+    .t-btn {
+      padding: 20px 52px;
+      margin-top: 20px !important;
+    }
+  }
 }
 
 .form-message {
-    position: relative;
-    .icon {
-        position: absolute;
-        top: 30px;
-        left: 25px;
-    }
+  position: relative;
+  .icon {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+  }
 }
 
 /*----------------------------------------*/
@@ -70,33 +76,33 @@
 
 /*Common Devices - Sizes */
 @media (max-width: 575px) {
-    .conatact-area {
-        .contact-form {
-            padding: 0px;
-        }
+  .conatact-area {
+    .contact-form {
+      padding: 0px;
     }
+  }
 }
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    /* common area start */
+  /* common area start */
 }
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
+  /* common area start */
 }

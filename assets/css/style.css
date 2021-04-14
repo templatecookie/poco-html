@@ -1475,6 +1475,9 @@ aside,
   .banner-area.breadcrumb-area .breadcrumb-wrapper .breadcrumb {
     margin-bottom: -50px;
   }
+  .banner-area.contactBanner .banner-image {
+    bottom: -215px;
+  }
   .banner-area02 .banner-wrapper {
     padding-top: 0px;
   }
@@ -1535,6 +1538,12 @@ aside,
   .banner-area03 .banner-image .banner03,
   .banner-area03 .banner-image .banner04 {
     display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-area.contactBanner .banner-image {
+    bottom: -185px !important;
   }
 }
 
@@ -7641,9 +7650,15 @@ aside,
 }
 
 .conatact-area {
-  background: #fcf8f8;
   padding-top: 160px;
   padding-bottom: 50px;
+  margin-bottom: 60px;
+}
+
+.conatact-area .container {
+  background: #fcf8f8;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .conatact-area .contact-form {
@@ -7675,6 +7690,10 @@ aside,
   transform: translateY(-50%);
   font-size: 18px;
   color: #65729e;
+}
+
+.conatact-area .contact-form .form-message {
+  padding-right: 10px;
 }
 
 .conatact-area .contact-form .form-message textarea {

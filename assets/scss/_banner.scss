@@ -464,6 +464,13 @@
         }
       }
     }
+    // contact form Banner
+
+    &.contactBanner {
+      .banner-image {
+        bottom: -215px;
+      }
+    }
   }
   // banner - 02
   .banner-area02 {
@@ -530,6 +537,16 @@
       .banner03,
       .banner04 {
         display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .banner-area {
+    // Contact form Banner
+    &.contactBanner {
+      .banner-image {
+        bottom: -185px !important;
       }
     }
   }
