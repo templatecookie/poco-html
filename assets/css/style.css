@@ -7991,6 +7991,11 @@ aside,
   transition: 0.3s all linear;
 }
 
+.blog-area .aside.sticky {
+  position: fixed;
+  top: 0;
+}
+
 .blog-area .aside .search {
   max-width: 300px;
   padding: 20px;
@@ -8465,6 +8470,12 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
+@media (max-width: 991px) {
+  .aside.sticky {
+    position: static !important;
+  }
+}
+
 @media (max-width: 575px) {
   .blog-area .blog-quotes h3 {
     font-size: 26px;

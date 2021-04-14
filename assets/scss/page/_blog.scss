@@ -231,6 +231,10 @@
   }
 
   .aside {
+    &.sticky {
+      position: fixed;
+      top: 0;
+    }
     .search {
       max-width: 300px;
       padding: 20px;
@@ -753,6 +757,14 @@
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
+
+@media (max-width: 991px) {
+  .aside {
+    &.sticky {
+      position: static !important;
+    }
+  }
+}
 
 @media (max-width: 575px) {
   .blog-area {
