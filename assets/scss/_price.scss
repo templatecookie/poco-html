@@ -14,7 +14,7 @@
     @include transition(0.3s);
 
     &:hover {
-      .t-btn {
+      .primary__button {
         background-color: rgb(255, 70, 94);
       }
     }
@@ -51,13 +51,13 @@
         }
       }
 
-      .t-btn {
+      .primary__button {
         color: $tertiary;
         background: transparent;
         border: 2px solid;
       }
 
-      .t-bg-primary {
+      .primary__button-bgPrimary {
         &:hover {
           color: white;
           background: $tertiary;
@@ -66,7 +66,7 @@
       }
     }
     &:hover {
-      .t-bg-primary {
+      .primary__button-bgPrimary {
         color: white;
         background: $tertiary;
         border-color: $tertiary;
@@ -115,7 +115,7 @@
       // cursor: none;
       // pointer-events: none;
       width: 0px;
-      .t-btn {
+      .primary__button {
         cursor: pointer;
         &.priceArea__Btninactive {
           background-color: transparent;

@@ -1,70 +1,70 @@
 /* 1. Theme default css */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	font-size: 16px;
-	line-height: 27px;
-	font-family: $gilroy-regular;
-	overflow-x: hidden;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: $gilroy-regular;
+  overflow-x: hidden;
 }
-.custom-container{
-	max-width:1860px
+.custom-container {
+  max-width: 1860px;
 }
-.custom-container01{
-	max-width:1690px
+.custom-container01 {
+  max-width: 1690px;
 }
-.custom-container02{
-	max-width:1570px
+.custom-container02 {
+  max-width: 1570px;
 }
-.homepage04{
-	background-color: #191C26;
+.homepage04 {
+  background-color: #191c26;
 }
 *:focus {
-	color: inherit;
-	outline: inherit;
+  color: inherit;
+  outline: inherit;
 }
 
 a:focus,
 .button:focus {
-	text-decoration: none;
-	outline: none;
+  text-decoration: none;
+  outline: none;
 }
 
 a:focus,
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a,
 button {
-	color: inherit;
-	outline: none;
-	border: none;
+  color: inherit;
+  outline: none;
+  border: none;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 button:focus {
-	outline: 0;
-	border: 0
+  outline: 0;
+  border: 0;
 }
 
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .capitalize {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 h1,
@@ -73,266 +73,254 @@ h3,
 h4,
 h5,
 h6 {
-	color: $primary;
-	margin: 0px;
-	font-family: $gilroy-bold;
+  color: $primary;
+  margin: 0px;
+  font-family: $gilroy-bold;
 }
 
 h1 {
-	font-size: 80px;
-	line-height: 99px;
+  font-size: 80px;
+  line-height: 99px;
 }
 
 h2 {
-	font-size: 48px;
-	line-height: 59px;
+  font-size: 48px;
+  line-height: 59px;
 }
 
 h3 {
-	font-size: 32px;
-	line-height: 42px;
+  font-size: 32px;
+  line-height: 42px;
 }
 
 h4 {
-	font-size: 26px;
-	line-height: 49px;
+  font-size: 26px;
+  line-height: 49px;
 }
 
 h5 {
-	font-size: 24px;
-	line-height: 30px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 h6 {
-	font-size: 22px;
-	line-height: 28px;
+  font-size: 22px;
+  line-height: 28px;
 }
 
 ul {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 p {
-	font-size: 16px;
-	font-family: $gilroy-medium;
-	color: $secondary;
-	margin: 0px;
-	line-height: 27px;
+  font-size: 16px;
+  font-family: $gilroy-medium;
+  color: $secondary;
+  margin: 0px;
+  line-height: 27px;
 }
 
 *::-moz-selection {
-	background: #f18694;
-	color: $white;
-	text-shadow: none;
+  background: #f18694;
+  color: $white;
+  text-shadow: none;
 }
 
 ::-moz-selection {
-	background: #f18694;
-	color: $white;
-	text-shadow: none;
-
+  background: #f18694;
+  color: $white;
+  text-shadow: none;
 }
 
 ::selection {
-	background: #f18694;
-	color: $white;
-	text-shadow: none;
+  background: #f18694;
+  color: $white;
+  text-shadow: none;
 }
 
 /*--
     - Input Placeholder
 -----------------------------------------*/
 *::-moz-placeholder {
-	color: $secondary;
-	font-size: 18px;
-	font-family: $gilroy-medium;
-	opacity: 1;
+  color: $secondary;
+  font-size: 18px;
+  font-family: $gilroy-medium;
+  opacity: 1;
 }
 
 *::placeholder {
-	color: $secondary;
-	font-size: 18px;
-	font-family: $gilroy-medium;
-	opacity: 1;
+  color: $secondary;
+  font-size: 18px;
+  font-family: $gilroy-medium;
+  opacity: 1;
 }
-
 
 /*--
     - Common Classes
 -----------------------------------------*/
 .fix {
-	overflow: hidden
+  overflow: hidden;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .p-relative {
-	position: relative;
+  position: relative;
 }
 
 .p-absolute {
-	position: absolute;
+  position: absolute;
 }
-.t-bg-orange{
-	color: white;
-	background-color: #ED880A;
-	&:hover{
-		color: white;
-		box-shadow: rgba(255, 70, 94, 0.36);
-	}
+.t-bg-orange {
+  color: white;
+  background-color: #ed880a;
+  &:hover {
+    color: white;
+    box-shadow: rgba(255, 70, 94, 0.36);
+  }
 }
 /*--
 	- Button Style 
 -----------------------------------------*/
-.t-btn {
-	display: inline-block;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	border: 1px solid transparent;
-	padding: 20px 40px;
-	line-height: 1;
-	border-radius: 50px;
-	font-family: $gilroy-bold;
-	transition: .3s;
-}
+.primary__button {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 20px 40px;
+  line-height: 1;
+  border-radius: 50px;
+  font-family: $gilroy-bold;
+  transition: 0.3s;
 
-.t-bg-primary {
-	color: #fff;
-	background-color: $tertiary;
-	border-color: $tertiary;
+  &-bgPrimary {
+    color: #fff;
+    background-color: $tertiary;
+    border-color: $tertiary;
+    &:hover {
+      color: #fff;
+      background-color: $tertiary;
+      border-color: $tertiary;
+      box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
+    }
+  }
 
-	&:hover {
-		color: #fff;
-		background-color: $tertiary;
-		border-color: $tertiary;
-		box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
-	}
-}
-.t-bg-outline{
-	color: $tertiary;
-	background: transparent;
-	
-	&:hover{
-		color: $tertiary;
-	}
-}
-.t-btn-outline{
-	color: $tertiary;
-	background: transparent;
-	border: 1.5px solid $tertiary;
-	
-	&:hover{
-		color: white;
-		background-color: $tertiary;
-	}
-}
-.t-bg-black {
-	color: white;
-	background-color: #000560;
-	border-color: #000560;
+  &-bgOutline {
+    color: $tertiary;
+    background: transparent;
+    &:hover {
+      color: $tertiary;
+    }
+  }
 
-	&:hover {
-		color: white;
-		border-color: #000560;
-	}
-}
-.t-black {
-	color: #000560;
-	background-color: white;
-	border-color: white;
+  &-outline {
+    color: $tertiary;
+    background: transparent;
+    border: 1.5px solid $tertiary;
+    &:hover {
+      color: white;
+      background-color: $tertiary;
+    }
+  }
 
-	&:hover {
-		color: #000560;
-	}
-}
+  &-bgBlack {
+    color: white;
+    background-color: #000560;
+    border-color: #000560;
+    &:hover {
+      color: white;
+      border-color: #000560;
+    }
+  }
+  &-Black {
+    color: #000560;
+    background-color: white;
+    border-color: white;
 
-.t-bg-white {
-	color: $tertiary;
-	background-color: white;
-	border-color: white;
+    &:hover {
+      color: #000560;
+    }
+  }
+  &-bgWhite {
+    color: $tertiary;
+    background-color: white;
+    border-color: white;
 
-	&:hover {
-		color: $tertiary
-	}
-}
-
-// .t-btn-outline {
-// 	border: 1px solid transparent;
-// 	border-color: rebeccapurple;
-// 	color: rebeccapurple;
-
-// 	&:hover {
-// 		color: #fff;
-// 		background-color: rebeccapurple;
-// 	}
-// }
-
-.t-radius {
-	border-radius: 50%;
+    &:hover {
+      color: $tertiary;
+    }
+  }
 }
 
 // Section Title
 .section-title {
-	margin-bottom: 60px;
+  margin-bottom: 60px;
 
-	h2 {
-		font-family: $gilroy-bold;
-	}
+  h2 {
+    font-size: 60px;
+    line-height: 118px;
+    font-family: $teko;
+    color: #ffffff;
+    text-transform: uppercase;
+    span {
+      color: #ff465e;
+    }
+  }
 }
 
 .top-left-border {
-	border-top-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .border-color {
-	border: 1px solid #29303E;
+  border: 1px solid #29303e;
 }
 
 .text-white {
-	color: #fff;
+  color: #fff;
 }
 
 //SMALL FEATURE
 .small-feature {
-    background-color: white;
-    border-radius: 10px;
-	padding: 26px;
-	width: 188px;
-	height: 168px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 26px;
+  width: 188px;
+  height: 168px;
 
-    &-percentage {
-        margin-bottom: 20px;
+  &-percentage {
+    margin-bottom: 20px;
 
-        .image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 33px;
-            width: 33px;
-            background-color: #00ADA6;
-            border-radius: 50%;
-        }
-
-        h3 {
-            margin-left: 10px;
-        }
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 33px;
+      width: 33px;
+      background-color: #00ada6;
+      border-radius: 50%;
     }
 
-    &-text {
-        p {
-            font-size: 18px;
-            max-width: 150px;
-            text-align: center;
-        }
+    h3 {
+      margin-left: 10px;
     }
+  }
+
+  &-text {
+    p {
+      font-size: 18px;
+      max-width: 150px;
+      text-align: center;
+    }
+  }
 }
 
 /*----------------------------------------*/
@@ -341,86 +329,86 @@ p {
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
-	/* common area start */
-	h1 {
-		font-size: 42px;
-		line-height: 55px;
-	}
-	h2 {
-		font-size: 34px;
-		line-height: 46px;
-	}
-	h4{
-		font-size: 22px;
-	}
-	.t-btn {
-		font-size: 16px;
-		padding: 15px 35px;
-	}
+  /* common area start */
+  h1 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+  h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  .primary__button {
+    font-size: 16px;
+    padding: 15px 35px;
+  }
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-	/* common area start */
-	h1{
-		font-size: 42px;
-		line-height: 50px;
-	}
-	h2{
-		font-size: 38px;
-		line-height: 48px;
-	}
-	h3{
-		font-size: 28px;
-		line-height: 1;
-	}
-	h4{
-		font-size: 22px;
-		line-height: 32px;
-	}
-	h5{
-		font-size: 18px;
-	}
-	.t-btn{
-		font-size: 16px;
-		padding: 18px 40px;
-	}
+  /* common area start */
+  h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 1;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  .primary__button {
+    font-size: 16px;
+    padding: 18px 40px;
+  }
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-	/* common area start */
-		/* common area start */
-		h1{
-			font-size: 32px;
-			line-height: 1.2;
-		}
-		h2{
-			font-size: 26px;
-			line-height: 1.2;
-		}
-		h3{
-			font-size: 20px;
-			line-height: 1.2;
-		}
-		h4{
-			font-size: 16px;
-			line-height: 1.2;
-		}
-		h5{
-			font-size: 14px;
-		}
-		.t-btn{
-			font-size: 16px;
-			padding: 18px 40px;
-		}
+  /* common area start */
+  /* common area start */
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .primary__button {
+    font-size: 16px;
+    padding: 18px 40px;
+  }
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    /* common area start */
+  /* common area start */
 }
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
+  /* common area start */
 }

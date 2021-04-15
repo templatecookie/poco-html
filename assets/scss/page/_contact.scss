@@ -54,7 +54,7 @@
         }
       }
     }
-    .t-btn {
+    .primary__button {
       padding: 20px 52px;
       margin-top: 20px !important;
     }
@@ -71,38 +71,102 @@
 }
 
 /*----------------------------------------*/
+/*  Homepage -03 Contact-form
+/*----------------------------------------*/
+.contactArea {
+  padding: 90px 0px;
+  &__title {
+    &.section-title {
+      h2 {
+        line-height: 72px;
+      }
+    }
+  }
+  &__brief {
+    font-size: 16px;
+    line-height: 27px;
+    color: #9dadb7;
+    margin-bottom: 40px;
+  }
+
+  form {
+    .form-group {
+      input,
+      textarea {
+        width: 410px;
+        padding: 25px;
+        border-radius: 0;
+      }
+      input {
+        height: 60px;
+      }
+      textarea {
+        min-height: 170px;
+        resize: none;
+      }
+    }
+  }
+
+  &__button {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-family: $teko;
+    border-radius: 0;
+  }
+  &__info {
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 150px;
+    span {
+      font-size: 35px;
+      line-height: 53px;
+      font-family: $teko;
+      color: #fff;
+      margin-right: 90px;
+    }
+  }
+}
+
+/*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
 /*Common Devices - Sizes */
+@media (max-width: 991px) {
+  .contactArea {
+    &__brief {
+      width: 65%;
+    }
+    form {
+      .form-group {
+        input,
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+    &__info {
+      margin-left: 0px;
+    }
+  }
+}
+
 @media (max-width: 575px) {
+  .contactArea {
+    &__brief {
+      width: 100%;
+    }
+    &__info {
+      span {
+        margin-right: 0px;
+      }
+    }
+  }
+
   .conatact-area {
     .contact-form {
       padding: 0px;
     }
   }
-}
-
-/* large devices 992 - 1169*/
-@media #{$lg} {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-  /* common area start */
-}
-
-/* Small devices 575 - 767 */
-@media #{$sm} {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media #{$xs} {
-  /* common area start */
-}
-/* extra Small devices 420 */
-@media #{$xsm} {
-  /* common area start */
 }

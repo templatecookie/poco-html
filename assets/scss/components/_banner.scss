@@ -1,36 +1,34 @@
 /*----------------------------------------*/
 /*  HOME PAGE 01
 /*----------------------------------------*/
-.banner-area {
-  background-color: rgba(255, 70, 94, 0.05);
+.bannerArea {
+  position: relative;
   margin: 0 45px;
   padding: 75px 40px 190px 40px;
   border-radius: 24px;
-  position: relative;
+  background-color: rgba(255, 70, 94, 0.05);
 
-  .banner-wrapper {
+  &__wrapper {
     margin-top: 90px;
-    p {
-      display: inline-block;
-      width: 90%;
-      margin: 25px 0px;
-      line-height: 36px;
-      font-family: $gilroy-medium;
-      font-size: 21px;
-    }
-    .banner-title {
-      h1 {
-        margin-bottom: 4px;
-      }
-    }
+  }
+  &__title {
+    margin-bottom: 4px;
+  }
+  &__brief {
+    display: inline-block;
+    width: 90%;
+    margin: 25px 0px;
+    line-height: 36px;
+    font-family: $gilroy-medium;
+    font-size: 21px;
   }
 
-  .banner-button {
+  &__buttons {
     display: flex;
     align-items: center;
     margin-top: 40px;
 
-    .t-btn {
+    .primary__button {
       font-size: 20px;
     }
 
@@ -120,12 +118,31 @@
       bottom: -175px !important;
     }
   }
+
+  &__downArrow {
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% 50% 48% 52% / 64% 64% 36% 36%;
+    img {
+      cursor: pointer;
+      width: 25px;
+      transform: translateY(-40px);
+    }
+  }
 }
 
 /*----------------------------------------*/
 /*  HOME PAGE 02
 /*----------------------------------------*/
-.banner-area02 {
+.bannerArea02 {
   background-color: #29303e;
   position: relative;
   border-bottom-left-radius: 166px;
@@ -197,7 +214,7 @@
 /*----------------------------------------*/
 /*  HOME PAGE 03
 /*----------------------------------------*/
-.banner-area03 {
+.bannerArea03 {
   background-color: #1f99f4;
   margin: 0;
   border-radius: 0;
@@ -328,39 +345,11 @@
     }
   }
 }
-.banner-area {
-  &__downArrow {
-    // width: 350px;
-    // height: 250px;
-    // border-radius: 250px 250px 0px 0px;
-    // position: absolute;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // background-color: red;
-    position: absolute;
-    bottom: -110px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 250px;
-    height: 150px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50% 50% 48% 52% / 64% 64% 36% 36%;
-    img {
-      cursor: pointer;
-      width: 25px;
-      transform: translateY(-40px);
-    }
-  }
-}
 
 /*----------------------------------------*/
 /*  HOME PAGE 04
 /*----------------------------------------*/
-.banner-area04 {
+.bannerArea04 {
   background-color: #191c26;
   margin: 0;
   border-radius: 0;
@@ -401,7 +390,7 @@
     .banner-button {
       margin-top: 30px;
 
-      .t-btn {
+      .primary__button {
         border-radius: 0;
         font-family: $teko;
         font-size: 24px;
@@ -430,7 +419,7 @@
 
 /* Common max- Sizes */
 @media (max-width: 1200px) {
-  .banner-area {
+  .bannerArea {
     .banner-image {
       position: relative;
       bottom: 0;
@@ -475,7 +464,7 @@
     }
   }
   // banner - 02
-  .banner-area02 {
+  .bannerArea02 {
     .banner-wrapper {
       padding-top: 0px;
       .banner-button {
@@ -516,7 +505,7 @@
       }
     }
   }
-  .banner-area03 {
+  .bannerArea03 {
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px !important;
@@ -543,8 +532,9 @@
     }
   }
 }
+
 @media (max-width: 1199px) {
-  .banner-area {
+  .bannerArea {
     // Contact form Banner
     &.contactBanner,
     &.projectBanner,
@@ -555,9 +545,10 @@
     }
   }
 }
+
 @media (min-width: 1024px) and (max-width: 1199px) {
   // homepage -02 / Banner -02
-  .banner-area02 {
+  .bannerArea02 {
     .banner-title {
       h1 {
         font-size: 38px;
@@ -568,7 +559,7 @@
       right: 39%;
     }
   }
-  .banner-area03 {
+  .bannerArea03 {
     .banner-image {
       .banner05 {
         left: -140px;
@@ -591,7 +582,7 @@
       }
     }
   }
-  .banner-area {
+  .bannerArea {
     &.breadcrumb-area {
       .banner-image {
         bottom: -220px;
@@ -602,7 +593,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1023px) {
-  .banner-area {
+  .bannerArea {
     &.breadcrumb-area {
       .banner-image {
         bottom: -220px;
@@ -613,7 +604,7 @@
 }
 
 @media (max-width: 1024px) {
-  .banner-area04 {
+  .bannerArea04 {
     .banner-wrapper {
       .banner-title {
         h1 {
@@ -625,7 +616,7 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1023px) {
-  .banner-area02 {
+  .bannerArea02 {
     .banner-title {
       h1 {
         font-size: 32px;
@@ -636,7 +627,7 @@
       right: 39%;
     }
   }
-  .banner-area03 {
+  .bannerArea03 {
     .banner-image {
       .banner05 {
         left: -160px;
@@ -651,7 +642,7 @@
 }
 
 @media (max-width: 991px) {
-  .banner-area02 {
+  .bannerArea02 {
     border-bottom-left-radius: 0px;
     padding-bottom: 140px;
     position: relative;
@@ -689,7 +680,7 @@
       right: 190px;
     }
   }
-  .banner-area03 {
+  .bannerArea03 {
     padding-bottom: 90px !important;
     .banner-image {
       .banner01 {
@@ -717,7 +708,7 @@
       }
     }
   }
-  .banner-area {
+  .bannerArea {
     &.breadcrumb-area {
       .banner-image {
         position: static;
@@ -728,10 +719,10 @@
 
 @media (max-width: 768px) {
   // banner section
-  .banner-area {
+  .bannerArea {
     margin: 0px;
   }
-  .banner-area03 {
+  .bannerArea03 {
     .banner-image {
       .react-01 {
         right: 60px;
@@ -780,16 +771,16 @@
   }
 
   // banner-02
-  .banner-area02 {
+  .bannerArea02 {
     position: relative;
 
     // buttons
-    .t-btn {
+    .primary__button {
       padding: 20px 5px;
     }
   }
 
-  .banner-area03 {
+  .bannerArea03 {
     .slick-slide {
       img {
         margin: auto;
@@ -814,7 +805,7 @@
 }
 
 @media (min-width: 420px) and (max-width: 574px) {
-  .banner-area03 {
+  .bannerArea03 {
     .banner-image {
       padding-top: 95px;
       .react-01 {
@@ -834,7 +825,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
-  .banner-area02 {
+  .bannerArea02 {
     .banner-wrapper {
       padding-top: 100px;
     }
@@ -853,7 +844,7 @@
     }
   }
 
-  .banner-area {
+  .bannerArea {
     &.breadcrumb-area {
       padding: 80px 0px;
       .banner-wrapper {
@@ -875,7 +866,7 @@
     }
   }
 
-  .banner-area04 {
+  .bannerArea04 {
     .banner-wrapper {
       .banner-title {
         h1 {
@@ -892,7 +883,7 @@
 }
 
 @media (max-width: 1750px) {
-  .banner-area02 {
+  .bannerArea02 {
     .banner-image {
       img {
         max-width: 100%;
@@ -901,7 +892,7 @@
   }
 }
 @media (min-width: 1480px) and (max-width: 1750px) {
-  .banner-area02 {
+  .bannerArea02 {
     .small-feature01 {
       right: 25.3%;
     }
@@ -914,7 +905,7 @@
 /* large devices 992 - 1199*/
 @media #{$lg} {
   /* banner area start */
-  .banner-area {
+  .bannerArea {
     padding: 40px 20px;
     margin: 0 30px;
     .banner-wrapper {
@@ -928,7 +919,7 @@
     .banner-button {
       margin-top: 0px;
     }
-    .banner-button .t-btn {
+    .banner-button .primary__button {
       font-size: 18px;
       padding: 15px 35px;
     }
@@ -950,7 +941,7 @@
     }
   }
   // banner -02
-  .banner-area02 {
+  .bannerArea02 {
     .banner-wrapper {
       p {
         font-size: 18px;
@@ -970,7 +961,7 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
   /* common area start */
-  .banner-area {
+  .bannerArea {
     margin: 0 20px;
     padding: 0 10px;
     .banner-wrapper {
@@ -992,7 +983,7 @@
             width: 20px;
           }
         }
-        .t-btn {
+        .primary__button {
           font-size: 18px;
         }
       }
@@ -1009,7 +1000,7 @@
     }
   }
   // Homepage -02 / Banner -02
-  .banner-area02 {
+  .bannerArea02 {
     .banner-image {
       margin-left: 0px;
       position: absolute;
@@ -1020,7 +1011,7 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-  .banner-area {
+  .bannerArea {
     margin: 0px;
     padding: 0px;
     border-radius: 0px;
@@ -1054,7 +1045,7 @@
     }
   }
   // banner-02
-  .banner-area02 {
+  .bannerArea02 {
     position: relative;
     .banner-wrapper {
       margin-top: 30px !important;
@@ -1078,7 +1069,7 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-  .banner-area {
+  .bannerArea {
     &.breadcrumb-area {
       padding-top: 60px;
       padding-bottom: 90px;
@@ -1095,7 +1086,7 @@
     }
   }
 
-  .banner-area02 {
+  .bannerArea02 {
     .banner-wrapper {
       padding-top: 100px;
     }

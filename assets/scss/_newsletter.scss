@@ -2,140 +2,140 @@
 /*  HOMEPAGE 01
 /*----------------------------------------*/
 .newsletter-area {
-    padding-top: 75px;
-    padding-bottom: 145px;
-    &-text {
-        h2 {
-            margin-bottom: 12px;
-            font-family: $gilroy-bold;
-            display: inline-block;
-            padding-right: 75px;
-            line-height: 64px;
-        }
-
-        p {
-            font-family: $gilroy-medium;
-            font-size: 26px;
-        }
+  padding-top: 75px;
+  padding-bottom: 145px;
+  &-text {
+    h2 {
+      margin-bottom: 12px;
+      font-family: $gilroy-bold;
+      display: inline-block;
+      padding-right: 75px;
+      line-height: 64px;
     }
 
-    &-form {
-        margin-left: 35px;
-        form {
-            .input-group {
-                margin-bottom: 22px;
-
-                input {
-                    height: 65px;
-                    line-height: 30px;
-                    padding: 20px 0px 20px 30px;
-                    border-radius: 35px;
-                    background-color: rgba(255, 70, 94, 0.05);
-                    border: 1px solid #dddddd;
-
-                    &:focus {
-                        box-shadow: none;
-                    }
-                }
-            }
-
-            .t-btn {
-                i {
-                    margin-left: 8px;
-                }
-            }
-        }
+    p {
+      font-family: $gilroy-medium;
+      font-size: 26px;
     }
+  }
+
+  &-form {
+    margin-left: 35px;
+    form {
+      .input-group {
+        margin-bottom: 22px;
+
+        input {
+          height: 65px;
+          line-height: 30px;
+          padding: 20px 0px 20px 30px;
+          border-radius: 35px;
+          background-color: rgba(255, 70, 94, 0.05);
+          border: 1px solid #dddddd;
+
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+
+      .primary__button {
+        i {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
 }
 
 /*Responsive */
 
 /*Common Device-Sizes */
 @media (max-width: 991px) {
-    .newsletter-area {
-        &-form {
-            margin-left: 0px;
-        }
+  .newsletter-area {
+    &-form {
+      margin-left: 0px;
     }
+  }
 }
 
 @media (max-width: 767px) {
-    .newsletter-area {
-        padding: 75px 0px;
-        &-text {
-            h2 {
-                font-size: 26px !important;
-                line-height: 36px !important;
-            }
-            p {
-                font-size: 18px;
-                line-height: 28px;
-            }
-        }
-        &-form {
-            margin: 25px 0px;
-        }
+  .newsletter-area {
+    padding: 75px 0px;
+    &-text {
+      h2 {
+        font-size: 26px !important;
+        line-height: 36px !important;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
     }
+    &-form {
+      margin: 25px 0px;
+    }
+  }
 }
 
 @media (max-width: 575px) {
-    .newsletter-area {
-        &-text {
-            h2 {
-                padding-right: 0px;
-                text-align: center;
-            }
-            p {
-                text-align: center;
-            }
-        }
-        &-form {
-            form {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
+  .newsletter-area {
+    &-text {
+      h2 {
+        padding-right: 0px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
     }
+    &-form {
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
 }
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
-    .newsletter-area {
-        padding: 95px 0;
-        .newsletter-area-text p {
-            font-size: 22px;
-        }
+  .newsletter-area {
+    padding: 95px 0;
+    .newsletter-area-text p {
+      font-size: 22px;
     }
-    .newsletter-area-form form .input-group input {
-        height: 60px;
-    }
+  }
+  .newsletter-area-form form .input-group input {
+    height: 60px;
+  }
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
-    .newsletter-area {
-        padding: 100px 0;
-        .newsletter-area-text {
-            margin-bottom: 50px;
-            p {
-                font-size: 22px;
-            }
-        }
+  /* common area start */
+  .newsletter-area {
+    padding: 100px 0;
+    .newsletter-area-text {
+      margin-bottom: 50px;
+      p {
+        font-size: 22px;
+      }
     }
+  }
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    /* common area start */
+  /* common area start */
 }
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
+  /* common area start */
 }

@@ -25,7 +25,7 @@
         }
       }
     }
-    .t-btn {
+    .primary__button {
       padding: 17px 35px;
     }
   }
@@ -214,7 +214,7 @@
     }
   }
   &__btn-wrapper {
-    .t-btn {
+    .primary__button {
       &:hover {
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
       }
@@ -304,7 +304,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .t-btn {
+      .primary__button {
         margin: 0px !important;
         // margin-right: 5p;
         width: 180px;
@@ -335,7 +335,7 @@
   .design-services {
     &__btn-wrapper {
       flex-direction: column;
-      .t-btn {
+      .primary__button {
         margin-bottom: 15px !important;
       }
     }
