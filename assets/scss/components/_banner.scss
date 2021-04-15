@@ -223,6 +223,9 @@
   padding-bottom: 85px;
   .banner-wrapper {
     margin-top: 140px;
+    p {
+      margin: 30px 0px;
+    }
   }
 
   .banner-image {
@@ -300,8 +303,15 @@
 
   .banner-button {
     .play-icon {
+      width: 65px;
+      height: 65px;
+      display: inline-block;
+      text-align: center;
+      line-height: 65px;
+      border-radius: 50%;
       background-color: #2ca5ff;
       border: 1px solid rgba(255, 255, 255, 0.3);
+      margin-left: 15px;
     }
   }
 
@@ -395,6 +405,13 @@
         font-family: $teko;
         font-size: 24px;
         font-weight: 500;
+      }
+      .play-icon {
+        width: 65px;
+        height: 65px;
+        padding: 30px;
+        display: inline-block;
+        border-radius: 50%;
       }
     }
   }
@@ -615,6 +632,7 @@
     }
   }
 }
+
 @media (min-width: 992px) and (max-width: 1023px) {
   .bannerArea02 {
     .banner-title {
@@ -741,6 +759,19 @@
   }
 }
 
+@media (max-width: 767px) {
+  .bannerArea {
+    padding: 120px 0px;
+    .banner-image {
+      padding-bottom: 30px;
+    }
+    &__wrapper {
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
 @media (max-width: 575px) {
   .banner {
     &-area {
@@ -787,7 +818,7 @@
       }
     }
     .banner-image {
-      padding-top: 195px;
+      padding-top: 60px;
       .banner04,
       .banner02 {
         display: none;
@@ -799,6 +830,13 @@
       .react-02 {
         left: 55px;
         top: 155px;
+      }
+    }
+    .banner-brand-title {
+      h3 {
+        &::before {
+          width: 65px;
+        }
       }
     }
   }
@@ -820,6 +858,15 @@
         left: -15px;
         top: 70px;
       }
+    }
+  }
+}
+
+@media (min-width: 320px) and(max-width: 574px) {
+  .bannerArea {
+    &__title {
+      font-size: 32px;
+      line-height: 42px;
     }
   }
 }
@@ -926,6 +973,7 @@
     .banner-button .play-icon {
       width: 50px;
       height: 50px;
+      line-height: 45px;
       box-sizing: border-box;
       svg {
         width: 17px;
@@ -963,10 +1011,11 @@
   /* common area start */
   .bannerArea {
     margin: 0 20px;
-    padding: 0 10px;
-    .banner-wrapper {
-      margin-top: 50px;
-      margin-bottom: 100px;
+    padding: 168px 10px;
+    padding-bottom: 80px;
+    &__wrapper {
+      margin-top: 30px;
+      margin-bottom: 60px;
       p {
         font-size: 16px;
         line-height: 26px;
@@ -987,6 +1036,9 @@
           font-size: 18px;
         }
       }
+    }
+    .banner-image {
+      padding-bottom: 0px;
     }
     .mask-group {
       .mask3 {
@@ -1012,13 +1064,13 @@
 /* Small devices 575 - 767 */
 @media #{$sm} {
   .bannerArea {
-    margin: 0px;
-    padding: 0px;
+    // margin: 0px;
+    // padding: 0px;
     border-radius: 0px;
     .banner-image {
       margin-bottom: 30px;
     }
-    .banner-wrapper {
+    &__wrapper {
       padding-bottom: 70px;
       p {
         width: 100%;

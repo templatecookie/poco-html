@@ -278,10 +278,30 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: true,
     dots: false,
-    centerMode: true,
-    centerPadding: '-150px',
+    // centerMode: true,
+    // centerPadding: '-150px',
     infinite: true,
     autoplay: false,
+    prevArrow: `<button class="projectSlider__prevArrow"><i class="fas fa-arrow-right"></i></button>`,
+    nextArrow: `<button class="projectSlider__nextArrow"><i class="fas fa-arrow-right"></i></button>`,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+          // centerPadding: '0px',
+        },
+      },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+
+      //     centerPadding: '40px',
+      //     slidesToShow: 1
+      //   }
+      // }
+    ],
     // autoplaySpeed: 1900,
   });
 });

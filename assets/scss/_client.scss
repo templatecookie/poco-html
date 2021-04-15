@@ -69,4 +69,11 @@
       left: 0px;
     }
   }
+  .beloved-client {
+    .client-info {
+      &-item {
+        margin-bottom: 50px;
+      }
+    }
+  }
 }

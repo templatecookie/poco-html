@@ -2,6 +2,15 @@
 /*  HOMEPAGE 01
 /*----------------------------------------*/
 .special-services {
+  .section-title {
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
+  }
   &-image {
     margin-bottom: 23px;
     border-radius: 25px;
@@ -259,7 +268,7 @@
     .section-title {
       margin-bottom: 115px;
       h2 {
-        font-size: 32px;
+        font-size: 48px;
       }
     }
 

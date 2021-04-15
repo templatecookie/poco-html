@@ -3,6 +3,15 @@
 /*----------------------------------------*/
 .price-area {
   position: relative;
+  .section-title {
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
+  }
   .price-box {
     border: 2px solid #dddddd;
     padding: 50px 0;
@@ -102,6 +111,16 @@
 /*----------------------------------------*/
 .priceArea {
   position: relative;
+
+  .section-title {
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
+  }
   &__contentBox {
     position: relative;
     background-color: #fff;
@@ -112,8 +131,6 @@
       outline: 0;
       border: 0;
       text-align: left;
-      // cursor: none;
-      // pointer-events: none;
       width: 0px;
       .primary__button {
         cursor: pointer;
@@ -280,6 +297,15 @@
     &-body {
       ul {
         margin-bottom: 15px;
+      }
+    }
+  }
+  .priceArea {
+    .section-title {
+      h2 {
+        font-size: 32px;
+        line-height: 46px;
+        font-family: $gilroy-bold;
       }
     }
   }

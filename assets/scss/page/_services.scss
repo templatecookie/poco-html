@@ -16,6 +16,7 @@
       h2 {
         max-width: 375px;
         margin-bottom: 10px;
+        font-family: $gilroy-bold;
       }
     }
     .feature {
@@ -76,6 +77,15 @@
 // START OUR WORK PROCESS
 .our-work-process {
   position: relative;
+  .section-title {
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
+  }
   &.pt-125 {
     padding-top: 155px;
   }
@@ -310,6 +320,14 @@
         width: 180px;
         text-align: center;
         padding: 20px;
+      }
+    }
+  }
+  .our-work-process {
+    .section-title {
+      h2 {
+        font-size: 32px;
+        line-height: 46px;
       }
     }
   }

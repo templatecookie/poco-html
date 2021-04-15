@@ -7,6 +7,13 @@
   position: relative;
   .section-title {
     margin-bottom: 40px;
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
   }
   .solution-wrapper {
     .solution-title {
@@ -414,6 +421,14 @@
       .mask1,
       .mask2 {
         width: 20%;
+      }
+    }
+    .solution-wrapper {
+      .solution-title {
+        h4 {
+          font-size: 24px;
+          line-height: 36px;
+        }
       }
     }
   }

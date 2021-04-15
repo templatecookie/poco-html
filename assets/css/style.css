@@ -1259,6 +1259,10 @@ aside,
   margin-top: 140px;
 }
 
+.bannerArea03 .banner-wrapper p {
+  margin: 30px 0px;
+}
+
 .bannerArea03 .banner-image {
   padding-top: 112px;
   position: relative;
@@ -1337,8 +1341,15 @@ aside,
 }
 
 .bannerArea03 .banner-button .play-icon {
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+  text-align: center;
+  line-height: 65px;
+  border-radius: 50%;
   background-color: #2ca5ff;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 15px;
 }
 
 .bannerArea03 .banner-brand-title {
@@ -1428,6 +1439,14 @@ aside,
   font-family: "Teko", sans-serif;
   font-size: 24px;
   font-weight: 500;
+}
+
+.bannerArea04 .banner-wrapper .banner-button .play-icon {
+  width: 65px;
+  height: 65px;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 50%;
 }
 
 .bannerArea04 .banner-image {
@@ -1700,6 +1719,19 @@ aside,
   }
 }
 
+@media (max-width: 767px) {
+  .bannerArea {
+    padding: 120px 0px;
+  }
+  .bannerArea .banner-image {
+    padding-bottom: 30px;
+  }
+  .bannerArea__wrapper {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 @media (max-width: 575px) {
   .banner-area {
     padding: 75px 0px;
@@ -1731,7 +1763,7 @@ aside,
     margin: auto;
   }
   .bannerArea03 .banner-image {
-    padding-top: 195px;
+    padding-top: 60px;
   }
   .bannerArea03 .banner-image .banner04,
   .bannerArea03 .banner-image .banner02 {
@@ -1744,6 +1776,9 @@ aside,
   .bannerArea03 .banner-image .react-02 {
     left: 55px;
     top: 155px;
+  }
+  .bannerArea03 .banner-brand-title h3::before {
+    width: 65px;
   }
 }
 
@@ -1762,6 +1797,13 @@ aside,
   .bannerArea03 .banner-image .react-02 {
     left: -15px;
     top: 70px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .bannerArea__title {
+    font-size: 32px;
+    line-height: 42px;
   }
 }
 
@@ -1849,6 +1891,7 @@ aside,
   .bannerArea .banner-button .play-icon {
     width: 50px;
     height: 50px;
+    line-height: 45px;
     box-sizing: border-box;
   }
   .bannerArea .banner-button .play-icon svg {
@@ -1875,31 +1918,35 @@ aside,
   /* common area start */
   .bannerArea {
     margin: 0 20px;
-    padding: 0 10px;
+    padding: 168px 10px;
+    padding-bottom: 80px;
   }
-  .bannerArea .banner-wrapper {
-    margin-top: 50px;
-    margin-bottom: 100px;
+  .bannerArea__wrapper {
+    margin-top: 30px;
+    margin-bottom: 60px;
   }
-  .bannerArea .banner-wrapper p {
+  .bannerArea__wrapper p {
     font-size: 16px;
     line-height: 26px;
     width: 100%;
     margin-top: 15px;
   }
-  .bannerArea .banner-wrapper .banner-button {
+  .bannerArea__wrapper .banner-button {
     margin-top: 20px;
   }
-  .bannerArea .banner-wrapper .banner-button .play-icon {
+  .bannerArea__wrapper .banner-button .play-icon {
     width: 60px;
     height: 60px;
     box-sizing: border-box;
   }
-  .bannerArea .banner-wrapper .banner-button .play-icon svg {
+  .bannerArea__wrapper .banner-button .play-icon svg {
     width: 20px;
   }
-  .bannerArea .banner-wrapper .banner-button .primary__button {
+  .bannerArea__wrapper .banner-button .primary__button {
     font-size: 18px;
+  }
+  .bannerArea .banner-image {
+    padding-bottom: 0px;
   }
   .bannerArea .mask-group .mask3 {
     left: 80%;
@@ -1917,17 +1964,15 @@ aside,
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   .bannerArea {
-    margin: 0px;
-    padding: 0px;
     border-radius: 0px;
   }
   .bannerArea .banner-image {
     margin-bottom: 30px;
   }
-  .bannerArea .banner-wrapper {
+  .bannerArea__wrapper {
     padding-bottom: 70px;
   }
-  .bannerArea .banner-wrapper p {
+  .bannerArea__wrapper p {
     width: 100%;
     font-size: 16px;
     line-height: 26px;
@@ -2468,6 +2513,18 @@ aside,
   bottom: -25px;
 }
 
+.our-teams .our-teams-member .member-info .name h5 {
+  font-size: 18px;
+}
+
+.our-teams .section-title h2 {
+  font-size: 48px;
+  line-height: 64px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  text-transform: capitalize;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
@@ -2920,6 +2977,14 @@ aside,
 /*----------------------------------------*/
 /*  HOMEPAGE 01
 /*----------------------------------------*/
+.special-services .section-title h2 {
+  font-size: 48px;
+  line-height: 64px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  text-transform: capitalize;
+}
+
 .special-services-image {
   margin-bottom: 23px;
   border-radius: 25px;
@@ -3152,7 +3217,7 @@ aside,
     margin-bottom: 115px;
   }
   .special-services .section-title h2 {
-    font-size: 32px;
+    font-size: 48px;
   }
   .special-services-item {
     margin-bottom: 120px;
@@ -3352,6 +3417,14 @@ aside,
   position: relative;
 }
 
+.price-area .section-title h2 {
+  font-size: 48px;
+  line-height: 64px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  text-transform: capitalize;
+}
+
 .price-area .price-box {
   border: 2px solid #dddddd;
   padding: 50px 0;
@@ -3450,6 +3523,14 @@ aside,
 /*----------------------------------------*/
 .priceArea {
   position: relative;
+}
+
+.priceArea .section-title h2 {
+  font-size: 48px;
+  line-height: 64px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  text-transform: capitalize;
 }
 
 .priceArea__contentBox {
@@ -3618,6 +3699,11 @@ aside,
   }
   .price-body ul {
     margin-bottom: 15px;
+  }
+  .priceArea .section-title h2 {
+    font-size: 32px;
+    line-height: 46px;
+    font-family: "Gilroy-Bold";
   }
 }
 
@@ -4244,6 +4330,14 @@ aside,
   margin-bottom: 110px;
 }
 
+.testimonial-area .section-title h2 {
+  font-size: 48px;
+  line-height: 64px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  text-transform: capitalize;
+}
+
 .testimonial-area .w-65 {
   max-width: 65%;
   margin: auto;
@@ -4379,6 +4473,14 @@ aside,
 
 .testimonial02 .section-title {
   margin-bottom: 50px;
+}
+
+.testimonial02 .section-title h2 {
+  font-size: 48px;
+  line-height: 64px;
+  font-family: "Gilroy-Bold";
+  color: #000560;
+  text-transform: capitalize;
 }
 
 .testimonial02 .testimonial-item {
@@ -5421,6 +5523,9 @@ aside,
   .beloved-client__Shapes02 {
     left: 0px;
   }
+  .beloved-client .client-info-item {
+    margin-bottom: 50px;
+  }
 }
 
 /*----------------------------------------*/
@@ -5759,7 +5864,7 @@ aside,
 }
 
 .breadcrumb-area .breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .breadcrumb-area .breadcrumb-wrapper .breadcrumb .breadcrumb-item a:hover {
@@ -5797,7 +5902,7 @@ aside,
     line-height: 68px;
   }
   .breadcrumb-area .banner-wrapper p {
-    margin-top: 25px;
+    margin-top: 0px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -5991,7 +6096,7 @@ aside,
 .projectSlider {
   padding: 60px 0px;
   padding-bottom: 305px;
-  background-color: #3b3c3d;
+  background-color: #191c26;
 }
 
 .projectSlider .section-title h2 {
@@ -6020,7 +6125,6 @@ aside,
   color: #fff;
   text-transform: uppercase;
   font-family: "Teko", sans-serif;
-  margin-top: 15px;
 }
 
 .projectSlider__textContents {
@@ -6045,10 +6149,134 @@ aside,
   border-radius: 50px;
   overflow: hidden;
   background-color: #262832;
-  background-image: linear-gradient(to right, #50525a, #50525a);
+  background-image: linear-gradient(to right, #ff465e, #ff465e);
   background-repeat: no-repeat;
   background-size: 0 100%;
   transition: background-size 0.4s ease-in-out;
+  margin-left: 45px;
+  margin-top: 45px;
+}
+
+.projectSlider__contentSlider {
+  position: relative;
+  width: 850px;
+}
+
+.projectSlider__SlideItem {
+  width: 650px !important;
+  height: 440px;
+  border: 2px solid #fff;
+  margin: 0px 15px;
+  transition: all 0.4s linear;
+}
+
+.projectSlider__SlideItem.slick-slide {
+  margin: 0 !important;
+}
+
+.projectSlider__SlideItem.slick-slide.slick-current {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  margin-left: 405px !important;
+}
+
+.projectSlider__SlideItem.slick-slide {
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+.projectSlider__SlideItem img {
+  height: 100%;
+}
+
+.projectSlider__prevArrow, .projectSlider__nextArrow {
+  position: absolute;
+  bottom: -80px;
+  z-index: 1;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #3b4a51;
+  color: #fff;
+}
+
+.projectSlider__prevArrow:focus, .projectSlider__nextArrow:focus {
+  background-color: #ff465e;
+  border: 2px solid #3b4a51;
+}
+
+.projectSlider__prevArrow {
+  left: -45px;
+}
+
+.projectSlider__nextArrow {
+  left: 740px;
+  z-index: 999;
+}
+
+@media (max-width: 1200px) {
+  .projectSlider__ProgressBar {
+    width: 75%;
+  }
+  .projectSlider__nextArrow {
+    left: 575px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .projectSlider__ProgressBar {
+    margin-left: 90px;
+  }
+  .projectSlider__nextArrow {
+    left: 515px;
+  }
+  .projectSlider__prevArrow {
+    left: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .projectSlider {
+    padding-bottom: 60px;
+  }
+  .projectSlider__leftContent {
+    margin-top: 60px;
+  }
+  .projectSlider__ProgressBar {
+    margin-left: 85px;
+  }
+  .projectSlider__SlideItem.slick-slide.slick-current {
+    margin-left: 0px !important;
+  }
+  .projectSlider__prevArrow {
+    left: -15px;
+  }
+  .projectSlider__nextArrow {
+    left: 625px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projectSlider__nextArrow {
+    left: 500px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .projectSlider {
+    padding: 90px 0px;
+  }
+  .projectSlider__ProgressBar {
+    width: 50%;
+    margin-left: 145px;
+  }
+  .projectSlider__prevArrow {
+    left: 50px;
+  }
+  .projectSlider__nextArrow {
+    left: 450px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -6342,9 +6570,6 @@ aside,
   .copyright {
     padding: 32px 0px;
   }
-  .copyright-area-top {
-    margin-top: 15px;
-  }
 }
 
 /* large devices 992 - 1199*/
@@ -6521,6 +6746,14 @@ aside,
 
 .about-solution .section-title {
   margin-bottom: 40px;
+}
+
+.about-solution .section-title h2 {
+  font-size: 48px;
+  line-height: 64px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  text-transform: capitalize;
 }
 
 .about-solution .solution-wrapper .solution-title h4 {
@@ -6878,6 +7111,10 @@ aside,
   .about-solution .mask-group .mask2 {
     width: 20%;
   }
+  .about-solution .solution-wrapper .solution-title h4 {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
@@ -6957,6 +7194,7 @@ aside,
 .our-services .about-us-text .sub-heading h2 {
   max-width: 375px;
   margin-bottom: 10px;
+  font-family: "Gilroy-Bold";
 }
 
 .our-services .about-us-text .feature .text h6 {
@@ -7017,6 +7255,14 @@ aside,
 
 .our-work-process {
   position: relative;
+}
+
+.our-work-process .section-title h2 {
+  font-size: 48px;
+  line-height: 64px;
+  color: #000560;
+  font-family: "Gilroy-Bold";
+  text-transform: capitalize;
 }
 
 .our-work-process.pt-125 {
@@ -7236,6 +7482,10 @@ aside,
     width: 180px;
     text-align: center;
     padding: 20px;
+  }
+  .our-work-process .section-title h2 {
+    font-size: 32px;
+    line-height: 46px;
   }
 }
 
@@ -7665,6 +7915,14 @@ aside,
   margin-bottom: 60px;
 }
 
+.conatact-area .section-title h2 {
+  font-size: 48px;
+  line-height: 64px;
+  color: #000560;
+  text-transform: capitalize;
+  font-family: "Gilroy-Bold";
+}
+
 .conatact-area .container {
   background: #fcf8f8;
   padding-top: 55px;
@@ -7746,6 +8004,17 @@ aside,
   padding: 90px 0px;
 }
 
+.contactArea__location {
+  margin-left: 150px;
+}
+
+.contactArea__location iframe {
+  position: relative;
+  width: 650px;
+  height: 350px;
+  margin-top: 170px;
+}
+
 .contactArea__title.section-title h2 {
   line-height: 72px;
 }
@@ -7784,7 +8053,6 @@ aside,
 .contactArea__info {
   text-align: center;
   margin-top: 60px;
-  margin-left: 150px;
 }
 
 .contactArea__info span {
@@ -7803,6 +8071,12 @@ aside,
   .contactArea__brief {
     width: 65%;
   }
+  .contactArea__location {
+    margin-left: 0px;
+  }
+  .contactArea__location iframe {
+    margin-top: 60px;
+  }
   .contactArea form .form-group input,
   .contactArea form .form-group textarea {
     width: 100%;
@@ -7813,11 +8087,14 @@ aside,
 }
 
 @media (max-width: 575px) {
+  .contactArea__location iframe {
+    width: 100%;
+  }
   .contactArea__brief {
     width: 100%;
   }
   .contactArea__info span {
-    margin-right: 0px;
+    margin-right: 15px;
   }
   .conatact-area .contact-form {
     padding: 0px;

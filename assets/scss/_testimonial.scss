@@ -9,6 +9,15 @@
   border-radius: 24px;
   position: relative;
   margin-bottom: 110px;
+  .section-title {
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
+  }
   .w-65 {
     max-width: 65%;
     margin: auto;
@@ -142,6 +151,13 @@
   overflow: hidden;
   .section-title {
     margin-bottom: 50px;
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      font-family: $gilroy-bold;
+      color: #000560;
+      text-transform: capitalize;
+    }
   }
   .testimonial-item {
     padding: 40px !important;

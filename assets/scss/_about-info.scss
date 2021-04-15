@@ -386,6 +386,20 @@
   .our-teams-member {
     .member-info {
       bottom: -25px;
+      .name {
+        h5 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .section-title {
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
     }
   }
 }
