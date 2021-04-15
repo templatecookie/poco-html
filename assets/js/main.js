@@ -1,5 +1,20 @@
 (function ($) {
   'use strict';
+  // UI VARS
+  let logo = document.querySelector('.logo-04');
+
+  // Sticky Header
+  window.addEventListener('scroll', function () {
+    let header = document.querySelectorAll('header');
+    // console.log(header);
+    header.forEach((headItem) => {
+      headItem.classList.toggle('sticky', window.scrollY > 0);
+    });
+    window.scrollY > 0
+      ? logo.setAttribute('src', 'assets/img/logo/logo.png')
+      : logo.setAttribute('src', 'assets/img/logo/logo04.png');
+  });
+
   //search box opern
   $('.search-bar').on('click', function () {
     $('.search-box').addClass('search-open');
@@ -264,9 +279,9 @@ $(document).ready(function () {
     arrows: true,
     dots: false,
     centerMode: true,
+    centerPadding: '-150px',
     infinite: true,
-    centerPadding: '150px',
-    // autoplay: false,
+    autoplay: false,
     // autoplaySpeed: 1900,
   });
 });
@@ -333,21 +348,3 @@ $(window).scroll(function () {
     });
   }
 });
-
-// sticky menu
-var $window = $(window);
-var $fh = $('header');
-var logo = document.querySelector('.logo-04');
-// console.log(logo);
-// // Sticky Menu
-// $window.on('scroll', function () {
-//   var $offset = $(this).scrollTop();
-//   if ($offset > 0.5) {
-//     $fh.addClass('sticky');
-//     logo.setAttribute('src', 'assets/img/logo/logo.png');
-//   } else {
-//     $fh.removeClass('sticky');
-//     logo.setAttribute('src', 'assets/img/logo/logo04.png');
-//   }
-// });
-// @ts-ignore
