@@ -4,7 +4,7 @@
 .bannerArea {
   position: relative;
   margin: 0 45px;
-  padding: 75px 40px 190px 40px;
+  padding: 75px 40px 110px 40px;
   border-radius: 24px;
   background-color: rgba(255, 70, 94, 0.05);
 
@@ -17,7 +17,7 @@
   &__brief {
     display: inline-block;
     width: 90%;
-    margin: 25px 0px;
+    padding: 25px 0px;
     line-height: 36px;
     font-family: $gilroy-medium;
     font-size: 21px;
@@ -26,7 +26,8 @@
   &__buttons {
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 8px;
+    margin-bottom: 90px;
 
     .primary__button {
       font-size: 20px;
@@ -50,7 +51,7 @@
 
   .banner-image {
     position: absolute;
-    bottom: -448px;
+    bottom: -395px;
     right: 0px;
   }
 
@@ -79,7 +80,7 @@
 
     .mask4 {
       top: 130px;
-      left: 22px;
+      left: 35px;
       z-index: -99;
     }
   }
@@ -552,7 +553,6 @@
 
 @media (max-width: 1199px) {
   .bannerArea {
-    // Contact form Banner
     &.contactBanner,
     &.projectBanner,
     &.blogBanner {
@@ -633,6 +633,7 @@
   }
 }
 
+// It's will be removed
 @media (min-width: 992px) and (max-width: 1023px) {
   .bannerArea02 {
     .banner-title {

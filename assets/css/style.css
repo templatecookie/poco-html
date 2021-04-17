@@ -479,7 +479,7 @@ p {
 /*  HOMPAGE 01
 /*----------------------------------------*/
 .header-area {
-  padding: 20px 0px;
+  padding: 25px 0px;
   position: relative;
 }
 
@@ -578,7 +578,7 @@ p {
   line-height: 64px;
   border-radius: 50%;
   text-align: center;
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .header-area .right-content .contact-number .primary__button {
@@ -1034,7 +1034,7 @@ aside,
 .bannerArea {
   position: relative;
   margin: 0 45px;
-  padding: 75px 40px 190px 40px;
+  padding: 75px 40px 110px 40px;
   border-radius: 24px;
   background-color: rgba(255, 70, 94, 0.05);
 }
@@ -1050,7 +1050,7 @@ aside,
 .bannerArea__brief {
   display: inline-block;
   width: 90%;
-  margin: 25px 0px;
+  padding: 25px 0px;
   line-height: 36px;
   font-family: "Gilroy-Medium";
   font-size: 21px;
@@ -1059,7 +1059,8 @@ aside,
 .bannerArea__buttons {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 8px;
+  margin-bottom: 90px;
 }
 
 .bannerArea__buttons .primary__button {
@@ -1083,7 +1084,7 @@ aside,
 
 .bannerArea .banner-image {
   position: absolute;
-  bottom: -448px;
+  bottom: -395px;
   right: 0px;
 }
 
@@ -1111,7 +1112,7 @@ aside,
 
 .bannerArea .mask-group .mask4 {
   top: 130px;
-  left: 22px;
+  left: 35px;
   z-index: -99;
 }
 
