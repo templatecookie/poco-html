@@ -260,7 +260,18 @@ p {
   }
 }
 
-// Section Title
+// Sections
+
+section {
+  padding: 110px 0px;
+}
+
+// section title 01
+.special-services {
+  .section-title h2 {
+  }
+}
+
 .section-title {
   margin-bottom: 60px;
 

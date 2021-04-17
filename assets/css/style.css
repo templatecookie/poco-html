@@ -325,6 +325,10 @@ p {
   color: #ff465e;
 }
 
+section {
+  padding: 110px 0px;
+}
+
 .section-title {
   margin-bottom: 60px;
 }
@@ -2055,6 +2059,12 @@ aside,
 /*----------------------------------------*/
 /*  HOME PAGE 01
 /*----------------------------------------*/
+.brand-area .small-section h3 {
+  font-size: 30px;
+  line-height: 42px;
+  font-family: "Gilroy-Bold";
+}
+
 .brand-area .brand-slider-active .slick-track {
   display: flex;
   align-items: center;
@@ -2145,6 +2155,7 @@ aside,
 /*----------------------------------------*/
 .about-info {
   position: relative;
+  padding-top: 20px;
 }
 
 .about-info-image {
@@ -2978,6 +2989,11 @@ aside,
 /*----------------------------------------*/
 /*  HOMEPAGE 01
 /*----------------------------------------*/
+.special-services {
+  padding-top: 0px;
+  padding-bottom: 75px;
+}
+
 .special-services .section-title h2 {
   font-size: 48px;
   line-height: 64px;
@@ -3775,7 +3791,8 @@ aside,
 .callto-action {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
-  margin-top: 90px;
+  padding: 0px;
+  padding-top: 30px;
   border-radius: 24px;
   position: relative;
 }
@@ -3798,17 +3815,20 @@ aside,
   z-index: -1;
 }
 
+.callto-action-text {
+  margin-top: -50px;
+}
+
 .callto-action-text h2 {
   font-family: "Gilroy-Bold";
   max-width: 620px;
-  margin-bottom: 12px;
 }
 
 .callto-action-text p {
   max-width: 575px;
   font-family: "Gilroy-Medium";
-  margin-bottom: 20px;
   line-height: 30px;
+  margin: 20px 0px;
 }
 
 .callto-action-text .primary__button {

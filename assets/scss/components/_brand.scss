@@ -2,56 +2,65 @@
 /*  HOME PAGE 01
 /*----------------------------------------*/
 .brand-area {
-    .brand-slider-active {
-        .slick-track {
-            display: flex;
-            align-items: center;
-        }
-        .single-brand {
-            img {
-                margin: auto;
-                width: 160px;
-                filter: grayscale(100%);
-                &:hover {
-                    filter: grayscale(0%);
-                }
-            }
-        }
+  // Section title
+  .small-section {
+    h3 {
+      font-size: 30px;
+      line-height: 42px;
+      font-family: $gilroy-bold;
     }
+  }
+
+  .brand-slider-active {
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+    .single-brand {
+      img {
+        margin: auto;
+        width: 160px;
+        filter: grayscale(100%);
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
 }
 /*----------------------------------------*/
 /*  HOME PAGE 02
 /*----------------------------------------*/
 .brands {
-    margin-top: -50px;
-    z-index: 99;
-    position: relative;
-    &-area {
-        padding: 60px 0px;
-        border-radius: 10px;
-        background-color: #fff;
-        .brand-slider-item {
-            .slick-track {
-                display: flex;
-                align-items: center;
-            }
-            div {
-                // text-align: center;
-                display: flex;
-                align-items: center;
-                margin: 0px 15px;
-                img {
-                    // margin: auto;
-                    width: 120px;
-                    filter: grayscale(100%);
-                    cursor: pointer;
-                    &:hover {
-                        filter: grayscale(0);
-                    }
-                }
-            }
+  margin-top: -50px;
+  z-index: 99;
+  position: relative;
+  &-area {
+    padding: 60px 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    .brand-slider-item {
+      .slick-track {
+        display: flex;
+        align-items: center;
+      }
+      div {
+        // text-align: center;
+        display: flex;
+        align-items: center;
+        margin: 0px 15px;
+        img {
+          // margin: auto;
+          width: 120px;
+          filter: grayscale(100%);
+          cursor: pointer;
+          &:hover {
+            filter: grayscale(0);
+          }
         }
+      }
     }
+  }
 }
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
@@ -59,30 +68,30 @@
 
 /* large devices 992 - 1169*/
 @media #{$lg} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    /* common area start */
-    .brand-area {
-        padding-top: 70px;
-        .small-section {
-            margin-bottom: 20px;
-        }
+  /* common area start */
+  .brand-area {
+    padding-top: 70px;
+    .small-section {
+      margin-bottom: 20px;
     }
+  }
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    /* common area start */
+  /* common area start */
 }
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
+  /* common area start */
 }
