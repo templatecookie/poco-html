@@ -3,6 +3,9 @@
 /*----------------------------------------*/
 .price-area {
   position: relative;
+  overflow: hidden;
+  padding-top: 130px;
+  padding-bottom: 135px;
   .section-title {
     h2 {
       font-size: 48px;
@@ -90,13 +93,18 @@
     }
 
     .mask9 {
-      top: 0;
+      top: -20px;
       left: 7%;
     }
 
     .mask6 {
       top: 14%;
       right: 4%;
+    }
+    .mask7 {
+      top: -45px;
+      left: 650px;
+      z-index: -1;
     }
 
     .mask8 {

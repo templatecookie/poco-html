@@ -3432,6 +3432,9 @@ aside,
 /*----------------------------------------*/
 .price-area {
   position: relative;
+  overflow: hidden;
+  padding-top: 130px;
+  padding-bottom: 135px;
 }
 
 .price-area .section-title h2 {
@@ -3521,13 +3524,19 @@ aside,
 }
 
 .price-area .mask-group3 .mask9 {
-  top: 0;
+  top: -20px;
   left: 7%;
 }
 
 .price-area .mask-group3 .mask6 {
   top: 14%;
   right: 4%;
+}
+
+.price-area .mask-group3 .mask7 {
+  top: -45px;
+  left: 650px;
+  z-index: -1;
 }
 
 .price-area .mask-group3 .mask8 {
@@ -3795,6 +3804,8 @@ aside,
   padding-top: 30px;
   border-radius: 24px;
   position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .callto-action-mask img {
@@ -3820,6 +3831,8 @@ aside,
 }
 
 .callto-action-text h2 {
+  font-size: 48px;
+  line-height: 64px;
   font-family: "Gilroy-Bold";
   max-width: 620px;
 }
