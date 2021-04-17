@@ -2,256 +2,282 @@
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 .client-review {
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .banner-image {
-        margin-top: -24px;
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 145px;
+  .banner-image {
+    margin-top: -24px;
+  }
+  .section-title {
+    margin: 0;
+    margin-bottom: 30px;
+    h2 {
+      text-transform: uppercase;
+      color: white;
+      font-size: 60px;
+      font-family: $teko;
+      font-weight: 600;
+      line-height: 1;
+      span {
+        color: $tertiary;
+      }
     }
-    .section-title {
-        margin: 0;
-        margin-bottom: 30px;
-        h2 {
-            text-transform: uppercase;
-            color: white;
-            font-size: 60px;
-            font-family: $teko;
-            font-weight: 600;
-            line-height: 1;
-            span {
-                color: $tertiary;
-            }
+  }
+  .review-active {
+    .single-testimonial {
+      p {
+        font-family: $hind;
+        font-weight: 500;
+        font-size: 22px;
+        color: #9dadb7;
+        line-height: 34px;
+      }
+      .client-name {
+        position: relative;
+        padding-left: 15px;
+        margin-top: 30px;
+        h3 {
+          text-transform: uppercase;
+          color: white;
+          font-size: 26px;
+          font-family: $teko;
+          font-weight: 600;
+          line-height: 1;
         }
+        p {
+          font-family: $hind;
+          font-weight: 500;
+          font-size: 16px;
+          color: #9dadb7;
+          line-height: 27px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 5px;
+          height: 60px;
+          background-color: $tertiary;
+        }
+      }
     }
-    .review-active {
-        .single-testimonial {
-            p {
-                font-family: $hind;
-                font-weight: 500;
-                font-size: 22px;
-                color: #9dadb7;
-                line-height: 34px;
-            }
-            .client-name {
-                position: relative;
-                padding-left: 15px;
-                margin-top: 30px;
-                h3 {
-                    text-transform: uppercase;
-                    color: white;
-                    font-size: 26px;
-                    font-family: $teko;
-                    font-weight: 600;
-                    line-height: 1;
-                }
-                p {
-                    font-family: $hind;
-                    font-weight: 500;
-                    font-size: 16px;
-                    color: #9dadb7;
-                    line-height: 27px;
-                }
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 5px;
-                    height: 60px;
-                    background-color: $tertiary;
-                }
-            }
+    .slick-arrow {
+      position: absolute;
+      left: -217px;
+      bottom: -130px;
+      background-color: $tertiary;
+      color: white;
+      border: 1px solid transparent;
+      width: 157px;
+      height: 79px;
+      cursor: pointer;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $teko;
+      font-size: 26px;
+      font-weight: 500;
+      @include transition(0.3s);
+      &:hover {
+        background-color: white;
+        color: $tertiary;
+      }
+      &.nextArrow {
+        left: -60px;
+        background-color: #fff;
+        color: #ff465e;
+        &::before {
+          content: '\f061';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          position: absolute;
+          right: 30px;
+          font-size: 20px;
+          top: 48%;
+          transform: translateY(-50%);
         }
-        .slick-arrow {
-            position: absolute;
-            left: -217px;
-            bottom: -130px;
-            background-color: $tertiary;
-            color: white;
-            border: 1px solid transparent;
-            width: 157px;
-            height: 79px;
-            cursor: pointer;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: $teko;
-            font-size: 26px;
-            font-weight: 500;
-            @include transition(0.3s);
-            &:hover {
-                background-color: white;
-                color: $tertiary;
-            }
-            &.nextArrow {
-                left: -60px;
-                background-color: #fff;
-                color: #ff465e;
-                &::before {
-                    content: '\f061';
-                    font-family: 'Font Awesome 5 Free';
-                    font-weight: 900;
-                    position: absolute;
-                    right: 30px;
-                    font-size: 20px;
-                    top: 48%;
-                    transform: translateY(-50%);
-                }
-                &:hover {
-                    background-color: #fff;
-                }
-            }
-            &.prevArrow {
-                &::before {
-                    content: '\f060';
-                    font-family: 'Font Awesome 5 Free';
-                    font-size: 20px;
-                    font-weight: 900;
-                    position: absolute;
-                    left: 30px;
-                    top: 47%;
-                    transform: translateY(-50%);
-                }
-                &:hover {
-                    background-color: #ff465e;
-                    color: #fff;
-                }
-            }
+        &:hover {
+          background-color: #fff;
         }
+      }
+      &.prevArrow {
+        &::before {
+          content: '\f060';
+          font-family: 'Font Awesome 5 Free';
+          font-size: 20px;
+          font-weight: 900;
+          position: absolute;
+          left: 30px;
+          top: 47%;
+          transform: translateY(-50%);
+        }
+        &:hover {
+          background-color: #ff465e;
+          color: #fff;
+        }
+      }
     }
+  }
+  &__quotes {
+    user-select: none;
+    position: absolute;
+    right: 20%;
+    bottom: 15%;
+  }
 }
 
 @media (max-width: 1200px) {
-    .client-review {
-        .banner-image {
-            img {
-                max-width: 100%;
-            }
-        }
-        .single-testimonial {
-            .client-name {
-                margin: 15px 0px !important;
-            }
-        }
+  .client-review {
+    .banner-image {
+      img {
+        max-width: 100%;
+      }
     }
+    .single-testimonial {
+      .client-name {
+        margin: 15px 0px !important;
+      }
+    }
+  }
 }
 
 @media (max-width: 1199px) {
-    .client-review {
-        padding: 160px 0px;
-        .review-active {
-            .slick-arrow {
-                bottom: -78px;
-            }
-        }
+  .client-review {
+    padding: 60px 0px;
+    padding-bottom: 110px;
+    .review-active {
+      .slick-arrow {
+        bottom: -78px;
+      }
     }
+    &__quotes {
+      right: 0px;
+    }
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
-    .client-review {
-        padding: 160px 0px;
-        .review-active {
-            .slick-arrow {
-                bottom: -93px;
-            }
-        }
-        .section-title {
-            margin-bottom: 0px;
-        }
-        .single-testimonial {
-            .client-name {
-                margin: 15px 0px !important;
-            }
-        }
+  .client-review {
+    padding: 160px 0px;
+    .review-active {
+      .slick-arrow {
+        bottom: -93px;
+      }
     }
+    .section-title {
+      margin-bottom: 0px;
+    }
+    .single-testimonial {
+      .client-name {
+        margin: 15px 0px !important;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .client-review {
-        .review-active {
-            .single-testimonial {
-                p {
-                    font-size: 18px;
-                }
-            }
-            .slick-arrow {
-                left: -390px;
-                &.nextArrow {
-                    left: -220px;
-                }
-            }
-        }
+  .client-review {
+    .pl-45 {
+      padding-left: 25px;
     }
+    .review-active {
+      .single-testimonial {
+        p {
+          font-size: 18px;
+        }
+      }
+      .slick-arrow {
+        left: -370px;
+        &.nextArrow {
+          left: -200px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
-    .client-review {
-        .row {
-            .col-sm-12 {
-                &.pl-45 {
-                    padding-left: 15px;
-                }
-            }
+  .client-review {
+    padding-bottom: 340px;
+    .row {
+      .col-sm-12 {
+        &.pl-45 {
+          padding-left: 15px;
         }
-        .banner-image {
-            display: flex;
-            justify-content: center;
-        }
-        .section-title {
-            h2 {
-                margin: 30px 0px;
-            }
-        }
-        .review-active {
-            .slick-arrow {
-                left: 0px;
-                bottom: -130px;
-                &.nextArrow {
-                    left: 175px;
-                }
-            }
-        }
+      }
     }
+    // column spacing
+
+    .banner-image {
+      display: flex;
+      justify-content: center;
+    }
+    .section-title {
+      margin-left: 15px;
+      h2 {
+        margin: 30px 0px;
+      }
+    }
+    .review-active {
+      margin-left: 15px;
+      .slick-arrow {
+        left: 0px;
+        bottom: -130px;
+        &.nextArrow {
+          left: 175px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
-    .client-review {
-        .section-title h2 {
-            margin: 30px 0px;
-            font-size: 48px;
-        }
+  .client-review {
+    padding-top: 125px;
+    padding-bottom: 190px;
+    .section-title h2 {
+      margin: 30px 0px;
+      font-size: 48px;
     }
+    .banner-image {
+      justify-content: flex-start;
+      margin-left: 15px;
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
-    .client-review {
-        .section-title {
-            h2 {
-                font-size: 38px;
-            }
-        }
-        .review-active {
-            .single-testimonial {
-                font-size: 18px;
-            }
-            .slick-arrow {
-                width: 120px;
-                height: 50px;
-                font-size: 18px;
-                bottom: -85px;
-                &.prevArrow {
-                    &::before {
-                        left: 15px;
-                    }
-                }
-                &.nextArrow {
-                    left: 135px;
-                    &::before {
-                        left: 85px;
-                    }
-                }
-            }
-        }
+  .client-review {
+    .section-title {
+      h2 {
+        font-size: 38px;
+      }
     }
+    .review-active {
+      .single-testimonial {
+        font-size: 18px;
+      }
+      .slick-arrow {
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        bottom: -85px;
+        &.prevArrow {
+          &::before {
+            left: 15px;
+          }
+        }
+        &.nextArrow {
+          left: 135px;
+          &::before {
+            left: 85px;
+          }
+        }
+      }
+    }
+  }
 }

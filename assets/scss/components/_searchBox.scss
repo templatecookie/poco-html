@@ -1,0 +1,72 @@
+/*----------------------------------------*/
+/*  SEarch Box CSS
+/*----------------------------------------*/
+.search-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 99 !important;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  .search-close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 28px;
+    color: $secondary;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $tertiary;
+    }
+  }
+}
+
+.search-box.search-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.search-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.search-form {
+  input {
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    font-size: 14px;
+    color: $secondary;
+    padding: 0 15px;
+    padding-right: 55px;
+    background-color: rgba(255, 70, 94, 0.05);
+    border: 3px solid #dddddd;
+    position: relative;
+  }
+
+  &::placeholder {
+    color: $secondary;
+    font-size: 14px;
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    line-height: 56px;
+    border-radius: 50%;
+    background: transparent;
+  }
+}

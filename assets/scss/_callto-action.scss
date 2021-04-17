@@ -40,7 +40,7 @@
       margin-bottom: 20px;
       line-height: 30px;
     }
-    .t-btn {
+    .primary__button {
       margin-top: 30px;
     }
   }
@@ -72,7 +72,7 @@
       margin-bottom: 20px;
       margin-top: -5px;
     }
-    a.t-btn {
+    a.primary__button {
       margin-top: 35px;
     }
   }
@@ -354,6 +354,16 @@
       }
     }
   }
+
+  .homepage-03 {
+    .call-action-video {
+      .pattern {
+        .pattern-two {
+          right: 0px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .callto-action-modifi {
@@ -363,12 +373,15 @@
       }
     }
   }
+  .callto-action {
+    padding: 80px 25px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1023px) {
   .callto-action-modifi {
     padding: 90px 25px !important;
     .callto-action-text {
-      .t-btn {
+      .primary__button {
         margin-top: 15px;
       }
     }
@@ -441,6 +454,22 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  .homepage-03 {
+    .call-action-video {
+      .play-video {
+        a {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+  .callto-action-modifi {
+    padding-bottom: 30px;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 419px) {
   .call-action-two {
     border-top-left-radius: 0px;
@@ -485,7 +514,7 @@
       font-size: 32px;
       line-height: 42px;
     }
-    .t-btn {
+    .primary__button {
       margin-top: 0px;
     }
   }
@@ -496,7 +525,7 @@
   .callto-action {
     margin: 0 30px;
     margin-top: 50px;
-    padding: 20px 25px;
+    // padding: 20px 25px;
   }
   // Homepage-02 / Callaction -02
   .call-action-two {

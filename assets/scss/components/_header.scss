@@ -1,0 +1,342 @@
+/*----------------------------------------*/
+/*  HOMPAGE 01
+/*----------------------------------------*/
+.header-area {
+  padding: 20px 0px;
+  position: relative;
+
+  .main-menu {
+    padding-left: 155px;
+
+    li {
+      padding-right: 45px;
+      position: relative;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      a {
+        color: $secondary;
+        font-size: 18px;
+        padding: 15px 0;
+        line-height: 42px;
+        position: relative;
+        font-family: $gilroy-medium;
+        transition: 0.3s;
+
+        &:hover {
+          color: $tertiary;
+        }
+
+        &.active {
+          color: $tertiary;
+        }
+
+        &.active::before {
+          content: '';
+          position: absolute;
+          width: 26px;
+          height: 5px;
+          color: $tertiary;
+          background-color: $tertiary;
+          top: -26px;
+          left: 0;
+        }
+      }
+
+      .sub-menu {
+        position: absolute;
+        left: 0;
+        background: #222222;
+        width: 200px;
+        top: 120%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background: white;
+        border-radius: 5px;
+        border-top: 5px solid $tertiary;
+        z-index: 999;
+
+        li {
+          display: block;
+          margin-right: 0;
+          a {
+            padding: 0px 20px;
+            color: $secondary;
+            font-size: 18px;
+            line-height: 42px;
+            font-family: $gilroy-medium;
+            transition: 0.3s;
+
+            &:hover {
+              color: $tertiary;
+            }
+          }
+        }
+      }
+
+      &:hover .sub-menu {
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+      }
+    }
+  }
+
+  .right-content {
+    display: flex;
+    align-items: center;
+
+    .search-bar {
+      cursor: pointer;
+      border: 1px solid #ffdee4;
+      width: 64px;
+      height: 64px;
+      line-height: 64px;
+      border-radius: 50%;
+      text-align: center;
+      margin-right: 30px;
+    }
+
+    .contact-number {
+      .primary__button {
+        font-size: 18px;
+      }
+      .bg__white {
+        background-color: #fff;
+        color: #000560;
+      }
+    }
+  }
+
+  .menu-icon {
+    font-size: 25px;
+  }
+}
+
+/*----------------------------------------*/
+/*  HOMPAGE 02
+/*----------------------------------------*/
+.header-area02 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  .main-menu {
+    padding-left: 135px;
+
+    li {
+      padding-right: 50px;
+    }
+  }
+  .right-content {
+    .search-bar {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-right: 25px;
+    }
+  }
+  .hamburger-menu {
+    span {
+      background-color: #fff;
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*  HOMPAGE 03
+/*----------------------------------------*/
+.header-area03 {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+
+  .main-menu {
+    li {
+      a {
+        color: #d6d6d6;
+        &:hover {
+          color: #000560;
+        }
+        &.active {
+          color: white;
+        }
+
+        &.active::before {
+          color: white;
+          background-color: white;
+        }
+      }
+      .sub-menu {
+        border-color: #1f99f4;
+        li {
+          a {
+            &:hover {
+              color: #000560;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right-content {
+    .search-bar {
+      border: 0;
+      background-color: rgba(255, 255, 255, 0.34);
+    }
+  }
+  .hamburger-menu {
+    span {
+      background-color: #fff;
+    }
+  }
+  aside {
+    .sidebar-menu {
+      background-color: #8ec5ff;
+      .main-menu {
+        li {
+          a {
+            color: #000560;
+            &.active {
+              color: #007bff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*  HOMPAGE 04
+/*----------------------------------------*/
+.header-area04 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+  .main-menu {
+    padding-left: 105px;
+
+    li {
+      a {
+        font-family: $teko;
+        font-weight: 500;
+        font-size: 20px;
+
+        &.active::before {
+          top: -21px;
+        }
+      }
+    }
+  }
+
+  .contact-number {
+    margin-left: 20px;
+
+    .primary__button {
+      border: 2px solid #3c5b6b;
+      font-family: $teko;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .right-content {
+    .social-icon {
+      display: flex;
+
+      a {
+        border: 2px solid #3c5b6b;
+        color: #fff;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 22px;
+        -webkit-transition: 0.3s all linear;
+        transition: 0.3s all linear;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.sticky {
+    .right-content {
+      .social-icon {
+        a {
+          background-color: #65729e;
+        }
+      }
+    }
+    .hamburger-menu {
+      span {
+        background-color: #3c5b6b;
+      }
+    }
+  }
+  .hamburger-menu {
+    span {
+      background-color: #fff;
+    }
+  }
+}
+
+//Sticky Header
+.header-area {
+  transition: padding 0.3s ease-in-out;
+
+  .main-menu li a::before {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.sticky {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 10px 0px #dadada;
+    background-color: white;
+    z-index: 9999;
+    padding: 15px 0px;
+
+    .main-menu li a.active::before {
+      top: -21px;
+    }
+  }
+}
+
+//home page 2 sticky menu
+.header-area02 {
+  transition: padding 0.3s ease-in-out;
+
+  .main-menu li a::before {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.sticky {
+    box-shadow: inherit;
+    background-color: #29303e;
+  }
+}
+
+//home page 3 sticky menu
+.header-area03 {
+  transition: padding 0.3s ease-in-out;
+
+  .main-menu li a::before {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.sticky {
+    box-shadow: inherit;
+    background-color: #1f99f4;
+  }
+}

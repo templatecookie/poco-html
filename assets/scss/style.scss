@@ -35,9 +35,14 @@
 @import 'variables';
 @import 'mixins';
 @import 'common';
-@import 'header';
-@import 'banner';
-@import 'brand';
+
+// Components
+@import 'components/header';
+@import 'components/mobileMenu';
+@import 'components/searchBox';
+@import 'components/banner';
+@import 'components/brand';
+
 @import 'about-info';
 @import 'skill';
 @import 'special-services';
@@ -50,6 +55,8 @@
 @import 'client';
 @import 'team-member';
 @import 'breadcrumb';
+@import 'projectSlider';
+@import 'project';
 @import 'footer';
 
 //Page

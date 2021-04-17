@@ -3,6 +3,15 @@
 /*----------------------------------------*/
 .price-area {
   position: relative;
+  .section-title {
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
+  }
   .price-box {
     border: 2px solid #dddddd;
     padding: 50px 0;
@@ -14,7 +23,7 @@
     @include transition(0.3s);
 
     &:hover {
-      .t-btn {
+      .primary__button {
         background-color: rgb(255, 70, 94);
       }
     }
@@ -51,13 +60,13 @@
         }
       }
 
-      .t-btn {
+      .primary__button {
         color: $tertiary;
         background: transparent;
         border: 2px solid;
       }
 
-      .t-bg-primary {
+      .primary__button-bgPrimary {
         &:hover {
           color: white;
           background: $tertiary;
@@ -66,7 +75,7 @@
       }
     }
     &:hover {
-      .t-bg-primary {
+      .primary__button-bgPrimary {
         color: white;
         background: $tertiary;
         border-color: $tertiary;
@@ -97,11 +106,164 @@
   }
 }
 
+/*----------------------------------------*/
+/*  Price Plane 2
+/*----------------------------------------*/
+.priceArea {
+  position: relative;
+
+  .section-title {
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      color: #000560;
+      font-family: $gilroy-bold;
+      text-transform: capitalize;
+    }
+  }
+  &__contentBox {
+    position: relative;
+    background-color: #fff;
+    border-color: #c9ccd4;
+    padding: 40px;
+    button {
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      text-align: left;
+      width: 0px;
+      .primary__button {
+        cursor: pointer;
+        &.priceArea__Btninactive {
+          background-color: transparent;
+          color: #ff465e;
+          &:hover {
+            background-color: #ff465e;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__planTitle {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: $gilroy-medium;
+    color: #ff465e;
+  }
+  &__price {
+    font-size: 42px;
+    line-height: 48px;
+    font-family: $gilroy-bold;
+    color: #000560;
+    span {
+      font-size: 28px;
+      font-family: $gilroy-medium;
+    }
+  }
+  &__planeFeatures {
+    border: 1px solid #ff465e;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 30px 0px;
+    margin: 30px 0px;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      span {
+        margin-right: 15px;
+        i {
+          color: #ff465e;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        font-family: $gilroy-medium;
+        color: #65729e;
+      }
+    }
+  }
+  &__moneyBack {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: $gilroy-medium;
+    color: #65729e;
+    margin-top: 12px;
+  }
+  .shape {
+    .mask-bottom,
+    .mask-top,
+    .mask-right {
+      position: absolute;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .mask-top {
+      top: -45px;
+      left: 100px;
+    }
+    .mask-right {
+      top: 130px;
+      right: 65px;
+    }
+    .mask-bottom {
+      left: 200px;
+      bottom: -35px;
+    }
+  }
+
+  // price 2
+  &.priceArea-2 {
+    background-color: #fff;
+    margin-bottom: 60px !important;
+  }
+}
+
 /* Common max-Sizes */
+
+@media (max-width: 1199px) {
+  .brands-area {
+    padding: 35px 0px;
+  }
+  .priceArea {
+    margin: 0px 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .priceArea {
+    .shape {
+      .mask-right {
+        top: 70px;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .price-area {
     .col-lg-4 {
       margin-bottom: 15px;
+    }
+  }
+  .priceArea {
+    &__contentBox {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .priceArea {
+    .shape {
+      .mask-right {
+        top: 45px;
+      }
+      .mask-top {
+        left: 0px;
+      }
     }
   }
 }
@@ -138,6 +300,34 @@
       }
     }
   }
+  .priceArea {
+    .section-title {
+      h2 {
+        font-size: 32px;
+        line-height: 46px;
+        font-family: $gilroy-bold;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .priceArea {
+    margin: 0px !important;
+
+    &__contentBox {
+      padding: 25px;
+    }
+    .shape {
+      .mask-top {
+        left: 0px;
+      }
+      .mask-right {
+        right: 0px;
+        top: -15px;
+      }
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
@@ -151,6 +341,7 @@
     }
   }
 }
+
 /* large devices 992 - 1199*/
 @media #{$lg} {
   /* common area start */

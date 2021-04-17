@@ -1,27 +1,27 @@
 //PROFESSION AREA
 .profession-area {
-    padding: 175px 0px;
-    .profession-img {
-        position: relative;
-        margin-left: -48px;
-        .small-feature {
-            position: absolute;
-            bottom: -10%;
-            left: -125px;
-        }
+  padding: 175px 0px;
+  .profession-img {
+    position: relative;
+    margin-left: -48px;
+    .small-feature {
+      position: absolute;
+      bottom: -10%;
+      left: -125px;
     }
-    .profession-wrapper {
-        margin-left: 30px;
-        .profession-tittle {
-            h2 {
-                margin-bottom: 30px;
-            }
-            p {
-                font-size: 18px;
-            }
-            margin-bottom: 30px;
-        }
+  }
+  .profession-wrapper {
+    margin-left: 30px;
+    .profession-tittle {
+      h2 {
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 18px;
+      }
+      margin-bottom: 30px;
     }
+  }
 }
 
 /*----------------------------------------*/
@@ -31,107 +31,111 @@
 /*Common Devices - Sizes */
 
 @media (max-width: 1200px) {
-    .profession-area {
-        .profession-img {
-            .small-feature {
-                left: 0px;
-            }
-        }
+  .profession-area {
+    .profession-img {
+      .small-feature {
+        left: 0px;
+      }
     }
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
-    .profession-area {
-        .profession-img {
-            .small-feature {
-                bottom: -35%;
-            }
-        }
+  .profession-area {
+    .profession-img {
+      .small-feature {
+        bottom: -35%;
+      }
     }
+  }
 }
 @media (max-width: 991px) {
-    .profession-area {
-        .profession-wrapper,
-        .profession-img {
-            margin-left: 0px !important;
-        }
+  .profession-area {
+    .profession-wrapper,
+    .profession-img {
+      margin-left: 0px !important;
     }
+  }
 }
 
 @media (max-width: 575px) {
-    .profession-area {
-        .profession-img {
-            .small-feature {
-                width: 180px;
-                height: 130px;
-                padding: 25px;
-                .small-feature-percentage {
-                    margin-bottom: 10px !important;
+  .profession-area {
+    padding: 120px 0px;
+    .profession-img {
+      margin-bottom: 45px;
+      .small-feature {
+        position: static;
+        width: 180px;
+        height: 130px;
+        padding: 25px;
+        margin: 30px auto;
+        .small-feature-percentage {
+          margin-bottom: 10px !important;
 
-                    h3 {
-                        font-size: 22px;
-                        line-height: 32px;
-                    }
-                }
-                .small-feature-text {
-                    p {
-                        font-size: 16px;
-                        line-height: 22px;
-                    }
-                }
-            }
+          h3 {
+            font-size: 22px;
+            line-height: 32px;
+          }
         }
-        .profession-wrapper {
-            .profession-tittle {
-                h2 {
-                    font-size: 38px;
-                    line-height: 48px;
-                }
-            }
+        .small-feature-text {
+          p {
+            font-size: 16px;
+            line-height: 22px;
+          }
         }
+      }
     }
+    .profession-wrapper {
+      .profession-tittle {
+        h2 {
+          font-size: 38px;
+          line-height: 48px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 320px) and (max-width: 419px) {
-    .profession-wrapper {
-        .profession-tittle {
-            h2 {
-                font-size: 28px !important;
-                line-height: 48px;
-            }
-        }
+  .profession-wrapper {
+    .profession-tittle {
+      h2 {
+        font-size: 28px !important;
+        line-height: 48px;
+      }
     }
+  }
 }
 
 /* large devices 992 - 1199*/
 @media #{$lg} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    /* common area start */
-    .profession-area {
-        .profession-wrapper {
-            .profession-tittle {
-                h2 {
-                    font-size: 38px;
-                    line-height: 48px;
-                }
-            }
+  /* common area start */
+  .profession-area {
+    .profession-wrapper {
+      .profession-tittle {
+        h2 {
+          font-size: 38px;
+          line-height: 48px;
         }
+      }
     }
+  }
 }
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
+  /* common area start */
 }

@@ -4,101 +4,101 @@
 /*  Team Member Page (Inner Page)
 /*----------------------------------------*/
 .our-teams {
-    &-member {
-        &:hover {
-            .member-info {
-                background-color: #ff465e;
+  &-member {
+    &:hover {
+      .member-info {
+        background-color: #ff465e;
 
-                .name {
-                    h5 {
-                        color: #ffffff;
-                    }
+        .name {
+          h5 {
+            color: #ffffff;
+          }
 
-                    p {
-                        color: #ffffff;
-                    }
-                }
-
-                .social-links {
-                    a {
-                        color: #ffffff;
-                    }
-                }
-            }
+          p {
+            color: #ffffff;
+          }
         }
 
-        .image {
-            position: relative;
-
-            img {
-                border-radius: 8px;
-            }
+        .social-links {
+          a {
+            color: #ffffff;
+          }
         }
-
-        .member-info {
-            position: absolute;
-            bottom: 25px;
-            left: 0;
-            right: 0;
-            transition: 0.3s all linear;
-            border-radius: 6px;
-            margin: 0px 30px 0px 30px;
-            padding: 20px;
-            background-color: #ffffff;
-
-            .name {
-                h5 {
-                    margin-bottom: 3px;
-                }
-
-                p {
-                    font-family: $gilroy-medium;
-                }
-            }
-
-            .social-links {
-                a {
-                    color: #65729e;
-                    font-size: 16px;
-                    transition: 0.3s all linear;
-
-                    &:hover {
-                        color: #333333;
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .image {
+      position: relative;
+
+      img {
+        border-radius: 8px;
+      }
+    }
+
+    .member-info {
+      position: absolute;
+      bottom: 25px;
+      left: 0;
+      right: 0;
+      transition: 0.3s all linear;
+      border-radius: 6px;
+      margin: 0px 30px 0px 30px;
+      padding: 20px;
+      background-color: #ffffff;
+
+      .name {
+        h5 {
+          margin-bottom: 3px;
+        }
+
+        p {
+          font-family: $gilroy-medium;
+        }
+      }
+
+      .social-links {
+        a {
+          color: #65729e;
+          font-size: 16px;
+          transition: 0.3s all linear;
+
+          &:hover {
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
 }
 
 // END OUR TEAMS
 
 //Teams Modification Team Member Page
 .teams-modifi {
-    background-color: #fff5f7;
-    margin: 0 45px;
-    padding-top: 130px;
-    padding-bottom: 75px;
-    border-radius: 24px;
-    position: relative;
-    z-index: -5;
+  background-color: #fff5f7;
+  margin: 0 45px;
+  padding-top: 130px;
+  padding-bottom: 75px;
+  border-radius: 24px;
+  position: relative;
+  z-index: -5;
 
-    .mask-group {
-        img {
-            position: absolute;
-            z-index: -3;
-        }
-
-        .mask01 {
-            top: -3%;
-            right: 5%;
-        }
-
-        .mask02 {
-            top: -4%;
-            left: 4%;
-        }
+  .mask-group {
+    img {
+      position: absolute;
+      z-index: -3;
     }
+
+    .mask01 {
+      top: -3%;
+      right: 5%;
+    }
+
+    .mask02 {
+      top: -4%;
+      left: 4%;
+    }
+  }
 }
 
 // END OUR TEAMS
@@ -107,33 +107,33 @@
 /*  HOMEPAGE 03
 /*----------------------------------------*/
 .our-team {
-    background-color: #fffaf5;
+  background-color: #fffaf5;
 
-    &-member {
-        &-info {
-            .top-information {
-                p {
-                    margin-top: 5px;
-                    font-size: 18px;
-                    font-family: $gilroy-medium;
-                }
-            }
-
-            .bottom-information {
-                max-width: 222px;
-
-                a {
-                    transition: 0.3s all linear;
-                    color: $secondary;
-                    font-size: 20px;
-
-                    &:hover {
-                        color: #ed880a;
-                    }
-                }
-            }
+  &-member {
+    &-info {
+      .top-information {
+        p {
+          margin-top: 5px;
+          font-size: 18px;
+          font-family: $gilroy-medium;
         }
+      }
+
+      .bottom-information {
+        max-width: 222px;
+
+        a {
+          transition: 0.3s all linear;
+          color: $secondary;
+          font-size: 20px;
+
+          &:hover {
+            color: #ed880a;
+          }
+        }
+      }
     }
+  }
 }
 
 /*----------------------------------------*/
@@ -141,199 +141,240 @@
 /*----------------------------------------*/
 
 /* common devices - Sizes */
-@media (max-width: 767px) {
-    .our-teams {
-        .mask-group {
-            .mask01 {
-                top: -45px;
-            }
-            .mask02 {
-                top: -2px;
-            }
-        }
+
+@media (max-width: 1200px) {
+  // Teams Section start
+  .our-teams {
+    &-member {
+      display: flex;
+      justify-content: center;
     }
+  }
+  // Teams Section end
+}
+
+@media (max-width: 991px) {
+  .our-team {
+    &-member {
+      margin-bottom: 40px;
+    }
+  }
+  .our-teams {
+    .section-title {
+      margin: 60px 0px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .our-teams {
+    .mask-group {
+      .mask01 {
+        top: -45px;
+      }
+      .mask02 {
+        top: -2px;
+      }
+    }
+  }
+  .our-team {
+    &-member {
+      max-width: 350px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  }
 }
 @media (max-width: 575px) {
-    .teams-modifi {
-        margin: 0px;
-        border-radius: 0px;
+  .teams-modifi {
+    margin: 0px;
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .our-teams {
+    &-member {
+      .member-info {
+        width: 90%;
+      }
     }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
-    .our-teams-member {
-        .member-info {
-            position: relative;
-            width: 290px;
-            margin: auto;
-        }
+  .our-teams-member {
+    .member-info {
+      position: relative;
+      // width: 290px;
+      // margin: auto;
     }
+  }
 }
 /* large devices 992 - 1199*/
 @media #{$lg} {
-    // Globally Our Teams
-    .our-teams {
-        padding-top: 100px !important;
-        padding-bottom: 100px !important;
+  // Globally Our Teams
+  .our-teams {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
 
-        .all-member {
-            margin-top: 20px !important;
+    .all-member {
+      margin-top: 20px !important;
 
-            .member-info {
-                .name {
-                    h5 {
-                        font-size: 20px !important;
-                    }
+      .member-info {
+        .name {
+          h5 {
+            font-size: 20px !important;
+          }
 
-                    p {
-                        font-size: 14px !important;
-                    }
-                }
-            }
+          p {
+            font-size: 14px !important;
+          }
         }
+      }
     }
+  }
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    // Globally Our Teams
-    .our-teams {
-        padding-top: 70px !important;
-        padding-bottom: 70px !important;
+  // Globally Our Teams
+  .our-teams {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
 
-        .all-member {
-            margin-top: 20px !important;
+    .all-member {
+      margin-top: 20px !important;
 
-            .member-info {
-                .name {
-                    h5 {
-                        font-size: 18px !important;
-                    }
+      .member-info {
+        .name {
+          h5 {
+            font-size: 18px !important;
+          }
 
-                    p {
-                        font-size: 14px !important;
-                    }
-                }
-            }
-
-            .md-positioning {
-                top: 67% !important;
-                margin-bottom: 77px !important;
-            }
+          p {
+            font-size: 14px !important;
+          }
         }
+      }
+
+      .md-positioning {
+        top: 67% !important;
+        margin-bottom: 77px !important;
+      }
     }
+  }
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    // Globally Our Teams
-    .our-teams {
-        padding-top: 50px !important;
-        padding-bottom: 50px !important;
-        .our-teams-member .image {
-            text-align: center !important;
-        }
-        .all-member {
-            margin-top: 25px !important;
-
-            .member-info {
-                max-width: 60%;
-                margin: 0 auto;
-                .name {
-                    h5 {
-                        font-size: 18px !important;
-                    }
-
-                    p {
-                        font-size: 14px !important;
-                    }
-                }
-            }
-        }
-        &-member {
-            .member-info {
-                position: relative;
-                margin: 0px 40px;
-            }
-        }
+  // Globally Our Teams
+  .our-teams {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    .our-teams-member .image {
+      text-align: center !important;
     }
+    .all-member {
+      margin-top: 25px !important;
+
+      .member-info {
+        max-width: 60%;
+        margin: 0 auto;
+        .name {
+          h5 {
+            font-size: 18px !important;
+          }
+
+          p {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+    &-member {
+      .member-info {
+        position: relative;
+        margin: 0px 40px;
+      }
+    }
+  }
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    // Globally Our Teams
-    .our-teams {
-        padding-top: 50px !important;
-        padding-bottom: 50px !important;
+  // Globally Our Teams
+  .our-teams {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
 
-        .section-title {
-            margin-top: 60px;
-            h2 {
-                font-size: 38px;
-            }
-        }
-
-        .our-teams-member .image {
-            text-align: center !important;
-        }
-        .all-member {
-            margin-top: 25px !important;
-
-            .member-info {
-                max-width: 80%;
-                margin: 0 auto;
-                .name {
-                    h5 {
-                        font-size: 18px !important;
-                    }
-
-                    p {
-                        font-size: 14px !important;
-                    }
-                }
-            }
-        }
-        &-member {
-            .member-info {
-                position: relative;
-                margin: 0px 0px;
-            }
-        }
+    .section-title {
+      margin-top: 60px;
+      h2 {
+        font-size: 38px;
+      }
     }
+
+    .our-teams-member .image {
+      text-align: center !important;
+    }
+    .all-member {
+      margin-top: 25px !important;
+
+      .member-info {
+        max-width: 80%;
+        margin: 0 auto;
+        .name {
+          h5 {
+            font-size: 18px !important;
+          }
+
+          p {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+    &-member {
+      .member-info {
+        position: relative;
+        margin: 0px 0px;
+      }
+    }
+  }
 }
 
 /* extra Small devices 420 */
 @media #{$xsm} {
-    // Globally Our Teams
-    .our-teams {
-        padding-top: 50px !important;
-        padding-bottom: 50px !important;
-        .section-title {
-            margin-top: 60px;
-            h2 {
-                font-size: 32px;
-                line-height: 42px;
-            }
-        }
-        .our-teams-member .image {
-            text-align: center !important;
-        }
-        .all-member {
-            margin-top: 25px !important;
-
-            .member-info {
-                max-width: 80%;
-                margin: 0 auto;
-                .name {
-                    h5 {
-                        font-size: 18px !important;
-                    }
-
-                    p {
-                        font-size: 14px !important;
-                    }
-                }
-            }
-        }
+  // Globally Our Teams
+  .our-teams {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    .section-title {
+      margin-top: 60px;
+      h2 {
+        font-size: 32px;
+        line-height: 42px;
+      }
     }
+    .our-teams-member .image {
+      text-align: center !important;
+    }
+    .all-member {
+      margin-top: 25px !important;
+
+      .member-info {
+        max-width: 80%;
+        margin: 0 auto;
+        .name {
+          h5 {
+            font-size: 18px !important;
+          }
+
+          p {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
 }
