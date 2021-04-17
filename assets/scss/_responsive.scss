@@ -1,6 +1,33 @@
 // /*----------------------------------------*/
-// /*  RESPONSIVE CSS START 
+// /*  RESPONSIVE CSS START
 // /*----------------------------------------*/
+
+@media (max-width: 1200px) {
+}
+@media (min-width: 1024px) and(max-width: 1199px) {
+}
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+}
+@media (max-width: 991px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (min-width: 575px) and(max-width: 767px) {
+}
+
+@media (max-width: 574px) {
+}
+
+@media (min-width: 320px) and(max-width: 574px) {
+}
 
 // /* large devices 992 - 1169*/
 // @media #{$lg} {

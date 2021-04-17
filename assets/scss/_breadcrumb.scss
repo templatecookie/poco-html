@@ -1,21 +1,34 @@
 //BREADCRUMB AREA
-.breadcrumb-area {
+.breadcrumArea {
   margin-bottom: 130px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 70, 95, 0.1);
+    z-index: -1;
+  }
   .banner-image {
     padding-top: 35px;
     padding-left: 75px;
   }
 
-  .banner-wrapper {
+  .bannerArea__wrapper {
+    margin-top: -90px;
     padding-left: 30px;
 
     p {
-      max-width: 85%;
+      font-size: 22px;
+      line-height: 36px;
+      font-family: $gilroy-medium;
+      max-width: 75%;
     }
   }
 
@@ -73,25 +86,150 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/* large devices 992 - 1169*/
-@media #{$lg} {
-  .breadcrumb-area {
-    margin: 0px 25px 100px 25px;
-
-    .banner-wrapper {
-      .banner-title {
+@media (max-width: 1200px) {
+  .breadcrumArea {
+    .bannerArea__wrapper {
+      margin-top: 0px;
+      .bannerArea__title {
         h1 {
-          font-size: 60px;
-          line-height: 68px;
+          font-size: 58px;
+          line-height: 72px;
         }
       }
-
       p {
-        margin-top: 0px;
-        font-size: 20px;
-        line-height: 30px;
+        max-width: 100%;
       }
     }
+  }
+}
+@media (min-width: 1024px) and(max-width: 1199px) {
+}
+@media (max-width: 1023px) {
+  .breadcrumArea {
+    .bannerArea__wrapper {
+      padding-top: 0px;
+      .bannerArea__title {
+        h1 {
+          font-size: 48px;
+          line-height: 62px;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+}
+
+@media (max-width: 991px) {
+  .breadcrumArea {
+    .bannerArea__wrapper {
+      margin-bottom: 15px;
+      // p {
+      //   max-width: 65%;
+      //   margin-top: 15px;
+      //   font-size: 22px;
+      //   line-height: 36px;
+      // }
+    }
+    .banner-image {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumArea {
+    .bannerArea__wrapper {
+      p {
+        max-width: 95%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumArea {
+    .bannerArea__wrapper {
+      padding-bottom: 15px;
+      padding-left: 15px;
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 575px) and(max-width: 767px) {
+  // .breadcrumArea {
+  //   .bannerArea__wrapper {
+  //     p {
+  //       max-width: 100%;
+  //     }
+  //   }
+  // }
+}
+
+@media (max-width: 574px) {
+  .breadcrumArea {
+    padding-top: 30px;
+    .bannerArea__wrapper {
+      padding-top: 0px;
+      margin-top: 0px;
+      .bannerArea__title {
+        h1 {
+          font-size: 32px;
+          line-height: 42px;
+        }
+      }
+    }
+    .breadcrumb-wrapper {
+      margin-top: 0px;
+      bottom: -50px;
+      left: 0px;
+
+      .breadcrumb {
+        border-top-left-radius: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and(max-width: 574px) {
+  .breadcrumArea {
+    .bannerArea__wrapper {
+      padding-left: 0px;
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+/* large devices 992 - 1169*/
+@media #{$lg} {
+  .breadcrumArea {
+    margin: 0px 25px 100px 25px;
+
+    // .bannerArea__wrapper {
+    //   .bannerArea__title {
+    //     h1 {
+    //       font-size: 60px;
+    //       line-height: 68px;
+    //     }
+    //   }
+
+    //   p {
+    //     margin-top: 0px;
+    //     font-size: 20px;
+    //     line-height: 30px;
+    //   }
+    // }
 
     .breadcrumb {
       padding: 10px 20px !important;
@@ -106,25 +244,18 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-  .breadcrumb-area {
+  .breadcrumArea {
     margin: 0px 20px 70px 20px;
     padding-bottom: 50px;
 
-    .banner-wrapper {
-      .banner-title {
+    .bannerArea__wrapper {
+      .bannerArea__title {
         margin-top: 20px;
 
         h1 {
           font-size: 40px;
           line-height: 48px;
         }
-      }
-
-      p {
-        max-width: 100%;
-        margin-top: 20px;
-        font-size: 18px;
-        line-height: 26px;
       }
     }
 
@@ -152,7 +283,7 @@
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-  .breadcrumb-area {
+  .breadcrumArea {
     margin: 0px 0px 60px 0px;
     padding-bottom: 50px;
     border-radius: 0px;
@@ -161,8 +292,8 @@
       display: none;
     }
 
-    .banner-wrapper {
-      .banner-title {
+    .bannerArea__wrapper {
+      .bannerArea__title {
         margin-top: 15px;
 
         h1 {
@@ -171,12 +302,12 @@
         }
       }
 
-      p {
-        max-width: 100%;
-        margin-top: 15px;
-        font-size: 16px;
-        line-height: 24px;
-      }
+      // p {
+      //   max-width: 100%;
+      //   margin-top: 15px;
+      //   font-size: 16px;
+      //   line-height: 24px;
+      // }
     }
 
     .breadcrumb-wrapper {
@@ -203,7 +334,7 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-  .breadcrumb-area {
+  .breadcrumArea {
     margin: 0px 0px 60px 0px;
     padding-bottom: 50px;
     border-radius: 0px;
@@ -212,41 +343,33 @@
       display: none;
     }
 
-    .banner-wrapper {
+    .bannerArea__wrapper {
       padding-left: 0;
-      text-align: center;
 
-      .banner-title {
-        margin-top: 10px;
+      // .bannerArea__title {
+      //   margin-top: 10px;
 
-        h1 {
-          font-size: 30px;
-          line-height: 38px;
-        }
-      }
-
-      p {
-        max-width: 100%;
-        margin-top: 5px;
-        font-size: 14px;
-        line-height: 22px;
-      }
+      //   h1 {
+      //     font-size: 30px;
+      //     line-height: 38px;
+      //   }
+      // }
     }
 
-    .breadcrumb-wrapper {
-      bottom: -75px !important;
-      left: 50%;
-      transform: translateX(-50%);
+    // .breadcrumb-wrapper {
+    //   bottom: -75px !important;
+    //   left: 50%;
+    //   transform: translateX(-50%);
 
-      .breadcrumb {
-        padding: 10px 15px !important;
+    //   .breadcrumb {
+    //     padding: 10px 15px !important;
 
-        &-item {
-          font-size: 14px !important;
-          line-height: 22px !important;
-        }
-      }
-    }
+    //     &-item {
+    //       font-size: 14px !important;
+    //       line-height: 22px !important;
+    //     }
+    //   }
+    // }
 
     .banner-image {
       padding-top: 20px;
@@ -258,7 +381,7 @@
 
 /* extra Small devices 420 */
 @media #{$xsm} {
-  .breadcrumb-area {
+  .breadcrumArea {
     margin: 0px 0px 60px 0px;
     padding-bottom: 50px;
     border-radius: 0px;
@@ -267,45 +390,45 @@
       display: none;
     }
 
-    .banner-wrapper {
-      padding-left: 0;
-      text-align: center;
+    // .bannerArea__wrapper {
+    //   padding-left: 0;
+    //   text-align: center;
 
-      .banner-title {
-        margin-top: 10px;
+    //   .bannerArea__title {
+    //     margin-top: 10px;
 
-        h1 {
-          font-size: 30px;
-          line-height: 38px;
-        }
-      }
+    //     h1 {
+    //       font-size: 30px;
+    //       line-height: 38px;
+    //     }
+    //   }
 
-      p {
-        max-width: 100%;
-        margin-top: 5px;
-        font-size: 14px;
-        line-height: 22px;
-      }
-    }
+    //   p {
+    //     max-width: 100%;
+    //     margin-top: 5px;
+    //     font-size: 14px;
+    //     line-height: 22px;
+    //   }
+    // }
 
-    .breadcrumb-wrapper {
-      bottom: -75px !important;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      .breadcrumb {
-        padding: 10px 15px !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+    // .breadcrumb-wrapper {
+    //   bottom: -75px !important;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: 100%;
+    //   .breadcrumb {
+    //     padding: 10px 15px !important;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     flex-wrap: wrap;
 
-        &-item {
-          font-size: 14px !important;
-          line-height: 22px !important;
-        }
-      }
-    }
+    //     &-item {
+    //       font-size: 14px !important;
+    //       line-height: 22px !important;
+    //     }
+    //   }
+    // }
 
     .banner-image {
       padding-top: 20px;

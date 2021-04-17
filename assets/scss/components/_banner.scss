@@ -90,7 +90,7 @@
     position: relative;
     padding-left: 0px;
     padding-right: 0px;
-    .banner-wrapper {
+    .bannerArea__wrapper {
       margin-top: 15px;
       padding-left: 65px;
       p {
@@ -147,17 +147,18 @@
   background-color: #29303e;
   position: relative;
   border-bottom-left-radius: 166px;
-  padding-top: 142px;
+  padding-top: 130px;
+  padding-bottom: 0px;
   z-index: 99;
 
   .banner-image {
     margin-left: 100px;
   }
 
-  .banner-wrapper {
-    padding-top: 115px;
+  &__wrapper {
+    padding-top: 140px;
 
-    .banner-title {
+    .bannerArea02__title {
       margin-bottom: 35px;
       h1 {
         line-height: 96px;
@@ -172,7 +173,7 @@
     }
 
     .banner-button {
-      margin-top: 75px;
+      margin-top: 30px;
     }
   }
 
@@ -195,6 +196,12 @@
   .small-feature {
     width: 207px;
     height: 188px;
+
+    &-percentage {
+      h3 {
+        letter-spacing: 4px;
+      }
+    }
   }
   .small-feature01 {
     position: absolute;
@@ -222,20 +229,21 @@
   position: relative;
   z-index: 10;
   padding-bottom: 85px;
-  .banner-wrapper {
-    margin-top: 140px;
+  .bannerArea03__wrapper {
+    margin-top: 120px;
     p {
       margin: 30px 0px;
     }
   }
 
-  .banner-image {
+  &__image {
     padding-top: 112px;
     position: relative;
     bottom: 0px;
     .react-01,
     .react-02 {
       position: absolute;
+      z-index: -1;
     }
     .react-01 {
       bottom: -45px;
@@ -318,7 +326,7 @@
 
   .banner-brand-title {
     margin-bottom: 40px;
-    margin-top: 90px;
+    margin-top: 60px;
 
     h3 {
       font-size: 30px;
@@ -365,10 +373,12 @@
   margin: 0;
   border-radius: 0;
   z-index: 9;
-  padding-top: 130px;
+  padding-top: 230px;
+  padding-bottom: 0px;
   overflow: hidden;
-  .banner-wrapper {
-    .banner-title {
+  .bannerArea04__wrapper {
+    margin-top: -195px;
+    .bannerArea__title {
       span {
         text-transform: uppercase;
         font-family: $teko;
@@ -417,9 +427,8 @@
     }
   }
 
-  .banner-image {
-    padding-top: 185px;
-    padding-bottom: 90px;
+  &__image {
+    padding-bottom: 75px;
   }
 
   .mask-page-04 {
@@ -435,7 +444,66 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/* Common max- Sizes */
+@media (min-width: 1200px) and(max-width: 1919px) {
+  .bannerArea {
+    // Homepage-02
+  }
+  .bannerArea02 {
+    &__wrapper {
+      padding-top: 30px;
+    }
+    &__title {
+      margin-bottom: 0px !important;
+
+      h1 {
+        font-size: 68px;
+        line-height: 82px !important;
+      }
+    }
+
+    // featuresBox
+    .small-feature {
+      &.small-feature02 {
+        right: 43.8%;
+      }
+    }
+  }
+  .bannerArea03 {
+    &__image {
+      .banner01 {
+        margin-right: 225px;
+      }
+      .banner02 {
+        left: -100px;
+        bottom: 15px;
+      }
+      .banner03 {
+        bottom: -80px;
+      }
+      .banner04 {
+        right: -10px;
+        top: 300px;
+      }
+      .banner05 {
+        top: 250px;
+        height: 214px;
+        left: -185px;
+      }
+
+      // Reactangle shape
+      .react-01 {
+        bottom: -135px;
+        right: 210px;
+        z-index: 1;
+      }
+      .react-02 {
+        top: 275px;
+        left: -245px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .bannerArea {
     .banner-image {
@@ -447,7 +515,7 @@
         height: auto;
       }
     }
-    .banner-wrapper {
+    .bannerArea__wrapper {
       text-align: center;
     }
     .banner-button {
@@ -456,7 +524,7 @@
     &.breadcrumb-area {
       padding-top: 160px;
       padding-bottom: 60px;
-      .banner-wrapper {
+      .bannerArea__wrapper {
         text-align: left;
       }
       .banner-image {
@@ -483,7 +551,7 @@
   }
   // banner - 02
   .bannerArea02 {
-    .banner-wrapper {
+    .bannerArea__wrapper {
       padding-top: 0px;
       .banner-button {
         margin-top: 20px;
@@ -515,7 +583,7 @@
       top: 35%;
       right: 42%;
     }
-    .banner-title {
+    .bannerArea02__title {
       margin-bottom: 15px !important;
       h1 {
         font-size: 54px;
@@ -527,7 +595,7 @@
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px !important;
-    .banner-wrapper {
+    .bannerArea__wrapper {
       text-align: left;
     }
     .banner-button {
@@ -550,6 +618,30 @@
     }
   }
 }
+@media (min-width: 1024px) and(max-width: 1199px) {
+}
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 575px) and(max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}
+
+@media (min-width: 320px) and(max-width: 574px) {
+}
+
+/* Common max- Sizes */
+
+@media (max-width: 1200px) {
+}
 
 @media (max-width: 1199px) {
   .bannerArea {
@@ -566,7 +658,7 @@
 @media (min-width: 1024px) and (max-width: 1199px) {
   // homepage -02 / Banner -02
   .bannerArea02 {
-    .banner-title {
+    .bannerArea02__title {
       h1 {
         font-size: 38px;
         line-height: 52px !important;
@@ -622,8 +714,8 @@
 
 @media (max-width: 1024px) {
   .bannerArea04 {
-    .banner-wrapper {
-      .banner-title {
+    .bannerArea__wrapper {
+      .bannerArea__title {
         h1 {
           font-size: 102px;
           line-height: 112px;
@@ -636,7 +728,7 @@
 // It's will be removed
 @media (min-width: 992px) and (max-width: 1023px) {
   .bannerArea02 {
-    .banner-title {
+    .bannerArea02__title {
       h1 {
         font-size: 32px;
         line-height: 42px !important;
@@ -666,9 +758,9 @@
     padding-bottom: 140px;
     position: relative;
     overflow: hidden;
-    .banner-wrapper {
+    .bannerArea__wrapper {
       position: relative;
-      .banner-title {
+      .bannerArea02__title {
         h1 {
           font-size: 32px;
           line-height: 42px !important;
@@ -874,7 +966,7 @@
 
 @media (min-width: 320px) and (max-width: 419px) {
   .bannerArea02 {
-    .banner-wrapper {
+    .bannerArea__wrapper {
       padding-top: 100px;
     }
     .banner-image {
@@ -895,7 +987,7 @@
   .bannerArea {
     &.breadcrumb-area {
       padding: 80px 0px;
-      .banner-wrapper {
+      .bannerArea__wrapper {
         padding-left: 0px;
       }
       .breadcrumb-wrapper {
@@ -906,7 +998,7 @@
         }
       }
     }
-    .banner-wrapper {
+    .bannerArea__wrapper {
       p {
         width: 100%;
         font-size: 18px;
@@ -915,8 +1007,8 @@
   }
 
   .bannerArea04 {
-    .banner-wrapper {
-      .banner-title {
+    .bannerArea__wrapper {
+      .bannerArea__title {
         h1 {
           font-size: 68px;
           line-height: 78px;
@@ -956,7 +1048,7 @@
   .bannerArea {
     padding: 40px 20px;
     margin: 0 30px;
-    .banner-wrapper {
+    .bannerArea__wrapper {
       margin-top: 0px;
       p {
         font-size: 18px;
@@ -991,7 +1083,7 @@
   }
   // banner -02
   .bannerArea02 {
-    .banner-wrapper {
+    .bannerArea__wrapper {
       p {
         font-size: 18px;
         line-height: 28px;
@@ -1089,7 +1181,7 @@
       }
     }
     &.breadcrumb-area {
-      .banner-wrapper {
+      .bannerArea__wrapper {
         padding-left: 15px;
       }
       .breadcrumb-wrapper {
@@ -1100,7 +1192,7 @@
   // banner-02
   .bannerArea02 {
     position: relative;
-    .banner-wrapper {
+    .bannerArea__wrapper {
       margin-top: 30px !important;
     }
     .banner-image {
@@ -1126,7 +1218,7 @@
     &.breadcrumb-area {
       padding-top: 60px;
       padding-bottom: 90px;
-      .banner-wrapper {
+      .bannerArea__wrapper {
         padding-left: 10px;
       }
       .breadcrumb-wrapper {
@@ -1140,7 +1232,7 @@
   }
 
   .bannerArea02 {
-    .banner-wrapper {
+    .bannerArea__wrapper {
       padding-top: 100px;
     }
     .banner-image {
