@@ -1044,16 +1044,20 @@ aside,
 }
 
 .bannerArea__title {
+  font-size: 80px;
+  line-height: 106px;
+  color: #000560;
   margin-bottom: 4px;
 }
 
 .bannerArea__brief {
-  display: inline-block;
   width: 90%;
-  padding: 25px 0px;
+  color: #65729e;
+  font-size: 21px;
   line-height: 36px;
   font-family: "Gilroy-Medium";
-  font-size: 21px;
+  padding: 25px 0px;
+  display: inline-block;
 }
 
 .bannerArea__buttons {
@@ -1082,7 +1086,7 @@ aside,
   align-items: center;
 }
 
-.bannerArea .banner-image {
+.bannerArea__image {
   position: absolute;
   bottom: -395px;
   right: 0px;
@@ -1475,7 +1479,20 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
-@media (min-width: 1200px) and (max-width: 1919px) {
+@media (min-width: 1200px) and (max-width: 1850px) {
+  .bannerArea {
+    padding: 60px 0px;
+  }
+  .bannerArea__image {
+    position: static;
+  }
+  .bannerArea__image img {
+    max-width: 100%;
+  }
+  .bannerArea__title {
+    font-size: 68px;
+    line-height: 82px;
+  }
   .bannerArea02__wrapper {
     padding-top: 30px;
   }
@@ -1520,17 +1537,24 @@ aside,
 }
 
 @media (max-width: 1200px) {
-  .bannerArea .banner-image {
-    position: relative;
-    bottom: 0;
+  .bannerArea {
     padding-bottom: 60px;
   }
-  .bannerArea .banner-image img {
+  .bannerArea__image {
+    position: relative;
+    bottom: 0;
+    padding-bottom: 0px;
+  }
+  .bannerArea__image img {
     max-width: 100%;
     height: auto;
   }
-  .bannerArea .bannerArea__wrapper {
-    text-align: center;
+  .bannerArea__wrapper {
+    margin-top: 30px;
+  }
+  .bannerArea__title {
+    font-size: 68px;
+    line-height: 78px;
   }
   .bannerArea .banner-button {
     justify-content: center;
@@ -1618,494 +1642,43 @@ aside,
   }
 }
 
-/* Common max- Sizes */
-@media (max-width: 1199px) {
-  .bannerArea.contactBanner .banner-image, .bannerArea.projectBanner .banner-image, .bannerArea.blogBanner .banner-image {
-    bottom: -185px !important;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .bannerArea02 .bannerArea02__title h1 {
-    font-size: 38px;
-    line-height: 52px !important;
-  }
-  .bannerArea02 .small-feature02 {
-    right: 39%;
-  }
-  .bannerArea03 .banner-image .banner05 {
-    left: -140px;
-    top: 180px;
-    z-index: -1;
-  }
-  .bannerArea03 .banner-image .banner02 {
-    left: -60px;
-    bottom: 100px;
-  }
-  .bannerArea03 .banner-image .react-02 {
-    z-index: -1;
-    top: 60px;
-    left: 48px;
-    user-select: none;
-  }
-  .bannerArea03 .banner-image .react-01 {
-    bottom: -85px;
-    right: -10px;
-  }
-  .bannerArea.breadcrumb-area .banner-image {
-    bottom: -220px;
-    right: 0px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1023px) {
-  .bannerArea.breadcrumb-area .banner-image {
-    bottom: -220px;
-    right: 0px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .bannerArea04 .bannerArea__wrapper .bannerArea__title h1 {
-    font-size: 102px;
-    line-height: 112px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1023px) {
-  .bannerArea02 .bannerArea02__title h1 {
-    font-size: 32px;
-    line-height: 42px !important;
-  }
-  .bannerArea02 .small-feature02 {
-    right: 39%;
-  }
-  .bannerArea03 .banner-image .banner05 {
-    left: -160px;
-    z-index: -1;
-  }
-  .bannerArea03 .banner-image .banner02 {
-    left: -80px;
-    bottom: 85px;
-  }
-}
-
 @media (max-width: 991px) {
-  .bannerArea02 {
-    border-bottom-left-radius: 0px;
-    padding-bottom: 140px;
-    position: relative;
-    overflow: hidden;
-  }
-  .bannerArea02 .bannerArea__wrapper {
-    position: relative;
-  }
-  .bannerArea02 .bannerArea__wrapper .bannerArea02__title h1 {
-    font-size: 32px;
-    line-height: 42px !important;
-  }
-  .bannerArea02 .bannerArea__wrapper p {
-    font-size: 18px;
-    line-height: 28px;
-    max-width: 100%;
-  }
-  .bannerArea02 .banner-image {
-    margin-left: 0px;
-    position: absolute;
-    top: -78px;
-  }
-  .bannerArea02 .mask-group-home02 {
-    display: none;
-  }
-  .bannerArea02 .small-feature01 {
-    top: 50%;
-    right: 30px;
-  }
-  .bannerArea02 .small-feature02 {
-    top: 35%;
-    right: 190px;
-  }
-  .bannerArea03 {
-    padding-bottom: 90px !important;
-  }
-  .bannerArea03 .banner-image .banner01 {
-    margin: auto;
-  }
-  .bannerArea03 .banner-image .banner02 {
-    left: 120px;
-  }
-  .bannerArea03 .banner-image .banner04 {
-    right: 120px;
-  }
-  .bannerArea03 .banner-image .banner04 {
-    display: block;
-  }
-  .bannerArea03 .banner-image .banner05 {
-    display: none;
-  }
-  .bannerArea03 .banner-image .react-02 {
-    top: 70px;
-    left: 250px;
-  }
-  .bannerArea03 .banner-image .react-01 {
-    right: 225px;
-  }
-  .bannerArea.breadcrumb-area .banner-image {
-    position: static;
-  }
-}
-
-@media (max-width: 768px) {
-  .bannerArea {
-    margin: 0px;
-  }
-  .bannerArea03 .banner-image .react-01 {
-    right: 60px;
-  }
-  .bannerArea03 .banner-image .react-02 {
-    left: 135px;
-  }
-  .bannerArea03 .banner-image .banner02 {
-    left: 20px;
-    bottom: 100px;
-  }
-  .bannerArea03 .banner-image .banner04 {
-    right: 20px;
+  .bannerArea__title {
+    font-size: 58px;
+    line-height: 68px;
   }
 }
 
 @media (max-width: 767px) {
-  .bannerArea {
-    padding: 120px 0px;
+  .bannerArea__title {
+    font-size: 42px;
+    line-height: 56px;
   }
-  .bannerArea .banner-image {
-    padding-bottom: 30px;
-  }
-  .bannerArea__wrapper {
-    margin-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-
-@media (max-width: 575px) {
-  .banner-area {
-    padding: 75px 0px;
-  }
-  .banner-area .mask-group .mask3 {
-    left: 60%;
-  }
-  .banner-image {
-    margin-bottom: 0px !important;
-  }
-  .banner-title h1 {
-    font-size: 32px;
-    line-height: 42px;
-  }
-  .banner-wrapper {
-    margin-top: 0px !important;
-  }
-  .banner-wrapper p {
+  .bannerArea__brief {
     width: 100%;
-    margin: 15px 0px;
-  }
-  .bannerArea02 {
-    position: relative;
-  }
-  .bannerArea02 .primary__button {
-    padding: 20px 5px;
-  }
-  .bannerArea03 .slick-slide img {
-    margin: auto;
-  }
-  .bannerArea03 .banner-image {
-    padding-top: 60px;
-  }
-  .bannerArea03 .banner-image .banner04,
-  .bannerArea03 .banner-image .banner02 {
-    display: none;
-  }
-  .bannerArea03 .banner-image .react-01 {
-    right: 20px;
-    bottom: 0px;
-  }
-  .bannerArea03 .banner-image .react-02 {
-    left: 55px;
-    top: 155px;
-  }
-  .bannerArea03 .banner-brand-title h3::before {
-    width: 65px;
-  }
-}
-
-@media (min-width: 420px) and (max-width: 574px) {
-  .bannerArea03 .banner-image {
-    padding-top: 95px;
-  }
-  .bannerArea03 .banner-image .react-01 {
-    right: 0px;
-    bottom: 0px;
-  }
-  .bannerArea03 .banner-image .react-01 {
-    right: -25px;
-    bottom: 0px;
-  }
-  .bannerArea03 .banner-image .react-02 {
-    left: -15px;
-    top: 70px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  .bannerArea {
+    margin: 0px;
+    padding: 100px 0px;
+  }
   .bannerArea__title {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 38px;
   }
-}
-
-@media (min-width: 320px) and (max-width: 419px) {
-  .bannerArea02 .bannerArea__wrapper {
-    padding-top: 100px;
-  }
-  .bannerArea02 .banner-image {
-    position: relative;
-  }
-  .bannerArea02 .small-feature01,
-  .bannerArea02 .small-feature02 {
-    top: 40%;
-  }
-  .bannerArea02 .small-feature01 {
-    right: 5px;
-  }
-  .bannerArea02 .small-feature02 {
-    right: 165px;
-  }
-  .bannerArea.breadcrumb-area {
-    padding: 80px 0px;
-  }
-  .bannerArea.breadcrumb-area .bannerArea__wrapper {
-    padding-left: 0px;
-  }
-  .bannerArea.breadcrumb-area .breadcrumb-wrapper {
-    left: 160px;
-    bottom: -85px !important;
-  }
-  .bannerArea.breadcrumb-area .breadcrumb-wrapper .breadcrumb-item {
-    font-size: 18px !important;
-  }
-  .bannerArea .bannerArea__wrapper p {
-    width: 100%;
-    font-size: 18px;
-  }
-  .bannerArea04 .bannerArea__wrapper .bannerArea__title h1 {
-    font-size: 68px;
-    line-height: 78px;
-  }
-  .bannerArea04 .bannerArea__wrapper p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-
-@media (max-width: 1750px) {
-  .bannerArea02 .banner-image img {
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 1480px) and (max-width: 1750px) {
-  .bannerArea02 .small-feature01 {
-    right: 25.3%;
-  }
-  .bannerArea02 .small-feature02 {
-    top: 35.6%;
-  }
-}
-
-/* large devices 992 - 1199*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* banner area start */
-  .bannerArea {
-    padding: 40px 20px;
-    margin: 0 30px;
-  }
-  .bannerArea .bannerArea__wrapper {
-    margin-top: 0px;
-  }
-  .bannerArea .bannerArea__wrapper p {
-    font-size: 18px;
-    line-height: 26px;
-    width: 100%;
-  }
-  .bannerArea .banner-button {
-    margin-top: 0px;
-  }
-  .bannerArea .banner-button .primary__button {
-    font-size: 18px;
-    padding: 15px 35px;
-  }
-  .bannerArea .banner-button .play-icon {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    box-sizing: border-box;
-  }
-  .bannerArea .banner-button .play-icon svg {
-    width: 17px;
-  }
-  .bannerArea .mask-group .mask3 {
-    left: 85%;
-  }
-  .bannerArea02 .bannerArea__wrapper p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .bannerArea02 .bannerArea__wrapper .banner-button {
-    margin-top: 15px !important;
-  }
-  .bannerArea02 .small-feature01 {
-    top: 25.5%;
-    right: 22.3%;
-  }
-}
-
-/* Medium devices 768 - 991 */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
-  .bannerArea {
-    margin: 0 20px;
-    padding: 168px 10px;
-    padding-bottom: 80px;
-  }
-  .bannerArea__wrapper {
-    margin-top: 30px;
-    margin-bottom: 60px;
-  }
-  .bannerArea__wrapper p {
+  .bannerArea__brief {
     font-size: 16px;
-    line-height: 26px;
-    width: 100%;
-    margin-top: 15px;
+    line-height: 30px;
   }
-  .bannerArea__wrapper .banner-button {
-    margin-top: 20px;
-  }
-  .bannerArea__wrapper .banner-button .play-icon {
-    width: 60px;
-    height: 60px;
-    box-sizing: border-box;
-  }
-  .bannerArea__wrapper .banner-button .play-icon svg {
-    width: 20px;
-  }
-  .bannerArea__wrapper .banner-button .primary__button {
-    font-size: 18px;
-  }
-  .bannerArea .banner-image {
-    padding-bottom: 0px;
-  }
-  .bannerArea .mask-group .mask3 {
-    left: 80%;
-  }
-  .bannerArea.breadcrumb-area .breadcrumb-wrapper {
-    bottom: -20px !important;
-  }
-  .bannerArea02 .banner-image {
-    margin-left: 0px;
-    position: absolute;
-    top: -78px;
+  .bannerArea .mask-group .mask4 {
+    top: 65px;
+    left: 20px;
   }
 }
 
-/* Small devices 575 - 767 */
-@media only screen and (min-width: 575px) and (max-width: 767px) {
-  .bannerArea {
-    border-radius: 0px;
-  }
-  .bannerArea .banner-image {
-    margin-bottom: 30px;
-  }
-  .bannerArea__wrapper {
-    padding-bottom: 70px;
-  }
-  .bannerArea__wrapper p {
-    width: 100%;
-    font-size: 16px;
-    line-height: 26px;
-    margin-top: 15px;
-  }
-  .bannerArea .banner-button {
-    margin-top: 15px;
-  }
-  .bannerArea .mask-group .mask3 {
-    left: 75%;
-  }
-  .bannerArea.breadcrumb-area .bannerArea__wrapper {
-    padding-left: 15px;
-  }
-  .bannerArea.breadcrumb-area .breadcrumb-wrapper {
-    bottom: -20px !important;
-  }
-  .bannerArea02 {
-    position: relative;
-  }
-  .bannerArea02 .bannerArea__wrapper {
-    margin-top: 30px !important;
-  }
-  .bannerArea02 .banner-image {
-    position: relative;
-    top: 0px;
-  }
-  .bannerArea02 .small-feature01,
-  .bannerArea02 .small-feature02 {
-    top: 40%;
-  }
-  .bannerArea02 .small-feature01 {
-    right: 110px;
-  }
-  .bannerArea02 .small-feature02 {
-    right: 300px;
-  }
-}
-
-/* Small devices 420 - 574 */
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  .bannerArea.breadcrumb-area {
-    padding-top: 60px;
-    padding-bottom: 90px;
-  }
-  .bannerArea.breadcrumb-area .bannerArea__wrapper {
-    padding-left: 10px;
-  }
-  .bannerArea.breadcrumb-area .breadcrumb-wrapper {
-    left: 210px;
-    bottom: -95px !important;
-  }
-  .bannerArea.breadcrumb-area .breadcrumb-wrapper .breadcrumb-item {
-    font-size: 18px !important;
-  }
-  .bannerArea02 .bannerArea__wrapper {
-    padding-top: 100px;
-  }
-  .bannerArea02 .banner-image {
-    position: relative;
-  }
-  .bannerArea02 .small-feature01,
-  .bannerArea02 .small-feature02 {
-    top: 48%;
-  }
-  .bannerArea02 .small-feature01 {
-    right: 40px;
-  }
-  .bannerArea02 .small-feature02 {
-    right: 220px;
-  }
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
-}
-
+/* Common max- Sizes */
 /*----------------------------------------*/
 /*  HOME PAGE 01
 /*----------------------------------------*/
