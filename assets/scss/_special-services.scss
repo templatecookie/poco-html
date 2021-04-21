@@ -3,7 +3,7 @@
 /*----------------------------------------*/
 .special-services {
   padding-top: 0px;
-  padding-bottom: 75px;
+  padding-bottom: 70px;
   .section-title {
     h2 {
       font-size: 48px;
@@ -235,6 +235,10 @@
 @media (max-width: 767px) {
   .special-services {
     padding: 120px 0px;
+    padding-bottom: 60px;
+    .section-title {
+      margin-bottom: 60px;
+    }
     &-image {
       margin-bottom: 15px !important;
     }
@@ -242,6 +246,9 @@
       h5 {
         font-size: 28px;
       }
+    }
+    &-item {
+      margin-bottom: 30px;
     }
   }
 }
@@ -255,8 +262,10 @@
       }
     }
   }
+  // Homepage-01
   .special-services {
     padding: 120px 0px;
+    padding-bottom: 60px;
     &-image {
       margin: auto;
     }
@@ -268,14 +277,28 @@
       }
     }
     .section-title {
-      margin-bottom: 115px;
       h2 {
         font-size: 48px;
       }
     }
+  }
+}
 
-    &-item {
-      margin-bottom: 120px;
+@media (min-width: 320px) and(max-width: 574px) {
+  // homepage-01
+  .special-services {
+    .section-title {
+      h2 {
+        font-size: 28px;
+        line-height: 42px;
+      }
+    }
+    &-text {
+      h5 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 0px;
+      }
     }
   }
 }
@@ -285,14 +308,6 @@
     &-heading {
       h2 {
         font-size: 38px;
-        line-height: 48px;
-      }
-    }
-  }
-  .special-services {
-    .section-title {
-      h2 {
-        font-size: 32px;
         line-height: 48px;
       }
     }

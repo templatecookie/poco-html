@@ -2891,7 +2891,7 @@ aside,
 /*----------------------------------------*/
 .special-services {
   padding-top: 0px;
-  padding-bottom: 75px;
+  padding-bottom: 70px;
 }
 
 .special-services .section-title h2 {
@@ -3100,12 +3100,19 @@ aside,
 @media (max-width: 767px) {
   .special-services {
     padding: 120px 0px;
+    padding-bottom: 60px;
+  }
+  .special-services .section-title {
+    margin-bottom: 60px;
   }
   .special-services-image {
     margin-bottom: 15px !important;
   }
   .special-services-text h5 {
     font-size: 28px;
+  }
+  .special-services-item {
+    margin-bottom: 30px;
   }
 }
 
@@ -3119,6 +3126,7 @@ aside,
   }
   .special-services {
     padding: 120px 0px;
+    padding-bottom: 60px;
   }
   .special-services-image {
     margin: auto;
@@ -3130,24 +3138,26 @@ aside,
     max-width: 95%;
     margin: auto;
   }
-  .special-services .section-title {
-    margin-bottom: 115px;
-  }
   .special-services .section-title h2 {
     font-size: 48px;
   }
-  .special-services-item {
-    margin-bottom: 120px;
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .special-services .section-title h2 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .special-services-text h5 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
   .valuable-services-heading h2 {
     font-size: 38px;
-    line-height: 48px;
-  }
-  .special-services .section-title h2 {
-    font-size: 32px;
     line-height: 48px;
   }
 }
