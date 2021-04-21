@@ -862,25 +862,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  // .bannerArea02 {
-  //   padding-bottom: 185px;
-  //   &__wrapper {
-  //     padding-top: 0px;
-  //     margin-top: 30px;
-  //   }
-  //   &__image {
-  //     margin-top: 0px;
-  //   }
-  //   .small-feature01 {
-  //     top: 250px;
-  //     left: 30px;
-  //   }
-  //   .small-feature02 {
-  //     top: 390px;
-  //     left: 30px;
-  //   }
-  // }
-
   // Homepage-04
   .bannerArea03 {
     &__wrapper {
@@ -981,7 +962,7 @@
   // banner Title
   %title-sm {
     font-size: 32px !important;
-    line-height: 46px important !important;
+    line-height: 46px !important;
   }
 
   // Homepage-01

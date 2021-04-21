@@ -7,11 +7,7 @@
   padding: 130px 0px 85px 0px;
   border-radius: 24px;
   position: relative;
-  @media (min-width: 1200px) {
-    .mr-lg-65 {
-      margin-right: 65px;
-    }
-  }
+
   &-shape {
     img {
       position: absolute;
@@ -37,6 +33,10 @@
   }
 
   &-about {
+    h4 {
+      font-size: 26px;
+      line-height: 35px;
+    }
     p {
       max-width: 305px;
       margin-bottom: 18px;
@@ -73,11 +73,12 @@
     ul {
       li {
         a {
-          font-family: $gilroy-medium;
           font-size: 16px;
-          color: $secondary;
+          line-height: 36px;
           margin-bottom: 5px;
           display: inline-block;
+          font-family: $gilroy-medium;
+          color: $secondary;
         }
       }
     }
@@ -299,6 +300,68 @@
 /*----------------------------------------*/
 
 /* Common Devices-Sizes */
+@media (min-width: 1200px) {
+  .mr-lg-65 {
+    margin-right: 65px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-area {
+    &-about {
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and(max-width: 991px) {
+  // Globally Footer
+  .footer-area {
+    padding: 70px 0px 20px 0px !important;
+    margin: 0 20px !important;
+    .footer-area-about {
+      margin-bottom: 30px;
+    }
+    .footer-area-about h4,
+    .footer-area-lists h4 {
+      font-size: 22px;
+    }
+    .footer-area-about p,
+    .footer-area-lists ul li a {
+      font-size: 14px;
+    }
+    .footer-area-lists ul li a {
+      margin-bottom: 0px;
+    }
+    .footer-area-links {
+      a {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+  // Copyright Area
+  .copyright-area-text {
+    p {
+      font-size: 14px;
+    }
+  }
+  .copyright-area-top {
+    a {
+      font-size: 14px;
+    }
+  }
+  .copyright-area-logo {
+    a {
+      img {
+        width: 65% !important;
+      }
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .dark-footer {
@@ -346,6 +409,14 @@
   // }
 }
 
+@media (min-width: 320px) and(max-width: 574px) {
+  .footer-area {
+    &-lists {
+      margin-bottom: 0px;
+    }
+  }
+}
+
 /* large devices 992 - 1199*/
 @media #{$lg} {
   // Globally Footer
@@ -357,50 +428,6 @@
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-  // Globally Footer
-  .footer-area {
-    padding: 70px 0px 20px 0px !important;
-    margin: 0 20px !important;
-    .footer-area-about {
-      margin-bottom: 30px;
-    }
-    .footer-area-about h4,
-    .footer-area-lists h4 {
-      font-size: 22px;
-    }
-    .footer-area-about p,
-    .footer-area-lists ul li a {
-      font-size: 14px;
-    }
-    .footer-area-lists ul li a {
-      margin-bottom: 0px;
-    }
-    .footer-area-links {
-      a {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-      }
-    }
-  }
-  // Copyright Area
-  .copyright-area-text {
-    p {
-      font-size: 14px;
-    }
-  }
-  .copyright-area-top {
-    a {
-      font-size: 14px;
-    }
-  }
-  .copyright-area-logo {
-    a {
-      img {
-        width: 65% !important;
-      }
-    }
-  }
 }
 
 /* Small devices 575 - 767 */
@@ -419,7 +446,8 @@
     }
     .footer-area-about p,
     .footer-area-lists ul li a {
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 26px;
     }
     .footer-area-lists ul li a {
       margin-bottom: 5px;
@@ -515,10 +543,7 @@
     .footer-area-lists h4 {
       font-size: 22px;
     }
-    .footer-area-about p,
-    .footer-area-lists ul li a {
-      font-size: 14px;
-    }
+
     .footer-area-lists ul li a {
       margin-bottom: 5px;
     }
