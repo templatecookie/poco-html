@@ -2,7 +2,7 @@
 /*  HOMEPAGE 01
 /*----------------------------------------*/
 .newsletter-area {
-  padding-top: 75px;
+  padding-top: 45px;
   padding-bottom: 145px;
   &-text {
     h2 {
@@ -51,6 +51,21 @@
 /*Responsive */
 
 /*Common Device-Sizes */
+
+@media (max-width: 1200px) {
+  .newsletter-area {
+    &-text {
+      h2 {
+        padding-right: 0px;
+        line-height: 48px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and(max-width: 1199px) {
+}
+
 @media (max-width: 991px) {
   .newsletter-area {
     &-form {
@@ -62,9 +77,11 @@
 @media (max-width: 767px) {
   .newsletter-area {
     padding: 75px 0px;
+    padding-bottom: 30px;
     &-text {
+      text-align: center;
       h2 {
-        font-size: 26px !important;
+        font-size: 28px;
         line-height: 36px !important;
       }
       p {
