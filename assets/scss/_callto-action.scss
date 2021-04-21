@@ -5,7 +5,7 @@
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
   padding: 0px;
-  padding-top: 30px;
+  padding-top: 60px;
   border-radius: 24px;
   position: relative;
   z-index: 1;
@@ -40,9 +40,10 @@
     }
 
     p {
-      max-width: 575px;
-      font-family: $gilroy-medium;
+      font-size: 18px;
       line-height: 30px;
+      max-width: 95%;
+      font-family: $gilroy-medium;
       margin: 20px 0px;
     }
     .primary__button {
@@ -314,11 +315,21 @@
 /*common max-Sizes */
 @media (max-width: 1200px) {
   .callto-action {
+    padding-top: 90px;
+    padding-left: 15px;
     &-image {
       img {
         max-width: 100%;
         height: auto;
       }
+    }
+    &-text {
+      p {
+        margin-top: 0px;
+      }
+    }
+    .primary__button {
+      margin-top: 0px;
     }
   }
   // Homepage 02 / Callaction-02
@@ -379,7 +390,7 @@
     }
   }
   .callto-action {
-    padding: 80px 25px;
+    // padding: 80px 25px;
   }
 }
 @media (min-width: 992px) and (max-width: 1023px) {
@@ -399,9 +410,17 @@
 }
 @media (max-width: 991px) {
   .callto-action {
+    padding-top: 30px;
     &-image {
       img {
         margin-left: 0px;
+      }
+    }
+    &-text {
+      h2 {
+        font-size: 42px;
+        line-height: 56px;
+        margin-bottom: 0px;
       }
     }
   }
@@ -452,7 +471,7 @@
 
 @media (max-width: 575px) {
   .callto-action-text {
-    padding: 60px 15px;
+    padding: 60px 0px;
   }
   .call-action-two {
     border-top-left-radius: 0px;
@@ -460,6 +479,22 @@
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  // homepage-01
+  .callto-action {
+    padding-left: 0px;
+    &-text {
+      padding-bottom: 60px;
+      h2 {
+        font-size: 22px;
+        line-height: 32px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 100%;
+      }
+    }
+  }
   .homepage-03 {
     .call-action-video {
       .play-video {
@@ -514,11 +549,6 @@
   }
 
   .callto-action-text {
-    padding: 90px 0px;
-    h2 {
-      font-size: 32px;
-      line-height: 42px;
-    }
     .primary__button {
       margin-top: 0px;
     }

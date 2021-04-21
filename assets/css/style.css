@@ -3711,7 +3711,7 @@ aside,
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
   padding: 0px;
-  padding-top: 30px;
+  padding-top: 60px;
   border-radius: 24px;
   position: relative;
   z-index: 1;
@@ -3748,9 +3748,10 @@ aside,
 }
 
 .callto-action-text p {
-  max-width: 575px;
-  font-family: "Gilroy-Medium";
+  font-size: 18px;
   line-height: 30px;
+  max-width: 95%;
+  font-family: "Gilroy-Medium";
   margin: 20px 0px;
 }
 
@@ -4009,9 +4010,19 @@ aside,
 /*----------------------------------------*/
 /*common max-Sizes */
 @media (max-width: 1200px) {
+  .callto-action {
+    padding-top: 90px;
+    padding-left: 15px;
+  }
   .callto-action-image img {
     max-width: 100%;
     height: auto;
+  }
+  .callto-action-text p {
+    margin-top: 0px;
+  }
+  .callto-action .primary__button {
+    margin-top: 0px;
   }
   .call-action-two_group.call-action_group-1 {
     top: 180px;
@@ -4048,9 +4059,6 @@ aside,
   .callto-action-modifi .mask-group .mask01 {
     bottom: 28%;
   }
-  .callto-action {
-    padding: 80px 25px;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1023px) {
@@ -4066,8 +4074,16 @@ aside,
 }
 
 @media (max-width: 991px) {
+  .callto-action {
+    padding-top: 30px;
+  }
   .callto-action-image img {
     margin-left: 0px;
+  }
+  .callto-action-text h2 {
+    font-size: 42px;
+    line-height: 56px;
+    margin-bottom: 0px;
   }
   .call-action-two_group.call-action_group-3 {
     right: 75px;
@@ -4106,7 +4122,7 @@ aside,
 
 @media (max-width: 575px) {
   .callto-action-text {
-    padding: 60px 15px;
+    padding: 60px 0px;
   }
   .call-action-two {
     border-top-left-radius: 0px;
@@ -4114,6 +4130,21 @@ aside,
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  .callto-action {
+    padding-left: 0px;
+  }
+  .callto-action-text {
+    padding-bottom: 60px;
+  }
+  .callto-action-text h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .callto-action-text p {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 100%;
+  }
   .homepage-03 .call-action-video .play-video a {
     width: 60px;
     height: 60px;
@@ -4155,13 +4186,6 @@ aside,
   }
   .call-action-two_group.call-action_group-3 span.comments {
     left: -175px;
-  }
-  .callto-action-text {
-    padding: 90px 0px;
-  }
-  .callto-action-text h2 {
-    font-size: 32px;
-    line-height: 42px;
   }
   .callto-action-text .primary__button {
     margin-top: 0px;
