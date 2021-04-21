@@ -4,7 +4,8 @@
 // About-Info Starts Here
 .about-info {
   position: relative;
-  padding-top: 20px;
+  padding-top: 145px;
+  padding-bottom: 125px;
   &-image {
     margin-left: -190px;
   }
@@ -18,9 +19,10 @@
     }
 
     p {
-      font-family: $gilroy-medium;
-      margin-bottom: 45px;
+      font-size: 18px;
       line-height: 30px;
+      margin-bottom: 45px;
+      font-family: $gilroy-medium;
     }
   }
 
@@ -30,8 +32,9 @@
 
     .project-rating {
       h3 {
-        font-family: $gilroy-bold;
         font-size: 34px;
+        line-height: 42px;
+        font-family: $gilroy-bold;
       }
 
       &-star {
@@ -627,6 +630,8 @@
 @media (max-width: 767px) {
   .about {
     &-info {
+      padding-top: 60px;
+      padding-bottom: 0px;
       &-text {
         h2 {
           font-size: 32px;
@@ -697,6 +702,16 @@
   }
 }
 
+@media (min-width: 575px) and(max-width: 767px) {
+  .about-info {
+    .mask-group {
+      .mask1 {
+        bottom: -115px;
+      }
+    }
+  }
+}
+
 @media (max-width: 575px) {
   .about {
     &-info {
@@ -705,7 +720,7 @@
       }
       .mask-group {
         .mask1 {
-          bottom: -5px;
+          bottom: -105px;
         }
       }
     }
@@ -813,6 +828,28 @@
       align-items: center;
       .member-info {
         width: 60%;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and(max-width: 574px) {
+  // Homepage-01
+  .about-info {
+    &-text {
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    &-project {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .mask-group {
+      .mask1 {
+        bottom: -100px;
       }
     }
   }
@@ -968,7 +1005,6 @@
 @media #{$sm} {
   /* common area start */
   .about-info {
-    padding: 70px 0;
     .about-info-image {
       margin-left: 0;
       margin-bottom: 30px;

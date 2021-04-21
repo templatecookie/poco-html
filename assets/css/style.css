@@ -2030,7 +2030,8 @@ aside,
 /*----------------------------------------*/
 .about-info {
   position: relative;
-  padding-top: 20px;
+  padding-top: 145px;
+  padding-bottom: 125px;
 }
 
 .about-info-image {
@@ -2045,9 +2046,10 @@ aside,
 }
 
 .about-info-text p {
-  font-family: "Gilroy-Medium";
-  margin-bottom: 45px;
+  font-size: 18px;
   line-height: 30px;
+  margin-bottom: 45px;
+  font-family: "Gilroy-Medium";
 }
 
 .about-info-project {
@@ -2056,8 +2058,9 @@ aside,
 }
 
 .about-info-project .project-rating h3 {
-  font-family: "Gilroy-Bold";
   font-size: 34px;
+  line-height: 42px;
+  font-family: "Gilroy-Bold";
 }
 
 .about-info-project .project-rating-star {
@@ -2552,6 +2555,10 @@ aside,
 }
 
 @media (max-width: 767px) {
+  .about-info {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
   .about-info-text h2 {
     font-size: 32px;
     line-height: 42px;
@@ -2594,12 +2601,18 @@ aside,
   }
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .about-info .mask-group .mask1 {
+    bottom: -115px;
+  }
+}
+
 @media (max-width: 575px) {
   .about-info-text {
     margin-top: 30px;
   }
   .about-info .mask-group .mask1 {
-    bottom: -5px;
+    bottom: -105px;
   }
   .aboutus02 .small-feature {
     right: 65%;
@@ -2669,6 +2682,21 @@ aside,
   }
   .our-teams-member .member-info {
     width: 60%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .about-info-text h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .about-info-project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-info .mask-group .mask1 {
+    bottom: -100px;
   }
 }
 
@@ -2774,9 +2802,6 @@ aside,
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   /* common area start */
-  .about-info {
-    padding: 70px 0;
-  }
   .about-info .about-info-image {
     margin-left: 0;
     margin-bottom: 30px;
