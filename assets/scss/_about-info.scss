@@ -578,7 +578,14 @@
 
 @media (max-width: 991px) {
   // homepage-02
-
+  .aboutus-introduction02 {
+    .aboutus02 {
+      &-wrapper {
+        max-width: 100%;
+        margin-left: 0px;
+      }
+    }
+  }
   // aboutus-introduction02-image
   .aboutus02 {
     &-image {
@@ -636,6 +643,9 @@
       }
     }
   }
+}
+
+@media (max-width: 768px) and(max-width:991px) {
 }
 
 @media (max-width: 767px) {

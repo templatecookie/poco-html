@@ -2530,6 +2530,10 @@ aside,
 }
 
 @media (max-width: 991px) {
+  .aboutus-introduction02 .aboutus02-wrapper {
+    max-width: 100%;
+    margin-left: 0px;
+  }
   .aboutus02-image::before {
     right: 140px;
     top: 30px;
@@ -4770,18 +4774,18 @@ aside,
   .testimonial-area .section-title h2 {
     margin-bottom: 0px;
   }
-  .testimonial02 .slider-arrows {
-    right: 20px !important;
-  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
   .testimonial-area .slider-arrows {
     justify-content: flex-end !important;
   }
-  .testimonial02 .slider-arrows {
-    right: -400px !important;
-    top: 110px !important;
+}
+
+@media (max-width: 1024px) {
+  .testimonial02 .section-title h2 {
+    line-height: 62px;
+    margin-bottom: 0px;
   }
 }
 
@@ -4795,11 +4799,23 @@ aside,
   .testimonial-area .slider-arrows {
     justify-content: center;
   }
-  .testimonial02 .slider-arrows {
-    top: 120px !important;
-    right: 0px !important;
-    position: static;
+  .testimonial02 .testimonial-wrapper .slider-arrows {
+    top: auto;
+    bottom: 95px;
+    right: 15px;
     justify-content: flex-end !important;
+  }
+  .testimonial02 .project-info {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .testimonial02 .project-info h4 {
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 65px;
+  }
+  .testimonial02 .project-info h4::before {
+    left: -55px;
   }
 }
 
@@ -4807,6 +4823,9 @@ aside,
   .testimonial-area.trust-us .mask-group2 .mask6 {
     top: 20px;
     left: 20px;
+  }
+  .testimonial02 .section-title h2 {
+    line-height: 58px;
   }
 }
 
@@ -4817,10 +4836,6 @@ aside,
   }
   .testimonial-area .mask-group2 .mask6 {
     left: -25px;
-  }
-  .testimonial02 .slider-arrows {
-    top: 50px !important;
-    right: 120px !important;
   }
 }
 
@@ -4842,11 +4857,20 @@ aside,
   .testimonial-area .mask-group2 .mask6 {
     top: 32px;
   }
+  .testimonial02 {
+    margin-top: 0px !important;
+    padding: 60px 0px;
+  }
   .testimonial02 .slider-arrows {
     right: 30px !important;
   }
   .testimonial02 .project-info {
-    margin-left: 30px;
+    margin-left: 0px;
+  }
+  .testimonial02 .project-info h4 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
   }
   .testimonial04 {
     padding: 190px 0px !important;
@@ -4872,14 +4896,29 @@ aside,
     top: 20px;
     left: 10px;
   }
+  .testimonial-area .testimonial-wrapper .slider-arrows {
+    bottom: 30px;
+    left: -115px;
+  }
   .testimonial-area .slider-arrows .prev-arrow,
   .testimonial-area .slider-arrows .next-arrow {
     width: 40px;
     height: 40px;
     border-radius: 50%;
   }
+  .testimonial-area .project-info h4 {
+    margin-left: 25px;
+  }
+  .testimonial-area .project-info h4::before {
+    left: -20px;
+    width: 15px;
+    height: 5px;
+  }
   .testimonial-area .mask-group2 .mask6 {
     left: 0px;
+  }
+  .testimonial02.testimonial-area {
+    margin-top: 0px !important;
   }
 }
 
@@ -4887,10 +4926,6 @@ aside,
   .testimonial02 .section-title h2 {
     font-size: 28px;
     line-height: 38px;
-  }
-  .testimonial02 .testimonial-wrapper .slider-arrows {
-    position: static;
-    margin-bottom: 30px;
   }
   .testimonial02 .testimonial-slider .testimonial-item {
     padding: 20px !important;
@@ -4903,16 +4938,6 @@ aside,
   .testimonial02 .slider-arrows .prev-arrow svg,
   .testimonial02 .slider-arrows .next-arrow svg {
     width: 18px;
-  }
-  .testimonial02 .project-info h4 {
-    font-size: 18px;
-    line-height: 28px;
-    margin-right: 25px;
-    padding-left: 0px;
-  }
-  .testimonial02 .project-info h4::before {
-    width: 15px;
-    height: 2px;
   }
   .testimonial04 {
     padding-top: 115px !important;
