@@ -1994,6 +1994,12 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
+@media (min-width: 320px) and (max-width: 574px) {
+  .brands-area .brand-slider-item div img {
+    margin: auto;
+  }
+}
+
 /* large devices 992 - 1169*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* common area start */

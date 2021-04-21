@@ -67,6 +67,18 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
+@media (min-width: 320px) and(max-width: 574px) {
+  .brands-area {
+    .brand-slider-item {
+      div {
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
 /* large devices 992 - 1169*/
 @media #{$lg} {
   /* common area start */
