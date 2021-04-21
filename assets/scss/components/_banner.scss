@@ -917,8 +917,8 @@
 @media (max-width: 767px) {
   .bannerArea {
     &__title {
-      font-size: 42px;
-      line-height: 56px;
+      font-size: 42px !important;
+      line-height: 56px !important;
     }
     &__brief {
       width: 100%;
@@ -978,16 +978,26 @@
 }
 
 @media (min-width: 320px) and(max-width: 574px) {
+  // banner Title
+  %title-sm {
+    font-size: 32px !important;
+    line-height: 46px important !important;
+  }
+
+  // Homepage-01
   .bannerArea {
     margin: 0px;
     padding: 100px 0px;
     &__title {
-      font-size: 28px;
-      line-height: 38px;
+      @extend %title-sm;
     }
     &__brief {
       font-size: 16px;
       line-height: 30px;
+      padding-top: 0px;
+    }
+    &__buttons {
+      margin-bottom: 0px;
     }
     .mask-group {
       .mask4 {
@@ -1000,8 +1010,7 @@
   // Homepage -02
   .bannerArea02 {
     &__title {
-      font-size: 32px !important;
-      line-height: 42px !important;
+      @extend %title-sm;
     }
 
     &__wrapper {
@@ -1032,8 +1041,7 @@
   // Homepage-03
   .bannerArea04 {
     &__title {
-      font-size: 38px;
-      line-height: 48px;
+      @extend %title-sm;
       span {
         font-size: 28px;
         line-height: 38px;
@@ -1050,8 +1058,7 @@
   // Homepage-04
   .bannerArea03 {
     &__title {
-      font-size: 32px;
-      line-height: 46px;
+      @extend %title-sm;
     }
     &__wrapper {
       margin-top: 30px !important;

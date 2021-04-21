@@ -1828,8 +1828,8 @@ aside,
 
 @media (max-width: 767px) {
   .bannerArea__title {
-    font-size: 42px;
-    line-height: 56px;
+    font-size: 42px !important;
+    line-height: 56px !important;
   }
   .bannerArea__brief {
     width: 100%;
@@ -1865,25 +1865,25 @@ aside,
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  .bannerArea__title, .bannerArea02__title, .bannerArea04__title, .bannerArea03__title {
+    font-size: 32px !important;
+    line-height: 46px important !important;
+  }
   .bannerArea {
     margin: 0px;
     padding: 100px 0px;
   }
-  .bannerArea__title {
-    font-size: 28px;
-    line-height: 38px;
-  }
   .bannerArea__brief {
     font-size: 16px;
     line-height: 30px;
+    padding-top: 0px;
+  }
+  .bannerArea__buttons {
+    margin-bottom: 0px;
   }
   .bannerArea .mask-group .mask4 {
     top: 65px;
     left: 20px;
-  }
-  .bannerArea02__title {
-    font-size: 32px !important;
-    line-height: 42px !important;
   }
   .bannerArea02__wrapper p {
     font-size: 18px;
@@ -1899,10 +1899,6 @@ aside,
   .bannerArea02 .mask-group-home02 .mask-home02 {
     bottom: 0px;
   }
-  .bannerArea04__title {
-    font-size: 38px;
-    line-height: 48px;
-  }
   .bannerArea04__title span {
     font-size: 28px;
     line-height: 38px;
@@ -1910,10 +1906,6 @@ aside,
   .bannerArea04__wrapper p {
     font-size: 18px;
     line-height: 28px;
-  }
-  .bannerArea03__title {
-    font-size: 32px;
-    line-height: 46px;
   }
   .bannerArea03__wrapper {
     margin-top: 30px !important;
@@ -1945,6 +1937,7 @@ aside,
   font-size: 30px;
   line-height: 42px;
   font-family: "Gilroy-Bold";
+  margin-bottom: 35px;
 }
 
 .brand-area .brand-slider-active .slick-track {
