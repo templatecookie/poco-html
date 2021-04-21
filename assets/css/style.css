@@ -1674,6 +1674,28 @@ aside,
   .bannerArea03 .banner-image .banner04 {
     display: none;
   }
+  .bannerArea03__title {
+    font-size: 58px;
+    line-height: 72px;
+  }
+  .bannerArea03__image .banner02,
+  .bannerArea03__image .banner03,
+  .bannerArea03__image .banner04,
+  .bannerArea03__image .banner05 {
+    display: none;
+  }
+  .bannerArea03__image .banner01 {
+    margin: auto;
+  }
+  .bannerArea03__image .react-01 {
+    right: 15px;
+    bottom: -80px;
+    z-index: -1;
+  }
+  .bannerArea03__image .react-02 {
+    top: 70px;
+    left: 60px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -1691,6 +1713,12 @@ aside,
   .bannerArea02 .small-feature.small-feature02 {
     right: 45%;
     top: 40%;
+  }
+  .bannerArea03__image .react-01 {
+    right: -25px;
+  }
+  .bannerArea03__image .react-02 {
+    left: 15px;
   }
 }
 
@@ -1711,6 +1739,15 @@ aside,
   }
   .bannerArea04__title span {
     margin-bottom: 0px;
+  }
+  .bannerArea03__image .react-01 {
+    right: -50px;
+    transform: rotate(316deg);
+  }
+  .bannerArea03__image .react-02 {
+    top: 70px;
+    left: -1px;
+    transform: rotate(317deg);
   }
 }
 
@@ -1759,6 +1796,36 @@ aside,
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .bannerArea03__wrapper {
+    margin-top: 0px !important;
+  }
+  .bannerArea03__image {
+    padding: 60px 0px;
+  }
+  .bannerArea03__image .banner02,
+  .bannerArea03__image .banner04 {
+    display: block;
+    opacity: 1;
+  }
+  .bannerArea03__image .banner02 {
+    left: 35px;
+    bottom: 95px;
+  }
+  .bannerArea03__image .banner04 {
+    right: 35px;
+    top: 100px;
+  }
+  .bannerArea03__image .react-01 {
+    right: 100px;
+    bottom: -20px;
+  }
+  .bannerArea03__image .react-02 {
+    top: 16px;
+    left: 145px;
+  }
+}
+
 @media (max-width: 767px) {
   .bannerArea__title {
     font-size: 42px;
@@ -1766,6 +1833,19 @@ aside,
   }
   .bannerArea__brief {
     width: 100%;
+  }
+  .bannerArea03__wrapper {
+    margin-top: 30px !important;
+  }
+  .bannerArea03__image {
+    padding-top: 30px;
+  }
+  .bannerArea03__image .react-01,
+  .bannerArea03__image .react-02 {
+    display: none;
+  }
+  .bannerArea03 .banner-brand__slider .slick-slide img {
+    margin: auto;
   }
 }
 
@@ -1775,6 +1855,12 @@ aside,
   }
   .bannerArea02 .small-feature02 {
     top: 290px;
+  }
+  .bannerArea03__image .react-01 {
+    right: 5px;
+  }
+  .bannerArea03__image .react-02 {
+    left: 50px;
   }
 }
 
@@ -1824,6 +1910,30 @@ aside,
   .bannerArea04__wrapper p {
     font-size: 18px;
     line-height: 28px;
+  }
+  .bannerArea03__title {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .bannerArea03__wrapper {
+    margin-top: 30px !important;
+  }
+  .bannerArea03__wrapper p {
+    margin: 15px 0px !important;
+  }
+  .bannerArea03__image {
+    padding-top: 0px !important;
+  }
+  .bannerArea03__image .banner01 {
+    max-width: 100%;
+    height: auto;
+  }
+  .bannerArea03__image .react-01,
+  .bannerArea03__image .react-02 {
+    display: none;
+  }
+  .bannerArea03 .banner-brand-title h3::before {
+    width: 30px;
   }
 }
 
