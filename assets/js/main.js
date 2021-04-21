@@ -126,7 +126,7 @@
   });
   $('.banner-brand__slider').slick({
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
