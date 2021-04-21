@@ -2105,7 +2105,7 @@ aside,
 /* HOMEPAGE 02
 /*----------------------------------------*/
 .aboutus02 {
-  padding: 130px 0px 160px 0px;
+  padding: 65px 0px 210px 0px;
   position: relative;
 }
 
@@ -2192,7 +2192,7 @@ aside,
 
 .aboutus02 .small-feature {
   position: absolute;
-  bottom: 24.1%;
+  bottom: 285px;
   right: 38.5%;
 }
 
@@ -2432,9 +2432,16 @@ aside,
   .about-info .mask-group .mask1 {
     bottom: 0px;
   }
+  .aboutus02 {
+    padding-bottom: 90px;
+  }
   .aboutus02 .small-feature {
     bottom: 30.1%;
     right: 30.5%;
+  }
+  .aboutus02-wrapper-title h2 {
+    line-height: 48px;
+    margin-bottom: 0px;
   }
   .aboutus02-image::before {
     right: -10px;
@@ -2504,7 +2511,7 @@ aside,
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1023px) {
   .aboutus02 .small-feature {
     bottom: 26.1%;
     right: 40%;
@@ -2626,7 +2633,7 @@ aside,
   }
   .aboutus02-wrapper-title h2 {
     font-size: 26px;
-    line-height: 38px;
+    line-height: 36px;
   }
   .aboutus02-wrapper-title p {
     font-size: 18px;
@@ -3226,9 +3233,10 @@ aside,
 }
 
 .services-introduction-text .section-heading h2 {
-  margin-bottom: 45px;
-  max-width: 592px;
+  font-size: 48px;
   line-height: 64px;
+  margin-bottom: 25px;
+  max-width: 592px;
 }
 
 .services-introduction-text .section-heading p {
@@ -3236,7 +3244,6 @@ aside,
   list-style: 30px;
   font-family: "Gilroy-Medium";
   font-size: 18px;
-  margin-top: 60px;
 }
 
 .services-introduction-text a {
@@ -3281,13 +3288,25 @@ aside,
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* Common Devices-Sizes */
+@media (max-width: 1024px) {
+  .services-introduction {
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 991px) {
+  .services-introduction {
+    padding-bottom: 0px;
+  }
   .services-introduction .section-heading h2 {
-    line-height: 48px;
+    line-height: 58px;
     margin-bottom: 15px;
   }
   .services-introduction .section-heading p {
     margin-top: 0px;
+  }
+  .services-introduction-item.mb-55 {
+    margin-bottom: 30px;
   }
   .services-introduction-text a {
     margin-top: 20px;
@@ -3295,16 +3314,11 @@ aside,
 }
 
 @media (max-width: 767px) {
-  .service-introduction .section-heading h2 {
-    font-size: 38px;
-    line-height: 48px;
+  .services-introduction {
+    padding-top: 60px;
   }
-  .service-introduction .services-introduction-item {
-    margin-bottom: 30px;
-  }
-  .service-introduction .services-introduction-item-text h5 {
-    font-size: 28px;
-    line-height: 42px;
+  .services-introduction-item-image {
+    margin-bottom: 15px;
   }
 }
 

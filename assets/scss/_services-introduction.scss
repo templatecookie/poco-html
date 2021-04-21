@@ -1,92 +1,93 @@
 .services-introduction {
-    padding: 100px 0;
+  padding: 100px 0;
 
-    &-item {
-        &-image {
-            background: rgba(255, 70, 94, 0.16);
-            height: 85px;
-            width: 85px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
-            margin-bottom: 25px;
-        }
-
-        p {
-            max-width: 142px;
-            color: $primary;
-            font-family: $gilroy-bold;
-            line-height: 22px;
-            margin: auto;
-            text-align: center;
-        }
+  &-item {
+    &-image {
+      background: rgba(255, 70, 94, 0.16);
+      height: 85px;
+      width: 85px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 25px;
     }
 
-    &-text {
-        margin-left: -15px;
-        .section-heading {
-            h2 {
-                margin-bottom: 45px;
-                max-width: 592px;
-                line-height: 64px;
-            }
-
-            p {
-                max-width: 578px;
-                list-style: 30px;
-                font-family: $gilroy-medium;
-                font-size: 18px;
-                margin-top: 60px;
-            }
-        }
-
-        a {
-            margin-top: 50px;
-            transition: 0.3s;
-            margin-top: 55px;
-        }
+    p {
+      max-width: 142px;
+      color: $primary;
+      font-family: $gilroy-bold;
+      line-height: 22px;
+      margin: auto;
+      text-align: center;
     }
+  }
+
+  &-text {
+    margin-left: -15px;
+    .section-heading {
+      h2 {
+        font-size: 48px;
+        line-height: 64px;
+        margin-bottom: 25px;
+        max-width: 592px;
+      }
+
+      p {
+        max-width: 578px;
+        list-style: 30px;
+        font-family: $gilroy-medium;
+        font-size: 18px;
+        // margin-top: 60px;
+      }
+    }
+
+    a {
+      margin-top: 50px;
+      transition: 0.3s;
+      margin-top: 55px;
+    }
+  }
 }
 
 /*----------------------------------------*/
 /*  HOMEPAGE 03 
 /*----------------------------------------*/
 .homepage-03 {
-    &.service-introduction {
-        padding-bottom: 150px;
+  &.service-introduction {
+    padding-bottom: 150px;
 
-        .services-introduction-item-text {
-            text-align: center;
-        }
-        .services-introduction-item-image {
-            width: 135px;
-            height: 135px;
-        }
+    .services-introduction-item-text {
+      text-align: center;
     }
-
-    .section-heading {
-        p {
-            font-size: 18px;
-            font-family: $gilroy-medium;
-        }
+    .services-introduction-item-image {
+      width: 135px;
+      height: 135px;
     }
+  }
 
-    .services-introduction-item {
-        &-text {
-            h5 {
-                margin-bottom: 25px;
-            }
-
-            p {
-                line-height: 30px;
-                max-width: 100%;
-                font-family: $gilroy-medium;
-                color: $secondary;
-            }
-        }
+  .section-heading {
+    p {
+      font-size: 18px;
+      font-family: $gilroy-medium;
     }
+  }
+
+  .services-introduction-item {
+    &-text {
+      h5 {
+        margin-bottom: 25px;
+      }
+
+      p {
+        line-height: 30px;
+        max-width: 100%;
+        font-family: $gilroy-medium;
+        color: $secondary;
+      }
+    }
+  }
 }
 
 /*----------------------------------------*/
@@ -95,80 +96,81 @@
 
 /* Common Devices-Sizes */
 
+@media (max-width: 1024px) {
+  .services-introduction {
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 991px) {
-    .services-introduction {
-        .section-heading {
-            h2 {
-                line-height: 48px;
-                margin-bottom: 15px;
-            }
-            p {
-                margin-top: 0px;
-            }
-        }
-        &-text {
-            a {
-                margin-top: 20px;
-            }
-        }
+  .services-introduction {
+    padding-bottom: 0px;
+    .section-heading {
+      h2 {
+        line-height: 58px;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-top: 0px;
+      }
     }
+    &-item {
+      &.mb-55 {
+        margin-bottom: 30px;
+      }
+    }
+    &-text {
+      a {
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
-    .service-introduction {
-        .section-heading {
-            h2 {
-                font-size: 38px;
-                line-height: 48px;
-            }
-        }
-        .services-introduction {
-            &-item {
-                margin-bottom: 30px;
-                &-text {
-                    h5 {
-                        font-size: 28px;
-                        line-height: 42px;
-                    }
-                }
-            }
-        }
+  .services-introduction {
+    padding-top: 60px;
+    &-item {
+      &-image {
+        margin-bottom: 15px;
+      }
     }
+  }
 }
 
 @media (max-width: 575px) {
-    .services-introduction {
-        &-text {
-            margin-left: 0px;
-        }
-        .section-heading {
-            h2 {
-                font-size: 26px;
-                line-height: 36px;
-            }
-        }
+  .services-introduction {
+    &-text {
+      margin-left: 0px;
     }
+    .section-heading {
+      h2 {
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
+  }
 }
 /* large devices 992 - 1169*/
 @media #{$lg} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Medium devices 768 - 991 */
 @media #{$md} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Small devices 575 - 767 */
 @media #{$sm} {
-    /* common area start */
+  /* common area start */
 }
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-    /* common area start */
+  /* common area start */
 }
 /* extra Small devices 420 */
 @media #{$xsm} {
-    /* common area start */
+  /* common area start */
 }
