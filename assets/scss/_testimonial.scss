@@ -407,6 +407,18 @@
 /*----------------------------------------*/
 
 /* common device-sizes */
+
+@media (min-width: 1200px) and(max-width: 1850px) {
+  // Homepage-02
+  .testimonial02 {
+    .testimonial-wrapper {
+      .slider-arrows {
+        right: 150px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   // Homepage-01
   .testimonial-area {

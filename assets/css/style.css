@@ -4823,6 +4823,12 @@ aside,
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* common device-sizes */
+@media (min-width: 1200px) and (max-width: 1850px) {
+  .testimonial02 .testimonial-wrapper .slider-arrows {
+    right: 150px;
+  }
+}
+
 @media (max-width: 1200px) {
   .testimonial-area .section-title h2 {
     margin-bottom: 0px;
@@ -5402,18 +5408,31 @@ aside,
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .client-review .pl-45 {
-    padding-left: 25px;
+@media (max-width: 991px) {
+  .client-review {
+    padding-top: 100px;
+    padding-bottom: 60px;
   }
-  .client-review .review-active .single-testimonial p {
-    font-size: 18px;
+  .client-review .section-title {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .client-review .pl-45 {
+    padding-left: 0px;
   }
   .client-review .review-active .slick-arrow {
-    left: -370px;
+    left: 0px;
+    bottom: -90px;
+    height: 60px;
   }
   .client-review .review-active .slick-arrow.nextArrow {
-    left: -200px;
+    left: 175px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .client-review .review-active .single-testimonial p {
+    font-size: 18px;
   }
 }
 
@@ -5434,7 +5453,7 @@ aside,
   }
   .client-review .section-title h2 {
     margin: 30px 0px;
-    margin-bottom: -25px;
+    margin-bottom: 15px;
   }
   .client-review .review-active {
     margin-left: 15px;
@@ -5449,12 +5468,18 @@ aside,
 }
 
 @media (max-width: 575px) {
+  .client-review {
+    padding-bottom: 30px;
+  }
   .client-review .section-title h2 {
     font-size: 48px;
   }
   .client-review .review-active .single-testimonial p {
     font-size: 18px;
-    line-height: 32px;
+    line-height: 28px;
+  }
+  .client-review .review-active .slick-arrow {
+    bottom: -80px;
   }
   .client-review .banner-image {
     justify-content: flex-start;
