@@ -60,5 +60,11 @@
 @media (max-width: 767px) {
   #circleBar {
     padding-bottom: 0px;
+    .section-title {
+      h2 {
+        font-size: 58px;
+        line-height: 68px;
+      }
+    }
   }
 }

@@ -2959,6 +2959,10 @@ aside,
   #circleBar {
     padding-bottom: 0px;
   }
+  #circleBar .section-title h2 {
+    font-size: 58px;
+    line-height: 68px;
+  }
 }
 
 /*----------------------------------------*/
@@ -4886,6 +4890,29 @@ aside,
   .testimonial-area .mask-group2 .mask6 {
     left: -25px;
   }
+  .testimonial04 {
+    padding-bottom: 90px !important;
+  }
+  .testimonial04 .section-title h2 {
+    font-size: 58px;
+    line-height: 68px;
+    text-align: center;
+  }
+  .testimonial04 .testimonial-wrappers {
+    padding: 125px 15px 45px 15px;
+  }
+  .testimonial04 .testimonial-wrappers .tesmonial-text h2 {
+    margin-bottom: 0px;
+  }
+  .testimonial04 .testimonial-active .slick-arrow {
+    top: auto;
+    bottom: -90px;
+    right: 53%;
+    z-index: 1;
+  }
+  .testimonial04 .testimonial-active .slick-arrow.nextArrow {
+    right: 37%;
+  }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
@@ -4921,15 +4948,9 @@ aside,
     line-height: 28px;
     margin-bottom: 15px;
   }
-  .testimonial04 {
-    padding: 190px 0px !important;
-  }
   .testimonial04 .section-title h2 {
     font-size: 42px !important;
     line-height: 52px;
-  }
-  .testimonial04 .testimonial-active .slick-arrow {
-    top: -90px;
   }
 }
 

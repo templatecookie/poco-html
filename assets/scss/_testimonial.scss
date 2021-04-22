@@ -516,6 +516,37 @@
       }
     }
   }
+  // Homepage-03
+  .testimonial04 {
+    padding-bottom: 90px !important;
+    .section-title {
+      h2 {
+        font-size: 58px;
+        line-height: 68px;
+        text-align: center;
+      }
+    }
+
+    .testimonial-wrappers {
+      padding: 125px 15px 45px 15px;
+      .tesmonial-text {
+        h2 {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .testimonial-active {
+      .slick-arrow {
+        top: auto;
+        bottom: -90px;
+        right: 53%;
+        z-index: 1;
+        &.nextArrow {
+          right: 37%;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
@@ -570,16 +601,10 @@
     }
   }
   .testimonial04 {
-    padding: 190px 0px !important;
     .section-title {
       h2 {
         font-size: 42px !important;
         line-height: 52px;
-      }
-    }
-    .testimonial-active {
-      .slick-arrow {
-        top: -90px;
       }
     }
   }
