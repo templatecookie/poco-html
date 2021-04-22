@@ -2893,10 +2893,10 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  HOMEPAGE 04
+/*  HOMEPAGE 03
 /*----------------------------------------*/
 #circleBar {
-  margin-top: 45px;
+  padding: 50px 0px 55px 0px;
   text-align: center;
 }
 
@@ -2951,6 +2951,12 @@ aside,
 
 .circleProgress {
   background-color: transparent;
+}
+
+@media (max-width: 767px) {
+  #circleBar {
+    padding-bottom: 0px;
+  }
 }
 
 /*----------------------------------------*/
