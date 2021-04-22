@@ -286,6 +286,24 @@
           line-height: 24px;
         }
       }
+      .slick-arrow {
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 18px;
+        bottom: -85px;
+        &.prevArrow {
+          &::before {
+            left: 15px;
+          }
+        }
+        &.nextArrow {
+          left: 135px;
+          &::before {
+            left: 85px;
+          }
+        }
+      }
     }
   }
 }
@@ -301,23 +319,23 @@
       .single-testimonial {
         font-size: 18px;
       }
-      .slick-arrow {
-        width: 120px;
-        height: 50px;
-        font-size: 18px;
-        bottom: -85px;
-        &.prevArrow {
-          &::before {
-            left: 15px;
-          }
-        }
-        &.nextArrow {
-          left: 135px;
-          &::before {
-            left: 85px;
-          }
-        }
-      }
+      // .slick-arrow {
+      //   width: 120px;
+      //   height: 50px;
+      //   font-size: 18px;
+      //   bottom: -85px;
+      //   &.prevArrow {
+      //     &::before {
+      //       left: 15px;
+      //     }
+      //   }
+      //   &.nextArrow {
+      //     left: 135px;
+      //     &::before {
+      //       left: 85px;
+      //     }
+      //   }
+      // }
     }
   }
 }

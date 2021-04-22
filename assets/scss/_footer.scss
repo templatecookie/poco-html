@@ -314,6 +314,10 @@
       }
     }
   }
+  // Homepage-03
+  .footer04 {
+    padding-top: 60px;
+  }
 }
 
 @media (min-width: 768px) and(max-width: 991px) {
@@ -404,15 +408,37 @@
   .copyright {
     padding: 32px 0px;
   }
-  // .copyright-area-top {
-  //     margin-top: 15px;
-  // }
 }
 
 @media (min-width: 320px) and(max-width: 574px) {
   .footer-area {
     &-lists {
       margin-bottom: 0px;
+    }
+  }
+  .footer04 {
+    .footer-area {
+      padding-top: 0px;
+      &-lists {
+        margin-bottom: 15px;
+        ul {
+          li {
+            a {
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+    .copyright-area-list {
+      ul li {
+        margin-right: 0px;
+      }
+    }
+  }
+  .copyright {
+    .justify-content-between {
+      flex-direction: column;
     }
   }
 }
@@ -533,7 +559,6 @@
 @media #{$xsm} {
   // Globally Footer
   .footer-area {
-    padding: 50px 0px 20px 0px !important;
     margin: 0 0px !important;
     border-radius: 0px !important;
     .footer-area-shape {
