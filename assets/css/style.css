@@ -2056,6 +2056,7 @@ aside,
   line-height: 30px;
   margin-bottom: 45px;
   font-family: "Gilroy-Medium";
+  color: #9dadb7;
 }
 
 .about-info-project {
@@ -2085,6 +2086,7 @@ aside,
 .about-info-project .project-information h3 {
   margin-top: 2px;
   font-size: 34px;
+  margin-bottom: 8px !important;
 }
 
 .about-info-project .project-information p {
@@ -2252,6 +2254,77 @@ aside,
 /*----------------------------------------*/
 /*  HOMEPAGE 03
 /*----------------------------------------*/
+.about-info04 {
+  padding-top: 80px;
+  padding-bottom: 27px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-info04 .about-info-image {
+  margin-left: -257px;
+}
+
+.about-info04 .about-info-text h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Teko", sans-serif;
+  line-height: 118px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.about-info04 .about-info-text h2 span {
+  color: #ff465e;
+}
+
+.about-info04 .about-info-text p {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  position: relative;
+  z-index: 9;
+}
+
+.about-info04 .about-info-text .about-info-project {
+  padding-top: 0px;
+  border-top: 0;
+}
+
+.about-info04 .about-info-text .about-info-project .project-information {
+  margin-top: 20px;
+}
+
+.about-info04 .about-info-text .about-info-project .project-information h3 {
+  font-size: 60px;
+  line-height: 34px;
+  font-weight: 600;
+  font-family: "Teko", sans-serif;
+  color: #ff465e;
+  margin: 0;
+}
+
+.about-info04 .about-info-text .about-info-project .project-information p {
+  font-family: "Hind", sans-serif;
+  font-family: 500;
+  font-size: 20px;
+  line-height: 34px;
+  color: #9dadb7;
+}
+
+.about-info04 .right-vcetor img {
+  position: absolute;
+  top: 31%;
+  right: 5%;
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
 .homepage-03.about-introduction {
   padding-bottom: 285px;
 }
@@ -2328,77 +2401,6 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  HOMEPAGE 04
-/*----------------------------------------*/
-.about-info04 {
-  padding-top: 115px;
-  padding-bottom: 27px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.about-info04 .about-info-image {
-  margin-left: -257px;
-}
-
-.about-info04 .about-info-text h2 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 60px;
-  font-family: "Teko", sans-serif;
-  line-height: 118px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.about-info04 .about-info-text h2 span {
-  color: #ff465e;
-}
-
-.about-info04 .about-info-text p {
-  font-family: "Hind", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 27px;
-  position: relative;
-  z-index: 9;
-}
-
-.about-info04 .about-info-text .about-info-project {
-  padding-top: 0px;
-  border-top: 0;
-}
-
-.about-info04 .about-info-text .about-info-project .project-information {
-  margin-top: 20px;
-}
-
-.about-info04 .about-info-text .about-info-project .project-information h3 {
-  font-size: 60px;
-  line-height: 34px;
-  font-weight: 600;
-  font-family: "Teko", sans-serif;
-  color: #ff465e;
-  margin: 0;
-}
-
-.about-info04 .about-info-text .about-info-project .project-information p {
-  font-family: "Hind", sans-serif;
-  font-family: 500;
-  font-size: 20px;
-  line-height: 34px;
-  color: #9dadb7;
-}
-
-.about-info04 .right-vcetor img {
-  position: absolute;
-  top: 31%;
-  right: 5%;
-}
-
-/*----------------------------------------*/
 /*  Our-Teams
 /*----------------------------------------*/
 .our-teams {
@@ -2425,6 +2427,18 @@ aside,
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* Common max-Sizes */
+@media (min-width: 1200px) and (max-width: 1850px) {
+  .about-info04 .right-vcetor img {
+    right: 0%;
+  }
+  .about-info04 .about-info-image {
+    margin-left: 0px;
+  }
+  .about-info04 .about-info-image img {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 1200px) {
   .about-info-image {
     margin-left: 0px;
@@ -2469,6 +2483,9 @@ aside,
   }
   .about-info04 .about-info-image img {
     max-width: 100%;
+  }
+  .about-info04 .right-vcetor img {
+    display: none;
   }
   .homepage-03.about-introduction .about-intro-left .image {
     margin-left: 0px;
@@ -2515,6 +2532,22 @@ aside,
   .aboutus02 .small-feature {
     bottom: 26.1%;
     right: 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-info04 {
+    padding-bottom: 0px !important;
+  }
+  .about-info04 .about-info-image {
+    margin-bottom: 0px !important;
+  }
+  .about-info04 .about-info-text h2 {
+    line-height: 76px;
+    padding-bottom: 0px !important;
+  }
+  .about-info04 .about-info-text p {
+    margin-bottom: 15px;
   }
 }
 
@@ -2735,12 +2768,20 @@ aside,
   .aboutus-introduction02 .aboutus02-wrapper-list ul li {
     margin-bottom: 12px;
   }
+  .about-info04 .about-info-text h2 {
+    font-size: 38px;
+    line-height: 52px;
+  }
+  .about-info04 .about-info-text .about-info-project {
+    margin-top: 45px;
+  }
+  .about-info04 .about-info-text .about-info-project .project-information {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
-  .about-info04 .about-info-text h2 {
-    font-size: 48px;
-  }
   .our-teams .all-member .col-lg-4 {
     margin-bottom: 20px;
     margin-top: 20px;

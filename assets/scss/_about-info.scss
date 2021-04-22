@@ -23,6 +23,7 @@
       line-height: 30px;
       margin-bottom: 45px;
       font-family: $gilroy-medium;
+      color: #9dadb7;
     }
   }
 
@@ -55,6 +56,7 @@
       h3 {
         margin-top: 2px;
         font-size: 34px;
+        margin-bottom: 8px !important;
       }
 
       p {
@@ -227,6 +229,80 @@
 /*----------------------------------------*/
 /*  HOMEPAGE 03
 /*----------------------------------------*/
+.about-info04 {
+  padding-top: 80px;
+  padding-bottom: 27px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .about-info-image {
+    margin-left: -257px;
+  }
+
+  .about-info-text {
+    h2 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 60px;
+      font-family: $teko;
+      line-height: 118px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      span {
+        color: $tertiary;
+      }
+    }
+
+    p {
+      font-family: $hind;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 27px;
+      position: relative;
+      z-index: 9;
+    }
+
+    .about-info-project {
+      padding-top: 0px;
+      border-top: 0;
+
+      .project-information {
+        margin-top: 20px;
+
+        h3 {
+          font-size: 60px;
+          line-height: 34px;
+          font-weight: 600;
+          font-family: $teko;
+          color: $tertiary;
+          margin: 0;
+        }
+
+        p {
+          font-family: $hind;
+          font-family: 500;
+          font-size: 20px;
+          line-height: 34px;
+          color: #9dadb7;
+        }
+      }
+    }
+  }
+
+  .right-vcetor {
+    img {
+      position: absolute;
+      top: 31%;
+      right: 5%;
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
 .homepage-03 {
   &.about-introduction {
     padding-bottom: 285px;
@@ -308,80 +384,6 @@
 }
 
 /*----------------------------------------*/
-/*  HOMEPAGE 04
-/*----------------------------------------*/
-.about-info04 {
-  padding-top: 115px;
-  padding-bottom: 27px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-  .about-info-image {
-    margin-left: -257px;
-  }
-
-  .about-info-text {
-    h2 {
-      color: white;
-      text-transform: uppercase;
-      font-size: 60px;
-      font-family: $teko;
-      line-height: 118px;
-      font-weight: 600;
-      margin-bottom: 5px;
-      span {
-        color: $tertiary;
-      }
-    }
-
-    p {
-      font-family: $hind;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 27px;
-      position: relative;
-      z-index: 9;
-    }
-
-    .about-info-project {
-      padding-top: 0px;
-      border-top: 0;
-
-      .project-information {
-        margin-top: 20px;
-
-        h3 {
-          font-size: 60px;
-          line-height: 34px;
-          font-weight: 600;
-          font-family: $teko;
-          color: $tertiary;
-          margin: 0;
-        }
-
-        p {
-          font-family: $hind;
-          font-family: 500;
-          font-size: 20px;
-          line-height: 34px;
-          color: #9dadb7;
-        }
-      }
-    }
-  }
-
-  .right-vcetor {
-    img {
-      position: absolute;
-      top: 31%;
-      right: 5%;
-    }
-  }
-}
-
-/*----------------------------------------*/
 /*  Our-Teams
 /*----------------------------------------*/
 .our-teams {
@@ -412,6 +414,23 @@
 /*----------------------------------------*/
 
 /* Common max-Sizes */
+
+@media (min-width: 1200px) and(max-width: 1850px) {
+  .about-info04 {
+    .right-vcetor {
+      img {
+        right: 0%;
+      }
+    }
+    .about-info-image {
+      margin-left: 0px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .about {
     &-info {
@@ -468,12 +487,17 @@
     }
   }
 
-  // homepage -04 / Aboutus -info
+  // homepage -03 / Aboutus -info
   .about-info04 {
     .about-info-image {
       margin-left: 0px;
       img {
         max-width: 100%;
+      }
+    }
+    .right-vcetor {
+      img {
+        display: none;
       }
     }
   }
@@ -552,11 +576,27 @@
 }
 
 @media (max-width: 991px) {
-  .aboutus02 {
+  //  Homepage-03
+  .about-info04 {
+    padding-bottom: 0px !important;
+    .about-info-image {
+      margin-bottom: 0px !important;
+    }
+    .about-info-text {
+      h2 {
+        line-height: 76px;
+        padding-bottom: 0px !important;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .about-info04 {
+  }
 }
 
 @media (max-width: 1024px) {
@@ -906,22 +946,25 @@
       }
     }
   }
-}
-
-@media (min-width: 320px) and(max-width: 419px) {
-  // Homepage -02 / Aboutus -02
-  .aboutus02 {
-  }
-  .aboutus-introduction02 {
-  }
+  // .homepage-03
   .about-info04 {
     .about-info-text {
       h2 {
-        font-size: 48px;
+        font-size: 38px;
+        line-height: 52px;
+      }
+      .about-info-project {
+        margin-top: 45px;
+        .project-information {
+          margin: 0px;
+          margin-bottom: 15px;
+        }
       }
     }
   }
+}
 
+@media (min-width: 320px) and(max-width: 419px) {
   // our-teams
   .our-teams {
     .all-member {
