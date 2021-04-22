@@ -179,6 +179,7 @@
 
 @media (max-width: 575px) {
   .contactArea {
+    padding-bottom: 20px;
     &__location {
       iframe {
         width: 100%;
@@ -188,6 +189,7 @@
       width: 100%;
     }
     &__info {
+      margin-top: 20px;
       span {
         margin-right: 15px;
       }

@@ -8324,11 +8324,17 @@ aside,
 }
 
 @media (max-width: 575px) {
+  .contactArea {
+    padding-bottom: 20px;
+  }
   .contactArea__location iframe {
     width: 100%;
   }
   .contactArea__brief {
     width: 100%;
+  }
+  .contactArea__info {
+    margin-top: 20px;
   }
   .contactArea__info span {
     margin-right: 15px;
