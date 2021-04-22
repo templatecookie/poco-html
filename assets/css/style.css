@@ -1899,9 +1899,12 @@ aside,
   .bannerArea02 .mask-group-home02 .mask-home02 {
     bottom: 0px;
   }
+  .bannerArea04 {
+    padding-bottom: 60px;
+  }
   .bannerArea04__title span {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 22px;
+    line-height: 22px;
   }
   .bannerArea04__wrapper p {
     font-size: 18px;
@@ -1929,7 +1932,6 @@ aside,
   }
 }
 
-/* Common max- Sizes */
 /*----------------------------------------*/
 /*  HOME PAGE 01
 /*----------------------------------------*/
