@@ -5222,7 +5222,7 @@ aside,
 }
 
 /*----------------------------------------*/
-/*  HOMEPAGE 04
+/*  HOMEPAGE 03
 /*----------------------------------------*/
 .client-review {
   position: relative;
@@ -5239,6 +5239,7 @@ aside,
 .client-review .section-title {
   margin: 0;
   margin-bottom: 30px;
+  margin-top: -70px;
 }
 
 .client-review .section-title h2 {
@@ -5265,7 +5266,7 @@ aside,
 .client-review .review-active .single-testimonial .client-name {
   position: relative;
   padding-left: 15px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .client-review .review-active .single-testimonial .client-name h3 {
@@ -5298,7 +5299,7 @@ aside,
 .client-review .review-active .slick-arrow {
   position: absolute;
   left: -217px;
-  bottom: -130px;
+  bottom: -155px;
   background-color: #ff465e;
   color: white;
   border: 1px solid transparent;
@@ -5418,7 +5419,7 @@ aside,
 
 @media (max-width: 767px) {
   .client-review {
-    padding-bottom: 340px;
+    padding: 120px 0px;
   }
   .client-review .row .col-sm-12.pl-45 {
     padding-left: 15px;
@@ -5429,9 +5430,11 @@ aside,
   }
   .client-review .section-title {
     margin-left: 15px;
+    margin-top: 0px;
   }
   .client-review .section-title h2 {
     margin: 30px 0px;
+    margin-bottom: -25px;
   }
   .client-review .review-active {
     margin-left: 15px;
@@ -5446,17 +5449,26 @@ aside,
 }
 
 @media (max-width: 575px) {
-  .client-review {
-    padding-top: 125px;
-    padding-bottom: 190px;
-  }
   .client-review .section-title h2 {
-    margin: 30px 0px;
     font-size: 48px;
+  }
+  .client-review .review-active .single-testimonial p {
+    font-size: 18px;
+    line-height: 32px;
   }
   .client-review .banner-image {
     justify-content: flex-start;
     margin-left: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .client-review {
+    padding: 90px 0px;
+  }
+  .client-review .review-active .single-testimonial p {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
