@@ -77,7 +77,8 @@
         &:hover {
           color: white;
           background: $tertiary;
-          border-color: $tertiary;
+          // it's warning
+          // border-color: $tertiary;
         }
       }
     }

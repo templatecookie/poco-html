@@ -242,7 +242,6 @@ p {
 
 .t-bg-orange:hover {
   color: white;
-  box-shadow: rgba(255, 70, 94, 0.36);
 }
 
 /*--
@@ -264,13 +263,11 @@ p {
 .primary__button-bgPrimary {
   color: #fff;
   background-color: #ff465e;
-  border-color: #ff465e;
 }
 
 .primary__button-bgPrimary:hover {
   color: #fff;
   background-color: #ff465e;
-  border-color: #ff465e;
   box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
 }
 
@@ -297,7 +294,6 @@ p {
 .primary__button-bgBlack {
   color: white;
   background-color: #000560;
-  border-color: #000560;
 }
 
 .primary__button-bgBlack:hover {
@@ -308,7 +304,6 @@ p {
 .primary__button-Black {
   color: #000560;
   background-color: white;
-  border-color: white;
 }
 
 .primary__button-Black:hover {
@@ -318,7 +313,6 @@ p {
 .primary__button-bgWhite {
   color: #ff465e;
   background-color: white;
-  border-color: white;
 }
 
 .primary__button-bgWhite:hover {
@@ -519,7 +513,6 @@ p {
   position: absolute;
   width: 26px;
   height: 5px;
-  color: #ff465e;
   background-color: #ff465e;
   top: -26px;
   left: 0;
@@ -644,7 +637,6 @@ p {
 }
 
 .header-area03 .main-menu li a.active::before {
-  color: white;
   background-color: white;
 }
 
@@ -2316,7 +2308,6 @@ aside,
 
 .about-info04 .about-info-text .about-info-project .project-information p {
   font-family: "Hind", sans-serif;
-  font-family: 500;
   font-size: 20px;
   line-height: 34px;
   color: #9dadb7;
@@ -3312,7 +3303,6 @@ aside,
 
 .services-introduction-text .section-heading p {
   max-width: 578px;
-  list-style: 30px;
   font-family: "Gilroy-Medium";
   font-size: 18px;
 }
@@ -3563,7 +3553,6 @@ aside,
 .price-area .price-box .price-link .primary__button-bgPrimary:hover {
   color: white;
   background: #ff465e;
-  border-color: #ff465e;
 }
 
 .price-area .price-box:hover {
@@ -4184,7 +4173,7 @@ aside,
   margin-top: 95px;
 }
 
-@media (min-width: 1340) {
+@media (min-width: 1340px) {
   .callto-action-image {
     margin-right: -170px;
   }
@@ -4673,7 +4662,6 @@ aside,
 .testimonial02 .project-info h4 span {
   color: #65729e;
   font-family: "Gilroy-Medium";
-  margin-left: 10px solid #141824;
   padding-left: 8px;
 }
 
@@ -4827,7 +4815,6 @@ aside,
 
 .testimonial04 .testimonial-wrappers:hover .testimonial-icon {
   background-color: #ff465e;
-  border-color: #ff465e;
 }
 
 .testimonial04 .testimonial-slider .slick-arrow {
@@ -4842,7 +4829,6 @@ aside,
 
 .testimonial04 .testimonial-slider .slick-arrow:hover {
   background-color: #ff465e;
-  border-color: #ff465e;
 }
 
 .testimonial04 .testimonial-active {
@@ -7186,10 +7172,6 @@ aside,
   box-shadow: 0px 6px 30px #5746ff;
 }
 
-.about-us-image .small-feature.sm-feauter-left {
-  box-sizing: 0px 6px 15px #4dadf7;
-}
-
 .about-us-image .small-feature.sm-feauter-top {
   box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.13);
 }
@@ -7692,7 +7674,6 @@ aside,
 
 .our-work-process .process-text p {
   text-align: center;
-  font-size: "Gilroy-Medium";
 }
 
 .our-work-process .shape img {
@@ -8745,13 +8726,11 @@ aside,
 .blog-area .aside .recent-post-text .post-text-bottom span {
   color: #65729e;
   font-size: 14px;
-  font-size: "Gilroy-Regular";
 }
 
 .blog-area .aside .recent-post-text .post-text-bottom span a {
   color: #ff465e;
   margin-right: 4px;
-  font-size: "Gilroy-Regular" !important;
 }
 
 .blog-area .aside .blog-catagories {

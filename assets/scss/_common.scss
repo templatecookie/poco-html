@@ -183,7 +183,8 @@ p {
   background-color: #ed880a;
   &:hover {
     color: white;
-    box-shadow: rgba(255, 70, 94, 0.36);
+    // it's not valid
+    // box-shadow: rgba(255, 70, 94, 0.36);
   }
 }
 /*--
@@ -204,11 +205,13 @@ p {
   &-bgPrimary {
     color: #fff;
     background-color: $tertiary;
-    border-color: $tertiary;
+    // it's warning
+    // border-color: $tertiary;
     &:hover {
       color: #fff;
       background-color: $tertiary;
-      border-color: $tertiary;
+      // it's warning
+      // border-color: $tertiary;
       box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
     }
   }
@@ -234,7 +237,8 @@ p {
   &-bgBlack {
     color: white;
     background-color: #000560;
-    border-color: #000560;
+    // it's warning
+    // border-color: #000560;
     &:hover {
       color: white;
       border-color: #000560;
@@ -243,7 +247,8 @@ p {
   &-Black {
     color: #000560;
     background-color: white;
-    border-color: white;
+    // it's warning
+    // border-color: white;
 
     &:hover {
       color: #000560;
@@ -252,7 +257,8 @@ p {
   &-bgWhite {
     color: $tertiary;
     background-color: white;
-    border-color: white;
+    // it's warning
+    // border-color: white;
 
     &:hover {
       color: $tertiary;

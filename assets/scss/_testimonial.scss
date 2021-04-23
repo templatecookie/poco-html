@@ -193,7 +193,8 @@
       span {
         color: #65729e;
         font-family: $gilroy-medium;
-        margin-left: 10px solid #141824;
+        // It's not valid
+        // margin-left: 10px solid #141824;
         padding-left: 8px;
       }
 
@@ -352,8 +353,9 @@
 
     &:hover {
       .testimonial-icon {
+        // it's warning
         background-color: $tertiary;
-        border-color: $tertiary;
+        // border-color: $tertiary;
       }
     }
   }
@@ -369,8 +371,9 @@
       @include transition(0.3s);
 
       &:hover {
+        // it's warning
         background-color: $tertiary;
-        border-color: $tertiary;
+        // border-color: $tertiary;
       }
     }
   }
