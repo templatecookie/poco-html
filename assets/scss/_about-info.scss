@@ -305,7 +305,7 @@
 /*----------------------------------------*/
 .homepage-03 {
   &.about-introduction {
-    padding-bottom: 285px;
+    padding-bottom: 260px;
   }
 
   .sub-section-heading {
@@ -334,7 +334,7 @@
 
     .image {
       position: relative;
-
+      margin-left: 25px;
       .about01 {
         border-top-right-radius: 75px;
         width: 490px;
@@ -357,8 +357,8 @@
 
     .award {
       position: absolute;
-      bottom: -15%;
-      left: 58%;
+      bottom: -75px;
+      left: 215px;
       width: 185px;
       height: 185px;
       border-radius: 50%;
@@ -415,7 +415,7 @@
 
 /* Common max-Sizes */
 
-@media (min-width: 1200px) and(max-width: 1850px) {
+@media (min-width: 1201px) and(max-width: 1850px) {
   .about-info04 {
     .right-vcetor {
       img {

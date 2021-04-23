@@ -68,9 +68,17 @@
   }
 
   .section-heading {
+    margin-bottom: 55px;
+    h2 {
+      line-height: 64px;
+      margin-bottom: 15px;
+    }
     p {
       font-size: 18px;
+      line-height: 34px;
       font-family: $gilroy-medium;
+      max-width: 75%;
+      margin: auto;
     }
   }
 
@@ -88,6 +96,20 @@
       }
     }
   }
+
+  // About Section
+  &.about-introduction {
+    padding-top: 100px;
+    .sub-section-heading {
+      h2 {
+        font-size: 48px;
+        line-height: 64px;
+      }
+    }
+    .work-process-item {
+      margin-bottom: 35px;
+    }
+  }
 }
 
 /*----------------------------------------*/
@@ -99,6 +121,23 @@
 @media (max-width: 1024px) {
   .services-introduction {
     padding-bottom: 60px;
+  }
+  // Homepage-04
+  .homepage-03 {
+    overflow: hidden;
+    z-index: 1;
+    .services-introduction {
+      &-item {
+        &-text {
+          h5 {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+    &.service-introduction {
+      padding-bottom: 60px;
+    }
   }
 }
 
@@ -136,6 +175,21 @@
       }
     }
   }
+  // Homepage-04
+  .homepage-03 {
+    .section-heading {
+      h2 {
+        font-size: 38px;
+        line-height: 48px;
+      }
+      p {
+        max-width: 100%;
+      }
+    }
+    .services-introduction-item {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -151,6 +205,18 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .homepage-03 {
+    .section-heading {
+      h2 {
+        font-size: 32px;
+        line-height: 46px;
+      }
+    }
+  }
+}
+
 /* large devices 992 - 1169*/
 @media #{$lg} {
   /* common area start */

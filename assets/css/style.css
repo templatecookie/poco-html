@@ -2033,6 +2033,10 @@ aside,
   /* common area start */
 }
 
+#map {
+  height: 500px;
+}
+
 /*----------------------------------------*/
 /* HOMEPAGE 01
 /*----------------------------------------*/
@@ -2328,7 +2332,7 @@ aside,
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 .homepage-03.about-introduction {
-  padding-bottom: 285px;
+  padding-bottom: 260px;
 }
 
 .homepage-03 .sub-section-heading {
@@ -2357,6 +2361,7 @@ aside,
 
 .homepage-03 .about-intro-left .image {
   position: relative;
+  margin-left: 25px;
 }
 
 .homepage-03 .about-intro-left .image .about01 {
@@ -2380,8 +2385,8 @@ aside,
 
 .homepage-03 .about-intro-left .award {
   position: absolute;
-  bottom: -15%;
-  left: 58%;
+  bottom: -75px;
+  left: 215px;
   width: 185px;
   height: 185px;
   border-radius: 50%;
@@ -2429,7 +2434,7 @@ aside,
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* Common max-Sizes */
-@media (min-width: 1200px) and (max-width: 1850px) {
+@media (min-width: 1201px) and (max-width: 1850px) {
   .about-info04 .right-vcetor img {
     right: 0%;
   }
@@ -3334,9 +3339,21 @@ aside,
   height: 135px;
 }
 
+.homepage-03 .section-heading {
+  margin-bottom: 55px;
+}
+
+.homepage-03 .section-heading h2 {
+  line-height: 64px;
+  margin-bottom: 15px;
+}
+
 .homepage-03 .section-heading p {
   font-size: 18px;
+  line-height: 34px;
   font-family: "Gilroy-Medium";
+  max-width: 75%;
+  margin: auto;
 }
 
 .homepage-03 .services-introduction-item-text h5 {
@@ -3350,12 +3367,35 @@ aside,
   color: #65729e;
 }
 
+.homepage-03.about-introduction {
+  padding-top: 100px;
+}
+
+.homepage-03.about-introduction .sub-section-heading h2 {
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.homepage-03.about-introduction .work-process-item {
+  margin-bottom: 35px;
+}
+
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 /* Common Devices-Sizes */
 @media (max-width: 1024px) {
   .services-introduction {
+    padding-bottom: 60px;
+  }
+  .homepage-03 {
+    overflow: hidden;
+    z-index: 1;
+  }
+  .homepage-03 .services-introduction-item-text h5 {
+    margin-bottom: 0px;
+  }
+  .homepage-03.service-introduction {
     padding-bottom: 60px;
   }
 }
@@ -3386,6 +3426,16 @@ aside,
   .services-introduction-item-image {
     margin-bottom: 15px;
   }
+  .homepage-03 .section-heading h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .homepage-03 .section-heading p {
+    max-width: 100%;
+  }
+  .homepage-03 .services-introduction-item {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -3395,6 +3445,13 @@ aside,
   .services-introduction .section-heading h2 {
     font-size: 26px;
     line-height: 36px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .homepage-03 .section-heading h2 {
+    font-size: 32px;
+    line-height: 46px;
   }
 }
 
