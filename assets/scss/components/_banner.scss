@@ -385,7 +385,7 @@
   border-radius: 0;
   z-index: 9;
   padding-top: 190px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   overflow: hidden;
   position: relative;
   &__wrapper {
@@ -666,7 +666,17 @@
       }
     }
   }
+
   // banner -03
+  .bannerArea04 {
+    &__title {
+      span {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  // banner -04
   .bannerArea03 {
     padding-left: 0px;
     padding-right: 0px;
@@ -693,7 +703,6 @@
       }
     }
   }
-  // banner -04
   .bannerArea03 {
     &__title {
       font-size: 58px;
@@ -722,6 +731,7 @@
       }
     }
   }
+  //
 }
 
 @media (min-width: 1024px) and(max-width: 1199px) {
@@ -744,6 +754,15 @@
       }
     }
   }
+
+  // Homepage-03
+  .bannerArea04 {
+    &__title {
+      font-size: 92px;
+      line-height: 106px;
+    }
+  }
+
   // Homepage-04
   .bannerArea03 {
     &__image {
@@ -758,6 +777,16 @@
 }
 
 @media (max-width: 1023px) {
+  // Homepage-03
+  .bannerArea04 {
+    // &__title
+    &__wrapper {
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) and(max-width: 1023px) {
@@ -791,14 +820,13 @@
   .bannerArea03 {
     &__image {
       .react-01 {
-        right: -50px;
-
-        transform: rotate(316deg);
+        right: 30px;
+        transform: rotate(8deg);
       }
       .react-02 {
         top: 70px;
         left: -1px;
-        transform: rotate(317deg);
+        transform: rotate(8deg);
       }
     }
   }

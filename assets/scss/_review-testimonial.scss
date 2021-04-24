@@ -164,6 +164,7 @@
 @media (min-width: 1024px) and (max-width: 1199px) {
   .client-review {
     padding: 160px 0px;
+    padding-bottom: 30px;
     .review-active {
       .slick-arrow {
         bottom: -93px;
@@ -180,10 +181,20 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1023px) {
+  .client-review {
+    padding: 110px 0px;
+    padding-bottom: 60px;
+    .section-title {
+      margin-top: 0px;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .client-review {
     padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 160px;
     .section-title {
       margin-top: 30px;
       margin-bottom: 0px;
@@ -201,6 +212,11 @@
         }
       }
     }
+
+    .banner-image {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
@@ -213,12 +229,16 @@
         }
       }
     }
+    &__quotes {
+      bottom: 5%;
+    }
   }
 }
 
 @media (max-width: 767px) {
   .client-review {
     padding: 120px 0px;
+    padding-bottom: 120px;
     .row {
       .col-sm-12 {
         &.pl-45 {
@@ -232,7 +252,6 @@
       justify-content: center;
     }
     .section-title {
-      margin-left: 15px;
       margin-top: 0px;
       h2 {
         margin: 30px 0px;
@@ -240,7 +259,6 @@
       }
     }
     .review-active {
-      margin-left: 15px;
       .slick-arrow {
         left: 0px;
         bottom: -130px;
@@ -254,7 +272,7 @@
 
 @media (max-width: 575px) {
   .client-review {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     .section-title h2 {
       font-size: 48px;
     }
@@ -271,7 +289,7 @@
     }
     .banner-image {
       justify-content: flex-start;
-      margin-left: 15px;
+      // margin-left: 15px;
     }
   }
 }

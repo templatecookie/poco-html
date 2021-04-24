@@ -148,9 +148,20 @@
 /*  HOMEPAGE 03 
 /*----------------------------------------*/
 .homepage-03 {
+  &.services03 {
+    padding-top: 130px;
+
+    .section-heading {
+      h2 {
+        margin-bottom: 130px;
+      }
+    }
+  }
   .provide-services-item {
-    background-color: #ffffff;
     position: relative;
+    padding: 25px;
+    margin-bottom: 125px;
+    background-color: #ffffff;
 
     &-image {
       border: 1px solid rgba(237, 136, 10, 0.4);
@@ -173,6 +184,7 @@
       padding-top: 115px;
 
       h5 {
+        font-size: 23px;
         margin-bottom: 20px;
         text-align: center;
       }
@@ -231,6 +243,14 @@
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
+
+@media (max-width: 991px) {
+  .homepage-03 {
+    .provide-services-item {
+      min-height: 415px;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .special-services {
@@ -298,6 +318,28 @@
         font-size: 24px;
         line-height: 36px;
         margin-bottom: 0px;
+      }
+    }
+  }
+  // homepage04
+  .homepage-03 {
+    &.services03 {
+      padding-top: 60px;
+    }
+    .provide-services-item {
+      padding: 25px 15px;
+      min-height: 350px;
+    }
+    .provide-services-item-text {
+      padding-top: 60px;
+      h5 {
+        font-size: 18px;
+        margin: 15px 0px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 15px;
       }
     }
   }

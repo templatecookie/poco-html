@@ -329,10 +329,19 @@
 
 @media (min-width: 575px) and (max-width: 767px) {
   .projectSlider {
+    &__leftContent {
+      margin-top: 30px;
+    }
+
     &__pagination {
       &.swiper-pagination-progressbar {
         width: 65%;
+        bottom: 15px !important;
       }
+    }
+    &__prev,
+    &__next {
+      bottom: 0px;
     }
     &__next {
       right: 40px;
@@ -354,6 +363,7 @@
         line-height: 42px;
       }
     }
+
     &__pagination {
       &.swiper-pagination-progressbar {
         width: 45%;
@@ -363,6 +373,22 @@
     &__ContentTitle {
       font-size: 28px;
       line-height: 38px;
+    }
+
+    &__pagination {
+      &.swiper-pagination-progressbar {
+        height: 10px;
+      }
+
+      &.swiper-pagination-progressbar {
+        bottom: 65px !important;
+      }
+    }
+
+    // Arrows
+    &__next,
+    &__prev {
+      bottom: 45px;
     }
   }
 }

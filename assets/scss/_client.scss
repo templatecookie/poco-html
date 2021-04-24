@@ -1,11 +1,19 @@
 .beloved-client {
   position: relative;
+  padding-top: 130px;
   background-color: #1f99f4;
   .sub-section-heading {
+    margin-top: -135px;
+    h2 {
+      font-size: 48px;
+      line-height: 64px;
+      margin-bottom: 15px;
+    }
     p {
       font-size: 18px;
       line-height: 30px;
       font-family: $gilroy-medium;
+      margin-bottom: 60px;
     }
   }
   .client-info {
@@ -13,11 +21,12 @@
     &-item {
       h2 {
         font-size: 65px;
-        color: #ffffff;
-        margin-bottom: 10px;
+        line-height: 38px;
+        color: #fff;
+        margin-bottom: 18px;
       }
       p {
-        color: #ffffff;
+        color: #fff;
         font-size: 20px;
         font-family: $gilroy-medium;
       }
@@ -50,29 +59,87 @@
     &__Shapes02 {
       bottom: -50px;
     }
+    .client-info-item {
+      h2 {
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 0px;
+      }
+    }
+    .client-image-logo {
+      img {
+        margin: auto;
+      }
+    }
   }
 }
 
 @media (max-width: 991px) {
   .beloved-client {
+    .sub-section-heading {
+      margin-top: 0px;
+      text-align: center;
+    }
+    .client-image {
+      max-width: 100%;
+    }
     .image {
       display: flex;
       justify-content: center;
-      margin-top: 120px;
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .beloved-client {
+    &__Shapes01,
+    &__Shapes02 {
+      display: none;
     }
   }
 }
 
 @media (max-width: 575px) {
   .beloved-client {
-    &__Shapes02 {
-      left: 0px;
-    }
+    // &__Shapes01 {
+    //   display: none;
+    // }
+    // &__Shapes02 {
+    //   left: 0px;
+    // }
   }
   .beloved-client {
     .client-info {
       &-item {
         margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .beloved-client {
+    padding-top: 60px;
+    .sub-section-heading {
+      h2 {
+        font-size: 32px;
+        line-height: 42px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 30px;
+      }
+    }
+    .client-info {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 0px;
+      &-item {
+        p {
+          font-size: 18px;
+        }
       }
     }
   }

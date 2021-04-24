@@ -1,7 +1,7 @@
 /*----------------------------------------*/
 /* HOMEPAGE 01
 /*----------------------------------------*/
-// About-Info Starts Here
+
 .about-info {
   position: relative;
   padding-top: 145px;
@@ -230,17 +230,15 @@
 /*  HOMEPAGE 03
 /*----------------------------------------*/
 .about-info04 {
-  padding-top: 80px;
+  padding-top: 115px;
   padding-bottom: 27px;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
   .about-info-image {
     margin-left: -257px;
   }
-
   .about-info-text {
     h2 {
       color: white;
@@ -565,12 +563,16 @@
 
 @media (min-width: 992px) and(max-width: 1023px) {
   // homepage-02
-  // about us-02
   .aboutus02 {
     .small-feature {
       bottom: 26.1%;
       right: 40%;
     }
+  }
+
+  // .homepage-03
+  .about-info {
+    padding-bottom: 30px;
   }
 }
 
@@ -1027,9 +1029,6 @@
   }
   .about-info-image {
     margin-left: 0;
-  }
-  .about-info {
-    padding: 95px 0px;
   }
 }
 

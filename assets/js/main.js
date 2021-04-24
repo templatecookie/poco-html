@@ -124,6 +124,7 @@
       },
     ],
   });
+
   $('.banner-brand__slider').slick({
     infinite: true,
     slidesToShow: 7,
@@ -161,9 +162,11 @@
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     arrows: true,
     autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: 0,
     prevArrow: '.testimonial-wrapper .prev-arrow',
     nextArrow: '.testimonial-wrapper .next-arrow',
     responsive: [
@@ -228,6 +231,25 @@
     prevArrow: '<button class="prevArrow">Prev</button>',
     nextArrow: '<button class="nextArrow">Next</button>',
   });
+
+  $('.client-image').slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   // Sliders End
 
   // magnificPopup video view
@@ -239,6 +261,8 @@
   function Circlle(el) {
     $(el)
       .circleProgress({
+        // startAngle: (-Math.PI / 4) * 13,
+        lineCap: 'round',
         fill: {
           color: '#FF465E',
         },
