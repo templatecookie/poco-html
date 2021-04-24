@@ -23,12 +23,7 @@
   &__wrapper {
     margin-top: 90px;
   }
-  &__title {
-    // font-size: 80px;
-    // line-height: 106px;
-    // color: #000560;
-    // margin-bottom: 4px;
-  }
+
   &__brief {
     width: 90%;
     color: #65729e;
@@ -392,12 +387,13 @@
   padding-top: 190px;
   padding-bottom: 10px;
   overflow: hidden;
+  position: relative;
   &__wrapper {
     margin-top: -195px;
 
     p {
       font-size: 26px;
-      font-family: $teko;
+      font-family: $hind;
       line-height: 42px;
       font-weight: 500;
       color: #9dadb7;
@@ -451,7 +447,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -3;
+      z-index: -1;
     }
   }
 }

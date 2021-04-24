@@ -1407,6 +1407,7 @@ aside,
   padding-top: 190px;
   padding-bottom: 10px;
   overflow: hidden;
+  position: relative;
 }
 
 .bannerArea04__wrapper {
@@ -1415,7 +1416,7 @@ aside,
 
 .bannerArea04__wrapper p {
   font-size: 26px;
-  font-family: "Teko", sans-serif;
+  font-family: "Hind", sans-serif;
   line-height: 42px;
   font-weight: 500;
   color: #9dadb7;
@@ -1470,7 +1471,7 @@ aside,
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -3;
+  z-index: -1;
 }
 
 /*----------------------------------------*/
