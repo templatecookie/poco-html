@@ -13,8 +13,44 @@
         <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
         <link rel="stylesheet" href="assets/css/slick.css" />
         <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/default.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
+        <style>
+                  .swiper-container {
+        width: 650px;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #fff; */
+        width: 75%;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      /* .swiper-slide:nth-child(2n) {
+        width: 60%;
+      }
+
+      .swiper-slide:nth-child(3n) {
+        width: 40%;
+      } */
+        </style>
     </head>
     <body class="homepage04">
         <!--[if lte IE 9]>
@@ -256,7 +292,8 @@
                     </div>
                 </div>
             </section>
-            <!-- END SLKILL AREA -->
+            <!-- End Skill Area -->
+
             <!-- START TESTIMONIAL AREA -->
             <section class="testimonial-area testimonial04" style="background-image: url(assets/img/testimonial/testimonialbg.png);">
                 <div class="container">
@@ -360,6 +397,7 @@
                 </div>
             </section>
             <!-- START TESTIMONIAL AREA -->
+
             <!-- START Projects Slider Area -->
             <section class="projectSlider" id="projectSlider">
                 <div class="container">
@@ -385,7 +423,40 @@
                             </div>
                         </div>
                         <div class="col-lg-7 order-1 order-lg-0">
-                            <div class="projectSlider__contentSlider">
+                            <div class="swiper-container projectSlider__container">
+                                <div class="swiper-wrapper projectSlider__wrapper">
+                                  <div class="swiper-slide projectSlider__slide">
+                                    <img src="assets/img/blog/article01.jpg" alt="ProjectSlider" class="projectSlider__slideImg img-fluid">
+                                  </div>
+                                  <div class="swiper-slide projectSlider__slide">
+                                    <img src="assets/img/blog/article02.jpg" alt="ProjectSlider" class="projectSlider__slideImg img-fluid">
+                                  </div>
+                                  <div class="swiper-slide projectSlider__slide">
+                                    <img src="assets/img/blog/article03.jpg" alt="ProjectSlider" class="projectSlider__slideImg img-fluid">
+                                  </div>
+                                  <div class="swiper-slide projectSlider__slide">
+                                    <img src="assets/img/blog/article01.jpg" alt="ProjectSlider" class="projectSlider__slideImg img-fluid">
+                                  </div>
+                                  <div class="swiper-slide projectSlider__slide">
+                                    <img src="assets/img/blog/article02.jpg" alt="ProjectSlider" class="projectSlider__slideImg img-fluid">
+                                  </div>
+                                  <div class="swiper-slide projectSlider__slide">
+                                    <img src="assets/img/blog/article03.jpg" alt="ProjectSlider" class="projectSlider__slideImg img-fluid">
+                                  </div>
+                                 
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination projectSlider__pagination"></div>
+                                    <!-- Add Arrows -->
+                                <div class="swiper-button-next projectSlider__next">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <div class="swiper-button-prev projectSlider__prev">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                              </div>
+                          
+                            <!-- <div class="projectSlider__contentSlider">
                                 <div class="projectSlider__SlideItem">
                                     <img src="assets/img/blog/article01.jpg" alt="ProjectSlider" class="projectSlider__slideImg img-fluid">
                                 </div>
@@ -407,12 +478,13 @@
                             </div>
                             <div class="projectSlider__ProgressBar progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
                                 <span class="projectSlider__label sr-only"></span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </section>
             <!-- END Projects Slider Area -->
+
             <!-- START CLIENT REVIEW TESTIMONIAL AREA -->
             <section class="client-review" style="background-image: url(assets/img/client-review/review.png);">
                 <div class="container">
@@ -464,6 +536,7 @@
                 </div>
             </section>
             <!-- END CLIENT REVIEW TESTIMONIAL AREA -->
+
             <section class="contactArea">
                 <div class="container">
                     <div class="row">
@@ -502,6 +575,7 @@
                     </div>
                 </div>
             </section>
+
         </main>
         <!-- START FOOTER AREA -->
         <footer class="footer04" style="background-image: url(assets/img/footer/footer-bg.png);">
@@ -589,6 +663,36 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/jquery.counterup.min.js"></script>
         <script src="assets/js/waypoint.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 00,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                },
+      }
+    });
+    // var swiper = new Swiper(".swiper-container", {
+    //     slidesPerView: "auto",
+    //     spaceBetween: 30,
+    //     pagination: {
+    //       el: ".swiper-pagination",
+    //       clickable: true
+    //     }
+    // }
+        </script>
     </body>
 </html>

@@ -251,54 +251,54 @@
   }
   Circlle('.round');
 })(jQuery);
+// ProgressBar Slider
+// $(document).ready(function () {
+//   var $slider = $('.projectSlider__contentSlider');
+//   var $progressBar = $('.projectSlider__ProgressBar');
+//   var $progressBarLabel = $('.projectSlider__label');
 
-$(document).ready(function () {
-  var $slider = $('.projectSlider__contentSlider');
-  var $progressBar = $('.projectSlider__ProgressBar');
-  var $progressBarLabel = $('.projectSlider__label');
+//   $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+//     var calc = (nextSlide / (slick.slideCount - 1)) * 100;
 
-  $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+//     $progressBar
+//       .css('background-size', calc + '% 100%')
+//       .attr('aria-valuenow', calc);
 
-    $progressBar
-      .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc);
+//     $progressBarLabel.text(calc + '% completed');
+//   });
 
-    $progressBarLabel.text(calc + '% completed');
-  });
+//   $slider.slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: true,
+//     dots: false,
+//     // centerMode: true,
+//     // centerPadding: '-150px',
+//     infinite: true,
+//     autoplay: false,
+//     prevArrow: `<button class="projectSlider__prevArrow"><i class="fas fa-arrow-right"></i></button>`,
+//     nextArrow: `<button class="projectSlider__nextArrow"><i class="fas fa-arrow-right"></i></button>`,
+//     responsive: [
+//       {
+//         breakpoint: 1025,
+//         settings: {
+//           slidesToShow: 1,
+//           centerMode: false,
+//           // centerPadding: '0px',
+//         },
+//       },
+//       // {
+//       //   breakpoint: 480,
+//       //   settings: {
 
-  $slider.slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    // centerMode: true,
-    // centerPadding: '-150px',
-    infinite: true,
-    autoplay: false,
-    prevArrow: `<button class="projectSlider__prevArrow"><i class="fas fa-arrow-right"></i></button>`,
-    nextArrow: `<button class="projectSlider__nextArrow"><i class="fas fa-arrow-right"></i></button>`,
-    responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
-          // centerPadding: '0px',
-        },
-      },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-
-      //     centerPadding: '40px',
-      //     slidesToShow: 1
-      //   }
-      // }
-    ],
-    // autoplaySpeed: 1900,
-  });
-});
+//       //     centerPadding: '40px',
+//       //     slidesToShow: 1
+//       //   }
+//       // }
+//     ],
+//     // autoplaySpeed: 1900,
+//   });
+// });
 
 // disalbe scrolling
 function disableScrolling() {
