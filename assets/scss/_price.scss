@@ -124,7 +124,7 @@
 /*----------------------------------------*/
 .priceArea {
   position: relative;
-
+  padding: 130px 0px;
   .section-title {
     h2 {
       font-size: 48px;
@@ -132,6 +132,10 @@
       color: #000560;
       font-family: $gilroy-bold;
       text-transform: capitalize;
+    }
+    p {
+      max-width: 55%;
+      margin: auto;
     }
   }
   &__contentBox {
@@ -163,6 +167,7 @@
     line-height: 32px;
     font-family: $gilroy-medium;
     color: #ff465e;
+    margin-bottom: 15px;
   }
   &__price {
     font-size: 42px;
@@ -180,6 +185,7 @@
     border-right: 0px;
     padding: 30px 0px;
     margin: 30px 0px;
+    margin-top: 25px;
     li {
       display: flex;
       align-items: center;
@@ -227,6 +233,23 @@
     }
   }
 
+  &__Btninactive {
+    color: #ff465e;
+    border: 2px solid #ff465e;
+    background-color: transparent;
+    width: 165px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .primary__button-bgPrimary {
+    width: 165px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
   // price 2
   &.priceArea-2 {
     background-color: #fff;
@@ -240,9 +263,7 @@
   .brands-area {
     padding: 35px 0px;
   }
-  .priceArea {
-    margin: 0px 15px;
-  }
+
   // Homepage-01
   .price-area {
     .mask-group3 {
@@ -251,9 +272,25 @@
       }
     }
   }
+  // Services
+  .priceArea {
+    margin: 0px !important;
+
+    &__contentBox {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
+}
+
+@media (max-width: 1023px) {
+  // Service
+  .priceArea {
+    margin: 0px !important;
+    padding-bottom: 90px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -275,6 +312,20 @@
 
     .md-modifi {
       margin-top: 25px;
+    }
+  }
+
+  .priceArea {
+    .section-title {
+      p {
+        max-width: 100%;
+      }
+    }
+
+    &__contentBox {
+      max-width: 450px;
+      margin: auto;
+      margin-bottom: 30px;
     }
   }
 }
@@ -378,10 +429,10 @@
 
 @media (min-width: 320px) and (max-width: 574px) {
   .priceArea {
-    margin: 0px !important;
-
+    padding: 90px 0px;
     &__contentBox {
       padding: 25px;
+      max-width: 100%;
     }
     .shape {
       .mask-top {

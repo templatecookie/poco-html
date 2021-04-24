@@ -215,6 +215,9 @@ p {
       box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
     }
   }
+  &__Btninactive {
+    background-color: transparent;
+  }
 
   &-bgOutline {
     color: $tertiary;

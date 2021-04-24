@@ -2,8 +2,10 @@
 /*  HOMEPAGE 01
 /*----------------------------------------*/
 .special-services {
-  padding-top: 0px;
-  padding-bottom: 70px;
+  &.our-services {
+    padding-top: 40px;
+    padding-bottom: 130px;
+  }
   .section-title {
     h2 {
       font-size: 48px;
@@ -14,13 +16,12 @@
     }
   }
   &-image {
-    margin-bottom: 23px;
-    border-radius: 25px;
-    height: 80px;
     width: 80px;
-    display: flex;
-    align-self: center;
-    justify-content: center;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    text-align: center;
   }
 
   &-image-bg-one {
@@ -270,6 +271,9 @@
     &-item {
       margin-bottom: 30px;
     }
+    &.our-services {
+      padding-bottom: 30px;
+    }
   }
 }
 @media (max-width: 575px) {
@@ -321,6 +325,7 @@
       }
     }
   }
+
   // homepage04
   .homepage-03 {
     &.services03 {
@@ -366,11 +371,7 @@
 @media #{$md} {
   .special-services {
     padding-bottom: 50px;
-    .special-services-image {
-      height: 70px;
-      width: 70px;
-      padding: 18px;
-    }
+
     .special-services-text {
       h5 {
         margin-bottom: 5px;

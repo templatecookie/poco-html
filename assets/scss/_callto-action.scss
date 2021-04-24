@@ -296,7 +296,7 @@
   background-color: inherit;
   border-radius: 0;
   margin: 0;
-  padding: 190px 0px 95px 0px;
+  padding: 190px 0px 120px 0px;
   .mask-group {
     .mask01 {
       position: absolute;
@@ -306,14 +306,16 @@
     }
   }
   .callto-action-image {
+    margin-top: -55px;
     img {
       margin-left: 30px;
       margin-bottom: 35px;
     }
   }
   .callto-action-text {
+    margin-top: 35px;
     h2 {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
   }
   .mask-group {
@@ -346,7 +348,6 @@
 @media (max-width: 1200px) {
   .callto-action {
     padding-top: 90px;
-    padding-left: 15px;
     &-image {
       img {
         max-width: 100%;
@@ -396,7 +397,7 @@
     }
     .mask-group {
       .mask01 {
-        bottom: 70%;
+        display: none;
       }
     }
   }
@@ -409,6 +410,10 @@
         }
       }
     }
+  }
+  // Service
+  .callto-action {
+    margin: 0px;
   }
 }
 
@@ -442,13 +447,25 @@
 }
 @media (max-width: 991px) {
   .callto-action {
-    padding-top: 30px;
+    padding-top: 120px;
+    &-modifi {
+      padding-bottom: 90px;
+      .callto-action {
+        &-image {
+          img {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
     &-image {
+      margin-bottom: 0px;
       img {
         margin-left: 0px;
       }
     }
     &-text {
+      margin-top: 0px;
       h2 {
         font-size: 42px;
         line-height: 56px;
@@ -486,7 +503,21 @@
   .callto-action {
     margin: 0px;
     &-text {
-      padding: 30px 10px;
+      padding: 30px 0px;
+    }
+    &-modifi {
+      padding-bottom: 60px;
+      .callto-action-text {
+        margin-top: 0px;
+        h2 {
+          font-size: 32px;
+          line-height: 42px;
+          margin-bottom: 0px;
+        }
+        p {
+          max-width: 100%;
+        }
+      }
     }
   }
   // Homepage -02 / Callaction -02
@@ -536,9 +567,6 @@
 }
 
 @media (max-width: 575px) {
-  .callto-action-text {
-    padding: 60px 0px;
-  }
   .call-action-two {
     border-top-left-radius: 0px;
   }
@@ -591,8 +619,20 @@
       }
     }
   }
+  // Services
   .callto-action-modifi {
     padding-bottom: 30px;
+    .callto-action-text {
+      h2 {
+        font-size: 22px;
+        line-height: 36px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
   }
 }
 
@@ -643,11 +683,6 @@
 
 /* large devices 992 - 1199*/
 @media #{$lg} {
-  .callto-action {
-    margin: 0 30px;
-    margin-top: 50px;
-    // padding: 20px 25px;
-  }
   // Homepage-02 / Callaction -02
   .call-action-two {
     &_group {
@@ -662,12 +697,8 @@
 @media #{$md} {
   .callto-action {
     margin: 0 20px;
-    .callto-action-image {
-      text-align: center;
-      margin-bottom: 50px;
-    }
+
     .callto-action-text {
-      padding-bottom: 70px;
       h2 {
         max-width: 100%;
         margin-bottom: 20px;
@@ -756,14 +787,6 @@
       &.call-action_group-2,
       &.call-action_group-4 {
         display: none;
-      }
-    }
-  }
-  .callto-action-modifi {
-    .callto-action-text {
-      h2 {
-        font-size: 30px;
-        line-height: 46px;
       }
     }
   }

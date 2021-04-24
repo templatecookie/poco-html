@@ -1,13 +1,7 @@
 // START ABOUT US
 .our-services {
-  &.pt-130 {
-    padding-top: 120px;
-  }
-  .about-us-image {
-    .image {
-      margin-top: -35px;
-    }
-  }
+  padding: 130px 0px;
+  padding-bottom: 100px;
 
   .about-us-text {
     margin-top: 10px;
@@ -77,6 +71,7 @@
 // START OUR WORK PROCESS
 .our-work-process {
   position: relative;
+  padding: 155px 0px;
   .section-title {
     h2 {
       font-size: 48px;
@@ -85,12 +80,6 @@
       font-family: $gilroy-bold;
       text-transform: capitalize;
     }
-  }
-  &.pt-125 {
-    padding-top: 155px;
-  }
-  &.pb-130 {
-    padding-bottom: 155px;
   }
   .process-item {
     position: relative;
@@ -188,6 +177,7 @@
     }
     p {
       text-align: center;
+      margin-top: -10px;
       // it's not valid
       // font-size: $gilroy-medium;
     }
@@ -263,6 +253,15 @@
   }
 }
 
+@media (max-width: 991px) {
+  .our-work-process {
+    padding: 120px 0px;
+    .process-text {
+      max-width: 100%;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .our-services {
     .shape {
@@ -332,6 +331,16 @@
         font-size: 32px;
         line-height: 46px;
       }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  // Services
+  .our-work-process {
+    padding: 90px 0px;
+    .section-title {
+      margin-bottom: 30px;
     }
   }
 }

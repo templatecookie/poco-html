@@ -308,9 +308,17 @@
 
 @media (max-width: 1200px) {
   .footer-area {
+    padding-top: 120px;
+    padding-bottom: 30px;
     &-about {
       p {
         max-width: 100%;
+      }
+    }
+
+    &-shape {
+      .ft-shape-03 {
+        bottom: 0px;
       }
     }
   }
@@ -330,6 +338,9 @@
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1199px) {
+}
+
 @media (max-width: 991px) {
   .footer03 {
     .footer-area {
@@ -341,14 +352,15 @@
       }
     }
   }
+  // Services
+  .footer-area {
+    margin: 0px;
+  }
 }
 
 @media (min-width: 768px) and(max-width: 991px) {
   // Globally Footer
   .footer-area {
-    padding: 70px 0px 20px 0px !important;
-    margin: 0 20px !important;
-
     .footer-area-about h4,
     .footer-area-lists h4 {
       font-size: 22px;
@@ -474,8 +486,28 @@
 
 @media (min-width: 320px) and(max-width: 574px) {
   .footer-area {
+    border-radius: 0px;
+    padding-top: 90px;
+
+    &-about {
+      p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
     &-lists {
       margin-bottom: 0px;
+    }
+    &-shape {
+      .ft-shape-01 {
+        left: 0px;
+      }
+      .ft-shape-02 {
+        right: 0px;
+      }
+      .ft-shape-03 {
+        right: 15px;
+      }
     }
   }
 
@@ -517,8 +549,7 @@
 @media #{$lg} {
   // Globally Footer
   .footer-area {
-    padding: 70px 0px;
-    margin: 0 30px;
+    margin: 0px;
   }
 }
 
@@ -530,11 +561,8 @@
 @media #{$sm} {
   // Globally Footer
   .footer-area {
-    padding: 50px 0px 20px 0px !important;
-    margin: 0 0px !important;
-    border-radius: 0px !important;
     .footer-area-shape {
-      display: none !important;
+      // display: none !important;
     }
     .footer-area-about h4,
     .footer-area-lists h4 {
@@ -547,13 +575,6 @@
     }
     .footer-area-lists ul li a {
       margin-bottom: 5px;
-    }
-    .footer-area-links {
-      a {
-        height: 35px;
-        width: 35px;
-        line-height: 35px;
-      }
     }
   }
   .copyright {
@@ -625,15 +646,11 @@
     }
   }
 }
+
 /* extra Small devices 420 */
 @media #{$xsm} {
   // Globally Footer
   .footer-area {
-    margin: 0 0px !important;
-    border-radius: 0px !important;
-    .footer-area-shape {
-      display: none !important;
-    }
     .footer-area-about h4,
     .footer-area-lists h4 {
       font-size: 22px;
@@ -641,13 +658,6 @@
 
     .footer-area-lists ul li a {
       margin-bottom: 5px;
-    }
-    .footer-area-links {
-      a {
-        height: 35px;
-        width: 35px;
-        line-height: 35px;
-      }
     }
   }
   // Copyright Area
