@@ -4443,17 +4443,24 @@ aside,
   }
   .callto-action-image {
     margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
   }
   .callto-action-image img {
     margin-left: 0px;
+    height: 380px;
   }
   .callto-action-text {
     margin-top: 0px;
+    padding-top: 0px;
   }
   .callto-action-text h2 {
     font-size: 42px;
     line-height: 56px;
     margin-bottom: 0px;
+  }
+  .callto-action-modifi.callto-action-project-d .callto-action-text {
+    margin-top: 30px;
   }
   .call-action-two_group.call-action_group-3 {
     right: 75px;
@@ -4475,9 +4482,6 @@ aside,
 @media (max-width: 767px) {
   .callto-action {
     margin: 0px;
-  }
-  .callto-action-text {
-    padding: 30px 0px;
   }
   .callto-action-modifi {
     padding-bottom: 60px;
@@ -4533,7 +4537,7 @@ aside,
     padding-left: 0px;
   }
   .callto-action-text {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
   .callto-action-text h2 {
     font-size: 22px;
@@ -4573,6 +4577,12 @@ aside,
   .callto-action-modifi .callto-action-text p {
     font-size: 14px;
     line-height: 24px;
+  }
+  .callto-action-modifi.callto-action-project-d {
+    padding-bottom: 90px;
+  }
+  .callto-action-modifi.callto-action-project-d .callto-action-text {
+    margin-top: 0px;
   }
 }
 
@@ -6529,7 +6539,10 @@ aside,
     margin-bottom: 15px;
   }
   .breadcrumArea .banner-image {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+  }
+  .breadcrumArea .banner-image img {
+    height: 280px;
   }
 }
 
@@ -6541,11 +6554,18 @@ aside,
 
 @media (max-width: 767px) {
   .breadcrumArea .bannerArea__wrapper {
+    padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
   }
   .breadcrumArea .bannerArea__wrapper p {
     max-width: 100%;
+  }
+  .breadcrumArea .banner-image {
+    padding: 0px;
+  }
+  .breadcrumArea .banner-image img {
+    height: 250px;
   }
 }
 
@@ -8632,13 +8652,13 @@ aside,
 }
 
 .project-details-content .our-work-process {
-  margin-top: 145px;
+  margin-top: 125px;
   padding-bottom: 150px;
   z-index: 5;
 }
 
 .project-detail {
-  padding-top: 35px;
+  padding-top: 160px;
 }
 
 .project-detail .overview-image img {
@@ -8725,6 +8745,10 @@ aside,
   z-index: -5;
 }
 
+.project-work-process.project-detail {
+  padding-top: 125px;
+}
+
 .project-work-process .process-item .dashed02 {
   background-color: #fff5f7;
 }
@@ -8766,6 +8790,31 @@ aside,
   .project .load-more-button {
     margin-top: 60px;
   }
+  .project-detail .project-detail-content h2 {
+    font-size: 38px;
+    line-height: 46px;
+    margin-bottom: 15px;
+  }
+  .project-detail .project-next-prev-button {
+    margin-top: 60px;
+  }
+  .project-detail .project-detail-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .project-detail {
+    padding-top: 90px;
+  }
+  .project-detail .project-detail-content {
+    margin-top: 30px;
+  }
+  .project-work-process.project-detail {
+    margin: 0px;
+    margin-top: 90px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -8790,6 +8839,9 @@ aside,
   }
   .project-detail .project-overview-wrapper {
     margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
   }
   .project-detail .project-overview-wrapper .overview-detail {
     display: list-item;
@@ -8797,6 +8849,14 @@ aside,
   }
   .project-detail .project-overview-wrapper .overview-detail .detail-tittle {
     margin-bottom: 15px;
+  }
+  .project-detail .overview-image {
+    display: flex;
+    justify-content: center;
+  }
+  .project-detail .overview-image img {
+    height: 250px;
+    object-fit: contain;
   }
 }
 
@@ -8822,6 +8882,10 @@ aside,
   .project-wrapper-button .primary__button {
     padding: 15px 30px;
   }
+  .project-detail .project-overview-wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -8829,14 +8893,34 @@ aside,
     margin: 0;
     border-radius: 0px;
   }
-  .project-detail .project-overview-wrapper {
-    margin: 40px 15px 0px 15px;
-  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .project .load-more-button .primary__button {
     padding: 15px 30px;
+  }
+  .project-detail {
+    padding-top: 60px;
+  }
+  .project-detail .project-detail-content h2 {
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 0px;
+  }
+  .project-detail .project-overview-wrapper {
+    margin-top: 0px;
+  }
+  .our-work-process .section-title h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .our-work-process.project-detail {
+    padding: 60px 0px;
+    padding-bottom: 90px;
+    margin-top: 60px;
+  }
+  .our-work-process .shape {
+    display: none;
   }
 }
 

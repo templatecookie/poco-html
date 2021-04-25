@@ -137,7 +137,11 @@
       // }
     }
     .banner-image {
-      padding-bottom: 30px;
+      // padding-bottom: 30px;
+      padding-bottom: 0px;
+      img {
+        height: 280px;
+      }
     }
   }
 }
@@ -155,23 +159,20 @@
 @media (max-width: 767px) {
   .breadcrumArea {
     .bannerArea__wrapper {
+      padding-top: 15px;
       padding-bottom: 15px;
       padding-left: 15px;
       p {
         max-width: 100%;
       }
     }
+    .banner-image {
+      padding: 0px;
+      img {
+        height: 250px;
+      }
+    }
   }
-}
-
-@media (min-width: 575px) and(max-width: 767px) {
-  // .breadcrumArea {
-  //   .bannerArea__wrapper {
-  //     p {
-  //       max-width: 100%;
-  //     }
-  //   }
-  // }
 }
 
 @media (max-width: 574px) {
