@@ -348,17 +348,24 @@
 @media (max-width: 1200px) {
   .callto-action {
     padding-top: 90px;
+
     &-image {
       img {
         max-width: 100%;
         height: auto;
       }
     }
+
     &-text {
+      h2 {
+        font-size: 42px;
+        line-height: 52px;
+      }
       p {
         margin-top: 0px;
       }
     }
+
     .primary__button {
       margin-top: 0px;
     }

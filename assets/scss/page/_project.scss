@@ -1,6 +1,12 @@
 //OUR PROJECT AREA
 .project {
+  padding-top: 140px;
+  &__container {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 60px;
+  }
   &-wrapper {
+    margin-bottom: 70px;
     &-image {
       margin-left: -30px;
       margin-bottom: -10px;
@@ -13,6 +19,7 @@
       h3 {
         font-size: 30px;
         line-height: 38px;
+        margin-bottom: 10px;
       }
 
       span {
@@ -172,7 +179,27 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/*Common Devices */
+@media (max-width: 1200px) {
+  // project page
+  .project {
+    padding-top: 120px;
+    &-wrapper {
+      margin-bottom: 30px;
+      &-title {
+        h3 {
+          margin-bottom: 0px;
+        }
+        span {
+          line-height: 24px;
+        }
+      }
+    }
+    .load-more-button {
+      margin-top: 60px;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
 }
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -221,6 +248,34 @@
   }
 }
 
+@media (max-width: 767px) {
+  .project {
+    padding-top: 60px;
+    &-wrapper {
+      &-title {
+        h3 {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 0px;
+        }
+        span {
+          line-height: 26px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 28px;
+        }
+      }
+      &-button {
+        margin-top: 15px;
+        .primary__button {
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 575px) {
   // project-worck-proecess
   .project-work-process {
@@ -233,6 +288,17 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .project {
+    .load-more-button {
+      .primary__button {
+        padding: 15px 30px;
+      }
+    }
+  }
+}
+
 @media (min-width: 320px) and (max-width: 419px) {
   .project {
     &-wrapper {

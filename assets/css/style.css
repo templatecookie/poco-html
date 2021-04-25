@@ -4366,6 +4366,10 @@ aside,
     max-width: 100%;
     height: auto;
   }
+  .callto-action-text h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
   .callto-action-text p {
     margin-top: 0px;
   }
@@ -6939,12 +6943,6 @@ aside,
   }
 }
 
-@media (max-width: 991px) {
-  .project {
-    padding: 60px 0px;
-  }
-}
-
 /*----------------------------------------*/
 /*  HOMEPAGE 01
 /*----------------------------------------*/
@@ -8574,6 +8572,19 @@ aside,
   /* common area start */
 }
 
+.project {
+  padding-top: 140px;
+}
+
+.project__container {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 60px;
+}
+
+.project-wrapper {
+  margin-bottom: 70px;
+}
+
 .project-wrapper-image {
   margin-left: -30px;
   margin-bottom: -10px;
@@ -8586,6 +8597,7 @@ aside,
 .project-wrapper-title h3 {
   font-size: 30px;
   line-height: 38px;
+  margin-bottom: 10px;
 }
 
 .project-wrapper-title span {
@@ -8735,7 +8747,24 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
-/*Common Devices */
+@media (max-width: 1200px) {
+  .project {
+    padding-top: 120px;
+  }
+  .project-wrapper {
+    margin-bottom: 30px;
+  }
+  .project-wrapper-title h3 {
+    margin-bottom: 0px;
+  }
+  .project-wrapper-title span {
+    line-height: 24px;
+  }
+  .project .load-more-button {
+    margin-top: 60px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1024px) {
   .project-wrapper-image {
     margin-left: -25px;
@@ -8768,6 +8797,30 @@ aside,
   }
 }
 
+@media (max-width: 767px) {
+  .project {
+    padding-top: 60px;
+  }
+  .project-wrapper-title h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 0px;
+  }
+  .project-wrapper-title span {
+    line-height: 26px;
+  }
+  .project-wrapper-title p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .project-wrapper-button {
+    margin-top: 15px;
+  }
+  .project-wrapper-button .primary__button {
+    padding: 15px 30px;
+  }
+}
+
 @media (max-width: 575px) {
   .project-work-process {
     margin: 0;
@@ -8775,6 +8828,12 @@ aside,
   }
   .project-detail .project-overview-wrapper {
     margin: 40px 15px 0px 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .project .load-more-button .primary__button {
+    padding: 15px 30px;
   }
 }
 
