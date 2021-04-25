@@ -215,9 +215,6 @@ p {
       box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
     }
   }
-  &__Btninactive {
-    background-color: transparent;
-  }
 
   &-bgOutline {
     color: $tertiary;
@@ -274,18 +271,6 @@ p {
 // section {
 //   padding: 110px 0px;
 // }
-
-// section title type 01
-.special-services {
-  .section-title h2 {
-  }
-}
-
-// section title type 02
-.callto-action-text {
-  h2 {
-  }
-}
 
 .section-title {
   margin-bottom: 60px;
@@ -424,10 +409,10 @@ p {
   h5 {
     font-size: 14px;
   }
-  .primary__button {
-    font-size: 16px;
-    padding: 18px 40px;
-  }
+  // .primary__button {
+  //   font-size: 16px;
+  //   padding: 18px 40px;
+  // }
 }
 
 /* Small devices 420 - 574 */

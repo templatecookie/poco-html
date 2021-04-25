@@ -1,3 +1,22 @@
-#map {
-  height: 500px;
+/* Map Section */
+.map-area {
+  padding-top: 160px;
+  padding-bottom: 60px;
+  #map {
+    height: 500px;
+  }
+}
+
+/*----------------------------------------*/
+/*  RESPONSIVE CSS START 
+/*----------------------------------------*/
+@media (max-width: 991px) {
+  .map-area {
+    padding: 90px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .map-area {
+    padding: 60px 0px;
+  }
 }

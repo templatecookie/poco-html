@@ -596,8 +596,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .about-info04 {
-  }
 }
 
 @media (max-width: 1024px) {
@@ -741,13 +739,13 @@
     }
   }
 
-  .our-teams {
-    .our-teams-member {
-      .member-info {
-        bottom: 45px;
-      }
-    }
-  }
+  // .our-teams {
+  //   .our-teams-member {
+  //     .member-info {
+  //       bottom: 45px;
+  //     }
+  //   }
+  // }
   .about-skill {
     &-wrapper {
       max-width: 100% !important;
@@ -889,7 +887,7 @@
       flex-direction: column;
       align-items: center;
       .member-info {
-        width: 60%;
+        // width: 100%;
       }
     }
   }
