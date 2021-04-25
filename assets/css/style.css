@@ -805,8 +805,8 @@ aside .main-menu li a:hover {
 }
 
 aside .asidesearch-bar {
-  margin-top: 40px;
   position: relative;
+  margin-top: 15px;
 }
 
 aside .asidesearch-bar input {
@@ -814,6 +814,7 @@ aside .asidesearch-bar input {
   height: 50px;
   border: 0;
   border: 1px solid #dadada;
+  padding: 0px 15px;
 }
 
 aside .asidesearch-bar img {
@@ -846,7 +847,7 @@ aside .sidebar-menu {
 
 .sidebar-menu {
   background-color: #f1f9ff;
-  padding: 20px 30px 50px;
+  padding: 20px 15px 50px;
   box-sizing: border-box;
 }
 
@@ -856,7 +857,7 @@ aside .sidebar-menu {
 
 .sidebar-menu ul.main-menu {
   padding: 0;
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
 .sidebar-menu ul.main-menu li {
@@ -872,7 +873,7 @@ aside .sidebar-menu {
 }
 
 .sidebar-menu .contacprimary__button {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 aside,
