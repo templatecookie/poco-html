@@ -1,8 +1,8 @@
 /*----------------------------------------*/
-/*  HOMEPAGE 04
+/*  HOMEPAGE 03
 /*----------------------------------------*/
 #circleBar {
-  margin-top: 45px;
+  padding: 50px 0px 55px 0px;
   text-align: center;
   .section-title {
     margin-bottom: 35px;
@@ -53,6 +53,19 @@
     }
   }
 }
+
 .circleProgress {
-  background-color: transparent;
+  background-color: red;
+}
+
+@media (max-width: 767px) {
+  #circleBar {
+    padding-bottom: 0px;
+    .section-title {
+      h2 {
+        font-size: 58px;
+        line-height: 68px;
+      }
+    }
+  }
 }

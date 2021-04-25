@@ -7,11 +7,7 @@
   padding: 130px 0px 85px 0px;
   border-radius: 24px;
   position: relative;
-  @media (min-width: 1200px) {
-    .mr-lg-65 {
-      margin-right: 65px;
-    }
-  }
+
   &-shape {
     img {
       position: absolute;
@@ -37,6 +33,10 @@
   }
 
   &-about {
+    h4 {
+      font-size: 26px;
+      line-height: 35px;
+    }
     p {
       max-width: 305px;
       margin-bottom: 18px;
@@ -73,11 +73,12 @@
     ul {
       li {
         a {
-          font-family: $gilroy-medium;
           font-size: 16px;
-          color: $secondary;
+          line-height: 36px;
           margin-bottom: 5px;
           display: inline-block;
+          font-family: $gilroy-medium;
+          color: $secondary;
         }
       }
     }
@@ -299,71 +300,67 @@
 /*----------------------------------------*/
 
 /* Common Devices-Sizes */
+@media (min-width: 1200px) {
+  .mr-lg-65 {
+    margin-right: 65px;
+  }
+}
 
-@media (max-width: 767px) {
-  .dark-footer {
-    .footer-area {
-      &-lists {
-        margin-bottom: 15px;
+@media (max-width: 1200px) {
+  .footer-area {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    &-about {
+      p {
+        max-width: 100%;
       }
+    }
+
+    &-shape {
+      .ft-shape-03 {
+        bottom: 0px;
+      }
+    }
+  }
+  // Homepage-03
+  .footer04 {
+    padding-top: 60px;
+  }
+
+  // Homepage-04
+  .footer03 {
+    .footer-area {
+      padding-top: 90px;
+    }
+    .copyright {
+      padding: 20px 15px;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+  .footer03 {
+    .footer-area {
       &-about {
         margin-bottom: 0px;
         p {
-          max-width: 100% !important;
+          margin-top: 0px;
         }
       }
     }
   }
+  // Services
+  .footer-area {
+    margin: 0px;
+  }
 }
 
-@media (max-width: 575px) {
-  .dark-footer {
-    padding-top: 15px;
-    border-top-right-radius: 0px;
-    .footer-area {
-      &-about {
-        margin-top: 15px;
-        p {
-        }
-      }
-      &-lists {
-        margin-bottom: 15px;
-      }
-    }
-  }
-  .copyright-area-logo {
-    a {
-      img {
-        display: none;
-      }
-    }
-  }
-  .copyright {
-    padding: 32px 0px;
-  }
-  // .copyright-area-top {
-  //     margin-top: 15px;
-  // }
-}
-
-/* large devices 992 - 1199*/
-@media #{$lg} {
+@media (min-width: 768px) and(max-width: 991px) {
   // Globally Footer
   .footer-area {
-    padding: 70px 0px;
-    margin: 0 30px;
-  }
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-  // Globally Footer
-  .footer-area {
-    padding: 70px 0px 20px 0px !important;
-    margin: 0 20px !important;
-    .footer-area-about {
-      margin-bottom: 30px;
-    }
     .footer-area-about h4,
     .footer-area-lists h4 {
       font-size: 22px;
@@ -403,15 +400,169 @@
   }
 }
 
+@media (max-width: 767px) {
+  .dark-footer {
+    .footer-area {
+      &-lists {
+        margin-bottom: 15px;
+      }
+      &-about {
+        margin-bottom: 0px;
+        p {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+  // homepage-03
+  .footer04 {
+    .footer-area {
+      &-about {
+        .logo {
+          margin-bottom: 15px;
+        }
+        &.mb-30 {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .copyright {
+      .col-sm-12 {
+        flex-direction: column;
+      }
+      &-area-text {
+        p {
+          font-size: 14px;
+          line-height: 28px;
+        }
+      }
+    }
+    .copyright-area-list {
+      ul {
+        justify-content: center;
+        li {
+          font-size: 14px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  // Homepage-04
+  .footer03 {
+    .footer-area {
+      &-lists {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .dark-footer {
+    padding-top: 15px;
+    border-top-right-radius: 0px;
+    .footer-area {
+      &-about {
+        margin-top: 15px;
+        p {
+        }
+      }
+      &-lists {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .copyright-area-logo {
+    a {
+      img {
+        display: none;
+      }
+    }
+  }
+  .copyright {
+    padding: 32px 0px;
+  }
+}
+
+@media (min-width: 320px) and(max-width: 574px) {
+  .footer-area {
+    border-radius: 0px;
+    padding-top: 90px;
+
+    &-about {
+      p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+    &-lists {
+      margin-bottom: 0px;
+    }
+    &-shape {
+      .ft-shape-01 {
+        left: 0px;
+      }
+      .ft-shape-02 {
+        right: 0px;
+      }
+      .ft-shape-03 {
+        right: 15px;
+      }
+    }
+  }
+
+  .footer04 {
+    .footer-area {
+      padding-top: 0px;
+      &-lists {
+        margin-bottom: 15px;
+        ul {
+          li {
+            a {
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    .justify-content-between {
+      flex-direction: column;
+    }
+  }
+
+  // Homepage-04
+  .footer03 {
+    .footer-area {
+      padding-top: 60px;
+    }
+    .copyright-area-text {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/* large devices 992 - 1199*/
+@media #{$lg} {
+  // Globally Footer
+  .footer-area {
+    margin: 0px;
+  }
+}
+
+/* Medium devices 768 - 991 */
+@media #{$md} {
+}
+
 /* Small devices 575 - 767 */
 @media #{$sm} {
   // Globally Footer
   .footer-area {
-    padding: 50px 0px 20px 0px !important;
-    margin: 0 0px !important;
-    border-radius: 0px !important;
     .footer-area-shape {
-      display: none !important;
+      // display: none !important;
     }
     .footer-area-about h4,
     .footer-area-lists h4 {
@@ -419,17 +570,11 @@
     }
     .footer-area-about p,
     .footer-area-lists ul li a {
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 26px;
     }
     .footer-area-lists ul li a {
       margin-bottom: 5px;
-    }
-    .footer-area-links {
-      a {
-        height: 35px;
-        width: 35px;
-        line-height: 35px;
-      }
     }
   }
   .copyright {
@@ -501,33 +646,18 @@
     }
   }
 }
+
 /* extra Small devices 420 */
 @media #{$xsm} {
   // Globally Footer
   .footer-area {
-    padding: 50px 0px 20px 0px !important;
-    margin: 0 0px !important;
-    border-radius: 0px !important;
-    .footer-area-shape {
-      display: none !important;
-    }
     .footer-area-about h4,
     .footer-area-lists h4 {
       font-size: 22px;
     }
-    .footer-area-about p,
-    .footer-area-lists ul li a {
-      font-size: 14px;
-    }
+
     .footer-area-lists ul li a {
       margin-bottom: 5px;
-    }
-    .footer-area-links {
-      a {
-        height: 35px;
-        width: 35px;
-        line-height: 35px;
-      }
     }
   }
   // Copyright Area

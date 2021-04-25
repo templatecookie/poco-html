@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -167,14 +167,14 @@
     <main>
       <!-- START BREADCRUMB AREA -->
       <section
-        class="banner-area breadcrumb-area contactBanner"
+        class="banner-area breadcrumArea mb-0"
         style="background-image: url(assets/img/mask/breadcrumbmask.png)"
       >
         <div class="container custom-container">
           <div class="row d-flex align-items-center">
             <div class="col-lg-6 order-2 order-lg-1">
-              <div class="banner-wrapper">
-                <div class="banner-title">
+              <div class="bannerArea__wrapper">
+                <div class="bannerArea__title">
                   <h1>Contact Us</h1>
                 </div>
                 <p>
@@ -202,7 +202,7 @@
                       <a href="index.html">Home</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Contact Us
+                      Blogs
                     </li>
                   </ol>
                 </nav>
@@ -217,7 +217,7 @@
       <!-- END BREADCRUMB AREA -->
 
       <!-- START MAP AREA -->
-      <section class="map-area pb-125">
+      <div class="map-area pb-125">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
@@ -227,7 +227,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- END MAP AREA -->
 
       <!-- START CONTACT FORM AREA-->
@@ -454,7 +454,6 @@
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5AEaa68Gwdkn83EdC48CzkZPZldbEsyM&callback=initMap"
-      type="text/javascript"
     ></script>
 
     <script>
@@ -467,10 +466,5 @@
         });
       }
     </script>
-    <style>
-      #map {
-        height: 500px;
-      }
-    </style>
   </body>
 </html>

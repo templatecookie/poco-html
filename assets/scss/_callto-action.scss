@@ -4,9 +4,12 @@
 .callto-action {
   background-color: rgba(255, 70, 94, 0.05);
   margin: 0 45px;
-  margin-top: 90px;
+  padding: 0px;
+  padding-top: 60px;
   border-radius: 24px;
   position: relative;
+  z-index: 1;
+  overflow: hidden;
   &-mask {
     img {
       position: absolute;
@@ -28,17 +31,20 @@
   }
 
   &-text {
+    margin-top: -50px;
     h2 {
+      font-size: 48px;
+      line-height: 64px;
       font-family: $gilroy-bold;
       max-width: 620px;
-      margin-bottom: 12px;
     }
 
     p {
-      max-width: 575px;
-      font-family: $gilroy-medium;
-      margin-bottom: 20px;
+      font-size: 18px;
       line-height: 30px;
+      max-width: 95%;
+      font-family: $gilroy-medium;
+      margin: 20px 0px;
     }
     .primary__button {
       margin-top: 30px;
@@ -174,22 +180,31 @@
 }
 
 /*----------------------------------------*/
-/*  HOME PAGE 03
+/*  HOME PAGE 04
 /*----------------------------------------*/
 .homepage-03 {
+  &.call-to-action03 {
+    padding: 165px 0px;
+  }
   .call-action-text {
     .sub-section-heading {
+      margin-top: -25px;
+      h2 {
+        margin-bottom: 20px;
+      }
       h6 {
         letter-spacing: 2px;
         word-spacing: 5px;
         color: #899da7;
         font-size: 14px;
         font-family: $gilroy-regular;
+        margin-bottom: 10px;
       }
 
       p {
         font-size: 18px;
         font-family: $gilroy-medium;
+        margin-bottom: 60px;
       }
     }
 
@@ -202,14 +217,33 @@
     z-index: 1;
     position: relative;
 
+    img {
+      position: relative;
+
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   background: rgba(0, 5, 96, 0.6);
+      //   border-radius: 4px;
+      //   top: 0;
+      //   left: 0;
+      //   width: 100%;
+      //   height: 100%;
+      // }
+    }
     .image-overlay {
-      position: absolute;
-      background: rgba(0, 5, 96, 0.6);
-      border-radius: 4px;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        background: rgba(0, 5, 96, 0.459);
+        border-radius: 4px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
     }
 
     .play-video {
@@ -217,6 +251,7 @@
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
+      z-index: 2;
 
       a {
         width: 120px;
@@ -240,7 +275,7 @@
       }
 
       .pattern-one {
-        top: -10%;
+        top: -12%;
         left: -8%;
         z-index: -1;
       }
@@ -253,6 +288,7 @@
     }
   }
 }
+
 /*----------------------------------------*/
 /*  TEAM MEMBER PAGE
 /*----------------------------------------*/
@@ -260,7 +296,7 @@
   background-color: inherit;
   border-radius: 0;
   margin: 0;
-  padding: 190px 0px 95px 0px;
+  padding: 190px 0px 120px 0px;
   .mask-group {
     .mask01 {
       position: absolute;
@@ -270,14 +306,16 @@
     }
   }
   .callto-action-image {
+    margin-top: -55px;
     img {
       margin-left: 30px;
       margin-bottom: 35px;
     }
   }
   .callto-action-text {
+    margin-top: 35px;
     h2 {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
   }
   .mask-group {
@@ -296,7 +334,7 @@
   }
 }
 
-@media (min-width: 1340) {
+@media (min-width: 1340px) {
   .callto-action-image {
     margin-right: -170px;
   }
@@ -309,11 +347,20 @@
 /*common max-Sizes */
 @media (max-width: 1200px) {
   .callto-action {
+    padding-top: 90px;
     &-image {
       img {
         max-width: 100%;
         height: auto;
       }
+    }
+    &-text {
+      p {
+        margin-top: 0px;
+      }
+    }
+    .primary__button {
+      margin-top: 0px;
     }
   }
   // Homepage 02 / Callaction-02
@@ -350,7 +397,7 @@
     }
     .mask-group {
       .mask01 {
-        bottom: 70%;
+        display: none;
       }
     }
   }
@@ -364,7 +411,12 @@
       }
     }
   }
+  // Service
+  .callto-action {
+    margin: 0px;
+  }
 }
+
 @media (min-width: 1024px) and (max-width: 1199px) {
   .callto-action-modifi {
     .mask-group {
@@ -374,9 +426,10 @@
     }
   }
   .callto-action {
-    padding: 80px 25px;
+    // padding: 80px 25px;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1023px) {
   .callto-action-modifi {
     padding: 90px 25px !important;
@@ -394,9 +447,29 @@
 }
 @media (max-width: 991px) {
   .callto-action {
+    padding-top: 120px;
+    &-modifi {
+      padding-bottom: 90px;
+      .callto-action {
+        &-image {
+          img {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
     &-image {
+      margin-bottom: 0px;
       img {
         margin-left: 0px;
+      }
+    }
+    &-text {
+      margin-top: 0px;
+      h2 {
+        font-size: 42px;
+        line-height: 56px;
+        margin-bottom: 0px;
       }
     }
   }
@@ -411,13 +484,40 @@
       }
     }
   }
+
+  // Homepage-04
+  .homepage-03 {
+    &.call-to-action03 {
+      padding-bottom: 120px;
+    }
+    .call-action-video {
+      margin-bottom: 35px;
+      .image-overlay {
+        max-width: 570px;
+      }
+    }
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .callto-action {
     margin: 0px;
     &-text {
-      padding: 30px 10px;
+      padding: 30px 0px;
+    }
+    &-modifi {
+      padding-bottom: 60px;
+      .callto-action-text {
+        margin-top: 0px;
+        h2 {
+          font-size: 32px;
+          line-height: 42px;
+          margin-bottom: 0px;
+        }
+        p {
+          max-width: 100%;
+        }
+      }
     }
   }
   // Homepage -02 / Callaction -02
@@ -443,19 +543,58 @@
       }
     }
   }
+
+  // Homepage-04
+  .homepage-03 {
+    &.call-to-action03 {
+      padding-bottom: 90px;
+    }
+    .call-action-text {
+      .sub-section-heading {
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .call-action-video {
+      .pattern {
+        .pattern-one {
+          left: 0px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
-  .callto-action-text {
-    padding: 60px 15px;
-  }
   .call-action-two {
     border-top-left-radius: 0px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  // homepage-01
+  .callto-action {
+    padding-left: 0px;
+    &-text {
+      padding-bottom: 60px;
+      h2 {
+        font-size: 22px;
+        line-height: 32px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 100%;
+      }
+    }
+  }
+  // homepage-04
   .homepage-03 {
+    &.call-to-action03 {
+      padding-top: 120px;
+    }
+
     .call-action-video {
       .play-video {
         a {
@@ -464,9 +603,36 @@
         }
       }
     }
+    .call-action-text {
+      .sub-section-heading {
+        margin-top: 0px;
+      }
+      .sub-section-heading {
+        h2 {
+          font-size: 22px;
+          line-height: 36px;
+        }
+        p {
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+      }
+    }
   }
+  // Services
   .callto-action-modifi {
     padding-bottom: 30px;
+    .callto-action-text {
+      h2 {
+        font-size: 22px;
+        line-height: 36px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
   }
 }
 
@@ -509,11 +675,6 @@
   }
 
   .callto-action-text {
-    padding: 90px 0px;
-    h2 {
-      font-size: 32px;
-      line-height: 42px;
-    }
     .primary__button {
       margin-top: 0px;
     }
@@ -522,11 +683,6 @@
 
 /* large devices 992 - 1199*/
 @media #{$lg} {
-  .callto-action {
-    margin: 0 30px;
-    margin-top: 50px;
-    // padding: 20px 25px;
-  }
   // Homepage-02 / Callaction -02
   .call-action-two {
     &_group {
@@ -541,12 +697,8 @@
 @media #{$md} {
   .callto-action {
     margin: 0 20px;
-    .callto-action-image {
-      text-align: center;
-      margin-bottom: 50px;
-    }
+
     .callto-action-text {
-      padding-bottom: 70px;
       h2 {
         max-width: 100%;
         margin-bottom: 20px;
@@ -635,14 +787,6 @@
       &.call-action_group-2,
       &.call-action_group-4 {
         display: none;
-      }
-    }
-  }
-  .callto-action-modifi {
-    .callto-action-text {
-      h2 {
-        font-size: 30px;
-        line-height: 46px;
       }
     }
   }

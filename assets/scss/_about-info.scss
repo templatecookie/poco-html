@@ -1,9 +1,11 @@
 /*----------------------------------------*/
 /* HOMEPAGE 01
 /*----------------------------------------*/
-// About-Info Starts Here
+
 .about-info {
   position: relative;
+  padding-top: 145px;
+  padding-bottom: 125px;
   &-image {
     margin-left: -190px;
   }
@@ -17,9 +19,11 @@
     }
 
     p {
-      font-family: $gilroy-medium;
-      margin-bottom: 45px;
+      font-size: 18px;
       line-height: 30px;
+      margin-bottom: 45px;
+      font-family: $gilroy-medium;
+      color: #9dadb7;
     }
   }
 
@@ -29,8 +33,9 @@
 
     .project-rating {
       h3 {
-        font-family: $gilroy-bold;
         font-size: 34px;
+        line-height: 42px;
+        font-family: $gilroy-bold;
       }
 
       &-star {
@@ -51,6 +56,7 @@
       h3 {
         margin-top: 2px;
         font-size: 34px;
+        margin-bottom: 8px !important;
       }
 
       p {
@@ -76,9 +82,8 @@
 /* HOMEPAGE 02
 /*----------------------------------------*/
 .aboutus02 {
-  padding: 130px 0px 160px 0px;
+  padding: 65px 0px 210px 0px;
   position: relative;
-
   &-wrapper {
     max-width: 93%;
 
@@ -162,7 +167,7 @@
 
   .small-feature {
     position: absolute;
-    bottom: 24.1%;
+    bottom: 285px;
     right: 38.5%;
   }
 }
@@ -224,89 +229,6 @@
 /*----------------------------------------*/
 /*  HOMEPAGE 03
 /*----------------------------------------*/
-.homepage-03 {
-  &.about-introduction {
-    padding-bottom: 285px;
-  }
-
-  .sub-section-heading {
-    margin-top: 75px;
-    p {
-      font-size: 18px;
-      font-family: $gilroy-medium;
-    }
-  }
-
-  .work-process {
-    max-width: 485px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    &-item {
-      i {
-        color: #ed880a;
-      }
-    }
-  }
-
-  .about-intro-left {
-    position: relative;
-
-    .image {
-      position: relative;
-
-      .about01 {
-        border-top-right-radius: 75px;
-        width: 490px;
-        height: 550px;
-        object-fit: cover;
-      }
-
-      .about02 {
-        position: absolute;
-        bottom: -25%;
-        left: 65%;
-        background-color: #fff;
-        border: 13px solid #ffff;
-        border-top-left-radius: 85px;
-        width: 395px;
-        height: 495px;
-        object-fit: cover;
-      }
-    }
-
-    .award {
-      position: absolute;
-      bottom: -15%;
-      left: 58%;
-      width: 185px;
-      height: 185px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      background-color: #ffffff;
-
-      &-icon {
-        i {
-          font-size: 55px;
-          color: #ed880a;
-        }
-      }
-
-      h6 {
-        font-size: 18px;
-        margin-top: 5px;
-      }
-    }
-  }
-}
-
-/*----------------------------------------*/
-/*  HOMEPAGE 04
-/*----------------------------------------*/
 .about-info04 {
   padding-top: 115px;
   padding-bottom: 27px;
@@ -314,11 +236,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
   .about-info-image {
     margin-left: -257px;
   }
-
   .about-info-text {
     h2 {
       color: white;
@@ -360,7 +280,6 @@
 
         p {
           font-family: $hind;
-          font-family: 500;
           font-size: 20px;
           line-height: 34px;
           color: #9dadb7;
@@ -374,6 +293,89 @@
       position: absolute;
       top: 31%;
       right: 5%;
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*  HOMEPAGE 04
+/*----------------------------------------*/
+.homepage-03 {
+  &.about-introduction {
+    padding-bottom: 260px;
+  }
+
+  .sub-section-heading {
+    margin-top: 75px;
+    p {
+      font-size: 18px;
+      font-family: $gilroy-medium;
+    }
+  }
+
+  .work-process {
+    max-width: 485px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      i {
+        color: #ed880a;
+      }
+    }
+  }
+
+  .about-intro-left {
+    position: relative;
+
+    .image {
+      position: relative;
+      margin-left: 25px;
+      .about01 {
+        border-top-right-radius: 75px;
+        width: 490px;
+        height: 550px;
+        object-fit: cover;
+      }
+
+      .about02 {
+        position: absolute;
+        bottom: -25%;
+        left: 65%;
+        background-color: #fff;
+        border: 13px solid #ffff;
+        border-top-left-radius: 85px;
+        width: 395px;
+        height: 495px;
+        object-fit: cover;
+      }
+    }
+
+    .award {
+      position: absolute;
+      bottom: -75px;
+      left: 215px;
+      width: 185px;
+      height: 185px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #ffffff;
+
+      &-icon {
+        i {
+          font-size: 55px;
+          color: #ed880a;
+        }
+      }
+
+      h6 {
+        font-size: 18px;
+        margin-top: 5px;
+      }
     }
   }
 }
@@ -409,6 +411,23 @@
 /*----------------------------------------*/
 
 /* Common max-Sizes */
+
+@media (min-width: 1201px) and(max-width: 1850px) {
+  .about-info04 {
+    .right-vcetor {
+      img {
+        right: 0%;
+      }
+    }
+    .about-info-image {
+      margin-left: 0px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .about {
     &-info {
@@ -425,9 +444,16 @@
 
   // Homepage-02 / Aboutus-02
   .aboutus02 {
+    padding-bottom: 90px;
     .small-feature {
       bottom: 30.1%;
       right: 30.5%;
+    }
+    &-wrapper-title {
+      h2 {
+        line-height: 48px;
+        margin-bottom: 0px;
+      }
     }
   }
   .aboutus02-image {
@@ -458,12 +484,17 @@
     }
   }
 
-  // homepage -04 / Aboutus -info
+  // homepage -03 / Aboutus -info
   .about-info04 {
     .about-info-image {
       margin-left: 0px;
       img {
         max-width: 100%;
+      }
+    }
+    .right-vcetor {
+      img {
+        display: none;
       }
     }
   }
@@ -530,18 +561,43 @@
   }
 }
 
-@media (min-width: 992px) and(max-width: 1024px) {
+@media (min-width: 992px) and(max-width: 1023px) {
   // homepage-02
-  // about us-02
   .aboutus02 {
     .small-feature {
       bottom: 26.1%;
       right: 40%;
     }
   }
+
+  // .homepage-03
+  .about-info {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  //  Homepage-03
+  .about-info04 {
+    padding-bottom: 0px !important;
+    .about-info-image {
+      margin-bottom: 0px !important;
+    }
+    .about-info-text {
+      h2 {
+        line-height: 76px;
+        padding-bottom: 0px !important;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .about-info04 {
+  }
 }
 
 @media (max-width: 1024px) {
@@ -563,7 +619,14 @@
 
 @media (max-width: 991px) {
   // homepage-02
-
+  .aboutus-introduction02 {
+    .aboutus02 {
+      &-wrapper {
+        max-width: 100%;
+        margin-left: 0px;
+      }
+    }
+  }
   // aboutus-introduction02-image
   .aboutus02 {
     &-image {
@@ -623,9 +686,14 @@
   }
 }
 
+@media (max-width: 768px) and(max-width:991px) {
+}
+
 @media (max-width: 767px) {
   .about {
     &-info {
+      padding-top: 60px;
+      padding-bottom: 0px;
       &-text {
         h2 {
           font-size: 32px;
@@ -696,6 +764,16 @@
   }
 }
 
+@media (min-width: 575px) and(max-width: 767px) {
+  .about-info {
+    .mask-group {
+      .mask1 {
+        bottom: -115px;
+      }
+    }
+  }
+}
+
 @media (max-width: 575px) {
   .about {
     &-info {
@@ -704,7 +782,7 @@
       }
       .mask-group {
         .mask1 {
-          bottom: -5px;
+          bottom: -105px;
         }
       }
     }
@@ -720,7 +798,7 @@
     &-wrapper-title {
       h2 {
         font-size: 26px;
-        line-height: 38px;
+        line-height: 36px !important;
       }
       p {
         font-size: 18px;
@@ -817,33 +895,77 @@
   }
 }
 
-@media (min-width: 320px) and(max-width: 419px) {
-  // Homepage -02 / Aboutus -02
-  .aboutus02 {
-    .small-feature {
-      right: 65px;
-      bottom: 52%;
-    }
-  }
-  .aboutus-introduction02 {
-    .small-feature {
-      bottom: 52%;
-      left: 65px;
-    }
-    .aboutus02-wrapper-title {
+@media (min-width: 320px) and(max-width: 574px) {
+  // Homepage-01
+  .about-info {
+    &-text {
       h2 {
-        line-height: 38px !important;
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    &-project {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .mask-group {
+      .mask1 {
+        bottom: -100px;
       }
     }
   }
+  // homepage-02
+  .aboutus-introduction02 {
+    .aboutus-introduction02-image {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .small-feature {
+      bottom: 60.5%;
+      left: 0px;
+      width: 100%;
+      height: 150px;
+      &-text {
+        p {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    .aboutus02-wrapper {
+      margin-top: 130px;
+      &-list {
+        ul {
+          li {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+  // .homepage-03
   .about-info04 {
     .about-info-text {
       h2 {
-        font-size: 48px;
+        font-size: 38px;
+        line-height: 52px;
+      }
+      .about-info-project {
+        margin-top: 45px;
+        .project-information {
+          margin: 0px;
+          margin-bottom: 15px;
+        }
       }
     }
   }
+}
 
+@media (min-width: 320px) and(max-width: 419px) {
   // our-teams
   .our-teams {
     .all-member {
@@ -908,9 +1030,6 @@
   .about-info-image {
     margin-left: 0;
   }
-  .about-info {
-    padding: 95px 0px;
-  }
 }
 
 /* Medium devices 768 - 991 */
@@ -967,7 +1086,6 @@
 @media #{$sm} {
   /* common area start */
   .about-info {
-    padding: 70px 0;
     .about-info-image {
       margin-left: 0;
       margin-bottom: 30px;

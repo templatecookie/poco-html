@@ -108,9 +108,15 @@
 /*----------------------------------------*/
 .our-team {
   background-color: #fffaf5;
-
+  padding: 130px 0px;
+  .section-heading {
+    margin-bottom: 60px;
+  }
   &-member {
     &-info {
+      padding-top: 20px;
+      padding-bottom: 30px;
+
       .top-information {
         p {
           margin-top: 5px;
@@ -121,7 +127,8 @@
 
       .bottom-information {
         max-width: 222px;
-
+        margin: auto;
+        margin-top: 15px;
         a {
           transition: 0.3s all linear;
           color: $secondary;
@@ -177,6 +184,12 @@
     }
   }
   .our-team {
+    .section-heading {
+      h2 {
+        font-size: 38px;
+        line-height: 48px;
+      }
+    }
     &-member {
       max-width: 350px;
       margin: auto;
@@ -184,6 +197,7 @@
     }
   }
 }
+
 @media (max-width: 575px) {
   .teams-modifi {
     margin: 0px;
@@ -196,6 +210,26 @@
     &-member {
       .member-info {
         width: 90%;
+      }
+    }
+  }
+  .our-team {
+    padding: 60px 0px;
+    .section-heading {
+      margin-bottom: 30px;
+      h2 {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+    .top-information {
+      h3 {
+        font-size: 26px;
+        line-height: 38px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
       }
     }
   }

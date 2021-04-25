@@ -130,7 +130,8 @@
     position: relative;
 
     .image {
-      margin-left: -120px;
+      margin-top: 5px;
+      margin-left: -205px;
     }
 
     .small-feature {
@@ -147,7 +148,8 @@
         box-shadow: 0px 6px 30px #5746ff;
       }
       &.sm-feauter-left {
-        box-sizing: 0px 6px 15px #4dadf7;
+        // it's not valid
+        // box-sizing: 0px 6px 15px #4dadf7;
       }
       &.sm-feauter-top {
         box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.13);
@@ -187,7 +189,11 @@
       right: 26%;
     }
   }
-
+  &.our-services {
+    .about-us-text {
+      margin-top: -50px;
+    }
+  }
   &-text {
     margin-top: -20px;
     margin-left: -20px;
@@ -288,7 +294,13 @@
 /*common devices- sizes */
 @media (max-width: 1200px) {
   .about-us {
+    &.our-services {
+      padding-bottom: 60px;
+    }
     &-image {
+      img {
+        max-width: 100%;
+      }
       .image {
         margin-left: 0px;
       }
@@ -304,6 +316,14 @@
     }
     &-text {
       margin-left: 0px;
+      .sub-heading {
+        p {
+          max-width: 100%;
+        }
+      }
+      .feature {
+        margin-bottom: 30px;
+      }
     }
   }
   .about-skill {
@@ -352,6 +372,21 @@
     &-text {
       margin-top: 100px;
     }
+    // Services
+    &.our-services {
+      margin: 0px;
+      .about-us-text {
+        margin-top: 0px;
+        .sub-heading h2 {
+          max-width: 100%;
+        }
+      }
+      .about-us-image {
+        .image {
+          margin-bottom: 30px;
+        }
+      }
+    }
   }
   .about-solution {
     .solution-wrapper {
@@ -388,6 +423,14 @@
 @media (max-width: 767px) {
   .about-skill {
     padding: 120px 0px;
+  }
+
+  // Service
+  .about-us {
+    &.our-services {
+      padding: 60px 0px;
+      padding-bottom: 90px;
+    }
   }
 }
 
@@ -434,14 +477,29 @@
   }
 }
 
-@media (max-width: 420px) and (max-width: 574px) {
-}
-
 @media (min-width: 320px) and (max-width: 574px) {
   .about-skill {
     &-pogressbar {
       .round-wrapper {
         margin: 45px 0px;
+      }
+    }
+  }
+  // Service
+  .about-us {
+    &.our-services {
+      .about-us-text {
+        .sub-heading {
+          h2 {
+            font-size: 28px;
+            line-height: 38px;
+            margin-bottom: 0px;
+          }
+        }
+        .primary__button {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }

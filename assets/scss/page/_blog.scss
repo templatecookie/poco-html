@@ -312,12 +312,14 @@
           span {
             color: #65729e;
             font-size: 14px;
-            font-size: $gilroy-regular;
+            // it's not valid
+            // font-size: $gilroy-regular;
 
             a {
               color: #ff465e;
               margin-right: 4px;
-              font-size: $gilroy-regular !important;
+              // it's not valid
+              // font-size: $gilroy-regular !important;
             }
           }
         }
