@@ -6599,6 +6599,9 @@ aside,
     font-size: 18px;
     line-height: 28px;
   }
+  .breadcrumArea .banner-image {
+    padding-bottom: 15px;
+  }
 }
 
 /* large devices 992 - 1169*/
@@ -9267,7 +9270,8 @@ aside,
 }
 
 .blog-area {
-  padding-top: 35px;
+  padding-top: 165px;
+  padding-bottom: 130px;
 }
 
 .blog-area .article-item {
@@ -9350,7 +9354,7 @@ aside,
 }
 
 .blog-area .article-item p.article-text {
-  margin-bottom: 30px;
+  margin-bottom: 55px;
   font-size: 18px;
 }
 
@@ -9487,13 +9491,7 @@ aside,
   transition: 0.3s all linear;
 }
 
-.blog-area .aside.sticky {
-  position: fixed;
-  top: 0;
-}
-
 .blog-area .aside .search {
-  max-width: 300px;
   padding: 20px;
   border: 1px solid #dee3ff;
   border-radius: 8px;
@@ -9527,7 +9525,6 @@ aside,
 }
 
 .blog-area .aside .recent-post {
-  max-width: 300px;
   padding: 20px;
   border: 1px solid #dee3ff;
   border-radius: 8px;
@@ -9578,7 +9575,6 @@ aside,
 }
 
 .blog-area .aside .blog-catagories {
-  max-width: 300px;
   padding: 20px;
   border: 1px solid #dee3ff;
   border-radius: 8px;
@@ -9611,7 +9607,6 @@ aside,
 }
 
 .blog-area .aside .archive-posts {
-  max-width: 300px;
   padding: 20px;
   border: 1px solid #dee3ff;
   border-radius: 8px;
@@ -9642,7 +9637,6 @@ aside,
 }
 
 .blog-area .aside .blog-gallery {
-  max-width: 300px;
   padding: 20px;
   border: 1px solid #dee3ff;
   border-radius: 8px;
@@ -9665,7 +9659,6 @@ aside,
 }
 
 .blog-area .aside .blog-meta {
-  max-width: 300px;
   padding: 20px;
   border: 1px solid #dee3ff;
   border-radius: 8px;
@@ -9965,8 +9958,33 @@ aside,
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 @media (max-width: 991px) {
+  .blog-area {
+    padding: 90px 0px;
+  }
+  .blog-area .article-item h3 {
+    line-height: 46px;
+  }
+  .blog-area .article-item .article-thumb {
+    max-width: 535px;
+  }
+  .blog-area .article-item .article-thumb img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .blog-area .article-item p.article-text {
+    margin-bottom: 30px;
+  }
+  .blog-area .blog-quotes h3 {
+    line-height: 52px;
+  }
   .aside.sticky {
     position: static !important;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .blog-area .article-item .article-info {
+    max-width: 100%;
   }
 }
 
@@ -9982,13 +10000,6 @@ aside,
   .blog-area .article-item h3 {
     font-size: 28px;
     line-height: 38px;
-  }
-  .blog-area .article-item .article-info {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .blog-area .article-item .article-info > div {
-    margin-bottom: 5px;
   }
   .blog-details .article-item .author-details {
     flex-direction: column;
@@ -10007,6 +10018,38 @@ aside,
   }
   .blog-details .article-item .comments-section-area.comments-section-areaReply {
     margin-left: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .blog-area {
+    padding: 60px 0px;
+  }
+  .blog-area .article-item h3 {
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  .blog-area .article-item .article-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blog-area .article-item .article-info > div {
+    margin-bottom: 8px;
+  }
+  .blog-area .article-item .article-info > div:last-child {
+    margin-bottom: 0px;
+  }
+  .blog-area .article-item .article-thumb {
+    margin-bottom: 15px;
+  }
+  .blog-area .article-item p.article-text {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .blog-area .blog-quotes {
+    margin: 15px 0px;
   }
 }
 

@@ -337,52 +337,68 @@ function enableScrolling() {
   window.onscroll = function () {};
 }
 
+// $(function () {
+//   var $sidebar = $('.aside'),
+//     $window = $(window),
+//     offset = $sidebar.offset(),
+//     topPadding = 10;
+//   section = $('.blog-area');
+
+//   $window.scroll(function () {
+//     if ($window.scrollTop() > offset.top) {
+//       if ($window.scrollTop() < section.height() && $window.width() > 991) {
+//         $sidebar.stop().animate({
+//           marginTop: $window.scrollTop() - offset.top + topPadding,
+//         });
+//       }
+//     } else {
+//       $sidebar.stop().animate({
+//         marginTop: 0,
+//       });
+//     }
+//   });
+// });
+
 // sidebar stickybar fixed when scrolling
-let topLimit = Math.round($('.aside').offset().top);
-let bottomLimit = Math.round($('footer').offset().top);
+// let topLimit = Math.round($('.aside').offset().top);
+// let bottomLimit = Math.round($('footer').offset().top);
 
-let height = $(window).scrollTop();
-// console.log(topLimit); // 670
-// console.log(bottomLimit); //3451
-// console.log(height); // 0
-$(window).scroll(function () {
-  console.log(height);
-  // console.log(topLimit);
-  // console.log(topLimit <= $(window).scrollTop());
-  if (topLimit <= $(window).scrollTop()) {
-    $('.aside').addClass('sticky');
-  } else {
-    $('.aside').removeClass('sticky');
-  }
+// let height = $(window).scrollTop();
 
-  if (1300 <= $(window).scrollTop()) {
-    // $('.aside').removeClass('sticky');
-    $('.aside').css({
-      top: '-150px',
-    });
-  }
-  if (2100 <= $(window).scrollTop()) {
-    // $('.aside').removeClass('sticky');
-    $('.aside').css({
-      top: '-620px',
-    });
-  }
-  if (2500 <= $(window).scrollTop()) {
-    // $('.aside').removeClass('sticky');
-    $('.aside').css({
-      top: '-912px',
-    });
-  }
-  if (2900 <= $(window).scrollTop()) {
-    // $('.aside').removeClass('sticky');
-    $('.aside').css({
-      top: '-1500px',
-    });
-  }
-  if (3200 <= $(window).scrollTop()) {
-    // $('.aside').removeClass('sticky');
-    $('.aside').css({
-      top: '-1520px',
-    });
-  }
-});
+// $(window).scroll(function () {
+//   console.log(height);
+
+//   if (topLimit <= $(window).scrollTop()) {
+//     $('.aside').addClass('sticky');
+//   } else {
+//     $('.aside').removeClass('sticky');
+//   }
+
+//   if (1300 <= $(window).scrollTop()) {
+//     $('.aside').css({
+//       top: '-150px',
+//     });
+//   }
+//   if (2100 <= $(window).scrollTop()) {
+//     $('.aside').css({
+//       top: '-620px',
+//     });
+//   }
+//   if (2500 <= $(window).scrollTop()) {
+//     $('.aside').css({
+//       top: '-912px',
+//     });
+//   }
+//   if (2900 <= $(window).scrollTop()) {
+//     // $('.aside').removeClass('sticky');
+//     $('.aside').css({
+//       top: '-1500px',
+//     });
+//   }
+//   if (3200 <= $(window).scrollTop()) {
+//     // $('.aside').removeClass('sticky');
+//     $('.aside').css({
+//       top: '-1520px',
+//     });
+//   }
+// });
