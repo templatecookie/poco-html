@@ -179,6 +179,9 @@
 
 @media (max-width: 767px) {
   .our-teams {
+    &.teams-modifi {
+      margin: 0;
+    }
     .section-title {
       h2 {
         font-size: 42px;
@@ -242,6 +245,9 @@
   .our-teams {
     padding: 60px 0px;
     padding-bottom: 0px;
+    &.teams-modifi {
+      padding-bottom: 60px;
+    }
     .section-title {
       margin-top: 0px;
       margin-bottom: 30px;
@@ -273,6 +279,18 @@
       p {
         font-size: 16px;
         line-height: 26px;
+      }
+    }
+  }
+  .mask-group {
+    .mask02 {
+      display: none;
+    }
+  }
+  .teams-modifi {
+    .mask-group {
+      .mask01 {
+        top: -70px;
       }
     }
   }
