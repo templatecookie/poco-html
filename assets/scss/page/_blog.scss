@@ -749,9 +749,14 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .blog-area {
     padding: 90px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .blog-area {
     .article-item {
       h3 {
         line-height: 46px;

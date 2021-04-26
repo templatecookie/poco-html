@@ -6566,6 +6566,7 @@ aside,
   }
   .breadcrumArea .banner-image img {
     height: 250px;
+    object-fit: contain;
   }
 }
 
@@ -6667,8 +6668,8 @@ aside,
     line-height: 40px;
   }
   .breadcrumArea .breadcrumb-wrapper {
-    bottom: -75px !important;
-    left: 40px !important;
+    bottom: -75px;
+    left: 0px;
   }
   .breadcrumArea .breadcrumb-wrapper .breadcrumb {
     padding: 10px 15px !important;
@@ -9957,10 +9958,13 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .blog-area {
     padding: 90px 0px;
   }
+}
+
+@media (max-width: 991px) {
   .blog-area .article-item h3 {
     line-height: 46px;
   }
