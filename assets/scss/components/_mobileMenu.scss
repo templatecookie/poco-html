@@ -164,3 +164,14 @@ aside,
     display: none !important;
   }
 }
+
+@media (min-width: 320px) and (max-width: 574px) {
+  aside {
+    .asidesearch-bar {
+      margin-right: 30px;
+    }
+  }
+  .close-sidebar {
+    margin-right: 35px;
+  }
+}

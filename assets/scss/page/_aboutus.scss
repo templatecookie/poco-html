@@ -328,7 +328,7 @@
     }
   }
   .about-skill {
-    padding: 145px 0px;
+    padding: 90px 0px;
     &-wrapper {
       margin-top: -30px;
     }
@@ -425,14 +425,21 @@
       }
     }
     &-image {
+      display: flex;
+      justify-content: center;
       .sm-feauter-top {
         left: 280px;
       }
       .sm-feauter-bottom {
         left: 405px;
       }
+      img {
+        height: 350px;
+        object-fit: contain;
+      }
     }
   }
+
   .about-solution {
     padding-bottom: 90px;
     .solution-wrapper {
@@ -463,6 +470,28 @@
       }
     }
   }
+  .about-skill {
+    &-image {
+      img {
+        height: 550px;
+        margin-bottom: 30px;
+      }
+    }
+    &-wrapper {
+      .about-skill-pogressbar {
+        justify-content: space-around;
+        .round-wrapper {
+          margin: 0px;
+          .skill-text {
+            margin-top: 0px;
+            p {
+              padding-top: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -473,10 +502,6 @@
     &-image {
       display: flex;
       justify-content: center;
-
-      img {
-        margin-bottom: 60px;
-      }
     }
   }
 }
@@ -531,8 +556,6 @@
       }
     }
   }
-  .about-solution {
-  }
 }
 
 @media (max-width: 575px) {
@@ -543,6 +566,11 @@
           border-radius: 0px;
           padding: 15px;
         }
+      }
+    }
+    &-image {
+      .image {
+        margin-top: 0px;
       }
     }
   }
@@ -568,12 +596,42 @@
 
 @media (min-width: 320px) and (max-width: 574px) {
   .about-skill {
+    padding: 60px 0px;
     &-pogressbar {
+      flex-direction: column;
       .round-wrapper {
-        margin: 45px 0px;
+        margin: 15px 0px !important;
+      }
+    }
+    &-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: -15px;
+      img {
+        margin-bottom: 15px;
+        object-fit: contain;
+      }
+    }
+    &-title {
+      h2 {
+        font-size: 22px;
+        line-height: 36px;
+      }
+    }
+    &-wrapper {
+      .about-skill-title {
+        margin-bottom: 0px;
+        h2 {
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 26px;
+        }
       }
     }
   }
+
   // Service
   .about-us {
     padding-top: 0px;
@@ -601,11 +659,19 @@
     }
     &-text {
       margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .sub-heading {
+        margin-bottom: 15px;
         h2 {
-          font-size: 28px;
-          line-height: 42px;
-          margin-bottom: 15px;
+          font-size: 22px;
+          line-height: 32px;
+          margin-bottom: 0px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 22px;
         }
       }
     }
@@ -619,8 +685,20 @@
     .section-title {
       margin-bottom: 30px;
       h2 {
-        font-size: 32px;
-        line-height: 46px;
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+    .solution-wrapper {
+      margin-bottom: 0px;
+      .solution-title {
+        &.center {
+          margin-bottom: 15px;
+          p {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
       }
     }
   }

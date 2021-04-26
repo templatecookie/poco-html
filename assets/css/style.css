@@ -949,6 +949,15 @@ aside,
   }
 }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  aside .asidesearch-bar {
+    margin-right: 30px;
+  }
+  .close-sidebar {
+    margin-right: 35px;
+  }
+}
+
 /*----------------------------------------*/
 /*  SEarch Box CSS
 /*----------------------------------------*/
@@ -2447,10 +2456,6 @@ aside,
   padding-bottom: 160px;
 }
 
-.our-teams .our-teams-member .member-info {
-  bottom: -25px;
-}
-
 .our-teams .our-teams-member .member-info .name h5 {
   font-size: 18px;
 }
@@ -2542,6 +2547,17 @@ aside,
   }
 }
 
+@media (max-width: 1024px) {
+  .aboutus-introduction02 .aboutus02-wrapper-title h2 {
+    line-height: 52px;
+    margin-bottom: 0px;
+  }
+  .aboutus-introduction02 .small-feature {
+    bottom: 25%;
+    left: 42%;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1199px) {
   .about-info04 .right-vcetor img {
     top: 25%;
@@ -2592,20 +2608,6 @@ aside,
   .about-info04 .about-info-text p {
     margin-bottom: 15px;
   }
-}
-
-@media (max-width: 1024px) {
-  .aboutus-introduction02 .aboutus02-wrapper-title h2 {
-    line-height: 52px;
-    margin-bottom: 0px;
-  }
-  .aboutus-introduction02 .small-feature {
-    bottom: 25%;
-    left: 42%;
-  }
-}
-
-@media (max-width: 991px) {
   .aboutus-introduction02 .aboutus02-wrapper {
     max-width: 100%;
     margin-left: 0px;
@@ -2689,6 +2691,15 @@ aside,
   .about-skill-pogressbar {
     justify-content: center;
   }
+  .our-teams-member {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: auto;
+  }
+  .our-teams .all-member .member-info {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
@@ -2736,17 +2747,6 @@ aside,
   }
   .about-info04 .about-info-text .about-info-project .project-information {
     z-index: 9;
-  }
-  .about-skill-title h2 {
-    font-size: 28px !important;
-    line-height: 48px !important;
-  }
-  .about-skill-pogressbar {
-    flex-direction: column;
-  }
-  .about-skill-pogressbar .round-wrapper {
-    margin-right: 0px;
-    margin-bottom: 30px;
   }
   .homepage-03 .sub-section-heading h2 {
     font-size: 38px;
@@ -2919,11 +2919,6 @@ aside,
     right: 52%;
     bottom: 48%;
   }
-  /* extra Small devices 420 */
-}
-
-@media only screen and (min-width: 420px) and (max-width: 574px) and (max-width: 420px) {
-  /* common area start */
 }
 
 /*----------------------------------------*/
@@ -5284,9 +5279,16 @@ aside,
     font-size: 28px;
     line-height: 38px;
   }
+  .testimonial-area.trust-us .section-title p {
+    font-size: 14px;
+    line-height: 22px;
+  }
   .testimonial-area.trust-us .mask-group2 .mask6 {
-    top: 20px;
-    left: 10px;
+    display: none;
+  }
+  .testimonial-area .testimonial-slider .testimonial-item p {
+    font-size: 14px;
+    line-height: 22px;
   }
   .testimonial-area .testimonial-wrapper .slider-arrows {
     bottom: 30px;
@@ -6126,6 +6128,10 @@ aside,
   padding: 130px 0px;
 }
 
+.our-teams-member {
+  margin-bottom: 75px;
+}
+
 .our-teams-member:hover .member-info {
   background-color: #ff465e;
 }
@@ -6152,7 +6158,7 @@ aside,
 
 .our-teams-member .member-info {
   position: absolute;
-  bottom: 25px;
+  bottom: 50px;
   left: 0;
   right: 0;
   transition: 0.3s all linear;
@@ -6249,6 +6255,9 @@ aside,
 /*----------------------------------------*/
 /* common devices - Sizes */
 @media (max-width: 1200px) {
+  .our-teams {
+    padding: 90px 0px;
+  }
   .our-teams-member {
     display: flex;
     justify-content: center;
@@ -6259,17 +6268,33 @@ aside,
   .our-team-member {
     margin-bottom: 40px;
   }
+  .our-teams {
+    padding: 60px 0px;
+  }
   .our-teams .section-title {
-    margin: 60px 0px;
+    margin: 30px 0px;
   }
 }
 
 @media (max-width: 767px) {
+  .our-teams .section-title h2 {
+    font-size: 42px;
+    line-height: 56px;
+  }
   .our-teams .mask-group .mask01 {
     top: -45px;
   }
   .our-teams .mask-group .mask02 {
     top: -2px;
+  }
+  .our-teams-member {
+    margin-bottom: -35px;
+  }
+  .our-teams .all-member .member-info {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    bottom: 65px;
   }
   .our-team .section-heading h2 {
     font-size: 38px;
@@ -6287,11 +6312,21 @@ aside,
     margin: 0px;
     border-radius: 0px;
   }
+  .our-teams .section-title {
+    margin-bottom: 15px;
+  }
+  .our-teams .all-member {
+    margin-top: 0px;
+  }
+  .our-teams .all-member .member-info {
+    width: 265px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .our-teams {
     padding: 60px 0px;
+    padding-bottom: 0px;
   }
   .our-teams .section-title {
     margin-top: 0px;
@@ -6301,14 +6336,8 @@ aside,
     font-size: 32px;
     line-height: 46px;
   }
-  .our-teams-member .member-info {
-    margin: 0;
-    bottom: 0px !important;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .our-teams .all-member {
-    margin-top: 60px;
+  .our-teams .all-member .member-info {
+    bottom: 50px;
   }
   .our-team {
     padding: 60px 0px;
@@ -6355,10 +6384,6 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .our-teams {
-    padding-top: 70px !important;
-    padding-bottom: 70px !important;
-  }
   .our-teams .all-member {
     margin-top: 20px !important;
   }
@@ -6376,48 +6401,17 @@ aside,
 
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
-  .our-teams {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-  }
   .our-teams .our-teams-member .image {
     text-align: center !important;
   }
   .our-teams .all-member {
     margin-top: 25px !important;
   }
-  .our-teams .all-member .member-info {
-    max-width: 60%;
-    margin: 0 auto;
-  }
   .our-teams .all-member .member-info .name h5 {
     font-size: 18px !important;
   }
   .our-teams .all-member .member-info .name p {
     font-size: 14px !important;
-  }
-  .our-teams-member .member-info {
-    position: relative;
-    margin: 0px 40px;
-  }
-}
-
-/* Small devices 420 - 574 */
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  .our-teams {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-  }
-  .our-teams .section-title {
-    margin-top: 60px;
-  }
-  .our-teams .section-title h2 {
-    font-size: 32px;
-    line-height: 42px;
-  }
-  .our-teams .our-teams-member .image {
-    text-align: center !important;
   }
 }
 
@@ -7800,7 +7794,7 @@ aside,
     margin-bottom: 30px;
   }
   .about-skill {
-    padding: 145px 0px;
+    padding: 90px 0px;
   }
   .about-skill-wrapper {
     margin-top: -30px;
@@ -7880,11 +7874,19 @@ aside,
   .about-us.our-services .about-us-image .image {
     margin-bottom: 30px;
   }
+  .about-us-image {
+    display: flex;
+    justify-content: center;
+  }
   .about-us-image .sm-feauter-top {
     left: 280px;
   }
   .about-us-image .sm-feauter-bottom {
     left: 405px;
+  }
+  .about-us-image img {
+    height: 350px;
+    object-fit: contain;
   }
   .about-solution {
     padding-bottom: 90px;
@@ -7912,6 +7914,22 @@ aside,
     top: -30px;
     right: 35px;
   }
+  .about-skill-image img {
+    height: 550px;
+    margin-bottom: 30px;
+  }
+  .about-skill-wrapper .about-skill-pogressbar {
+    justify-content: space-around;
+  }
+  .about-skill-wrapper .about-skill-pogressbar .round-wrapper {
+    margin: 0px;
+  }
+  .about-skill-wrapper .about-skill-pogressbar .round-wrapper .skill-text {
+    margin-top: 0px;
+  }
+  .about-skill-wrapper .about-skill-pogressbar .round-wrapper .skill-text p {
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -7921,9 +7939,6 @@ aside,
   .about-skill-image {
     display: flex;
     justify-content: center;
-  }
-  .about-skill-image img {
-    margin-bottom: 60px;
   }
 }
 
@@ -7962,6 +7977,9 @@ aside,
     border-radius: 0px;
     padding: 15px;
   }
+  .about-us-image .image {
+    margin-top: 0px;
+  }
   .about-solution {
     margin: 0px;
     border-radius: 0px;
@@ -7977,8 +7995,37 @@ aside,
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
+  .about-skill {
+    padding: 60px 0px;
+  }
+  .about-skill-pogressbar {
+    flex-direction: column;
+  }
   .about-skill-pogressbar .round-wrapper {
-    margin: 45px 0px;
+    margin: 15px 0px !important;
+  }
+  .about-skill-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+  }
+  .about-skill-image img {
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+  .about-skill-title h2 {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .about-skill-wrapper .about-skill-title {
+    margin-bottom: 0px;
+  }
+  .about-skill-wrapper .about-skill-title h2 {
+    margin-bottom: 15px;
+  }
+  .about-skill-wrapper .about-skill-title p {
+    font-size: 14px;
+    line-height: 26px;
   }
   .about-us {
     padding-top: 0px;
@@ -7999,11 +8046,21 @@ aside,
   }
   .about-us-text {
     margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us-text .sub-heading {
+    margin-bottom: 15px;
   }
   .about-us-text .sub-heading h2 {
-    font-size: 28px;
-    line-height: 42px;
-    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 0px;
+  }
+  .about-us-text .sub-heading p {
+    font-size: 14px;
+    line-height: 22px;
   }
   .about-us .alart-boldtext {
     margin-left: 0px;
@@ -8016,8 +8073,18 @@ aside,
     margin-bottom: 30px;
   }
   .about-solution .section-title h2 {
-    font-size: 32px;
-    line-height: 46px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .about-solution .solution-wrapper {
+    margin-bottom: 0px;
+  }
+  .about-solution .solution-wrapper .solution-title.center {
+    margin-bottom: 15px;
+  }
+  .about-solution .solution-wrapper .solution-title.center p {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 

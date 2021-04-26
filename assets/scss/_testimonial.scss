@@ -705,13 +705,28 @@
       }
     }
     &.trust-us {
+      .section-title {
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
       .mask-group2 {
         .mask6 {
-          top: 20px;
-          left: 10px;
+          display: none;
         }
       }
     }
+
+    .testimonial-slider {
+      .testimonial-item {
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
     .testimonial-wrapper {
       .slider-arrows {
         bottom: 30px;
@@ -777,6 +792,7 @@
     }
   }
 }
+
 @media (min-width: 320px) and (max-width: 419px) {
   .testimonial02 {
     .section-title {

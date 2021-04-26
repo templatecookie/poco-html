@@ -6,6 +6,7 @@
 .our-teams {
   padding: 130px 0px;
   &-member {
+    margin-bottom: 75px;
     &:hover {
       .member-info {
         background-color: #ff465e;
@@ -38,7 +39,7 @@
 
     .member-info {
       position: absolute;
-      bottom: 25px;
+      bottom: 50px;
       left: 0;
       right: 0;
       transition: 0.3s all linear;
@@ -153,6 +154,7 @@
 @media (max-width: 1200px) {
   // Teams Section start
   .our-teams {
+    padding: 90px 0px;
     &-member {
       display: flex;
       justify-content: center;
@@ -168,19 +170,38 @@
     }
   }
   .our-teams {
+    padding: 60px 0px;
     .section-title {
-      margin: 60px 0px;
+      margin: 30px 0px;
     }
   }
 }
+
 @media (max-width: 767px) {
   .our-teams {
+    .section-title {
+      h2 {
+        font-size: 42px;
+        line-height: 56px;
+      }
+    }
     .mask-group {
       .mask01 {
         top: -45px;
       }
       .mask02 {
         top: -2px;
+      }
+    }
+    &-member {
+      margin-bottom: -35px;
+    }
+    .all-member {
+      .member-info {
+        position: relative;
+        max-width: 100%;
+        margin: 0;
+        bottom: 65px;
       }
     }
   }
@@ -204,11 +225,23 @@
     margin: 0px;
     border-radius: 0px;
   }
+  .our-teams {
+    .section-title {
+      margin-bottom: 15px;
+    }
+    .all-member {
+      margin-top: 0px;
+      .member-info {
+        width: 265px;
+      }
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
   .our-teams {
     padding: 60px 0px;
+    padding-bottom: 0px;
     .section-title {
       margin-top: 0px;
       margin-bottom: 30px;
@@ -217,18 +250,10 @@
         line-height: 46px;
       }
     }
-    &-member {
-      .member-info {
-        // width: 90%;
-        // position: static;
-        margin: 0;
-        bottom: 0px !important;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
     .all-member {
-      margin-top: 60px;
+      .member-info {
+        bottom: 50px;
+      }
     }
   }
   .our-team {
@@ -291,9 +316,6 @@
 @media #{$md} {
   // Globally Our Teams
   .our-teams {
-    padding-top: 70px !important;
-    padding-bottom: 70px !important;
-
     .all-member {
       margin-top: 20px !important;
 
@@ -321,8 +343,6 @@
 @media #{$sm} {
   // Globally Our Teams
   .our-teams {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
     .our-teams-member .image {
       text-align: center !important;
     }
@@ -330,8 +350,6 @@
       margin-top: 25px !important;
 
       .member-info {
-        max-width: 60%;
-        margin: 0 auto;
         .name {
           h5 {
             font-size: 18px !important;
@@ -342,35 +360,6 @@
           }
         }
       }
-    }
-    &-member {
-      .member-info {
-        position: relative;
-        margin: 0px 40px;
-      }
-    }
-  }
-}
-
-/* Small devices 420 - 574 */
-@media #{$xs} {
-}
-
-/* extra Small devices 420 */
-@media #{$xsm} {
-  // Globally Our Teams
-  .our-teams {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-    .section-title {
-      margin-top: 60px;
-      h2 {
-        font-size: 32px;
-        line-height: 42px;
-      }
-    }
-    .our-teams-member .image {
-      text-align: center !important;
     }
   }
 }
