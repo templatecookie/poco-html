@@ -618,6 +618,9 @@
         margin-left: 0px;
       }
     }
+    .small-feature {
+      display: none;
+    }
   }
   // aboutus-introduction02-image
   .aboutus02 {
@@ -918,7 +921,7 @@
       }
     }
     .aboutus02-wrapper {
-      margin-top: 130px;
+      margin-top: 0px;
       &-list {
         ul {
           li {

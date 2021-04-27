@@ -143,10 +143,10 @@
 
 @media (max-width: 991px) {
   .services-introduction {
-    padding-bottom: 0px;
     .section-heading {
       h2 {
-        line-height: 58px;
+        font-size: 38px;
+        line-height: 48px;
         margin-bottom: 15px;
       }
       p {
@@ -154,6 +154,7 @@
       }
     }
     &-item {
+      float: left;
       &.mb-55 {
         margin-bottom: 30px;
       }
