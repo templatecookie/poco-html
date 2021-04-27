@@ -464,8 +464,6 @@
     .footer-area {
       &-about {
         margin-top: 15px;
-        p {
-        }
       }
       &-lists {
         margin-bottom: 15px;
@@ -553,17 +551,10 @@
   }
 }
 
-/* Medium devices 768 - 991 */
-@media #{$md} {
-}
-
 /* Small devices 575 - 767 */
 @media #{$sm} {
   // Globally Footer
   .footer-area {
-    .footer-area-shape {
-      // display: none !important;
-    }
     .footer-area-about h4,
     .footer-area-lists h4 {
       font-size: 22px;

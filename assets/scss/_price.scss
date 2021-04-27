@@ -77,8 +77,6 @@
         &:hover {
           color: white;
           background: $tertiary;
-          // it's warning
-          // border-color: $tertiary;
         }
       }
     }
@@ -503,17 +501,3 @@
     }
   }
 }
-
-// /* Small devices 575 - 767 */
-// @media #{$sm} {
-//     /* common area start */
-// }
-
-// /* Small devices 420 - 574 */
-// @media #{$xs} {
-//     /* common area start */
-// }
-// /* extra Small devices 420 */
-// @media #{$xsm} {
-//     /* common area start */
-// }

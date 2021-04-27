@@ -63,9 +63,6 @@
   }
 }
 
-@media (min-width: 1024px) and(max-width: 1199px) {
-}
-
 @media (max-width: 991px) {
   .newsletter-area {
     &-form {
@@ -141,18 +138,4 @@
       }
     }
   }
-}
-
-/* Small devices 575 - 767 */
-@media #{$sm} {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media #{$xs} {
-  /* common area start */
-}
-/* extra Small devices 420 */
-@media #{$xsm} {
-  /* common area start */
 }

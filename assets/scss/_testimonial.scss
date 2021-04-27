@@ -193,8 +193,6 @@
       span {
         color: #65729e;
         font-family: $gilroy-medium;
-        // It's not valid
-        // margin-left: 10px solid #141824;
         padding-left: 8px;
       }
 
@@ -353,9 +351,7 @@
 
     &:hover {
       .testimonial-icon {
-        // it's warning
         background-color: $tertiary;
-        // border-color: $tertiary;
       }
     }
   }
@@ -371,9 +367,7 @@
       @include transition(0.3s);
 
       &:hover {
-        // it's warning
         background-color: $tertiary;
-        // border-color: $tertiary;
       }
     }
   }
@@ -1073,22 +1067,3 @@
     padding: 85px 0px 95px 0px !important;
   }
 }
-
-// /* Medium devices 768 - 991 */
-// @media #{$md} {
-//     /* common area start */
-// }
-
-// /* Small devices 575 - 767 */
-// @media #{$sm} {
-//     /* common area start */
-// }
-
-// /* Small devices 420 - 574 */
-// @media #{$xs} {
-//     /* common area start */
-// }
-// /* extra Small devices 420 */
-// @media #{$xsm} {
-//     /* common area start */
-// }

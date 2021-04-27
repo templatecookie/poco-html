@@ -26,7 +26,6 @@
   }
   .shape {
     img {
-      // z-index: -3;
       position: absolute;
     }
     .top {
@@ -173,8 +172,6 @@
     max-width: 290px;
     margin: 0 auto;
     h3 {
-      // font-size: 28px;
-      // line-height: 38px;
       margin-bottom: 20px;
       text-align: center;
     }
@@ -351,8 +348,7 @@
       }
     }
   }
-  .design-services {
-  }
+
   .our-work-process {
     .section-title {
       h2 {
@@ -424,28 +420,4 @@
       top: -40px;
     }
   }
-}
-
-/* large devices 992 - 1169*/
-@media #{$lg} {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-  /* common area start */
-}
-
-/* Small devices 575 - 767 */
-@media #{$sm} {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media #{$xs} {
-  /* common area start */
-}
-/* extra Small devices 420 */
-@media #{$xsm} {
-  /* common area start */
 }

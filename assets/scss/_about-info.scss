@@ -177,7 +177,6 @@
   position: relative;
 
   .aboutus-introduction02-image {
-    // margin-left: 0p;
     position: relative;
 
     img {
@@ -561,7 +560,6 @@
     }
     .aboutus-introduction02-image {
       &::before {
-        // z-index: 1;
         top: -2px;
         left: 20px;
       }
@@ -679,9 +677,6 @@
       }
     }
   }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
 }
 
 @media (max-width: 767px) {
@@ -1077,10 +1072,7 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-  /* common area start */
-
   // Homepage-02 / About-us
-
   .aboutus02 {
     &-image {
       &::before {

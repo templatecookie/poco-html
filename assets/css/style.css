@@ -31,45 +31,40 @@
     17. Footer CSS
 
 -----------------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Teko:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Teko:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: 'Gilroy-Bold';
-  src: url('../fonts/gilroy/Gilroy-Bold.woff');
+  src: url("../fonts/gilroy/Gilroy-Bold.woff");
   /* IE9 Compat Modes */
-  src: url('../fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
-    url('../fonts/gilroy/Gilroy-Bold.woff') format('woff');
+  src: url("../fonts/gilroy/Gilroy-Bold.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Gilroy-Heavy';
-  src: url('../fonts/gilroy/Gilroy-Heavy.woff');
+  src: url("../fonts/gilroy/Gilroy-Heavy.woff");
   /* IE9 Compat Modes */
-  src: url('../fonts/gilroy/Gilroy-Heavy.woff2') format('woff2'),
-    url('../fonts/gilroy/Gilroy-Heavy.woff') format('woff');
+  src: url("../fonts/gilroy/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Heavy.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Gilroy-Light';
-  src: url('../fonts/gilroy/Gilroy-Light.woff');
+  src: url("../fonts/gilroy/Gilroy-Light.woff");
   /* IE9 Compat Modes */
-  src: url('../fonts/gilroy/Gilroy-Light.woff2') format('woff2'),
-    url('../fonts/gilroy/Gilroy-Light.woff') format('woff');
+  src: url("../fonts/gilroy/Gilroy-Light.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Light.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Gilroy-Medium';
-  src: url('../fonts/gilroy/Gilroy-Medium.woff');
+  src: url("../fonts/gilroy/Gilroy-Medium.woff");
   /* IE9 Compat Modes */
-  src: url('../fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),
-    url('../fonts/gilroy/Gilroy-Medium.woff') format('woff');
+  src: url("../fonts/gilroy/Gilroy-Medium.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Gilroy-Regular';
-  src: url('../fonts/gilroy/Gilroy-Regular.woff');
+  src: url("../fonts/gilroy/Gilroy-Regular.woff");
   /* IE9 Compat Modes */
-  src: url('../fonts/gilroy/Gilroy-Regular.woff2') format('woff2'),
-    url('../fonts/gilroy/Gilroy-Regular.woff') format('woff');
+  src: url("../fonts/gilroy/Gilroy-Regular.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Regular.woff") format("woff");
 }
 
 /* 1. Theme default css */
@@ -86,7 +81,7 @@ html {
 body {
   font-size: 16px;
   line-height: 27px;
-  font-family: 'Gilroy-Regular';
+  font-family: "Gilroy-Regular";
   overflow-x: hidden;
 }
 
@@ -154,7 +149,7 @@ h5,
 h6 {
   color: #000560;
   margin: 0px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 h1 {
@@ -198,7 +193,7 @@ li {
 
 p {
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #65729e;
   margin: 0px;
   line-height: 27px;
@@ -217,7 +212,7 @@ p {
 *::placeholder {
   color: #65729e;
   font-size: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   opacity: 1;
 }
 
@@ -261,7 +256,7 @@ p {
   padding: 20px 40px;
   line-height: 1;
   border-radius: 50px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   transition: 0.3s;
 }
 
@@ -331,7 +326,7 @@ p {
 .section-title h2 {
   font-size: 60px;
   line-height: 118px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -438,7 +433,6 @@ p {
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   /* common area start */
-  /* common area start */
   h1 {
     font-size: 32px;
     line-height: 1.2;
@@ -458,16 +452,6 @@ p {
   h5 {
     font-size: 14px;
   }
-}
-
-/* Small devices 420 - 574 */
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
 }
 
 /*----------------------------------------*/
@@ -497,7 +481,7 @@ p {
   padding: 15px 0;
   line-height: 42px;
   position: relative;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   transition: 0.3s;
 }
 
@@ -545,7 +529,7 @@ p {
   color: #65729e;
   font-size: 18px;
   line-height: 42px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   transition: 0.3s;
 }
 
@@ -685,7 +669,7 @@ p {
 }
 
 .header-area04 .main-menu li a {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
@@ -700,7 +684,7 @@ p {
 
 .header-area04 .contact-number .primary__button {
   border: 2px solid #3c5b6b;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
@@ -1064,7 +1048,7 @@ aside,
   color: #65729e;
   font-size: 21px;
   line-height: 36px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   padding: 25px 0px;
   display: inline-block;
 }
@@ -1213,7 +1197,7 @@ aside,
 
 .bannerArea02__wrapper p {
   font-size: 24px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   line-height: 40px;
   max-width: 80%;
 }
@@ -1430,7 +1414,7 @@ aside,
 
 .bannerArea04__wrapper p {
   font-size: 26px;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   line-height: 42px;
   font-weight: 500;
   color: #9dadb7;
@@ -1443,7 +1427,7 @@ aside,
 
 .bannerArea04__wrapper .banner-button .primary__button {
   border-radius: 0;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 24px;
   font-weight: 500;
 }
@@ -1458,7 +1442,7 @@ aside,
 
 .bannerArea04__title {
   text-transform: uppercase;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 135px;
   line-height: 135px;
   font-weight: 600;
@@ -1468,7 +1452,7 @@ aside,
 
 .bannerArea04__title span {
   text-transform: uppercase;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 32px;
   line-height: 48px;
   font-weight: 600;
@@ -1602,9 +1586,7 @@ aside,
   .bannerArea.breadcrumb-area .breadcrumb-wrapper .breadcrumb {
     margin-bottom: -50px;
   }
-  .bannerArea.contactBanner .banner-image,
-  .bannerArea.projectBanner .banner-image,
-  .bannerArea.blogBanner .banner-image {
+  .bannerArea.contactBanner .banner-image, .bannerArea.projectBanner .banner-image, .bannerArea.blogBanner .banner-image {
     bottom: -215px;
   }
   .bannerArea02_wrapper {
@@ -1897,10 +1879,7 @@ aside,
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  .bannerArea__title,
-  .bannerArea02__title,
-  .bannerArea04__title,
-  .bannerArea03__title {
+  .bannerArea__title, .bannerArea02__title, .bannerArea04__title, .bannerArea03__title {
     font-size: 32px !important;
     line-height: 46px !important;
   }
@@ -1973,7 +1952,7 @@ aside,
 .brand-area .small-section h3 {
   font-size: 30px;
   line-height: 42px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   margin-bottom: 35px;
 }
 
@@ -2107,7 +2086,7 @@ aside,
 }
 
 .about-info-text h2 {
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   max-width: 530px;
   line-height: 64px;
   margin-bottom: 12px;
@@ -2117,7 +2096,7 @@ aside,
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 45px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #9dadb7;
 }
 
@@ -2129,7 +2108,7 @@ aside,
 .about-info-project .project-rating h3 {
   font-size: 34px;
   line-height: 42px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .about-info-project .project-rating-star {
@@ -2142,7 +2121,7 @@ aside,
 
 .about-info-project .project-rating p {
   margin-bottom: 0;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .about-info-project .project-information h3 {
@@ -2153,7 +2132,7 @@ aside,
 
 .about-info-project .project-information p {
   margin-bottom: 0;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .about-info .mask-group .mask1 {
@@ -2189,7 +2168,7 @@ aside,
 
 .aboutus02-wrapper-title p {
   font-size: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   line-height: 30px;
   margin-top: 20px;
   display: inline-block;
@@ -2204,7 +2183,7 @@ aside,
   display: flex;
   align-items: center;
   font-size: 20px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   line-height: 30px;
   margin-bottom: 18px;
 }
@@ -2333,7 +2312,7 @@ aside,
   color: white;
   text-transform: uppercase;
   font-size: 60px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   line-height: 118px;
   font-weight: 600;
   margin-bottom: 5px;
@@ -2344,7 +2323,7 @@ aside,
 }
 
 .about-info04 .about-info-text p {
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 27px;
@@ -2365,13 +2344,13 @@ aside,
   font-size: 60px;
   line-height: 34px;
   font-weight: 600;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   color: #ff465e;
   margin: 0;
 }
 
 .about-info04 .about-info-text .about-info-project .project-information p {
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-size: 20px;
   line-height: 34px;
   color: #9dadb7;
@@ -2396,7 +2375,7 @@ aside,
 
 .homepage-03 .sub-section-heading p {
   font-size: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .homepage-03 .work-process {
@@ -2477,7 +2456,7 @@ aside,
   font-size: 48px;
   line-height: 64px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   text-transform: capitalize;
 }
 
@@ -2746,8 +2725,7 @@ aside,
   .aboutus02-image {
     margin-left: 0px;
   }
-  .aboutus02-image::after,
-  .aboutus02-image::before {
+  .aboutus02-image::after, .aboutus02-image::before {
     display: none;
   }
   .aboutus-introduction02 .aboutus02-wrapper {
@@ -2756,8 +2734,7 @@ aside,
   .aboutus-introduction02-image {
     margin-left: 0px !important;
   }
-  .aboutus-introduction02-image::before,
-  .aboutus-introduction02-image::after {
+  .aboutus-introduction02-image::before, .aboutus-introduction02-image::after {
     display: none;
   }
   .aboutus-introduction02 .small-feature {
@@ -2929,7 +2906,6 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
   .aboutus02-image::before {
     right: 2px;
   }
@@ -2954,7 +2930,7 @@ aside,
 #circleBar .section-title h2 {
   text-transform: uppercase;
   color: white;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-weight: 600;
   font-size: 60px;
   line-height: 118px;
@@ -2991,7 +2967,7 @@ aside,
 #circleBar .round .round-text P {
   color: #fff;
   font-size: 16px;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   line-height: 27px;
   font-weight: 500;
 }
@@ -3027,7 +3003,7 @@ aside,
   font-size: 48px;
   line-height: 64px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   text-transform: capitalize;
 }
 
@@ -3065,14 +3041,14 @@ aside,
 }
 
 .special-services-text h5 {
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   margin-bottom: 12px;
   line-height: 32px;
 }
 
 .special-services-text p {
   max-width: 278px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .special-services .services__mask .mask_01 {
@@ -3149,7 +3125,7 @@ aside,
 }
 
 .valuable-services-item-text p {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   max-width: 220px;
 }
 
@@ -3228,11 +3204,7 @@ aside,
   background-color: #ed880a;
 }
 
-.homepage-03
-  .provide-services-item:hover
-  .provide-services-item-image
-  svg
-  path {
+.homepage-03 .provide-services-item:hover .provide-services-item-image svg path {
   fill: #ffffff;
 }
 
@@ -3240,12 +3212,7 @@ aside,
   background-color: #ed880a;
 }
 
-.homepage-03
-  .provide-services-item:hover
-  .provide-services-item-text
-  .icon
-  a
-  i {
+.homepage-03 .provide-services-item:hover .provide-services-item-text .icon a i {
   color: #ffffff;
 }
 
@@ -3365,9 +3332,6 @@ aside,
   }
 }
 
-/* Small devices 575 - 767 */
-/* Small devices 420 - 574 */
-/* extra Small devices 420 */
 .services-introduction {
   padding: 100px 0;
 }
@@ -3387,7 +3351,7 @@ aside,
 .services-introduction-item p {
   max-width: 142px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   line-height: 22px;
   margin: auto;
   text-align: center;
@@ -3406,7 +3370,7 @@ aside,
 
 .services-introduction-text .section-heading p {
   max-width: 578px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   font-size: 18px;
 }
 
@@ -3448,7 +3412,7 @@ aside,
 .homepage-03 .section-heading p {
   font-size: 18px;
   line-height: 34px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   max-width: 75%;
   margin: auto;
 }
@@ -3460,7 +3424,7 @@ aside,
 .homepage-03 .services-introduction-item-text p {
   line-height: 30px;
   max-width: 100%;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #65729e;
 }
 
@@ -3578,31 +3542,6 @@ aside,
   }
 }
 
-/* large devices 992 - 1169*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
-}
-
-/* Small devices 575 - 767 */
-@media only screen and (min-width: 575px) and (max-width: 767px) {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
-}
-
 /*----------------------------------------*/
 /*  HOMEPAGE 01
 /*----------------------------------------*/
@@ -3617,7 +3556,7 @@ aside,
   font-size: 48px;
   line-height: 64px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   text-transform: capitalize;
 }
 
@@ -3642,7 +3581,7 @@ aside,
 }
 
 .price-area .price-box .price-body ul li {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   line-height: 30px;
   color: #000560;
   margin-bottom: 8px;
@@ -3667,14 +3606,14 @@ aside,
 .price-area .price-box .price-link h4 {
   font-size: 25px;
   line-height: 49px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   margin-bottom: 8px;
 }
 
 .price-area .price-box .price-link h4 span {
   font-size: 32px;
   line-height: 49px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .price-area .price-box .price-link .primary__button {
@@ -3736,7 +3675,7 @@ aside,
   font-size: 48px;
   line-height: 64px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   text-transform: capitalize;
 }
 
@@ -3777,7 +3716,7 @@ aside,
 .priceArea__planTitle {
   font-size: 20px;
   line-height: 32px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #ff465e;
   margin-bottom: 15px;
 }
@@ -3785,13 +3724,13 @@ aside,
 .priceArea__price {
   font-size: 42px;
   line-height: 48px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   color: #000560;
 }
 
 .priceArea__price span {
   font-size: 28px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .priceArea__planeFeatures {
@@ -3820,14 +3759,14 @@ aside,
 .priceArea__planeFeatures li p {
   font-size: 18px;
   line-height: 30px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #65729e;
 }
 
 .priceArea__moneyBack {
   font-size: 16px;
   line-height: 30px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #65729e;
   margin-top: 12px;
 }
@@ -3911,9 +3850,6 @@ aside,
   .price-area .mask-group3 .mask9 {
     left: -105px;
   }
-  .price-area .md-modifi {
-    margin-top: 25px;
-  }
   .priceArea .section-title p {
     max-width: 100%;
   }
@@ -3984,7 +3920,7 @@ aside,
   .priceArea .section-title h2 {
     font-size: 32px;
     line-height: 46px;
-    font-family: 'Gilroy-Bold';
+    font-family: "Gilroy-Bold";
   }
 }
 
@@ -4005,9 +3941,6 @@ aside,
   }
   .price-area {
     padding-bottom: 0px;
-  }
-  .price-area .md-modifi {
-    margin-top: 0px;
   }
   .price-area .section-title h2 {
     font-size: 28px;
@@ -4096,7 +4029,7 @@ aside,
 .callto-action-text h2 {
   font-size: 48px;
   line-height: 64px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   max-width: 620px;
 }
 
@@ -4104,7 +4037,7 @@ aside,
   font-size: 18px;
   line-height: 30px;
   max-width: 95%;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   margin: 20px 0px;
 }
 
@@ -4225,26 +4158,17 @@ aside,
   background-color: #fff;
 }
 
-.call-action-two_group.call-action_group-2 span.comments,
-.call-action-two_group.call-action_group-3 span.comments,
-.call-action-two_group.call-action_group-4 span.comments,
-.call-action-two_group.call-action_group-5 span.comments {
+.call-action-two_group.call-action_group-2 span.comments, .call-action-two_group.call-action_group-3 span.comments, .call-action-two_group.call-action_group-4 span.comments, .call-action-two_group.call-action_group-5 span.comments {
   left: -240px;
   border-radius: 25px;
   border-bottom-right-radius: 0px;
 }
 
-.call-action-two_group.call-action_group-2 span.comments::before,
-.call-action-two_group.call-action_group-3 span.comments::before,
-.call-action-two_group.call-action_group-4 span.comments::before,
-.call-action-two_group.call-action_group-5 span.comments::before {
+.call-action-two_group.call-action_group-2 span.comments::before, .call-action-two_group.call-action_group-3 span.comments::before, .call-action-two_group.call-action_group-4 span.comments::before, .call-action-two_group.call-action_group-5 span.comments::before {
   right: 35px;
 }
 
-.call-action-two_group.call-action_group-2 span.comments::after,
-.call-action-two_group.call-action_group-3 span.comments::after,
-.call-action-two_group.call-action_group-4 span.comments::after,
-.call-action-two_group.call-action_group-5 span.comments::after {
+.call-action-two_group.call-action_group-2 span.comments::after, .call-action-two_group.call-action_group-3 span.comments::after, .call-action-two_group.call-action_group-4 span.comments::after, .call-action-two_group.call-action_group-5 span.comments::after {
   right: 15px;
 }
 
@@ -4268,13 +4192,13 @@ aside,
   word-spacing: 5px;
   color: #899da7;
   font-size: 14px;
-  font-family: 'Gilroy-Regular';
+  font-family: "Gilroy-Regular";
   margin-bottom: 10px;
 }
 
 .homepage-03 .call-action-text .sub-section-heading p {
   font-size: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   margin-bottom: 60px;
 }
 
@@ -4692,8 +4616,7 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  .call-action-two_group.call-action_group-2,
-  .call-action-two_group.call-action_group-4 {
+  .call-action-two_group.call-action_group-2, .call-action-two_group.call-action_group-4 {
     display: none;
   }
   .call-action-two_group.call-action_group-3 {
@@ -4711,8 +4634,7 @@ aside,
 
 /* extra Small devices 420 */
 @media (max-width: 420px) {
-  .call-action-two_group.call-action_group-2,
-  .call-action-two_group.call-action_group-4 {
+  .call-action-two_group.call-action_group-2, .call-action-two_group.call-action_group-4 {
     display: none;
   }
 }
@@ -4737,7 +4659,7 @@ aside,
   font-size: 48px;
   line-height: 64px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   text-transform: capitalize;
 }
 
@@ -4769,16 +4691,16 @@ aside,
   color: #65729e;
   font-size: 16px;
   line-height: 30px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .testimonial-area .testimonial-slider .testimonial-item .rating {
   color: #ff8b17;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .testimonial-area .testimonial-slider .testimonial-item p {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .testimonial-area .slider-arrows {
@@ -4881,7 +4803,7 @@ aside,
 .testimonial02 .section-title h2 {
   font-size: 48px;
   line-height: 64px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   color: #000560;
   text-transform: capitalize;
 }
@@ -4895,7 +4817,7 @@ aside,
 .testimonial02 .testimonial-item p {
   font-size: 18px;
   line-height: 30px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .testimonial02 .testimonial-item .client-name {
@@ -4919,7 +4841,7 @@ aside,
 
 .testimonial02 .project-info h4 span {
   color: #65729e;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   padding-left: 8px;
 }
 
@@ -5011,7 +4933,7 @@ aside,
 .testimonial04 .section-title h2 {
   font-size: 60px;
   line-height: 70px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-weight: 600;
   color: white;
   text-transform: uppercase;
@@ -5044,7 +4966,7 @@ aside,
 
 .testimonial04 .testimonial-wrappers .tesmonial-text h2 {
   font-size: 35px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-weight: 600;
   line-height: 48px;
   color: white;
@@ -5052,7 +4974,7 @@ aside,
 }
 
 .testimonial04 .testimonial-wrappers .tesmonial-text p {
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 27px;
@@ -5593,7 +5515,7 @@ aside,
   text-transform: uppercase;
   color: white;
   font-size: 60px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-weight: 600;
   line-height: 1;
 }
@@ -5603,7 +5525,7 @@ aside,
 }
 
 .client-review .review-active .single-testimonial p {
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 22px;
   color: #9dadb7;
@@ -5620,13 +5542,13 @@ aside,
   text-transform: uppercase;
   color: white;
   font-size: 26px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-weight: 600;
   line-height: 1;
 }
 
 .client-review .review-active .single-testimonial .client-name p {
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #9dadb7;
@@ -5657,7 +5579,7 @@ aside,
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 26px;
   font-weight: 500;
   transition: all 0.3s ease-out 0s;
@@ -5887,14 +5809,14 @@ aside,
 
 .newsletter-area-text h2 {
   margin-bottom: 12px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   display: inline-block;
   padding-right: 75px;
   line-height: 64px;
 }
 
 .newsletter-area-text p {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   font-size: 26px;
 }
 
@@ -6001,21 +5923,6 @@ aside,
   }
 }
 
-/* Small devices 575 - 767 */
-@media only screen and (min-width: 575px) and (max-width: 767px) {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
-}
-
 .beloved-client {
   position: relative;
   padding-top: 130px;
@@ -6035,7 +5942,7 @@ aside,
 .beloved-client .sub-section-heading p {
   font-size: 18px;
   line-height: 30px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   margin-bottom: 60px;
 }
 
@@ -6053,7 +5960,7 @@ aside,
 .beloved-client .client-info-item p {
   color: #fff;
   font-size: 20px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .beloved-client .client-image {
@@ -6108,8 +6015,7 @@ aside,
 }
 
 @media (max-width: 767px) {
-  .beloved-client__Shapes01,
-  .beloved-client__Shapes02 {
+  .beloved-client__Shapes01, .beloved-client__Shapes02 {
     display: none;
   }
 }
@@ -6195,7 +6101,7 @@ aside,
 }
 
 .our-teams-member .member-info .name p {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .our-teams-member .member-info .social-links a {
@@ -6253,7 +6159,7 @@ aside,
 .our-team-member-info .top-information p {
   margin-top: 5px;
   font-size: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .our-team-member-info .bottom-information {
@@ -6481,7 +6387,7 @@ aside,
 .breadcrumArea .bannerArea__wrapper p {
   font-size: 22px;
   line-height: 36px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   max-width: 75%;
 }
 
@@ -6503,7 +6409,7 @@ aside,
   font-size: 20px;
   line-height: 36px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .breadcrumArea .breadcrumb-wrapper .breadcrumb .breadcrumb-item a {
@@ -6518,7 +6424,7 @@ aside,
   font-size: 20px;
   line-height: 36px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .breadcrumArea .breadcrumb-wrapper .breadcrumb .breadcrumb-item + .active {
@@ -6779,7 +6685,7 @@ aside,
 .projectSlider__subTitle {
   font-size: 16px;
   line-height: 26px;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   color: #9dadb7;
   text-transform: capitalize;
 }
@@ -6788,12 +6694,12 @@ aside,
   font-size: 36px;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
 }
 
 .projectSlider__textContents {
   line-height: 26px;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   color: #9dadb7;
 }
 
@@ -6802,7 +6708,7 @@ aside,
   line-height: 30px;
   padding: 15px 40px;
   border-radius: 0px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   text-transform: uppercase;
   margin-top: 25px;
 }
@@ -6822,8 +6728,7 @@ aside,
   background-color: rgba(112, 112, 112, 0.534);
 }
 
-.projectSlider__pagination.swiper-pagination-progressbar
-  .swiper-pagination-progressbar-fill {
+.projectSlider__pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background-color: #ff465e;
   border-radius: 25px;
 }
@@ -6833,8 +6738,7 @@ aside,
   display: none;
 }
 
-.projectSlider__next,
-.projectSlider__prev {
+.projectSlider__next, .projectSlider__prev {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -6844,14 +6748,12 @@ aside,
   bottom: 0px;
 }
 
-.projectSlider__next i,
-.projectSlider__prev i {
+.projectSlider__next i, .projectSlider__prev i {
   font-size: 25px;
   color: #fff;
 }
 
-.projectSlider__next:hover,
-.projectSlider__prev:hover {
+.projectSlider__next:hover, .projectSlider__prev:hover {
   background-color: #ff465e;
   border-color: transparent;
 }
@@ -6895,8 +6797,7 @@ aside,
     left: 75px !important;
     bottom: 45px !important;
   }
-  .projectSlider__next,
-  .projectSlider__prev {
+  .projectSlider__next, .projectSlider__prev {
     bottom: 30px;
   }
   .projectSlider__next {
@@ -6969,8 +6870,7 @@ aside,
     width: 65%;
     bottom: 15px !important;
   }
-  .projectSlider__prev,
-  .projectSlider__next {
+  .projectSlider__prev, .projectSlider__next {
     bottom: 0px;
   }
   .projectSlider__next {
@@ -6999,8 +6899,7 @@ aside,
   .projectSlider__pagination.swiper-pagination-progressbar {
     bottom: 65px !important;
   }
-  .projectSlider__next,
-  .projectSlider__prev {
+  .projectSlider__next, .projectSlider__prev {
     bottom: 45px;
   }
 }
@@ -7046,7 +6945,7 @@ aside,
 .footer-area-about p {
   max-width: 305px;
   margin-bottom: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   line-height: 30px;
 }
 
@@ -7077,7 +6976,7 @@ aside,
   line-height: 36px;
   margin-bottom: 5px;
   display: inline-block;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #65729e;
 }
 
@@ -7087,13 +6986,13 @@ aside,
 
 .copyright-area-text p {
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .copyright-area-top a {
   color: #000560;
   font-size: 16px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .copyright-area-top a i {
@@ -7198,7 +7097,7 @@ aside,
   font-size: 16px;
   color: #9dadb7;
   font-weight: 500;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   line-height: 30px;
   margin-bottom: 20px;
 }
@@ -7207,7 +7106,7 @@ aside,
   color: white;
   font-size: 26px;
   line-height: 39px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -7218,7 +7117,7 @@ aside,
 
 .footer04 .footer-area-lists li a {
   color: #9dadb7;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 36px;
@@ -7238,7 +7137,7 @@ aside,
 
 .footer04 .copyright-area-text p {
   color: #9dadb7;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 27px;
@@ -7246,7 +7145,7 @@ aside,
 
 .footer04 .copyright-area-list ul li {
   color: #9dadb7;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 27px;
@@ -7431,7 +7330,6 @@ aside,
   }
 }
 
-/* Medium devices 768 - 991 */
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   .footer-area .footer-area-about h4,
@@ -7539,7 +7437,7 @@ aside,
   font-size: 48px;
   line-height: 64px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   text-transform: capitalize;
 }
 
@@ -7599,7 +7497,7 @@ aside,
 }
 
 .about-skill-wrapper .about-skill-title p {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   font-size: 18px;
   line-height: 20px;
   line-height: 30px;
@@ -7626,14 +7524,9 @@ aside,
   transform: translate(-50%, -50%);
 }
 
-.about-skill-wrapper
-  .about-skill-pogressbar
-  .round-wrapper
-  .round
-  .round-text
-  strong {
+.about-skill-wrapper .about-skill-pogressbar .round-wrapper .round .round-text strong {
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   font-size: 45px;
   line-height: 55px;
 }
@@ -7697,7 +7590,7 @@ aside,
 .about-us-image .small-feature-item p {
   font-size: 16px;
   color: #ffffff;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .about-us-image .sm-feauter-top {
@@ -7734,7 +7627,7 @@ aside,
 
 .about-us-text .sub-heading p {
   font-size: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .about-us-text .feature {
@@ -7758,7 +7651,7 @@ aside,
 }
 
 .about-us-text .feature .text p {
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .about-us-text .c-wrapper {
@@ -7794,7 +7687,7 @@ aside,
 .about-us-text .alart-text p {
   color: #000560;
   font-size: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .about-us-text .alart-boldtext h2 {
@@ -8169,7 +8062,7 @@ aside,
 .our-services .about-us-text .sub-heading h2 {
   max-width: 375px;
   margin-bottom: 10px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .our-services .about-us-text .feature .text h6 {
@@ -8237,7 +8130,7 @@ aside,
   font-size: 48px;
   line-height: 64px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   text-transform: capitalize;
 }
 
@@ -8380,7 +8273,7 @@ aside,
 
 .design-services-text p {
   font-size: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   margin-bottom: 25px;
 }
 
@@ -8541,31 +8434,6 @@ aside,
   }
 }
 
-/* large devices 992 - 1169*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
-}
-
-/* Small devices 575 - 767 */
-@media only screen and (min-width: 575px) and (max-width: 767px) {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
-}
-
 .profession-area {
   padding: 175px 0px;
 }
@@ -8718,7 +8586,7 @@ aside,
 
 .project-wrapper-title span {
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   line-height: 30px;
   color: #ff465e;
   padding: 5px 0;
@@ -8777,13 +8645,13 @@ aside,
 .project-detail .project-overview-wrapper .overview-detail p {
   font-size: 18px;
   line-height: 30px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .project-detail .project-overview-wrapper .overview-detail h6 {
   font-size: 18px;
   line-height: 30px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .project-detail .project-detail-content {
@@ -8917,8 +8785,7 @@ aside,
 }
 
 @media (max-width: 991px) {
-  .our-work-process .process-item .dashed01::before,
-  .our-work-process .process-item .dashed01::after,
+  .our-work-process .process-item .dashed01::before, .our-work-process .process-item .dashed01::after,
   .our-work-process .process-item .dashed02::before,
   .our-work-process .process-item .dashed02::after,
   .our-work-process .process-item .dashed03::before,
@@ -9032,11 +8899,6 @@ aside,
   }
 }
 
-/* large devices 992 - 1169*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* common area start */
-}
-
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* common area start */
@@ -9051,22 +8913,12 @@ aside,
   }
 }
 
-/* Small devices 575 - 767 */
-@media only screen and (min-width: 575px) and (max-width: 767px) {
-  /* common area start */
-}
-
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   /* common area start */
   .project-wrapper-image {
     margin-left: -20px;
   }
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
 }
 
 .conatact-area {
@@ -9084,7 +8936,7 @@ aside,
   line-height: 64px;
   color: #000560;
   text-transform: capitalize;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .conatact-area__container {
@@ -9100,7 +8952,7 @@ aside,
 
 .conatact-area .contact-form .form-row .form-control {
   font-size: 18px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   line-height: 30px;
   color: #65729e;
   height: 80px;
@@ -9210,7 +9062,7 @@ aside,
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   border-radius: 0;
 }
 
@@ -9222,7 +9074,7 @@ aside,
 .contactArea__info span {
   font-size: 35px;
   line-height: 53px;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   color: #fff;
   margin-right: 90px;
 }
@@ -9393,7 +9245,7 @@ aside,
   font-size: 16px;
   margin-left: 8px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   transition: 0.3s all linear;
 }
 
@@ -9403,7 +9255,7 @@ aside,
 
 .blog-area .article-item .article-info .date span {
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #65729e;
 }
 
@@ -9418,7 +9270,7 @@ aside,
 
 .blog-area .article-item .article-info .comments span a {
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #65729e;
   transition: 0.3s all linear;
 }
@@ -9556,7 +9408,7 @@ aside,
   font-size: 24px;
   color: #000560;
   transition: 0.3s all linear;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .blog-area .pagination-area nav .pagination li a.active {
@@ -9602,7 +9454,7 @@ aside,
 .blog-area .aside .search form ::placeholder {
   color: #65729e;
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .blog-area .aside .search .input-text {
@@ -9647,7 +9499,7 @@ aside,
   font-size: 16px;
   line-height: 24px;
   color: #000560;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .blog-area .aside .recent-post-text .post-text-bottom {
@@ -9682,14 +9534,14 @@ aside,
 .blog-area .aside .blog-catagories-item ul li {
   color: #65729e;
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   margin-bottom: 5px;
 }
 
 .blog-area .aside .blog-catagories-item ul li a {
   color: #65729e;
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   transition: 0.3s all linear;
 }
 
@@ -9713,7 +9565,7 @@ aside,
 
 .blog-area .aside .archive-posts-item ul li a {
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #65729e;
   transition: 0.3s all linear;
 }
@@ -9766,7 +9618,7 @@ aside,
 .blog-area .aside .blog-meta-item ul li a {
   color: #65729e;
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   transition: 0.3s all linear;
 }
 
@@ -9807,11 +9659,11 @@ aside,
 .blog-details .article-item .article-info .author span {
   margin-left: 5px;
   color: #65729e;
-  font-family: 'Gilroy-Medium' !important;
+  font-family: "Gilroy-Medium" !important;
 }
 
 .blog-details .article-item .article-info .author span a {
-  font-family: 'Gilroy-Medium' !important;
+  font-family: "Gilroy-Medium" !important;
   font-size: 16px !important;
   color: #ff465e !important;
   margin-left: 0 !important;
@@ -9837,13 +9689,13 @@ aside,
 
 .blog-details .article-item .article-tags-left .related-tags {
   font-size: 16px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   color: #000560;
 }
 
 .blog-details .article-item .article-tags-left a {
   font-size: 14px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #65729e;
   transition: 0.3s all linear;
 }
@@ -9860,7 +9712,7 @@ aside,
 .blog-details .article-item .article-tags-right .share-article {
   color: #000560;
   font-size: 16px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
 }
 
 .blog-details .article-item .article-tags-right .active {
@@ -9908,7 +9760,7 @@ aside,
 .blog-details .article-item .author-details-info span {
   color: #65729e;
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .blog-details .article-item .comments-section h3 {
@@ -9939,44 +9791,23 @@ aside,
   align-items: flex-start;
 }
 
-.blog-details
-  .article-item
-  .comments-section-area-comment
-  .commenter
-  .commenter-info
-  h6 {
+.blog-details .article-item .comments-section-area-comment .commenter .commenter-info h6 {
   font-size: 16px;
 }
 
-.blog-details
-  .article-item
-  .comments-section-area-comment
-  .commenter
-  .commenter-info
-  span {
+.blog-details .article-item .comments-section-area-comment .commenter .commenter-info span {
   font-size: 16px;
   color: #65729e;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
-.blog-details
-  .article-item
-  .comments-section-area-comment
-  .commenter
-  .replay
-  a {
+.blog-details .article-item .comments-section-area-comment .commenter .replay a {
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   color: #ff465e;
 }
 
-.blog-details
-  .article-item
-  .comments-section-area-comment
-  .commenter
-  .replay
-  a
-  i {
+.blog-details .article-item .comments-section-area-comment .commenter .replay a i {
   margin-right: 10px;
 }
 
@@ -9993,11 +9824,7 @@ aside,
   border: 1px solid #dddddd;
 }
 
-.blog-details
-  .article-item
-  .write-comment-area
-  form
-  input:focus::-webkit-input-placeholder {
+.blog-details .article-item .write-comment-area form input:focus::-webkit-input-placeholder {
   color: #ff465e;
 }
 
@@ -10012,11 +9839,7 @@ aside,
   resize: none;
 }
 
-.blog-details
-  .article-item
-  .write-comment-area
-  form
-  textarea:focus::-webkit-input-placeholder {
+.blog-details .article-item .write-comment-area form textarea:focus::-webkit-input-placeholder {
   color: #ff465e;
 }
 
@@ -10032,7 +9855,7 @@ aside,
 .blog-details .article-item .write-comment-area form ::placeholder {
   color: #69798d;
   font-size: 16px;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
 }
 
 .blog-details-quotes {
@@ -10059,7 +9882,7 @@ aside,
 .blog-details-quotes p {
   text-align: center;
   color: #ffffff;
-  font-family: 'Gilroy-Medium';
+  font-family: "Gilroy-Medium";
   font-size: 18px;
 }
 
@@ -10139,9 +9962,7 @@ aside,
     flex-direction: column;
     padding-left: 0px;
   }
-  .blog-details
-    .article-item
-    .comments-section-area.comments-section-areaReply {
+  .blog-details .article-item .comments-section-area.comments-section-areaReply {
     margin-left: 50px;
   }
 }

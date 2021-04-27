@@ -218,17 +218,6 @@
 
     img {
       position: relative;
-
-      // &::before {
-      //   content: '';
-      //   position: absolute;
-      //   background: rgba(0, 5, 96, 0.6);
-      //   border-radius: 4px;
-      //   top: 0;
-      //   left: 0;
-      //   width: 100%;
-      //   height: 100%;
-      // }
     }
     .image-overlay {
       position: relative;
@@ -549,24 +538,6 @@
       }
     }
     &_group {
-      // &.call-action_group-1 {
-      //   top: 90px;
-      //   left: 55px;
-      // }
-      // &.call-action_group-2 {
-      //   top: 170px;
-      //   right: 70px;
-      // }
-      // &.call-action_group-3 {
-      //   top: 555px;
-      //   right: 145px;
-      // }
-      // &.call-action_group-4 {
-      //   right: 400px;
-      // }
-      // &.call-action_group-5 {
-      //   display: none;
-      // }
       display: none;
     }
   }
