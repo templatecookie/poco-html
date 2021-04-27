@@ -6,7 +6,7 @@
   // Sticky Header
   window.addEventListener('scroll', function () {
     let header = document.querySelectorAll('header');
-    // console.log(header);
+
     header.forEach((headItem) => {
       headItem.classList.toggle('sticky', window.scrollY > 0);
     });
@@ -150,8 +150,6 @@
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          // centerMode: true,
-          // centerPadding: '30px',
         },
       },
     ],
@@ -182,12 +180,6 @@
           slidesToShow: 1,
         },
       },
-      // {
-      //     breakpoint: 480,
-      //     settings: {
-      //         slidesToShow: 1,
-      //     },
-      // },
     ],
   });
 
@@ -261,7 +253,6 @@
   function Circlle(el) {
     $(el)
       .circleProgress({
-        // startAngle: (-Math.PI / 4) * 13,
         lineCap: 'round',
         fill: {
           color: '#FF465E',
