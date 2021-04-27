@@ -387,7 +387,6 @@
   padding-bottom: 160px;
   .our-teams-member {
     .member-info {
-      bottom: -25px;
       .name {
         h5 {
           font-size: 18px;
@@ -526,6 +525,24 @@
     // }
   }
 }
+
+@media (max-width: 1024px) {
+  .aboutus-introduction02 {
+    .aboutus02-wrapper {
+      &-title {
+        h2 {
+          line-height: 52px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .small-feature {
+      bottom: 25%;
+      left: 42%;
+    }
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1199px) {
   .about-info04 {
     .right-vcetor {
@@ -593,31 +610,6 @@
       }
     }
   }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .about-info04 {
-  }
-}
-
-@media (max-width: 1024px) {
-  .aboutus-introduction02 {
-    .aboutus02-wrapper {
-      &-title {
-        h2 {
-          line-height: 52px;
-          margin-bottom: 0px;
-        }
-      }
-    }
-    .small-feature {
-      bottom: 25%;
-      left: 42%;
-    }
-  }
-}
-
-@media (max-width: 991px) {
   // homepage-02
   .aboutus-introduction02 {
     .aboutus02 {
@@ -625,6 +617,9 @@
         max-width: 100%;
         margin-left: 0px;
       }
+    }
+    .small-feature {
+      display: none;
     }
   }
   // aboutus-introduction02-image
@@ -686,7 +681,7 @@
   }
 }
 
-@media (max-width: 768px) and(max-width:991px) {
+@media (min-width: 768px) and (max-width: 991px) {
 }
 
 @media (max-width: 767px) {
@@ -741,13 +736,6 @@
     }
   }
 
-  .our-teams {
-    .our-teams-member {
-      .member-info {
-        bottom: 45px;
-      }
-    }
-  }
   .about-skill {
     &-wrapper {
       max-width: 100% !important;
@@ -760,6 +748,20 @@
     }
     &-pogressbar {
       justify-content: center;
+    }
+  }
+
+  .our-teams {
+    &-member {
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+      margin: auto;
+    }
+    .all-member {
+      .member-info {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -839,21 +841,6 @@
       }
     }
   }
-  .about-skill {
-    &-title {
-      h2 {
-        font-size: 28px !important;
-        line-height: 48px !important;
-      }
-    }
-    &-pogressbar {
-      flex-direction: column;
-      .round-wrapper {
-        margin-right: 0px;
-        margin-bottom: 30px;
-      }
-    }
-  }
 
   .homepage-03 {
     .sub-section-heading {
@@ -888,9 +875,6 @@
     &-member {
       flex-direction: column;
       align-items: center;
-      .member-info {
-        width: 60%;
-      }
     }
   }
 }
@@ -937,7 +921,7 @@
       }
     }
     .aboutus02-wrapper {
-      margin-top: 130px;
+      margin-top: 0px;
       &-list {
         ul {
           li {
@@ -973,9 +957,7 @@
         margin-bottom: 20px;
         margin-top: 20px;
       }
-      // .member-info {
-      //   max-width: 95% !important;
-      // }
+
       .social-links {
         display: flex;
         align-items: center;
@@ -1109,12 +1091,5 @@
       right: 52%;
       bottom: 48%;
     }
-  }
-
-  // Homepage-02 / aboutus-introduction
-
-  /* extra Small devices 420 */
-  @media #{$xsm} {
-    /* common area start */
   }
 }

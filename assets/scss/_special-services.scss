@@ -2,6 +2,8 @@
 /*  HOMEPAGE 01
 /*----------------------------------------*/
 .special-services {
+  position: relative;
+  padding-bottom: 75px;
   &.our-services {
     padding-top: 40px;
     padding-bottom: 130px;
@@ -58,6 +60,15 @@
     p {
       max-width: 278px;
       font-family: $gilroy-medium;
+    }
+  }
+
+  .services__mask {
+    .mask_01 {
+      position: absolute;
+      top: 250px;
+      left: 210px;
+      user-select: none;
     }
   }
 }

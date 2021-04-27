@@ -510,7 +510,7 @@
   // Homepage-01
   .testimonial-area {
     .slider-arrows {
-      justify-content: center;
+      justify-content: flex-end;
     }
   }
 
@@ -519,8 +519,7 @@
       .slider-arrows {
         top: auto;
         bottom: 95px;
-        right: 15px;
-        justify-content: flex-end !important;
+        right: 40px;
       }
     }
     .project-info {
@@ -546,7 +545,7 @@
       }
       .testimonial-wrapper {
         .slider-arrows {
-          right: 0px;
+          right: 30px;
         }
       }
     }
@@ -660,21 +659,11 @@
         top: 32px;
       }
     }
-    // &.trust-us {
-    //   .mask-group2 {
-    //     .mask6 {
-    //       top: -20px;
-    //       left: 0px;
-    //     }
-    //   }
-    // }
   }
   .testimonial02 {
     margin-top: 0px !important;
     padding: 60px 0px;
-    .slider-arrows {
-      right: 30px !important;
-    }
+
     .project-info {
       margin-left: 0px;
       h4 {
@@ -698,6 +687,14 @@
   // Homepage-01
   .testimonial-area {
     padding-bottom: 80px;
+    .slider-arrows {
+      justify-content: center;
+    }
+    .testimonial-wrapper {
+      .slider-arrows {
+        right: 0px;
+      }
+    }
     .section-title {
       h2 {
         font-size: 28px;
@@ -705,17 +702,31 @@
       }
     }
     &.trust-us {
+      .section-title {
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
       .mask-group2 {
         .mask6 {
-          top: 20px;
-          left: 10px;
+          display: none;
         }
       }
     }
+
+    .testimonial-slider {
+      .testimonial-item {
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
     .testimonial-wrapper {
       .slider-arrows {
         bottom: 30px;
-        left: -115px;
       }
     }
     .slider-arrows {
@@ -777,6 +788,7 @@
     }
   }
 }
+
 @media (min-width: 320px) and (max-width: 419px) {
   .testimonial02 {
     .section-title {
@@ -808,15 +820,6 @@
     .section-title h2 {
       font-size: 32px !important;
     }
-    // .testimonial-active {
-    //   .slick-arrow {
-    //     top: inherit;
-    //     bottom: -95px !important;
-    //     &.nextArrow {
-    //       right: 15px;
-    //     }
-    //   }
-    // }
   }
 }
 /* large devices 992 - 1199*/

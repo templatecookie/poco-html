@@ -253,7 +253,7 @@
   // price 2
   &.priceArea-2 {
     background-color: #fff;
-    margin-bottom: 60px !important;
+    margin-bottom: 60px;
   }
 }
 
@@ -444,6 +444,7 @@
       }
     }
   }
+
   // Homepage-01
   .price-area {
     padding-bottom: 0px;
@@ -467,6 +468,11 @@
         top: -130px;
       }
     }
+  }
+
+  // service deatils
+  &.priceArea-2 {
+    margin-bottom: 30px !important;
   }
 }
 

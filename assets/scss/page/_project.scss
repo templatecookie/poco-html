@@ -1,6 +1,12 @@
 //OUR PROJECT AREA
 .project {
+  padding-top: 140px;
+  &__container {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 60px;
+  }
   &-wrapper {
+    margin-bottom: 70px;
     &-image {
       margin-left: -30px;
       margin-bottom: -10px;
@@ -13,6 +19,7 @@
       h3 {
         font-size: 30px;
         line-height: 38px;
+        margin-bottom: 10px;
       }
 
       span {
@@ -49,14 +56,14 @@
 //OUR PROJECT DEATIL AREA
 .project-details-content {
   .our-work-process {
-    margin-top: 145px;
+    margin-top: 125px;
     padding-bottom: 150px;
     z-index: 5;
   }
 }
 
 .project-detail {
-  padding-top: 35px;
+  padding-top: 160px;
   .overview-image {
     img {
       border-radius: 5px;
@@ -143,7 +150,9 @@
   border-radius: 24px;
   position: relative;
   z-index: -5;
-
+  &.project-detail {
+    padding-top: 125px;
+  }
   .process-item {
     .dashed02 {
       background-color: #fff5f7;
@@ -172,8 +181,55 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
-/*Common Devices */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+  // project page
+  .project {
+    padding-top: 120px;
+    &-wrapper {
+      margin-bottom: 30px;
+      &-title {
+        h3 {
+          margin-bottom: 0px;
+        }
+        span {
+          line-height: 24px;
+        }
+      }
+    }
+    .load-more-button {
+      margin-top: 60px;
+    }
+  }
+  // Project-Details
+  .project-detail .project-detail-content h2 {
+    font-size: 38px;
+    line-height: 46px;
+    margin-bottom: 15px;
+  }
+  .project-detail .project-next-prev-button {
+    margin-top: 60px;
+  }
+  .project-detail .project-detail-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 1023px) {
+  // Project Details
+  .project-detail {
+    padding-top: 90px;
+  }
+  .project-detail .project-detail-content {
+    margin-top: 30px;
+  }
+
+  .project-work-process {
+    &.project-detail {
+      margin: 0px;
+      margin-top: 90px;
+    }
+  }
 }
 @media (min-width: 992px) and (max-width: 1024px) {
   .project {
@@ -207,9 +263,14 @@
       }
     }
   }
+
+  // Project details page
   .project-detail {
     .project-overview-wrapper {
       margin-top: 40px;
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 100%;
       .overview-detail {
         display: list-item;
         text-align: center;
@@ -217,6 +278,49 @@
           margin-bottom: 15px;
         }
       }
+    }
+    .overview-image {
+      display: flex;
+      justify-content: center;
+      img {
+        height: 250px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .project {
+    padding-top: 60px;
+    &-wrapper {
+      &-title {
+        h3 {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 0px;
+        }
+        span {
+          line-height: 26px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 28px;
+        }
+      }
+      &-button {
+        margin-top: 15px;
+        .primary__button {
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+  // Project deatils page
+  .project-detail {
+    .project-overview-wrapper {
+      margin-left: 0px;
+      margin-right: 0px;
     }
   }
 }
@@ -227,12 +331,48 @@
     margin: 0;
     border-radius: 0px;
   }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .project {
+    .load-more-button {
+      .primary__button {
+        padding: 15px 30px;
+      }
+    }
+  }
+
   .project-detail {
+    padding-top: 60px;
+    .project-detail-content {
+      h2 {
+        font-size: 24px;
+        line-height: 38px;
+        margin-bottom: 0px;
+      }
+    }
     .project-overview-wrapper {
-      margin: 40px 15px 0px 15px;
+      margin-top: 0px;
+    }
+  }
+  .our-work-process {
+    .section-title {
+      h2 {
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
+    &.project-detail {
+      padding: 60px 0px;
+      padding-bottom: 90px;
+      margin-top: 60px;
+    }
+    .shape {
+      display: none;
     }
   }
 }
+
 @media (min-width: 320px) and (max-width: 419px) {
   .project {
     &-wrapper {

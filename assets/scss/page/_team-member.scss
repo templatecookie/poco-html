@@ -32,6 +32,8 @@
 
 @media (max-width: 1200px) {
   .profession-area {
+    padding: 90px 0px;
+    padding-top: 0px;
     .profession-img {
       .small-feature {
         left: 0px;
@@ -49,18 +51,40 @@
     }
   }
 }
+
 @media (max-width: 991px) {
   .profession-area {
     .profession-wrapper,
     .profession-img {
       margin-left: 0px !important;
+      .small-feature {
+        bottom: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .profession-area {
+    .profession-wrapper {
+      margin-top: -30px;
+    }
+    .profession-img {
+      img {
+        height: 250px;
+      }
+      .small-feature {
+        left: auto;
+        right: 15px;
+        bottom: 40px;
+      }
     }
   }
 }
 
 @media (max-width: 575px) {
   .profession-area {
-    padding: 120px 0px;
+    // padding: 120px 0px;
     .profession-img {
       margin-bottom: 45px;
       .small-feature {
@@ -95,47 +119,25 @@
     }
   }
 }
-@media (min-width: 320px) and (max-width: 419px) {
-  .profession-wrapper {
-    .profession-tittle {
-      h2 {
-        font-size: 28px !important;
-        line-height: 48px;
-      }
-    }
-  }
-}
 
-/* large devices 992 - 1199*/
-@media #{$lg} {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-  /* common area start */
-}
-
-/* Small devices 575 - 767 */
-@media #{$sm} {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media #{$xs} {
-  /* common area start */
+@media (min-width: 320px) and (max-width: 574px) {
   .profession-area {
+    padding-bottom: 60px;
     .profession-wrapper {
       .profession-tittle {
         h2 {
-          font-size: 38px;
-          line-height: 48px;
+          font-size: 28px;
+          line-height: 42px;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 26px;
         }
       }
     }
+    .profession-img {
+      margin-bottom: 15px;
+    }
   }
-}
-/* extra Small devices 420 */
-@media #{$xsm} {
-  /* common area start */
 }

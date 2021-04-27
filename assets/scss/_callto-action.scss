@@ -9,7 +9,6 @@
   border-radius: 24px;
   position: relative;
   z-index: 1;
-  overflow: hidden;
   &-mask {
     img {
       position: absolute;
@@ -348,17 +347,24 @@
 @media (max-width: 1200px) {
   .callto-action {
     padding-top: 90px;
+
     &-image {
       img {
         max-width: 100%;
         height: auto;
       }
     }
+
     &-text {
+      h2 {
+        font-size: 42px;
+        line-height: 52px;
+      }
       p {
         margin-top: 0px;
       }
     }
+
     .primary__button {
       margin-top: 0px;
     }
@@ -425,9 +431,6 @@
       }
     }
   }
-  .callto-action {
-    // padding: 80px 25px;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1023px) {
@@ -445,6 +448,7 @@
     }
   }
 }
+
 @media (max-width: 991px) {
   .callto-action {
     padding-top: 120px;
@@ -460,12 +464,16 @@
     }
     &-image {
       margin-bottom: 0px;
+      display: flex;
+      justify-content: center;
       img {
         margin-left: 0px;
+        height: 380px;
       }
     }
     &-text {
       margin-top: 0px;
+      padding-top: 0px;
       h2 {
         font-size: 42px;
         line-height: 56px;
@@ -473,6 +481,11 @@
       }
     }
   }
+
+  .callto-action-modifi.callto-action-project-d .callto-action-text {
+    margin-top: 30px;
+  }
+
   // Homepage -02 / Callaction -02
   .call-action-two {
     &_group {
@@ -502,9 +515,7 @@
 @media (max-width: 767px) {
   .callto-action {
     margin: 0px;
-    &-text {
-      padding: 30px 0px;
-    }
+
     &-modifi {
       padding-bottom: 60px;
       .callto-action-text {
@@ -522,25 +533,41 @@
   }
   // Homepage -02 / Callaction -02
   .call-action-two {
+    padding: 90px 0px;
+    &-content {
+      h2 {
+        margin-top: 0px;
+        margin-bottom: 15px;
+      }
+      p {
+        margin-top: 0px;
+      }
+      a {
+        &.primary__button {
+          margin-top: 0px;
+        }
+      }
+    }
     &_group {
-      &.call-action_group-1 {
-        top: 90px;
-        left: 55px;
-      }
-      &.call-action_group-2 {
-        top: 170px;
-        right: 70px;
-      }
-      &.call-action_group-3 {
-        top: 555px;
-        right: 145px;
-      }
-      &.call-action_group-4 {
-        right: 400px;
-      }
-      &.call-action_group-5 {
-        display: none;
-      }
+      // &.call-action_group-1 {
+      //   top: 90px;
+      //   left: 55px;
+      // }
+      // &.call-action_group-2 {
+      //   top: 170px;
+      //   right: 70px;
+      // }
+      // &.call-action_group-3 {
+      //   top: 555px;
+      //   right: 145px;
+      // }
+      // &.call-action_group-4 {
+      //   right: 400px;
+      // }
+      // &.call-action_group-5 {
+      //   display: none;
+      // }
+      display: none;
     }
   }
 
@@ -577,7 +604,7 @@
   .callto-action {
     padding-left: 0px;
     &-text {
-      padding-bottom: 60px;
+      padding-bottom: 30px;
       h2 {
         font-size: 22px;
         line-height: 32px;
@@ -589,6 +616,17 @@
       }
     }
   }
+
+  // homepage-02
+  .call-action-two {
+    &-content {
+      h2 {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+  }
+
   // homepage-04
   .homepage-03 {
     &.call-to-action03 {
@@ -621,7 +659,7 @@
   }
   // Services
   .callto-action-modifi {
-    padding-bottom: 30px;
+    padding: 60px 0px;
     .callto-action-text {
       h2 {
         font-size: 22px;
@@ -633,47 +671,16 @@
         line-height: 24px;
       }
     }
+    &.callto-action-project-d {
+      padding-bottom: 90px;
+      .callto-action-text {
+        margin-top: 0px;
+      }
+    }
   }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
-  .call-action-two {
-    border-top-left-radius: 0px;
-    padding-bottom: 250px;
-    &-content {
-      h2 {
-        font-size: 32px;
-        line-height: 42px;
-      }
-      p {
-        font-size: 20px;
-        line-height: 34px;
-      }
-    }
-    &_group {
-      img {
-        max-width: 80px;
-      }
-      span.comments {
-        width: 210px;
-        font-size: 12px;
-      }
-      &.call-action_group-1 {
-        left: 10px;
-        span.comments {
-          left: 42px;
-        }
-      }
-      &.call-action_group-3 {
-        top: 640px;
-        right: 40px;
-        span.comments {
-          left: -175px;
-        }
-      }
-    }
-  }
-
   .callto-action-text {
     .primary__button {
       margin-top: 0px;

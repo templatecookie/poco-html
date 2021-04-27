@@ -126,6 +126,8 @@
 
 // START ABOUT US
 .about-us {
+  padding-top: 50px;
+  padding-bottom: 145px;
   &-image {
     position: relative;
 
@@ -145,14 +147,13 @@
       align-items: center;
       justify-content: center;
       &.sm-feauter-bottom {
-        box-shadow: 0px 6px 30px #5746ff;
+        box-shadow: 0px 6px 30px #5746ff73;
       }
       &.sm-feauter-left {
-        // it's not valid
-        // box-sizing: 0px 6px 15px #4dadf7;
+        box-shadow: 0px 6px 15px #4dadf77a;
       }
       &.sm-feauter-top {
-        box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.13);
+        box-shadow: 0px 6px 15px #fab00594;
       }
       &-item {
         h3 {
@@ -174,19 +175,18 @@
     }
 
     .sm-feauter-top {
-      top: -18%;
-      left: 35%;
-      transform: translateX(-35%);
+      top: -85px;
+      left: 75px;
     }
 
     .sm-feauter-left {
-      top: 50%;
-      left: -30%;
+      top: 225px;
+      left: -240px;
     }
 
     .sm-feauter-bottom {
-      bottom: -13%;
-      right: 26%;
+      bottom: -65px;
+      left: 210px;
     }
   }
   &.our-services {
@@ -308,10 +308,11 @@
         left: 0px;
       }
       .sm-feauter-top {
-        top: -125px;
+        top: -95px;
+        left: 215px;
       }
       .sm-feauter-bottom {
-        bottom: -120px;
+        left: 330px;
       }
     }
     &-text {
@@ -327,7 +328,7 @@
     }
   }
   .about-skill {
-    padding: 145px 0px;
+    padding: 90px 0px;
     &-wrapper {
       margin-top: -30px;
     }
@@ -358,9 +359,33 @@
 
 @media (min-width: 1024px) and (max-width: 1199px) {
   .about-us {
+    padding-bottom: 90px;
+    &-image {
+      .sm-feauter-top {
+        left: 175px;
+      }
+      .sm-feauter-left {
+        top: 155px;
+        left: -30px;
+      }
+      .sm-feauter-bottom {
+        left: 270px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  .about-us {
     &-image {
       .sm-feauter-left {
-        left: -30px;
+        top: 155px;
+      }
+      .sm-feauter-top {
+        left: 165px;
+      }
+      .sm-feauter-bottom {
+        left: 250px;
       }
     }
   }
@@ -368,9 +393,21 @@
 
 @media (max-width: 991px) {
   .about-us {
-    padding: 150px 0px;
+    padding: 90px 0px;
     &-text {
-      margin-top: 100px;
+      margin-top: 60px;
+      .sub-heading {
+        margin-bottom: 30px;
+        h2 {
+          margin-bottom: 0px;
+        }
+      }
+      .c-wrapper {
+        margin-top: 0px;
+      }
+      .feature {
+        margin-bottom: 15px;
+      }
     }
     // Services
     &.our-services {
@@ -387,10 +424,26 @@
         }
       }
     }
+    &-image {
+      display: flex;
+      justify-content: center;
+      .sm-feauter-top {
+        left: 280px;
+      }
+      .sm-feauter-bottom {
+        left: 405px;
+      }
+      img {
+        height: 350px;
+        object-fit: contain;
+      }
+    }
   }
+
   .about-solution {
+    padding-bottom: 90px;
     .solution-wrapper {
-      margin-bottom: 60px;
+      margin-bottom: 30px;
 
       .solution-title.center {
         display: inline-block;
@@ -399,7 +452,44 @@
       }
     }
     .section-title {
-      margin-bottom: 120px;
+      margin-bottom: 60px;
+      h2 {
+        font-size: 38px;
+        line-height: 52px;
+      }
+    }
+
+    .mask-group {
+      .mask1 {
+        top: -30px;
+        left: 35px;
+      }
+      .mask2 {
+        top: -30px;
+        right: 35px;
+      }
+    }
+  }
+  .about-skill {
+    &-image {
+      img {
+        height: 550px;
+        margin-bottom: 30px;
+      }
+    }
+    &-wrapper {
+      .about-skill-pogressbar {
+        justify-content: space-around;
+        .round-wrapper {
+          margin: 0px;
+          .skill-text {
+            margin-top: 0px;
+            p {
+              padding-top: 0px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -412,10 +502,6 @@
     &-image {
       display: flex;
       justify-content: center;
-
-      img {
-        margin-bottom: 60px;
-      }
     }
   }
 }
@@ -431,6 +517,19 @@
       padding: 60px 0px;
       padding-bottom: 90px;
     }
+    &-text {
+      margin-top: 30px;
+    }
+  }
+
+  // aboutsus
+  .about-solution {
+    .mask-group {
+      .mask1,
+      .mask2 {
+        display: none;
+      }
+    }
   }
 }
 
@@ -444,6 +543,19 @@
       }
     }
   }
+
+  // About us
+  .about-us {
+    &-image {
+      .sm-feauter-top {
+        left: 220px;
+      }
+      .sm-feauter-bottom {
+        left: 335px;
+        bottom: -50px;
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -454,6 +566,11 @@
           border-radius: 0px;
           padding: 15px;
         }
+      }
+    }
+    &-image {
+      .image {
+        margin-top: 0px;
       }
     }
   }
@@ -479,14 +596,45 @@
 
 @media (min-width: 320px) and (max-width: 574px) {
   .about-skill {
+    padding: 60px 0px;
     &-pogressbar {
+      flex-direction: column;
       .round-wrapper {
-        margin: 45px 0px;
+        margin: 15px 0px !important;
+      }
+    }
+    &-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: -15px;
+      img {
+        margin-bottom: 15px;
+        object-fit: contain;
+      }
+    }
+    &-title {
+      h2 {
+        font-size: 22px;
+        line-height: 36px;
+      }
+    }
+    &-wrapper {
+      .about-skill-title {
+        margin-bottom: 0px;
+        h2 {
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 26px;
+        }
       }
     }
   }
+
   // Service
   .about-us {
+    padding-top: 0px;
     &.our-services {
       .about-us-text {
         .sub-heading {
@@ -502,19 +650,64 @@
         }
       }
     }
+    &-image {
+      .sm-feauter-bottom,
+      .sm-feauter-left,
+      .sm-feauter-top {
+        display: none;
+      }
+    }
+    &-text {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .sub-heading {
+        margin-bottom: 15px;
+        h2 {
+          font-size: 22px;
+          line-height: 32px;
+          margin-bottom: 0px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+    .alart-boldtext {
+      margin-left: 0px;
+    }
+  }
+
+  .about-solution {
+    padding: 60px 0px;
+    padding-top: 90px;
+    .section-title {
+      margin-bottom: 30px;
+      h2 {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+    .solution-wrapper {
+      margin-bottom: 0px;
+      .solution-title {
+        &.center {
+          margin-bottom: 15px;
+          p {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
   .about-us {
     &-text {
-      .sub-heading {
-        h2 {
-          font-size: 32px;
-          line-height: 46px;
-        }
-      }
-      // .fea
       .alart {
         flex-direction: column;
         padding: 15px 50px;
@@ -537,36 +730,4 @@
       }
     }
   }
-  .about-solution {
-    .section-title {
-      h2 {
-        font-size: 32px;
-        line-height: 48px;
-      }
-    }
-  }
-}
-
-/* large devices 992 - 1169*/
-@media #{$lg} {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-  /* common area start */
-}
-
-/* Small devices 575 - 767 */
-@media #{$sm} {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media #{$xs} {
-  /* common area start */
-}
-/* extra Small devices 420 */
-@media #{$xsm} {
-  /* common area start */
 }
