@@ -1,13 +1,13 @@
 /* -------------------------------------- */
 // Common In Banners
 
-.bannerArea .bannerArea__title,
-.bannerArea02 .bannerArea02__title {
-  font-size: 80px;
-  line-height: 106px;
-  color: #000560;
-  margin-bottom: 4px;
-}
+// .bannerArea .bannerArea__title,
+// .bannerArea02 .bannerArea02__title {
+//   font-size: 80px;
+//   line-height: 106px;
+//   color: #000560;
+//   margin-bottom: 4px;
+// }
 /* -------------------------------------- */
 
 /*----------------------------------------*/
@@ -540,11 +540,9 @@
 }
 
 @media (max-width: 1200px) {
-  // banners Title
-  .bannerArea .bannerArea__title,
-  .bannerArea02 .bannerArea02__title {
-    font-size: 68px;
-    line-height: 78px;
+  .bannerArea .bannerArea__title {
+    font-size: 52px;
+    line-height: 66px;
   }
 
   .bannerArea {
@@ -608,8 +606,8 @@
     }
 
     &__title {
-      font-size: 48px !important;
-      line-height: 52px !important;
+      font-size: 48px;
+      line-height: 52px;
     }
 
     .small-feature {
@@ -833,9 +831,19 @@
 
 @media (max-width: 991px) {
   .bannerArea {
-    &__title {
-      font-size: 58px;
-      line-height: 68px;
+    padding-top: 60px;
+    &__image {
+      display: flex;
+      justify-content: center;
+    }
+    &__wrapper {
+      margin-top: 15px;
+    }
+    &__brief {
+      padding-top: 0px;
+    }
+    &__buttons {
+      margin-bottom: 60px;
     }
   }
 
@@ -921,10 +929,6 @@
 @media (max-width: 767px) {
   .bannerArea {
     margin: 0px;
-    &__title {
-      font-size: 42px !important;
-      line-height: 56px !important;
-    }
     &__brief {
       width: 100%;
     }
@@ -965,9 +969,6 @@
   }
   // Homepage-04
   .bannerArea03 {
-    // &__wrapper {
-    //   margin-top: 90px !important;
-    // }
     &__image {
       .react-01 {
         right: 5px;
@@ -979,23 +980,13 @@
   }
 }
 
-@media (max-width: 575px) {
-}
-
 @media (min-width: 320px) and(max-width: 574px) {
   // banner Title
-  %title-sm {
-    font-size: 32px !important;
-    line-height: 46px !important;
-  }
 
   // Homepage-01
   .bannerArea {
     margin: 0px;
     padding: 100px 0px;
-    &__title {
-      @extend %title-sm;
-    }
     &__brief {
       font-size: 16px;
       line-height: 30px;
@@ -1014,10 +1005,6 @@
 
   // Homepage -02
   .bannerArea02 {
-    &__title {
-      @extend %title-sm;
-    }
-
     &__wrapper {
       p {
         font-size: 18px;
@@ -1046,7 +1033,6 @@
   .bannerArea04 {
     padding-bottom: 60px;
     &__title {
-      @extend %title-sm;
       span {
         font-size: 22px;
         line-height: 22px;
@@ -1062,9 +1048,6 @@
 
   // Homepage-04
   .bannerArea03 {
-    &__title {
-      @extend %title-sm;
-    }
     &__wrapper {
       margin-top: 30px !important;
       p {

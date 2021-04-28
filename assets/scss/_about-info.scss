@@ -616,21 +616,29 @@
         margin-left: 0px;
       }
     }
-    .small-feature {
-      display: none;
+
+    .aboutus-introduction02-image {
+      &::before,
+      &::after {
+        display: none;
+      }
     }
   }
   // aboutus-introduction02-image
   .aboutus02 {
     &-image {
-      &::before {
-        right: 140px;
-        top: 30px;
-        z-index: 1;
-      }
+      &::before,
       &::after {
-        right: 125px;
+        display: none;
       }
+      // &::before {
+      //   right: 140px;
+      //   top: 30px;
+      //   z-index: 1;
+      // }
+      // &::after {
+      //   right: 125px;
+      // }
     }
     .small-feature {
       bottom: 62%;

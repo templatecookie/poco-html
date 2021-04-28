@@ -433,10 +433,6 @@
       .sm-feauter-bottom {
         left: 405px;
       }
-      img {
-        height: 350px;
-        object-fit: contain;
-      }
     }
   }
 
@@ -473,7 +469,6 @@
   .about-skill {
     &-image {
       img {
-        height: 550px;
         margin-bottom: 30px;
       }
     }
