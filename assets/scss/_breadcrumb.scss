@@ -127,21 +127,15 @@
 
 @media (max-width: 991px) {
   .breadcrumArea {
+    margin-bottom: 0px !important;
     .bannerArea__wrapper {
       margin-bottom: 15px;
-      // p {
-      //   max-width: 65%;
-      //   margin-top: 15px;
-      //   font-size: 22px;
-      //   line-height: 36px;
-      // }
     }
     .banner-image {
-      // padding-bottom: 30px;
       padding-bottom: 0px;
-      img {
-        height: 280px;
-      }
+      // img {
+      //   height: 280px;
+      // }
     }
   }
 }
@@ -221,21 +215,6 @@
   .breadcrumArea {
     margin: 0px 25px 100px 25px;
 
-    // .bannerArea__wrapper {
-    //   .bannerArea__title {
-    //     h1 {
-    //       font-size: 60px;
-    //       line-height: 68px;
-    //     }
-    //   }
-
-    //   p {
-    //     margin-top: 0px;
-    //     font-size: 20px;
-    //     line-height: 30px;
-    //   }
-    // }
-
     .breadcrumb {
       padding: 10px 20px !important;
 
@@ -306,13 +285,6 @@
           line-height: 40px;
         }
       }
-
-      // p {
-      //   max-width: 100%;
-      //   margin-top: 15px;
-      //   font-size: 16px;
-      //   line-height: 24px;
-      // }
     }
 
     .breadcrumb-wrapper {

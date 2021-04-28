@@ -177,7 +177,6 @@
   position: relative;
 
   .aboutus-introduction02-image {
-    // margin-left: 0p;
     position: relative;
 
     img {
@@ -561,7 +560,6 @@
     }
     .aboutus-introduction02-image {
       &::before {
-        // z-index: 1;
         top: -2px;
         left: 20px;
       }
@@ -594,6 +592,11 @@
 }
 
 @media (max-width: 991px) {
+  // Homepage-01
+  .about-info {
+    padding-bottom: 0px !important;
+  }
+
   //  Homepage-03
   .about-info04 {
     padding-bottom: 0px !important;
@@ -618,23 +621,34 @@
         margin-left: 0px;
       }
     }
-    .small-feature {
-      display: none;
+
+    .aboutus-introduction02-image {
+      &::before,
+      &::after {
+        display: none;
+      }
     }
   }
   // aboutus-introduction02-image
   .aboutus02 {
     &-image {
-      &::before {
-        right: 140px;
-        top: 30px;
-        z-index: 1;
-      }
+      display: flex;
+      justify-content: center;
+      &::before,
       &::after {
-        right: 125px;
+        display: none;
       }
+      // &::before {
+      //   right: 140px;
+      //   top: 30px;
+      //   z-index: 1;
+      // }
+      // &::after {
+      //   right: 125px;
+      // }
     }
     .small-feature {
+      display: none;
       bottom: 62%;
       right: 10%;
       z-index: 9;
@@ -666,7 +680,7 @@
 
   .homepage-03 {
     &.about-introduction {
-      padding-bottom: 90px;
+      // padding-bottom: 90px;
       .about-intro-left {
         .image {
           display: flex;
@@ -679,9 +693,6 @@
       }
     }
   }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
 }
 
 @media (max-width: 767px) {
@@ -894,6 +905,7 @@
       text-align: center;
     }
     .mask-group {
+      display: none;
       .mask1 {
         bottom: -100px;
       }
@@ -1017,8 +1029,6 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
   .about-info {
-    padding-top: 100px;
-    padding-bottom: 70px;
     .about-info-image {
       margin-left: 0px;
       margin-bottom: 50px;
@@ -1077,10 +1087,7 @@
 
 /* Small devices 420 - 574 */
 @media #{$xs} {
-  /* common area start */
-
   // Homepage-02 / About-us
-
   .aboutus02 {
     &-image {
       &::before {

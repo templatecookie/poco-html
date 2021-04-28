@@ -1,12 +1,45 @@
+// @ts-nocheck
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Poco - Agency Bootstrap4 HTML5 Template
+    Template URI: zakirsoft.com
+    Description: Agency - Agency Bootstrap4 HTML5 Template
+    Author: Templatecookie
+    Author URI: zakirhossen.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    JS INDEX
+    ===================
+
+    01. Ui Variables	
+    02. Search Field
+    03. Hamburget Menu	
+    04. Magnify popup	
+    05. Slick Sliders
+        . Branding
+        . Branding-item
+        . Banner Branding	
+        . Testimonial
+        . Testimonial-2
+        . client Review
+        . client Image
+    06. Counter js
+        . Skill Progressbar 	
+   
+
+-----------------------------------------------------------------------------------*/
+
 (function ($) {
   'use strict';
-  // UI VARS
+  /*UI VARS*/
   let logo = document.querySelector('.logo-04');
 
-  // Sticky Header
+  /*  Sticky Header*/
   window.addEventListener('scroll', function () {
     let header = document.querySelectorAll('header');
-    // console.log(header);
+
     header.forEach((headItem) => {
       headItem.classList.toggle('sticky', window.scrollY > 0);
     });
@@ -15,7 +48,7 @@
       : logo.setAttribute('src', 'assets/img/logo/logo04.png');
   });
 
-  //search box opern
+  /*search box open*/
   $('.search-bar').on('click', function () {
     $('.search-box').addClass('search-open');
   });
@@ -23,7 +56,7 @@
     $('.search-box').removeClass('search-open');
   });
 
-  //humberger menu
+  /* humberger menu*/
   function toggleSidebar() {
     $('header aside').toggleClass('active');
     $('.hamburger-menu').toggleClass('open');
@@ -48,8 +81,14 @@
     toggleSidebar();
   });
 
-  // Sliders Start
-  //brand_slider
+  /* magnificPopup video view*/
+  $('.popup-video').magnificPopup({
+    type: 'iframe',
+  });
+
+  /* ###  Sliders ###*/
+
+  /* Branding Slider */
   $('.brand-slider-active').slick({
     infinite: true,
     slidesToShow: 5,
@@ -86,7 +125,8 @@
       },
     ],
   });
-  // Homepage-02 // brand-slider
+
+  /*Homepage-02 === brand-slider */
   $('.brand-slider-item').slick({
     infinite: true,
     slidesToShow: 5,
@@ -124,7 +164,7 @@
       },
     ],
   });
-
+  /* Banner Branding */
   $('.banner-brand__slider').slick({
     infinite: true,
     slidesToShow: 7,
@@ -150,14 +190,12 @@
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          // centerMode: true,
-          // centerPadding: '30px',
         },
       },
     ],
   });
 
-  //testimonial_slider
+  /*testimonial_slider */
   $('.testimonial-slider').slick({
     infinite: true,
     slidesToShow: 3,
@@ -182,16 +220,10 @@
           slidesToShow: 1,
         },
       },
-      // {
-      //     breakpoint: 480,
-      //     settings: {
-      //         slidesToShow: 1,
-      //     },
-      // },
     ],
   });
 
-  //testimonial_slider
+  /* Testimonial Slider part-02 */
   $('.testimonial-active').slick({
     infinite: true,
     slidesToShow: 3,
@@ -220,7 +252,7 @@
     ],
   });
 
-  //Client review_slider
+  /* Client review_slider*/
   $('.review-active').slick({
     infinite: true,
     slidesToShow: 1,
@@ -232,6 +264,7 @@
     nextArrow: '<button class="nextArrow">Next</button>',
   });
 
+  /* client image */
   $('.client-image').slick({
     dots: false,
     arrows: false,
@@ -250,18 +283,10 @@
     ],
   });
 
-  // Sliders End
-
-  // magnificPopup video view
-  $('.popup-video').magnificPopup({
-    type: 'iframe',
-  });
-
-  // SKILL POGRESSBAR
+  /*SKILL POGRESSBAR*/
   function Circlle(el) {
     $(el)
       .circleProgress({
-        // startAngle: (-Math.PI / 4) * 13,
         lineCap: 'round',
         fill: {
           color: '#FF465E',
@@ -275,3 +300,6 @@
   }
   Circlle('.round');
 })(jQuery);
+function enableScrolling() {
+  throw new Error('Function not implemented.');
+}

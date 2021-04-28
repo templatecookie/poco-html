@@ -305,14 +305,10 @@
           span {
             color: #65729e;
             font-size: 14px;
-            // it's not valid
-            // font-size: $gilroy-regular;
 
             a {
               color: #ff465e;
               margin-right: 4px;
-              // it's not valid
-              // font-size: $gilroy-regular !important;
             }
           }
         }
@@ -764,7 +760,6 @@
       .article-thumb {
         max-width: 535px;
         img {
-          height: 250px;
           object-fit: cover;
         }
       }

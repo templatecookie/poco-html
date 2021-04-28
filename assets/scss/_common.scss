@@ -183,8 +183,6 @@ p {
   background-color: #ed880a;
   &:hover {
     color: white;
-    // it's not valid
-    // box-shadow: rgba(255, 70, 94, 0.36);
   }
 }
 /*--
@@ -205,13 +203,9 @@ p {
   &-bgPrimary {
     color: #fff;
     background-color: $tertiary;
-    // it's warning
-    // border-color: $tertiary;
     &:hover {
       color: #fff;
       background-color: $tertiary;
-      // it's warning
-      // border-color: $tertiary;
       box-shadow: 0px 6px 15px rgba(255, 70, 94, 0.36);
     }
   }
@@ -237,8 +231,7 @@ p {
   &-bgBlack {
     color: white;
     background-color: #000560;
-    // it's warning
-    // border-color: #000560;
+
     &:hover {
       color: white;
       border-color: #000560;
@@ -247,8 +240,6 @@ p {
   &-Black {
     color: #000560;
     background-color: white;
-    // it's warning
-    // border-color: white;
 
     &:hover {
       color: #000560;
@@ -257,8 +248,6 @@ p {
   &-bgWhite {
     color: $tertiary;
     background-color: white;
-    // it's warning
-    // border-color: white;
 
     &:hover {
       color: $tertiary;
@@ -268,13 +257,8 @@ p {
 
 // Sections
 
-// section {
-//   padding: 110px 0px;
-// }
-
 .section-title {
   margin-bottom: 60px;
-
   h2 {
     font-size: 60px;
     line-height: 118px;
@@ -389,7 +373,6 @@ p {
 /* Small devices 575 - 767 */
 @media #{$sm} {
   /* common area start */
-  /* common area start */
   h1 {
     font-size: 32px;
     line-height: 1.2;
@@ -409,17 +392,4 @@ p {
   h5 {
     font-size: 14px;
   }
-  // .primary__button {
-  //   font-size: 16px;
-  //   padding: 18px 40px;
-  // }
-}
-
-/* Small devices 420 - 574 */
-@media #{$xs} {
-  /* common area start */
-}
-/* extra Small devices 420 */
-@media #{$xsm} {
-  /* common area start */
 }

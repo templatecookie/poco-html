@@ -433,7 +433,6 @@ p {
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   /* common area start */
-  /* common area start */
   h1 {
     font-size: 32px;
     line-height: 1.2;
@@ -453,16 +452,6 @@ p {
   h5 {
     font-size: 14px;
   }
-}
-
-/* Small devices 420 - 574 */
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
 }
 
 /*----------------------------------------*/
@@ -1030,14 +1019,6 @@ aside,
 }
 
 /* -------------------------------------- */
-.bannerArea .bannerArea__title,
-.bannerArea02 .bannerArea02__title {
-  font-size: 80px;
-  line-height: 106px;
-  color: #000560;
-  margin-bottom: 4px;
-}
-
 /* -------------------------------------- */
 /*----------------------------------------*/
 /*  HOME PAGE 01
@@ -1557,10 +1538,9 @@ aside,
 }
 
 @media (max-width: 1200px) {
-  .bannerArea .bannerArea__title,
-  .bannerArea02 .bannerArea02__title {
-    font-size: 68px;
-    line-height: 78px;
+  .bannerArea .bannerArea__title {
+    font-size: 52px;
+    line-height: 66px;
   }
   .bannerArea {
     padding-bottom: 60px;
@@ -1611,8 +1591,8 @@ aside,
     margin-top: 15px;
   }
   .bannerArea02__title {
-    font-size: 48px !important;
-    line-height: 52px !important;
+    font-size: 48px;
+    line-height: 52px;
   }
   .bannerArea02 .small-feature {
     padding: 15px;
@@ -1774,12 +1754,24 @@ aside,
 }
 
 @media (max-width: 991px) {
-  .bannerArea__title {
-    font-size: 58px;
-    line-height: 68px;
+  .bannerArea {
+    padding-top: 60px;
+  }
+  .bannerArea__image {
+    display: flex;
+    justify-content: center;
+  }
+  .bannerArea__wrapper {
+    margin-top: 15px;
+  }
+  .bannerArea__brief {
+    padding-top: 0px;
+  }
+  .bannerArea__buttons {
+    margin-bottom: 60px;
   }
   .bannerArea02 {
-    padding-bottom: 185px;
+    padding-bottom: 90px;
   }
   .bannerArea02__wrapper {
     padding-top: 0px;
@@ -1795,6 +1787,9 @@ aside,
   .bannerArea02 .small-feature02 {
     top: 390px;
     left: 30px;
+  }
+  .bannerArea02 .small-feature {
+    display: none;
   }
   .bannerArea04 {
     padding-top: 130px;
@@ -1849,12 +1844,14 @@ aside,
 }
 
 @media (max-width: 767px) {
-  .bannerArea__title {
-    font-size: 42px !important;
-    line-height: 56px !important;
+  .bannerArea {
+    margin: 0px;
   }
   .bannerArea__brief {
     width: 100%;
+  }
+  .bannerArea__downArrow {
+    display: none;
   }
   .bannerArea03__wrapper {
     margin-top: 30px !important;
@@ -1887,9 +1884,8 @@ aside,
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
-  .bannerArea__title, .bannerArea02__title, .bannerArea04__title, .bannerArea03__title {
-    font-size: 32px !important;
-    line-height: 46px !important;
+  .bannerArea {
+    padding-top: 90px;
   }
   .bannerArea {
     margin: 0px;
@@ -1957,6 +1953,10 @@ aside,
 /*----------------------------------------*/
 /*  HOME PAGE 01
 /*----------------------------------------*/
+.brand-area {
+  padding-top: 100px;
+}
+
 .brand-area .small-section h3 {
   font-size: 30px;
   line-height: 42px;
@@ -2018,20 +2018,16 @@ aside,
 /*----------------------------------------*/
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
+@media (max-width: 991px) {
+  .brand-area {
+    padding-bottom: 0px !important;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 574px) {
   .brands-area .brand-slider-item div img {
     margin: auto;
   }
-}
-
-/* large devices 992 - 1169*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
 }
 
 /* Small devices 575 - 767 */
@@ -2595,6 +2591,9 @@ aside,
 }
 
 @media (max-width: 991px) {
+  .about-info {
+    padding-bottom: 0px !important;
+  }
   .about-info04 {
     padding-bottom: 0px !important;
   }
@@ -2612,18 +2611,18 @@ aside,
     max-width: 100%;
     margin-left: 0px;
   }
-  .aboutus-introduction02 .small-feature {
+  .aboutus-introduction02 .aboutus-introduction02-image::before, .aboutus-introduction02 .aboutus-introduction02-image::after {
     display: none;
   }
-  .aboutus02-image::before {
-    right: 140px;
-    top: 30px;
-    z-index: 1;
+  .aboutus02-image {
+    display: flex;
+    justify-content: center;
   }
-  .aboutus02-image::after {
-    right: 125px;
+  .aboutus02-image::before, .aboutus02-image::after {
+    display: none;
   }
   .aboutus02 .small-feature {
+    display: none;
     bottom: 62%;
     right: 10%;
     z-index: 9;
@@ -2638,9 +2637,6 @@ aside,
   }
   .about-skill-image img {
     margin-bottom: 30px;
-  }
-  .homepage-03.about-introduction {
-    padding-bottom: 90px;
   }
   .homepage-03.about-introduction .about-intro-left .image {
     display: flex;
@@ -2785,6 +2781,9 @@ aside,
     align-items: center;
     text-align: center;
   }
+  .about-info .mask-group {
+    display: none;
+  }
   .about-info .mask-group .mask1 {
     bottom: -100px;
   }
@@ -2865,10 +2864,6 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-info {
-    padding-top: 100px;
-    padding-bottom: 70px;
-  }
   .about-info .about-info-image {
     margin-left: 0px;
     margin-bottom: 50px;
@@ -2914,7 +2909,6 @@ aside,
 
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
   .aboutus02-image::before {
     right: 2px;
   }
@@ -3232,6 +3226,9 @@ aside,
   .homepage-03 .provide-services-item {
     min-height: 415px;
   }
+  .valuable-services {
+    margin-bottom: 0px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3289,8 +3286,8 @@ aside,
     line-height: 42px;
   }
   .special-services-text h5 {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 28px;
     margin-bottom: 0px;
   }
   .homepage-03.services03 {
@@ -3312,6 +3309,18 @@ aside,
     line-height: 26px;
     margin-bottom: 15px;
   }
+  .valuable-services-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .valuable-services-item-icon {
+    margin-bottom: 15px;
+  }
+  .valuable-services-item-text h6 {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 419px) {
@@ -3330,9 +3339,6 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .special-services {
-    padding-bottom: 50px;
-  }
   .special-services .special-services-text h5 {
     margin-bottom: 5px;
   }
@@ -3341,9 +3347,6 @@ aside,
   }
 }
 
-/* Small devices 575 - 767 */
-/* Small devices 420 - 574 */
-/* extra Small devices 420 */
 .services-introduction {
   padding: 100px 0;
 }
@@ -3474,6 +3477,9 @@ aside,
 }
 
 @media (max-width: 991px) {
+  .services-introduction {
+    padding-bottom: 0px !important;
+  }
   .services-introduction .section-heading h2 {
     font-size: 38px;
     line-height: 48px;
@@ -3552,31 +3558,9 @@ aside,
     width: 135px;
     height: 135px;
   }
-}
-
-/* large devices 992 - 1169*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
-}
-
-/* Small devices 575 - 767 */
-@media only screen and (min-width: 575px) and (max-width: 767px) {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
+  .services-introduction-item {
+    float: none;
+  }
 }
 
 /*----------------------------------------*/
@@ -3887,9 +3871,6 @@ aside,
   .price-area .mask-group3 .mask9 {
     left: -105px;
   }
-  .price-area .md-modifi {
-    margin-top: 25px;
-  }
   .priceArea .section-title p {
     max-width: 100%;
   }
@@ -3982,9 +3963,6 @@ aside,
   .price-area {
     padding-bottom: 0px;
   }
-  .price-area .md-modifi {
-    margin-top: 0px;
-  }
   .price-area .section-title h2 {
     font-size: 28px;
     line-height: 42px;
@@ -4020,9 +3998,6 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .price-area {
-    padding: 100px 0;
-  }
   .price-area .price-box {
     padding: 40px 0;
   }
@@ -4442,32 +4417,29 @@ aside,
 }
 
 @media (max-width: 991px) {
-  .callto-action {
-    padding-top: 120px;
-  }
   .callto-action-modifi {
     padding-bottom: 90px;
+  }
+  .callto-action-modifi .callto-action-image {
+    margin-bottom: 30px;
   }
   .callto-action-modifi .callto-action-image img {
     margin-bottom: 0px;
   }
   .callto-action-image {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
-  }
-  .callto-action-image img {
-    margin-left: 0px;
-    height: 380px;
   }
   .callto-action-text {
     margin-top: 0px;
     padding-top: 0px;
   }
   .callto-action-text h2 {
-    font-size: 42px;
-    line-height: 56px;
     margin-bottom: 0px;
+  }
+  .callto-action-mask {
+    display: none;
   }
   .callto-action-modifi.callto-action-project-d .callto-action-text {
     margin-top: 30px;
@@ -4477,6 +4449,9 @@ aside,
   }
   .call-action-two_group.call-action_group-5 {
     right: 625px;
+  }
+  .call-action-two__comments-group {
+    display: none;
   }
   .homepage-03.call-to-action03 {
     padding-bottom: 120px;
@@ -4613,9 +4588,6 @@ aside,
 
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .callto-action {
-    margin: 0 20px;
-  }
   .callto-action .callto-action-text h2 {
     max-width: 100%;
     margin-bottom: 20px;
@@ -4737,7 +4709,7 @@ aside,
   font-family: "Gilroy-Medium";
 }
 
-.testimonial-area .testimonial-slider .testimonial-item .reatting {
+.testimonial-area .testimonial-slider .testimonial-item .rating {
   color: #ff8b17;
   font-family: "Gilroy-Medium";
 }
@@ -5139,6 +5111,11 @@ aside,
 }
 
 @media (max-width: 991px) {
+  .testimonial-area .section-title p {
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
   .testimonial-area .slider-arrows {
     justify-content: flex-end;
   }
@@ -5254,6 +5231,7 @@ aside,
 
 @media (min-width: 320px) and (max-width: 574px) {
   .testimonial-area {
+    margin-top: 0px !important;
     padding-bottom: 80px;
   }
   .testimonial-area .slider-arrows {
@@ -5293,6 +5271,9 @@ aside,
     left: -20px;
     width: 15px;
     height: 5px;
+  }
+  .testimonial-area .mask-group2 {
+    display: none;
   }
   .testimonial-area .mask-group2 .mask6 {
     left: 0px;
@@ -5353,8 +5334,7 @@ aside,
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-area {
-    padding: 70px 0px 90px 0px !important;
-    margin: 0px 20px !important;
+    margin: 0px;
   }
   .testimonial-area .mask-group2 .mask5 {
     display: none !important;
@@ -5395,7 +5375,7 @@ aside,
     font-size: 13px !important;
     line-height: 22px !important;
   }
-  .testimonial-area .reatting {
+  .testimonial-area .rating {
     font-size: 14px !important;
   }
 }
@@ -5446,7 +5426,7 @@ aside,
     font-size: 13px !important;
     line-height: 22px !important;
   }
-  .testimonial-area .reatting {
+  .testimonial-area .rating {
     font-size: 14px !important;
   }
   .testimonial02 .section-title h2 {
@@ -5474,20 +5454,12 @@ aside,
     width: 30px;
     left: -30px;
   }
-  .testimonial04 .testimonial-active .slick-arrow {
-    top: inherit;
-    bottom: -95px !important;
-  }
-  .testimonial04 .testimonial-active .slick-arrow.nextArrow {
-    right: 15px;
-  }
 }
 
 /* extra Small devices 420 */
 @media (max-width: 420px) {
   .testimonial-area {
     margin: 0px !important;
-    margin-top: 50px !important;
     border-radius: 0px !important;
   }
   .testimonial-area .testimonial-slider .slick-arrow.prev-arrow {
@@ -5517,7 +5489,7 @@ aside,
     font-size: 13px !important;
     line-height: 22px !important;
   }
-  .testimonial-area .reatting {
+  .testimonial-area .rating {
     font-size: 14px !important;
   }
 }
@@ -5726,10 +5698,6 @@ aside,
 }
 
 @media (max-width: 991px) {
-  .client-review {
-    padding-top: 100px;
-    padding-bottom: 160px;
-  }
   .client-review .section-title {
     margin-top: 30px;
     margin-bottom: 0px;
@@ -5939,6 +5907,15 @@ aside,
   }
 }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  .newsletter-area-form form .input-group input {
+    height: 50px;
+  }
+  .newsletter-area-form form .primary__button {
+    padding: 15px 30px;
+  }
+}
+
 /* large devices 992 - 1169*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .newsletter-area {
@@ -5955,30 +5932,12 @@ aside,
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* common area start */
-  .newsletter-area {
-    padding: 100px 0;
-  }
   .newsletter-area .newsletter-area-text {
     margin-bottom: 50px;
   }
   .newsletter-area .newsletter-area-text p {
     font-size: 22px;
   }
-}
-
-/* Small devices 575 - 767 */
-@media only screen and (min-width: 575px) and (max-width: 767px) {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
 }
 
 .beloved-client {
@@ -6256,6 +6215,7 @@ aside,
   }
   .our-teams {
     padding: 60px 0px;
+    margin: 0px;
   }
   .our-teams .section-title {
     margin: 30px 0px;
@@ -6527,14 +6487,14 @@ aside,
 }
 
 @media (max-width: 991px) {
+  .breadcrumArea {
+    margin-bottom: 0px !important;
+  }
   .breadcrumArea .bannerArea__wrapper {
     margin-bottom: 15px;
   }
   .breadcrumArea .banner-image {
     padding-bottom: 0px;
-  }
-  .breadcrumArea .banner-image img {
-    height: 280px;
   }
 }
 
@@ -6885,9 +6845,6 @@ aside,
 }
 
 @media (max-width: 991px) {
-  .projectSlider {
-    padding-bottom: 60px;
-  }
   .projectSlider .section-title {
     margin-bottom: 0px;
   }
@@ -6938,11 +6895,14 @@ aside,
 
 @media (min-width: 320px) and (max-width: 574px) {
   .projectSlider .section-title {
-    margin-bottom: -125px;
+    margin-bottom: 30px;
   }
   .projectSlider .section-title h2 {
     font-size: 32px;
     line-height: 42px;
+  }
+  .projectSlider__leftContent {
+    margin-top: -130px;
   }
   .projectSlider__pagination.swiper-pagination-progressbar {
     width: 45%;
@@ -6955,10 +6915,15 @@ aside,
     height: 10px;
   }
   .projectSlider__pagination.swiper-pagination-progressbar {
-    bottom: 65px !important;
+    bottom: auto;
+    top: 205px;
+  }
+  .projectSlider .swiper-slide {
+    align-items: flex-start;
   }
   .projectSlider__next, .projectSlider__prev {
-    bottom: 45px;
+    bottom: auto;
+    top: 205px;
   }
 }
 
@@ -7071,6 +7036,10 @@ aside,
   margin: 0px;
   padding: 0px;
   border-radius: 0px;
+}
+
+.dark-footer .footer-area-about {
+  margin-bottom: 0px;
 }
 
 .dark-footer .footer-area-about p {
@@ -7247,6 +7216,9 @@ aside,
 }
 
 @media (max-width: 991px) {
+  .footer03 .footer-area {
+    padding-bottom: 0px !important;
+  }
   .footer03 .footer-area-about {
     margin-bottom: 0px;
   }
@@ -7255,6 +7227,10 @@ aside,
   }
   .footer-area {
     margin: 0px;
+    padding-bottom: 0px !important;
+  }
+  .dark-footer {
+    padding-bottom: 0px !important;
   }
 }
 
@@ -7352,6 +7328,9 @@ aside,
   .footer-area-lists {
     margin-bottom: 0px;
   }
+  .footer-area-shape {
+    display: none;
+  }
   .footer-area-shape .ft-shape-01 {
     left: 0px;
   }
@@ -7388,7 +7367,6 @@ aside,
   }
 }
 
-/* Medium devices 768 - 991 */
 /* Small devices 575 - 767 */
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   .footer-area .footer-area-about h4,
@@ -7861,7 +7839,7 @@ aside,
     margin-bottom: 15px;
   }
   .about-us.our-services {
-    margin: 0px;
+    margin: 0px !important;
   }
   .about-us.our-services .about-us-text {
     margin-top: 0px;
@@ -7881,10 +7859,6 @@ aside,
   }
   .about-us-image .sm-feauter-bottom {
     left: 405px;
-  }
-  .about-us-image img {
-    height: 350px;
-    object-fit: contain;
   }
   .about-solution {
     padding-bottom: 90px;
@@ -7913,7 +7887,6 @@ aside,
     right: 35px;
   }
   .about-skill-image img {
-    height: 550px;
     margin-bottom: 30px;
   }
   .about-skill-wrapper .about-skill-pogressbar {
@@ -8382,9 +8355,6 @@ aside,
 }
 
 @media (max-width: 991px) {
-  .our-work-process {
-    padding: 120px 0px;
-  }
   .our-work-process .process-text {
     max-width: 100%;
   }
@@ -8491,31 +8461,6 @@ aside,
   .our-services .mask-right {
     top: -40px;
   }
-}
-
-/* large devices 992 - 1169*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* common area start */
-}
-
-/* Small devices 575 - 767 */
-@media only screen and (min-width: 575px) and (max-width: 767px) {
-  /* common area start */
-}
-
-/* Small devices 420 - 574 */
-@media only screen and (min-width: 420px) and (max-width: 574px) {
-  /* common area start */
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
 }
 
 .profession-area {
@@ -8900,7 +8845,6 @@ aside,
     justify-content: center;
   }
   .project-detail .overview-image img {
-    height: 250px;
     object-fit: contain;
   }
 }
@@ -8983,11 +8927,6 @@ aside,
   }
 }
 
-/* large devices 992 - 1169*/
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* common area start */
-}
-
 /* Medium devices 768 - 991 */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* common area start */
@@ -9002,22 +8941,12 @@ aside,
   }
 }
 
-/* Small devices 575 - 767 */
-@media only screen and (min-width: 575px) and (max-width: 767px) {
-  /* common area start */
-}
-
 /* Small devices 420 - 574 */
 @media only screen and (min-width: 420px) and (max-width: 574px) {
   /* common area start */
   .project-wrapper-image {
     margin-left: -20px;
   }
-}
-
-/* extra Small devices 420 */
-@media (max-width: 420px) {
-  /* common area start */
 }
 
 .conatact-area {
@@ -9222,9 +9151,11 @@ aside,
   }
   .contactArea__info {
     margin-left: 0px;
+    margin-top: 30px;
   }
   .conatact-area {
     padding-top: 0px;
+    margin-bottom: 30px;
   }
   .conatact-area__container {
     padding-top: 30px;
@@ -10013,7 +9944,6 @@ aside,
     max-width: 535px;
   }
   .blog-area .article-item .article-thumb img {
-    height: 250px;
     object-fit: cover;
   }
   .blog-area .article-item p.article-text {
@@ -10196,4 +10126,388 @@ aside,
     height: 30px;
     font-size: 16px;
   }
+}
+
+@media (max-width: 991px) {
+  .bannerArea .bannerArea__title,
+  .about-info-text h2,
+  .special-services .section-title h2,
+  .callto-action-text h2,
+  .price-area .section-title h2,
+  .testimonial-area .section-title h2,
+  .newsletter-area-text h2,
+  .bannerArea02__title,
+  .services-introduction .section-heading h2,
+  .aboutus02-wrapper-title h2,
+  .valuable-services-heading h2,
+  .aboutus-introduction02 .aboutus02-wrapper-title h2,
+  .call-action-two-content h2,
+  .section-title h2,
+  .bannerArea04__title,
+  .about-info04 .about-info-text h2,
+  #circleBar .section-title h2,
+  .projectSlider .section-title h2,
+  .projectSlider__ContentTitle,
+  .client-review .section-title h2,
+  .contactArea__title.section-title h2,
+  .bannerArea03__title,
+  .homepage-03 .section-heading h2,
+  .homepage-03.about-introduction .sub-section-heading h2,
+  .beloved-client .sub-section-heading h2,
+  .our-team .section-heading h2,
+  .homepage-03 .call-action-text .sub-section-heading h2,
+  .breadcrumArea .bannerArea__wrapper .bannerArea__title h1,
+  .our-work-process .section-title h2,
+  .about-us.our-services .about-us-text .sub-heading h2,
+  .priceArea .section-title h2,
+  .design-services-text h2,
+  .about-us-text .sub-heading h2,
+  .about-solution .section-title h2,
+  .our-teams .section-title h2,
+  .about-skill-wrapper .about-skill-title h2,
+  .project-detail .project-detail-content h2,
+  .blog-area .article-item h3,
+  .blog-area .blog-quotes h3,
+  .conatact-area .section-title h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .bannerArea__brief,
+  .about-info-text p,
+  .about-info-project .project-rating p,
+  .special-services .special-services-text p,
+  .callto-action .callto-action-text p,
+  .price-area .section-title p,
+  .testimonial-area .w-65,
+  .testimonial-area .testimonial-slider .testimonial-item p,
+  .newsletter-area .newsletter-area-text p,
+  .footer-area .footer-area-lists ul li a,
+  .footer-area .footer-area-about p,
+  .copyright-area-text p,
+  .bannerArea02__wrapper p,
+  .services-introduction .section-heading p,
+  .aboutus02-wrapper-title p,
+  .valuable-services-item-text p,
+  .call-action-two_group span.comments,
+  .bannerArea04__wrapper p,
+  .about-info04 .about-info-text p,
+  .testimonial04 .testimonial-wrappers .tesmonial-text p,
+  .projectSlider__textContents,
+  .client-review .review-active .single-testimonial p,
+  .contactArea__brief,
+  .footer04 .copyright-area-list ul li,
+  .bannerArea03 .bannerArea03__wrapper p,
+  .homepage-03 .section-heading p,
+  .homepage-03 .services-introduction-item-text p,
+  .homepage-03 .sub-section-heading p,
+  .beloved-client .sub-section-heading p,
+  .homepage-03 .provide-services-item-text p,
+  .homepage-03 .call-action-text .sub-section-heading p,
+  .breadcrumArea .bannerArea__wrapper p,
+  .our-work-process .process-text p,
+  .about-us-text .sub-heading p,
+  .about-us-text .feature .text p,
+  .priceArea .section-title p,
+  .design-services-text p,
+  .testimonial-area.trust-us .section-title p,
+  .about-skill-wrapper .about-skill-title p,
+  .profession-area .profession-wrapper .profession-tittle p,
+  .project-wrapper-title p,
+  .project-detail .project-detail-content p,
+  p,
+  .blog-area .article-item p.article-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .bannerArea__image img,
+  .about-info .about-info-image img,
+  .callto-action-image img,
+  .bannerArea02__image img,
+  .aboutus02-image img,
+  .aboutus-introduction02 .aboutus-introduction02-image img,
+  .bannerArea04__image img,
+  .client-review .banner-image img,
+  .bannerArea03__image .banner01,
+  .homepage-03.about-introduction .about-intro-left .image img,
+  .beloved-client .image img,
+  .breadcrumArea .banner-image img,
+  .about-us-image img,
+  .about-skill-image img,
+  .profession-area .profession-img img,
+  .project-detail .overview-image img {
+    height: 450px;
+    object-fit: contain;
+  }
+  .bannerArea,
+  .brand-area,
+  .about-info,
+  .special-services,
+  .callto-action,
+  .price-area,
+  .testimonial-area,
+  .newsletter-area,
+  .footer-area,
+  .services-introduction,
+  .aboutus02,
+  .valuable-services,
+  .call-action-two,
+  .dark-footer,
+  #circleBar,
+  .projectSlider,
+  .client-review,
+  .contactArea,
+  .homepage-03.service-introduction,
+  .homepage-03.about-introduction,
+  .footer03 .footer-area,
+  .homepage-03.call-to-action03,
+  .our-work-process,
+  .about-us.our-services,
+  .special-services.our-services,
+  .priceArea,
+  .about-us,
+  .about-solution,
+  .our-teams,
+  .about-skill,
+  .profession-area,
+  .project,
+  .blog-area,
+  .map-area,
+  .conatact-area {
+    padding: 90px 0px;
+  }
+  /* Section padding */
+  /*Section Title */
+  /* Brief Text */
+  /*Images*/
+  .bannerArea02__image,
+  .about-info .about-info-image,
+  .bannerArea02__image,
+  .callto-action-image,
+  .bannerArea04__image,
+  .client-review .banner-image,
+  .bannerArea03__image .banner01,
+  .beloved-client .image,
+  .breadcrumArea .banner-image,
+  .about-us.our-services .about-us-image .image {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .bannerArea .bannerArea__title,
+  .about-info-text h2,
+  .special-services .section-title h2,
+  .callto-action-text h2,
+  .price-area .section-title h2,
+  .testimonial-area .section-title h2,
+  .newsletter-area-text h2,
+  .bannerArea02__title,
+  .services-introduction .section-heading h2,
+  .aboutus02-wrapper-title h2,
+  .valuable-services-heading h2,
+  .aboutus-introduction02 .aboutus02-wrapper-title h2,
+  .call-action-two-content h2,
+  .section-title h2,
+  .bannerArea04__title,
+  .about-info04 .about-info-text h2,
+  #circleBar .section-title h2,
+  .projectSlider .section-title h2,
+  .projectSlider__ContentTitle,
+  .client-review .section-title h2,
+  .contactArea__title.section-title h2,
+  .bannerArea03__title,
+  .homepage-03 .section-heading h2,
+  .homepage-03.about-introduction .sub-section-heading h2,
+  .beloved-client .sub-section-heading h2,
+  .our-team .section-heading h2,
+  .homepage-03 .call-action-text .sub-section-heading h2,
+  .breadcrumArea .bannerArea__wrapper .bannerArea__title h1,
+  .our-work-process .section-title h2,
+  .about-us.our-services .about-us-text .sub-heading h2,
+  .priceArea .section-title h2,
+  .design-services-text h2,
+  .about-us-text .sub-heading h2,
+  .about-solution .section-title h2,
+  .our-teams .section-title h2,
+  .about-skill-wrapper .about-skill-title h2,
+  .project-detail .project-detail-content h2,
+  .blog-area .article-item h3,
+  .blog-area .blog-quotes h3,
+  .conatact-area .section-title h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .bannerArea__image img,
+  .about-info .about-info-image img,
+  .callto-action-image img,
+  .bannerArea02__image img,
+  .aboutus02-image img,
+  .aboutus-introduction02 .aboutus-introduction02-image img,
+  .bannerArea04__image img,
+  .client-review .banner-image img,
+  .bannerArea03__image .banner01,
+  .homepage-03.about-introduction .about-intro-left .image img,
+  .beloved-client .image img,
+  .breadcrumArea .banner-image img,
+  .about-us-image img,
+  .about-skill-image img,
+  .profession-area .profession-img img,
+  .project-detail .overview-image img {
+    height: 290px;
+  }
+  
+  .brand-area,
+  .about-info,
+  .special-services,
+  .callto-action,
+  .price-area,
+  .testimonial-area,
+  .newsletter-area,
+  .footer-area,
+  .services-introduction,
+  .aboutus02,
+  .valuable-services,
+  .call-action-two,
+  .dark-footer,
+  #circleBar,
+  .projectSlider,
+  .client-review,
+  .contactArea,
+  .homepage-03.service-introduction,
+  .homepage-03.about-introduction,
+  .footer03 .footer-area,
+  .homepage-03.call-to-action03,
+  .our-work-process,
+  .about-us.our-services,
+  .special-services.our-services,
+  .priceArea,
+  .about-us,
+  .about-solution,
+  .our-teams,
+  .about-skill,
+  .profession-area,
+  .project,
+  .blog-area,
+  .map-area,
+  .conatact-area {
+    padding: 60px 0px;
+  }
+  /* Section padding */
+  /*Section Title */
+  /* Images*/
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  .bannerArea .bannerArea__title,
+  .about-info-text h2,
+  .special-services .section-title h2,
+  .callto-action-text h2,
+  .price-area .section-title h2,
+  .testimonial-area .section-title h2,
+  .newsletter-area-text h2,
+  .bannerArea02__title,
+  .services-introduction .section-heading h2,
+  .aboutus02-wrapper-title h2,
+  .valuable-services-heading h2,
+  .aboutus-introduction02 .aboutus02-wrapper-title h2,
+  .call-action-two-content h2,
+  .section-title h2,
+  .bannerArea04__title,
+  .about-info04 .about-info-text h2,
+  #circleBar .section-title h2,
+  .projectSlider .section-title h2,
+  .projectSlider__ContentTitle,
+  .client-review .section-title h2,
+  .contactArea__title.section-title h2,
+  .bannerArea03__title,
+  .homepage-03 .section-heading h2,
+  .homepage-03.about-introduction .sub-section-heading h2,
+  .beloved-client .sub-section-heading h2,
+  .our-team .section-heading h2,
+  .homepage-03 .call-action-text .sub-section-heading h2,
+  .breadcrumArea .bannerArea__wrapper .bannerArea__title h1,
+  .our-work-process .section-title h2,
+  .about-us.our-services .about-us-text .sub-heading h2,
+  .priceArea .section-title h2,
+  .design-services-text h2,
+  .about-us-text .sub-heading h2,
+  .about-solution .section-title h2,
+  .our-teams .section-title h2,
+  .about-skill-wrapper .about-skill-title h2,
+  .project-detail .project-detail-content h2,
+  .blog-area .article-item h3,
+  .blog-area .blog-quotes h3,
+  .conatact-area .section-title h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .bannerArea__brief,
+  .about-info-text p,
+  .about-info-project .project-rating p,
+  .special-services .special-services-text p,
+  .callto-action .callto-action-text p,
+  .price-area .section-title p,
+  .testimonial-area .w-65,
+  .testimonial-area .testimonial-slider .testimonial-item p,
+  .newsletter-area .newsletter-area-text p,
+  .footer-area .footer-area-lists ul li a,
+  .footer-area .footer-area-about p,
+  .copyright-area-text p,
+  .bannerArea02__wrapper p,
+  .services-introduction .section-heading p,
+  .aboutus02-wrapper-title p,
+  .valuable-services-item-text p,
+  .call-action-two_group span.comments,
+  .bannerArea04__wrapper p,
+  .about-info04 .about-info-text p,
+  .testimonial04 .testimonial-wrappers .tesmonial-text p,
+  .projectSlider__textContents,
+  .client-review .review-active .single-testimonial p,
+  .contactArea__brief,
+  .footer04 .copyright-area-list ul li,
+  .bannerArea03 .bannerArea03__wrapper p,
+  .homepage-03 .section-heading p,
+  .homepage-03 .services-introduction-item-text p,
+  .homepage-03 .sub-section-heading p,
+  .beloved-client .sub-section-heading p,
+  .homepage-03 .provide-services-item-text p,
+  .homepage-03 .call-action-text .sub-section-heading p,
+  .breadcrumArea .bannerArea__wrapper p,
+  .our-work-process .process-text p,
+  .about-us-text .sub-heading p,
+  .about-us-text .feature .text p,
+  .priceArea .section-title p,
+  .design-services-text p,
+  .testimonial-area.trust-us .section-title p,
+  .about-skill-wrapper .about-skill-title p,
+  .profession-area .profession-wrapper .profession-tittle p,
+  .project-wrapper-title p,
+  .project-detail .project-detail-content p,
+  p,
+  .blog-area .article-item p.article-text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .bannerArea__image img,
+  .about-info .about-info-image img,
+  .callto-action-image img,
+  .bannerArea02__image img,
+  .aboutus02-image img,
+  .aboutus-introduction02 .aboutus-introduction02-image img,
+  .bannerArea04__image img,
+  .client-review .banner-image img,
+  .bannerArea03__image .banner01,
+  .homepage-03.about-introduction .about-intro-left .image img,
+  .beloved-client .image img,
+  .breadcrumArea .banner-image img,
+  .about-us-image img,
+  .about-skill-image img,
+  .profession-area .profession-img img,
+  .project-detail .overview-image img {
+    height: auto;
+  }
+  /* remove custom height */
+  /*Brief Text */
+  /*Images*/
 }

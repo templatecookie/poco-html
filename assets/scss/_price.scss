@@ -77,8 +77,6 @@
         &:hover {
           color: white;
           background: $tertiary;
-          // it's warning
-          // border-color: $tertiary;
         }
       }
     }
@@ -309,10 +307,6 @@
         left: -105px;
       }
     }
-
-    .md-modifi {
-      margin-top: 25px;
-    }
   }
 
   .priceArea {
@@ -448,9 +442,6 @@
   // Homepage-01
   .price-area {
     padding-bottom: 0px;
-    .md-modifi {
-      margin-top: 0px;
-    }
 
     .section-title {
       h2 {
@@ -498,7 +489,6 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
   .price-area {
-    padding: 100px 0;
     .price-box {
       padding: 40px 0;
       .price-title {
@@ -510,17 +500,3 @@
     }
   }
 }
-
-// /* Small devices 575 - 767 */
-// @media #{$sm} {
-//     /* common area start */
-// }
-
-// /* Small devices 420 - 574 */
-// @media #{$xs} {
-//     /* common area start */
-// }
-// /* extra Small devices 420 */
-// @media #{$xsm} {
-//     /* common area start */
-// }

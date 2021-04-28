@@ -1,0 +1,429 @@
+@media (max-width: 991px) {
+  %title-sm-1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  %brief-sm-1 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  %img-sm-1 {
+    height: 450px;
+    object-fit: contain;
+  }
+
+  %space-sm-1 {
+    padding: 90px 0px;
+  }
+
+  /* Section padding */
+  .bannerArea,
+  .brand-area,
+  .about-info,
+  .special-services,
+  .callto-action,
+  .price-area,
+  .testimonial-area,
+  .newsletter-area,
+  .footer-area,
+  .services-introduction,
+  .aboutus02,
+  .valuable-services,
+  .call-action-two,
+  .dark-footer,
+  #circleBar,
+  .projectSlider,
+  .client-review,
+  .contactArea,
+  .homepage-03.service-introduction,
+  .homepage-03.about-introduction,
+  .footer03 .footer-area,
+  .homepage-03.call-to-action03,
+  .our-work-process,
+  .about-us.our-services,
+  .special-services.our-services,
+  .priceArea,
+  .about-us,
+  .about-solution,
+  .our-teams,
+  .about-skill,
+  .profession-area,
+  .project,
+  .blog-area,
+  .map-area,
+  .conatact-area {
+    @extend %space-sm-1;
+  }
+
+  /*Section Title */
+  .bannerArea .bannerArea__title,
+  .about-info-text h2,
+  .special-services .section-title h2,
+  .callto-action-text h2,
+  .price-area .section-title h2,
+  .testimonial-area .section-title h2,
+  .newsletter-area-text h2,
+  .bannerArea02__title,
+  .services-introduction .section-heading h2,
+  .aboutus02-wrapper-title h2,
+  .valuable-services-heading h2,
+  .aboutus-introduction02 .aboutus02-wrapper-title h2,
+  .call-action-two-content h2,
+  .section-title h2,
+  .bannerArea04__title,
+  .about-info04 .about-info-text h2,
+  #circleBar .section-title h2,
+  .projectSlider .section-title h2,
+  .projectSlider__ContentTitle,
+  .client-review .section-title h2,
+  .contactArea__title.section-title h2,
+  .bannerArea03__title,
+  .homepage-03 .section-heading h2,
+  .homepage-03.about-introduction .sub-section-heading h2,
+  .beloved-client .sub-section-heading h2,
+  .our-team .section-heading h2,
+  .homepage-03 .call-action-text .sub-section-heading h2,
+  .breadcrumArea .bannerArea__wrapper .bannerArea__title h1,
+  .our-work-process .section-title h2,
+  .about-us.our-services .about-us-text .sub-heading h2,
+  .priceArea .section-title h2,
+  .design-services-text h2,
+  .about-us-text .sub-heading h2,
+  .about-solution .section-title h2,
+  .our-teams .section-title h2,
+  .about-skill-wrapper .about-skill-title h2,
+  .project-detail .project-detail-content h2,
+  .blog-area .article-item h3,
+  .blog-area .blog-quotes h3,
+  .conatact-area .section-title h2 {
+    @extend %title-sm-1;
+  }
+
+  /* Brief Text */
+  .bannerArea__brief,
+  .about-info-text p,
+  .about-info-project .project-rating p,
+  .special-services .special-services-text p,
+  .callto-action .callto-action-text p,
+  .price-area .section-title p,
+  .testimonial-area .w-65,
+  .testimonial-area .testimonial-slider .testimonial-item p,
+  .newsletter-area .newsletter-area-text p,
+  .footer-area .footer-area-lists ul li a,
+  .footer-area .footer-area-about p,
+  .footer-area .footer-area-lists ul li a,
+  .copyright-area-text p,
+  .bannerArea02__wrapper p,
+  .services-introduction .section-heading p,
+  .aboutus02-wrapper-title p,
+  .valuable-services-item-text p,
+  .call-action-two_group span.comments,
+  .bannerArea04__wrapper p,
+  .about-info04 .about-info-text p,
+  .testimonial04 .testimonial-wrappers .tesmonial-text p,
+  .projectSlider__textContents,
+  .client-review .review-active .single-testimonial p,
+  .contactArea__brief,
+  .footer04 .copyright-area-list ul li,
+  .bannerArea03 .bannerArea03__wrapper p,
+  .homepage-03 .section-heading p,
+  .homepage-03 .services-introduction-item-text p,
+  .homepage-03 .sub-section-heading p,
+  .beloved-client .sub-section-heading p,
+  .homepage-03 .provide-services-item-text p,
+  .homepage-03 .call-action-text .sub-section-heading p,
+  .breadcrumArea .bannerArea__wrapper p,
+  .our-work-process .process-text p,
+  .about-us-text .sub-heading p,
+  .about-us-text .feature .text p,
+  .priceArea .section-title p,
+  .design-services-text p,
+  .testimonial-area.trust-us .section-title p,
+  .about-skill-wrapper .about-skill-title p,
+  .profession-area .profession-wrapper .profession-tittle p,
+  .project-wrapper-title p,
+  .project-detail .project-detail-content p,
+  p,
+  .blog-area .article-item p.article-text {
+    @extend %brief-sm-1;
+  }
+
+  /*Images*/
+
+  .bannerArea02__image,
+  .about-info .about-info-image,
+  .bannerArea02__image,
+  .callto-action-image,
+  .bannerArea04__image,
+  .client-review .banner-image,
+  .bannerArea03__image .banner01,
+  .beloved-client .image,
+  .breadcrumArea .banner-image,
+  .about-us.our-services .about-us-image .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerArea__image img,
+  .about-info .about-info-image img,
+  .callto-action-image img,
+  .bannerArea02__image img,
+  .aboutus02-image img,
+  .aboutus-introduction02 .aboutus-introduction02-image img,
+  .bannerArea04__image img,
+  .client-review .banner-image img,
+  .bannerArea03__image .banner01,
+  .homepage-03.about-introduction .about-intro-left .image img,
+  .beloved-client .image img,
+  .breadcrumArea .banner-image img,
+  .about-us-image img,
+  .about-skill-image img,
+  .profession-area .profession-img img,
+  .project-detail .overview-image img {
+    @extend %img-sm-1;
+  }
+}
+
+@media (max-width: 767px) {
+  %title-sm-2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  %img-sm-2 {
+    height: 290px;
+  }
+
+  %space-sm-2 {
+    padding: 60px 0px;
+  }
+
+  /* Section padding */
+
+  .brand-area,
+  .about-info,
+  .special-services,
+  .callto-action,
+  .price-area,
+  .testimonial-area,
+  .newsletter-area,
+  .footer-area,
+  .services-introduction,
+  .aboutus02,
+  .valuable-services,
+  .call-action-two,
+  .dark-footer,
+  #circleBar,
+  .projectSlider,
+  .client-review,
+  .contactArea,
+  .homepage-03.service-introduction,
+  .homepage-03.about-introduction,
+  .footer03 .footer-area,
+  .homepage-03.call-to-action03,
+  .our-work-process,
+  .about-us.our-services,
+  .special-services.our-services,
+  .priceArea,
+  .about-us,
+  .about-solution,
+  .our-teams,
+  .about-skill,
+  .profession-area,
+  .project,
+  .blog-area,
+  .map-area,
+  .conatact-area {
+    @extend %space-sm-2;
+  }
+
+  /*Section Title */
+  .bannerArea .bannerArea__title,
+  .about-info-text h2,
+  .special-services .section-title h2,
+  .callto-action-text h2,
+  .price-area .section-title h2,
+  .testimonial-area .section-title h2,
+  .newsletter-area-text h2,
+  .bannerArea02__title,
+  .services-introduction .section-heading h2,
+  .aboutus02-wrapper-title h2,
+  .valuable-services-heading h2,
+  .aboutus-introduction02 .aboutus02-wrapper-title h2,
+  .call-action-two-content h2,
+  .section-title h2,
+  .bannerArea04__title,
+  .about-info04 .about-info-text h2,
+  #circleBar .section-title h2,
+  .projectSlider .section-title h2,
+  .projectSlider__ContentTitle,
+  .client-review .section-title h2,
+  .contactArea__title.section-title h2,
+  .bannerArea03__title,
+  .homepage-03 .section-heading h2,
+  .homepage-03.about-introduction .sub-section-heading h2,
+  .beloved-client .sub-section-heading h2,
+  .our-team .section-heading h2,
+  .homepage-03 .call-action-text .sub-section-heading h2,
+  .breadcrumArea .bannerArea__wrapper .bannerArea__title h1,
+  .our-work-process .section-title h2,
+  .about-us.our-services .about-us-text .sub-heading h2,
+  .priceArea .section-title h2,
+  .design-services-text h2,
+  .about-us-text .sub-heading h2,
+  .about-solution .section-title h2,
+  .our-teams .section-title h2,
+  .about-skill-wrapper .about-skill-title h2,
+  .project-detail .project-detail-content h2,
+  .blog-area .article-item h3,
+  .blog-area .blog-quotes h3,
+  .conatact-area .section-title h2 {
+    @extend %title-sm-2;
+  }
+
+  /* Images*/
+  .bannerArea__image img,
+  .about-info .about-info-image img,
+  .callto-action-image img,
+  .bannerArea02__image img,
+  .aboutus02-image img,
+  .aboutus-introduction02 .aboutus-introduction02-image img,
+  .bannerArea04__image img,
+  .client-review .banner-image img,
+  .bannerArea03__image .banner01,
+  .homepage-03.about-introduction .about-intro-left .image img,
+  .beloved-client .image img,
+  .breadcrumArea .banner-image img,
+  .about-us-image img,
+  .about-skill-image img,
+  .profession-area .profession-img img,
+  .project-detail .overview-image img {
+    @extend %img-sm-2;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 574px) {
+  %title-sm-3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  %brief-sm-2 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  %img-sm-3 {
+    height: auto;
+  }
+
+  /* remove custom height */
+  .bannerArea .bannerArea__title,
+  .about-info-text h2,
+  .special-services .section-title h2,
+  .callto-action-text h2,
+  .price-area .section-title h2,
+  .testimonial-area .section-title h2,
+  .newsletter-area-text h2,
+  .bannerArea02__title,
+  .services-introduction .section-heading h2,
+  .aboutus02-wrapper-title h2,
+  .valuable-services-heading h2,
+  .aboutus-introduction02 .aboutus02-wrapper-title h2,
+  .call-action-two-content h2,
+  .section-title h2,
+  .bannerArea04__title,
+  .about-info04 .about-info-text h2,
+  #circleBar .section-title h2,
+  .projectSlider .section-title h2,
+  .projectSlider__ContentTitle,
+  .client-review .section-title h2,
+  .contactArea__title.section-title h2,
+  .bannerArea03__title,
+  .homepage-03 .section-heading h2,
+  .homepage-03.about-introduction .sub-section-heading h2,
+  .beloved-client .sub-section-heading h2,
+  .our-team .section-heading h2,
+  .homepage-03 .call-action-text .sub-section-heading h2,
+  .breadcrumArea .bannerArea__wrapper .bannerArea__title h1,
+  .our-work-process .section-title h2,
+  .about-us.our-services .about-us-text .sub-heading h2,
+  .priceArea .section-title h2,
+  .design-services-text h2,
+  .about-us-text .sub-heading h2,
+  .about-solution .section-title h2,
+  .our-teams .section-title h2,
+  .about-skill-wrapper .about-skill-title h2,
+  .project-detail .project-detail-content h2,
+  .blog-area .article-item h3,
+  .blog-area .blog-quotes h3,
+  .conatact-area .section-title h2 {
+    @extend %title-sm-3;
+  }
+
+  /*Brief Text */
+  .bannerArea__brief,
+  .about-info-text p,
+  .about-info-project .project-rating p,
+  .special-services .special-services-text p,
+  .callto-action .callto-action-text p,
+  .price-area .section-title p,
+  .testimonial-area .w-65,
+  .testimonial-area .testimonial-slider .testimonial-item p,
+  .newsletter-area .newsletter-area-text p,
+  .footer-area .footer-area-lists ul li a,
+  .footer-area .footer-area-about p,
+  .footer-area .footer-area-lists ul li a,
+  .copyright-area-text p,
+  .bannerArea02__wrapper p,
+  .services-introduction .section-heading p,
+  .aboutus02-wrapper-title p,
+  .valuable-services-item-text p,
+  .call-action-two_group span.comments,
+  .bannerArea04__wrapper p,
+  .about-info04 .about-info-text p,
+  .testimonial04 .testimonial-wrappers .tesmonial-text p,
+  .projectSlider__textContents,
+  .client-review .review-active .single-testimonial p,
+  .contactArea__brief,
+  .footer04 .copyright-area-list ul li,
+  .bannerArea03 .bannerArea03__wrapper p,
+  .homepage-03 .section-heading p,
+  .homepage-03 .services-introduction-item-text p,
+  .homepage-03 .sub-section-heading p,
+  .beloved-client .sub-section-heading p,
+  .homepage-03 .provide-services-item-text p,
+  .homepage-03 .call-action-text .sub-section-heading p,
+  .breadcrumArea .bannerArea__wrapper p,
+  .our-work-process .process-text p,
+  .about-us-text .sub-heading p,
+  .about-us-text .feature .text p,
+  .priceArea .section-title p,
+  .design-services-text p,
+  .testimonial-area.trust-us .section-title p,
+  .about-skill-wrapper .about-skill-title p,
+  .profession-area .profession-wrapper .profession-tittle p,
+  .project-wrapper-title p,
+  .project-detail .project-detail-content p,
+  p,
+  .blog-area .article-item p.article-text {
+    @extend %brief-sm-2;
+  }
+
+  /*Images*/
+  .bannerArea__image img,
+  .about-info .about-info-image img,
+  .callto-action-image img,
+  .bannerArea02__image img,
+  .aboutus02-image img,
+  .aboutus-introduction02 .aboutus-introduction02-image img,
+  .bannerArea04__image img,
+  .client-review .banner-image img,
+  .bannerArea03__image .banner01,
+  .homepage-03.about-introduction .about-intro-left .image img,
+  .beloved-client .image img,
+  .breadcrumArea .banner-image img,
+  .about-us-image img,
+  .about-skill-image img,
+  .profession-area .profession-img img,
+  .project-detail .overview-image img {
+    @extend %img-sm-3;
+  }
+}
