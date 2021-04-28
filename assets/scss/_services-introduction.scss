@@ -143,6 +143,7 @@
 
 @media (max-width: 991px) {
   .services-introduction {
+    padding-bottom: 0px !important;
     .section-heading {
       h2 {
         font-size: 38px;
@@ -252,6 +253,12 @@
           height: 135px;
         }
       }
+    }
+  }
+  .services-introduction {
+    &-item {
+      // float: center !important;
+      float: none;
     }
   }
 }

@@ -2,6 +2,7 @@
 /*  HOME PAGE 01
 /*----------------------------------------*/
 .brand-area {
+  padding-top: 100px;
   // Section title
   .small-section {
     h3 {
@@ -67,6 +68,12 @@
 /*  RESPONSIVE CSS START 
 /*----------------------------------------*/
 
+@media (max-width: 991px) {
+  .brand-area {
+    padding-bottom: 0px !important;
+  }
+}
+
 @media (min-width: 320px) and(max-width: 574px) {
   .brands-area {
     .brand-slider-item {
@@ -77,16 +84,6 @@
       }
     }
   }
-}
-
-/* large devices 992 - 1169*/
-@media #{$lg} {
-  /* common area start */
-}
-
-/* Medium devices 768 - 991 */
-@media #{$md} {
-  /* common area start */
 }
 
 /* Small devices 575 - 767 */

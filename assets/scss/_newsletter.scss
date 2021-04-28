@@ -113,6 +113,23 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 574px) {
+  .newsletter-area {
+    &-form {
+      form {
+        .input-group {
+          input {
+            height: 50px;
+          }
+        }
+        .primary__button {
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+}
+
 /* large devices 992 - 1169*/
 @media #{$lg} {
   .newsletter-area {
@@ -130,7 +147,6 @@
 @media #{$md} {
   /* common area start */
   .newsletter-area {
-    padding: 100px 0;
     .newsletter-area-text {
       margin-bottom: 50px;
       p {

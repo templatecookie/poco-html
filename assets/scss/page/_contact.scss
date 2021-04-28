@@ -187,6 +187,7 @@
     &__brief {
       width: 65%;
     }
+
     &__location {
       margin-left: 0px;
       iframe {
@@ -203,11 +204,13 @@
     }
     &__info {
       margin-left: 0px;
+      margin-top: 30px;
     }
   }
   // Contact page
   .conatact-area {
     padding-top: 0px;
+    margin-bottom: 30px;
     &__container {
       padding-top: 30px;
     }

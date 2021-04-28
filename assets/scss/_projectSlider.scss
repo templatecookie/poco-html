@@ -186,8 +186,6 @@
 
 @media (max-width: 991px) {
   .projectSlider {
-    padding-bottom: 60px;
-
     // leftContent
     .section-title {
       margin-bottom: 0px;
@@ -256,11 +254,14 @@
 @media (min-width: 320px) and (max-width: 574px) {
   .projectSlider {
     .section-title {
-      margin-bottom: -125px;
+      margin-bottom: 30px;
       h2 {
         font-size: 32px;
         line-height: 42px;
       }
+    }
+    &__leftContent {
+      margin-top: -130px;
     }
 
     &__pagination {
@@ -280,14 +281,20 @@
       }
 
       &.swiper-pagination-progressbar {
-        bottom: 65px !important;
+        bottom: auto;
+        top: 205px;
       }
+    }
+
+    .swiper-slide {
+      align-items: flex-start;
     }
 
     // Arrows
     &__next,
     &__prev {
-      bottom: 45px;
+      bottom: auto;
+      top: 205px;
     }
   }
 }

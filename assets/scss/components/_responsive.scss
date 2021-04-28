@@ -11,7 +11,49 @@
     height: 450px;
     object-fit: contain;
   }
+
+  %space-sm-1 {
+    padding: 90px 0px;
+  }
+
   /* Section padding */
+  .bannerArea,
+  .brand-area,
+  .about-info,
+  .special-services,
+  .callto-action,
+  .price-area,
+  .testimonial-area,
+  .newsletter-area,
+  .footer-area,
+  .services-introduction,
+  .aboutus02,
+  .valuable-services,
+  .call-action-two,
+  .dark-footer,
+  #circleBar,
+  .projectSlider,
+  .client-review,
+  .contactArea,
+  .homepage-03.service-introduction,
+  .homepage-03.about-introduction,
+  .footer03 .footer-area,
+  .homepage-03.call-to-action03,
+  .our-work-process,
+  .about-us.our-services,
+  .special-services.our-services,
+  .priceArea,
+  .about-us,
+  .about-solution,
+  .our-teams,
+  .about-skill,
+  .profession-area,
+  .project,
+  .blog-area,
+  .map-area,
+  .conatact-area {
+    @extend %space-sm-1;
+  }
 
   /*Section Title */
   .bannerArea .bannerArea__title,
@@ -150,6 +192,50 @@
   %img-sm-2 {
     height: 290px;
   }
+
+  %space-sm-2 {
+    padding: 60px 0px;
+  }
+
+  /* Section padding */
+
+  .brand-area,
+  .about-info,
+  .special-services,
+  .callto-action,
+  .price-area,
+  .testimonial-area,
+  .newsletter-area,
+  .footer-area,
+  .services-introduction,
+  .aboutus02,
+  .valuable-services,
+  .call-action-two,
+  .dark-footer,
+  #circleBar,
+  .projectSlider,
+  .client-review,
+  .contactArea,
+  .homepage-03.service-introduction,
+  .homepage-03.about-introduction,
+  .footer03 .footer-area,
+  .homepage-03.call-to-action03,
+  .our-work-process,
+  .about-us.our-services,
+  .special-services.our-services,
+  .priceArea,
+  .about-us,
+  .about-solution,
+  .our-teams,
+  .about-skill,
+  .profession-area,
+  .project,
+  .blog-area,
+  .map-area,
+  .conatact-area {
+    @extend %space-sm-2;
+  }
+
   /*Section Title */
   .bannerArea .bannerArea__title,
   .about-info-text h2,

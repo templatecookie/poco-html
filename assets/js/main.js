@@ -87,6 +87,7 @@
   });
 
   /* ###  Sliders ###*/
+
   /* Branding Slider */
   $('.brand-slider-active').slick({
     infinite: true,

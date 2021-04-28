@@ -126,6 +126,7 @@
     border-radius: 0px;
 
     &-about {
+      margin-bottom: 0px;
       p {
         margin-top: 25px;
         color: #c6c6c6;
@@ -344,6 +345,7 @@
 @media (max-width: 991px) {
   .footer03 {
     .footer-area {
+      padding-bottom: 0px !important;
       &-about {
         margin-bottom: 0px;
         p {
@@ -355,6 +357,10 @@
   // Services
   .footer-area {
     margin: 0px;
+    padding-bottom: 0px !important;
+  }
+  .dark-footer {
+    padding-bottom: 0px !important;
   }
 }
 
@@ -380,6 +386,7 @@
       }
     }
   }
+
   // Copyright Area
   .copyright-area-text {
     p {
@@ -497,6 +504,7 @@
       margin-bottom: 0px;
     }
     &-shape {
+      display: none;
       .ft-shape-01 {
         left: 0px;
       }

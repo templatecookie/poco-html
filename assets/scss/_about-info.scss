@@ -592,6 +592,11 @@
 }
 
 @media (max-width: 991px) {
+  // Homepage-01
+  .about-info {
+    padding-bottom: 0px !important;
+  }
+
   //  Homepage-03
   .about-info04 {
     padding-bottom: 0px !important;
@@ -627,6 +632,8 @@
   // aboutus-introduction02-image
   .aboutus02 {
     &-image {
+      display: flex;
+      justify-content: center;
       &::before,
       &::after {
         display: none;
@@ -641,6 +648,7 @@
       // }
     }
     .small-feature {
+      display: none;
       bottom: 62%;
       right: 10%;
       z-index: 9;
@@ -672,7 +680,7 @@
 
   .homepage-03 {
     &.about-introduction {
-      padding-bottom: 90px;
+      // padding-bottom: 90px;
       .about-intro-left {
         .image {
           display: flex;
@@ -897,6 +905,7 @@
       text-align: center;
     }
     .mask-group {
+      display: none;
       .mask1 {
         bottom: -100px;
       }
@@ -1020,8 +1029,6 @@
 /* Medium devices 768 - 991 */
 @media #{$md} {
   .about-info {
-    padding-top: 100px;
-    padding-bottom: 70px;
     .about-info-image {
       margin-left: 0px;
       margin-bottom: 50px;

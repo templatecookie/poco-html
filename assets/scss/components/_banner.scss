@@ -849,7 +849,7 @@
 
   // banner-02
   .bannerArea02 {
-    padding-bottom: 185px;
+    padding-bottom: 90px;
     &__wrapper {
       padding-top: 0px;
       margin-top: 30px;
@@ -864,6 +864,9 @@
     .small-feature02 {
       top: 390px;
       left: 30px;
+    }
+    .small-feature {
+      display: none;
     }
   }
 
@@ -932,6 +935,9 @@
     &__brief {
       width: 100%;
     }
+    &__downArrow {
+      display: none;
+    }
   }
 
   // Homepage-04
@@ -981,8 +987,9 @@
 }
 
 @media (min-width: 320px) and(max-width: 574px) {
-  // banner Title
-
+  .bannerArea {
+    padding-top: 90px;
+  }
   // Homepage-01
   .bannerArea {
     margin: 0px;
