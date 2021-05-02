@@ -7751,10 +7751,11 @@ aside,
 }
 
 .about-us-text .feature .icon {
-  margin-top: 5px;
   height: 30px;
   width: 30px;
   border-radius: 9px;
+  margin-top: 5px;
+  padding: 15px;
 }
 
 .about-us-text .feature .icon i {
