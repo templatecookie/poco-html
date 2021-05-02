@@ -591,6 +591,10 @@ p {
   padding-right: 50px;
 }
 
+.header-area02 .main-menu li a {
+  color: #aebef5;
+}
+
 .header-area02 .right-content .search-bar {
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin-right: 25px;
@@ -2217,7 +2221,7 @@ aside,
 /* HOMEPAGE 02
 /*----------------------------------------*/
 .aboutus02 {
-  padding: 65px 0px 210px 0px;
+  padding: 65px 0px 165px 0px;
   position: relative;
 }
 
@@ -2232,7 +2236,6 @@ aside,
 .aboutus02-wrapper-title h2 {
   line-height: 64px;
   display: inline-block;
-  margin-bottom: 45px;
 }
 
 .aboutus02-wrapper-title p {
@@ -2241,7 +2244,6 @@ aside,
   line-height: 30px;
   margin-top: 20px;
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .aboutus02-wrapper-list {
@@ -3457,7 +3459,7 @@ aside,
 .services-introduction-text a {
   margin-top: 50px;
   transition: 0.3s;
-  margin-top: 55px;
+  margin-top: 30px;
 }
 
 /*----------------------------------------*/
@@ -4155,12 +4157,10 @@ aside,
 }
 
 .call-action-two-content p {
+  font-size: 18px;
+  line-height: 30px;
   margin-bottom: 20px;
   margin-top: -5px;
-}
-
-.call-action-two-content a.primary__button {
-  margin-top: 35px;
 }
 
 .call-action-two_group {
@@ -4902,7 +4902,6 @@ aside,
 .testimonial02 .testimonial-item {
   padding: 40px !important;
   border-radius: 42px !important;
-  border-bottom-right-radius: 0 !important;
 }
 
 .testimonial02 .testimonial-item p {
@@ -4954,8 +4953,7 @@ aside,
 }
 
 .testimonial02 .testimonial-wrapper .slick-slider .slick-current {
-  border-top-left-radius: 0px !important;
-  border-bottom-right-radius: 42px !important;
+  border-bottom-right-radius: 0px !important;
 }
 
 /*----------------------------------------*/

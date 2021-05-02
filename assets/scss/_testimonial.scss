@@ -169,7 +169,7 @@
   .testimonial-item {
     padding: 40px !important;
     border-radius: 42px !important;
-    border-bottom-right-radius: 0 !important;
+    // border-bottom-right-radius: 0 !important;
 
     p {
       font-size: 18px;
@@ -223,8 +223,7 @@
     }
     .slick-slider {
       .slick-current {
-        border-top-left-radius: 0px !important;
-        border-bottom-right-radius: 42px !important;
+        border-bottom-right-radius: 0px !important;
       }
     }
   }
