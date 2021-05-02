@@ -48,6 +48,12 @@
     //   ? logo.setAttribute('src', 'assets/img/logo/logo.png')
     //   : logo.setAttribute('src', 'assets/img/logo/logo04.png');
   });
+  // back to top button
+  var topBtn = $('#to-top');
+  topBtn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '600');
+  });
 
   /*search box open*/
   $('.search-bar').on('click', function () {
