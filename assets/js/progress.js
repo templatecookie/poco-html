@@ -1,17 +1,31 @@
 'use strict';
-/*SKILL POGRESSBAR*/
-function Circlle(el) {
-  $(el)
-    .circleProgress({
-      lineCap: 'round',
-      fill: {
-        color: '#FF465E',
-      },
-    })
-    .on('circle-animation-progress', function (event, progress, stepValue) {
-      $(this)
-        .find('strong')
-        .text(String(stepValue.toFixed(2)).substr(2) + '%');
-    });
-}
-Circlle('.round');
+
+$('.round')
+  .circleProgress({
+    lineCap: 'round',
+
+    fill: {
+      color: '#FF465E',
+    },
+    emptyFill: '#191C26',
+  })
+  .on('circle-animation-progress', function (event, progress, stepValue) {
+    $(this)
+      .find('strong')
+      .text(String(stepValue.toFixed(2)).substr(2) + '%');
+  });
+
+$('.round-1')
+  .circleProgress({
+    lineCap: 'round',
+
+    fill: {
+      color: '#FF465E',
+    },
+    emptyFill: '#FFDAE0',
+  })
+  .on('circle-animation-progress', function (event, progress, stepValue) {
+    $(this)
+      .find('strong')
+      .text(String(stepValue.toFixed(2)).substr(2) + '%');
+  });
