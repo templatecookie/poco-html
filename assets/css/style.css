@@ -5652,8 +5652,8 @@ aside,
   position: absolute;
   left: -217px;
   bottom: -155px;
-  background-color: #ff465e;
-  color: white;
+  background-color: #fff;
+  color: #ff465e;
   border: 1px solid transparent;
   width: 157px;
   height: 79px;
@@ -5669,8 +5669,8 @@ aside,
 }
 
 .client-review .review-active .slick-arrow:hover {
-  background-color: white;
-  color: #ff465e;
+  background-color: #ff465e;
+  color: #fff;
 }
 
 .client-review .review-active .slick-arrow.nextArrow {
@@ -5691,7 +5691,8 @@ aside,
 }
 
 .client-review .review-active .slick-arrow.nextArrow:hover {
-  background-color: #fff;
+  background-color: #ff465e;
+  color: #fff;
 }
 
 .client-review .review-active .slick-arrow.prevArrow::before {
@@ -5703,11 +5704,6 @@ aside,
   left: 30px;
   top: 47%;
   transform: translateY(-50%);
-}
-
-.client-review .review-active .slick-arrow.prevArrow:hover {
-  background-color: #ff465e;
-  color: #fff;
 }
 
 .client-review__quotes {
