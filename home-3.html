@@ -42,6 +42,7 @@
                 align-items: center;
             }
         </style>
+
     </head>
     <body class="homepage04">
         <!--[if lte IE 9]>
@@ -611,8 +612,25 @@
         <script src="assets/js/jquery.counterup.min.js"></script>
         <script src="assets/js/waypoint.min.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/progress.js"></script>
+        <script src="assets/js/slider.js"></script>
         <script src="assets/js/main.js"></script>
         <script>
+              /*  Sticky Header*/
+              let logo = document.querySelector('.logo-04');
+                window.addEventListener('scroll', function () {
+                    let header = document.querySelectorAll('header');
+
+                    header.forEach((headItem) => {
+                    headItem.classList.toggle('sticky', window.scrollY > 0);
+                    });
+                    window.scrollY > 0
+                    ? logo.setAttribute('src', 'assets/img/logo/logo.png')
+                    : logo.setAttribute('src', 'assets/img/logo/logo04.png');
+                });
+
+
+
             var swiper = new Swiper(".swiper-container", {
                 slidesPerView: 1,
                 spaceBetween: 00,
