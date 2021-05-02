@@ -2161,7 +2161,6 @@ aside,
   font-family: "Gilroy-Bold";
   max-width: 530px;
   line-height: 64px;
-  margin-bottom: 12px;
 }
 
 .about-info-text p {
@@ -2169,7 +2168,7 @@ aside,
   line-height: 30px;
   margin-bottom: 45px;
   font-family: "Gilroy-Medium";
-  color: #9dadb7;
+  color: #65729e;
 }
 
 .about-info-project {
@@ -2191,11 +2190,6 @@ aside,
   color: #ff8b17;
 }
 
-.about-info-project .project-rating p {
-  margin-bottom: 0;
-  font-family: "Gilroy-Medium";
-}
-
 .about-info-project .project-information h3 {
   margin-top: 2px;
   font-size: 34px;
@@ -2203,6 +2197,8 @@ aside,
 }
 
 .about-info-project .project-information p {
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 0;
   font-family: "Gilroy-Medium";
 }
