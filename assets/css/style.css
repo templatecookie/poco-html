@@ -8556,6 +8556,7 @@ aside,
 
 .profession-area {
   padding: 175px 0px;
+  padding-top: 0px;
 }
 
 .profession-area .profession-img {
@@ -8719,7 +8720,7 @@ aside,
 }
 
 .project-wrapper-button {
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .project .load-more-button {
@@ -8780,7 +8781,7 @@ aside,
 .project-detail .project-detail-content h2 {
   font-size: 40px;
   line-height: 49px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .project-detail .project-detail-content p {
@@ -9064,7 +9065,7 @@ aside,
 }
 
 .conatact-area .contact-form {
-  padding: 0 30px;
+  padding: 0 15px;
   text-align: center;
 }
 
@@ -9078,6 +9079,7 @@ aside,
   background: white;
   padding: 0 50px;
   position: relative;
+  width: 545px;
 }
 
 .conatact-area .contact-form .form-row .form-control:focus {
@@ -9114,7 +9116,6 @@ aside,
 
 .conatact-area .contact-form .primary__button {
   padding: 20px 52px;
-  margin-top: 25px;
 }
 
 .conatact-area__formRow {
@@ -9222,6 +9223,9 @@ aside,
   }
   .contactArea__location {
     margin-left: 60px;
+  }
+  .conatact-area .contact-form .form-row .form-control {
+    width: 100%;
   }
 }
 
@@ -9432,7 +9436,7 @@ aside,
 }
 
 .blog-area .article-item p.article-text {
-  margin-bottom: 55px;
+  margin-bottom: 30px;
   font-size: 18px;
 }
 
@@ -9848,17 +9852,17 @@ aside,
   color: #000560;
   font-size: 16px;
   font-family: "Gilroy-Bold";
+  margin-right: 10px;
 }
 
 .blog-details .article-item .article-tags-right .active {
   color: #ff465e;
-  margin-left: 5px;
 }
 
 .blog-details .article-item .article-tags-right a {
   font-size: 14px;
   color: #cacaca;
-  margin-right: 3px;
+  margin-right: 10px;
   transition: 0.3s all linear;
 }
 
@@ -9873,6 +9877,7 @@ aside,
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .blog-details .article-item .author-details-image {
@@ -9924,6 +9929,7 @@ aside,
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .blog-details .article-item .comments-section-area-comment .commenter .commenter-info h6 {
