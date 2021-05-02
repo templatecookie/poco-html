@@ -260,6 +260,7 @@
       }
 
       &-icon {
+        margin-right: 20px;
         i {
           color: #65729e;
           font-size: 50px;
@@ -270,20 +271,20 @@
         p {
           color: #000560;
           font-size: 18px;
+          line-height: 26px;
           font-family: $gilroy-medium;
+          margin-right: 20px;
         }
       }
 
       &-boldtext {
+        margin-left: 0px;
         h2 {
           color: #ff465e;
           font-size: 55px;
         }
       }
     }
-  }
-  .alart-boldtext {
-    margin-left: 15px;
   }
 }
 // END ABOUT US
@@ -668,6 +669,13 @@
           font-size: 14px;
           line-height: 22px;
         }
+      }
+      .alart-icon {
+        margin-right: 0px;
+      }
+      .alart-text p {
+        margin-right: 0px;
+        margin: 15px 0px;
       }
     }
     .alart-boldtext {

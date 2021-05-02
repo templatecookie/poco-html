@@ -7780,6 +7780,10 @@ aside,
   border-bottom-left-radius: 6px;
 }
 
+.about-us-text .alart-icon {
+  margin-right: 20px;
+}
+
 .about-us-text .alart-icon i {
   color: #65729e;
   font-size: 50px;
@@ -7788,16 +7792,18 @@ aside,
 .about-us-text .alart-text p {
   color: #000560;
   font-size: 18px;
+  line-height: 26px;
   font-family: "Gilroy-Medium";
+  margin-right: 20px;
+}
+
+.about-us-text .alart-boldtext {
+  margin-left: 0px;
 }
 
 .about-us-text .alart-boldtext h2 {
   color: #ff465e;
   font-size: 55px;
-}
-
-.about-us .alart-boldtext {
-  margin-left: 15px;
 }
 
 /*----------------------------------------*/
@@ -8096,6 +8102,13 @@ aside,
   .about-us-text .sub-heading p {
     font-size: 14px;
     line-height: 22px;
+  }
+  .about-us-text .alart-icon {
+    margin-right: 0px;
+  }
+  .about-us-text .alart-text p {
+    margin-right: 0px;
+    margin: 15px 0px;
   }
   .about-us .alart-boldtext {
     margin-left: 0px;
