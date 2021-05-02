@@ -193,7 +193,7 @@
       h6 {
         letter-spacing: 2px;
         word-spacing: 5px;
-        color: #899da7;
+        color: #fff;
         font-size: 14px;
         font-family: $gilroy-regular;
         margin-bottom: 10px;
@@ -201,13 +201,14 @@
 
       p {
         font-size: 18px;
+        line-height: 30px;
         font-family: $gilroy-medium;
-        margin-bottom: 60px;
       }
     }
 
     .t-bg-orange {
       padding: 20px 55px;
+      margin-top: 25px;
     }
   }
 

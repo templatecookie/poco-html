@@ -1375,6 +1375,10 @@ aside,
   display: flex;
 }
 
+.bannerArea03 .banner-button .primary__button {
+  padding: 20px 55px;
+}
+
 .bannerArea03 .banner-button .overlay-playbutton {
   margin-left: 30px;
 }
@@ -3036,7 +3040,7 @@ aside,
 
 #circleBar .round .round-text P {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Hind", sans-serif;
   line-height: 27px;
   font-weight: 500;
@@ -3212,7 +3216,7 @@ aside,
 
 .homepage-03 .provide-services-item {
   position: relative;
-  padding: 25px;
+  padding: 25px 20px;
   margin-bottom: 125px;
   background-color: #ffffff;
 }
@@ -3239,7 +3243,8 @@ aside,
 }
 
 .homepage-03 .provide-services-item-text h5 {
-  font-size: 23px;
+  font-size: 24px;
+  line-height: 32px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -4277,7 +4282,7 @@ aside,
 .homepage-03 .call-action-text .sub-section-heading h6 {
   letter-spacing: 2px;
   word-spacing: 5px;
-  color: #899da7;
+  color: #fff;
   font-size: 14px;
   font-family: "Gilroy-Regular";
   margin-bottom: 10px;
@@ -4285,12 +4290,13 @@ aside,
 
 .homepage-03 .call-action-text .sub-section-heading p {
   font-size: 18px;
+  line-height: 30px;
   font-family: "Gilroy-Medium";
-  margin-bottom: 60px;
 }
 
 .homepage-03 .call-action-text .t-bg-orange {
   padding: 20px 55px;
+  margin-top: 25px;
 }
 
 .homepage-03 .call-action-video {
@@ -5067,6 +5073,7 @@ aside,
   font-weight: 500;
   font-size: 16px;
   line-height: 27px;
+  color: #9dadb7;
 }
 
 .testimonial04 .testimonial-wrappers .testimonial-icon {
@@ -6445,21 +6452,23 @@ aside,
 
 .breadcrumArea {
   margin-bottom: 130px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
-.breadcrumArea::before {
+.breadcrumArea .custom-container {
+  position: relative;
+  border-radius: 24px !important;
+}
+
+.breadcrumArea .custom-container::before {
   content: '';
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 24px;
   background-color: rgba(255, 70, 95, 0.1);
-  z-index: -1;
 }
 
 .breadcrumArea .banner-image {
@@ -7753,7 +7762,6 @@ aside,
 }
 
 .about-us-text .feature .text h6 {
-  margin-bottom: 15px;
   font-size: 18px;
 }
 
@@ -9163,14 +9171,29 @@ aside,
   height: 60px;
 }
 
+.contactArea form .form-group input::placeholder {
+  font-size: 16px;
+  line-height: 27px;
+  color: #9dadb7;
+  font-family: "Hind", sans-serif;
+}
+
 .contactArea form .form-group textarea {
   min-height: 170px;
   resize: none;
 }
 
+.contactArea form .form-group textarea::placeholder {
+  font-size: 16px;
+  line-height: 27px;
+  color: #9dadb7;
+  font-family: "Hind", sans-serif;
+}
+
 .contactArea__button {
   font-size: 20px;
   line-height: 30px;
+  padding: 15px 50px;
   text-transform: uppercase;
   font-family: "Teko", sans-serif;
   border-radius: 0;

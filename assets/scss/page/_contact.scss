@@ -122,10 +122,22 @@
       }
       input {
         height: 60px;
+        &::placeholder {
+          font-size: 16px;
+          line-height: 27px;
+          color: #9dadb7;
+          font-family: $hind;
+        }
       }
       textarea {
         min-height: 170px;
         resize: none;
+        &::placeholder {
+          font-size: 16px;
+          line-height: 27px;
+          color: #9dadb7;
+          font-family: $hind;
+        }
       }
     }
   }
@@ -133,6 +145,7 @@
   &__button {
     font-size: 20px;
     line-height: 30px;
+    padding: 15px 50px;
     text-transform: uppercase;
     font-family: $teko;
     border-radius: 0;

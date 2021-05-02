@@ -43,22 +43,6 @@
     .primary__button {
       font-size: 20px;
     }
-
-    // .play-icon {
-    //   background: white;
-    //   cursor: pointer;
-    //   border: 1px solid #dddddd;
-    //   width: 64px;
-    //   height: 64px;
-    //   border-radius: 50%;
-    //   text-align: center;
-    //   margin-left: 30px;
-    //   display: inline-block;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    // }
-
     .overlay-playbutton {
       margin-left: 30px;
       .popup-video {
@@ -367,7 +351,9 @@
 
   .banner-button {
     display: flex;
-
+    .primary__button {
+      padding: 20px 55px;
+    }
     .overlay-playbutton {
       margin-left: 30px;
       .popup-video {
