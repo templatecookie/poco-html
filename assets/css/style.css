@@ -4747,6 +4747,12 @@ aside,
   text-transform: capitalize;
 }
 
+.testimonial-area .section-title p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #65729e;
+}
+
 .testimonial-area .w-65 {
   max-width: 65%;
   margin: auto;
@@ -4768,6 +4774,7 @@ aside,
   padding: 20px;
   border: 2px solid #dddddd;
   border-radius: 5px;
+  background-color: #ffff;
   transition: all 0.3s ease-out 0s;
 }
 

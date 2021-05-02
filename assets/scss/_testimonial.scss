@@ -18,6 +18,11 @@
       font-family: $gilroy-bold;
       text-transform: capitalize;
     }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      color: #65729e;
+    }
   }
   .w-65 {
     max-width: 65%;
@@ -38,6 +43,7 @@
       padding: 20px;
       border: 2px solid #dddddd;
       border-radius: 5px;
+      background-color: #ffff;
       @include transition(0.3s);
 
       .client-name {
