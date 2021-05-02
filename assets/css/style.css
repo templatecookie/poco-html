@@ -254,7 +254,8 @@ p {
   vertical-align: middle;
   border: 1px solid transparent;
   padding: 20px 40px;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 21px;
   border-radius: 50px;
   font-family: "Gilroy-Bold";
   transition: 0.3s;
@@ -3666,10 +3667,14 @@ aside,
 }
 
 .price-area .price-box .price-body ul li {
-  font-family: "Gilroy-Medium";
+  margin-bottom: 8px;
+}
+
+.price-area .price-box .price-body ul li span {
+  color: #65729e;
   line-height: 30px;
   color: #000560;
-  margin-bottom: 8px;
+  font-family: "Gilroy-Medium";
 }
 
 .price-area .price-box .price-title {
