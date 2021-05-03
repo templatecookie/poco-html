@@ -9461,9 +9461,19 @@ aside,
 .blog-area .article-item .article-info {
   margin-bottom: 25px;
   display: flex;
-  max-width: 450px;
-  justify-content: space-between;
+}
+
+.blog-area .article-item .article-info .article-time {
+  display: flex;
   align-items: center;
+}
+
+.blog-area .article-item .article-info .article-time .date {
+  margin-right: 40px;
+}
+
+.blog-area .article-item .article-info .author {
+  margin-right: 40px;
 }
 
 .blog-area .article-item .article-info .author img {

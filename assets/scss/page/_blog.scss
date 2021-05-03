@@ -11,11 +11,15 @@
     .article-info {
       margin-bottom: 25px;
       display: flex;
-      max-width: 450px;
-      justify-content: space-between;
-      align-items: center;
-
+      .article-time {
+        display: flex;
+        align-items: center;
+        .date {
+          margin-right: 40px;
+        }
+      }
       .author {
+        margin-right: 40px;
         img {
           width: 32px;
           height: 32px;
