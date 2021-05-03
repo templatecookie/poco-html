@@ -263,7 +263,7 @@ p {
 
 @media (max-width: 574px) {
   .primary__button {
-    padding: 15px 20px;
+    padding: 15px 20px !important;
   }
 }
 
@@ -2632,6 +2632,14 @@ aside,
   .aboutus-introduction02 .small-feature {
     bottom: 25%;
     left: 42%;
+  }
+  .homepage-03.about-introduction {
+    padding-bottom: 120px;
+  }
+  .homepage-03.about-introduction .about-intro-left .award {
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -7416,6 +7424,9 @@ aside,
   .footer03 .footer-area-lists {
     margin-bottom: 15px;
   }
+  .footer-area {
+    padding-bottom: 60px !important;
+  }
 }
 
 @media (max-width: 575px) {
@@ -9344,6 +9355,9 @@ aside,
   }
   .conatact-area .contact-form .form-row input {
     margin-bottom: 15px;
+  }
+  .conatact-area .contact-form .form-row .form-control {
+    height: 55px;
   }
 }
 

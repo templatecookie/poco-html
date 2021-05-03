@@ -534,6 +534,16 @@
       left: 42%;
     }
   }
+
+  // .homepage-03
+  .homepage-03.about-introduction {
+    padding-bottom: 120px;
+  }
+  .homepage-03.about-introduction .about-intro-left .award {
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {

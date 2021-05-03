@@ -201,7 +201,7 @@ p {
   font-family: $gilroy-bold;
   transition: 0.3s;
   @media (max-width: 574px) {
-    padding: 15px 20px;
+    padding: 15px 20px !important;
   }
   &-bgPrimary {
     color: #fff;
