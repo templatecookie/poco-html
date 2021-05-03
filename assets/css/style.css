@@ -4543,9 +4543,17 @@ aside,
   }
   .homepage-03 .call-action-video {
     margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
   }
   .homepage-03 .call-action-video .image-overlay {
     max-width: 570px;
+  }
+  .homepage-03 .call-action-video .pattern .pattern-one {
+    top: -5%;
+  }
+  .homepage-03 .call-action-video .pattern .pattern-two {
+    right: 35px;
   }
 }
 
@@ -4643,6 +4651,12 @@ aside,
   .homepage-03 .call-action-text .sub-section-heading p {
     font-size: 14px;
     margin-bottom: 15px;
+  }
+  .homepage-03 .call-action-text .sub-section-heading h6 {
+    margin-bottom: 0px;
+  }
+  .homepage-03 .call-action-text .sub-section-heading h2 {
+    margin-bottom: 0px;
   }
   .callto-action-modifi {
     padding: 60px 0px;
