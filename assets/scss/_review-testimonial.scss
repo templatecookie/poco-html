@@ -69,8 +69,8 @@
       position: absolute;
       left: -217px;
       bottom: -155px;
-      background-color: $tertiary;
-      color: white;
+      background-color: #fff;
+      color: $tertiary;
       border: 1px solid transparent;
       width: 157px;
       height: 79px;
@@ -84,8 +84,8 @@
       font-weight: 500;
       @include transition(0.3s);
       &:hover {
-        background-color: white;
-        color: $tertiary;
+        background-color: $tertiary;
+        color: #fff;
       }
       &.nextArrow {
         left: -60px;
@@ -102,7 +102,8 @@
           transform: translateY(-50%);
         }
         &:hover {
-          background-color: #fff;
+          background-color: $tertiary;
+          color: #fff;
         }
       }
       &.prevArrow {
@@ -115,10 +116,6 @@
           left: 30px;
           top: 47%;
           transform: translateY(-50%);
-        }
-        &:hover {
-          background-color: #ff465e;
-          color: #fff;
         }
       }
     }

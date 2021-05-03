@@ -211,12 +211,13 @@
     }
 
     .feature {
-      margin-bottom: 45px;
+      margin-bottom: 20px;
       .icon {
-        margin-top: 5px;
         height: 30px;
         width: 30px;
         border-radius: 9px;
+        margin-top: 5px;
+        padding: 15px;
 
         i {
           color: #ffffff;
@@ -225,7 +226,6 @@
 
       .text {
         h6 {
-          margin-bottom: 15px;
           font-size: 18px;
         }
 
@@ -237,7 +237,6 @@
     // custom-wrapper for buisness solutions
     .c-wrapper {
       display: inline-block;
-      margin-top: 10px;
     }
 
     .alart {
@@ -260,6 +259,7 @@
       }
 
       &-icon {
+        margin-right: 20px;
         i {
           color: #65729e;
           font-size: 50px;
@@ -270,20 +270,20 @@
         p {
           color: #000560;
           font-size: 18px;
+          line-height: 26px;
           font-family: $gilroy-medium;
+          margin-right: 20px;
         }
       }
 
       &-boldtext {
+        margin-left: 0px;
         h2 {
           color: #ff465e;
           font-size: 55px;
         }
       }
     }
-  }
-  .alart-boldtext {
-    margin-left: 15px;
   }
 }
 // END ABOUT US
@@ -526,6 +526,10 @@
       }
     }
   }
+
+  .about-us-image .image {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
@@ -669,6 +673,13 @@
           line-height: 22px;
         }
       }
+      .alart-icon {
+        margin-right: 0px;
+      }
+      .alart-text p {
+        margin-right: 0px;
+        margin: 15px 0px;
+      }
     }
     .alart-boldtext {
       margin-left: 0px;
@@ -697,6 +708,10 @@
         }
       }
     }
+  }
+
+  .aboutus02-wrapper-list ul li {
+    font-size: 16px;
   }
 }
 

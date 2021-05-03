@@ -74,11 +74,10 @@
       margin-top: 20px;
     }
     p {
+      font-size: 18px;
+      line-height: 30px;
       margin-bottom: 20px;
       margin-top: -5px;
-    }
-    a.primary__button {
-      margin-top: 35px;
     }
   }
   // Comments Group
@@ -194,7 +193,7 @@
       h6 {
         letter-spacing: 2px;
         word-spacing: 5px;
-        color: #899da7;
+        color: #fff;
         font-size: 14px;
         font-family: $gilroy-regular;
         margin-bottom: 10px;
@@ -202,13 +201,14 @@
 
       p {
         font-size: 18px;
+        line-height: 30px;
         font-family: $gilroy-medium;
-        margin-bottom: 60px;
       }
     }
 
     .t-bg-orange {
       padding: 20px 55px;
+      margin-top: 25px;
     }
   }
 
@@ -456,6 +456,10 @@
       display: flex;
       justify-content: center;
     }
+    // &-video {
+    //   display: flex;
+    //   justify-content: center;
+    // }
     &-text {
       margin-top: 0px;
       padding-top: 0px;
@@ -495,10 +499,18 @@
     }
     .call-action-video {
       margin-bottom: 35px;
+      display: flex;
+      justify-content: center;
       .image-overlay {
         max-width: 570px;
       }
     }
+  }
+  .homepage-03 .call-action-video .pattern .pattern-one {
+    top: -5%;
+  }
+  .homepage-03 .call-action-video .pattern .pattern-two {
+    right: 35px;
   }
 }
 
@@ -531,6 +543,7 @@
       }
       p {
         margin-top: 0px;
+        width: 100% !important;
       }
       a {
         &.primary__button {
@@ -595,6 +608,11 @@
       h2 {
         font-size: 28px;
         line-height: 38px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 26px;
       }
     }
   }
@@ -628,6 +646,12 @@
         }
       }
     }
+  }
+  .homepage-03 .call-action-text .sub-section-heading h6 {
+    margin-bottom: 0px;
+  }
+  .homepage-03 .call-action-text .sub-section-heading h2 {
+    margin-bottom: 0px;
   }
   // Services
   .callto-action-modifi {

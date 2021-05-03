@@ -226,6 +226,11 @@
         height: 385px;
       }
     }
+    &__pagination {
+      &.swiper-pagination-progressbar {
+        height: 10px;
+      }
+    }
   }
 }
 

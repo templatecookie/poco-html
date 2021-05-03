@@ -43,20 +43,48 @@
     .primary__button {
       font-size: 20px;
     }
-
-    .play-icon {
-      background: white;
-      cursor: pointer;
-      border: 1px solid #dddddd;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      text-align: center;
+    .overlay-playbutton {
       margin-left: 30px;
-      display: inline-block;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      .popup-video {
+        @include transition(0.4s);
+        color: #000560;
+        background: white;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 98px;
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+          z-index: -1;
+          position: absolute;
+          content: '';
+          border-radius: 50%;
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          animation: pulse-border 1500ms ease-out infinite;
+        }
+
+        & i {
+          font-size: 18px;
+          color: #000560;
+        }
+
+        &:hover {
+          border-color: white;
+        }
+      }
     }
   }
 
@@ -322,16 +350,53 @@
   }
 
   .banner-button {
-    .play-icon {
-      width: 65px;
-      height: 65px;
-      display: inline-block;
-      text-align: center;
-      line-height: 65px;
-      border-radius: 50%;
-      background-color: #2ca5ff;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      margin-left: 15px;
+    display: flex;
+    .primary__button {
+      padding: 20px 55px;
+    }
+    .overlay-playbutton {
+      margin-left: 30px;
+      .popup-video {
+        @include transition(0.4s);
+        color: #000560;
+        background: rgba(255, 255, 255, 0.418);
+        border-radius: 50%;
+        border: 1px solid #fff;
+        font-size: 14px;
+        line-height: 98px;
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+          z-index: -1;
+          position: absolute;
+          content: '';
+          border-radius: 50%;
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          animation: pulse-border 1500ms ease-out infinite;
+        }
+
+        & i {
+          font-size: 18px;
+          color: #fff;
+        }
+
+        &:hover {
+          border-color: white;
+        }
+      }
     }
   }
 
@@ -1043,6 +1108,10 @@
       span {
         font-size: 22px;
         line-height: 22px;
+      }
+      h1 {
+        font-size: 36px;
+        line-height: 50px;
       }
     }
     &__wrapper {

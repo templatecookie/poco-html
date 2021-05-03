@@ -21,6 +21,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
         <!-- Add your site or application content here -->
+
         <!--  HEADER AREA -->
         <header id="header" class="header-area">
             <div class="container custom-container">
@@ -135,6 +136,8 @@
                 <a class="search-close" href="javascript:void(0)"><i class="fas fa-times"></i></a>
             </div>
         </header>
+
+
         <main>
             <!--  BANNER AREA -->
             <section class="bannerArea">
@@ -152,17 +155,11 @@
                                     <a class="primary__button primary__button-bgPrimary" href="javascript:void(0)">
                                         Our Services
                                     </a>
-                                    <a class="play-icon popup-video" href="https://www.youtube.com/watch?v=LXb3EKWsInQ&ab_channel=Jacob%2BKatieSchwarz">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19.91" height="22.756" viewBox="0 0 19.91 22.756">
-                                            <path
-                                                id="Icon_awesome-play"
-                                                data-name="Icon awesome-play"
-                                                d="M18.862,9.543,3.218.294A2.121,2.121,0,0,0,0,2.13V20.623a2.131,2.131,0,0,0,3.218,1.836l15.644-9.244a2.131,2.131,0,0,0,0-3.671Z"
-                                                transform="translate(0 -0.002)"
-                                                fill="#000560"
-                                            />
-                                        </svg>
-                                    </a>
+                                    <div class="overlay-playbutton">
+                                        <a class="popup-video video-border" href="javascript:void(0)">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -817,6 +814,12 @@
         <script src="assets/js/slick.min.js"></script>
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/slider.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>  /* magnificPopup video view*/
+            $('.popup-video').magnificPopup({
+              type: 'iframe',
+            });
+        </script>
     </body>
 </html>

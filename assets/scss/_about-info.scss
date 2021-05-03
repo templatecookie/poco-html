@@ -15,7 +15,6 @@
       font-family: $gilroy-bold;
       max-width: 530px;
       line-height: 64px;
-      margin-bottom: 12px;
     }
 
     p {
@@ -23,7 +22,7 @@
       line-height: 30px;
       margin-bottom: 45px;
       font-family: $gilroy-medium;
-      color: #9dadb7;
+      color: #65729e;
     }
   }
 
@@ -45,11 +44,6 @@
           color: #ff8b17;
         }
       }
-
-      p {
-        margin-bottom: 0;
-        font-family: $gilroy-medium;
-      }
     }
 
     .project-information {
@@ -60,6 +54,8 @@
       }
 
       p {
+        font-size: 16px;
+        line-height: 24px;
         margin-bottom: 0;
         font-family: $gilroy-medium;
       }
@@ -82,7 +78,7 @@
 /* HOMEPAGE 02
 /*----------------------------------------*/
 .aboutus02 {
-  padding: 65px 0px 210px 0px;
+  padding: 65px 0px 165px 0px;
   position: relative;
   &-wrapper {
     max-width: 93%;
@@ -91,7 +87,6 @@
       h2 {
         line-height: 64px;
         display: inline-block;
-        margin-bottom: 45px;
       }
       p {
         font-size: 18px;
@@ -99,7 +94,6 @@
         line-height: 30px;
         margin-top: 20px;
         display: inline-block;
-        margin-bottom: 20px;
       }
 
       margin-bottom: 20px;
@@ -539,6 +533,16 @@
       bottom: 25%;
       left: 42%;
     }
+  }
+
+  // .homepage-03
+  .homepage-03.about-introduction {
+    padding-bottom: 120px;
+  }
+  .homepage-03.about-introduction .about-intro-left .award {
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

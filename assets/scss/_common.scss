@@ -195,11 +195,14 @@ p {
   vertical-align: middle;
   border: 1px solid transparent;
   padding: 20px 40px;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 21px;
   border-radius: 50px;
   font-family: $gilroy-bold;
   transition: 0.3s;
-
+  @media (max-width: 574px) {
+    padding: 15px 20px !important;
+  }
   &-bgPrimary {
     color: #fff;
     background-color: $tertiary;

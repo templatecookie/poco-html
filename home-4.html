@@ -152,9 +152,11 @@
                                 </p>
                                 <div class="banner-button">
                                     <a class="primary__button t-bg-orange" href="javascript:void(0)">Our Services</a>
-                                    <a class="play-icon popup-video" href="https://www.youtube.com/watch?v=LXb3EKWsInQ&ab_channel=Jacob%2BKatieSchwarz">
-                                        <img src="assets/img/icon/play-white.svg" alt="video icon" />
-                                    </a>
+                                    <div class="overlay-playbutton">
+                                        <a class="popup-video video-border" href="javascript:void(0)">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -759,11 +761,20 @@
                                         <h3>Jessica Brown</h3>
                                         <p>APP DESIGNER</p>
                                     </div>
-                                    <div class="bottom-information d-flex justify-content-between align-items-center">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#">facebook</a>
-                                        <a href="#">instagram</a>
-                                    </div>
+                                    <ul class="bottom-information d-flex justify-content-between align-items-center">
+                                        <li class="mr-2">
+                                            <a href="#" class="d-flex">
+                                                <span class="mr-2"><i class="fab fa-facebook-f"></i></span>
+                                                facebook
+                                            </a>
+                                        </li>
+                                        <li class="mr-2">
+                                            <a href="#" class="d-flex">
+                                                <span class="mr-2"><i class="fab fa-instagram"></i></span>
+                                                Instagram
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -777,11 +788,20 @@
                                         <h3>Jessica Brown</h3>
                                         <p>APP DESIGNER</p>
                                     </div>
-                                    <div class="bottom-information d-flex justify-content-between align-items-center">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#">facebook</a>
-                                        <a href="#">instagram</a>
-                                    </div>
+                                    <ul class="bottom-information d-flex justify-content-between align-items-center">
+                                        <li class="mr-2">
+                                            <a href="#" class="d-flex">
+                                                <span class="mr-2"><i class="fab fa-facebook-f"></i></span>
+                                                facebook
+                                            </a>
+                                        </li>
+                                        <li class="mr-2">
+                                            <a href="#" class="d-flex">
+                                                <span class="mr-2"><i class="fab fa-instagram"></i></span>
+                                                Instagram
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -795,11 +815,20 @@
                                         <h3>Jessica Brown</h3>
                                         <p>APP DESIGNER</p>
                                     </div>
-                                    <div class="bottom-information d-flex justify-content-between align-items-center">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#">facebook</a>
-                                        <a href="#">instagram</a>
-                                    </div>
+                                    <ul class="bottom-information d-flex justify-content-between align-items-center">
+                                        <li class="mr-2">
+                                            <a href="#" class="d-flex">
+                                                <span class="mr-2"><i class="fab fa-facebook-f"></i></span>
+                                                facebook
+                                            </a>
+                                        </li>
+                                        <li class="mr-2">
+                                            <a href="#" class="d-flex">
+                                                <span class="mr-2"><i class="fab fa-instagram"></i></span>
+                                                Instagram
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -830,7 +859,7 @@
                                     <img src="assets/img/action/playimg.svg" alt="Image" class="img-fluid" />
                                 </div>
                                 <div class="play-video">
-                                    <a href="#">
+                                    <a href="#" class="popup-video ">
                                         <i class="fas fa-play"></i>
                                     </a>
                                 </div>
@@ -1092,6 +1121,12 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/jquery.counterup.min.js"></script>
         <script src="assets/js/waypoint.min.js"></script>
+        <script src="assets/js/slider.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>  /* magnificPopup video view*/
+            $('.popup-video').magnificPopup({
+              type: 'iframe',
+            });
+        </script>
     </body>
 </html>
