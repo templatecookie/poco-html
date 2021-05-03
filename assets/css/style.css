@@ -5388,8 +5388,8 @@ aside,
   }
   .testimonial-area .slider-arrows .prev-arrow,
   .testimonial-area .slider-arrows .next-arrow {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
   }
   .testimonial-area .project-info h4 {
@@ -7425,7 +7425,7 @@ aside,
     margin-bottom: 15px;
   }
   .footer-area {
-    padding-bottom: 60px !important;
+    padding-bottom: 30px !important;
   }
 }
 
@@ -8064,6 +8064,9 @@ aside,
   .about-solution .mask-group .mask1,
   .about-solution .mask-group .mask2 {
     display: none;
+  }
+  .about-us-image .image {
+    margin-bottom: 20px;
   }
 }
 
