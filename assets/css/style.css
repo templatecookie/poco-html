@@ -8054,6 +8054,9 @@ aside,
   .about-skill {
     padding: 120px 0px;
   }
+  .about-skill-image {
+    display: none;
+  }
   .about-us.our-services {
     padding: 60px 0px;
     padding-bottom: 90px;
