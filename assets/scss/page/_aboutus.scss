@@ -504,6 +504,9 @@
 @media (max-width: 767px) {
   .about-skill {
     padding: 120px 0px;
+    &-image {
+      display: none;
+    }
   }
 
   // Service
