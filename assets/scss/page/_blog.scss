@@ -780,6 +780,19 @@
   }
 }
 
+@media (max-width: 767px) {
+  .article-time {
+    display: flex;
+    align-items: center;
+    .date {
+      margin-right: 15px;
+    }
+  }
+  .blog-area .blog-quotes {
+    padding: 30px 10px;
+  }
+}
+
 @media (min-width: 575px) and (max-width: 767px) {
   .blog-area {
     .article-item {
@@ -867,6 +880,27 @@
     }
     .blog-quotes {
       margin: 15px 0px;
+    }
+  }
+  .blog-quotes {
+    h3 {
+      font-size: 20px !important;
+      line-height: 32px !important;
+    }
+  }
+  .blog-details-quotes {
+    padding: 30px 15px;
+    position: relative;
+    z-index: 1;
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &::after {
+      opacity: 0.6;
+      bottom: 25px;
+      left: auto;
+      right: 5px;
     }
   }
 }
@@ -961,6 +995,7 @@
     }
   }
 }
+
 /* extra Small devices 420 */
 @media #{$xsm} {
   /* common area start */

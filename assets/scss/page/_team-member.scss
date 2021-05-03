@@ -63,6 +63,9 @@
       }
     }
   }
+  .profession-area .profession-wrapper .profession-tittle h2 {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -139,5 +142,14 @@
     .profession-img {
       margin-bottom: 15px;
     }
+  }
+  .profession-area .profession-wrapper {
+    margin-top: -55px;
+  }
+  .profession-area .profession-img .small-feature {
+    position: relative;
+    margin-bottom: 0px;
+    left: 0px !important;
+    bottom: 65px;
   }
 }
