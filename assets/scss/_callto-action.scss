@@ -531,6 +531,7 @@
       }
       p {
         margin-top: 0px;
+        width: 100% !important;
       }
       a {
         &.primary__button {
@@ -595,6 +596,11 @@
       h2 {
         font-size: 28px;
         line-height: 38px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 26px;
       }
     }
   }

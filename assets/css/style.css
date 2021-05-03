@@ -261,6 +261,12 @@ p {
   transition: 0.3s;
 }
 
+@media (max-width: 574px) {
+  .primary__button {
+    padding: 15px 20px;
+  }
+}
+
 .primary__button-bgPrimary {
   color: #fff;
   background-color: #ff465e;
@@ -2000,6 +2006,10 @@ aside,
   .bannerArea04__title span {
     font-size: 22px;
     line-height: 22px;
+  }
+  .bannerArea04__title h1 {
+    font-size: 36px;
+    line-height: 50px;
   }
   .bannerArea04__wrapper p {
     font-size: 18px;
@@ -4566,6 +4576,7 @@ aside,
   }
   .call-action-two-content p {
     margin-top: 0px;
+    width: 100% !important;
   }
   .call-action-two-content a.primary__button {
     margin-top: 0px;
@@ -4609,6 +4620,11 @@ aside,
   .call-action-two-content h2 {
     font-size: 28px;
     line-height: 38px;
+    margin-bottom: 0px;
+  }
+  .call-action-two-content p {
+    font-size: 14px;
+    line-height: 26px;
   }
   .homepage-03.call-to-action03 {
     padding-top: 120px;
@@ -5167,6 +5183,11 @@ aside,
   .testimonial-area .slider-arrows {
     justify-content: flex-end !important;
   }
+  .testimonial02 .testimonial-wrapper .slider-arrows {
+    position: absolute;
+    right: 15px;
+    top: 135px;
+  }
   .testimonial04 .section-title h2 {
     line-height: 74px;
   }
@@ -5272,6 +5293,10 @@ aside,
   .testimonial-area.trust-us .mask-group2 .mask6 {
     top: 30px;
     left: 15px;
+  }
+  .testimonial02 .testimonial-wrapper .slider-arrows {
+    bottom: 60px;
+    right: 110px;
   }
   .testimonial-area.testimonial03 .project-info h4 {
     margin-bottom: 0px;
@@ -6954,6 +6979,9 @@ aside,
   .projectSlider__container.swiper-container {
     height: 385px;
   }
+  .projectSlider__pagination.swiper-pagination-progressbar {
+    height: 10px;
+  }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
@@ -8147,6 +8175,9 @@ aside,
   .about-solution .solution-wrapper .solution-title.center p {
     font-size: 14px;
     line-height: 22px;
+  }
+  .aboutus02-wrapper-list ul li {
+    font-size: 16px;
   }
 }
 
