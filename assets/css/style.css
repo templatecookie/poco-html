@@ -698,6 +698,7 @@ p {
   font-family: "Teko", sans-serif;
   font-size: 20px;
   font-weight: 500;
+  padding: 18px 35px;
 }
 
 .header-area04 .right-content .social-icon {
@@ -2256,7 +2257,6 @@ aside,
   font-size: 18px;
   font-family: "Gilroy-Medium";
   line-height: 30px;
-  margin-top: 20px;
   display: inline-block;
 }
 
@@ -2451,7 +2451,7 @@ aside,
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 .homepage-03.about-introduction {
-  padding-bottom: 260px;
+  padding-bottom: 230px;
 }
 
 .homepage-03 .sub-section-heading {
@@ -3469,7 +3469,6 @@ aside,
 .services-introduction-text .section-heading h2 {
   font-size: 48px;
   line-height: 64px;
-  margin-bottom: 25px;
   max-width: 592px;
 }
 
@@ -4862,7 +4861,7 @@ aside,
 
 .testimonial-area .slider-arrows .prev-arrow:hover,
 .testimonial-area .slider-arrows .next-arrow:hover {
-  background: transparent;
+  background: #fff5f7;
   border: 1px solid #ff465e;
 }
 
@@ -6309,6 +6308,10 @@ aside,
   margin-top: 15px;
 }
 
+.our-team-member-info .bottom-information li {
+  margin-right: 15px !important;
+}
+
 .our-team-member-info .bottom-information a {
   transition: 0.3s all linear;
   color: #65729e;
@@ -6524,8 +6527,13 @@ aside,
 }
 
 .breadcrumArea .bannerArea__wrapper {
-  margin-top: -90px;
+  margin-top: 0px;
   padding-left: 30px;
+}
+
+.breadcrumArea .bannerArea__wrapper h1 {
+  margin-top: -70px;
+  line-height: 145px;
 }
 
 .breadcrumArea .bannerArea__wrapper p {
@@ -7092,10 +7100,12 @@ aside,
 .footer-area-about h4 {
   font-size: 26px;
   line-height: 35px;
+  margin-top: 10px;
 }
 
 .footer-area-about p {
   max-width: 305px;
+  margin-top: 0px;
   margin-bottom: 18px;
   font-family: "Gilroy-Medium";
   line-height: 30px;

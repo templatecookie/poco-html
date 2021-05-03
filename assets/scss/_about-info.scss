@@ -92,7 +92,6 @@
         font-size: 18px;
         font-family: $gilroy-medium;
         line-height: 30px;
-        margin-top: 20px;
         display: inline-block;
       }
 
@@ -295,7 +294,7 @@
 /*----------------------------------------*/
 .homepage-03 {
   &.about-introduction {
-    padding-bottom: 260px;
+    padding-bottom: 230px;
   }
 
   .sub-section-heading {
@@ -509,13 +508,6 @@
         }
       }
     }
-    // .about-intro-left {
-    //   .image {
-    //     .about01 {
-    //       display: none;
-    //     }
-    //   }
-    // }
   }
 }
 
