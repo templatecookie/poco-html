@@ -903,6 +903,13 @@
       right: 5px;
     }
   }
+  .pagination {
+    justify-content: center;
+  }
+  .blog-area .pagination-area nav .pagination li a {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 /* large devices 992 - 1199*/

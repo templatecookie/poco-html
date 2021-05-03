@@ -6625,7 +6625,13 @@ aside,
     margin-bottom: 0px !important;
   }
   .breadcrumArea .bannerArea__wrapper {
-    margin-bottom: 15px;
+    margin-bottom: 60px;
+  }
+  .breadcrumArea .bannerArea__wrapper h1 {
+    margin-top: 0px !important;
+  }
+  .breadcrumArea .bannerArea__wrapper p {
+    width: 50%;
   }
   .breadcrumArea .banner-image {
     padding-bottom: 0px;
@@ -6645,7 +6651,7 @@ aside,
     padding-left: 15px;
   }
   .breadcrumArea .bannerArea__wrapper p {
-    max-width: 100%;
+    width: 100% !important;
   }
   .breadcrumArea .banner-image {
     padding: 0px;
@@ -6670,7 +6676,7 @@ aside,
   }
   .breadcrumArea .breadcrumb-wrapper {
     margin-top: 0px;
-    bottom: -50px;
+    bottom: -20px;
     left: 0px;
   }
   .breadcrumArea .breadcrumb-wrapper .breadcrumb {
@@ -6719,7 +6725,7 @@ aside,
     line-height: 48px;
   }
   .breadcrumArea .breadcrumb-wrapper {
-    bottom: -75px !important;
+    bottom: -30px !important;
     left: 40px !important;
   }
   .breadcrumArea .breadcrumb-wrapper .breadcrumb {
@@ -6754,8 +6760,8 @@ aside,
     line-height: 40px;
   }
   .breadcrumArea .breadcrumb-wrapper {
-    bottom: -75px;
-    left: 0px;
+    bottom: -25px;
+    left: 30px;
   }
   .breadcrumArea .breadcrumb-wrapper .breadcrumb {
     padding: 10px 15px !important;
@@ -10255,6 +10261,13 @@ aside,
     bottom: 25px;
     left: auto;
     right: 5px;
+  }
+  .pagination {
+    justify-content: center;
+  }
+  .blog-area .pagination-area nav .pagination li a {
+    width: 45px;
+    height: 45px;
   }
 }
 
