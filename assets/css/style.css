@@ -6968,12 +6968,12 @@ aside,
   margin-bottom: 130px;
 }
 
-.breadcrumArea .custom-container {
+.breadcrumArea .breadcrum-banner {
   position: relative;
   border-radius: 24px !important;
 }
 
-.breadcrumArea .custom-container::before {
+.breadcrumArea .breadcrum-banner::before {
   content: '';
   position: absolute;
   z-index: -1;
