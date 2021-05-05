@@ -750,6 +750,10 @@ p {
   top: -21px;
 }
 
+.header-area04 .main-menu li .sub-menu li a {
+  font-size: 16px;
+}
+
 .header-area04 .contact-number {
   margin-left: 20px;
 }
@@ -6068,7 +6072,7 @@ aside,
   font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 22px;
-  color: #9dadb7;
+  color: #9DADB7;
   line-height: 34px;
 }
 
@@ -9923,7 +9927,7 @@ aside,
 }
 
 .contactArea__info {
-  text-align: center;
+  text-align: left;
   margin-top: 60px;
 }
 

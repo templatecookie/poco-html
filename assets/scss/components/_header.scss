@@ -164,7 +164,7 @@
       a {
         color: #d6d6d6;
         &:hover {
-          color: #000560;
+          color: #000560; 
         }
         &.active {
           color: white;
@@ -235,6 +235,14 @@
         color: #B9C1DC;
         &.active::before {
           top: -21px;
+        }
+      }
+      
+      .sub-menu {
+        li {
+          a {
+            font-size: 16px;
+          }
         }
       }
     }
