@@ -105,7 +105,7 @@
 
     .contact-number {
       .primary__button {
-        font-size: 18px;
+        font-size: 20px;
       }
       .bg__white {
         background-color: #fff;
@@ -164,7 +164,7 @@
       a {
         color: #d6d6d6;
         &:hover {
-          color: #000560;
+          color: #000560; 
         }
         &.active {
           color: white;
@@ -231,9 +231,18 @@
         font-family: $teko;
         font-weight: 500;
         font-size: 20px;
-
+        text-transform: uppercase;
+        color: #B9C1DC;
         &.active::before {
           top: -21px;
+        }
+      }
+      
+      .sub-menu {
+        li {
+          a {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -277,7 +286,7 @@
     .right-content {
       .social-icon {
         a {
-          background-color: #65729e;
+          // background-color: #65729e;
         }
       }
     }
@@ -291,6 +300,13 @@
     span {
       background-color: #fff;
     }
+  }
+}
+.header-area.header-area04.sticky {
+  background-color: #000;
+  box-shadow: unset;
+  .logo a {
+    color: white;
   }
 }
 

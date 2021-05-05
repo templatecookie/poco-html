@@ -15,19 +15,20 @@
       font-family: $gilroy-bold;
       max-width: 530px;
       line-height: 64px;
+      margin-bottom: 15px;
     }
 
     p {
       font-size: 18px;
       line-height: 30px;
-      margin-bottom: 45px;
+      margin-bottom: 35px;
       font-family: $gilroy-medium;
       color: #65729e;
     }
   }
 
   &-project {
-    padding-top: 27px;
+    padding-top: 35px;
     border-top: 1px solid #b4c1e9;
 
     .project-rating {
@@ -87,6 +88,7 @@
       h2 {
         line-height: 64px;
         display: inline-block;
+        margin-bottom: 15px;
       }
       p {
         font-size: 18px;
@@ -252,6 +254,7 @@
       line-height: 27px;
       position: relative;
       z-index: 9;
+      color: #9DADB7;
     }
 
     .about-info-project {
@@ -306,14 +309,17 @@
   }
 
   .work-process {
-    max-width: 485px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     &-item {
+      width: 50%;
       i {
         color: #ed880a;
+        width: 25px;
+        font-size: 18px;
       }
     }
   }

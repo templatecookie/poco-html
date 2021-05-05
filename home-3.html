@@ -616,20 +616,18 @@
         <script src="assets/js/slider.js"></script>
         <script src="assets/js/main.js"></script>
         <script>
-              /*  Sticky Header*/
-              let logo = document.querySelector('.logo-04');
-                window.addEventListener('scroll', function () {
-                    let header = document.querySelectorAll('header');
+          /*  Sticky Header*/
+          let logo = document.querySelector('.logo-04');
+            window.addEventListener('scroll', function () {
+                let header = document.querySelectorAll('header');
 
-                    header.forEach((headItem) => {
-                    headItem.classList.toggle('sticky', window.scrollY > 0);
-                    });
-                    window.scrollY > 0
-                    ? logo.setAttribute('src', 'assets/img/logo/logo.png')
-                    : logo.setAttribute('src', 'assets/img/logo/logo04.png');
+                header.forEach((headItem) => {
+                headItem.classList.toggle('sticky', window.scrollY > 0);
                 });
-
-
+                // window.scrollY > 0
+                // ? logo.setAttribute('src', 'assets/img/logo/logo04.png')
+                // : logo.setAttribute('src', 'assets/img/logo/logo04.png');
+            });
 
             var swiper = new Swiper(".swiper-container", {
                 slidesPerView: 1,
