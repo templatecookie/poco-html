@@ -698,6 +698,7 @@ p {
   font-family: "Teko", sans-serif;
   font-size: 20px;
   font-weight: 500;
+  padding: 18px 35px;
 }
 
 .header-area04 .right-content .social-icon {
@@ -2256,7 +2257,6 @@ aside,
   font-size: 18px;
   font-family: "Gilroy-Medium";
   line-height: 30px;
-  margin-top: 20px;
   display: inline-block;
 }
 
@@ -2451,7 +2451,7 @@ aside,
 /*  HOMEPAGE 04
 /*----------------------------------------*/
 .homepage-03.about-introduction {
-  padding-bottom: 260px;
+  padding-bottom: 230px;
 }
 
 .homepage-03 .sub-section-heading {
@@ -3469,7 +3469,6 @@ aside,
 .services-introduction-text .section-heading h2 {
   font-size: 48px;
   line-height: 64px;
-  margin-bottom: 25px;
   max-width: 592px;
 }
 
@@ -4862,7 +4861,7 @@ aside,
 
 .testimonial-area .slider-arrows .prev-arrow:hover,
 .testimonial-area .slider-arrows .next-arrow:hover {
-  background: transparent;
+  background: #fff5f7;
   border: 1px solid #ff465e;
 }
 
@@ -6309,6 +6308,10 @@ aside,
   margin-top: 15px;
 }
 
+.our-team-member-info .bottom-information li {
+  margin-right: 15px !important;
+}
+
 .our-team-member-info .bottom-information a {
   transition: 0.3s all linear;
   color: #65729e;
@@ -6524,8 +6527,13 @@ aside,
 }
 
 .breadcrumArea .bannerArea__wrapper {
-  margin-top: -90px;
+  margin-top: 0px;
   padding-left: 30px;
+}
+
+.breadcrumArea .bannerArea__wrapper h1 {
+  margin-top: -70px;
+  line-height: 145px;
 }
 
 .breadcrumArea .bannerArea__wrapper p {
@@ -6617,7 +6625,13 @@ aside,
     margin-bottom: 0px !important;
   }
   .breadcrumArea .bannerArea__wrapper {
-    margin-bottom: 15px;
+    margin-bottom: 60px;
+  }
+  .breadcrumArea .bannerArea__wrapper h1 {
+    margin-top: 0px !important;
+  }
+  .breadcrumArea .bannerArea__wrapper p {
+    width: 50%;
   }
   .breadcrumArea .banner-image {
     padding-bottom: 0px;
@@ -6637,7 +6651,7 @@ aside,
     padding-left: 15px;
   }
   .breadcrumArea .bannerArea__wrapper p {
-    max-width: 100%;
+    width: 100% !important;
   }
   .breadcrumArea .banner-image {
     padding: 0px;
@@ -6662,7 +6676,7 @@ aside,
   }
   .breadcrumArea .breadcrumb-wrapper {
     margin-top: 0px;
-    bottom: -50px;
+    bottom: -20px;
     left: 0px;
   }
   .breadcrumArea .breadcrumb-wrapper .breadcrumb {
@@ -6711,7 +6725,7 @@ aside,
     line-height: 48px;
   }
   .breadcrumArea .breadcrumb-wrapper {
-    bottom: -75px !important;
+    bottom: -30px !important;
     left: 40px !important;
   }
   .breadcrumArea .breadcrumb-wrapper .breadcrumb {
@@ -6746,8 +6760,8 @@ aside,
     line-height: 40px;
   }
   .breadcrumArea .breadcrumb-wrapper {
-    bottom: -75px;
-    left: 0px;
+    bottom: -25px;
+    left: 30px;
   }
   .breadcrumArea .breadcrumb-wrapper .breadcrumb {
     padding: 10px 15px !important;
@@ -7092,10 +7106,12 @@ aside,
 .footer-area-about h4 {
   font-size: 26px;
   line-height: 35px;
+  margin-top: 10px;
 }
 
 .footer-area-about p {
   max-width: 305px;
+  margin-top: 0px;
   margin-bottom: 18px;
   font-family: "Gilroy-Medium";
   line-height: 30px;
@@ -8053,6 +8069,9 @@ aside,
 @media (max-width: 767px) {
   .about-skill {
     padding: 120px 0px;
+  }
+  .about-skill-image {
+    display: none;
   }
   .about-us.our-services {
     padding: 60px 0px;
@@ -9442,9 +9461,19 @@ aside,
 .blog-area .article-item .article-info {
   margin-bottom: 25px;
   display: flex;
-  max-width: 450px;
-  justify-content: space-between;
+}
+
+.blog-area .article-item .article-info .article-time {
+  display: flex;
   align-items: center;
+}
+
+.blog-area .article-item .article-info .article-time .date {
+  margin-right: 40px;
+}
+
+.blog-area .article-item .article-info .author {
+  margin-right: 40px;
 }
 
 .blog-area .article-item .article-info .author img {
@@ -10242,6 +10271,13 @@ aside,
     bottom: 25px;
     left: auto;
     right: 5px;
+  }
+  .pagination {
+    justify-content: center;
+  }
+  .blog-area .pagination-area nav .pagination li a {
+    width: 45px;
+    height: 45px;
   }
 }
 

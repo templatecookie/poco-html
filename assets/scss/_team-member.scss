@@ -131,6 +131,9 @@
         max-width: 222px;
         margin: auto;
         margin-top: 15px;
+        li {
+          margin-right: 15px !important;
+        }
         a {
           transition: 0.3s all linear;
           color: $secondary;
