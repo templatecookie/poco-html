@@ -3982,14 +3982,17 @@ aside,
   background-color: #ff465e;
 }
 
+.price-area .price-box .price-body {
+  padding-bottom: 25px;
+}
+
 .price-area .price-box .price-body ul li {
   margin-bottom: 8px;
 }
 
 .price-area .price-box .price-body ul li span {
-  color: #65729e;
   line-height: 30px;
-  color: #000560;
+  color: #65729e;
   font-family: "Gilroy-Medium";
 }
 
@@ -4013,7 +4016,7 @@ aside,
   font-size: 25px;
   line-height: 49px;
   font-family: "Gilroy-Medium";
-  margin-bottom: 8px;
+  margin-bottom: 13px;
 }
 
 .price-area .price-box .price-link h4 span {
@@ -7548,6 +7551,7 @@ aside,
   font-size: 26px;
   line-height: 35px;
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .footer-area-about p {
@@ -7570,6 +7574,7 @@ aside,
   display: inline-block;
   -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
+  background-color: #ffffff;
 }
 
 .footer-area-links a:hover {
@@ -7584,7 +7589,7 @@ aside,
 .footer-area-lists ul li a {
   font-size: 16px;
   line-height: 36px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   display: inline-block;
   font-family: "Gilroy-Medium";
   color: #65729e;
@@ -7607,6 +7612,17 @@ aside,
 
 .copyright-area-top a i {
   margin-left: 3px;
+}
+
+.copyright-area-logo a {
+  display: inline-block;
+  height: 41px;
+  width: auto;
+}
+
+.copyright-area-logo a img {
+  height: 100%;
+  width: auto;
 }
 
 /*----------------------------------------*/

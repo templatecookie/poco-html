@@ -35,13 +35,13 @@
       }
     }
     .price-body {
+      padding-bottom: 25px;
       ul {
         li {
           margin-bottom: 8px;
           span {
-            color: #65729e;
             line-height: 30px;
-            color: $primary;
+            color: $secondary;
             font-family: $gilroy-medium;
           }
         }
@@ -62,7 +62,7 @@
         font-size: 25px;
         line-height: 49px;
         font-family: $gilroy-medium;
-        margin-bottom: 8px;
+        margin-bottom: 13px;
         span {
           font-size: 32px;
           line-height: 49px;
