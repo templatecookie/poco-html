@@ -6775,7 +6775,7 @@ aside,
   -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
   color: #65729e;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .our-team-member-info .bottom-information a:hover {
@@ -7720,6 +7720,10 @@ aside,
   background-color: inherit;
   padding: 0;
   padding-top: 130px;
+}
+
+.footer03 .footer-area-about a {
+  margin-bottom: 20px;
 }
 
 .footer03 .footer-area-links a {

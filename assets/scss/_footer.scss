@@ -191,7 +191,11 @@
     background-color: inherit;
     padding: 0;
     padding-top: 130px;
-
+    &-about {
+      a {
+        margin-bottom: 20px;
+      }
+    }
     &-links {
       a {
         border: 0;
