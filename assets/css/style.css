@@ -2667,7 +2667,7 @@ aside,
 }
 
 .homepage-03 .work-process {
-  max-width: 485px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2678,8 +2678,14 @@ aside,
           justify-content: space-between;
 }
 
+.homepage-03 .work-process-item {
+  width: 50%;
+}
+
 .homepage-03 .work-process-item i {
   color: #ed880a;
+  width: 25px;
+  font-size: 18px;
 }
 
 .homepage-03 .about-intro-left {

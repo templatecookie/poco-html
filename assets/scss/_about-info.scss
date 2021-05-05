@@ -309,14 +309,17 @@
   }
 
   .work-process {
-    max-width: 485px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     &-item {
+      width: 50%;
       i {
         color: #ed880a;
+        width: 25px;
+        font-size: 18px;
       }
     }
   }
