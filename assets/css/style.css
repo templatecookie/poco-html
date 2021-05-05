@@ -626,7 +626,7 @@ p {
 }
 
 .header-area .right-content .contact-number .primary__button {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .header-area .right-content .contact-number .bg__white {
@@ -742,6 +742,8 @@ p {
   font-family: "Teko", sans-serif;
   font-weight: 500;
   font-size: 20px;
+  text-transform: uppercase;
+  color: #B9C1DC;
 }
 
 .header-area04 .main-menu li a.active::before {
@@ -2604,6 +2606,7 @@ aside,
   line-height: 27px;
   position: relative;
   z-index: 9;
+  color: #9DADB7;
 }
 
 .about-info04 .about-info-text .about-info-project {
@@ -7272,6 +7275,10 @@ aside,
   background-color: #191c26;
 }
 
+.projectSlider .swiper-wrapper .swiper-slide.projectSlider__slide {
+  margin-top: -50px;
+}
+
 .projectSlider .section-title h2 {
   text-transform: uppercase;
   color: white;
@@ -7326,7 +7333,7 @@ aside,
 }
 
 .projectSlider__pagination.swiper-pagination-progressbar {
-  width: 635px;
+  width: 550px;
   height: 15px;
   border-radius: 25px;
   top: auto;
@@ -7346,8 +7353,8 @@ aside,
 }
 
 .projectSlider__next, .projectSlider__prev {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 2px solid #3b4a51;
   -webkit-transition: all 0.2s linear;
@@ -7367,11 +7374,11 @@ aside,
 }
 
 .projectSlider__prev {
-  left: 40px;
+  left: 0px;
 }
 
 .projectSlider__next {
-  right: 65px;
+  right: 110px;
 }
 
 .projectSlider__slide {
