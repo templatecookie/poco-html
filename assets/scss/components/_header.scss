@@ -105,7 +105,7 @@
 
     .contact-number {
       .primary__button {
-        font-size: 18px;
+        font-size: 20px;
       }
       .bg__white {
         background-color: #fff;
@@ -231,7 +231,8 @@
         font-family: $teko;
         font-weight: 500;
         font-size: 20px;
-
+        text-transform: uppercase;
+        color: #B9C1DC;
         &.active::before {
           top: -21px;
         }
