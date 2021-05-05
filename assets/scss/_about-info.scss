@@ -15,19 +15,20 @@
       font-family: $gilroy-bold;
       max-width: 530px;
       line-height: 64px;
+      margin-bottom: 15px;
     }
 
     p {
       font-size: 18px;
       line-height: 30px;
-      margin-bottom: 45px;
-      font-family: $gilroy-medium;
+      margin-bottom: 35px;
+      font-family: $gilroy-regular;
       color: #65729e;
     }
   }
 
   &-project {
-    padding-top: 27px;
+    padding-top: 35px;
     border-top: 1px solid #b4c1e9;
 
     .project-rating {
