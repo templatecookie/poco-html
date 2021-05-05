@@ -4188,7 +4188,7 @@ aside,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .priceArea__planeFeatures li span {
@@ -8824,7 +8824,7 @@ aside,
 
 .our-services .about-us-text .sub-heading h2 {
   max-width: 375px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: "Gilroy-Bold";
 }
 
@@ -8834,6 +8834,7 @@ aside,
 
 .our-services .about-us-text .primary__button {
   padding: 17px 35px;
+  margin-top: 20px;
 }
 
 .our-services .shape img {
