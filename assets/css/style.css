@@ -2358,7 +2358,7 @@ aside,
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 35px;
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Medium";
   color: #65729e;
 }
 
@@ -3371,7 +3371,7 @@ aside,
 
 .special-services-text p {
   max-width: 278px;
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Medium";
 }
 
 .special-services .services__mask .mask_01 {
