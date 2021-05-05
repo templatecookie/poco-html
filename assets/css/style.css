@@ -796,16 +796,22 @@ p {
   color: #fff;
 }
 
-.header-area04.sticky .right-content .social-icon a {
-  background-color: #65729e;
-}
-
 .header-area04.sticky .hamburger-menu span {
   background-color: #3c5b6b;
 }
 
 .header-area04 .hamburger-menu span {
   background-color: #fff;
+}
+
+.header-area.header-area04.sticky {
+  background-color: #000;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.header-area.header-area04.sticky .logo a {
+  color: white;
 }
 
 .header-area {
