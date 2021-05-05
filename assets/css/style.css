@@ -192,6 +192,10 @@ li {
   list-style: none;
 }
 
+a {
+  display: inline-block;
+}
+
 p {
   font-size: 16px;
   font-family: "Gilroy-Medium";
@@ -276,6 +280,11 @@ p {
 
 .t-bg-orange:hover {
   color: white;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 50px 100px rgba(0, 0, 0, 0.11) !important;
+          box-shadow: 0 50px 100px rgba(0, 0, 0, 0.11) !important;
 }
 
 /*--
@@ -2425,6 +2434,7 @@ aside,
 .aboutus02-wrapper-title h2 {
   line-height: 64px;
   display: inline-block;
+  margin-bottom: 15px;
 }
 
 .aboutus02-wrapper-title p {
@@ -3414,50 +3424,50 @@ aside,
 
 .valuable-services-item-bg-one {
   background-color: #7752be;
-  -webkit-box-shadow: 0px 2px 5px 0px #7752be;
-  box-shadow: 0px 2px 5px 0px #7752be;
+  -webkit-box-shadow: 0px 4px 10px 0px #7752be;
+  box-shadow: 0px 4px 10px 0px rgba(119, 82, 190, 0.84);
 }
 
 .valuable-services-item-bg-two {
   background-color: #fab005;
-  -webkit-box-shadow: 0px 2px 5px 0px #fab005;
-  box-shadow: 0px 2px 5px 0px #fab005;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(250, 176, 5, 0.84);
+  box-shadow: 0px 4px 10px 0px rgba(250, 176, 5, 0.84);
 }
 
 .valuable-services-item-bg-three {
   background-color: #f03e3d;
-  -webkit-box-shadow: 0px 2px 5px 0px #f03e3d;
-  box-shadow: 0px 2px 5px 0px #f03e3d;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(240, 62, 61, 0.84);
+  box-shadow: 0px 4px 10px 0px rgba(240, 62, 61, 0.84);
 }
 
 .valuable-services-item-bg-four {
   background-color: #4dadf7;
-  -webkit-box-shadow: 0px 2px 5px 0px #4dadf7;
-  box-shadow: 0px 2px 5px 0px #4dadf7;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(77, 173, 247, 0.84);
+  box-shadow: 0px 4px 10px 0px rgba(77, 173, 247, 0.84);
 }
 
 .valuable-services-item-bg-five {
   background-color: #63be52;
-  -webkit-box-shadow: 0px 2px 5px 0px #63be52;
-  box-shadow: 0px 2px 5px 0px #63be52;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(99, 190, 82, 0.84);
+  box-shadow: 0px 4px 10px 0px rgba(99, 190, 82, 0.84);
 }
 
 .valuable-services-item-bg-six {
   background-color: #2953ff;
-  -webkit-box-shadow: 0px 2px 5px 0px #2953ff;
-  box-shadow: 0px 2px 5px 0px #2953ff;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(41, 83, 255, 0.84);
+  box-shadow: 0px 4px 10px 0px rgba(41, 83, 255, 0.84);
 }
 
 .valuable-services-item-bg-seven {
   background-color: #de3df0;
-  -webkit-box-shadow: 0px 2px 5px 0px #de3df0;
-  box-shadow: 0px 2px 5px 0px #de3df0;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(222, 61, 240, 0.84);
+  box-shadow: 0px 4px 10px 0px rgba(222, 61, 240, 0.84);
 }
 
 .valuable-services-item-bg-eight {
   background-color: #4df7eb;
-  -webkit-box-shadow: 0px 2px 5px 0px #4df7eb;
-  box-shadow: 0px 2px 5px 0px #4df7eb;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(77, 247, 235, 0.84);
+  box-shadow: 0px 4px 10px 0px rgba(77, 247, 235, 0.84);
 }
 
 .valuable-services-item-text h6 {
@@ -3752,6 +3762,7 @@ aside,
   font-size: 48px;
   line-height: 64px;
   max-width: 592px;
+  margin-bottom: 20px;
 }
 
 .services-introduction-text .section-heading p {
@@ -3764,7 +3775,7 @@ aside,
   margin-top: 50px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 /*----------------------------------------*/
@@ -7658,6 +7669,15 @@ aside,
   color: #c6c6c6;
 }
 
+.dark-footer .footer-area-links a {
+  background-color: transparent;
+}
+
+.dark-footer .footer-area-links a:hover {
+  background-color: #ff465e;
+  color: #ffffff;
+}
+
 .dark-footer .copyright-area-text p {
   color: #ffffff;
 }
@@ -7680,9 +7700,9 @@ aside,
 }
 
 .footer03 .footer-area-links a {
-  background-color: rgba(255, 255, 255, 0.24);
   border: 0;
   color: #fff;
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .footer03 .footer-area-links a:hover {
