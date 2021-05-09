@@ -33,6 +33,7 @@
 
 (function ($) {
   'use strict';
+
   /*UI VARS*/
   let logo = document.querySelector('.logo-04');
 
@@ -48,14 +49,15 @@
     //   ? logo.setAttribute('src', 'assets/img/logo/logo.png')
     //   : logo.setAttribute('src', 'assets/img/logo/logo04.png');
   });
-  // back to top button
+
+  /* back to top button */
   var topBtn = $('#to-top');
   topBtn.on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, '600');
   });
 
-  /*search box open*/
+  /* search box open */
   $('.search-bar').on('click', function () {
     $('.search-box').addClass('search-open');
   });
@@ -63,7 +65,7 @@
     $('.search-box').removeClass('search-open');
   });
 
-  /* humberger menu*/
+  /* humberger menu */
   function toggleSidebar() {
     $('header aside').toggleClass('active');
     $('.hamburger-menu').toggleClass('open');
@@ -88,6 +90,7 @@
     toggleSidebar();
   });
 })(jQuery);
+
 function enableScrolling() {
   throw new Error('Function not implemented.');
 }
