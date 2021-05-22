@@ -1,13 +1,13 @@
-/*-----------------------------------------------------------------------------------
+/* -----------------------------------------------------------------------------------
 
-    Template Name: Poco - Agency Bootstrap4 HTML5 Template
+    Template Name: Poco - Agency Bootstrap 4 HTML5 Template
     Template URI: zakirsoft.com
-    Description: Agency - Agency Bootstrap4 HTML5 Template
+    Description: Agency - Agency Bootstrap 4 HTML5 Template
     Author: Templatecookie
-    Author URI: zakirhossen.com
+    Author URI: https://templatecookie.com
     Version: 1.0
 
------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
     CSS INDEX
     ===================
@@ -30,7 +30,7 @@
     16. Breadcrumb CSS	
     17. Footer CSS
 
------------------------------------------------------------------------------------*/
+----------------------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Teko:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: 'Gilroy-Bold';
@@ -10140,14 +10140,6 @@ aside,
   margin-right: 40px;
 }
 
-.blog-area .article-item .article-info .article-time .date {
-  margin-right: 40px;
-}
-
-.blog-area .article-item .article-info .author {
-  margin-right: 40px;
-}
-
 .blog-area .article-item .article-info .author img {
   width: 32px;
   height: 32px;
@@ -10560,9 +10552,13 @@ aside,
       flex-wrap: wrap;
 }
 
+.blog-area .aside .blog-gallery-item a {
+  margin-bottom: 10px;
+}
+
 .blog-area .aside .blog-gallery-item a img {
-  height: 85px;
-  width: 85px;
+  height: 100px;
+  width: 100px;
   border-radius: 5px;
 }
 
@@ -11083,7 +11079,6 @@ aside,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-
   }
   .blog-area .pagination-area nav .pagination li a {
     width: 45px;
