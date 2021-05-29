@@ -401,12 +401,12 @@
                                             <h6>Gallery</h6>
                                         </div>
                                         <div class="blog-gallery-item">
-                                            <a href="javascript:void(0)"><img src="assets/img/blog/image01.jpg" alt="Image" /></a>
-                                            <a href="javascript:void(0)"><img src="assets/img/blog/image02.jpg" alt="Image" /></a>
-                                            <a href="javascript:void(0)"><img src="assets/img/blog/image03.jpg" alt="Image" /></a>
-                                            <a href="javascript:void(0)"><img src="assets/img/blog/image04.jpg" alt="Image" /></a>
-                                            <a href="javascript:void(0)"><img src="assets/img/blog/image05.jpg" alt="Image" /></a>
-                                            <a href="javascript:void(0)"><img src="assets/img/blog/image06.jpg" alt="Image" /></a>
+                                            <a href="assets/img/blog/image01.jpg"><img src="assets/img/blog/image01.jpg" alt="Image" /></a>
+                                            <a href="assets/img/blog/image02.jpg"><img src="assets/img/blog/image02.jpg" alt="Image" /></a>
+                                            <a href="assets/img/blog/image03.jpg"><img src="assets/img/blog/image03.jpg" alt="Image" /></a>
+                                            <a href="assets/img/blog/image04.jpg"><img src="assets/img/blog/image04.jpg" alt="Image" /></a>
+                                            <a href="assets/img/blog/image05.jpg"><img src="assets/img/blog/image05.jpg" alt="Image" /></a>
+                                            <a href="assets/img/blog/image05.jpg"><img src="assets/img/blog/image05.jpg" alt="Image" /></a>
                                         </div>
                                     </div>
                                     <div class="blog-meta mb-30 shadow-sm">
@@ -554,6 +554,15 @@
         <script>  /* magnificPopup video view*/
             $('.popup-video').magnificPopup({
               type: 'iframe',
+            });
+            $('.blog-gallery-item').each(function() { // the containers for all your galleries
+                $(this).magnificPopup({
+                delegate: 'a', // the selector for gallery item
+                type: 'image',
+                gallery: {
+                enabled:true
+                }
+                });
             });
         </script>
     </body>

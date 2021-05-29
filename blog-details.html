@@ -453,12 +453,12 @@
                                         <h6>Gallery</h6>
                                     </div>
                                     <div class="blog-gallery-item">
-                                        <a href="#"><img src="assets/img/blog/image01.jpg" alt="Image" /></a>
-                                        <a href="#"><img src="assets/img/blog/image02.jpg" alt="Image" /></a>
-                                        <a href="#"><img src="assets/img/blog/image03.jpg" alt="Image" /></a>
-                                        <a href="#"><img src="assets/img/blog/image04.jpg" alt="Image" /></a>
-                                        <a href="#"><img src="assets/img/blog/image05.jpg" alt="Image" /></a>
-                                        <a href="#"><img src="assets/img/blog/image06.jpg" alt="Image" /></a>
+                                        <a href="assets/img/blog/image01.jpg"><img src="assets/img/blog/image01.jpg" alt="Image" /></a>
+                                        <a href="assets/img/blog/image02.jpg"><img src="assets/img/blog/image02.jpg" alt="Image" /></a>
+                                        <a href="assets/img/blog/image03.jpg"><img src="assets/img/blog/image03.jpg" alt="Image" /></a>
+                                        <a href="assets/img/blog/image04.jpg"><img src="assets/img/blog/image04.jpg" alt="Image" /></a>
+                                        <a href="assets/img/blog/image05.jpg"><img src="assets/img/blog/image05.jpg" alt="Image" /></a>
+                                        <a href="assets/img/blog/image06.jpg"><img src="assets/img/blog/image06.jpg" alt="Image" /></a>
                                     </div>
                                 </div>
                                 <div class="blog-meta mb-30 shadow-sm">
@@ -597,7 +597,19 @@
         <!-- JS here -->
         <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            $('.blog-gallery-item').each(function() { // the containers for all your galleries
+                $(this).magnificPopup({
+                delegate: 'a', // the selector for gallery item
+                type: 'image',
+                gallery: {
+                enabled:true
+                }
+                });
+            });
+        </script>
     </body>
 </html>
