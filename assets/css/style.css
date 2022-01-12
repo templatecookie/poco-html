@@ -11580,3 +11580,67 @@ aside,
   /*Images*/
 }
 /*# sourceMappingURL=style.css.map */
+
+.templatecookie-btn {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 10000000000000000 !important;
+}
+.templatecookie-btn .purchase-btn {
+  box-shadow: 0px 0px 3px 0px white !important;
+  background-color: #171717 !important;
+  color: white !important;
+  width: max-content !important;
+  display: flex !important;
+  font-weight: 600 !important;
+  align-items: center !important;
+  padding: 0px 20px !important;
+  height: 50px !important;
+  border-radius: 30px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  animation-name: wave-animation !important;
+  animation-duration: 2.5s !important;
+  animation-iteration-count: infinite !important;
+  transform-origin: 70% 70% !important;
+}
+.templatecookie-btn .purchase-btn span svg {
+  margin-left: 8px;
+  display: block;
+  width: 20px;
+  height: 18px;
+}
+.templatecookie-btn .purchase-btn span svg path {
+  stroke: white;
+}
+.templatecookie-btn .purchase-btn:hover {
+  animation-name: unset !important;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+ }
+  10% {
+    transform: rotate(14deg);
+ }
+  20% {
+    transform: rotate(-8deg);
+ }
+  30% {
+    transform: rotate(14deg);
+ }
+  40% {
+    transform: rotate(-4deg);
+ }
+  50% {
+    transform: rotate(10deg);
+ }
+  60% {
+    transform: rotate(0deg);
+ }
+  100% {
+    transform: rotate(0deg);
+ }
+}
