@@ -89,6 +89,15 @@
   $('aside .overlay').on('click', function () {
     toggleSidebar();
   });
+
+  // aso js init
+
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+  
+  
 })(jQuery);
 
 function enableScrolling() {
